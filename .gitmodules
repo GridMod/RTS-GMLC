@@ -1,0 +1,3 @@
+[submodule "Create_PLEXOS_database/PSSE2PLEXOS"]
+	path = Create_PLEXOS_database/PSSE2PLEXOS
+	url = git@github.com:NREL/PSSE2PLEXOS.git
