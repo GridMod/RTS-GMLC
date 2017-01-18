@@ -1,0 +1,67 @@
+**Database Summary Report**
+--------------------------- 
+
+
+Summary of database components
+------------
+
+Number of objects of each type:
+ Object class # objects
+         Fuel        11
+    Generator       156
+      Horizon        14
+         Line       121
+        Model        14
+         Node        73
+  Performance         1
+   Production         3
+       Region         3
+       Report         1
+  ST Schedule         2
+     Scenario         3
+ Transmission         2
+         Zone         6
+
+Number of nodes in each region and/or zone:
+        Region/Zone # nodes
+ Region           1      24
+   Zone          11      12
+   Zone          12      12
+ Region           2      24
+   Zone          21      12
+   Zone          22      12
+ Region           3      25
+   Zone          31      12
+   Zone          32      13
+
+
+Summary of generators in database
+------------
+
+To see this information by region, see ../rts_2016_data_check/generator.summary.by.fuel.region.csv
+
+ Generator category       Fuel Start Fuel    scenario total.cap.x.units avg.capacity total.capacity min.capacity max.capacity sd.capacity avg.units total.units min.units max.units sd.units
+         Coal/Steam Coal/Steam         NA No scenario            2317.0    144.81250         2317.0         76.0        350.0    88.72295         1          16         1         1        0
+              Hydro      Hydro         NA No scenario            1000.0     50.00000         1000.0         50.0         50.0     0.00000         1          20         1         1        0
+              NG/CC      NG/CC         NA No scenario            3550.0    355.00000         3550.0        355.0        355.0     0.00000         1          10         1         1        0
+              NG/CT      NG/CT         NA No scenario            1485.0     55.00000         1485.0         55.0         55.0     0.00000         1          27         1         1        0
+            Nuclear    Nuclear         NA No scenario             400.0    400.00000          400.0        400.0        400.0          NA         1           1         1         1       NA
+             Oil/CT     Oil/CT         NA No scenario             240.0     20.00000          240.0         20.0         20.0     0.00000         1          12         1         1        0
+          Oil/Steam  Oil/Steam         NA No scenario              84.0     12.00000           84.0         12.0         12.0     0.00000         1           7         1         1        0
+                 PV         PV         NA No scenario            1554.5     62.18000         1554.5         25.3        188.2    38.21813         1          25         1         1        0
+               RTPV       RTPV         NA No scenario            1161.4     37.46452         1161.4          4.5        101.7    29.26250         1          31         1         1        0
+          SynchCond  SynchCond         NA No scenario               0.0      0.00000            0.0          0.0          0.0     0.00000         1           3         1         1        0
+               Wind       Wind         NA No scenario            2507.9    626.97500         2507.9        148.3        847.0   323.85920         1           4         1         1        0
+
+
+Summary of connected components in network of the database.
+------------
+
+This analysis is done on the base network - scenarios on Lines/Transformers are ignored.
+List of nodes that belong to islands saved in ../rts_2016_data_check/isolated.nodes.csv
+Islands are any groups of nodes not connected to the largest connected component.
+
+ Component size Nodes in 'Remove Isolated Nodes' scenario
+             73                                         0
+
+

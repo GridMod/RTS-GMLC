@@ -1,0 +1,337 @@
+# run after parse_matpower (or sourced from parse_matpower)
+# required input files are read in in each section
+
+# make new create_other_inputs file
+# - min gen
+# - forced outage rate
+# - heat rate
+# - fuel price
+# - start cost (adjust)
+# - add VG
+# - attach load
+# - attach hydro
+
+# list of tables to write out in the end
+if (!exists("all.tabs")) all.tabs <- c()
+
+#------------------------------------------------------------------------------|
+# temp? adjust regions/zones to match old NESTA RTS ----
+#------------------------------------------------------------------------------|
+# before, nodes were broken into 3 regions and regions==zones. Now, regions
+# and zones are different. for now, making zones regions and regions what they
+# were in the old case
+
+node.data[, Zone := as.numeric(Region)]
+node.data[, Region := substr(Region, 1, 1)] # just tens digit
+
+# add to all.tabs
+all.tabs <- c(all.tabs, "node.data")
+
+#------------------------------------------------------------------------------|
+# add load datafile pointers to nodes that have load on them ----
+#------------------------------------------------------------------------------|
+
+# hardcode reigonal filepointers
+
+region.load.da <- data.table(Region = c(1:3), 
+                             Load = "data_files\\load\\DA_hourly.csv")
+
+region.load.rt <- data.table(Region = c(1:3), 
+                             Load = "data_files\\load\\RT_5min.csv")
+
+# add to all.tabs
+all.tabs <- c(all.tabs, "region.load.da", "region.load.rt")
+
+#------------------------------------------------------------------------------|
+# add load participation factor for load nodes ----
+#------------------------------------------------------------------------------|
+# can leave node load in MW; psse2plexos will normalize
+
+node.lpf <- struct.list$bus[,.(Node = bus_i, Load = Pd, Status = 1)]
+
+# add to all.tabs
+all.tabs <- c(all.tabs, "node.lpf")
+
+
+
+#------------------------------------------------------------------------------|
+# fuels and fuel price ----
+#------------------------------------------------------------------------------|
+
+# add unit type to generator
+gen.fuel <- fread("inputs/from_updated_UW_tables/Table-07_edits.txt")
+gen.fuel[,Generator := paste0(Bus, "_", ID)]
+
+gen.fuel <- gen.fuel[,.(Generator, Type = Unit)]
+
+# fuel type to unit type
+fuels <- fread("inputs/from_updated_UW_tables/Table-06_edits.txt")
+fuels <- fuels[,.(Type = Unit, Fuel)]
+
+# fuel type to generator
+gen.fuel <- merge(gen.fuel, fuels, all.x = TRUE, by='Type')
+
+# leave only Generator and Fuel columns
+gen.fuel[,Type := NULL]
+
+# add fuel to synchronous condensers
+gen.fuel[is.na(Fuel), Fuel := 'SynchCond']
+
+# get fuel price (2010$/MMBtu)
+fuel.price <- fread("inputs/fuel_prices.csv")
+
+# add to get written out
+all.tabs <- c(all.tabs, "gen.fuel", "fuel.price")
+
+#------------------------------------------------------------------------------|
+# generator outages by type ----
+#------------------------------------------------------------------------------|
+
+# read gen types
+gen.type = fread("inputs/from_updated_UW_tables/Table-07_edits.txt")
+gen.type[,Generator := paste0(Bus, "_", ID)]
+gen.type = gen.type[,.(Generator, Unit)]
+
+# read generator outage info
+gen.outages = fread('inputs/from_updated_UW_tables/Table-06_edits.txt')
+gen.outages = gen.outages[, .(Unit, `Forced Outage Rate` = Outage)]
+
+# combine gens to outage
+gen.outages = merge(gen.type, gen.outages, all.x=TRUE, by='Unit')
+gen.outages = gen.outages[, .(Generator, `Forced Outage Rate`)]
+
+# set outage for synchronous condensers to 0
+gen.outages[is.na(`Forced Outage Rate`), `Forced Outage Rate` := 0]
+
+# add to get written out
+all.tabs <- c(all.tabs, "gen.outages")
+
+#------------------------------------------------------------------------------|
+# cost data ----
+#------------------------------------------------------------------------------|
+#  
+gen.cost.data <- cbind(generator.data[,.(Generator)],
+                       struct.list$gencost)
+
+# remove unneeded cols
+model <- gen.cost.data[1,model]
+gen.cost.data[,c("model", "startup", "shutdown", "n") := NULL]
+
+if (model == 1) {
+  
+  # assumes heat rates are in $/hr and calculated using a dummy fuel price
+  # of $1/MMBtu
+  # converts from $/hr to MMBtu/MWh by diving by load point
+  # ($/hr * 1 MMBtu/$1 * 1 hr/[loadpoint MW * hr = MWh])
+  
+  # reset names to be load point and heat rate for plexos
+  names.to.convert <- names(gen.cost.data)
+  names.to.convert <- names.to.convert[names.to.convert != "Generator"]
+  
+  names.converted <- gsub("p", "Load Point", names.to.convert)
+  names.converted <- gsub("f", "Heat Rate", names.converted)   
+  
+  setnames(gen.cost.data, names.to.convert, names.converted)
+  
+  # names are almost plexos names, but have band id numbers at end
+  # now, melt down, get band id, convert to real MMBtu/MWh 
+  # there is probably a fancier/more efficient way to do this
+  gen.cost.data <- melt(gen.cost.data, id.vars = "Generator", 
+                        variable.factor = FALSE, value.factor = FALSE)
+  gen.cost.data[, Band := as.numeric(substr(variable, 
+                                            nchar(variable), 
+                                            nchar(variable))) + 1]
+  
+  gen.cost.data[,variable := substr(variable, 1, nchar(variable) - 1)]
+  
+  # recast to get all Load Point and Heat Rate back as column names
+  gen.cost.data[,value := as.numeric(value)]
+  gen.cost.data <- data.table(dcast(gen.cost.data, Generator+Band~variable))
+  
+  gen.cost.data = merge(gen.cost.data,
+                        merge(gen.fuel,
+                              fuel.price,by='Fuel')[,.(Generator,Price)],
+                        by='Generator')
+  # heat rate is in $/hr, assuming fuel is $1/MMBtu. Convert to MMBtu/MWh
+  gen.cost.data[, `Heat Rate` := `Heat Rate`/(`Load Point`*`Price`)][,Price:=NULL]
+  
+  # TODO HMMM SOMETHING IS WRONG WITH THESE HEAT RATE NUMBERS
+  
+} else if (model == 2) {
+  # polynomial function coefficients
+  
+  # reset names to be plexos properties
+  setnames(gen.cost.data, "c0", "Heat Rate Base")
+  
+  # reset numbering of c to index from 1
+  names.to.convert <- names(gen.cost.data)
+  
+  names.converted <- names.to.convert[grepl("^c", names.to.convert)]
+  names.converted <- gsub("c", "", names.converted)
+  names.converted <- as.character(as.numeric(names.converted) + 1)
+  
+  names.converted <- paste("Heat Rate Incr", names.converted)
+  
+  setnames(gen.cost.data, 
+           names.to.convert,
+           names.converted)
+  
+} else {
+  stop("heat rate model is not 1 or 2. not sure how to treat this data.")
+}
+
+all.tabs <- c(all.tabs, "gen.cost.data")
+
+
+#------------------------------------------------------------------------------|
+# start costs ----
+#------------------------------------------------------------------------------|
+# requires that fuel.price and gen.fuel tables have been read in (see section
+# "fuels and fuel price")
+
+gen.startshut <- cbind(generator.data[,.(Generator)],
+                   struct.list$gencost[,.(startup, shutdown)])
+
+# start and shutdown costs are given in MMBtu. convert this to $ by
+# adding gen fuel type and fuel prices, then multiplying by fuel price
+gen.startshut <- merge(gen.startshut, gen.fuel, by = "Generator", all.x = TRUE)
+gen.startshut <- merge(gen.startshut, fuel.price, by = "Fuel", all.x = TRUE)
+
+gen.startshut[, Price := as.numeric(Price)]
+
+# Use Oil/Steam price to calculate coal gen start and shutdown costs
+gen.startshut[Fuel == "Coal/Steam", Price := fuel.price[Fuel == "Oil/Steam", Price]]
+
+# calculate and add start and shutdown costs based on input heat and fuel price
+gen.startshut[, `Start Cost` := Price * as.numeric(startup)]
+gen.startshut[, `Shutdown Cost` := Price * as.numeric(shutdown)]
+
+# save only plexos property columns
+gen.startshut <- gen.startshut[,.(Generator, `Start Cost`, `Shutdown Cost`)]
+
+all.tabs <- c(all.tabs, "gen.startshut")
+
+#------------------------------------------------------------------------------|
+# min gen ----
+#------------------------------------------------------------------------------|
+# reads in table 07 again ("fuels and fuel price)
+
+gen.mingen <- fread("inputs/from_updated_UW_tables/Table-06_mingen_edits.txt")
+gen.unit.type <- fread("inputs/from_updated_UW_tables/Table-07_edits.txt")
+
+# have to match min gen to individual unit, because these are by size and fuel
+gen.mingen <- merge(gen.unit.type[, .(Generator = paste0(Bus, "_", ID), Unit, PG)],
+                    gen.mingen, 
+                    by = "Unit",
+                    all.x = TRUE)
+
+# gen.mingen[,MinGen/PG]
+
+# keep only relevant columns
+gen.mingen <- gen.mingen[,.(Generator, `Min Stable Level` = MinGen)]
+
+# add to all.tabs to be written out
+all.tabs <- c(all.tabs, "gen.mingen")
+
+#------------------------------------------------------------------------------|
+# attach VG ----
+#------------------------------------------------------------------------------|
+# two things: 1. pass through filepointerts to VG rating files (these files
+# are created manually based on site selection) 2. add a new generator for all 
+# the VG gens
+# assumes generator.data has already been made
+# assumes gen.fuel is already made
+
+# read in profiles to read out again (inefficient but at least treated the 
+# same as all other property files...)
+gen.da.vg <- fread("inputs/vg_gens_DA.csv")
+gen.rt.vg <- fread("inputs/vg_gens_RT.csv")
+
+# get vg max cap and add to total generator.table
+vg.gens <- fread("inputs/vg_gens_maxMW.csv", colClasses = "character")
+
+# add node
+vg.gens[,Node := tstrsplit(Generator, "_")[[1]]]
+vg.gens[, `Min Stable Level` := "0"]
+
+generator.data <- merge(generator.data,
+                        vg.gens,
+                        by = c("Generator", "Max Capacity", "Node",
+                               "Min Stable Level"),
+                        all = TRUE)
+      
+# add units since don't have this in mpc file
+generator.data[, Units := "1"]
+
+# add fuel types to these gens
+vg.gen.fuel <- vg.gens[,.(Generator)]
+
+vg.gen.fuel[grepl("_pv", Generator), Fuel := "PV"]
+vg.gen.fuel[grepl("_rtpv", Generator), Fuel := "RTPV"]
+vg.gen.fuel[grepl("_wind", Generator), Fuel := "Wind"]
+
+gen.fuel <- rbind(gen.fuel, vg.gen.fuel)
+
+# add these to all.tabs to be written out at the end
+all.tabs <- c(all.tabs, "gen.da.vg", "gen.rt.vg")
+ 
+#------------------------------------------------------------------------------|
+# attach hydro ----
+#------------------------------------------------------------------------------|
+# just like vg profiles, just read in to write out (to keep in same format as
+# everything else and also in case we need to do something with it eventually)
+
+gen.hydro <- fread("inputs/hydro_profiles.csv")
+
+# add to all.tabs
+all.tabs <- c(all.tabs, "gen.hydro")
+
+#------------------------------------------------------------------------------|
+# ramps ----
+#------------------------------------------------------------------------------|
+
+gen.ramps <- struct.list$gen
+
+# get generator col, ramp (choose ramp_30 [they are all the same], given in MW/min)
+gen.ramps[,id := 1:.N, by = bus]
+gen.ramps <- gen.ramps[, .(Generator = paste0(bus, "_", id), 
+                  `Max Ramp Up` = ramp_30,
+                  `Max Ramp Down` = ramp_30)]
+
+# add to all.tabs to be written out
+all.tabs <- c(all.tabs, "gen.ramps")
+
+#------------------------------------------------------------------------------|
+# min up/down ----
+#------------------------------------------------------------------------------|
+# min up/down comes from a UW table. times are in hours.
+# requires that gen.unit.type has been read in
+
+gen.minupdown <- fread("inputs/from_updated_UW_tables/Table-10_edits.txt")
+
+gen.minupdown <- merge(gen.unit.type[,.(Generator = paste0(Bus, "_", ID), Unit)],
+                   gen.minupdown[,.(Unit, 
+                                `Min Down Time` = MinDown, 
+                                `Min Up Time` = MinUp)],
+                   all.x = TRUE, by='Unit')
+
+# leave only the relevant columns (Generator, Min Up Time, Min Down Time)
+gen.minupdown[,Unit := NULL]
+
+# add to all.tabs to be written out
+all.tabs <- c(all.tabs, "gen.minupdown")
+
+#------------------------------------------------------------------------------|
+# DC Line ----
+#------------------------------------------------------------------------------|
+
+dc.line = data.table(`Node From`=113, `Node To`=316, Resistance=0, Reactance=0, `Max Flow`=100, rateA=100, rateB=100, rateC=100, Units=NA, Line='113_316_1', `Min Flow`=-100)
+line.data = rbind(line.data, dc.line, fill=TRUE) 
+
+#------------------------------------------------------------------------------|
+# simulation objects passthrough ----
+#------------------------------------------------------------------------------|
+
+file.copy(list.files("inputs/simulation_objects", full.names = TRUE), 
+          output.dir,
+          overwrite = TRUE)
