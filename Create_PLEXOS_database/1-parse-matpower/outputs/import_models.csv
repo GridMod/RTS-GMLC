@@ -1,18 +1,18 @@
-names,Year DA,Year RT,Q1 Week1 DA,Q1 Week1 RT,Q2 Week1 DA,Q2 Week1 RT,Q3 Week1 DA,Q3 Week1 RT,Q4 Week1 DA,Q4 Week1 RT,Q1 DA,Q2 DA,Q3 DA,Q4 DA
-category,,,,,,,,,,,,,,
-/START ATTRIBUTES,,,,,,,,,,,,,,
-Random Number Seed,10,10,10,10,10,10,10,10,10,10,10,10,10,10
-/START MEMBERSHIPS,,,,,,,,,,,,,,
-Horizon,Year DA,Year RT,Q1 Week1 DA,Q1 Week1 RT,Q2 Week1 DA,Q2 Week1 RT,Q3 Week1 DA,Q3 Week1 RT,Q4 Week1 DA,Q4 Week1 RT,Q1 DA,Q2 DA,Q3 DA,Q4 DA
-Transmission,Tx - All lines,Tx - All lines,Tx - All lines,Tx - All lines,Tx - All lines,Tx - All lines,Tx - All lines,Tx - All lines,Tx - All lines,Tx - All lines,Tx - All lines,Tx - All lines,Tx - All lines,Tx - All lines
-PASA,,,,,,,,,,,,,,
-ST Schedule,ST Nodal,ST Nodal,ST Nodal,ST Nodal,ST Nodal,ST Nodal,ST Nodal,ST Nodal,ST Nodal,ST Nodal,ST Nodal,ST Nodal,ST Nodal,ST Nodal
-MT Schedule,,,,,,,,,,,,,,
-Production,Production MIP,Production MIP,Production MIP,Production MIP,Production MIP,Production MIP,Production MIP,Production MIP,Production MIP,Production MIP,Production MIP,Production MIP,Production MIP,Production MIP
-Performance,Xpress-MP 0.5 MIP,Xpress-MP 0.5 MIP,Xpress-MP 0.5 MIP,Xpress-MP 0.5 MIP,Xpress-MP 0.5 MIP,Xpress-MP 0.5 MIP,Xpress-MP 0.5 MIP,Xpress-MP 0.5 MIP,Xpress-MP 0.5 MIP,Xpress-MP 0.5 MIP,Xpress-MP 0.5 MIP,Xpress-MP 0.5 MIP,Xpress-MP 0.5 MIP,Xpress-MP 0.5 MIP
-Report,Default Report,Default Report,Default Report,Default Report,Default Report,Default Report,Default Report,Default Report,Default Report,Default Report,Default Report,Default Report,Default Report,Default Report
-Diagnostic,,,,,,,,,,,,,,
-/START SCENARIOS,,,,,,,,,,,,,,
-,Load: DA,Load: RT,Load: DA,Load: RT,Load: DA,Load: RT,Load: DA,Load: RT,Load: DA,Load: RT,Load: DA,Load: DA,Load: DA,Load: DA
-,RE: DA,RE: RT,RE: DA,RE: RT,RE: DA,RE: RT,RE: DA,RE: RT,RE: DA,RE: RT,RE: DA,RE: DA,RE: DA,RE: DA
-,Gen Outages,Gen Outages,Gen Outages,Gen Outages,Gen Outages,Gen Outages,Gen Outages,Gen Outages,Gen Outages,Gen Outages,Gen Outages,Gen Outages,Gen Outages,Gen Outages
+names,Year DA,Q1 Week1 DA,Q2 Week1 DA,Q3 Week1 DA,Q4 Week1 DA,Q1 DA,Q2 DA,Q3 DA,Q4 DA
+category,,,,,,,,,
+/START ATTRIBUTES,,,,,,,,,
+Random Number Seed,10,10,10,10,10,10,10,10,10
+/START MEMBERSHIPS,,,,,,,,,
+Horizon,Year DA,Q1 Week1 DA,Q2 Week1 DA,Q3 Week1 DA,Q4 Week1 DA,Q1 DA,Q2 DA,Q3 DA,Q4 DA
+Transmission,Tx - All lines,Tx - All lines,Tx - All lines,Tx - All lines,Tx - All lines,Tx - All lines,Tx - All lines,Tx - All lines,Tx - All lines
+PASA,,,,,,,,,
+ST Schedule,ST Nodal,ST Nodal,ST Nodal,ST Nodal,ST Nodal,ST Nodal,ST Nodal,ST Nodal,ST Nodal
+MT Schedule,,,,,,,,,
+Production,Production MIP,Production MIP,Production MIP,Production MIP,Production MIP,Production MIP,Production MIP,Production MIP,Production MIP
+Performance,Xpress-MP 0.5 MIP,Xpress-MP 0.5 MIP,Xpress-MP 0.5 MIP,Xpress-MP 0.5 MIP,Xpress-MP 0.5 MIP,Xpress-MP 0.5 MIP,Xpress-MP 0.5 MIP,Xpress-MP 0.5 MIP,Xpress-MP 0.5 MIP
+Report,Default Report,Default Report,Default Report,Default Report,Default Report,Default Report,Default Report,Default Report,Default Report
+Diagnostic,,,,,,,,,
+/START SCENARIOS,,,,,,,,,
+,Load: DA,Load: DA,Load: DA,Load: DA,Load: DA,Load: DA,Load: DA,Load: DA,Load: DA
+,RE: DA,RE: DA,RE: DA,RE: DA,RE: DA,RE: DA,RE: DA,RE: DA,RE: DA
+,Gen Outages,Gen Outages,Gen Outages,Gen Outages,Gen Outages,Gen Outages,Gen Outages,Gen Outages,Gen Outages

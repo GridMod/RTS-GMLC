@@ -46,17 +46,17 @@ object.property.list <- list(
     list("region.load.da.csv",
          list(datafile.col = "Load",
               scenario.name = "Load: DA")),
-    list("region.load.rt.csv",
-         list(datafile.col = "Load",
-              scenario.name = "Load: RT")),    
+    # list("region.load.rt.csv",
+    #      list(datafile.col = "Load",
+    #           scenario.name = "Load: RT")),    
     
     # VG and hydro generator profiles
     list("gen.da.vg.csv",
          list(datafile.col = "Rating",
               scenario.name = "RE: DA")),    
-    list("gen.rt.vg.csv",
-         list(datafile.col = "Rating",
-              scenario.name = "RE: RT")),    
+    # list("gen.rt.vg.csv",
+    #      list(datafile.col = "Rating",
+    #           scenario.name = "RE: RT")),    
     list("gen.hydro.csv",
          list(datafile.col = "Fixed Load")),
     

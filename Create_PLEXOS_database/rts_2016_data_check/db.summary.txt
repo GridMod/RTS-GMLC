@@ -11,7 +11,7 @@ Number of objects of each type:
     Generator       156
       Horizon        14
          Line       121
-        Model        14
+        Model         9
          Node        73
   Performance         1
    Production         3
