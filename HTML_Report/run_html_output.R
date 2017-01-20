@@ -2,12 +2,12 @@
 #------------------------------------------------------------------------------|
 # USER INPUT: set input parameters ----
 #------------------------------------------------------------------------------|
-magma.dir        = 'MAGMA'
+magma.dir        = 'C:/Users/moconnel/Documents/RTS-GMLC/HTML_Report/MAGMA'
 input.csv        = 'input_data_rts.csv'
 db.loc           = 'solution'
 output.dir       = 'reports'
 fig.path.name    = 'plots/'
-output.name      = 'HTML_output_RTS_year_DA.html'
+output.name      = 'HTML_output_RTS_year_DA2.html'
 db.day.ahead.loc = NULL
 query.data       = TRUE
 save.data        = FALSE
@@ -16,6 +16,7 @@ save.data.name   = '<Name of file to save data. Will save in output.dir>'
 #------------------------------------------------------------------------------|
 # Run code to create HTML
 #------------------------------------------------------------------------------|
+setwd(dirname(sys.frame(1)$ofile))
 setwd(magma.dir)
 library(data.table)
 
@@ -33,7 +34,7 @@ if (query.data){
 } else{
     load(load.data)
 }
-render(input=file.path('HTML_output.Rmd'), c("html_document"),    
+render(input=file.path('HTML_output.Rmd'), c("html_document"),
        output_file=output.name, output_dir = file.path(output.dir,''))
 
 if (save.data){
