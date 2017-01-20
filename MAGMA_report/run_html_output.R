@@ -1,0 +1,41 @@
+
+#------------------------------------------------------------------------------|
+# USER INPUT: set input parameters ----
+#------------------------------------------------------------------------------|
+magma.dir        = 'C:/Users/moconnel/documents/MAGMA'
+input.csv        = '//plexossql/data/moconnel/MAGMA/input_data_rts.csv'
+db.loc           = '//plexossql/data/moconnel/magma/solution/rts'
+output.dir       = '//plexossql/data/moconnel/MAGMA/reports'
+fig.path.name    = '//plexossql/data/moconnel/MAGMA/plots/'
+output.name      = 'HTML_output_RTS_year_DA.html'
+db.day.ahead.loc = NULL
+query.data       = TRUE
+save.data        = FALSE
+load.data        = '<Name of file to load if query.data=FALSE >'
+save.data.name   = '<Name of file to save data. Will save in output.dir>'
+#------------------------------------------------------------------------------|
+# Run code to create HTML
+#------------------------------------------------------------------------------|
+setwd(magma.dir)
+library(data.table)
+
+# Load inputs
+inputs = read.csv(file.path(input.csv))
+inputs[inputs==""]=NA
+inputs = data.table(inputs)
+
+# Sourcing the setup file and required functions
+source(file.path('query_functions.R'))
+source(file.path('plot_functions.R'))
+source(file.path('setup_plexosAnalysis.R'))
+if (query.data){
+    source(file.path('setup_dataQueries.R'))
+} else{
+    load(load.data)
+}
+render(input=file.path('HTML_output.Rmd'), c("html_document"),    
+       output_file=output.name, output_dir = file.path(output.dir,''))
+
+if (save.data){
+	save(list=ls(), file=file.path(output.dir,save.data.name))
+}
