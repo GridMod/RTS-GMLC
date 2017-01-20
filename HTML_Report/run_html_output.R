@@ -2,12 +2,12 @@
 #------------------------------------------------------------------------------|
 # USER INPUT: set input parameters ----
 #------------------------------------------------------------------------------|
-magma.dir        = 'MAGMA'
-input.csv        = 'input_data_rts.csv'
-db.loc           = 'solution'
-output.dir       = 'reports'
-fig.path.name    = 'plots/'
-output.name      = 'HTML_output_RTS_year_DA.html'
+magma.dir        = paste0(dirname(sys.frame(1)$ofile),'/MAGMA')
+input.csv        = '../input_data_rts.csv'
+db.loc           = '../solution'
+output.dir       = '../reports'
+fig.path.name    = '../plots/'
+output.name      = 'HTML_output_RTS_year_DA2.html'
 db.day.ahead.loc = NULL
 query.data       = TRUE
 save.data        = FALSE

@@ -1,5 +1,5 @@
 Using.Gen.Type.Mapping.CSV,reassign.zones,Gen.Region.Zone.Mapping.Filename,CSV.Gen.Type.File.Location,PLEXOS.Gen.Category,PLEXOS.Desired.Type,Gen.Type,Plot.Color,Gen.Order,Renewable.Types.for.Curtailment,DA.RT.Plot.Types,Key.Periods,Start.Time,End.Time,Sections.to.Run,Ignore.Zones,Ignore.Regions,Ignore.Regions,Interfaces.for.Flows
-FALSE,FALSE,gen_name_mapping_WECC_RTS.csv,,Curtailment,Curtailment,Curtailment,red,Curtailment,PV,,Winter Week,1/1/2024,1/7/2024,1,,,,
+FALSE,FALSE,../gen_name_mapping_WECC_RTS.csv,,Curtailment,Curtailment,Curtailment,red,Curtailment,PV,,Winter Week,1/1/2024,1/7/2024,1,,,,
 ,,,,PV,PV,PV,goldenrod1,PV,RTPV,,Spring Week,4/1/2024,4/7/2024,2,,,,
 ,,,,RTPV,RTPV,RTPV,goldenrod,RTPV,Wind,,Summer Week,7/1/2024,7/7/2024,3,,,,
 ,,,,Wind,Wind,Wind,steelblue3,Wind,,,Fall Week,10/1/2024,10/7/2024,4,,,,
