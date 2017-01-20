@@ -1,0 +1,44 @@
+```{r Gen-compare-zone-{{zone.name}}-{{type.name}}, results='asis', include=TRUE}
+z.name = '{{zone.name}}' # Assign zone name
+t.name = '{{type.name}}' # Assign generator type name
+cat("### ", t.name, ': ', z.name) # Print period and zone name above the plot
+text.plot=16 # Plot text size.
+figure.width = 15 
+figure.height = p.height
+```
+
+```{r Gen-compare-plot-zone-{{zone.name}}-{{type.name}}, fig.width=figure.width, fig.height=figure.height, include=TRUE}
+# Check to make sure this zone shouldn't be ignored.
+if ( !z.name %in% ignore.zones ) {
+  
+  # Select data for specific type and region
+  plot.data = compare.plot.data[Type==t.name & Zone==z.name, 
+                                .(GWh = sum(value)/1000), 
+                                by=.(scenario, time, Zone, Type, Period)]
+  
+  # this is just for scaling the y-axis 
+  blank_data = plot.data[, .(ylim=GWh*1.06), by=.(scenario,time,Period)]
+  
+  # Check that there is actually generation data to plot, otherwise don't make a plot.
+  if ( length(plot.data$GWh)>0 & sum(plot.data$GWh)>0 ) {
+  
+  # Plot data
+  ggplot(plot.data,aes(time,GWh, color=scenario))+
+    geom_line(size=1.2)+      
+    geom_blank(data=blank_data, aes(x=time, y=ylim))+
+    expand_limits(y=0)+
+    scale_color_brewer(palette="Set1")+
+    ylab("Generation (GW)")+xlab(NULL)+
+    facet_wrap(~Period,ncol=2, scales="free_x")+
+    theme(legend.key = element_rect(color = "grey70", size = 0.8), 
+          legend.key.size = grid::unit(1.5, "lines"),  
+          legend.text = element_text(size=text.plot),  text=element_text(size=text.plot), 
+          strip.text=element_text(face=1, size=rel(0.8)), 
+          axis.text.x=element_text(size=text.plot/1.2), 
+          axis.title=element_text(size=text.plot, face=2),
+          panel.grid.major = element_line(colour = "grey85"),
+          panel.grid.minor = element_line(colour = "grey93"),
+          panel.spacing = unit(0.45, "lines"))
+  }
+  
+}

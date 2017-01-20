@@ -1,0 +1,5533 @@
+name,Type,Region,Zone
+150MileHouse,Other,BCHA,WECC
+8MileCanyon,Wind,BPAT,WECC
+Abel1,Gas CT,SRP,WECC
+Abel2,Gas CT,SRP,WECC
+Abel3,Gas CT,SRP,WECC
+Abel4,Gas CT,SRP,WECC
+Abel5,Gas CT,SRP,WECC
+Abel6,Gas CT,SRP,WECC
+Abel7,Gas CT,SRP,WECC
+Abel8,Gas CT,SRP,WECC
+Abel9,Gas CT,SRP,WECC
+Aberdeen,Biomass,BPAT,WECC
+Aberfeldie2-1,Hydro,BCHA,WECC
+Aberfeldie2-2,Hydro,BCHA,WECC
+Aberfeldie2-3,Hydro,BCHA,WECC
+Abiquiu1,Hydro,PNM,WECC
+Abiquiu2,Hydro,PNM,WECC
+Abiquiu3,Hydro,PNM,WECC
+AccionaAB,Wind,AESO,WECC
+ACE-Cogen,CHP-QF,CISC,WECC
+Added_PV_Storage_6hr,Storage,CISC,WECC
+AdelantoSolar,PV,CISC,WECC
+AESO_Reserve,Other,AESO,WECC
+AESO-P+G,Gas CT,AESO,WECC
+AFA_Solar_Farm,PV,WACM,WECC
+AftonCC-Total,Gas CC,PNM,WECC
+AgnewsCC-Total,CHP-QF,CIPV,WECC
+Agua_Fria_PV,PV,SRP,WECC
+Agua_Mansa,Gas CT,CISC,WECC
+AguaCalienteSolar1,PV,AZPS,WECC
+AguaCalienteSolar2,PV,AZPS,WECC
+AguaCalienteSolar3,PV,AZPS,WECC
+AguaFria1,Other,SRP,WECC
+AguaFria2,Other,SRP,WECC
+AguaFria3,Other,SRP,WECC
+AguaFria4,Gas CT,SRP,WECC
+AguaFria5,Gas CT,SRP,WECC
+AguaFria6,Gas CT,SRP,WECC
+AGWishon1,Hydro,CIPV,WECC
+AGWishon2,Hydro,CIPV,WECC
+AGWishon3,Hydro,CIPV,WECC
+AGWishon4,Hydro,CIPV,WECC
+Aidlin_Geo1,Geothermal,CIPV,WECC
+Aidlin_Geo2,Geothermal,CIPV,WECC
+AirLiquide,Gas CT,AESO,WECC
+Airport5-1,Gas CT,PSCO,WECC
+AirportIndustrial1,Other,PSCO,WECC
+AirportIndustrial2,Other,PSCO,WECC
+AirportIndustrial3,Other,PSCO,WECC
+AirportIndustrial4,Other,PSCO,WECC
+Akolkolex,Hydro,BCHA,WECC
+Alameda1,Gas CT,CIPB,WECC
+Alameda2,Gas CT,CIPB,WECC
+Alamo_1,Hydro,CISC,WECC
+AlamogordoPV,PV,PNM,WECC
+AlbeniFalls1,Hydro,BPAT,WECC
+AlbeniFalls2,Hydro,BPAT,WECC
+AlbeniFalls3,Hydro,BPAT,WECC
+Albuquerque_PV,PV,PNM,WECC
+Alcova1,Hydro,WACM,WECC
+Alcova2,Hydro,WACM,WECC
+AldenBailey,Gas CT,BPAT,WECC
+Alder11,Hydro,TPWR,WECC
+Alder12,Hydro,TPWR,WECC
+AlgonquinCC-Total,CHP-QF,CIPV,WECC
+Almond1,Gas CT,TIDC,WECC
+Almond2-2,Gas CT,TIDC,WECC
+Almond2-3,Gas CT,TIDC,WECC
+Almond2-4,Gas CT,TIDC,WECC
+Alouette,Hydro,BCHA,WECC
+ALPAC1,Biomass,AESO,WECC
+ALPAC2,Biomass,AESO,WECC
+ALPAC3,Biomass,AESO,WECC
+ALPAC4,Biomass,AESO,WECC
+Alpaugh50,PV,CIPV,WECC
+AlpaughNorth,PV,CIPV,WECC
+AlpineSolar,PV,CISC,WECC
+Alta_PH1,Hydro,CIPV,WECC
+Alta_PH2,Hydro,CIPV,WECC
+Alta_Vista,CSP,CISC,WECC
+AltaGasHarm_2,Gas CT,AESO,WECC
+AltaMesaPhaseIVGEN1,Wind,CISC,WECC
+Altamont_Bio2,Biomass,CIPB,WECC
+Altamont_Bio3,Biomass,CIPB,WECC
+Altamont_Bio4,Biomass,CIPB,WECC
+Altamont_Midway,Wind,CIPV,WECC
+Altamont1,Biomass,CIPB,WECC
+AltamontPwrAgg,Wind,CIPV,WECC
+AltamontPwrPart,Wind,CIPB,WECC
+AltaW1,Wind,CISC,WECC
+AltaW2,Wind,CISC,WECC
+AltaW3,Wind,CISC,WECC
+AltaW4,Wind,CISC,WECC
+AltaW5,Wind,CISC,WECC
+AltaW6,Wind,CISC,WECC
+AltaW7_PinyonP1,Wind,CISC,WECC
+AltaW8,Wind,CISC,WECC
+AltaW9_PinyonP2,Wind,CISC,WECC
+AmedeeWineagle1,Geothermal,CIPV,WECC
+AmedeeWineagle2,Geothermal,CIPV,WECC
+Ameresco1,Biomass,CIPV,WECC
+AmericanCanyon1,Biomass,CIPV,WECC
+AmericanCanyon2,Biomass,CIPV,WECC
+AmericanFalls1,Hydro,IPFE,WECC
+AmericanFalls2,Hydro,IPFE,WECC
+AmericanFalls3,Hydro,IPFE,WECC
+AmesHydro,Hydro,PSCO,WECC
+AmonixSolarPower,PV,TEPC,WECC
+AmonixSwan,PV,TEPC,WECC
+Amp_Chow_Bio,Biomass,CIPV,WECC
+Anaheim_GT,Gas CT,CISC,WECC
+Anderson,Biomass,CIPV,WECC
+AndersonRanch1,Hydro,IPTV,WECC
+AndersonRanch2,Hydro,IPTV,WECC
+Angels,Hydro,CIPV,WECC
+AnheuserBusch,PV,CIPV,WECC
+AntelopeValleySolar1,PV,CISC,WECC
+AntelopeValleySolar2,PV,CISC,WECC
+ApacheCC-Total,Gas CC,WALC,WECC
+ApacheGT2,Gas CT,WALC,WECC
+ApacheGT3,Gas CT,WALC,WECC
+ApacheGT4,Gas CT,WALC,WECC
+ApacheST2,Coal,WALC,WECC
+ApacheST3,Coal,WALC,WECC
+ApexCC-Total,Gas CC,NEVP,WECC
+APS_PVF_14010,PV,AZPS,WECC
+APS_PVT_14209,PV,AZPS,WECC
+AragonneWind,Wind,PNM,WECC
+ArapahoeCC-Total,Gas CC,PSCO,WECC
+ArbWind,Wind,CISC,WECC
+ArcadianRenewbl,Wind,CIPV,WECC
+ARD_G1,Wind,AESO,WECC
+ARD_G2,Wind,AESO,WECC
+ArenaDrop,Hydro,IPTV,WECC
+Argus_Cogen8,Coal,CISC,WECC
+Argus_Cogen9,Coal,CISC,WECC
+ArizonaFalls,Hydro,SRP,WECC
+ArlingtonValleyPV1,PV,SRP,WECC
+ArlingtonValleyPV2,PV,SRP,WECC
+ArlingtonWind,Wind,BPAT,WECC
+ArlngtnVallyCC-Total,Gas CC,SRP,WECC
+Arrow_Lake1,Hydro,BCHA,WECC
+Arrow_Lake2,Hydro,BCHA,WECC
+Arvada1,Gas CT,WACM,WECC
+Arvada2,Gas CT,WACM,WECC
+Arvada3,Gas CT,WACM,WECC
+Ash_River_1,Hydro,BCHA,WECC
+Ashlu_Creek_1,Hydro,BCHA,WECC
+Ashlu_Creek_2,Hydro,BCHA,WECC
+Ashlu_Creek_3,Hydro,BCHA,WECC
+Astroenergy,PV,TEPC,WECC
+AtwellIsland,PV,CIPV,WECC
+Aurora,Geothermal,SPPC,WECC
+Avalon,PV,TEPC,WECC
+AvenalPark,PV,CIPV,WECC
+AVSolarRanchOneAVSR,PV,CISC,WECC
+Azusa,Hydro,CISC,WECC
+Baca_Renewable,Wind,PSCO,WECC
+Badger_1,PV,AZPS,WECC
+Badger_Creek,CHP-QF,CIPV,WECC
+BajaCA2CC-Total,Gas CC,CFE,WECC
+BajaCA2TG1-1,Gas CT,CFE,WECC
+BajaCA2TG1-2,Gas CT,CFE,WECC
+BajaCA2TG1-3,Gas CT,CFE,WECC
+BajaCA3CC-Total,Gas CC,CFE,WECC
+BajaCA4CC-Total,Gas CC,CFE,WECC
+Baker_Station,Hydro,CIPV,WECC
+Balch1-1,Hydro,CIPV,WECC
+Balch2-2,Hydro,CIPV,WECC
+Balch2-3,Hydro,CIPV,WECC
+BalzacCC-Total,Gas CC,AESO,WECC
+BangorSubmarineBase2,Other,BPAT,WECC
+BarberCreek1,Gas CT,WACM,WECC
+BarberCreek2,Gas CT,WACM,WECC
+BarberCreek3,Gas CT,WACM,WECC
+BarberDamGEN1,Hydro,IPTV,WECC
+Barr_Creek_1,Hydro,BCHA,WECC
+Barr_Creek_2,Hydro,BCHA,WECC
+BarrePeaker,Gas CT,CISC,WECC
+Barrier,Hydro,AESO,WECC
+BasinCreek1,Other,NWMT,WECC
+BasinCreek2,Other,NWMT,WECC
+BasinCreek3,Other,NWMT,WECC
+BasinCreek4,Other,NWMT,WECC
+BasinCreek5,Other,NWMT,WECC
+BasinCreek6,Other,NWMT,WECC
+BasinCreek7,Other,NWMT,WECC
+BasinCreek8,Other,NWMT,WECC
+BasinCreek9,Other,NWMT,WECC
+Battle_River_4,Coal,AESO,WECC
+Battle_River_5,Coal,AESO,WECC
+Bay_Envirnmntal,Biomass,CIPB,WECC
+Bear_Canyon1,Geothermal,CIPV,WECC
+Bear_Canyon2,Geothermal,CIPV,WECC
+Bear_Creek,Hydro,CIPV,WECC
+BearCreekCC-Total,Gas CC,AESO,WECC
+Beardsley_1,Hydro,CIPV,WECC
+BearMountain_BC,Wind,BCHA,WECC
+BearMountain_CA,CHP-QF,CIPV,WECC
+Bearspaw_1,Hydro,AESO,WECC
+Beaver8,Gas CT,PGE,WECC
+BeaverCC-Total,Gas CC,PGE,WECC
+Belden_1,Hydro,CIPV,WECC
+BellevueSolarINV1,PV,PGE,WECC
+Belly_River,Hydro,AESO,WECC
+Bend1,Hydro,PACW,WECC
+Bend2,Hydro,PACW,WECC
+Bend3,Hydro,PACW,WECC
+BenFrenchGT1,Gas CT,WACM,WECC
+BenFrenchGT2,Gas CT,WACM,WECC
+BenFrenchGT3,Gas CT,WACM,WECC
+BenFrenchGT4,Gas CT,WACM,WECC
+BennettCreek,Wind,IPTV,WECC
+BennettMountain,Gas CT,IPTV,WECC
+BeowawePower1,Geothermal,SPPC,WECC
+BeowawePower2,Geothermal,SPPC,WECC
+BerryPlaceritaCogen1,CHP-QF,CISC,WECC
+BerryPlaceritaCogen2,CHP-QF,CISC,WECC
+BerryTanneHills18-1,CHP-QF,CIPV,WECC
+BerryTanneHills18-2,Gas CT,CIPV,WECC
+BerryUniversityCogen,Gas CT,CIPV,WECC
+Betasso_Hydro,Hydro,PSCO,WECC
+BidwellDitchGEN1,Hydro,CIPV,WECC
+Big_Cliff_1,Hydro,BPAT,WECC
+BigCreek1-1,Hydro,CISC,WECC
+BigCreek1-2,Hydro,CISC,WECC
+BigCreek1-3,Hydro,CISC,WECC
+BigCreek1-4,Hydro,CISC,WECC
+BigCreek2-3,Hydro,CISC,WECC
+BigCreek2-4,Hydro,CISC,WECC
+BigCreek2-5,Hydro,CISC,WECC
+BigCreek2-6,Hydro,CISC,WECC
+BigCreek2A-1,Hydro,CISC,WECC
+BigCreek2A-2,Hydro,CISC,WECC
+BigCreek3-1,Hydro,CISC,WECC
+BigCreek3-2,Hydro,CISC,WECC
+BigCreek3-3,Hydro,CISC,WECC
+BigCreek3-4,Hydro,CISC,WECC
+BigCreek3-5,Hydro,CISC,WECC
+BigCreek4-1,Hydro,CISC,WECC
+BigCreek4-2,Hydro,CISC,WECC
+BigCreek8-1,Hydro,CISC,WECC
+BigCreek8-2,Hydro,CISC,WECC
+BigCreekWW,Hydro,CIPV,WECC
+Bighorn_1,Hydro,AESO,WECC
+Bighorn_2,Hydro,AESO,WECC
+BigHorn1,Wind,BPAT,WECC
+BigHorn2,Wind,BPAT,WECC
+BiglowCanyon1,Wind,BPAT,WECC
+BiglowCanyon2,Wind,BPAT,WECC
+BiglowCanyon3,Wind,BPAT,WECC
+BigPine,Hydro,CISC,WECC
+BigSilver1,Hydro,BCHA,WECC
+BigSilver2,Hydro,BCHA,WECC
+BigSilver3,Hydro,BCHA,WECC
+BigSilver4,Hydro,BCHA,WECC
+BigSky1,Biomass,IPMV,WECC
+BigSky2,Biomass,IPMV,WECC
+BigThompson,Hydro,WACM,WECC
+BigValley,Biomass,CIPV,WECC
+BiomassOneGE1,Biomass,PACW,WECC
+BiomassOneGE2,Biomass,PACW,WECC
+BirchCreek1,Hydro,IPFE,WECC
+BishopCreek2-1,Hydro,CISC,WECC
+BishopCreek2-2,Hydro,CISC,WECC
+BishopCreek2-3,Hydro,CISC,WECC
+BishopCreek3-1,Hydro,CISC,WECC
+BishopCreek3-2,Hydro,CISC,WECC
+BishopCreek3-3,Hydro,CISC,WECC
+BishopCreek4-1,Hydro,CISC,WECC
+BishopCreek4-2,Hydro,CISC,WECC
+BishopCreek4-3,Hydro,CISC,WECC
+BishopCreek4-4,Hydro,CISC,WECC
+BishopCreek4-5,Hydro,CISC,WECC
+BishopCreek5-1,Hydro,CISC,WECC
+BishopCreek5-2,Hydro,CISC,WECC
+BishopCreek6-1,Hydro,CISC,WECC
+Bison_1_PHS,Storage,CISC,WECC
+Black Rock 1-2,Geothermal,IID,WECC
+Black Rock 5-6,Geothermal,IID,WECC
+Black Rock 7-8,Geothermal,IID,WECC
+BlackButte,Hydro,CIPV,WECC
+BlackCanyon1,Hydro,IPTV,WECC
+BlackCanyon2,Hydro,IPTV,WECC
+BlackCanyon3MV,Hydro,IPTV,WECC
+BlackCreek,Hydro,PSEI,WECC
+BlackEagle1,Hydro,NWMT,WECC
+BlackEagle2,Hydro,NWMT,WECC
+BlackEagle3,Hydro,NWMT,WECC
+BlackMountain1,Gas CT,TEPC,WECC
+BlackMountain2,Gas CT,TEPC,WECC
+Blacksand182,Biomass,CISC,WECC
+Blacksand189,Biomass,CISC,WECC
+Blacksand190,Biomass,CISC,WECC
+BlackspringRidge,Wind,AESO,WECC
+BlindCanyon,Hydro,IPMV,WECC
+Bliss1,Hydro,IPMV,WECC
+Bliss2,Hydro,IPMV,WECC
+Bliss3,Hydro,IPMV,WECC
+BloomingtonPwr1,Other,PAUT,WECC
+BloomingtonPwr2,Other,PAUT,WECC
+BloomingtonPwr3,Other,PAUT,WECC
+BloomingtonPwr4,Other,PAUT,WECC
+BloomingtonPwr5,Other,PAUT,WECC
+BloomingtonPwr6,Other,PAUT,WECC
+BlueLake,Biomass,CIPV,WECC
+BlueMesa1,Hydro,WACM,WECC
+BlueMesa2,Hydro,WACM,WECC
+BlueSpruce1,Gas CT,PSCO,WECC
+BlueSpruce2,Gas CT,PSCO,WECC
+BluffviewCC-Total,Gas CC,WALC,WECC
+Blundell1,Geothermal,PAUT,WECC
+Blundell2,Geothermal,PAUT,WECC
+BlytheCC-Total,Gas CC,CISC,WECC
+BlytheSolar,PV,CISC,WECC
+BoiseRDiversion1A,Hydro,IPTV,WECC
+BoiseRDiversion2A,Hydro,IPTV,WECC
+BoiseRDiversion3A,Hydro,IPTV,WECC
+Bonanza,Coal,PAUT,WECC
+BoneCreek1,Hydro,BCHA,WECC
+BoneCreek2,Hydro,BCHA,WECC
+Bonneville1,Hydro,BPAT,WECC
+Bonneville10,Hydro,BPAT,WECC
+Bonneville11,Hydro,BPAT,WECC
+Bonneville12,Hydro,BPAT,WECC
+Bonneville13,Hydro,BPAT,WECC
+Bonneville14,Hydro,BPAT,WECC
+Bonneville15,Hydro,BPAT,WECC
+Bonneville16,Hydro,BPAT,WECC
+Bonneville17,Hydro,BPAT,WECC
+Bonneville18,Hydro,BPAT,WECC
+Bonneville2,Hydro,BPAT,WECC
+Bonneville3,Hydro,BPAT,WECC
+Bonneville4,Hydro,BPAT,WECC
+Bonneville5,Hydro,BPAT,WECC
+Bonneville6,Hydro,BPAT,WECC
+Bonneville7,Hydro,BPAT,WECC
+Bonneville8,Hydro,BPAT,WECC
+Bonneville9,Hydro,BPAT,WECC
+BonnevilleF1,Hydro,BPAT,WECC
+BonnevilleF2,Hydro,BPAT,WECC
+Bonnybrook,Gas CT,AESO,WECC
+Borden-QFAgg,Hydro,CIPV,WECC
+BorderPeaker,Gas CT,CISD,WECC
+Borel1,Hydro,CISC,WECC
+Borel2,Hydro,CISC,WECC
+Borel3,Hydro,CISC,WECC
+BostonBar1,Hydro,BCHA,WECC
+BostonBar2,Hydro,BCHA,WECC
+BottleRock,Geothermal,CIPV,WECC
+BoulderCanyon1,Hydro,PSCO,WECC
+BoulderCanyon2,Hydro,PSCO,WECC
+BoulderCreek1,Hydro,BCHA,WECC
+BoulderCreek2,Hydro,BCHA,WECC
+BoulderCreek3,Hydro,BCHA,WECC
+BoulderPark1,Other,AVA,WECC
+BoulderPark2,Other,AVA,WECC
+BoulderPark3,Other,AVA,WECC
+BoulderPark4,Other,AVA,WECC
+BoulderPark5,Other,AVA,WECC
+BoulderPark6,Other,AVA,WECC
+Boundary51,Hydro,SCL,WECC
+Boundary52,Hydro,SCL,WECC
+Boundary53,Hydro,SCL,WECC
+Boundary54,Hydro,SCL,WECC
+Boundary55,Hydro,SCL,WECC
+Boundary56,Hydro,SCL,WECC
+BountifulCity1A,Gas CT,PAUT,WECC
+BountifulCity8,Other,PAUT,WECC
+BowieCC1-Total,Gas CC,TEPC,WECC
+BowieCC2-Total,Gas CC,TEPC,WECC
+Bowman_GEN1,Hydro,CIPV,WECC
+BowMontCapital,Gas CT,AESO,WECC
+BoxCanyonAVA1,Hydro,AVA,WECC
+BoxCanyonAVA2,Hydro,AVA,WECC
+BoxCanyonAVA3,Hydro,AVA,WECC
+BoxCanyonAVA4,Hydro,AVA,WECC
+BoxCanyonBC,Hydro,BCHA,WECC
+BoxCanyonID,Hydro,IPMV,WECC
+BoxCanyonPACW1,Hydro,SPPC,WECC
+BoxCanyonPACW2,Hydro,SPPC,WECC
+Boysen1,Hydro,WACM,WECC
+Boysen2,Hydro,WACM,WECC
+BradleyLandfill,Biomass,LDWP,WECC
+BradyHotSprings1,Geothermal,SPPC,WECC
+BradyHotSprings2,Geothermal,SPPC,WECC
+BradyHotSprings3,Geothermal,SPPC,WECC
+BradyHotSpringsOEC,Geothermal,SPPC,WECC
+Brandywine1,Hydro,BCHA,WECC
+Brandywine2,Hydro,BCHA,WECC
+BrazeauHydro1,Hydro,AESO,WECC
+BrazeauHydro2,Hydro,AESO,WECC
+Brea2CC-Total,Gas CC,CISC,WECC
+Breeze1,Wind,CISC,WECC
+Breeze2,Wind,CISC,WECC
+Bremner1,Hydro,BCHA,WECC
+Bremner2,Hydro,BCHA,WECC
+BridgeRiver1,Hydro,BCHA,WECC
+BridgeRiver2,Hydro,BCHA,WECC
+BridgeRiver21,Hydro,BCHA,WECC
+BridgeRiver22,Hydro,BCHA,WECC
+BridgeRiver23,Hydro,BCHA,WECC
+BridgeRiver24,Hydro,BCHA,WECC
+BridgeRiver3,Hydro,BCHA,WECC
+BridgeRiver4,Hydro,BCHA,WECC
+BriggsCreek1,Hydro,IPMV,WECC
+Brilliant1,Hydro,BCHA,WECC
+Brilliant2,Hydro,BCHA,WECC
+Brilliant3,Hydro,BCHA,WECC
+Brilliant4,Hydro,BCHA,WECC
+BrilliantExp,Hydro,BCHA,WECC
+Broadwater,Hydro,NWMT,WECC
+Broadway3,Steam,CISC,WECC
+Brownlee1,Hydro,IPTV,WECC
+Brownlee2,Hydro,IPTV,WECC
+Brownlee3,Hydro,IPTV,WECC
+Brownlee4,Hydro,IPTV,WECC
+Brownlee5,Hydro,IPTV,WECC
+BrushCC1-Total,Gas CC,PSCO,WECC
+BrushCC2-Total,Gas CC,PSCO,WECC
+BrushCC3-Total,Gas CC,PSCO,WECC
+Buckeye,Geothermal,CIPB,WECC
+Bucks_Creek_H1,Hydro,CIPV,WECC
+Bucks_Creek_H2,Hydro,CIPV,WECC
+Buena_Vista,Wind,CIPB,WECC
+BuenaVistaBioRepwr,Biomass,CIPV,WECC
+BuenaVistaPump1-1,Other,CIPV,WECC
+BuenaVistaPump1-2,Other,CIPV,WECC
+BuenaVistaPump1-3,Other,CIPV,WECC
+BuenaVistaPump1-4,Other,CIPV,WECC
+BuenaVistaPump1-5,Other,CIPV,WECC
+BuenaVistaPump1-6,Other,CIPV,WECC
+BuenaVistaPump2-1,Other,CIPV,WECC
+BuenaVistaPump2-2,Other,CIPV,WECC
+BuenaVistaPump2-3,Other,CIPV,WECC
+BuenaVistaPump2-4,Other,CIPV,WECC
+Buffalo_Bill_1,Hydro,WACM,WECC
+Buffalo_Bill_2,Hydro,WACM,WECC
+Buffalo_Bill_3,Hydro,WACM,WECC
+BullCreekWind1,Wind,AESO,WECC
+Bullmoose1,Wind,BCHA,WECC
+Bullmoose2,Wind,BCHA,WECC
+Buntzen1-1,Hydro,BCHA,WECC
+Burley_Butte,Wind,IPMV,WECC
+Burlington,Biomass,PSEI,WECC
+Burlington_1,Other,WACM,WECC
+Burlington_2,Other,WACM,WECC
+Burney,Biomass,CIPV,WECC
+Burney_Creek,Hydro,CIPV,WECC
+Burney_Forest,Biomass,CIPV,WECC
+Burney_Mountain,Biomass,CIPV,WECC
+Burney_QF,Hydro,CIPV,WECC
+Burton_Creek,Hydro,BPAT,WECC
+Busch_Ranch,Wind,PSCO,WECC
+Butt_Valley_1,Hydro,CIPV,WECC
+Bypass_GEN1,Hydro,IPMV,WECC
+Bypass_GEN2,Hydro,IPMV,WECC
+Bypass_GEN3,Hydro,IPMV,WECC
+C_J_Strike_1,Hydro,IPTV,WECC
+C_LenzieCC1-Total,Gas CC,NEVP,WECC
+C_LenzieCC2-Total,Gas CC,NEVP,WECC
+C_P_Kelco1,Gas CT,CISD,WECC
+C_P_Kelco2,Gas CT,CISD,WECC
+C_P_Kelco3,Gas CT,CISD,WECC
+CA_Tower_SM1,CSP-TES,CISC,WECC
+CA_Tower_SM17,CSP-TES,CISC,WECC
+CA_Tower_SM25,CSP-TES,CISC,WECC
+CA_Tower_SM3,CSP-TES,CISC,WECC
+CA_Tower_SM13,CSP-TES,CISC,WECC
+CA_Tower_SM2,CSP-TES,CISC,WECC
+CabinCreekA,Storage,PSCO,WECC
+CabinCreekB,Storage,PSCO,WECC
+CabinetGorge1,Hydro,AVA,WECC
+CabinetGorge2,Hydro,AVA,WECC
+CabinetGorge3,Hydro,AVA,WECC
+CabinetGorge4,Hydro,AVA,WECC
+CacheCreekLandfill,Biomass,BCHA,WECC
+CaithDixiVally1,Geothermal,CISC,WECC
+CaithDixiVally2,Geothermal,CISC,WECC
+CaithDixiVally3,Geothermal,CISC,WECC
+Calabasas1,Biomass,CISC,WECC
+Calabasas2,Biomass,CISC,WECC
+Calabasas3,Biomass,CISC,WECC
+Caliente1CC-Total,Gas CC,EPE,WECC
+CalInstTech-CC-Total,Gas CC,CISC,WECC
+Calistoga1,Geothermal,CIPV,WECC
+Calistoga2,Geothermal,CIPV,WECC
+Calpine_Geo,Geothermal,CIPV,WECC
+CalpineCC-Total,Gas CC,AESO,WECC
+CalRenew_1_CR1,PV,CIPV,WECC
+Camanche_1,Hydro,CIPV,WECC
+Camanche_2,Hydro,CIPV,WECC
+Camanche_3,Hydro,CIPV,WECC
+Camino_H1,Hydro,BANC,WECC
+Camino_H2,Hydro,BANC,WECC
+Camp_Far_West_1,Hydro,CIPV,WECC
+Campbell_Hill,Wind,PAWY,WECC
+CampReedWind,Wind,IPTV,WECC
+Canby,Geothermal,PACW,WECC
+CANCARB1-1,Biomass,AESO,WECC
+Canoe_Creek,Hydro,BCHA,WECC
+Cantua_Solar,PV,CIPV,WECC
+Canyon_Ferry_1,Hydro,NWMT,WECC
+Canyon_Ferry_2,Hydro,NWMT,WECC
+Canyon_Ferry_3,Hydro,NWMT,WECC
+Canyon_Pwr1,Gas CT,CISC,WECC
+Canyon_Pwr2,Gas CT,CISC,WECC
+Canyon_Pwr3,Gas CT,CISC,WECC
+Canyon_Pwr4,Gas CT,CISC,WECC
+Canyon_Springs,Hydro,IPMV,WECC
+CapeScott1,Wind,BCHA,WECC
+CapeScott2,Wind,BCHA,WECC
+CapeScott3,Wind,BCHA,WECC
+CapeScott4,Wind,BCHA,WECC
+CapeScott5,Wind,BCHA,WECC
+CardinalCC-Total,CHP-QF,CIPB,WECC
+CargillB6Bio1,Biomass,IPMV,WECC
+CargillB6Bio2,Biomass,IPMV,WECC
+CargillDryCreekBio1,Biomass,IPMV,WECC
+CargillDryCreekBio2,Biomass,IPMV,WECC
+CargillDryCreekBio3,Biomass,IPMV,WECC
+Caribou_2_4,Hydro,CIPV,WECC
+Caribou_2_5,Hydro,CIPV,WECC
+Caribou1-1,Hydro,CIPV,WECC
+Caribou1-2,Hydro,CIPV,WECC
+Caribou1-3,Hydro,CIPV,WECC
+CarlsbadEC1-GT1,Gas CT,CISD,WECC
+CarlsbadEC1-GT2,Gas CT,CISD,WECC
+CarlsbadEC1-GT3,Gas CT,CISD,WECC
+CarlsbadEC1-GT4,Gas CT,CISD,WECC
+CarlsbadEC1-GT5,Gas CT,CISD,WECC
+CarlsbadEC1-GT6,Gas CT,CISD,WECC
+Carmen_Smith_1,Hydro,BPAT,WECC
+Carmen_Smith_2,Hydro,BPAT,WECC
+Carmen_Smith_3,Hydro,BPAT,WECC
+CarouselWindFarm,Wind,PSCO,WECC
+Carsela1_1,Gas CT,AESO,WECC
+Carsela2_2,Gas CT,AESO,WECC
+CarsonCC-Total,CHP-QF,CISC,WECC
+CarsonIce_GT,Gas CT,BANC,WECC
+CarsonIceCC-Total,CHP-QF,BANC,WECC
+CartyGenStaCC-Total,Gas CC,PGE,WECC
+Cascade_CO,Hydro,WACM,WECC
+Cascade_ID_1,Hydro,IPTV,WECC
+Cascade_ID_2,Hydro,IPTV,WECC
+Cascade1_1,Hydro,AESO,WECC
+Cascade2_2,Hydro,AESO,WECC
+Casper_Wind,Wind,PAWY,WECC
+CassiaGulch,Wind,IPMV,WECC
+CassiaWind,Wind,IPMV,WECC
+Castaic_1,Storage,LDWP,WECC
+Castaic_2,Storage,LDWP,WECC
+Castaic_3,Storage,LDWP,WECC
+Castaic_4,Storage,LDWP,WECC
+Castaic_5,Storage,LDWP,WECC
+Castaic_6,Storage,LDWP,WECC
+Castaic_7,Hydro,LDWP,WECC
+CastaicInflowHydro,Storage,LDWP,WECC
+Castle_Creek1,Hydro,BCHA,WECC
+Castle_Creek2,Hydro,BCHA,WECC
+CastlerockG1_1,Wind,AESO,WECC
+CASTRIV1_1,Wind,AESO,WECC
+CASTRIV2_2,Wind,AESO,WECC
+Castrvlle_QF,Coal,CIPV,WECC
+Catalina_Solar,PV,CISC,WECC
+CavalierCC-Total,Gas CC,AESO,WECC
+CA-Valley2,PV,CIPB,WECC
+CA-Valley2A,PV,CIPB,WECC
+CA-Valley2B,PV,CIPB,WECC
+CA-Valley2C,PV,CIPB,WECC
+CA-Valley2D,PV,CIPB,WECC
+CC-Creek,Hydro,BCHA,WECC
+CD4,Geothermal,CIPV,WECC
+Cedar_Creek1_1,Wind,PSCO,WECC
+Cedar_Creek2,Wind,PSCO,WECC
+Cedar_Draw_1,Hydro,IPMV,WECC
+Cedar_Falls_5,Hydro,SCL,WECC
+Cedar_Falls_6,Hydro,SCL,WECC
+Cedar_Mountain,Wind,AZPS,WECC
+Cedar_Point,Wind,PSCO,WECC
+Cedar_Road_LFG,Biomass,BCHA,WECC
+CedarCreek1-2,Wind,PSCO,WECC
+CE-Leathers,Geothermal,IID,WECC
+Center_Area_Agg,Gas CT,CISC,WECC
+CenterPeaker,Gas CT,CISC,WECC
+Centerville1,Hydro,CIPV,WECC
+Centerville2,Hydro,CIPV,WECC
+Centralia2,Coal,BPAT,WECC
+CentraliaCC-Total,Gas CC,BPAT,WECC
+Century1,Gas CT,CISC,WECC
+Century2,Gas CT,CISC,WECC
+Century3,Gas CT,CISC,WECC
+Century4,Gas CT,CISC,WECC
+CerroPrieto1-1,Geothermal,CFE,WECC
+CerroPrieto1-2,Geothermal,CFE,WECC
+CerroPrieto1-3,Geothermal,CFE,WECC
+CerroPrieto1-4,Geothermal,CFE,WECC
+CerroPrieto1-5,Geothermal,CFE,WECC
+CerroPrieto2-1,Geothermal,CFE,WECC
+CerroPrieto2-2,Geothermal,CFE,WECC
+CerroPrieto3-1,Geothermal,CFE,WECC
+CerroPrieto3-2,Geothermal,CFE,WECC
+CerroPrieto4-1,Geothermal,CFE,WECC
+CerroPrieto4-2,Geothermal,CFE,WECC
+CerroPrieto4-3,Geothermal,CFE,WECC
+CerroPrieto4-4,Geothermal,CFE,WECC
+CerroPrieto5-1,Geothermal,CFE,WECC
+CerroPrietoPV,PV,CFE,WECC
+Chalk_Cliff,CHP-QF,CIPV,WECC
+Chandler_1,Hydro,BPAT,WECC
+Chandler_2,Hydro,BPAT,WECC
+Cheakamus_1,Hydro,BCHA,WECC
+Cheakamus_2,Hydro,BCHA,WECC
+ChehalisCC-Total,Gas CC,BPAT,WECC
+Chelan_A_1,Hydro,CHPD,WECC
+Chelan_A_2,Hydro,CHPD,WECC
+CherokeeCC-Total,Gas CC,PSCO,WECC
+Chetwynd_Bio1,Biomass,BCHA,WECC
+CheyennePrairie2-1,Gas CT,WACM,WECC
+CheyennePrairie2-2,Gas CT,WACM,WECC
+CheyennePrairie3,Gas CT,WACM,WECC
+CheynnPrari1CC-Total,Gas CC,WACM,WECC
+Chicago_Park_2P,Hydro,CIPV,WECC
+Chickwat_1,Hydro,BCHA,WECC
+ChiefJoseph02,Hydro,BPAT,WECC
+ChiefJoseph03,Hydro,BPAT,WECC
+ChiefJoseph04,Hydro,BPAT,WECC
+ChiefJoseph05,Hydro,BPAT,WECC
+ChiefJoseph06,Hydro,BPAT,WECC
+ChiefJoseph07,Hydro,BPAT,WECC
+ChiefJoseph08,Hydro,BPAT,WECC
+ChiefJoseph09,Hydro,BPAT,WECC
+ChiefJoseph10,Hydro,BPAT,WECC
+ChiefJoseph11,Hydro,BPAT,WECC
+ChiefJoseph12,Hydro,BPAT,WECC
+ChiefJoseph13,Hydro,BPAT,WECC
+ChiefJoseph14,Hydro,BPAT,WECC
+ChiefJoseph15,Hydro,BPAT,WECC
+ChiefJoseph16,Hydro,BPAT,WECC
+ChiefJoseph17,Hydro,BPAT,WECC
+ChiefJoseph18,Hydro,BPAT,WECC
+ChiefJoseph19,Hydro,BPAT,WECC
+ChiefJoseph20,Hydro,BPAT,WECC
+ChiefJoseph21,Hydro,BPAT,WECC
+ChiefJoseph22,Hydro,BPAT,WECC
+ChiefJoseph23,Hydro,BPAT,WECC
+ChiefJoseph24,Hydro,BPAT,WECC
+ChiefJoseph25,Hydro,BPAT,WECC
+ChiefJoseph26,Hydro,BPAT,WECC
+ChiefJoseph27,Hydro,BPAT,WECC
+ChildrensHospital,Gas CT,CISD,WECC
+Chili_Bar_1,Hydro,CIPV,WECC
+China_Creek_1,Hydro,BCHA,WECC
+China_Creek_2,Hydro,BCHA,WECC
+ChinChute_Hydro,Hydro,AESO,WECC
+ChinChute_Wind,Wind,AESO,WECC
+Chino_Area_Agg,Biomass,CISC,WECC
+ChinoMinesCC-Total,Gas CC,PNM,WECC
+ChinoSolarValey,PV,AZPS,WECC
+ChiquitaCanyon1,Biomass,CISC,WECC
+ChiquitaCanyon2,Biomass,LDWP,WECC
+Cholla_1,Coal,AZPS,WECC
+Cholla_2,Coal,AZPS,WECC
+Cholla_3,Coal,AZPS,WECC
+Cholla_4,Coal,AZPS,WECC
+Chowchilla2_01,Steam,CIPV,WECC
+Chowchilla2_02,Steam,CIPV,WECC
+Chowchilla2_03,Steam,CIPV,WECC
+Chowchilla2_04,Steam,CIPV,WECC
+Chowchilla2_05,Steam,CIPV,WECC
+Chowchilla2_06,Steam,CIPV,WECC
+Chowchilla2_07,Steam,CIPV,WECC
+Chowchilla2_08,Steam,CIPV,WECC
+Chowchilla2_09,Steam,CIPV,WECC
+Chowchilla2_10,Steam,CIPV,WECC
+Chowchilla2_11,Steam,CIPV,WECC
+Chowchilla2_12,Steam,CIPV,WECC
+Chowchilla2_13,Steam,CIPV,WECC
+Chowchilla2_14,Steam,CIPV,WECC
+Chowchilla2_15,Steam,CIPV,WECC
+Chowchilla2_16,Steam,CIPV,WECC
+ChristmasValley2,PV,BPAT,WECC
+Chula_Vista,Gas CT,CISD,WECC
+CicloCmbMxclCC-Total,Gas CC,CISD,WECC
+Cimarron_Solar,PV,PNM,WECC
+Cipres1,Other,CFE,WECC
+CISC-OtherStorage01,Storage,CISC,WECC
+CISC-OtherStorage02,Storage,CISC,WECC
+CISC-OtherStorage03,Storage,CISC,WECC
+CISC-OtherStorage04,Storage,CISC,WECC
+CISC-OtherStorage05,Storage,CISC,WECC
+CISD-OtherStorage01,Storage,CISD,WECC
+CISD-OtherStorage02,Storage,CISD,WECC
+CISD-OtherStorage03,Storage,CISD,WECC
+CISD-OtherStorage04,Storage,CISD,WECC
+CISD-OtherStorage05,Storage,CISD,WECC
+CISD-OtherStorage06,Storage,CISD,WECC
+CISD-OtherStorage07,Storage,CISD,WECC
+CivicCenterCC-Total,CHP-QF,LDWP,WECC
+Clark_Canyon,Hydro,IPTV,WECC
+Clark11,Gas CT,NEVP,WECC
+Clark12,Gas CT,NEVP,WECC
+Clark13,Gas CT,NEVP,WECC
+Clark14,Gas CT,NEVP,WECC
+Clark15,Gas CT,NEVP,WECC
+Clark16,Gas CT,NEVP,WECC
+Clark17,Gas CT,NEVP,WECC
+Clark18,Gas CT,NEVP,WECC
+Clark19,Gas CT,NEVP,WECC
+Clark20,Gas CT,NEVP,WECC
+Clark21,Gas CT,NEVP,WECC
+Clark22,Gas CT,NEVP,WECC
+ClarkMtn3,Gas CT,SPPC,WECC
+ClarkMtn4,Gas CT,SPPC,WECC
+Clear_Lake_CA,Hydro,CIPV,WECC
+Clear_Lake_ID,Hydro,IPMV,WECC
+Clearwater1,Hydro,PACW,WECC
+Clearwater2,Hydro,PACW,WECC
+ClearwaterCC-Total,Gas CC,CISC,WECC
+ClearwaterPaper3,Biomass,AVA,WECC
+ClearwaterPaper4,Biomass,AVA,WECC
+Cloverbar_GT1,Gas CT,AESO,WECC
+Cloverbar_GT2,Gas CT,AESO,WECC
+Cloverbar_GT3,Gas CT,AESO,WECC
+Clowhom_1,Hydro,BCHA,WECC
+ClprRedSprings,Wind,SPPC,WECC
+ClrSpringsTrout,Hydro,IPMV,WECC
+ClrwatrFishHtch,Hydro,BPAT,WECC
+CMH_3_3,Other,AESO,WECC
+Coachella_1,Gas CT,IID,WECC
+Coachella_2,Gas CT,IID,WECC
+Coachella_3,Gas CT,IID,WECC
+Coachella_4,Gas CT,IID,WECC
+Coalinga_25D1,CHP-QF,CIPV,WECC
+Coalinga_25D2,Gas CT,CIPV,WECC
+Coalinga_25D3,Gas CT,CIPV,WECC
+Coalinga_25D4,Gas CT,CIPV,WECC
+Coalinga_6C1,Gas CT,CIPV,WECC
+Coalinga_6C2,Gas CT,CIPV,WECC
+CoalingaCogen,CHP-QF,CIPV,WECC
+Coastal_Energy,Wind,BPAT,WECC
+Cochrane_COC1,Hydro,NWMT,WECC
+Cochrane_COC2,Hydro,NWMT,WECC
+Coffin_Butte_1,Biomass,BPAT,WECC
+Coffin_Butte_2,Biomass,BPAT,WECC
+Coffin_Butte_3,Biomass,BPAT,WECC
+Coffin_Butte_4,Biomass,BPAT,WECC
+Coffin_Butte_5,Biomass,BPAT,WECC
+CoGen2DRJohnson,Biomass,PACW,WECC
+CogntrixAlamosa,PV,PSCO,WECC
+Cold_Springs,Wind,IPTV,WECC
+ColdCanyon1W3998,Biomass,CIPV,WECC
+Coleman_1,Hydro,CIPV,WECC
+Colgate_1,Hydro,CIPV,WECC
+Colgate_2,Hydro,CIPV,WECC
+Collierville1,Hydro,CIPV,WECC
+Collierville2,Hydro,CIPV,WECC
+Collins_Pine,Biomass,CIPV,WECC
+Colstrip_1,Coal,NWMT,WECC
+Colstrip_2,Coal,NWMT,WECC
+Colstrip_3,Coal,NWMT,WECC
+Colstrip_4,Coal,NWMT,WECC
+Colstrip_Energy,Coal,NWMT,WECC
+Colton_Plant,Biomass,CISC,WECC
+Columbia_Ridge1,Biomass,BPAT,WECC
+Columbia_Ridge2,Biomass,BPAT,WECC
+Columbia_Ridge3,Biomass,BPAT,WECC
+Columbia_Ridge4,Biomass,BPAT,WECC
+Columbia_Ridge5,Biomass,BPAT,WECC
+Columbia_Ridge6,Biomass,BPAT,WECC
+Columbia_Ridge7,Biomass,BPAT,WECC
+Columbia_Ridge8,Biomass,BPAT,WECC
+Columbia_Wind,Wind,BPAT,WECC
+Columbia2,Nuclear,BPAT,WECC
+ColusaCC-Total,Gas CC,CIPV,WECC
+com_cool_iid,DR,IID,WECC
+com_cool_ldwp,DR,LDWP,WECC
+com_cool_pge_bay,DR,CIPB,WECC
+com_cool_pge_vly,DR,CIPV,WECC
+com_cool_sce,DR,CISC,WECC
+com_cool_sdge,DR,CISD,WECC
+com_cool_smud,DR,BANC,WECC
+com_cool_tidc,DR,TIDC,WECC
+com_heat_iid,DR,IID,WECC
+com_heat_ldwp,DR,LDWP,WECC
+com_heat_pge_bay,DR,CIPB,WECC
+com_heat_pge_vly,DR,CIPV,WECC
+com_heat_sce,DR,CISC,WECC
+com_heat_sdge,DR,CISD,WECC
+com_heat_smud,DR,BANC,WECC
+com_heat_tidc,DR,TIDC,WECC
+Comanche_1,Coal,PSCO,WECC
+Comanche_2,Coal,PSCO,WECC
+Comanche_3,Coal,PSCO,WECC
+CombieNorth,Hydro,CIPV,WECC
+CombieSouth1,Hydro,CIPV,WECC
+CombieSouth2,Hydro,CIPV,WECC
+CombieSouth3,Hydro,CIPV,WECC
+Combine_Hills,Wind,PACW,WECC
+Condon_Wind1,Wind,BPAT,WECC
+Condon_Wind2,Wind,BPAT,WECC
+Conifex_Green,Biomass,BCHA,WECC
+Conklin,Gas CT,AESO,WECC
+ControlGorge1,Hydro,LDWP,WECC
+Coolidge01,Gas CT,SRP,WECC
+Coolidge02,Gas CT,SRP,WECC
+Coolidge03,Gas CT,SRP,WECC
+Coolidge04,Gas CT,SRP,WECC
+Coolidge05,Gas CT,SRP,WECC
+Coolidge06,Gas CT,SRP,WECC
+Coolidge07,Gas CT,SRP,WECC
+Coolidge08,Gas CT,SRP,WECC
+Coolidge09,Gas CT,SRP,WECC
+Coolidge10,Gas CT,SRP,WECC
+Coolidge11,Gas CT,SRP,WECC
+Coolidge12,Gas CT,SRP,WECC
+CoolwaterCC3-Total,Gas CC,CISC,WECC
+CoolwaterCC4-Total,Gas CC,CISC,WECC
+Copper_1,Gas CT,EPE,WECC
+Copper_Crossing,PV,SRP,WECC
+CopperMtnPV10,PV,CISC,WECC
+CopperMtnPV2_1,PV,NEVP,WECC
+CopperMtnPV2_2,PV,NEVP,WECC
+CopperMtnPV2_3,PV,NEVP,WECC
+CopperMtnPV2_4,PV,NEVP,WECC
+CopperMtnPV2_5,PV,NEVP,WECC
+CopperMtnPV48_2,PV,NEVP,WECC
+CopperMtnPV48_3,PV,NEVP,WECC
+CopperMtnPV48_4,PV,NEVP,WECC
+CopperMtnPV48_5,PV,NEVP,WECC
+CopperMtnPV48_6,PV,NEVP,WECC
+CoramBrodie1,Wind,CISC,WECC
+CoramBrodie2Brookfld,Wind,CISC,WECC
+CorcoranSolarCSCA,PV,CIPV,WECC
+Corona_1,Hydro,CISC,WECC
+Corona_Cogen,CHP-QF,CISC,WECC
+Coronado_CO1,Coal,SRP,WECC
+Coronado_CO2,Coal,SRP,WECC
+Coronado1-1,Coal,SRP,WECC
+CoronadoIsland,Gas CT,CISD,WECC
+Corra_Linn_1,Hydro,BCHA,WECC
+Corra_Linn_2,Hydro,BCHA,WECC
+Corra_Linn_3,Hydro,BCHA,WECC
+Cosmo1,Biomass,BPAT,WECC
+Cosmo2,Biomass,BPAT,WECC
+Coso1_Navy1,Geothermal,CISC,WECC
+Coso2_Navy1,Geothermal,CISC,WECC
+Coso3_Navy1,Geothermal,CISC,WECC
+Coso4_Navy2,Geothermal,CISC,WECC
+Coso5_Navy2,Geothermal,CISC,WECC
+Coso6_Navy2,Geothermal,CISC,WECC
+Coso7_BLM,Geothermal,CISC,WECC
+Coso8_BLM,Geothermal,CISC,WECC
+Coso9_BLM,Geothermal,CISC,WECC
+Costco_1,PV,TEPC,WECC
+CosumnesCC-Total,Gas CC,BANC,WECC
+Cotton_Center,PV,AZPS,WECC
+Cottonwood_1,Hydro,CISC,WECC
+Cottonwood_2,Hydro,CISC,WECC
+Cougar_1,Hydro,BPAT,WECC
+Cougar_2,Hydro,BPAT,WECC
+CouleePump1-2,Other,BPAT,WECC
+CouleePump3-4,Other,BPAT,WECC
+CouleePump5-6,Other,BPAT,WECC
+County_Line,Biomass,PSCO,WECC
+CO-USAFA-Solar,PV,WACM,WECC
+Cove_Fort,Geothermal,PAUT,WECC
+CoveHydro1,Hydro,CIPV,WECC
+Cow_Creek_1,Hydro,CIPV,WECC
+Cow_Creek_2,Hydro,CIPV,WECC
+Cowley_Ridge_1,Wind,AESO,WECC
+Cowlitz_Falls1,Hydro,BPAT,WECC
+Cowlitz_Falls2,Hydro,BPAT,WECC
+Coyote_Creek_1,Hydro,CISC,WECC
+Coyote_Crest,Wind,BPAT,WECC
+CoyoteCanyon,Biomass,CISC,WECC
+CoyoteSprgCC1-Total,Gas CC,PGE,WECC
+CoyoteSprgCC2-Total,Gas CC,AVA,WECC
+CPB_UASTP_1,PV,TEPC,WECC
+CPeakPanochePkr,Gas CT,CIPV,WECC
+CPUC-CentrlValleyBio,Biomass,CIPV,WECC
+CPV-VacaStaCC-Total,Gas CC,CIPV,WECC
+Craig_1,Coal,WACM,WECC
+Craig_2,Coal,WACM,WECC
+Craig_3,Coal,WACM,WECC
+CranberryCreekPower1,Hydro,BCHA,WECC
+CranberryCreekPower2,Hydro,BCHA,WECC
+CranberryCreekPower3,Hydro,BCHA,WECC
+CranberryCreekPower4,Hydro,BCHA,WECC
+Crane_Valley,Hydro,CIPV,WECC
+Creed_Energy,Gas CT,CIPB,WECC
+Crescent_Dunes,CSP,SPPC,WECC
+Cresta_1,Hydro,CIPV,WECC
+Cresta_2,Hydro,CIPV,WECC
+Crockett_Cogen,CHP-QF,CIPB,WECC
+Crosscut_CC5,Hydro,SRP,WECC
+Crowsnest_Pass,Other,BCHA,WECC
+Crystal_1,Hydro,WACM,WECC
+CrystalSprings,Hydro,IPMV,WECC
+CSP_APS_14226_SM14,CSP-TES,AZPS,WECC
+CSP_APS_14226_SM2,CSP-TES,AZPS,WECC
+CSP_APS_14226_OOS1,CSP-TES,AZPS,WECC
+CSP_APS_14226_OOS2,CSP-TES,AZPS,WECC
+CSP_SC2_EPE_11080,CSP-TES,EPE,WECC
+CSP_SC2_PNM_10294,CSP-TES,PNM,WECC
+CSP_SC2_PSC_70375,CSP-TES,PSCO,WECC
+CSP_IID_21045_SM14,CSP-TES,IID,WECC
+CSP_IID_21045_SM14B,CSP-TES,IID,WECC
+CSP_IID_21045_SM2,CSP-TES,IID,WECC
+CSP_IID_21045_SM2B,CSP-TES,IID,WECC
+CSP_NEVP_18905_SM14,CSP-TES,NEVP,WECC
+CSP_NEVP_18905_SM14B,CSP-TES,NEVP,WECC
+CSP_NEVP_18905_SM2,CSP-TES,NEVP,WECC
+CSP_NEVP_18905_SM2B,CSP-TES,NEVP,WECC
+CSP_SCE_24245_SM14,CSP-TES,CISC,WECC
+CSP_SCE_24245_SM14B,CSP-TES,CISC,WECC
+CSP_SCE_24245_SM2,CSP-TES,CISC,WECC
+CSP_SCE_24245_SM2B,CSP-TES,CISC,WECC
+CullitonCreek1,Hydro,BCHA,WECC
+CullitonCreek2,Hydro,BCHA,WECC
+Curis_QF,Hydro,CIPV,WECC
+CurrantCreekCC-Total,Gas CC,PAUT,WECC
+Curry_Cattle,Hydro,IPMV,WECC
+Cushman_2_31,Hydro,TPWR,WECC
+Cushman_2_32,Hydro,TPWR,WECC
+Cushman_2_33,Hydro,TPWR,WECC
+Cushman1-21,Hydro,TPWR,WECC
+Cushman1-22,Hydro,TPWR,WECC
+Cutler_1,Hydro,PAUT,WECC
+Cutler_2,Hydro,PAUT,WECC
+Cymric_31X1,Gas CT,CIPV,WECC
+Cymric_31X2,Gas CT,CIPV,WECC
+Cymric_36W1,Gas CT,CIPV,WECC
+Cymric_36W2,Gas CT,CIPV,WECC
+Cymric_36W3,Gas CT,CIPV,WECC
+Cymric_36W4,Gas CT,CIPV,WECC
+Cymric_6Z1,Gas CT,CIPV,WECC
+Cymric_6Z2,Gas CT,CIPV,WECC
+Cypress_Creek_1,Hydro,BCHA,WECC
+Daishowa_G1_1,Gas CT,AESO,WECC
+Daishowa_G2_2,Biomass,AESO,WECC
+DallesDamNorthFshwy,Hydro,BPAT,WECC
+Darrington_GEN1,Biomass,BPAT,WECC
+Dasque_Middle1,Hydro,BCHA,WECC
+Dasque_Middle2,Hydro,BCHA,WECC
+Dave_Gates1,Gas CT,NWMT,WECC
+Dave_Gates2,Gas CT,NWMT,WECC
+Dave_Gates3,Gas CT,NWMT,WECC
+Dave_Johnston_1,Coal,PAWY,WECC
+Dave_Johnston_2,Coal,PAWY,WECC
+Dave_Johnston_3,Coal,PAWY,WECC
+Dave_Johnston_4,Coal,PAWY,WECC
+Davis_Dam_1,Hydro,WALC,WECC
+Davis_Dam_2,Hydro,WALC,WECC
+Davis_Dam_3,Hydro,WALC,WECC
+Davis_Dam_4,Hydro,WALC,WECC
+Davis_Dam_5,Hydro,WALC,WECC
+DCI_Artesia,Other,PNM,WECC
+DCI_Blackwater,Other,PNM,WECC
+DCI_Lamar,Other,PSCO,WECC
+DCI_McNeill,Other,AESO,WECC
+DCI_Miles_City,Other,WAUW,WECC
+DCI_RapidCity,Other,WACM,WECC
+DCI_Stegall,Other,WACM,WECC
+DCI_VirginiaSmith,Other,WACM,WECC
+De_Sabla_1,Hydro,CIPV,WECC
+Deadwood_Creek,Hydro,CIPV,WECC
+DeerCreek(CA)_1,Hydro,CIPV,WECC
+Delano1,Biomass,CISC,WECC
+Delano2,Biomass,CISC,WECC
+DelRanchCompany,Geothermal,IID,WECC
+DeltaEnergyCC-Total,Gas CC,CIPB,WECC
+DeltaPerson,Gas CT,PNM,WECC
+DeltaPumpA-1,Other,CIPV,WECC
+DeltaPumpA-2,Other,CIPV,WECC
+DeltaPumpA-3,Other,CIPV,WECC
+DeltaPumpB-4,Other,CIPV,WECC
+DeltaPumpB-5,Other,CIPV,WECC
+DeltaPumpC-6,Other,CIPV,WECC
+DeltaPumpC-7,Other,CIPV,WECC
+DeltaPumpD-8,Other,CIPV,WECC
+DeltaPumpD-9,Other,CIPV,WECC
+DeltaPumpE-10,Other,CIPV,WECC
+DeltaPumpE-11,Other,CIPV,WECC
+Deming_Solar1,PV,PNM,WECC
+Deming_Solar2,PV,PNM,WECC
+Demoss_Petrie_1,Gas CT,TEPC,WECC
+Desert_Claim,Wind,BPAT,WECC
+Desert_Meadow,Wind,IPTV,WECC
+Desert_Peak2,Geothermal,SPPC,WECC
+Desert_Peak3,Geothermal,SPPC,WECC
+Desert_View,Biomass,IID,WECC
+DesertBasinCC-Total,Gas CC,SRP,WECC
+DesertStarCC-Total,Gas CC,CISD,WECC
+DesertSunlightDSL1,PV,CISC,WECC
+DesertSunlightDSL2,PV,CISC,WECC
+DesertSunlightDSL3,PV,CISC,WECC
+DesertSunlightDSL4,PV,CISC,WECC
+DesertSunlightDSL5,PV,CISC,WECC
+Detroit_1,Hydro,BPAT,WECC
+Detroit_2,Hydro,BPAT,WECC
+Devers_Area_Agg,Wind,CISC,WECC
+DevilCanyon1,Hydro,CISC,WECC
+DevilCanyon2,Hydro,CISC,WECC
+DevilCanyon3,Hydro,CISC,WECC
+DevilCanyon4,Hydro,CISC,WECC
+Dexter_1,Hydro,BPAT,WECC
+DG-BTM-AVA-ID,RPV,AVA,WECC
+DG-BTM-AVA-WA,RPV,AVA,WECC
+DG-BTM-AZPS-AZ,RPV,AZPS,WECC
+DG-BTM-BANC-CA,RPV,BANC,WECC
+DG-BTM-BPAT-ID,RPV,PAID,WECC
+DG-BTM-BPAT-MT,RPV,BPAT,WECC
+DG-BTM-BPAT-OR,RPV,BPAT,WECC
+DG-BTM-BPAT-WA,RPV,BPAT,WECC
+DG-BTM-CHPD-WA,RPV,CHPD,WECC
+DG-BTM-CIPB-CA,RPV,CIPB,WECC
+DG-BTM-CIPV-CA,RPV,CIPV,WECC
+DG-BTM-CISC-CA,RPV,CISC,WECC
+DG-BTM-CISD-CA,RPV,CISD,WECC
+DG-BTM-DOPD-WA,RPV,DOPD,WECC
+DG-BTM-EPE-NM,RPV,EPE,WECC
+DG-BTM-GCPD-WA,RPV,GCPD,WECC
+DG-BTM-IID-CA,RPV,IID,WECC
+DG-BTM-IPFE-ID,RPV,IPFE,WECC
+DG-BTM-IPMV-ID,RPV,IPMV,WECC
+DG-BTM-IPTV-ID,RPV,IPTV,WECC
+DG-BTM-IPTV-OR,RPV,IPTV,WECC
+DG-BTM-LDWP-CA,RPV,LDWP,WECC
+DG-BTM-NEVP-NV,RPV,NEVP,WECC
+DG-BTM-NWMT-MT,RPV,NWMT,WECC
+DG-BTM-PACW-CA,RPV,PACW,WECC
+DG-BTM-PACW-OR,RPV,PACW,WECC
+DG-BTM-PACW-WA,RPV,PACW,WECC
+DG-BTM-PAID-ID,RPV,PAID,WECC
+DG-BTM-PAUT-UT,RPV,PAUT,WECC
+DG-BTM-PAWY-WY,RPV,PAWY,WECC
+DG-BTM-PGE-OR,RPV,PGE,WECC
+DG-BTM-PNM-NM,RPV,PNM,WECC
+DG-BTM-PSCO-CO,RPV,PSCO,WECC
+DG-BTM-PSEI-WA,RPV,PSEI,WECC
+DG-BTM-SCL-WA,RPV,SCL,WECC
+DG-BTM-SPPC-NV,RPV,SPPC,WECC
+DG-BTM-SRP-AZ,RPV,SRP,WECC
+DG-BTM-TEPC-AZ,RPV,TEPC,WECC
+DG-BTM-TIDC-CA,RPV,TIDC,WECC
+DG-BTM-TPWR-WA,RPV,TPWR,WECC
+DG-BTM-WACM-CO,RPV,WACM,WECC
+DG-BTM-WACM-WY,RPV,WACM,WECC
+DG-BTM-WALC-AZ,RPV,WALC,WECC
+DG-BTM-WALC-NM,RPV,WALC,WECC
+DG-BTM-WAUW-MT,RPV,WAUW,WECC
+Diablo_Wind,Wind,CIPB,WECC
+DiabloCanyon1,CHP-QF,CIPV,WECC
+DiabloCanyon2,CHP-QF,CIPV,WECC
+DiabloHydro_31,Hydro,SCL,WECC
+DiabloHydro_32,Hydro,SCL,WECC
+DiamondValleyLake02,Other,CISC,WECC
+DiamondValleyLake03,Other,CISC,WECC
+DiamondValleyLake04,Other,CISC,WECC
+DiamondValleyLake06,Other,CISC,WECC
+DiamondValleyLake07,Other,CISC,WECC
+DiamondValleyLake08,Other,CISC,WECC
+DiamondValleyLake10,Other,CISC,WECC
+DiamondValleyLake11,Other,CISC,WECC
+DiamondValleyLake12,Other,CISC,WECC
+Dickson_Dam1,Hydro,AESO,WECC
+Dickson_Dam2,Hydro,AESO,WECC
+Dickson_Dam3,Hydro,AESO,WECC
+Dietrich_Drop,Hydro,IPMV,WECC
+DifwindFarmsLtdVII1,Wind,CIPV,WECC
+DillardComplexGEN4,Biomass,BPAT,WECC
+DillardComplexGEN5,Biomass,BPAT,WECC
+Dillon_Hydro,Hydro,PSCO,WECC
+Dillon_Wind,Wind,CISC,WECC
+Dinosaur_Point,Wind,CIPV,WECC
+Dinuba_1,Steam,CIPV,WECC
+Dion_R_Holm_1,Hydro,CIPV,WECC
+Dion_R_Holm_2,Hydro,CIPV,WECC
+Dist_Renewables,PV,SRP,WECC
+DivisionCreek,Hydro,LDWP,WECC
+DivisnNavalCC-Total,Gas CC,CISD,WECC
+Dixie Valley,Geothermal,SPPC,WECC
+DM_AFB_GroundMt,PV,TEPC,WECC
+DokieWind1,Wind,BCHA,WECC
+DokieWind2,Wind,BCHA,WECC
+DokieWind3,Wind,BCHA,WECC
+DokieWind4,Wind,BCHA,WECC
+DokieWind5,Wind,BCHA,WECC
+DokieWind6,Wind,BCHA,WECC
+Donnells,Hydro,CIPV,WECC
+DonPedro1,Hydro,TIDC,WECC
+DonPedro2,Hydro,TIDC,WECC
+DonPedro3,Hydro,BANC,WECC
+DonPedro4,Hydro,TIDC,WECC
+DonVonRsfldCC-Total,Gas CC,CIPB,WECC
+DoranTaylor1,Hydro,BCHA,WECC
+DoranTaylor2,Hydro,BCHA,WECC
+DosAmigosPump1-1,Other,CIPV,WECC
+DosAmigosPump1-2,Other,CIPV,WECC
+DosAmigosPump1-3,Other,CIPV,WECC
+DosAmigosPump2-1,Other,CIPV,WECC
+DosAmigosPump2-2,Other,CIPV,WECC
+DosAmigosPump2-3,Other,CIPV,WECC
+Double_Weir1,Hydro,IID,WECC
+Double_Weir2,Hydro,IID,WECC
+DoubleADigester1,Biomass,IPMV,WECC
+DoubleADigester2,Biomass,IPMV,WECC
+DoubleADigester3,Biomass,IPMV,WECC
+DoubleC1,CHP-QF,CIPV,WECC
+DoubleC2,Gas CT,CIPV,WECC
+Douglas_1,Other,AZPS,WECC
+Douglas_Kwalsa1,Hydro,BCHA,WECC
+Douglas_Kwalsa2,Hydro,BCHA,WECC
+DowCC-Total,Gas CC,AESO,WECC
+DowG101_1,Gas CT,AESO,WECC
+DowG201-2,Gas CT,AESO,WECC
+DR-AVA,DR,AVA,WECC
+DR-AZPS,DR,AZPS,WECC
+DR-BANC,DR,CIPV,WECC
+DR-BPAT,DR,BPAT,WECC
+DR-CIPB,DR,CIPV,WECC
+DR-CIPV,DR,CIPV,WECC
+DR-CISC,DR,CISC,WECC
+DR-CISD,DR,CISD,WECC
+DR-EPE,DR,EPE,WECC
+Drew3,PV,CISD,WECC
+Drew3_Exp,PV,CISD,WECC
+Drews1,Gas CT,CISC,WECC
+Drews2,Gas CT,CISC,WECC
+Drews3,Gas CT,CISC,WECC
+Drews4,Gas CT,CISC,WECC
+DrewsGenFacilityD1,Gas CT,CISC,WECC
+DrewsGenFacilityD2,Gas CT,CISC,WECC
+DrewsGenFacilityD3,Gas CT,CISC,WECC
+DrewsGenFacilityD4,Gas CT,CISC,WECC
+DR-IPFE,DR,IPFE,WECC
+DR-IPMV,DR,IPMV,WECC
+DR-IPTV,DR,IPTV,WECC
+DR-NEVP,DR,NEVP,WECC
+DR-PAID,DR,PAID,WECC
+DR-PAUT,DR,PAUT,WECC
+DR-PGE,DR,PGE,WECC
+DR-PSCO,DR,PSCO,WECC
+DR-PSEI,DR,PSEI,WECC
+DR-SPPC,DR,SPPC,WECC
+DR-SRP,DR,SRP,WECC
+Drum_2_5,Hydro,CIPV,WECC
+Drum1-1,Hydro,CIPV,WECC
+Drum1-2,Hydro,CIPV,WECC
+Drum1-3,Hydro,CIPV,WECC
+Drum1-4,Hydro,CIPV,WECC
+Dry_Fork_Sta,Coal,WACM,WECC
+DryLake_Wind1_1,Wind,AZPS,WECC
+DryLake_Wind2_1,Wind,SRP,WECC
+DryLake_Wind2_2,Wind,SRP,WECC
+DryLake_Wind2_3,Wind,SRP,WECC
+DryLakeWind1-2,Wind,AZPS,WECC
+DryLakeWind1-3,Wind,AZPS,WECC
+Drywood_2_2,Gas CT,AESO,WECC
+Drywood1-1,Gas CT,AESO,WECC
+DSM_APS_1,DR,AZPS,WECC
+DSM_CHPD_1,DR,CHPD,WECC
+DSM_EPE_1,DR,EPE,WECC
+DSM_EPE_2,DR,EPE,WECC
+DSM_EPE_3,DR,EPE,WECC
+DSM_PACE_UT_1,DR,PAUT,WECC
+DSM_PACE_UT_2,DR,PAUT,WECC
+DSM_PACE_UT_3,DR,PAID,WECC
+DSM_PACE_UT_4,DR,PAUT,WECC
+DSM_PACW_1,DR,PACW,WECC
+DSM_PACW_2,DR,PACW,WECC
+DSM_PG&E_BAY_1,DR,CIPB,WECC
+DSM_PG&E_VLY_1,DR,CIPV,WECC
+DSM_PG&E_VLY_2,DR,CIPV,WECC
+DSM_PNM_1,DR,PNM,WECC
+DSM_PNM_2,DR,PNM,WECC
+DSM_PSC_1,DR,PSCO,WECC
+DSM_PSC_2,DR,WACM,WECC
+DSM_PSC_3,DR,PSCO,WECC
+DSM_PSC_4,DR,PSCO,WECC
+DSM_PSC_5,DR,PSCO,WECC
+DSM_PSC_6,DR,PSCO,WECC
+DSM_SCE_1,DR,CISC,WECC
+DSM_SCE_2,DR,CISC,WECC
+DSM_SDGE_1,DR,CISD,WECC
+DSM_SDGE_2,DR,CISD,WECC
+DSM_SDGE_3,DR,CISD,WECC
+DSM_SMUD_1,DR,BANC,WECC
+DSM_SRP_1,DR,SRP,WECC
+DSM_SRP_2,DR,SRP,WECC
+DSM_TEP_1,DR,TEPC,WECC
+DSM_TEP_2,DR,TEPC,WECC
+DSM_TEP_3,DR,TEPC,WECC
+Dundurn_GT_1,Gas CT,AESO,WECC
+Dunlap_1,Wind,PAWY,WECC
+Dutch_Flat_1,Hydro,CIPV,WECC
+Dutch_Flat_2_3P,Hydro,CIPV,WECC
+DutchWind,Wind,CISC,WECC
+DVPL_IPP13.8_1,Biomass,AESO,WECC
+Dworshak_1,Hydro,BPAT,WECC
+Dworshak_2,Hydro,BPAT,WECC
+Dworshak_3,Hydro,BPAT,WECC
+Eagle_Point_1,Hydro,PACW,WECC
+EagleMountainPump1,Other,CISC,WECC
+EagleMountainPump2,Other,CISC,WECC
+EagleMountainPump3,Other,CISC,WECC
+EagleMountainPump4,Other,CISC,WECC
+EagleMountainPump5,Other,CISC,WECC
+EagleMountainPump6,Other,CISC,WECC
+EagleMountainPump7,Other,CISC,WECC
+EagleMountainPump8,Other,CISC,WECC
+East_AZ_Wind,Wind,AZPS,WECC
+East_Bay_MUD,Biomass,CIPB,WECC
+East_Highline_1,Hydro,IID,WECC
+East_Toba1,Hydro,BCHA,WECC
+East_Toba2,Hydro,BCHA,WECC
+EastPortalGenerator1,Hydro,CISC,WECC
+Eastridge1,Gas CT,CIPV,WECC
+Eastridge2,Gas CT,CIPV,WECC
+EastSide,Hydro,PACW,WECC
+EastTwinCreek1,Hydro,BCHA,WECC
+EastTwinCreek2,Hydro,BCHA,WECC
+EastTwinCreek3,Hydro,BCHA,WECC
+ECB_EnvirNorAm,Other,AESO,WECC
+Echanis_Wind,Wind,BPAT,WECC
+EchoDam1,Hydro,PAUT,WECC
+EchoDam2,Hydro,PAUT,WECC
+EchoDam3,Hydro,PAUT,WECC
+EDFRenewWindfarm5-2,Wind,CIPV,WECC
+EdmonstonPump1,Other,CISC,WECC
+EdmonstonPump2,Other,CISC,WECC
+EdmonstonPump3-3,Other,CISC,WECC
+EdmonstonPump3-4,Other,CISC,WECC
+EdmonstonPump4-5,Other,CISC,WECC
+EdmonstonPump4-6,Other,CISC,WECC
+EdmonstonPump5-7,Other,CISC,WECC
+EdmonstonPump5-8,Other,CISC,WECC
+EdmonstonPump6-10,Other,CISC,WECC
+EdmonstonPump6-9,Other,CISC,WECC
+EdmonstonPump7-11,Other,CISC,WECC
+EdmonstonPump7-12,Other,CISC,WECC
+EdmonstonPump8-13,Other,CISC,WECC
+EdmonstonPump8-14,Other,CISC,WECC
+EdwardCHyatt1,Hydro,CIPV,WECC
+EdwardCHyatt2,Storage,CIPV,WECC
+EdwardCHyatt3,Hydro,CIPV,WECC
+EdwardCHyatt4,Storage,CIPV,WECC
+EdwardCHyatt5,Hydro,CIPV,WECC
+EdwardCHyatt6,Storage,CIPV,WECC
+EF_Oxnard,Gas CT,CISC,WECC
+El_Cajon_EC,Gas CT,CISD,WECC
+El_Cajon_GT,Gas CT,CISD,WECC
+El_Centro_4,Steam,IID,WECC
+El_Dorado_1,Hydro,CIPV,WECC
+El_Dorado_2,Hydro,CIPV,WECC
+El_Sobrante1,Biomass,CIPB,WECC
+El_Sobrante2,Biomass,CIPB,WECC
+El_Sobrante3,Biomass,CIPB,WECC
+El_Vado_Dam_1,Hydro,PNM,WECC
+ElCentroCC2-Total,Gas CC,IID,WECC
+ElCentroCC3-Total,Gas CC,IID,WECC
+EldoradoResrvr,Hydro,BCHA,WECC
+Electra_1,Hydro,CIPV,WECC
+Electra_2,Hydro,CIPV,WECC
+Electra_3,Hydro,CIPV,WECC
+Electron_1,Hydro,PSEI,WECC
+Electron_2,Hydro,PSEI,WECC
+Electron_3,Hydro,PSEI,WECC
+Electron_4,Hydro,PSEI,WECC
+Elk_Creek,Hydro,IPTV,WECC
+ElkHillsCC-Total,Gas CC,CIPV,WECC
+ElkHillsCogen1,Gas CT,CIPV,WECC
+ElkHillsCogen2,Gas CT,CIPV,WECC
+Elkhorn_Valley,Wind,IPTV,WECC
+Elko_1,Hydro,BCHA,WECC
+Elko_2,Hydro,BCHA,WECC
+Ella_Butte,Wind,BPAT,WECC
+Ellis_Area_Agg,Biomass,CISC,WECC
+Ellwood_1,Gas CT,CISC,WECC
+ElmoreCompany,Geothermal,IID,WECC
+ElmworthG5_5,Gas CT,AESO,WECC
+ElmworthG6_6,Gas CT,AESO,WECC
+ElmworthG7_7,Gas CT,AESO,WECC
+ElmworthG8_8,Gas CT,AESO,WECC
+ElmworthG9_9,Gas CT,AESO,WECC
+ElNidoFacility,Biomass,CIPV,WECC
+ElSegndCogCC1-Total,Gas CC,CISC,WECC
+ElSegndCogCC2-Total,Gas CC,CISC,WECC
+ElSegndCogCC3-Total,Gas CC,CISC,WECC
+ElSegndEnrgCC1-Total,Gas CC,CISC,WECC
+ElSegndEnrgCC2-Total,Gas CC,CISC,WECC
+Eltopia_Branch,Hydro,TPWR,WECC
+EncanWind,Wind,CISC,WECC
+EncogenCC-Total,Gas CC,PSEI,WECC
+Energetics_PV,PV,BPAT,WECC
+EnterprisePeakr,Gas CT,CISD,WECC
+EON_Foresight_1,PV,TEPC,WECC
+EON_Valencia_1,PV,TEPC,WECC
+EPCC-1,PV,EPE,WECC
+Equilon_LA_1,CHP-QF,LDWP,WECC
+Equilon_LA_2,CHP-QF,LDWP,WECC
+Equilon_LA_3,CHP-QF,LDWP,WECC
+Escalante_1,Coal,PNM,WECC
+ESJWind,Wind,CISD,WECC
+EsquatzelCanal,Hydro,BPAT,WECC
+Estes_1,Hydro,WACM,WECC
+Estes_2,Hydro,WACM,WECC
+Estes_3,Hydro,WACM,WECC
+Etiwanda_Hydro,Hydro,CISC,WECC
+EtiwandaAreaAgg,Gas CT,CISC,WECC
+EurusCombinHill,Wind,BPAT,WECC
+EvanderAndrews1,Gas CT,IPTV,WECC
+EvanderAndrews2,Gas CT,IPTV,WECC
+EvanderAndrews3,Gas CT,IPTV,WECC
+Evergreen_Pulp,Biomass,CIPV,WECC
+Exchequer,Hydro,CIPV,WECC
+Fairfield_Wind,Wind,NWMT,WECC
+Fairhaven_Pwr,Biomass,CIPV,WECC
+Fall_Creek_1,Hydro,BPAT,WECC
+Fall_Creek_2,Hydro,BPAT,WECC
+Fall_Creek_3,Hydro,BPAT,WECC
+FallsRiver_BC_1,Hydro,BCHA,WECC
+FallsRiver_BC_2,Hydro,BCHA,WECC
+FallsRiver_ID1,Hydro,IPFE,WECC
+FallsRiver_ID2,Hydro,IPFE,WECC
+Faraday_1,Hydro,PGE,WECC
+Faraday_2,Hydro,PGE,WECC
+Faraday_3,Hydro,PGE,WECC
+Faraday_4,Hydro,PGE,WECC
+Faraday_5,Hydro,PGE,WECC
+Faraday_6,Hydro,PGE,WECC
+FargoDrop,Hydro,IPTV,WECC
+FarmPowerLynden,Biomass,PSEI,WECC
+FarmPowerMistyMeadow,Biomass,BPAT,WECC
+FarmPowerRexville,Biomass,PSEI,WECC
+FarmPowerTillamook,Biomass,BPAT,WECC
+Faulkner_1,Geothermal,SPPC,WECC
+Faulkner_Ranch,Hydro,IPMV,WECC
+Feather_River,Gas CT,CIPV,WECC
+Fellow_QF,Coal,CIPV,WECC
+FeltHydro1,Hydro,IPFE,WECC
+FeltHydro2,Hydro,IPFE,WECC
+FeltHydro3,Hydro,IPFE,WECC
+FerndaleCC-Total,Gas CC,PSEI,WECC
+Finley_Bio1,Biomass,BPAT,WECC
+Finley_Bio2,Biomass,BPAT,WECC
+Finley_Bio3,Biomass,BPAT,WECC
+Fire_Kwalsa1,Hydro,BCHA,WECC
+Fire_Kwalsa2,Hydro,BCHA,WECC
+Firebag_7,Gas CT,AESO,WECC
+Firebag3-1,Gas CT,AESO,WECC
+Firebag3-2,Gas CT,AESO,WECC
+Firebag4-1,Gas CT,AESO,WECC
+Firebag4-2,Gas CT,AESO,WECC
+Fiscalini_1,Biomass,CIPV,WECC
+Fish_Creek_1,Hydro,PACW,WECC
+Fisheries_Dev,Hydro,IPMV,WECC
+FIT_1,PV,BANC,WECC
+FitzsimonsCreek,Hydro,BCHA,WECC
+FivePoints,PV,CIPV,WECC
+FlamingGorge1,Hydro,WACM,WECC
+FlamingGorge2,Hydro,WACM,WECC
+FlamingGorge3,Hydro,WACM,WECC
+Flatiron_1,Hydro,WACM,WECC
+Flatiron_2,Hydro,WACM,WECC
+Flatiron_3,Hydro,WACM,WECC
+Fleish_1,Hydro,SPPC,WECC
+FlintCreek,Hydro,NWMT,WECC
+FloWind,Wind,CISC,WECC
+Folsom_1,Hydro,BANC,WECC
+Folsom_2,Hydro,BANC,WECC
+Folsom_3,Hydro,BANC,WECC
+Fontana_RT1,PV,CISC,WECC
+Fontana_RT2,PV,CISC,WECC
+Fontana1,Hydro,CISC,WECC
+Fontana2,Hydro,CISC,WECC
+Fontenelle_1,Hydro,WACM,WECC
+Foote_Creek1,Wind,PAWY,WECC
+Foote_Creek2,Wind,PAWY,WECC
+Foote_Creek3,Wind,PAWY,WECC
+Foote_Creek4,Wind,PAWY,WECC
+Foothill_Feeder,Hydro,CISC,WECC
+Foothill_LA,Hydro,CISC,WECC
+FoothillFeeder1,Hydro,LDWP,WECC
+FoothillFeeder2,Hydro,LDWP,WECC
+Foothills_CO,Hydro,PSCO,WECC
+Forbestown_1,Hydro,CIPV,WECC
+Forks_Butte1,Hydro,CIPV,WECC
+Forks_Butte2,Hydro,CIPV,WECC
+Forrest_Kerr1,Hydro,BCHA,WECC
+Forrest_Kerr2,Hydro,BCHA,WECC
+Forrest_Kerr3,Hydro,BCHA,WECC
+Forrest_Kerr4,Hydro,BCHA,WECC
+Forrest_Kerr5,Hydro,BCHA,WECC
+Forrest_Kerr6,Hydro,BCHA,WECC
+Forrest_Kerr7,Hydro,BCHA,WECC
+Forrest_Kerr8,Hydro,BCHA,WECC
+Forrest_Kerr9,Hydro,BCHA,WECC
+Fort_Peck_1,Hydro,WAUW,WECC
+Fort_Peck_2,Hydro,WAUW,WECC
+Fort_St_James,Biomass,BCHA,WECC
+FortNelson1,Gas CT,AESO,WECC
+FortNelson2,Gas CT,AESO,WECC
+FortPeck3,Hydro,WAUW,WECC
+FortSeward_QF,Hydro,CIPV,WECC
+FortStVrainCC-Total,Gas CC,PSCO,WECC
+FortStVrainGT5,Gas CT,PSCO,WECC
+FortStVrainGT6,Gas CT,PSCO,WECC
+Foster_1,Hydro,BPAT,WECC
+Foster_2,Hydro,BPAT,WECC
+FosterCreek1,Gas CT,AESO,WECC
+FosterCreek2,Gas CT,AESO,WECC
+FosterWhlrCC-Total,CHP-QF,CIPB,WECC
+FountainValley1,Gas CT,PSCO,WECC
+FountainValley2,Gas CT,PSCO,WECC
+FountainValley3,Gas CT,PSCO,WECC
+FountainValley4,Gas CT,PSCO,WECC
+FountainValley5,Gas CT,PSCO,WECC
+FountainValley6,Gas CT,PSCO,WECC
+FourBrothers,PV,PAUT,WECC
+FourCorners4-Total,Coal,AZPS,WECC
+FourCorners5-Total,Coal,AZPS,WECC
+Frank_Knutson1,Gas CT,PSCO,WECC
+Frank_Knutson2,Gas CT,PSCO,WECC
+Frankenheimer,Hydro,BANC,WECC
+Franklin_1,Hydro,LDWP,WECC
+FranklinGrays1,Gas CT,BPAT,WECC
+FranklinGrays2,Gas CT,BPAT,WECC
+FranklinGrays3,Gas CT,BPAT,WECC
+FranklinGrays4,Gas CT,BPAT,WECC
+FraserLake1,Biomass,BCHA,WECC
+FraserLake2,Biomass,BCHA,WECC
+FraserRichmond,Biomass,BCHA,WECC
+FrazPark,Wind,CISC,WECC
+FredericksonCC-Total,Gas CC,BPAT,WECC
+Fredonia_1,Gas CT,PSEI,WECC
+Fredonia_2,Gas CT,PSEI,WECC
+Fredonia_3,Gas CT,PSEI,WECC
+Fredonia_4,Gas CT,PSEI,WECC
+FremontCanyon1,Hydro,WACM,WECC
+FremontCanyon2,Hydro,WACM,WECC
+French_Meadows,Hydro,CIPV,WECC
+FresnoCogenCC-Total,Gas CC,CIPV,WECC
+FresnoPeakr_CT,Gas CT,CIPV,WECC
+FriantFR1,Hydro,CIPV,WECC
+FriantM1,Hydro,CIPV,WECC
+FriantRO1,Hydro,CIPV,WECC
+FriantRO2,Hydro,CIPV,WECC
+FrickWind1,Wind,CIPB,WECC
+FrickWind2,Wind,CIPB,WECC
+Fries_Creek_1,Hydro,BCHA,WECC
+Frito_Lay_Cogen,Gas CT,CIPV,WECC
+FrontRangeCC-Total,Gas CC,WACM,WECC
+FRV-SunEdison,PV,TEPC,WECC
+Ft_James_Cogen,Other,PACW,WECC
+FtJames1,Biomass,PACW,WECC
+Fulton_QF,Hydro,CIPV,WECC
+Furry_Creek,Hydro,BCHA,WECC
+Gadsby_4,Gas CT,PAUT,WECC
+Gadsby_5,Gas CT,PAUT,WECC
+Gadsby_6,Gas CT,PAUT,WECC
+Galena2_1,Geothermal,SPPC,WECC
+Galena3_1,Geothermal,SPPC,WECC
+Galena3_2,Geothermal,SPPC,WECC
+GAP_Cholla-2REPL,Gas CT,SRP,WECC
+GAP_NavajoREPL,Gas CT,AZPS,WECC
+GAP_ReidGardner1REPL,Gas CT,NEVP,WECC
+GAP_ReidGardner2REPL,Gas CT,NEVP,WECC
+GarnetWind-G3,Wind,CISC,WECC
+GatesPeaker_CT,Gas CT,CIPV,WECC
+GatesSolarStation1,PV,CIPV,WECC
+GatewayCC-Total,Gas CC,CIPB,WECC
+GaviotaOil1,Gas CT,CISC,WECC
+GaviotaOil2,Gas CT,CISC,WECC
+GaviotaOil3,Gas CT,CISC,WECC
+GaviotaOil4,Gas CT,CISC,WECC
+GaviotaOil5,Gas CT,CISC,WECC
+Gem_State_1,Hydro,PAID,WECC
+GenePump1,Other,CISC,WECC
+GenePump2,Other,CISC,WECC
+GenePump3,Other,CISC,WECC
+GenePump4,Other,CISC,WECC
+GenePump5,Other,CISC,WECC
+GenePump6,Other,CISC,WECC
+GenePump7,Other,CISC,WECC
+GenePump8,Other,CISC,WECC
+Genesee_2_2,Coal,AESO,WECC
+Genesee_3_3,Coal,AESO,WECC
+Genesee1-1,Coal,AESO,WECC
+GenesisSolarEnergy1,CSP,CISC,WECC
+GenesisSolarEnergy2,CSP,CISC,WECC
+GeoEastMesa2-1,Geothermal,IID,WECC
+GeoEastMesa3_1,Geothermal,IID,WECC
+GeoEastMesa3_2,Geothermal,IID,WECC
+GeoEnrgyPart,Geothermal,BANC,WECC
+GeorgeBirdsall1,Other,WACM,WECC
+GeorgeBirdsall2,Other,WACM,WECC
+GeorgeBirdsall3,Other,WACM,WECC
+Georgetown_1,Hydro,PSCO,WECC
+Georgetown_2,Hydro,PSCO,WECC
+Geothermal_2_3,Geothermal,CIPV,WECC
+Geothermal_2_4,Geothermal,CIPV,WECC
+Geothermal1-1,Geothermal,CIPV,WECC
+Geothermal1-2,Geothermal,CIPV,WECC
+Geysers05,Geothermal,CIPV,WECC
+Geysers06,Geothermal,CIPV,WECC
+Geysers07,Geothermal,CIPV,WECC
+Geysers08,Geothermal,CIPV,WECC
+Geysers11,Geothermal,CIPV,WECC
+Geysers12,Geothermal,CIPV,WECC
+Geysers13,Geothermal,CIPV,WECC
+Geysers14,Geothermal,CIPV,WECC
+Geysers16,Geothermal,CIPV,WECC
+Geysers17,Geothermal,CIPV,WECC
+Geysers18,Geothermal,CIPV,WECC
+Geysers20,Geothermal,CIPV,WECC
+Ghost_Pine_G1_1,Wind,AESO,WECC
+Ghost_Pine_G2_2,Wind,AESO,WECC
+Ghost_Pine_G3_3,Wind,AESO,WECC
+Ghost_Pine_G4_4,Wind,AESO,WECC
+Ghost_Pine_G5_5,Wind,AESO,WECC
+GHOST1_1,Hydro,AESO,WECC
+GHOST2_2,Hydro,AESO,WECC
+GHOST3_3,Hydro,AESO,WECC
+GHOST4_4,Hydro,AESO,WECC
+Gianera_1,Gas CT,CIPB,WECC
+Gianera_2,Gas CT,CIPB,WECC
+Giffen_1,PV,CIPV,WECC
+GilaBendCC-Total,Gas CC,AZPS,WECC
+GilaRiverCC1-Total,Gas CC,AZPS,WECC
+GilaRiverCC2-Total,Gas CC,AZPS,WECC
+GilaRiverCC3-Total,Gas CC,AZPS,WECC
+GilaRiverCC4-Total,Gas CC,AZPS,WECC
+Gillespie_Solar,PV,AZPS,WECC
+GilroyCC-Total,CHP-QF,CIPB,WECC
+GilroyEnergyPeaking1,Gas CT,CIPB,WECC
+GilroyEnergyPeaking2,Gas CT,CIPB,WECC
+GilroyEnergyPeaking3,Gas CT,CIPB,WECC
+GlacierWind1,Wind,NWMT,WECC
+GlacierWind2,Wind,NWMT,WECC
+Glen_Canyon1,Hydro,WALC,WECC
+Glen_Canyon2,Hydro,WALC,WECC
+Glen_Canyon3,Hydro,WALC,WECC
+Glen_Canyon4,Hydro,WALC,WECC
+Glen_Canyon5,Hydro,WALC,WECC
+Glen_Canyon6,Hydro,WALC,WECC
+Glen_Canyon7,Hydro,WALC,WECC
+Glen_Canyon8,Hydro,WALC,WECC
+Glen_Solar,PV,LDWP,WECC
+Glenarm_GT1,Gas CT,CISC,WECC
+Glenarm_GT2,Gas CT,CISC,WECC
+Glenarm_GT3,Gas CT,CISC,WECC
+Glenarm_GT4,Gas CT,CISC,WECC
+Glendale_LF,Biomass,AZPS,WECC
+Glendo_1,Hydro,WACM,WECC
+Glendo_2,Hydro,WACM,WECC
+Glenrock_1,Wind,PAWY,WECC
+Glenrock_2,Wind,PAWY,WECC
+GoalLineCC-Total,CHP-QF,CISD,WECC
+Gold_Creek1-1,Gas CT,AESO,WECC
+Golden_Biomass,Biomass,BCHA,WECC
+Golden_Hills,Wind,BPAT,WECC
+Golden_Valley,Wind,IPMV,WECC
+GoldendaleCC-Total,Gas CC,PSEI,WECC
+GoldenSpringsC,PV,CISC,WECC
+GoldenSpringsD,PV,CISC,WECC
+Goldtown,Wind,CISC,WECC
+Goodnoe_Hills1,Wind,PACW,WECC
+Goodnoe_Hills2,Wind,BPAT,WECC
+Goose_Haven,Gas CT,CIPV,WECC
+GordonButte,Wind,NWMT,WECC
+GordonMShrum01,Hydro,BCHA,WECC
+GordonMShrum02,Hydro,BCHA,WECC
+GordonMShrum03,Hydro,BCHA,WECC
+GordonMShrum04,Hydro,BCHA,WECC
+GordonMShrum05,Hydro,BCHA,WECC
+GordonMShrum06,Hydro,BCHA,WECC
+GordonMShrum07,Hydro,BCHA,WECC
+GordonMShrum08,Hydro,BCHA,WECC
+GordonMShrum09,Hydro,BCHA,WECC
+GordonMShrum10,Hydro,BCHA,WECC
+Gorge21,Hydro,SCL,WECC
+Gorge22,Hydro,SCL,WECC
+Gorge23,Hydro,SCL,WECC
+Gorge24,Hydro,SCL,WECC
+Goshen_Phase2,Wind,PAID,WECC
+GosselinHydroGEN1,Hydro,CIPV,WECC
+GosselinHydroGEN2,Hydro,CIPV,WECC
+GP_CHP1_1,Biomass,AESO,WECC
+Grace_3,Hydro,PAID,WECC
+Grace_4,Hydro,PAID,WECC
+Grace_5,Hydro,PAID,WECC
+Grand_Valley1,Hydro,PSCO,WECC
+Grand_Valley2,Hydro,PSCO,WECC
+GrandCoulee01,Hydro,BPAT,WECC
+GrandCoulee02,Hydro,BPAT,WECC
+GrandCoulee03,Hydro,BPAT,WECC
+GrandCoulee04,Hydro,BPAT,WECC
+GrandCoulee05,Hydro,BPAT,WECC
+GrandCoulee06,Hydro,BPAT,WECC
+GrandCoulee07,Hydro,BPAT,WECC
+GrandCoulee08,Hydro,BPAT,WECC
+GrandCoulee09,Hydro,BPAT,WECC
+GrandCoulee10,Hydro,BPAT,WECC
+GrandCoulee11,Hydro,BPAT,WECC
+GrandCoulee12,Hydro,BPAT,WECC
+GrandCoulee13,Hydro,BPAT,WECC
+GrandCoulee14,Hydro,BPAT,WECC
+GrandCoulee15,Hydro,BPAT,WECC
+GrandCoulee16,Hydro,BPAT,WECC
+GrandCoulee17,Hydro,BPAT,WECC
+GrandCoulee18,Hydro,BPAT,WECC
+GrandCoulee19,Hydro,BPAT,WECC
+GrandCoulee20,Hydro,BPAT,WECC
+GrandCoulee21,Hydro,BPAT,WECC
+GrandCoulee22,Hydro,BPAT,WECC
+GrandCoulee23,Hydro,BPAT,WECC
+GrandCoulee24,Hydro,BPAT,WECC
+GrandCouleePG07,Other,BPAT,WECC
+GrandCouleePG08,Other,BPAT,WECC
+GrandCouleePG09,Other,BPAT,WECC
+GrandCouleePG10,Other,BPAT,WECC
+GrandCouleePG11,Other,BPAT,WECC
+GrandCouleePG12,Other,BPAT,WECC
+GrandPrairie,Gas CT,AESO,WECC
+GrapelandPeaker,Gas CT,CISC,WECC
+GraysHarborCC-Total,Gas CC,BPAT,WECC
+Grayson_3,Other,LDWP,WECC
+Grayson_4,Other,LDWP,WECC
+Grayson_5,Other,LDWP,WECC
+Grayson_9,Gas CT,LDWP,WECC
+GraysonCC-Total,Gas CC,LDWP,WECC
+Great_Basin_1,Wind,SPPC,WECC
+Greater_Nanaimo,Biomass,BCHA,WECC
+GreaterSandhill1,PV,PSCO,WECC
+GreaterSandhill2Alam,PV,PSCO,WECC
+Green_Holdings1,Wind,PSCO,WECC
+Green_Holdings2,Wind,PSCO,WECC
+Green_Peter_1,Hydro,BPAT,WECC
+Green_Peter_2,Hydro,BPAT,WECC
+Green_Springs,Hydro,BPAT,WECC
+Greenleaf2,CHP-QF,CIPV,WECC
+GreenleafCC-Total,CHP-QF,CIPV,WECC
+GreenMountain1,Hydro,WACM,WECC
+GreenMountain2,Hydro,WACM,WECC
+GreenPowerWind1,Wind,CISC,WECC
+GreenPowerWind2,Wind,CISC,WECC
+GreenPowerWind3,Wind,CISC,WECC
+GregAvenue1,Hydro,CISC,WECC
+GridleyMain2,PV,CIPV,WECC
+GriffithCC-Total,Gas CC,WALC,WECC
+Grizzly_NA1,Hydro,CIPV,WECC
+Gross_Hydro,Hydro,PSCO,WECC
+GrossmontHospital,Gas CT,CISD,WECC
+Guadalupe1,Biomass,CIPB,WECC
+Guadalupe2,Biomass,CIPB,WECC
+Guadalupe3,Biomass,CIPB,WECC
+Guadalupe4,Biomass,CIPB,WECC
+Guernsey_1,Hydro,WACM,WECC
+Guernsey_2,Hydro,WACM,WECC
+H._Gonzales_G1,Gas CT,CISC,WECC
+H._Gonzales_G2,Gas CT,CISC,WECC
+H_M_Jackson_1,Hydro,BPAT,WECC
+H_M_Jackson_2,Hydro,BPAT,WECC
+H_M_Jackson_3,Hydro,BPAT,WECC
+H_M_Jackson_4,Hydro,BPAT,WECC
+Haas1,Hydro,CIPV,WECC
+Haas2,Hydro,CIPV,WECC
+Hailey_Cspp_1,Hydro,IPMV,WECC
+Haiwee_1,Hydro,CISC,WECC
+Haiwee_2,Hydro,CISC,WECC
+Halkirk1,Wind,AESO,WECC
+Halkirk2,Wind,AESO,WECC
+Halsey_1,Hydro,CIPV,WECC
+HamiltonBranch1,Hydro,CIPV,WECC
+HamiltonBranch2,Hydro,CIPV,WECC
+Hammett_Hill,Wind,IPTV,WECC
+HanfordEnergy1,Gas CT,CIPV,WECC
+HanfordEnergy2,Gas CT,CIPV,WECC
+HappyJack,Wind,WACM,WECC
+Harbor_GT10,Gas CT,LDWP,WECC
+Harbor_GT11,Gas CT,LDWP,WECC
+Harbor_GT12,Gas CT,LDWP,WECC
+Harbor_GT13,Gas CT,LDWP,WECC
+Harbor_GT14,Gas CT,LDWP,WECC
+HarborCC-Total,Gas CC,LDWP,WECC
+HarborCgnCC-Total,Gas CC,CISC,WECC
+Hardin,Coal,NWMT,WECC
+Harmac_Biomass,Biomass,BCHA,WECC
+HarquahalaCC1-Total,Gas CC,SRP,WECC
+HarquahalaCC2-Total,Gas CC,SRP,WECC
+HarquahalaCC3-Total,Gas CC,SRP,WECC
+Harry_Allen_GT1,Gas CT,NEVP,WECC
+Harry_Allen_GT4,Gas CT,NEVP,WECC
+HarryAllenCC-Total,Gas CC,NEVP,WECC
+Hartland_LF_1,Biomass,BCHA,WECC
+Hartzog_1,Gas CT,WACM,WECC
+Hartzog_2,Gas CT,WACM,WECC
+Hartzog_3,Gas CT,WACM,WECC
+Harvest_Wind,Wind,BPAT,WECC
+Hatch_Solar_EC,PV,EPE,WECC
+Hatchet_Creek,Hydro,CIPV,WECC
+Hatchet_Ridge,Wind,CIPV,WECC
+HatCreek1,Hydro,CIPV,WECC
+HatCreek2,Hydro,CIPV,WECC
+HatCreekSmlAgg1,Hydro,CIPV,WECC
+HatCreekSmlAgg2,Hydro,CIPV,WECC
+HatCreekSmlAgg3,Hydro,CIPV,WECC
+Hauer_Creek_1,Hydro,BCHA,WECC
+Hauser_HAU1,Hydro,NWMT,WECC
+Hauser_HAU2,Hydro,NWMT,WECC
+Hauser_HAU3,Hydro,NWMT,WECC
+Hauser_HAU4,Hydro,NWMT,WECC
+Hauser_HAU5,Hydro,NWMT,WECC
+Hauser_HAU6,Hydro,NWMT,WECC
+Hay_Canyon,Wind,BPAT,WECC
+Hayden_1,Coal,PSCO,WECC
+Hayden_2,Coal,WACM,WECC
+Haynes_11,Gas CT,LDWP,WECC
+Haynes_12,Gas CT,LDWP,WECC
+Haynes_13,Gas CT,LDWP,WECC
+Haynes_14,Gas CT,LDWP,WECC
+Haynes_15,Gas CT,LDWP,WECC
+Haynes_16,Gas CT,LDWP,WECC
+Haynes_2,Other,LDWP,WECC
+HaynesCC-Total,Gas CC,LDWP,WECC
+Haypress_LGEN,Hydro,CIPV,WECC
+Haypress_UGEN,Hydro,CIPV,WECC
+Hazelton_B1,Hydro,IPMV,WECC
+Hazelton_B2,Hydro,IPMV,WECC
+Headgate_Rock_1,Hydro,WALC,WECC
+Headgate_Rock_2,Hydro,WALC,WECC
+Headgate_Rock_3,Hydro,WALC,WECC
+HeartMountain,Hydro,WACM,WECC
+HeberGeo1,Geothermal,IID,WECC
+HeberGeo2,Geothermal,IID,WECC
+HeberGeo3,Geothermal,IID,WECC
+Hell_Hole,Hydro,CIPV,WECC
+Hellroaring1,Hydro,BPAT,WECC
+Hellroaring2,Hydro,BPAT,WECC
+Hells_Canyon_1,Hydro,IPTV,WECC
+Hells_Canyon_2,Hydro,IPTV,WECC
+Hells_Canyon_3,Hydro,IPTV,WECC
+HelmsPS1,Storage,CIPV,WECC
+HelmsPS2,Storage,CIPV,WECC
+HelmsPS3,Storage,CIPV,WECC
+Henrietta1,Gas CT,CIPV,WECC
+Henrietta2,Gas CT,CIPV,WECC
+HermistnCC-Total,Gas CC,BPAT,WECC
+HermistnGenCC1-Total,Gas CC,PACW,WECC
+HermistnGenCC2-Total,Gas CC,PACW,WECC
+Hickman_1,Hydro,TIDC,WECC
+Hickman_2,Hydro,BANC,WECC
+HiddenHollow1,Biomass,IPTV,WECC
+HiddenHollow2,Biomass,IPTV,WECC
+HigginsCC-Total,Gas CC,NEVP,WECC
+High_Mesa,Wind,IPTV,WECC
+High_Plains,Wind,PAWY,WECC
+HighDesertCC-Total,Gas CC,CISC,WECC
+Highlands_Wind,Wind,WACM,WECC
+HighLonesomMesa,Wind,PNM,WECC
+HighSierra1,CHP-QF,CIPV,WECC
+HighSierra2,Gas CT,CIPV,WECC
+HighWinds1,Wind,CIPB,WECC
+HighWinds2,Wind,CIPV,WECC
+HighwoodGenStation,Gas CT,NWMT,WECC
+Hillcrest_PS,Hydro,PSCO,WECC
+HillsCreek1,Hydro,BPAT,WECC
+HillsCreek2,Hydro,BPAT,WECC
+HLPwrGEN1,Biomass,CIPV,WECC
+Holter_HOL1,Hydro,NWMT,WECC
+Holter_HOL2,Hydro,NWMT,WECC
+Holter_HOL3,Hydro,NWMT,WECC
+Holter_HOL4,Hydro,NWMT,WECC
+HooleyDigester1,Biomass,BPAT,WECC
+HooleyDigester2,Biomass,BPAT,WECC
+Hoover_Dam_A1,Hydro,WALC,WECC
+Hoover_Dam_A2,Hydro,WALC,WECC
+Hoover_Dam_A3,Hydro,WALC,WECC
+Hoover_Dam_A4,Hydro,WALC,WECC
+Hoover_Dam_A5,Hydro,WALC,WECC
+Hoover_Dam_A6,Hydro,WALC,WECC
+Hoover_Dam_A7,Hydro,WALC,WECC
+Hoover_Dam_A8,Hydro,WALC,WECC
+Hoover_Dam_A9,Hydro,WALC,WECC
+Hoover_Dam_N1,Hydro,NEVP,WECC
+Hoover_Dam_N2,Hydro,NEVP,WECC
+Hoover_Dam_N3,Hydro,NEVP,WECC
+Hoover_Dam_N4,Hydro,NEVP,WECC
+Hoover_Dam_N5,Hydro,NEVP,WECC
+Hoover_Dam_N6,Hydro,NEVP,WECC
+Hoover_Dam_N7,Hydro,NEVP,WECC
+Hoover_Dam_N8,Hydro,NEVP,WECC
+HopkinsRidge1,Wind,BPAT,WECC
+HopkinsRidge2,Wind,BPAT,WECC
+HorizonCC-Total,Gas CC,AESO,WECC
+Horse_Mesa_HM1,Hydro,SRP,WECC
+Horse_Mesa_HM2,Hydro,SRP,WECC
+Horse_Mesa_HM3,Hydro,SRP,WECC
+Horse_Mesa_HM4,Storage,SRP,WECC
+HorseButteWind1,Wind,BPAT,WECC
+HorseshoBendHY1,Hydro,IPTV,WECC
+HorseshoBendHY2,Hydro,IPTV,WECC
+HorseshoBendW1,Wind,BPAT,WECC
+HorseshoBendW2,Wind,BPAT,WECC
+HorseshoBendWP,Wind,NWMT,WECC
+Horseshoe1_HY1,Hydro,AESO,WECC
+Horseshoe2_HY2,Hydro,AESO,WECC
+Horseshoe3_HY3,Hydro,AESO,WECC
+Horseshoe4_HY4,Hydro,AESO,WECC
+HotSpringsWind,Wind,IPTV,WECC
+HudsonRanchPwr2,Geothermal,IID,WECC
+Humboldt_QF,Hydro,CIPV,WECC
+HumboldtBayIC01,Steam,CIPV,WECC
+HumboldtBayIC02,Steam,CIPV,WECC
+HumboldtBayIC03,Steam,CIPV,WECC
+HumboldtBayIC04,Steam,CIPV,WECC
+HumboldtBayIC05,Steam,CIPV,WECC
+HumboldtBayIC06,Steam,CIPV,WECC
+HumboldtBayIC07,Steam,CIPV,WECC
+HumboldtBayIC08,Steam,CIPV,WECC
+HumboldtBayIC09,Steam,CIPV,WECC
+HumboldtBayIC10,Steam,CIPV,WECC
+Hungry_Horse_1,Hydro,BPAT,WECC
+Hungry_Horse_2,Hydro,BPAT,WECC
+Hungry_Horse_3,Hydro,BPAT,WECC
+Hungry_Horse_4,Hydro,BPAT,WECC
+Hunter_1,Coal,PAUT,WECC
+Hunter_2,Coal,PAUT,WECC
+Hunter_3,Coal,PAUT,WECC
+Huntington_1,Coal,PAUT,WECC
+Huntington_2,Coal,PAUT,WECC
+HuronSolar,PV,CIPV,WECC
+HurricaneCityPwr1,Other,PAUT,WECC
+HurricaneCityPwr2,Other,PAUT,WECC
+HurricaneCityPwr3,Other,PAUT,WECC
+HurricaneCityPwr4,Gas CT,PAUT,WECC
+HurricaneCityPwr5,Gas CT,PAUT,WECC
+HurricaneCityPwr6,Gas CT,PAUT,WECC
+HurricaneCityPwr7,Gas CT,PAUT,WECC
+HurricaneCityPwr8,Gas CT,PAUT,WECC
+HurricaneCityPwr9,Gas CT,PAUT,WECC
+HutchinsnCreek1,Hydro,PSEI,WECC
+HWilsonSundtGT1,Gas CT,TEPC,WECC
+HWilsonSundtGT2,Gas CT,TEPC,WECC
+HWilsonSundtST1,Other,TEPC,WECC
+HWilsonSundtST2,Other,TEPC,WECC
+HWilsonSundtST3,Other,TEPC,WECC
+HWilsonSundtST4,Coal,TEPC,WECC
+Hyder_Solar_PV1,PV,AZPS,WECC
+Hyder_Solar_PV2,PV,AZPS,WECC
+Hystad_Creek_1,Hydro,BCHA,WECC
+Hystad_Creek_2,Hydro,BCHA,WECC
+IBM_COTTLE_1,Gas CT,CIPV,WECC
+Ice_Harbor_1,Hydro,BPAT,WECC
+Ice_Harbor_2,Hydro,BPAT,WECC
+Ice_Harbor_3,Hydro,BPAT,WECC
+Ice_Harbor_4,Hydro,BPAT,WECC
+Ice_Harbor_5,Hydro,BPAT,WECC
+Ice_Harbor_6,Hydro,BPAT,WECC
+Idylwilde_1,Hydro,PSCO,WECC
+Idylwilde_2,Hydro,PSCO,WECC
+Ignacio_QF,Wind,CIPV,WECC
+IID_Drop_2_1,Hydro,IID,WECC
+IID_Drop_2_2,Hydro,IID,WECC
+IID_Drop_3_1,Hydro,IID,WECC
+IID_Drop_3_2,Hydro,IID,WECC
+IID_Drop_4_1,Hydro,IID,WECC
+IID_Drop_4_2,Hydro,IID,WECC
+IID_Drop_5_1,Hydro,IID,WECC
+IID_Drop_5_2,Hydro,IID,WECC
+IID_Drop1-1,Hydro,IID,WECC
+IID_PVF_21007,PV,IID,WECC
+IID_PVF_21038,PV,IID,WECC
+IID_PVF_21076,PV,IID,WECC
+IID_PVF_21918,PV,IID,WECC
+IID_PVR_21007,RPV,IID,WECC
+IID_PVR_21076,RPV,IID,WECC
+IID_PVT_21007,PV,IID,WECC
+IID_PVT_21025,PV,IID,WECC
+IID_PVT_21038,PV,IID,WECC
+IID_PVT_21076,PV,IID,WECC
+IIDDrop1-2,Hydro,IID,WECC
+IIDDrop1-3,Hydro,IID,WECC
+ImpOilKearlOilSands,Gas CT,AESO,WECC
+ImpSolarECSouth,PV,CISD,WECC
+ImpValleySolar1-2,PV,IID,WECC
+Ina_Road_Waste,PV,TEPC,WECC
+IndianValley,Hydro,CIPV,WECC
+Indigo1,Gas CT,CISC,WECC
+Indigo2,Gas CT,CISC,WECC
+Indigo3,Gas CT,CISC,WECC
+IndustryMtroLnk,PV,CISC,WECC
+InlandEmpireEC1,Gas CC,CISC,WECC
+InlandEmpireEC2,Gas CC,CISC,WECC
+Inskip_1,Hydro,CIPV,WECC
+IntakePump1,Other,CISC,WECC
+IntakePump2,Other,CISC,WECC
+IntakePump3,Other,CISC,WECC
+IntakePump4,Other,CISC,WECC
+IntakePump5,Other,CISC,WECC
+IntakePump6,Other,CISC,WECC
+IntakePump7,Other,CISC,WECC
+IntakePump8,Other,CISC,WECC
+IntercontPulp,Biomass,BCHA,WECC
+Interlakes_1,Hydro,AESO,WECC
+Intermountain1,Coal,PAUT,WECC
+Intermountain2,Coal,PAUT,WECC
+IP_Springfield4,Biomass,BPAT,WECC
+IronMountainPump1,Other,CISC,WECC
+IronMountainPump2,Other,CISC,WECC
+IronMountainPump3,Other,CISC,WECC
+IronMountainPump4,Other,CISC,WECC
+IronMountainPump5,Other,CISC,WECC
+IronMountainPump6,Other,CISC,WECC
+IronMountainPump7,Other,CISC,WECC
+IronMountainPump8,Other,CISC,WECC
+IronMountainPump9,Other,CISC,WECC
+Irrican,Hydro,AESO,WECC
+IsabellaHydroGEN1,Hydro,CISC,WECC
+IsabellaHydroGEN2,Hydro,CISC,WECC
+Ivanpah1ST1,CSP,CISC,WECC
+Ivanpah2ST1,CSP,CISC,WECC
+Ivanpah3ST1,CSP,CISC,WECC
+JacksonValley,Coal,CIPV,WECC
+James_B_Black_1,Hydro,CIPV,WECC
+James_B_Black_2,Hydro,CIPV,WECC
+Jamie_Creek_1,Hydro,BCHA,WECC
+Jamie_Creek_2,Hydro,BCHA,WECC
+Jaybird_H1,Hydro,BANC,WECC
+Jaybird_H2,Hydro,BANC,WECC
+JeffrsnSmrftCC-Total,Gas CC,CIPB,WECC
+JerseyValley1,Geothermal,SPPC,WECC
+JerseyValley2,Geothermal,SPPC,WECC
+JHindPump1,Other,CISC,WECC
+JHindPump2,Other,CISC,WECC
+JHindPump3,Other,CISC,WECC
+JHindPump4,Other,CISC,WECC
+JHindPump5,Other,CISC,WECC
+JHindPump6,Other,CISC,WECC
+JHindPump7,Other,CISC,WECC
+JHindPump8,Other,CISC,WECC
+JHindPump9,Other,CISC,WECC
+Jim_Bridger_1,Coal,PAWY,WECC
+Jim_Bridger_2,Coal,PAWY,WECC
+Jim_Bridger_3,Coal,PAWY,WECC
+Jim_Bridger_4,Coal,PAWY,WECC
+Jim_Knight_1,Hydro,IPMV,WECC
+JimmieCreek1,Hydro,BCHA,WECC
+JimmieCreek2,Hydro,BCHA,WECC
+JMShaferCC1-Total,Gas CC,PSCO,WECC
+JMShaferCC2-Total,Gas CC,PSCO,WECC
+JohnDay01,Hydro,BPAT,WECC
+JohnDay02,Hydro,BPAT,WECC
+JohnDay03,Hydro,BPAT,WECC
+JohnDay04,Hydro,BPAT,WECC
+JohnDay05,Hydro,BPAT,WECC
+JohnDay06,Hydro,BPAT,WECC
+JohnDay07,Hydro,BPAT,WECC
+JohnDay08,Hydro,BPAT,WECC
+JohnDay09,Hydro,BPAT,WECC
+JohnDay10,Hydro,BPAT,WECC
+JohnDay11,Hydro,BPAT,WECC
+JohnDay12,Hydro,BPAT,WECC
+JohnDay13,Hydro,BPAT,WECC
+JohnDay14,Hydro,BPAT,WECC
+JohnDay15,Hydro,BPAT,WECC
+JohnDay16,Hydro,BPAT,WECC
+JohnFeathrstone,Geothermal,IID,WECC
+JohnHart1_Exp,Hydro,BCHA,WECC
+JohnHart2_Exp,Hydro,BCHA,WECC
+JohnHart3_Exp,Hydro,BCHA,WECC
+Jones_Fork,Hydro,BANC,WECC
+Jordan_River,Hydro,BCHA,WECC
+JSEastwoodPS,Storage,CISC,WECC
+JSEastwoodPSInflowHY,Storage,CISC,WECC
+Judge_F_Carr_1,Hydro,BANC,WECC
+Judge_F_Carr_2,Hydro,BANC,WECC
+Judith_Gap,Wind,NWMT,WECC
+JuniperCanyon1,Wind,BPAT,WECC
+JuwiSolarInc,PV,EPE,WECC
+K_Road_Moapa,PV,NEVP,WECC
+K_Road_Modesto,PV,BANC,WECC
+KamloopsGreen1,Biomass,BCHA,WECC
+KamloopsGreen2,Biomass,BCHA,WECC
+KamloopsGreen3,Biomass,BCHA,WECC
+Kanaka_KAN1,Hydro,CIPV,WECC
+Kananaskis1_1,Hydro,AESO,WECC
+Kananaskis2_HY2,Hydro,AESO,WECC
+Kananaskis3_HY3,Hydro,AESO,WECC
+KansasSouth,PV,CIPV,WECC
+KaselWitherpoonCoLS1,Hydro,IPMV,WECC
+KaselWitherpoonCoLS2,Hydro,IPMV,WECC
+KaselWitherpoonCoLS3,Hydro,IPMV,WECC
+KaselWitherpoonCoLS4,Hydro,IPMV,WECC
+KaselWitherpoonCoLS5,Hydro,IPMV,WECC
+KaselWitherpoonCoUE5,Hydro,IPMV,WECC
+KaselWitherpoonCoUW1,Hydro,IPMV,WECC
+KaselWitherpoonCoUW2,Hydro,IPMV,WECC
+KaselWitherpoonCoUW3,Hydro,IPMV,WECC
+KaselWitherpoonCoUW4,Hydro,IPMV,WECC
+Kaweah1,Hydro,CISC,WECC
+Kaweah2,Hydro,CISC,WECC
+Kaweah3-1,Hydro,CISC,WECC
+Kaweah3-2,Hydro,CISC,WECC
+Keephills1_Exp,Coal,AESO,WECC
+Keephills2_Exp,Coal,AESO,WECC
+Keephills3_1,Coal,AESO,WECC
+Kekawaka,Hydro,CIPV,WECC
+Keller_Canyon1,Biomass,CIPV,WECC
+Keller_Canyon2,Biomass,CIPV,WECC
+Kelly_Ridge_1,Hydro,CIPV,WECC
+Kemano_1,Hydro,BCHA,WECC
+Kemano_2,Hydro,BCHA,WECC
+Kemano_3,Hydro,BCHA,WECC
+Kerckhoff_2_1,Hydro,CIPV,WECC
+Kerckhoff_H1,Hydro,CIPV,WECC
+Kerckhoff_H2,Hydro,CIPV,WECC
+Kerckhoff_H3,Hydro,CIPV,WECC
+Kern_Canyon_1,Hydro,CIPV,WECC
+Kern_Front_KF1,CHP-QF,CIPV,WECC
+Kern_Front_KF2,Gas CT,CIPV,WECC
+KernRiver1_1,Hydro,CIPV,WECC
+KernRiver1-2,Hydro,CISC,WECC
+KernRiver1-3,Hydro,CISC,WECC
+KernRiver1-4,Hydro,CISC,WECC
+KernRiver3_1,Hydro,CIPV,WECC
+KernRiver3_2,Hydro,CIPV,WECC
+KernRiverCgn1,CHP-QF,CISC,WECC
+KernRiverCgn2,CHP-QF,CISC,WECC
+KernRiverCgn3,CHP-QF,CISC,WECC
+KernRiverCgn4,CHP-QF,CISC,WECC
+Kerr_KER1,Hydro,NWMT,WECC
+Kerr_KER2,Hydro,NWMT,WECC
+Kerr_KER3,Hydro,NWMT,WECC
+Keswick_1,Hydro,BANC,WECC
+Keswick_2,Hydro,BANC,WECC
+Keswick_3,Hydro,BANC,WECC
+KettleFalls1,Biomass,AVA,WECC
+KettleFalls2,Gas CT,AVA,WECC
+KettlesHills2_1,Wind,AESO,WECC
+KettlesHills2_2,Wind,AESO,WECC
+KettlesHills2_3,Wind,AESO,WECC
+KettlesHills2_4,Wind,AESO,WECC
+KettlesHills3_1,Wind,AESO,WECC
+KettlesHills3_2,Wind,AESO,WECC
+KettlesHills3_3,Wind,AESO,WECC
+KettlesHills3_4,Wind,AESO,WECC
+KettlesHills3_5,Wind,AESO,WECC
+KettlesHills3_6,Wind,AESO,WECC
+Kiara_Anderson,Biomass,CIPV,WECC
+Kiefer2_1,Biomass,CIPB,WECC
+Kiefer2_2,Biomass,CIPB,WECC
+KieferLandfillA,Biomass,BANC,WECC
+KieferLandfillB,Biomass,BANC,WECC
+KieferLandfillC,Biomass,BANC,WECC
+Kilarc_1,Hydro,CIPV,WECC
+Kilarc_2,Hydro,CIPV,WECC
+Kimberlina_PV,CSP,CIPV,WECC
+KingCityCC-Total,CHP-QF,CIPV,WECC
+KingCityPeaking,Gas CT,CIPV,WECC
+Kingman,Wind,TEPC,WECC
+Kings_Estate,PV,BPAT,WECC
+KingsburgCgnCC-Total,CHP-QF,CIPV,WECC
+KingsRiverGT1,Gas CT,CIPV,WECC
+KingsRiverGT2,Gas CT,CIPV,WECC
+KingsRiverHY,Hydro,CISC,WECC
+Kit_Carson_Wind,Wind,WACM,WECC
+KlamathCC-Total,Gas CC,BPAT,WECC
+KlamathCogenCC-Total,Gas CC,BPAT,WECC
+KlamathExpGT1,Gas CT,BPAT,WECC
+KlamathExpGT2,Gas CT,BPAT,WECC
+KlamathExpGT3,Gas CT,BPAT,WECC
+KlamathExpGT4,Gas CT,BPAT,WECC
+KlondikeWind1,Wind,BPAT,WECC
+KlondikeWind2,Wind,BPAT,WECC
+KlondikeWind3_1,Wind,BPAT,WECC
+KlondikeWind3_2,Wind,BPAT,WECC
+Kohler_Hydro_1,Hydro,PSCO,WECC
+Kohler_Hydro_2,Hydro,PSCO,WECC
+Kokish_River_1,Hydro,BCHA,WECC
+Kokish_River_2,Hydro,BCHA,WECC
+Kokish_River_3,Hydro,BCHA,WECC
+Koma_Kulshan,Hydro,PSEI,WECC
+KookipiCreek1,Hydro,BCHA,WECC
+KootenayCanal1,Hydro,BCHA,WECC
+KootenayCanal2,Hydro,BCHA,WECC
+KootenayCanal3,Hydro,BCHA,WECC
+KootenayCanal4,Hydro,BCHA,WECC
+Kortes_1,Hydro,WACM,WECC
+Kortes_2,Hydro,WACM,WECC
+Kortes_3,Hydro,WACM,WECC
+Koyle_Ranch,Hydro,IPMV,WECC
+KUCC-1,Coal,PAUT,WECC
+KUCC-2,Coal,PAUT,WECC
+KUCC-3,Coal,PAUT,WECC
+KUCC-4,Coal,PAUT,WECC
+KumeyaayWind,Wind,CISD,WECC
+KwoiekCreek1,Hydro,BCHA,WECC
+KwoiekCreek2,Hydro,BCHA,WECC
+KwoiekCreek3,Hydro,BCHA,WECC
+KwoiekCreek4,Hydro,BCHA,WECC
+KyoceraInternational,Steam,CISD,WECC
+Kyrene1,Other,SRP,WECC
+Kyrene2,Other,SRP,WECC
+Kyrene4,Gas CT,SRP,WECC
+Kyrene5,Gas CT,SRP,WECC
+Kyrene6,Gas CT,SRP,WECC
+Kyrene7CC-Total,Gas CC,SRP,WECC
+L_Bonnington_1,Hydro,BCHA,WECC
+L_Bonnington_2,Hydro,BCHA,WECC
+L_Bonnington_3,Hydro,BCHA,WECC
+La_Grange_1,Hydro,TIDC,WECC
+La_Grange_2,Hydro,TIDC,WECC
+La_Joie_1,Hydro,BCHA,WECC
+La_Senita_1,PV,TEPC,WECC
+LA_Wilmington2,CHP-QF,LDWP,WECC
+Ladore_Falls_1,Hydro,BCHA,WECC
+Ladore_Falls_2,Hydro,BCHA,WECC
+LaGrande_1,Hydro,TPWR,WECC
+LaGrande_2,Hydro,TPWR,WECC
+LaGrande_3,Hydro,TPWR,WECC
+LaGrande_4,Hydro,TPWR,WECC
+LaGrande_5,Hydro,TPWR,WECC
+LagunaBelle_Agg,Biomass,CISC,WECC
+Lahontan_1,Hydro,SPPC,WECC
+Lahontan_2,Hydro,SPPC,WECC
+Lahontan_3,Hydro,SPPC,WECC
+LaJoyaDelSol,PV,CIPV,WECC
+Lake_L1,Gas CT,LDWP,WECC
+LakeCreek_BPA1,Hydro,BPAT,WECC
+LakeCreek_BPA2,Hydro,BPAT,WECC
+LakeHodges1,Storage,CISD,WECC
+LakeHodges2,Storage,CISD,WECC
+LakeMathews,Hydro,CISC,WECC
+LakeMendocino,Hydro,CIPV,WECC
+LakeSide2CC-Total,Gas CC,PAUT,WECC
+LakeSideCC-Total,Gas CC,PAUT,WECC
+Lakewood_Hydro,Hydro,PSCO,WECC
+LaLuzEnergyCenter1,Gas CT,PNM,WECC
+LaLuzEnergyCenter2,Gas CT,PNM,WECC
+Lamar_Plant_4,Coal,PSCO,WECC
+Lamar_Plant_6,Coal,PSCO,WECC
+Lamar_Plant_T1,Wind,PSCO,WECC
+Lamar_Plant_T2,Wind,PSCO,WECC
+Lamar_Plant_T3,Wind,PSCO,WECC
+Lamar_Plant_T4,Wind,PSCO,WECC
+Lambie_EC,Gas CT,CIPV,WECC
+LamontUprStave1,Hydro,BCHA,WECC
+LamontUprStave2,Hydro,BCHA,WECC
+Landfill1_NEDO,PV,PNM,WECC
+Landfill2_PPA,PV,PNM,WECC
+Lange,Gas CT,WACM,WECC
+LangleyGulchCC-Total,Gas CC,IPTV,WECC
+LANL_TA_3_1,Other,PNM,WECC
+LANL_TA_3_2,Other,PNM,WECC
+LANL_TA_3_3,Other,PNM,WECC
+LANL_TA_3_GT1,Gas CT,PNM,WECC
+LaPaloma1,Gas CC,CIPV,WECC
+LaPaloma2,Gas CC,CIPV,WECC
+LaPaloma3,Gas CC,CIPV,WECC
+LaPaloma4,Gas CC,CIPV,WECC
+LaramieRiver2,Coal,WACM,WECC
+LaramieRiver3,Coal,WACM,WECC
+Larkspur1,Gas CT,CISD,WECC
+Larkspur2,Gas CT,CISD,WECC
+LaRosita1CC-Total,Gas CC,CFE,WECC
+LaRosita2CC-Total,Gas CC,CISD,WECC
+Lassen_QF,Coal,CIPV,WECC
+Lassen1,CHP-QF,CIPV,WECC
+LasVegasCg1CC-Total,Gas CC,NEVP,WECC
+LasVegasCg2CC1-Total,Gas CC,NEVP,WECC
+LasVegasCg2CC2-Total,Gas CC,NEVP,WECC
+LasVegasSolarEC,PV,PNM,WECC
+LateralVentures,Hydro,IPMV,WECC
+LDWP_PVF_26041,PV,LDWP,WECC
+LDWP_PVR_26013,RPV,LDWP,WECC
+LDWP_PVR_26025,RPV,LDWP,WECC
+LDWP_PVR_26063,RPV,LDWP,WECC
+LDWP_PVR_26066,RPV,LDWP,WECC
+LDWP_PVR_26068,RPV,LDWP,WECC
+LDWP_PVR_26070,RPV,LDWP,WECC
+LDWP_PVR_26078,RPV,LDWP,WECC
+LDWP_PVR_26081,RPV,LDWP,WECC
+LDWP_PVR_26082,RPV,LDWP,WECC
+LDWP_PVR_26086,RPV,LDWP,WECC
+LDWP_PVR_26087,RPV,LDWP,WECC
+LDWP_PVR_26093,RPV,LDWP,WECC
+LDWP_PVR_26103,RPV,LDWP,WECC
+LDWP_PVR_27031,RPV,LDWP,WECC
+LDWP_PVT_26003,PV,LDWP,WECC
+LDWP_PVT_26104,PV,LDWP,WECC
+Leaburg_1,Hydro,BPAT,WECC
+Leaburg_2,Hydro,BPAT,WECC
+LeaningJunipr1,Wind,BPAT,WECC
+LeaningJunipr2A,Wind,BPAT,WECC
+LeaningJunipr2B,Wind,BPAT,WECC
+LeaningJunipr3,Wind,BPAT,WECC
+Lemolo_2_1,Hydro,PACW,WECC
+Lemolo1-1,Hydro,PACW,WECC
+Lemoyne_1,Hydro,IPMV,WECC
+Lethbridge_EC,Gas CT,AESO,WECC
+Lewiston_1,Hydro,CIPV,WECC
+Libby_1,Hydro,BPAT,WECC
+Libby_2,Hydro,BPAT,WECC
+Libby_3,Hydro,BPAT,WECC
+Libby_4,Hydro,BPAT,WECC
+Libby_5,Hydro,BPAT,WECC
+LimeSaddle1,Hydro,CIPV,WECC
+LimeSaddle2,Hydro,CIPV,WECC
+LimeWind,Wind,IPTV,WECC
+Limon1,Gas CT,WACM,WECC
+Limon2,Gas CT,WACM,WECC
+LimonWind1,Wind,PSCO,WECC
+LimonWind2,Wind,PSCO,WECC
+Lincoln4,Biomass,CIPV,WECC
+LincolnLF1,Biomass,CIPV,WECC
+LincolnLF2,Biomass,CIPV,WECC
+LincolnLF3,Biomass,CIPV,WECC
+LincolnLF4,Biomass,CIPV,WECC
+LincolnLF5,Biomass,CIPV,WECC
+LincolnLF6,Biomass,CIPV,WECC
+LindenWind,Wind,BPAT,WECC
+LindeWilmingtn1,CHP-QF,LDWP,WECC
+Lithehipe_Agg,Gas CT,CISC,WECC
+Little_Falls_1,Hydro,AVA,WECC
+Little_Falls_2,Hydro,AVA,WECC
+Little_Falls_3,Hydro,AVA,WECC
+Little_Falls_4,Hydro,AVA,WECC
+Little_Goose_1,Hydro,BPAT,WECC
+Little_Goose_2,Hydro,BPAT,WECC
+Little_Goose_3,Hydro,BPAT,WECC
+Little_Goose_4,Hydro,BPAT,WECC
+Little_Goose_5,Hydro,BPAT,WECC
+Little_Goose_6,Hydro,BPAT,WECC
+LittleMac1,Hydro,IPMV,WECC
+LittleMac2,Hydro,IPMV,WECC
+LittleMac3,Hydro,IPMV,WECC
+LittleMac4,Hydro,IPMV,WECC
+LittlewoodArksh,Hydro,IPMV,WECC
+LittleWoodHydro,Hydro,IPMV,WECC
+LiveOakCogen,CHP-QF,CIPV,WECC
+Lockwood1,Biomass,SPPC,WECC
+Lockwood2,Biomass,SPPC,WECC
+Lodi_1,Gas CT,CIPV,WECC
+LodiEnergyCC-Total,Gas CC,CIPV,WECC
+LodiSTIG,Gas CT,CIPV,WECC
+Log_Creek_1,Hydro,BCHA,WECC
+LoganCity1,Gas CT,PAUT,WECC
+LoganCity2,Gas CT,PAUT,WECC
+LoganCity3,Gas CT,PAUT,WECC
+LoganWind,Wind,PSCO,WECC
+LomaLindaCC-Total,Gas CC,CISC,WECC
+Long_Lake_1,Hydro,AVA,WECC
+Long_Lake_2,Hydro,AVA,WECC
+Long_Lake_3,Hydro,AVA,WECC
+Long_Lake_4,Hydro,AVA,WECC
+LongBeach_GT1,Gas CT,CISC,WECC
+LongBeach_GT2,Gas CT,CISC,WECC
+LongBeach_GT3,Gas CT,CISC,WECC
+LongBeach_GT4,Gas CT,CISC,WECC
+LongLake1,Hydro,BCHA,WECC
+LongLake2,Hydro,BCHA,WECC
+LONGLAKEG1-2,Gas CT,AESO,WECC
+LONGLAKEG2_1,Gas CT,AESO,WECC
+LONGLAKEGT3_1,Gas CT,AESO,WECC
+LONGLAKEGT4_1,Gas CT,AESO,WECC
+Longmont_1,Hydro,PSCO,WECC
+Longmont_2,Hydro,PSCO,WECC
+LongviewFibre4,Biomass,BPAT,WECC
+LongviewFibre6,Biomass,BPAT,WECC
+LongviewFibre7,Biomass,BPAT,WECC
+Lookout_Point_1,Hydro,BPAT,WECC
+Lookout_Point_2,Hydro,BPAT,WECC
+Lookout_Point_3,Hydro,BPAT,WECC
+Loon_Lake_H1,Hydro,BANC,WECC
+Lopez_Canyon_1,Biomass,LDWP,WECC
+Lordsburg1,Gas CT,PNM,WECC
+Lordsburg2,Gas CT,PNM,WECC
+LOS_BANOS_QF,Hydro,CIPV,WECC
+LosAlamosPVSite1,PV,PNM,WECC
+LosEsterosCC-Total,Gas CC,CIPB,WECC
+LosLunasSolar1,PV,PNM,WECC
+LosLunasSolar2,PV,PNM,WECC
+LosMedanosCC-Total,Gas CC,CIPB,WECC
+LostCreek_CA,Hydro,CIPV,WECC
+LostCreek_OR1,Hydro,BPAT,WECC
+LostCreek_OR2,Hydro,BPAT,WECC
+LostHillsCogen4,Gas CT,CIPV,WECC
+LostHillsCogen5,Gas CT,CIPV,WECC
+LostHillsCogen6,Gas CT,CIPV,WECC
+LOTTWWTP,Biomass,PSEI,WECC
+Lowe1_1,Gas CT,AESO,WECC
+Lower_Baker_3,Hydro,PSEI,WECC
+Lower_Clowhom_1,Hydro,BCHA,WECC
+Lower_Granite_1,Hydro,BPAT,WECC
+Lower_Granite_2,Hydro,BPAT,WECC
+Lower_Granite_3,Hydro,BPAT,WECC
+Lower_Granite_4,Hydro,BPAT,WECC
+Lower_Granite_5,Hydro,BPAT,WECC
+Lower_Granite_6,Hydro,BPAT,WECC
+Lower_Malad_1,Hydro,IPMV,WECC
+Lower_Salmon_1,Hydro,IPMV,WECC
+Lower_Salmon_2,Hydro,IPMV,WECC
+Lower_Salmon_3,Hydro,IPMV,WECC
+Lower_Salmon_4,Hydro,IPMV,WECC
+LowerBaker4,Hydro,PSEI,WECC
+LowerBear1,Hydro,BCHA,WECC
+LowerBear2,Hydro,BCHA,WECC
+LowerMonumentl1,Hydro,BPAT,WECC
+LowerMonumentl2,Hydro,BPAT,WECC
+LowerMonumentl3,Hydro,BPAT,WECC
+LowerMonumentl4,Hydro,BPAT,WECC
+LowerMonumentl5,Hydro,BPAT,WECC
+LowerMonumentl6,Hydro,BPAT,WECC
+LowerNo12,Hydro,BPAT,WECC
+LowerNo21,Hydro,BPAT,WECC
+LowGap_QF,Hydro,CIPV,WECC
+LowLineMdwy2SoForks1,Hydro,IPMV,WECC
+LowLineMdwy2SoForks2,Hydro,IPMV,WECC
+LowLineMidway1,Hydro,IPTV,WECC
+LowLineRapids,Hydro,IPMV,WECC
+Loyalton_1,Biomass,SPPC,WECC
+LSRW_DutchFlats,Wind,PSEI,WECC
+LSRW_KuhlRidge,Wind,PSEI,WECC
+LuckyPeak131,Hydro,IPTV,WECC
+LuckyPeak132,Hydro,IPTV,WECC
+LuckyPeak133,Hydro,IPTV,WECC
+Luke_AFB,PV,AZPS,WECC
+LunaCC-Total,Gas CC,PNM,WECC
+Lund_Hill,Wind,BPAT,WECC
+Lundy1,Hydro,CISC,WECC
+Lundy2,Hydro,CISC,WECC
+LytleCreek1,Hydro,CISC,WECC
+LytleCreek2,Hydro,CISC,WECC
+MachoSprings_PV,PV,EPE,WECC
+MachoSprings_W,Wind,TEPC,WECC
+MACKAY1_1,Gas CT,AESO,WECC
+MacleodG1_1,Wind,AESO,WECC
+MacleodG2_2,Wind,AESO,WECC
+Madera_Pwr_1,Biomass,CIPV,WECC
+Madison_MAD1,Hydro,NWMT,WECC
+Madison_MAD2,Hydro,NWMT,WECC
+Madison_MAD3,Hydro,NWMT,WECC
+Madison_MAD4,Hydro,NWMT,WECC
+MagicDam1,Hydro,IPMV,WECC
+MagicDam2,Hydro,IPMV,WECC
+MagicDam3,Hydro,IPMV,WECC
+MagnoliaCC-Total,Gas CC,LDWP,WECC
+Magrath,Wind,AESO,WECC
+MAHKESESG1_1,Gas CT,AESO,WECC
+MAHKESESG2_2,Gas CT,AESO,WECC
+MainCanal,Hydro,TPWR,WECC
+MainlineWind,Wind,IPTV,WECC
+Malad_River_1,Hydro,IPMV,WECC
+MalburgCC-Total,Gas CC,CISC,WECC
+MammothPool1,Hydro,CISC,WECC
+MammothPool2,Hydro,CISC,WECC
+Mamquam_1,Hydro,BCHA,WECC
+Mamquam_2,Hydro,BCHA,WECC
+MamthPacfc1_1,Geothermal,CISC,WECC
+MamthPacfc1-2,Geothermal,CISC,WECC
+MamthPacfc2_1,Geothermal,CISC,WECC
+MamthPacfc2_2,Geothermal,CISC,WECC
+MamthPacfc2_3,Geothermal,CISC,WECC
+MamthPacfc2_T1,Geothermal,CISC,WECC
+MamthPacfc2_T2,Geothermal,CISC,WECC
+MamthPacfc2_T3,Geothermal,CISC,WECC
+MamthPoolFshwtr,Hydro,CISC,WECC
+Manchief1,Gas CT,PSCO,WECC
+Manchief2,Gas CT,PSCO,WECC
+ManitouSprings1,Hydro,WACM,WECC
+ManitouSprings2,Hydro,WACM,WECC
+ManitouSprings3,Hydro,WACM,WECC
+ManzanaWind,Wind,CISC,WECC
+ManzanoSolar,PV,PNM,WECC
+MarchPointCC-Total,Gas CC,PSEI,WECC
+Marco_Ranch_1,Hydro,IPMV,WECC
+Marco_Ranch_2,Hydro,IPMV,WECC
+Marco_Ranch_3,Hydro,IPMV,WECC
+Marco_Ranch_4,Hydro,IPMV,WECC
+MarengoWind1,Wind,PACW,WECC
+MarengoWind2,Wind,PACW,WECC
+MarianiPackingSolar,PV,CIPV,WECC
+Maricopa_Solar,PV,SRP,WECC
+MarinaLandfillU1,Biomass,CIPV,WECC
+MarinaLandfillU2,Biomass,CIPV,WECC
+MarinaLandfillU3,Biomass,CIPV,WECC
+MarinaLandfillU4,Biomass,CIPV,WECC
+Marion_Inc,Biomass,PGE,WECC
+Marion3_Creek,Hydro,BCHA,WECC
+Mariposa1,Gas CT,CIPB,WECC
+Mariposa2,Gas CT,CIPB,WECC
+Mariposa3,Gas CT,CIPB,WECC
+Mariposa4,Gas CT,CIPB,WECC
+MarshLanding1,Gas CT,CIPB,WECC
+MarshLanding2,Gas CT,CIPB,WECC
+MarshLanding3,Gas CT,CIPB,WECC
+MarshLanding4,Gas CT,CIPB,WECC
+Martin_Drake_5,Coal,WACM,WECC
+Martin_Drake_6,Coal,WACM,WECC
+Martin_Drake_7,Coal,WACM,WECC
+MartinezCC-Total,Gas CC,CIPB,WECC
+MartinezRegen,Steam,CIPB,WECC
+Marys_Lake_1,Hydro,WACM,WECC
+Maxim_Burdett,Gas CT,AESO,WECC
+Maxim_Coaldale,Gas CT,AESO,WECC
+Maxim_FtMcLeod,Gas CT,AESO,WECC
+Maxim_Taber,Gas CT,AESO,WECC
+Maxwell_Hydro,Hydro,PSCO,WECC
+Mayfield_41,Hydro,TPWR,WECC
+Mayfield_42,Hydro,TPWR,WECC
+Mayfield_43,Hydro,TPWR,WECC
+Mayfield_44,Hydro,TPWR,WECC
+McBride_Lake_1,Wind,AESO,WECC
+McBride_Lake_2,Wind,AESO,WECC
+McBride_Lake_3,Wind,AESO,WECC
+McBride_Lake_4,Wind,AESO,WECC
+McCall_QF,Hydro,CIPV,WECC
+McClellan_1,Gas CT,BANC,WECC
+McClure_1,Gas CT,BANC,WECC
+McClure_2,Gas CT,BANC,WECC
+McFaddenRidge,Wind,PAWY,WECC
+McGinnessHills1,Geothermal,SPPC,WECC
+McGinnessHills2,Geothermal,SPPC,WECC
+McGinnessHills3,Geothermal,SPPC,WECC
+McGrathPeaker,Gas CT,CISC,WECC
+McKittrick_Ltd,CHP-QF,CIPV,WECC
+McKittrick1_RP,Gas CT,CIPV,WECC
+McKittrick2_RP,Gas CT,CIPV,WECC
+McLymontCreek,Hydro,BCHA,WECC
+McNair_Creek_1,Hydro,BCHA,WECC
+McNary01,Hydro,BPAT,WECC
+McNary02,Hydro,BPAT,WECC
+McNary03,Hydro,BPAT,WECC
+McNary04,Hydro,BPAT,WECC
+McNary05,Hydro,BPAT,WECC
+McNary06,Hydro,BPAT,WECC
+McNary07,Hydro,BPAT,WECC
+McNary08,Hydro,BPAT,WECC
+McNary09,Hydro,BPAT,WECC
+McNary10,Hydro,BPAT,WECC
+McNary11,Hydro,BPAT,WECC
+McNary12,Hydro,BPAT,WECC
+McNary13,Hydro,BPAT,WECC
+McNary14,Hydro,BPAT,WECC
+McNaryFishway,Hydro,BPAT,WECC
+McPhee_1,Hydro,WALC,WECC
+McSwain_1,Hydro,CIPV,WECC
+MeadowCreek_5P,Wind,PAID,WECC
+MEANKimballWind,Wind,WACM,WECC
+Mears_Creek_1,Hydro,BCHA,WECC
+Mecca_1,Biomass,IID,WECC
+Medicine_Bow_1,Wind,PSCO,WECC
+MedicineHat10,Gas CT,AESO,WECC
+MedicineHat11,Gas CT,AESO,WECC
+MedicineHat12,Other,AESO,WECC
+MedicineHat13,Gas CT,AESO,WECC
+MedicineHat15,Gas CT,AESO,WECC
+MEG_ChristinaLk,Gas CT,AESO,WECC
+MEG_ChristingLk,Gas CT,AESO,WECC
+Meikle_Wind_1,Wind,BCHA,WECC
+Mendota,Biomass,CIPV,WECC
+MenloPark1,Biomass,CIPB,WECC
+MenloPark2,Biomass,CIPB,WECC
+MenloPark3,Biomass,CIPB,WECC
+MenloPark4,Biomass,CIPB,WECC
+Merced_Falls_1,Hydro,CIPV,WECC
+MerrittGreen,Biomass,BCHA,WECC
+Merwin_1,Hydro,PACW,WECC
+Merwin_2,Hydro,PACW,WECC
+Merwin_3,Hydro,PACW,WECC
+MESA_QF,Hydro,CIPV,WECC
+Mesa_South_Agg,Biomass,CISC,WECC
+MesquiteCC1-Total,Gas CC,SRP,WECC
+MesquiteCC2-Total,Gas CC,SRP,WECC
+MesquiteRecvry,Biomass,IID,WECC
+MesquiteSolar11,PV,SRP,WECC
+MesquiteSolar110,PV,SRP,WECC
+MesquiteSolar111,PV,SRP,WECC
+MesquiteSolar112,PV,SRP,WECC
+MesquiteSolar12,PV,SRP,WECC
+MesquiteSolar13,PV,SRP,WECC
+MesquiteSolar14,PV,SRP,WECC
+MesquiteSolar15,PV,SRP,WECC
+MesquiteSolar16,PV,SRP,WECC
+MesquiteSolar17,PV,SRP,WECC
+MesquiteSolar18,PV,SRP,WECC
+MesquiteSolar19,PV,SRP,WECC
+Metcalf_QF,Hydro,CIPB,WECC
+MetcalfEnrgyCC-Total,Gas CC,CIPB,WECC
+Mexicali1,Other,CFE,WECC
+Mexicali2,Other,CFE,WECC
+Mexicali3,Other,CFE,WECC
+MeyersFalls1,Hydro,AVA,WECC
+MeyersFalls2,Hydro,AVA,WECC
+Mica_1,Hydro,BCHA,WECC
+Mica_2,Hydro,BCHA,WECC
+Mica_3,Hydro,BCHA,WECC
+Mica_4,Hydro,BCHA,WECC
+Mica_G5_5,Hydro,BCHA,WECC
+Mica_G6_6,Hydro,BCHA,WECC
+MichellButte,Hydro,IPTV,WECC
+Mid_Set_Cogen,CHP-QF,CIPV,WECC
+MiddleCreek1,Hydro,BCHA,WECC
+MiddleCreek2,Hydro,BCHA,WECC
+MIddleFork1,Hydro,CIPV,WECC
+MIddleFork2,Hydro,CIPV,WECC
+MiddleForkIrrD1,Hydro,BPAT,WECC
+MiddleForkIrrD2,Hydro,BPAT,WECC
+MiddleForkIrrD3,Hydro,BPAT,WECC
+MiddleGorge1,Hydro,LDWP,WECC
+MidValley1,Biomass,CISC,WECC
+MidValley2,Biomass,CISC,WECC
+Midway_QF,Biomass,CIPV,WECC
+MidwaySunsetA,CHP-QF,CIPV,WECC
+MidwaySunsetB,CHP-QF,CIPV,WECC
+MidwaySunsetC,CHP-QF,CIPV,WECC
+MidWind,Wind,CISC,WECC
+MilagroCogenA,Gas CT,WALC,WECC
+MilagroCogenB,Gas CT,WALC,WECC
+Mile28Water1,Hydro,IPMV,WECC
+Mile28Water2,Hydro,IPMV,WECC
+MilfordWind1,Wind,LDWP,WECC
+MilfordWind2,Wind,LDWP,WECC
+MillCreek_OR,Hydro,BPAT,WECC
+MillCreek1,Hydro,CISC,WECC
+MillCreek2_2,Hydro,CISC,WECC
+MillCreek2_3,Hydro,CISC,WECC
+MillCreek3_4,Hydro,CISC,WECC
+MillCreek3_5,Hydro,CISC,WECC
+MillcreekPwrGen1,Gas CT,PAUT,WECC
+MillcreekPwrGen2,Gas CT,PAUT,WECC
+MillenniumCC-Total,Gas CC,AESO,WECC
+Miller_North,Wind,BPAT,WECC
+MillerRanchWind,Wind,BPAT,WECC
+Milliken1,Biomass,CISC,WECC
+Milliken2,Biomass,CISC,WECC
+Milner_Hydro_1,Hydro,IPMV,WECC
+Milner_Hydro_2,Hydro,IPMV,WECC
+Milner_Hydro_3,Hydro,IPMV,WECC
+MilnerDamWind,Wind,IPMV,WECC
+Minidoka_6,Hydro,IPMV,WECC
+Minidoka_7,Hydro,IPMV,WECC
+Minidoka_8,Hydro,IPMV,WECC
+Minidoka_9,Hydro,IPMV,WECC
+Minnehik_1A_1,Gas CT,AESO,WECC
+Minnehik_1B_1,Gas CT,AESO,WECC
+Minnehik_2_1,Gas CT,AESO,WECC
+MintFarmCC-Total,Gas CC,PSEI,WECC
+MiraLomaPeaker,Gas CT,CISC,WECC
+MiramarEnergy1,Gas CT,CISD,WECC
+MiramarEnergy2,Gas CT,CISD,WECC
+MM_LopezEnergy1,Biomass,CISC,WECC
+MM_LopezEnergy2,Biomass,CISC,WECC
+MM_SD_Miramar1,Biomass,CISD,WECC
+MM_SD_Miramar2,Biomass,CISD,WECC
+MM_SD_Miramar3,Biomass,CISD,WECC
+MM_SD_Miramar4,Biomass,CISD,WECC
+MM_SDNorthCity1,Biomass,CISD,WECC
+MM_SDNorthCity2,Biomass,CISD,WECC
+MM_SDNorthCity3,Biomass,CISD,WECC
+MM_SDNorthCity4,Biomass,CISD,WECC
+MM_WestCovina2,Biomass,CISC,WECC
+MM_WestCovina3,Biomass,CISC,WECC
+MMC-Escondido-Rpwr,Gas CT,CISD,WECC
+Moccasin_1,Hydro,CIPV,WECC
+Moccasin_2,Hydro,CIPV,WECC
+MoccasinLowHead,Hydro,CIPV,WECC
+Mojave_Siphon_1,Hydro,CISC,WECC
+Mojave_Siphon_2,Hydro,CISC,WECC
+Mojave_Siphon_3,Hydro,CISC,WECC
+MojaveCC-Total,CHP-QF,CISC,WECC
+MojaveSolarProject1,CSP,CISC,WECC
+MojaveSolarProject2,CSP,CISC,WECC
+Monroe_Street_6,Hydro,AVA,WECC
+MontagueWind,Wind,BPAT,WECC
+Montana_1_G1,Gas CT,EPE,WECC
+Montana_2_G2,Gas CT,EPE,WECC
+Montana_3_G3,Gas CT,EPE,WECC
+Montana_4_G4,Gas CT,EPE,WECC
+MontezumaWind1,Wind,CIPV,WECC
+MontezumaWind2,Wind,CIPV,WECC
+MontgomeryCreekHydro,Hydro,CIPV,WECC
+Monticello_1,Hydro,CIPV,WECC
+Monticello_2,Hydro,CIPV,WECC
+Monticello_3,Hydro,CIPV,WECC
+Montrose_Creek1,Hydro,BCHA,WECC
+Montrose_Creek2,Hydro,BCHA,WECC
+MoorePark_Agg,Gas CT,CISC,WECC
+MoraDrop,Hydro,IPTV,WECC
+Mormon_Flat_MF1,Hydro,SRP,WECC
+Mormon_Flat_MF2,Storage,SRP,WECC
+Morony_MOR1,Hydro,NWMT,WECC
+Morony_MOR2,Hydro,NWMT,WECC
+Morrow_Point_1,Hydro,WACM,WECC
+Morrow_Point_2,Hydro,WACM,WECC
+MorrowPwrGT,Gas CT,BPAT,WECC
+MorWind,Wind,CISC,WECC
+MossLanding_QF,Hydro,CIPV,WECC
+Mossyrock_51,Hydro,TPWR,WECC
+Mossyrock_52,Hydro,TPWR,WECC
+Mount_Elbert_1,Storage,WACM,WECC
+Mount_Elbert_2,Storage,WACM,WECC
+MountainView_PV,PV,NEVP,WECC
+MountainView1,Wind,CISC,WECC
+MountainView2,Wind,CISC,WECC
+MountainView3,Wind,CISC,WECC
+MountainView4,Wind,CISC,WECC
+MountainWind1,Wind,PAWY,WECC
+MountainWind2,Wind,PAWY,WECC
+MoyieSprings1,Hydro,BPAT,WECC
+MoyieSprings2,Hydro,BPAT,WECC
+MoyieSprings3,Hydro,BPAT,WECC
+MoyieSprings4,Hydro,BPAT,WECC
+MtLassenPwr,Biomass,CIPV,WECC
+MtnviewCC3-Total,Gas CC,CISC,WECC
+MtnviewCC4-Total,Gas CC,CISC,WECC
+MtPosoCogen,CHP-QF,CIPV,WECC
+MuckValley,Hydro,CIPV,WECC
+MudCreek_S_S_1,Hydro,IPMV,WECC
+MudCreek_White,Hydro,IPMV,WECC
+muni_pump_iid,DR,IID,WECC
+muni_pump_ldwp,DR,LDWP,WECC
+muni_pump_pge_bay,DR,CIPB,WECC
+muni_pump_pge_vly,DR,CIPV,WECC
+muni_pump_sce,DR,CISC,WECC
+muni_pump_sdge,DR,CISD,WECC
+muni_pump_smud,DR,BANC,WECC
+muni_pump_tidc,DR,TIDC,WECC
+Murphys_1,Hydro,CIPV,WECC
+MurrayTurbine1,Gas CT,PAUT,WECC
+MurrayTurbine2,Gas CT,PAUT,WECC
+MurrayTurbine3,Gas CT,PAUT,WECC
+MuskegG1_1,Gas CT,AESO,WECC
+MuskegG2_2,Gas CT,AESO,WECC
+Musselshell1,Wind,NWMT,WECC
+Musselshell2,Wind,NWMT,WECC
+Mystic_MYS1,Hydro,NWMT,WECC
+Mystic_MYS2,Hydro,NWMT,WECC
+NabiyeColdLake1,Gas CT,AESO,WECC
+NabiyeColdLake2,Gas CT,AESO,WECC
+NacimientoHydro1,Hydro,CIPV,WECC
+NacimientoHydro2,Hydro,CIPV,WECC
+Narrows1,Hydro,CIPV,WECC
+Narrows2,Hydro,CIPV,WECC
+NationalBankAZ,PV,TEPC,WECC
+Naughton1,Coal,PAWY,WECC
+Naughton2,Coal,PAWY,WECC
+Naughton3Gas,Other,PAWY,WECC
+Navajo_Dam_1,Hydro,WALC,WECC
+Navajo_Dam_2,Hydro,WALC,WECC
+Navajo_NAV1,Coal,SRP,WECC
+Navajo_NAV2,Coal,SRP,WECC
+Navajo_NAV3,Coal,SRP,WECC
+NealHotSprings1,Geothermal,IPTV,WECC
+NealHotSprings2,Geothermal,IPTV,WECC
+NealHotSprings3,Geothermal,IPTV,WECC
+NeboPwrStaCC-Total,Gas CC,PAUT,WECC
+NeilSimpson_GT1,Gas CT,WACM,WECC
+NeilSimpson_GT2,Gas CT,WACM,WECC
+NeilSimpson_ST1,Coal,WACM,WECC
+NeilSimpson_ST2,Coal,WACM,WECC
+NelsonCreek1296,Hydro,CIPV,WECC
+NevadaCogenCC1-Total,Gas CC,NEVP,WECC
+NevadaCogenCC2-Total,Gas CC,NEVP,WECC
+NevadaSolarOne,CSP,NEVP,WECC
+NEVP_PVF_18023,PV,VEA,WECC
+NEVP_PVF_18420,PV,NEVP,WECC
+NEVP_PVF_18912,PV,NEVP,WECC
+NEVP_PVT_18023,PV,VEA,WECC
+NEVP_PVT_18032,PV,NEVP,WECC
+NEVP_PVT_18420,PV,NEVP,WECC
+NEVP_PVT_18910,PV,NEVP,WECC
+NEVP_PVT_18911,PV,NEVP,WECC
+Newark_QF,Wind,CIPB,WECC
+Newby1_1,Biomass,CIPB,WECC
+Newby1-2,Biomass,CIPB,WECC
+Newby1-3,Biomass,CIPB,WECC
+Newby1-4,Biomass,CIPB,WECC
+Newby2_1,Biomass,CIPB,WECC
+Newby2_2,Biomass,CIPB,WECC
+Newby2_3,Biomass,CIPB,WECC
+Newcastle_1,Hydro,CIPV,WECC
+NewHogan1,Hydro,CIPV,WECC
+NewHogan2,Hydro,CIPV,WECC
+NewLahontan,Hydro,SPPC,WECC
+Newman_3,Other,EPE,WECC
+Newman_PV,PV,EPE,WECC
+Newman5CC-Total,Gas CC,EPE,WECC
+Newman6CC-Total,Gas CC,EPE,WECC
+NewMelones1,Hydro,CIPV,WECC
+NewMelones2,Hydro,BANC,WECC
+NewMexicoWindEC,Wind,PNM,WECC
+NGP_BlueMtn1,Geothermal,SPPC,WECC
+NGP_BlueMtn2,Geothermal,SPPC,WECC
+NGP_BlueMtn3,Geothermal,SPPC,WECC
+Nickel_1_Solar,PV,CIPV,WECC
+Niland01,Gas CT,IID,WECC
+Niland02,Gas CT,IID,WECC
+Niland03,Gas CT,IID,WECC
+Niland04,Gas CT,IID,WECC
+Niland05,Gas CT,IID,WECC
+Niland06,Gas CT,IID,WECC
+Niland07,Gas CT,IID,WECC
+Niland08,Gas CT,IID,WECC
+Niland09,Gas CT,IID,WECC
+Niland10,Gas CT,IID,WECC
+Nimbus_1,Hydro,CIPV,WECC
+Nimbus_2,Hydro,BANC,WECC
+NineCanyonWind1,Wind,BPAT,WECC
+NineCanyonWind2,Wind,BPAT,WECC
+NineCanyonWind3,Wind,BPAT,WECC
+NineMile2Exp,Hydro,AVA,WECC
+NineMile3,Hydro,AVA,WECC
+NineMile4,Hydro,AVA,WECC
+NipponBiomass,Biomass,BPAT,WECC
+Nooksack,Hydro,PSEI,WECC
+NorColorado_GE,Wind,PSCO,WECC
+NorColorado_SEM,Wind,PSCO,WECC
+North_Loop_1,Gas CT,TEPC,WECC
+North_Loop_2,Gas CT,TEPC,WECC
+North_Loop_3,Gas CT,TEPC,WECC
+North_Loop_4,Gas CT,TEPC,WECC
+Northeast_1,Gas CT,AVA,WECC
+Northeast_2,Gas CT,AVA,WECC
+NorthFork_CO,Hydro,PSCO,WECC
+NorthFork_OR1,Hydro,PGE,WECC
+NorthFork_OR2,Hydro,PGE,WECC
+NorthHollywood1-1,Hydro,LDWP,WECC
+NorthHollywood1-2,Hydro,LDWP,WECC
+NorthHollywood1-3,Hydro,LDWP,WECC
+NorthHurlburt1,Wind,BPAT,WECC
+NorthHurlburt2,Wind,BPAT,WECC
+NorthIslandCC-Total,Gas CC,CISD,WECC
+NorthPalmSprngs,PV,CISC,WECC
+NorthSkyRiver,Wind,CISC,WECC
+NorthValmy2,Coal,SPPC,WECC
+NorthWind,Wind,CISC,WECC
+NotchButteGeoBon2,Hydro,IPMV,WECC
+NovaJoffreCC-Total,Gas CC,AESO,WECC
+Noxon_Rapids_1,Hydro,AVA,WECC
+Noxon_Rapids_2,Hydro,AVA,WECC
+Noxon_Rapids_3,Hydro,AVA,WECC
+Noxon_Rapids_4,Hydro,AVA,WECC
+Noxon_Rapids_5,Hydro,AVA,WECC
+NRGBorrego,PV,CISD,WECC
+NRG-EC-SanDiego,Gas CT,CISD,WECC
+NRGrnWndfallPwr,Gas CT,AESO,WECC
+NRGSolarRoadrunner,PV,EPE,WECC
+NrthwdGreenPwr,Biomass,BCHA,WECC
+NTC-MCRD-CC-Total,Gas CC,CISD,WECC
+Nucla_1,Coal,WACM,WECC
+Nucla_2,Coal,WACM,WECC
+Nucla_3,Coal,WACM,WECC
+Nucla_ST4,Coal,WACM,WECC
+NW_StaveRiver1,Hydro,BCHA,WECC
+NW_StaveRiver2,Hydro,BCHA,WECC
+NW_StaveRiver3,Hydro,BCHA,WECC
+Oak_Flat_1,Hydro,CIPV,WECC
+Oak_Grove_1,Hydro,PGE,WECC
+Oak_Grove_2,Hydro,PGE,WECC
+OakCreek1,Wind,CISC,WECC
+OakCreek2,Wind,CISC,WECC
+OakCreek3,Wind,CISC,WECC
+OakCreek4,Wind,CISC,WECC
+Oakland_Pwr1,Gas CT,CIPB,WECC
+Oakland_Pwr2,Gas CT,CIPB,WECC
+Oakland_Pwr3,Gas CT,CIPB,WECC
+OakleyCC-Total,Gas CC,CIPB,WECC
+Oasis_Wind_1,Wind,CISC,WECC
+Ocotillo_1,Other,AZPS,WECC
+Ocotillo_2,Other,AZPS,WECC
+Ocotillo_GT1,Gas CT,AZPS,WECC
+Ocotillo_GT2,Gas CT,AZPS,WECC
+Ocotillo_PV1,PV,AZPS,WECC
+Ocotillo_PV2,PV,AZPS,WECC
+Ocotillo_PVM,PV,AZPS,WECC
+OcotilloExpress1,Wind,CISD,WECC
+OcotilloExpress2,Wind,CISD,WECC
+OcotilloSolProject,PV,CISD,WECC
+OgdenPwrPacific,Biomass,CIPV,WECC
+Oildale_Energy,Gas CT,CIPV,WECC
+OilFields_QF,Hydro,CIPV,WECC
+Oldman_2_2,Hydro,AESO,WECC
+Oldman1-1,Hydro,AESO,WECC
+OldManRiver,Wind,AESO,WECC
+Olinda_LF1,Biomass,CISC,WECC
+Olinda_LF2,Biomass,CISC,WECC
+Olinda_LF3,Biomass,CISC,WECC
+OliphantRidge-1,Wind,BPAT,WECC
+OliphantRidge-2,Wind,BPAT,WECC
+Olive_O1,Other,LDWP,WECC
+Olive_O2,Other,LDWP,WECC
+OLSCamarilloCC-Total,Gas CC,CISC,WECC
+OLSChinoCC-Total,CHP-QF,CISC,WECC
+Olsen_GEN1,Hydro,CIPV,WECC
+Oneida_1,Hydro,PAID,WECC
+Oneida_2,Hydro,PAID,WECC
+Oneida_3,Hydro,PAID,WECC
+ONeill_1,Storage,CIPV,WECC
+ONeill_2,Storage,CIPV,WECC
+ONeill_3,Storage,CIPV,WECC
+ONeill_4,Storage,CIPV,WECC
+ONeill_5,Storage,CIPV,WECC
+ONeill_6,Storage,CIPV,WECC
+Ontario_RT,PV,CISC,WECC
+Ontario1_1,Hydro,CISC,WECC
+Ontario1-2,Hydro,CISC,WECC
+Ontario1-3,Hydro,CISC,WECC
+Ontario2_1,Hydro,CISC,WECC
+OrangeGrove1,Gas CT,CISD,WECC
+OrangeGrove2,Gas CT,CISD,WECC
+OregonTrail,Wind,IPMV,WECC
+Ormesa_I_ITLU1,Geothermal,IID,WECC
+Ormesa_I_ITLU2,Geothermal,IID,WECC
+Ormesa_I_OE11,Geothermal,IID,WECC
+Ormesa_I_OE12,Geothermal,IID,WECC
+Ormesa_I_OE14,Geothermal,IID,WECC
+Ormesa_I_OE15,Geothermal,IID,WECC
+Ormesa_I_OE21,Geothermal,IID,WECC
+Ormesa_I_OE22,Geothermal,IID,WECC
+Ormesa_I_OE24,Geothermal,IID,WECC
+Ormesa_I_OE25,Geothermal,IID,WECC
+Ormesa_I_OE31,Geothermal,IID,WECC
+Ormesa_I_OE32,Geothermal,IID,WECC
+Ormesa_IH_OE11,Geothermal,IID,WECC
+Ormesa_IH_OE12,Geothermal,IID,WECC
+Ormesa_IH_OE13,Geothermal,IID,WECC
+Ormesa_IH_OE14,Geothermal,IID,WECC
+Ormesa_IH_OE15,Geothermal,IID,WECC
+Ormesa_IH_OE16,Geothermal,IID,WECC
+Ormesa_IH_OE21,Geothermal,IID,WECC
+Ormesa_IH_OE22,Geothermal,IID,WECC
+Ormesa_IH_OE23,Geothermal,IID,WECC
+Ormesa_IH_OE24,Geothermal,IID,WECC
+Ormesa_IH_OE25,Geothermal,IID,WECC
+Ormesa_IH_OE26,Geothermal,IID,WECC
+Ormesa2_21,Geothermal,IID,WECC
+Ormesa2_22,Geothermal,IID,WECC
+Orodell_Hydro_1,Hydro,PSCO,WECC
+OrovilleCogen1,Steam,CIPV,WECC
+OrovilleCogen2,Steam,CIPV,WECC
+OrovilleCogen3,Steam,CIPV,WECC
+OrovilleCogen4,Steam,CIPV,WECC
+OrovilleCogen5,Steam,CIPV,WECC
+OrovilleCogen6,Steam,CIPV,WECC
+OrovilleCogen7,Steam,CIPV,WECC
+Osage_1,Coal,WACM,WECC
+Osage_2,Coal,WACM,WECC
+Osage_3,Coal,WACM,WECC
+OsoPump1,Other,CISC,WECC
+OsoPump2,Other,CISC,WECC
+OsoPump3,Other,CISC,WECC
+OsoPump4,Other,CISC,WECC
+OsoPump5,Other,CISC,WECC
+OsoPump6,Other,CISC,WECC
+OsoPump7,Other,CISC,WECC
+OsoPump8,Other,CISC,WECC
+Ostrom_Road,Biomass,CIPV,WECC
+OtayLF1,Biomass,CISD,WECC
+OtayLF2,Biomass,CISD,WECC
+OtayLF3,Biomass,CISD,WECC
+OtayMesaCC-Total,Gas CC,CISD,WECC
+OTCR-CIPB-Stor01,Storage,CIPB,WECC
+OTCR-CIPB-Stor02,Storage,CIPB,WECC
+OTCR-CIPB-Stor03,Storage,CIPV,WECC
+OTCR-CIPB-Stor04,Storage,CIPB,WECC
+OTCR-CIPB-Stor05,Storage,CIPB,WECC
+OTCR-CIPB-Stor06,Storage,CIPV,WECC
+OTCR-CIPB-Stor07,Storage,CIPB,WECC
+OTCR-CIPB-Stor08,Storage,CIPB,WECC
+OTCR-CIPV-Stor01,Storage,CIPV,WECC
+OTCR-CIPV-Stor02,Storage,CIPV,WECC
+OTCR-CIPV-Stor03,Storage,CIPV,WECC
+OTCR-CIPV-Stor04,Storage,CIPV,WECC
+OTCR-CIPV-Stor05,Storage,CIPV,WECC
+OTCR-CIPV-Stor06,Storage,CIPV,WECC
+OTCR-CIPV-Stor07,Storage,CIPV,WECC
+OTCR-CIPV-Stor08,Storage,CIPV,WECC
+OTCR-T1-4CISC-EE1,Other,CISC,WECC
+OTCR-T1-4CISC-EE2,Other,CISC,WECC
+OTCR-T1-4CISC-EE3,Other,CISC,WECC
+OTCR-T1-4CISC-EE4,Other,CISC,WECC
+OTCR-T1-4CISC-EE5,Other,CISC,WECC
+OTCR-T1-4CISC-EE6,Other,CISC,WECC
+OTCR-T1CISC-CT01,Gas CT,CISC,WECC
+OTCR-T1CISC-CT02,Gas CT,CISC,WECC
+OTCR-T1CISC-CT03,Gas CT,CISC,WECC
+OTCR-T1CISC-CT04,Gas CT,CISC,WECC
+OTCR-T1CISC-CT05,Gas CT,CISC,WECC
+OTCR-T1CISC-CT06,Gas CT,CISC,WECC
+OTCR-T1CISC-CT07,Gas CT,CISC,WECC
+OTCR-T1CISC-CT08,Gas CT,CISC,WECC
+OTCR-T1CISC-CT09,Gas CT,CISC,WECC
+OTCR-T1CISC-CT10,Gas CT,CISC,WECC
+OTCR-T1CISC-CT11,Gas CT,CISC,WECC
+OTCR-T1CISC-CT12,Gas CT,CISC,WECC
+OTCR-T1CISC-Stor01,Storage,CISC,WECC
+OTCR-T1CISC-Stor02,Storage,CISC,WECC
+OTCR-T1CISC-Stor03,Storage,CISC,WECC
+OTCR-T1CISC-Stor04,Storage,CISC,WECC
+OTCR-T1CISC-Stor05,Storage,CISC,WECC
+OTCR-T4CISC-CT1,Gas CT,CISC,WECC
+OTCR-T4CISC-CT2,Gas CT,CISC,WECC
+OTCR-T4CISC-CT3,Gas CT,CISC,WECC
+OTCR-T4CISC-CT4,Gas CT,CISC,WECC
+OTCR-T4CISC-DGPV1,PV,CISC,WECC
+OTCR-T4CISC-DGPV2,PV,CISC,WECC
+OTCR-T4CISC-DGPV3,PV,CISC,WECC
+OTCR-T4CISC-DGPV4,PV,CISC,WECC
+OTCR-T4CISC-DGPV5,PV,CISC,WECC
+OTCR-T4CISC-DGPV6,PV,CISC,WECC
+OTCR-T4CISD-DGPV01,PV,CISD,WECC
+OTCR-T4CISD-DGPV02,PV,CISD,WECC
+OTCR-T4CISD-DGPV03,PV,CISD,WECC
+OTCR-T4CISD-DGPV04,PV,CISD,WECC
+OTCR-T4CISD-DGPV05,PV,CISD,WECC
+OTCR-T4CISD-DGPV06,PV,CISD,WECC
+OTCR-T4CISD-DGPV07,PV,CISD,WECC
+OTCR-T4CISD-DGPV08,PV,CISD,WECC
+OTCR-T4CISD-DGPV09,PV,CISD,WECC
+OTCR-T4CISD-DGPV10,PV,CISD,WECC
+OTCR-T4CISD-EE01,Other,CISD,WECC
+OTCR-T4CISD-EE02,Other,CISD,WECC
+OTCR-T4CISD-EE03,Other,CISD,WECC
+OTCR-T4CISD-EE04,Other,CISD,WECC
+OTCR-T4CISD-EE05,Other,CISD,WECC
+OTCR-T4CISD-EE06,Other,CISD,WECC
+OTCR-T4CISD-EE07,Other,CISD,WECC
+OTCR-T4CISD-EE08,Other,CISD,WECC
+OTCR-T4CISD-EE09,Other,CISD,WECC
+OTCR-T4CISD-EE10,Other,CISD,WECC
+OTCR-T4CISD-Stor01,Storage,CISD,WECC
+OTCR-T4CISD-Stor02,Storage,CISD,WECC
+OteroCounty,PV,PNM,WECC
+OutbackChristms,PV,BPAT,WECC
+OwyheeDam,Hydro,IPTV,WECC
+Ox_Mountain1,Biomass,CIPB,WECC
+Ox_Mountain2,Biomass,CIPB,WECC
+Ox_Mountain3,Biomass,CIPB,WECC
+Ox_Mountain4,Biomass,CIPB,WECC
+Ox_Mountain5,Biomass,CIPB,WECC
+Ox_Mountain6,Biomass,CIPB,WECC
+Ox_Mountain7,Biomass,CIPB,WECC
+Oxbow_(CA)_1,Hydro,CIPV,WECC
+Oxbow_(OR)_1,Hydro,IPTV,WECC
+Oxbow_(OR)_2,Hydro,IPTV,WECC
+Oxbow_(OR)_3,Hydro,IPTV,WECC
+Oxbow_(OR)_4,Hydro,IPTV,WECC
+Oxnard_GEN2,CHP-QF,CISC,WECC
+OxnardPaperMill,Gas CT,CISC,WECC
+OxnardWWTreatment76,Biomass,CISC,WECC
+PACE_UT_PVF_65309,PV,PAUT,WECC
+PACE_UT_PVT_65135,PV,PAUT,WECC
+PACE_UT_PVT_67801,PV,PAWY,WECC
+PacificLumber1,Biomass,CIPV,WECC
+PacificLumber2,Biomass,CIPV,WECC
+PacificLumber3,Biomass,CIPV,WECC
+PacificUltrapwr,Biomass,CIPV,WECC
+PacificWind,Wind,CISC,WECC
+Packwood,Hydro,BPAT,WECC
+PACW_PVR_45183,RPV,PACW,WECC
+PACW_PVR_45239,RPV,PACW,WECC
+PACW_PVR_45317,RPV,PACW,WECC
+Palisades_1,Hydro,PAID,WECC
+Palisades_2,Hydro,PAID,WECC
+Palisades_3,Hydro,PAID,WECC
+Palisades_4,Hydro,PAID,WECC
+Palmdale,Wind,CISC,WECC
+Palo_Verde_1,Nuclear,AZPS,WECC
+Palo_Verde_2,Nuclear,AZPS,WECC
+Palo_Verde_3,Nuclear,AZPS,WECC
+Paloma_Solar,PV,AZPS,WECC
+PalomarCC-Total,Gas CC,CISD,WECC
+PalomarMC,Gas CT,CISD,WECC
+PanocheEC1,Gas CT,CIPV,WECC
+PanocheEC2,Gas CT,CIPV,WECC
+PanocheEC3,Gas CT,CIPV,WECC
+PanocheEC4,Gas CT,CIPV,WECC
+PanochePeakerCT,Gas CT,CIPV,WECC
+PanPacificWebFlat,Hydro,CIPV,WECC
+Pardee_1,Hydro,CIPV,WECC
+Pardee_2,Hydro,CIPV,WECC
+Pardee_3,Hydro,CIPV,WECC
+Parker_1,Hydro,CIPV,WECC
+Parker_Dam_1,Hydro,WALC,WECC
+Parker_Dam_2,Hydro,WALC,WECC
+Parker_Dam_3,Hydro,WALC,WECC
+Parker_Dam_4,Hydro,WALC,WECC
+ParnsusCntrlCC-Total,Gas CC,CIPB,WECC
+ParqueEolico,Wind,CFE,WECC
+PastoriaCC1-Total,Gas CC,CISC,WECC
+PastoriaCC2-Total,Gas CC,CISC,WECC
+Pathfinder_CAES,Storage,PAUT,WECC
+Pathfinder_CAES_Gas,Storage,PAUT,WECC
+Patterson_Wind,Wind,CIPV,WECC
+PattersonPass1,Wind,CIPB,WECC
+PattersonPass2,Wind,CIPV,WECC
+PattersonPass3,Wind,CIPV,WECC
+PattersonPass4,Wind,CIPV,WECC
+PaTu_Wind,Wind,BPAT,WECC
+Patua1A1,Geothermal,SPPC,WECC
+Patua1A2,Geothermal,SPPC,WECC
+Patua1A3,Geothermal,SPPC,WECC
+Patua1A4,Geothermal,SPPC,WECC
+Patua1A5,Geothermal,SPPC,WECC
+Patua1A6,Geothermal,SPPC,WECC
+PAUL_SWEET_QF,Biomass,CIPV,WECC
+Pawnee_1,Coal,PSCO,WECC
+PaynesFerry,Wind,IPMV,WECC
+Payson_86_1,Other,PAUT,WECC
+Payson_86_2,Other,PAUT,WECC
+Payson_86_3,Other,PAUT,WECC
+Payson_86_4,Other,PAUT,WECC
+PdteJuarez05,Other,CFE,WECC
+PdteJuarez06,Other,CFE,WECC
+PdteJuarez07,Gas CT,CFE,WECC
+PdteJuarez08,Gas CC,CFE,WECC
+PdteJuarez09,Gas CC,CFE,WECC
+PdteJuarezCC-Total,Gas CC,CFE,WECC
+PdteJuarezGT1,Gas CT,CFE,WECC
+PdteJuarezGT2,Gas CT,CFE,WECC
+Peace_Canyon_1,Hydro,BCHA,WECC
+Peace_Canyon_2,Hydro,BCHA,WECC
+Peace_Canyon_3,Hydro,BCHA,WECC
+Peace_Canyon_4,Hydro,BCHA,WECC
+PEARBMAP-1,Other,CISC,WECC
+PEARBMAP-2,Other,CISC,WECC
+PEARBMAP-3,Other,CISC,WECC
+PEARBMBP-4,Other,CISC,WECC
+PEARBMBP-5,Other,CISC,WECC
+PEARBMBP-6,Other,CISC,WECC
+PEARBMCP-7,Other,CISC,WECC
+PEARBMCP-8,Other,CISC,WECC
+PEARBMCP-9,Other,CISC,WECC
+PebbleSprings,Wind,BPAT,WECC
+PE-BerkeleyCC-Total,CHP-QF,CIPV,WECC
+PEC_Headworks_1,Hydro,GCPD,WECC
+PeetzTable1,Wind,PSCO,WECC
+PeetzTable2,Wind,PSCO,WECC
+Pelton_1,Hydro,PGE,WECC
+Pelton_2,Hydro,PGE,WECC
+Pelton_3,Hydro,PGE,WECC
+PembinaRedwater,Gas CT,AESO,WECC
+Penrose_LF,Biomass,LDWP,WECC
+Perrin_Ranch,Wind,AZPS,WECC
+Perris_1,Hydro,CISC,WECC
+PGE_BAY_PVF_30020,PV,CIPB,WECC
+PGE_BAY_PVR_30042,RPV,CIPV,WECC
+PGE_BAY_PVR_30437,RPV,CIPB,WECC
+PGE_BAY_PVR_30520,RPV,CIPB,WECC
+PGE_BAY_PVR_30528,RPV,CIPB,WECC
+PGE_BAY_PVR_30535,RPV,CIPB,WECC
+PGE_BAY_PVR_30540,RPV,CIPB,WECC
+PGE_BAY_PVR_30543,RPV,CIPB,WECC
+PGE_BAY_PVR_30550,RPV,CIPB,WECC
+PGE_BAY_PVR_30554,RPV,CIPB,WECC
+PGE_BAY_PVR_30555,RPV,CIPB,WECC
+PGE_BAY_PVR_30562,RPV,CIPB,WECC
+PGE_BAY_PVR_30565,RPV,CIPB,WECC
+PGE_BAY_PVR_30585,RPV,CIPB,WECC
+PGE_BAY_PVR_30630,RPV,CIPB,WECC
+PGE_BAY_PVR_30685,RPV,CIPB,WECC
+PGE_BAY_PVR_30695,RPV,CIPB,WECC
+PGE_BAY_PVR_30700,RPV,CIPB,WECC
+PGE_BAY_PVR_30703,RPV,CIPB,WECC
+PGE_BAY_PVR_30705,RPV,CIPB,WECC
+PGE_BAY_PVR_30713,RPV,CIPB,WECC
+PGE_BAY_PVR_30716,RPV,CIPB,WECC
+PGE_BAY_PVR_30720,RPV,CIPB,WECC
+PGE_BAY_PVR_30730,RPV,CIPB,WECC
+PGE_BAY_PVR_30731,RPV,CIPB,WECC
+PGE_BAY_PVR_30733,RPV,CIPB,WECC
+PGE_BAY_PVR_35219,RPV,CIPB,WECC
+PGE_BAY_PVR_36893,RPV,CIPB,WECC
+PGE_BAY_PVT_30324,PV,CIPB,WECC
+PGE_BAY_PVT_30440,PV,CIPB,WECC
+PGE_BAY_PVT_30503,PV,CIPB,WECC
+PGE_BAY_PVT_30554,PV,CIPB,WECC
+PGE_VLY_PVF_30042,PV,CIPV,WECC
+PGE_VLY_PVF_30489,PV,CIPV,WECC
+PGE_VLY_PVF_30520,PV,CIPV,WECC
+PGE_VLY_PVF_30655,PV,CIPV,WECC
+PGE_VLY_PVF_30705,PV,CIPV,WECC
+PGE_VLY_PVF_30760,PV,CIPV,WECC
+PGE_VLY_PVF_30860,PV,CIPV,WECC
+PGE_VLY_PVF_30905,PV,CIPV,WECC
+PGE_VLY_PVF_30973,PV,CIPV,WECC
+PGE_VLY_PVF_38600,PV,CIPV,WECC
+PGE_VLY_PVR_30040,RPV,CIPV,WECC
+PGE_VLY_PVR_30045,RPV,CIPV,WECC
+PGE_VLY_PVR_30057,RPV,CIPV,WECC
+PGE_VLY_PVR_30110,RPV,CIPV,WECC
+PGE_VLY_PVR_30335,RPV,CIPV,WECC
+PGE_VLY_PVR_30337,RPV,CIPV,WECC
+PGE_VLY_PVR_30348,RPV,CIPV,WECC
+PGE_VLY_PVR_30465,RPV,CIPV,WECC
+PGE_VLY_PVR_30467,RPV,CIPV,WECC
+PGE_VLY_PVR_30489,RPV,CIPV,WECC
+PGE_VLY_PVR_30536,RPV,CIPB,WECC
+PGE_VLY_PVR_30559,RPV,CIPB,WECC
+PGE_VLY_PVR_30800,RPV,CIPV,WECC
+PGE_VLY_PVR_30850,RPV,CIPV,WECC
+PGE_VLY_PVR_30905,RPV,CIPV,WECC
+PGE_VLY_PVR_30930,RPV,CIPV,WECC
+PGE_VLY_PVR_30940,RPV,CIPV,WECC
+PGE_VLY_PVR_30945,RPV,CIPV,WECC
+PGE_VLY_PVT_30055,PV,CIPV,WECC
+PGE_VLY_PVT_30265,PV,CIPV,WECC
+PGE_VLY_PVT_30345,PV,CIPV,WECC
+PGE_VLY_PVT_30760,PV,CIPV,WECC
+Phillips_Carbon,Coal,CIPB,WECC
+Phillips_RodeoA,Gas CT,CIPB,WECC
+Phillips_RodeoB,Gas CT,CIPB,WECC
+Phillips_RodeoC,Gas CT,CIPB,WECC
+Phoenix_1,Hydro,CIPV,WECC
+Phoenix_Wind,Wind,CISC,WECC
+PHP_2_2,Hydro,PGE,WECC
+PHP1-1,Hydro,PGE,WECC
+Pigeon_Cove_1,Hydro,IPMV,WECC
+Pilgrim_Stage,Wind,IPMV,WECC
+Pilot_Knob_1,Hydro,IID,WECC
+Pilot_Knob_2,Hydro,IID,WECC
+Pine_Flat_1,Hydro,CIPV,WECC
+Pine_Flat_2,Hydro,CIPV,WECC
+Pine_Flat_3,Hydro,CIPV,WECC
+PineTreeSolar,PV,LDWP,WECC
+PineTreeWind,Wind,LDWP,WECC
+Pingston_1,Hydro,BCHA,WECC
+Pingston_2,Hydro,BCHA,WECC
+Pingston_3,Hydro,BCHA,WECC
+PioPicoEnergyCenter1,Gas CT,CISD,WECC
+PioPicoEnergyCenter2,Gas CT,CISD,WECC
+PioPicoEnergyCenter3,Gas CT,CISD,WECC
+Pit_1_H1,Hydro,CIPV,WECC
+Pit_1_H2,Hydro,CIPV,WECC
+Pit_3_H1,Hydro,CIPV,WECC
+Pit_3_H2,Hydro,CIPV,WECC
+Pit_3_H3,Hydro,CIPV,WECC
+Pit_4_1,Hydro,CIPV,WECC
+Pit_4_2,Hydro,CIPV,WECC
+Pit_5_H1,Hydro,CIPV,WECC
+Pit_5_H2,Hydro,CIPV,WECC
+Pit_5_H3,Hydro,CIPV,WECC
+Pit_5_H4,Hydro,CIPV,WECC
+Pit_6_H1,Hydro,CIPV,WECC
+Pit_6_H2,Hydro,CIPV,WECC
+Pit_7_H1,Hydro,CIPV,WECC
+Pit_7_H2,Hydro,CIPV,WECC
+Pit5_Agg,Hydro,CIPV,WECC
+PitchesHnrRanch,Gas CT,CISC,WECC
+PitchessCognCC-Total,Gas CC,LDWP,WECC
+Plains_End_GE10,Other,PSCO,WECC
+Plains_End_GE11,Other,PSCO,WECC
+Plains_End_GE12,Other,PSCO,WECC
+Plains_End_GE13,Other,PSCO,WECC
+Plains_End_GE14,Other,PSCO,WECC
+Plains_End_GE15,Other,PSCO,WECC
+Plains_End_GE16,Other,PSCO,WECC
+Plains_End_GE17,Other,PSCO,WECC
+Plains_End_GE18,Other,PSCO,WECC
+Plains_End_GE19,Other,PSCO,WECC
+Plains_End_GE20,Other,PSCO,WECC
+Plains_End_GEN1,Other,PSCO,WECC
+Plains_End_GEN2,Other,PSCO,WECC
+Plains_End_GEN3,Other,PSCO,WECC
+Plains_End_GEN4,Other,PSCO,WECC
+Plains_End_GEN5,Other,PSCO,WECC
+Plains_End_GEN6,Other,PSCO,WECC
+Plains_End_GEN7,Other,PSCO,WECC
+Plains_End_GEN8,Other,PSCO,WECC
+Plains_End_GEN9,Other,PSCO,WECC
+Plains_End2G01,Other,PSCO,WECC
+Plains_End2G02,Other,PSCO,WECC
+Plains_End2G03,Other,PSCO,WECC
+Plains_End2G04,Other,PSCO,WECC
+Plains_End2G05,Other,PSCO,WECC
+Plains_End2G06,Other,PSCO,WECC
+Plains_End2G07,Other,PSCO,WECC
+Plains_End2G08,Other,PSCO,WECC
+Plains_End2G09,Other,PSCO,WECC
+Plains_End2G10,Other,PSCO,WECC
+Plains_End2G11,Other,PSCO,WECC
+Plains_End2G12,Other,PSCO,WECC
+Plains_End2G13,Other,PSCO,WECC
+Plains_End2G14,Other,PSCO,WECC
+Plaza_Del_Sol_1,PV,TEPC,WECC
+Pleasant_Valley,Hydro,CISC,WECC
+Ples_I_T101,Geothermal,CISC,WECC
+Ples_I_T102,Geothermal,CISC,WECC
+Ples_I_T103,Geothermal,CISC,WECC
+Plummer_Cgn,Biomass,AVA,WECC
+PNM_Generic_CT1,Gas CT,PNM,WECC
+PNM_Generic_CT2,Gas CT,PNM,WECC
+PNM_Generic_CT3,Gas CT,PNM,WECC
+PNM_Generic_CT4,Gas CT,PNM,WECC
+PNM_Generic_CT5,Gas CT,PNM,WECC
+PNM_Generic_PV,PV,PNM,WECC
+PNM_Generic_W1,Wind,PNM,WECC
+PNM_Generic_W2,Wind,PNM,WECC
+Pocatello_Waste,Biomass,IPFE,WECC
+POCATERA_1,Hydro,AESO,WECC
+Poe_1,Hydro,CIPV,WECC
+Poe_2,Hydro,CIPV,WECC
+PointLoma1,Biomass,CISD,WECC
+PointLoma2,Biomass,CISD,WECC
+PointLoma3,Biomass,CISD,WECC
+PointLomaHY,Hydro,CISD,WECC
+Pole_Hill_1,Hydro,WACM,WECC
+PonderosaBaileyCreek,Hydro,CIPV,WECC
+Ponnequin_30,Wind,PSCO,WECC
+Ponnequin_8,Wind,PSCO,WECC
+Ponnequin1,Wind,PSCO,WECC
+Poole_1,Hydro,CISC,WECC
+Poplar_Hill_1,Gas CT,AESO,WECC
+Port_Townsend4,Biomass,BPAT,WECC
+Port_Townsend6,Biomass,BPAT,WECC
+Portal,Hydro,CISC,WECC
+PortervillePV1,PV,CISC,WECC
+PortervillePV2,PV,CISC,WECC
+PortervillePV5,PV,CISC,WECC
+PortlandCementColtn1,Coal,CISC,WECC
+PortlandCementColtn2,Coal,CISC,WECC
+PortofStocktonEF,Coal,CIPV,WECC
+PortTownsend,Hydro,BPAT,WECC
+PortWestwrd1CC-Total,Gas CC,PGE,WECC
+PortWestwrd2-01,Other,PGE,WECC
+PortWestwrd2-02,Other,PGE,WECC
+PortWestwrd2-03,Other,PGE,WECC
+PortWestwrd2-04,Other,PGE,WECC
+PortWestwrd2-05,Other,PGE,WECC
+PortWestwrd2-06,Other,PGE,WECC
+PortWestwrd2-07,Other,PGE,WECC
+PortWestwrd2-08,Other,PGE,WECC
+PortWestwrd2-09,Other,PGE,WECC
+PortWestwrd2-10,Other,PGE,WECC
+PortWestwrd2-11,Other,PGE,WECC
+PortWestwrd2-12,Other,PGE,WECC
+Post_Falls_1,Hydro,AVA,WECC
+Post_Falls_2,Hydro,AVA,WECC
+Post_Falls_3,Hydro,AVA,WECC
+Post_Falls_4,Hydro,AVA,WECC
+Post_Falls_5,Hydro,AVA,WECC
+Post_Falls_6,Hydro,AVA,WECC
+Potholes_East,Hydro,TPWR,WECC
+Potter_Valley_1,Hydro,CIPV,WECC
+Potter_Valley_2,Hydro,CIPV,WECC
+Potter_Valley_3,Hydro,CIPV,WECC
+PowerInvest,Hydro,PAID,WECC
+PrairieWoodProducts,Biomass,IPTV,WECC
+PrescottAirport,PV,AZPS,WECC
+PrescottPV1,PV,AZPS,WECC
+Priest_Rapids_1,Hydro,GCPD,WECC
+Priest_Rapids_2,Hydro,GCPD,WECC
+Priest_Rapids_3,Hydro,GCPD,WECC
+Priest_Rapids_4,Hydro,GCPD,WECC
+Priest_Rapids_5,Hydro,GCPD,WECC
+Priest_Rapids_6,Hydro,GCPD,WECC
+Priest_Rapids_7,Hydro,GCPD,WECC
+Priest_Rapids_8,Hydro,GCPD,WECC
+Priest_Rapids_9,Hydro,GCPD,WECC
+Priest_Rapids10,Hydro,GCPD,WECC
+Prima_Plant1,Biomass,CISD,WECC
+Prima_Plant2,Biomass,CISD,WECC
+Primrose_1,Gas CT,AESO,WECC
+PristineSpgs1_1,Hydro,IPMV,WECC
+PristineSpgs3_1,Hydro,IPMV,WECC
+Prospect1,Hydro,PACW,WECC
+Prospect2-1,Hydro,PACW,WECC
+Prospect2-2,Hydro,PACW,WECC
+Prospect3,Hydro,PACW,WECC
+Prospect4,Hydro,PACW,WECC
+ProximityPV1,PV,PNM,WECC
+PSC_1,PV,TEPC,WECC
+PSC_2,PV,TEPC,WECC
+PSCO-GenericWind,Wind,PSCO,WECC
+PtarmiganCreek1,Hydro,BCHA,WECC
+PtarmiganCreek2,Hydro,BCHA,WECC
+Pteragen_Butte1,Wind,AESO,WECC
+Pteragen_Butte2,Wind,AESO,WECC
+Pueblo_IC1,Other,PSCO,WECC
+Pueblo_IC2,Other,PSCO,WECC
+Pueblo_IC3,Other,PSCO,WECC
+Pueblo_IC4,Other,PSCO,WECC
+Pueblo_IC5,Other,PSCO,WECC
+Pueblo5,Other,PSCO,WECC
+Pueblo6,Other,PSCO,WECC
+PuebloAP-1,Gas CT,PSCO,WECC
+PuebloAP-2,Gas CT,PSCO,WECC
+PuebloAP-3CC-Total,Gas CC,PSCO,WECC
+PuebloAP-4CC-Total,Gas CC,PSCO,WECC
+PuebloAP-GT,Gas CT,PSCO,WECC
+Puente_Hills1,Biomass,CISC,WECC
+Puente_Hills2,Biomass,CISC,WECC
+Puente_Hills3,Biomass,CISC,WECC
+Puente_Hills4,Biomass,CISC,WECC
+Puente_Hills5,Biomass,CISC,WECC
+Puget_Sound,Other,BPAT,WECC
+Puntledge_1,Hydro,BCHA,WECC
+PV_SC2_APS_14000,PV,AZPS,WECC
+PV_SC2_APS_14004,PV,AZPS,WECC
+PV_SC2_APS_14009,PV,AZPS,WECC
+PV_SC2_APS_14010,PV,AZPS,WECC
+PV_SC2_APS_14016,PV,AZPS,WECC
+PV_SC2_APS_14017,PV,AZPS,WECC
+PV_SC2_APS_14031,PV,AZPS,WECC
+PV_SC2_APS_14201,PV,AZPS,WECC
+PV_SC2_APS_14202,PV,AZPS,WECC
+PV_SC2_APS_14205,PV,AZPS,WECC
+PV_SC2_APS_14207,PV,AZPS,WECC
+PV_SC2_APS_14209,PV,AZPS,WECC
+PV_SC2_APS_14210,PV,AZPS,WECC
+PV_SC2_APS_14212,PV,AZPS,WECC
+PV_SC2_APS_14215,PV,AZPS,WECC
+PV_SC2_APS_14216,PV,AZPS,WECC
+PV_SC2_APS_14217,PV,AZPS,WECC
+PV_SC2_APS_14220,PV,AZPS,WECC
+PV_SC2_APS_14222,PV,AZPS,WECC
+PV_SC2_APS_14226,PV,AZPS,WECC
+PV_SC2_APS_14227,PV,AZPS,WECC
+PV_SC2_APS_14228,PV,AZPS,WECC
+PV_SC2_APS_14229,PV,AZPS,WECC
+PV_SC2_APS_14233,PV,AZPS,WECC
+PV_SC2_APS_14237,PV,AZPS,WECC
+PV_SC2_APS_14243,PV,AZPS,WECC
+PV_SC2_APS_14246,PV,AZPS,WECC
+PV_SC2_APS_14249,PV,AZPS,WECC
+PV_SC2_APS_14253,PV,AZPS,WECC
+PV_SC2_APS_14254,PV,AZPS,WECC
+PV_SC2_APS_14255,PV,AZPS,WECC
+PV_SC2_AVA_40624,PV,AVA,WECC
+PV_SC2_AVA_40683,PV,AVA,WECC
+PV_SC2_AVA_48025,PV,AVA,WECC
+PV_SC2_AVA_48357,PV,AVA,WECC
+PV_SC2_AVA_48999,PV,AVA,WECC
+PV_SC2_BPA_40046,PV,BPAT,WECC
+PV_SC2_BPA_40049,PV,BPAT,WECC
+PV_SC2_BPA_40095,PV,BPAT,WECC
+PV_SC2_BPA_40375,PV,BPAT,WECC
+PV_SC2_BPA_40381,PV,BPAT,WECC
+PV_SC2_BPA_40443,PV,BPAT,WECC
+PV_SC2_BPA_40595,PV,BPAT,WECC
+PV_SC2_BPA_40635,PV,BPAT,WECC
+PV_SC2_BPA_40689,PV,BPAT,WECC
+PV_SC2_BPA_40711,PV,BPAT,WECC
+PV_SC2_BPA_40747,PV,BPAT,WECC
+PV_SC2_BPA_40767,PV,BPAT,WECC
+PV_SC2_BPA_40792,PV,BPAT,WECC
+PV_SC2_BPA_40809,PV,BPAT,WECC
+PV_SC2_BPA_40867,PV,BPAT,WECC
+PV_SC2_BPA_40899,PV,BPAT,WECC
+PV_SC2_BPA_40923,PV,BPAT,WECC
+PV_SC2_BPA_40963,PV,BPAT,WECC
+PV_SC2_BPA_40975,PV,BPAT,WECC
+PV_SC2_BPA_41001,PV,BPAT,WECC
+PV_SC2_BPA_41021,PV,BPAT,WECC
+PV_SC2_BPA_41049,PV,BPAT,WECC
+PV_SC2_BPA_41111,PV,BPAT,WECC
+PV_SC2_BPA_41138,PV,BPAT,WECC
+PV_SC2_BPA_41149,PV,BPAT,WECC
+PV_SC2_BPA_41165,PV,BPAT,WECC
+PV_SC2_BPA_45610,PV,BPAT,WECC
+PV_SC2_BPA_47082,PV,BPAT,WECC
+PV_SC2_BPA_47578,PV,BPAT,WECC
+PV_SC2_BPA_62339,PV,BPAT,WECC
+PV_SC2_EPE_11014,PV,EPE,WECC
+PV_SC2_EPE_11061,PV,EPE,WECC
+PV_SC2_EPE_11080,PV,EPE,WECC
+PV_SC2_FAR EAST_60185,PV,IPFE,WECC
+PV_SC2_GCPD_46045,PV,GCPD,WECC
+PV_SC2_GCPD_46158,PV,GCPD,WECC
+PV_SC2_GCPD_46164,PV,GCPD,WECC
+PV_SC2_MAGIC VLY_60130,PV,IPMV,WECC
+PV_SC2_MAGIC VLY_60177,PV,IPMV,WECC
+PV_SC2_NEVP_18027,PV,NEVP,WECC
+PV_SC2_NEVP_18420,PV,NEVP,WECC
+PV_SC2_NEVP_18904,PV,NEVP,WECC
+PV_SC2_NWMT_62045,PV,NWMT,WECC
+PV_SC2_NWMT_62052,PV,NWMT,WECC
+PV_SC2_NWMT_62055,PV,NWMT,WECC
+PV_SC2_NWMT_62344,PV,NWMT,WECC
+PV_SC2_NWMT_62365,PV,NWMT,WECC
+PV_SC2_PACE_ID_65665,PV,PAID,WECC
+PV_SC2_PACE_UT_65135,PV,PAUT,WECC
+PV_SC2_PACE_UT_65193,PV,PAUT,WECC
+PV_SC2_PACE_UT_65259,PV,PAUT,WECC
+PV_SC2_PACE_UT_65309,PV,PAUT,WECC
+PV_SC2_PACE_UT_65945,PV,PAUT,WECC
+PV_SC2_PACE_UT_66080,PV,PAUT,WECC
+PV_SC2_PACE_UT_66400,PV,PAUT,WECC
+PV_SC2_PACE_UT_66476,PV,PAUT,WECC
+PV_SC2_PACE_UT_66510,PV,PAUT,WECC
+PV_SC2_PACE_UT_68055,PV,PAUT,WECC
+PV_SC2_PACW_45161,PV,PACW,WECC
+PV_SC2_PACW_45183,PV,PACW,WECC
+PV_SC2_PACW_45195,PV,PACW,WECC
+PV_SC2_PACW_45239,PV,PACW,WECC
+PV_SC2_PACW_45245,PV,PACW,WECC
+PV_SC2_PACW_45317,PV,PACW,WECC
+PV_SC2_PNM_10294,PV,PNM,WECC
+PV_SC2_PNM_10390,PV,PNM,WECC
+PV_SC2_PNM_10393,PV,PNM,WECC
+PV_SC2_PNM_12082,PV,PNM,WECC
+PV_SC2_PSC_70018,PV,PSCO,WECC
+PV_SC2_PSC_70038,PV,PSCO,WECC
+PV_SC2_PSC_70046,PV,PSCO,WECC
+PV_SC2_PSC_70047,PV,PSCO,WECC
+PV_SC2_PSC_70122,PV,PSCO,WECC
+PV_SC2_PSC_70149,PV,PSCO,WECC
+PV_SC2_PSC_70200,PV,PSCO,WECC
+PV_SC2_PSC_70206,PV,PSCO,WECC
+PV_SC2_PSC_70254,PV,PSCO,WECC
+PV_SC2_PSC_70261,PV,PSCO,WECC
+PV_SC2_PSC_70284,PV,PSCO,WECC
+PV_SC2_PSC_70286,PV,PSCO,WECC
+PV_SC2_PSC_70291,PV,PSCO,WECC
+PV_SC2_PSC_70343,PV,PSCO,WECC
+PV_SC2_PSC_70362,PV,PSCO,WECC
+PV_SC2_PSC_70375,PV,PSCO,WECC
+PV_SC2_PSC_70432,PV,PSCO,WECC
+PV_SC2_PSC_70461,PV,PSCO,WECC
+PV_SC2_PSC_70481,PV,PSCO,WECC
+PV_SC2_PSC_70513,PV,PSCO,WECC
+PV_SC2_PSC_70527,PV,PSCO,WECC
+PV_SC2_PSC_70533,PV,PSCO,WECC
+PV_SC2_PSC_70539,PV,PSCO,WECC
+PV_SC2_PSC_70544,PV,PSCO,WECC
+PV_SC2_PSC_70820,PV,PSCO,WECC
+PV_SC2_PSC_72811,PV,PSCO,WECC
+PV_SC2_PSC_73199,PV,PSCO,WECC
+PV_SC2_PSC_73467,PV,PSCO,WECC
+PV_SC2_PSE_42300,PV,PSEI,WECC
+PV_SC2_PSE_42306,PV,PSEI,WECC
+PV_SC2_PSE_42412,PV,PSEI,WECC
+PV_SC2_PSE_42500,PV,PSEI,WECC
+PV_SC2_PSE_42503,PV,PSEI,WECC
+PV_SC2_PSE_42507,PV,PSEI,WECC
+PV_SC2_PSE_42700,PV,PSEI,WECC
+PV_SC2_PSE_42703,PV,PSEI,WECC
+PV_SC2_PSE_42802,PV,PSEI,WECC
+PV_SC2_SCL_46403,PV,SCL,WECC
+PV_SC2_SCL_46415,PV,SCL,WECC
+PV_SC2_SCL_46417,PV,SCL,WECC
+PV_SC2_SCL_46423,PV,SCL,WECC
+PV_SC2_SCL_46427,PV,SCL,WECC
+PV_SC2_SCL_46435,PV,SCL,WECC
+PV_SC2_SPP_64379,PV,SPPC,WECC
+PV_SC2_SRP_14236,PV,SRP,WECC
+PV_SC2_SRP_15021,PV,SRP,WECC
+PV_SC2_SRP_15033,PV,SRP,WECC
+PV_SC2_SRP_15051,PV,SRP,WECC
+PV_SC2_SRP_15061,PV,SRP,WECC
+PV_SC2_SRP_15088,PV,SRP,WECC
+PV_SC2_SRP_15093,PV,SRP,WECC
+PV_SC2_SRP_15172,PV,SRP,WECC
+PV_SC2_SRP_15173,PV,SRP,WECC
+PV_SC2_SRP_15201,PV,SRP,WECC
+PV_SC2_SRP_15203,PV,SRP,WECC
+PV_SC2_SRP_15204,PV,SRP,WECC
+PV_SC2_SRP_15212,PV,SRP,WECC
+PV_SC2_SRP_15213,PV,SRP,WECC
+PV_SC2_SRP_15216,PV,SRP,WECC
+PV_SC2_SRP_15219,PV,SRP,WECC
+PV_SC2_TEP_16103,PV,TEPC,WECC
+PV_SC2_TEP_16105,PV,TEPC,WECC
+PV_SC2_TEP_16111,PV,TEPC,WECC
+PV_SC2_TEP_16124,PV,TEPC,WECC
+PV_SC2_TEP_16126,PV,TEPC,WECC
+PV_SC2_TEP_16902,PV,TEPC,WECC
+PV_SC2_TPWR_46609,PV,TPWR,WECC
+PV_SC2_TPWR_46645,PV,TPWR,WECC
+PV_SC2_TREAS VLY_60110,PV,IPTV,WECC
+PV_SC2_TREAS VLY_60207,PV,IPTV,WECC
+PV_SC2_TREAS VLY_60249,PV,IPTV,WECC
+PV_SC2_TREAS VLY_61828,PV,IPTV,WECC
+PV_SC2_WACM_73419,PV,WACM,WECC
+PV_SC2_WALC_17016,PV,WALC,WECC
+PV_SC2_WAUW_62034,PV,WAUW,WECC
+PV_SC2_WAUW_63010,PV,WAUW,WECC
+PV_SC3_APS_14004,PV,AZPS,WECC
+PV_SC3_APS_14009,PV,AZPS,WECC
+PV_SC3_APS_14010,PV,AZPS,WECC
+PV_SC3_APS_14016,PV,AZPS,WECC
+PV_SC3_APS_14017,PV,AZPS,WECC
+PV_SC3_APS_14031,PV,AZPS,WECC
+PV_SC3_APS_14201,PV,AZPS,WECC
+PV_SC3_APS_14202,PV,AZPS,WECC
+PV_SC3_APS_14205,PV,AZPS,WECC
+PV_SC3_APS_14207,PV,AZPS,WECC
+PV_SC3_APS_14209,PV,AZPS,WECC
+PV_SC3_APS_14210,PV,AZPS,WECC
+PV_SC3_APS_14212,PV,AZPS,WECC
+PV_SC3_APS_14215,PV,AZPS,WECC
+PV_SC3_APS_14216,PV,AZPS,WECC
+PV_SC3_APS_14217,PV,AZPS,WECC
+PV_SC3_APS_14220,PV,AZPS,WECC
+PV_SC3_APS_14222,PV,AZPS,WECC
+PV_SC3_APS_14226,PV,AZPS,WECC
+PV_SC3_APS_14227,PV,AZPS,WECC
+PV_SC3_APS_14228,PV,AZPS,WECC
+PV_SC3_APS_14229,PV,AZPS,WECC
+PV_SC3_APS_14233,PV,AZPS,WECC
+PV_SC3_APS_14237,PV,AZPS,WECC
+PV_SC3_APS_14243,PV,AZPS,WECC
+PV_SC3_APS_14253,PV,AZPS,WECC
+PV_SC3_AVA_40683,PV,BPAT,WECC
+PV_SC3_BPA_40046,PV,BPAT,WECC
+PV_SC3_BPA_40049,PV,BPAT,WECC
+PV_SC3_BPA_40095,PV,BPAT,WECC
+PV_SC3_BPA_40375,PV,BPAT,WECC
+PV_SC3_BPA_40381,PV,BPAT,WECC
+PV_SC3_BPA_40443,PV,BPAT,WECC
+PV_SC3_BPA_40595,PV,BPAT,WECC
+PV_SC3_BPA_40635,PV,BPAT,WECC
+PV_SC3_BPA_40689,PV,BPAT,WECC
+PV_SC3_BPA_40711,PV,BPAT,WECC
+PV_SC3_BPA_40747,PV,BPAT,WECC
+PV_SC3_BPA_40767,PV,BPAT,WECC
+PV_SC3_BPA_40792,PV,BPAT,WECC
+PV_SC3_BPA_40809,PV,BPAT,WECC
+PV_SC3_CFE_20149,PV,CFE,WECC
+PV_SC3_EPE_11038,PV,EPE,WECC
+PV_SC3_EPE_11111,PV,EPE,WECC
+PV_SC3_NEVP_18008,PV,NEVP,WECC
+PV_SC3_NEVP_18017,PV,NEVP,WECC
+PV_SC3_NEVP_18018,PV,NEVP,WECC
+PV_SC3_NEVP_18026,PV,NEVP,WECC
+PV_SC3_NEVP_18028,PV,NEVP,WECC
+PV_SC3_NEVP_18029,PV,NEVP,WECC
+PV_SC3_NEVP_18032,PV,NEVP,WECC
+PV_SC3_NEVP_18455,PV,NEVP,WECC
+PV_SC3_NEVP_18466,PV,NEVP,WECC
+PV_SC3_NEVP_18618,PV,NEVP,WECC
+PV_SC3_NEVP_18655,PV,NEVP,WECC
+PV_SC3_NEVP_18904,PV,NEVP,WECC
+PV_SC3_NEVP_18910,PV,NEVP,WECC
+PV_SC3_NWMT_62045,PV,NWMT,WECC
+PV_SC3_NWMT_62052,PV,NWMT,WECC
+PV_SC3_NWMT_62055,PV,NWMT,WECC
+PV_SC3_NWMT_62344,PV,NWMT,WECC
+PV_SC3_NWMT_62365,PV,NWMT,WECC
+PV_SC3_PACE_ID_65665,PV,PAID,WECC
+PV_SC3_PACE_UT_65135,PV,PAUT,WECC
+PV_SC3_PACE_UT_65193,PV,PAUT,WECC
+PV_SC3_PACE_UT_65259,PV,PAUT,WECC
+PV_SC3_PACE_UT_65309,PV,PAUT,WECC
+PV_SC3_PACE_UT_65945,PV,PAUT,WECC
+PV_SC3_PACE_UT_66080,PV,PAUT,WECC
+PV_SC3_PACE_UT_66400,PV,PAUT,WECC
+PV_SC3_PACE_UT_66476,PV,PAUT,WECC
+PV_SC3_PACE_UT_66510,PV,PAUT,WECC
+PV_SC3_PACE_UT_67801,PV,PAUT,WECC
+PV_SC3_PACE_UT_68055,PV,PAUT,WECC
+PV_SC3_PACE_WY_65720,PV,PAWY,WECC
+PV_SC3_PACE_WY_66133,PV,PAWY,WECC
+PV_SC3_PACE_WY_66305,PV,PAWY,WECC
+PV_SC3_PACE_WY_66335,PV,PAWY,WECC
+PV_SC3_PACE_WY_66423,PV,PAWY,WECC
+PV_SC3_PACW_45161,PV,PACW,WECC
+PV_SC3_PACW_45183,PV,PACW,WECC
+PV_SC3_PACW_45195,PV,PACW,WECC
+PV_SC3_PACW_45239,PV,PACW,WECC
+PV_SC3_PACW_45317,PV,PACW,WECC
+PV_SC3_PGN_43039,PV,PGE,WECC
+PV_SC3_PGN_43089,PV,PGE,WECC
+PV_SC3_PGN_43215,PV,PGE,WECC
+PV_SC3_PGN_43348,PV,PGE,WECC
+PV_SC3_PGN_43527,PV,PGE,WECC
+PV_SC3_PGN_43600,PV,PGE,WECC
+PV_SC3_PGN_43685,PV,PGE,WECC
+PV_SC3_PGN_43740,PV,PGE,WECC
+PV_SC3_PNM_10025,PV,PNM,WECC
+PV_SC3_PNM_10111,PV,PNM,WECC
+PV_SC3_PNM_10229,PV,PNM,WECC
+PV_SC3_PNM_10368,PV,PNM,WECC
+PV_SC3_PSC_70018,PV,PSCO,WECC
+PV_SC3_PSC_70038,PV,PSCO,WECC
+PV_SC3_PSC_70046,PV,PSCO,WECC
+PV_SC3_PSC_70047,PV,PSCO,WECC
+PV_SC3_PSC_70122,PV,PSCO,WECC
+PV_SC3_PSC_70149,PV,PSCO,WECC
+PV_SC3_PSC_70200,PV,PSCO,WECC
+PV_SC3_PSC_70206,PV,PSCO,WECC
+PV_SC3_PSC_70254,PV,PSCO,WECC
+PV_SC3_PSC_70261,PV,PSCO,WECC
+PV_SC3_PSC_70284,PV,PSCO,WECC
+PV_SC3_PSC_70291,PV,PSCO,WECC
+PV_SC3_PSC_70362,PV,PSCO,WECC
+PV_SC3_PSC_70375,PV,PSCO,WECC
+PV_SC3_PSC_70432,PV,PSCO,WECC
+PV_SC3_SCE_24251,PV,CISC,WECC
+PV_SC3_SCE_24701,PV,CISC,WECC
+PV_SC3_SCE_25616,PV,CISC,WECC
+PV_SC3_SCE_25666,PV,CISC,WECC
+PV_SC3_SPP_64017,PV,SPPC,WECC
+PV_SC3_SPP_64077,PV,SPPC,WECC
+PV_SC3_SPP_64115,PV,SPPC,WECC
+PV_SC3_SPP_64124,PV,SPPC,WECC
+PV_SC3_SPP_64128,PV,SPPC,WECC
+PV_SC3_SPP_64130,PV,SPPC,WECC
+PV_SC3_SPP_64512,PV,SPPC,WECC
+PV_SC3_SRP_15172,PV,SRP,WECC
+PV_SC3_SRP_15212,PV,SRP,WECC
+PV_SC3_SRP_15216,PV,SRP,WECC
+PV_SC3_SRP_15219,PV,SRP,WECC
+PV_SC3_TEP_16103,PV,TEPC,WECC
+PV_SC3_TEP_16105,PV,TEPC,WECC
+PV_SC3_TEP_16126,PV,TEPC,WECC
+PV_SC3_WACM_73143,PV,WACM,WECC
+PV_SC3_WACM_73380,PV,WACM,WECC
+PV_SC3_WACM_73392,PV,WACM,WECC
+PV_SC3_WACM_73579,PV,WACM,WECC
+PV_SC3_WALC_17016,PV,WALC,WECC
+PV_SC3_WALC_19029,PV,WALC,WECC
+PV_SC3_WALC_19062,PV,WALC,WECC
+PV_SC3_WALC_19208,PV,WALC,WECC
+PV_SC3_WALC_19310,PV,WALC,WECC
+PV_SC3_WALC_79024,PV,WALC,WECC
+PwrCountyN,Wind,PAID,WECC
+PwrCountyS,Wind,PAID,WECC
+Pyramid_1,Gas CT,PNM,WECC
+Pyramid_2,Gas CT,PNM,WECC
+Pyramid_3,Gas CT,PNM,WECC
+Pyramid_4,Gas CT,PNM,WECC
+Quality_Wind_1,Wind,BCHA,WECC
+Quality_Wind_2,Wind,BCHA,WECC
+Quality_Wind_3,Wind,BCHA,WECC
+Quality_Wind_4,Wind,BCHA,WECC
+Quality_Wind_5,Wind,BCHA,WECC
+Quality_Wind_6,Wind,BCHA,WECC
+Quality_Wind_7,Wind,BCHA,WECC
+QueenCreek,PV,SRP,WECC
+Queenstown,Gas CT,AESO,WECC
+Quincy_1,Biomass,CIPV,WECC
+Quincy_2,Biomass,CIPV,WECC
+QuincyChute,Hydro,GCPD,WECC
+R_C_Kirkwood_1,Hydro,CIPV,WECC
+R_C_Kirkwood_2,Hydro,CIPV,WECC
+R_C_Kirkwood_3,Hydro,CIPV,WECC
+Radar_Ridge,Wind,BPAT,WECC
+Raft_River1,Geothermal,IPFE,WECC
+Raging_River2_1,Hydro,BCHA,WECC
+Raging_River2_2,Hydro,BCHA,WECC
+Rainbow4_4,Gas CT,AESO,WECC
+Rainbow5_5,Gas CT,AESO,WECC
+Rainbow9,Hydro,NWMT,WECC
+Ralph_Wind,Wind,CIPV,WECC
+Ralston,Hydro,CIPV,WECC
+Ramonas_L_1,Hydro,BCHA,WECC
+Ramonas_U_1,Hydro,BCHA,WECC
+Rancho,Hydro,CISD,WECC
+Rapid_Response,Gas CT,BANC,WECC
+Rathdrum_1,Gas CT,AVA,WECC
+Rathdrum_2,Gas CT,AVA,WECC
+RathdrumCC-Total,Gas CC,AVA,WECC
+Rawhide_1,Coal,PSCO,WECC
+Rawhide_A,Gas CT,PSCO,WECC
+Rawhide_B,Gas CT,PSCO,WECC
+Rawhide_C,Gas CT,PSCO,WECC
+Rawhide_D,Gas CT,PSCO,WECC
+Rawhide_F,Gas CT,PSCO,WECC
+Ray_D_Nixon_1,Coal,WACM,WECC
+Ray_D_Nixon_GT1,Gas CT,WACM,WECC
+Ray_D_Nixon_GT2,Gas CT,WACM,WECC
+Ray_Elementary1,PV,AZPS,WECC
+Ray_High3,PV,AZPS,WECC
+Ray_Primary2,PV,AZPS,WECC
+Raymond,Hydro,AESO,WECC
+RCWMD_LF,Biomass,CISC,WECC
+RE_Bagdad,PV,AZPS,WECC
+RE-Ajo,PV,AZPS,WECC
+ReardanTwin,Wind,BPAT,WECC
+RECTOR_Agg,Hydro,CISC,WECC
+Red_Bluff_IC1,Steam,CIPV,WECC
+Red_Bluff_IC10,Steam,CIPV,WECC
+Red_Bluff_IC11,Steam,CIPV,WECC
+Red_Bluff_IC12,Steam,CIPV,WECC
+Red_Bluff_IC13,Steam,CIPV,WECC
+Red_Bluff_IC14,Steam,CIPV,WECC
+Red_Bluff_IC15,Steam,CIPV,WECC
+Red_Bluff_IC16,Steam,CIPV,WECC
+Red_Bluff_IC2,Steam,CIPV,WECC
+Red_Bluff_IC3,Steam,CIPV,WECC
+Red_Bluff_IC4,Steam,CIPV,WECC
+Red_Bluff_IC5,Steam,CIPV,WECC
+Red_Bluff_IC6,Steam,CIPV,WECC
+Red_Bluff_IC7,Steam,CIPV,WECC
+Red_Bluff_IC8,Steam,CIPV,WECC
+Red_Bluff_IC9,Steam,CIPV,WECC
+Red_Mesa,Wind,PNM,WECC
+Red_Mountain_1,Hydro,CISC,WECC
+ReddingPower1,Gas CT,BANC,WECC
+ReddingPower2,Gas CT,BANC,WECC
+ReddingPower3,Gas CT,BANC,WECC
+ReddingPowerCC-Total,Gas CC,BANC,WECC
+RedHawkCC1-Total,Gas CC,AZPS,WECC
+RedHawkCC2-Total,Gas CC,AZPS,WECC
+Redlands,Hydro,PSCO,WECC
+Redlands_RT,PV,CISC,WECC
+REDWATER_GT_1,Gas CT,AESO,WECC
+Reeves_1,Other,PNM,WECC
+Reeves_2,Other,PNM,WECC
+Reeves_3,Gas CT,PNM,WECC
+Rehnu_UASTP_1,PV,TEPC,WECC
+res_cool_iid,DR,IID,WECC
+res_cool_ldwp,DR,LDWP,WECC
+res_cool_pge_bay,DR,CIPB,WECC
+res_cool_pge_vly,DR,CIPV,WECC
+res_cool_sce,DR,CISC,WECC
+res_cool_sdge,DR,CISD,WECC
+res_cool_smud,DR,BANC,WECC
+res_cool_tidc,DR,TIDC,WECC
+res_heat_iid,DR,IID,WECC
+res_heat_ldwp,DR,LDWP,WECC
+res_heat_pge_bay,DR,CIPB,WECC
+res_heat_pge_vly,DR,CIPV,WECC
+res_heat_sce,DR,CISC,WECC
+res_heat_sdge,DR,CISD,WECC
+res_heat_smud,DR,BANC,WECC
+res_heat_tidc,DR,TIDC,WECC
+Revelstoke_1,Hydro,BCHA,WECC
+Revelstoke_2,Hydro,BCHA,WECC
+Revelstoke_3,Hydro,BCHA,WECC
+Revelstoke_4,Hydro,BCHA,WECC
+Revelstoke_5,Hydro,BCHA,WECC
+Reynolds,Hydro,IPTV,WECC
+RHONDO,Hydro,CISC,WECC
+RialtoPV,PV,CISC,WECC
+RiceSolarEnergy,CSP,WALC,WECC
+RichardBurdete1,Geothermal,SPPC,WECC
+RichardBurdete2,Geothermal,SPPC,WECC
+RichmondCgn1,Steam,CIPB,WECC
+RichmondCgn2,Steam,CIPB,WECC
+RichmondRefinery-5,Steam,CIPB,WECC
+Ridge_Crest,Wind,PSCO,WECC
+Ridgeline_1,Wind,SPPC,WECC
+RifleCC-Total,Gas CC,WACM,WECC
+Rim_View_1,Hydro,IPMV,WECC
+RimRockEnergy,Wind,NWMT,WECC
+Rio_Hondo_1,Hydro,CISC,WECC
+RioBravo_Hydro1,Hydro,CIPV,WECC
+RioBravo_Hydro2,Hydro,CIPV,WECC
+RioBravoFresno,Biomass,CIPV,WECC
+RioBravoRocklin,Biomass,CIPV,WECC
+RioGrande8,Other,EPE,WECC
+RioGrande9,Gas CT,EPE,WECC
+RioOso_QF,Hydro,CIPV,WECC
+Ripon_Mill_GEN1,CHP-QF,CIPV,WECC
+Ripon1,Gas CT,BANC,WECC
+Ripon2,Gas CT,BANC,WECC
+River_Mill_1,Hydro,PGE,WECC
+River_Mill_2,Hydro,PGE,WECC
+River_Mill_3,Hydro,PGE,WECC
+River_Mill_4,Hydro,PGE,WECC
+River_Mill_5,Hydro,PGE,WECC
+River_Road,Gas CC,BPAT,WECC
+Riverbend_LF1,Biomass,BPAT,WECC
+Riverbend_LF2,Biomass,BPAT,WECC
+Riverbend_LF3,Biomass,BPAT,WECC
+Riverbend_LF4,Biomass,BPAT,WECC
+Riverbend_LF5,Biomass,BPAT,WECC
+Riverbend_LF6,Biomass,BPAT,WECC
+RiversideEastPV-1,PV,CISC,WECC
+RiversideEastPV-2,PV,CISC,WECC
+RiversideEastPV-3,PV,CISC,WECC
+RiversideERC1,Gas CT,CISC,WECC
+RiversideERC2,Gas CT,CISC,WECC
+RiversideERC3,Gas CT,CISC,WECC
+RiversideERC4,Gas CT,CISC,WECC
+Riverview_EC,Gas CT,CIPB,WECC
+Roaring_Creek1,Hydro,BANC,WECC
+Robbs_Peak_1,Hydro,BANC,WECC
+Rock_Creek_H1,Hydro,CIPV,WECC
+Rock_Creek_H2,Hydro,CIPV,WECC
+Rock_Creek_I1,Hydro,IPMV,WECC
+Rock_Creek_II1,Hydro,IPMV,WECC
+Rock_Creek_LP1,Hydro,CIPV,WECC
+Rock_Creek_LP2,Hydro,CIPV,WECC
+Rock_Island_A,Hydro,CHPD,WECC
+Rock_Island_B_1,Hydro,CHPD,WECC
+Rock_Island_B_2,Hydro,CHPD,WECC
+Rock_Island_B_3,Hydro,CHPD,WECC
+Rock_Island_B_4,Hydro,CHPD,WECC
+Rock_Island_B_5,Hydro,CHPD,WECC
+Rock_Island_B_6,Hydro,CHPD,WECC
+Rock_Island_B_7,Hydro,CHPD,WECC
+Rock_Island_B_8,Hydro,CHPD,WECC
+Rock_Island_B_9,Hydro,CHPD,WECC
+Rock_Island_B10,Hydro,CHPD,WECC
+Rock_Island_U_1,Hydro,CHPD,WECC
+Rock_Island_U_2,Hydro,CHPD,WECC
+Rock_Island_U_3,Hydro,CHPD,WECC
+Rock_Island_U_4,Hydro,CHPD,WECC
+Rock_Island_U_5,Hydro,CHPD,WECC
+Rock_Island_U_6,Hydro,CHPD,WECC
+Rock_Island_U_7,Hydro,CHPD,WECC
+Rock_Island_U_8,Hydro,CHPD,WECC
+Rock_River,Wind,PAWY,WECC
+RockCreekDairy1,Biomass,IPMV,WECC
+RockCreekDairy2,Biomass,IPMV,WECC
+Rockland,Wind,IPFE,WECC
+Rockwood_1,Gas CT,IID,WECC
+Rockwood_2,Gas CT,IID,WECC
+Rocky_Brook,Hydro,BPAT,WECC
+Rocky_Ford_IC1,Other,PSCO,WECC
+Rocky_Ford_IC2,Other,PSCO,WECC
+Rocky_Ford_IC3,Other,PSCO,WECC
+Rocky_Ford_IC4,Other,PSCO,WECC
+Rocky_Ford_IC5,Other,PSCO,WECC
+Rocky_Reach_C_1,Hydro,CHPD,WECC
+Rocky_Reach_C_2,Hydro,CHPD,WECC
+Rocky_Reach_C_3,Hydro,CHPD,WECC
+Rocky_Reach_C_4,Hydro,CHPD,WECC
+Rocky_Reach_C_5,Hydro,CHPD,WECC
+Rocky_Reach_C_6,Hydro,CHPD,WECC
+Rocky_Reach_C_7,Hydro,CHPD,WECC
+Rocky_Reach_C_8,Hydro,CHPD,WECC
+Rocky_Reach_C_9,Hydro,CHPD,WECC
+Rocky_Reach_C10,Hydro,CHPD,WECC
+Rocky_Reach_C11,Hydro,CHPD,WECC
+RockyMtnCC-Total,Gas CC,PSCO,WECC
+Roger_Road,PV,TEPC,WECC
+Rolling_Hills_1,Wind,PAWY,WECC
+Rollins,Hydro,CIPV,WECC
+Roosevelt,Hydro,SRP,WECC
+RooseveltBioCC-Total,Biomass,BPAT,WECC
+RooseveltBiogas1,Biomass,BPAT,WECC
+RooseveltBiogas2,Biomass,BPAT,WECC
+RooseveltBiogas3,Biomass,BPAT,WECC
+RooseveltBiogas4,Biomass,BPAT,WECC
+RooseveltBiogas5,Biomass,BPAT,WECC
+Roseburg_Forest,Biomass,PACW,WECC
+RoseburgBiomass,Biomass,PACW,WECC
+Roseville_1,Gas CT,BANC,WECC
+Roseville_2,Gas CT,BANC,WECC
+RosevilleEPCC-Total,Gas CC,BANC,WECC
+Ross_41,Hydro,SCL,WECC
+Ross_42,Hydro,SCL,WECC
+Ross_43,Hydro,SCL,WECC
+Ross_44,Hydro,SCL,WECC
+Round_Butte_1,Hydro,PGE,WECC
+Round_Butte_2,Hydro,PGE,WECC
+Round_Butte_3,Hydro,PGE,WECC
+Roza_1,Hydro,BPAT,WECC
+RpsCA-0019,Biomass,IID,WECC
+RpsCA-0020,Biomass,CISC,WECC
+RpsCA-0021,Biomass,CISC,WECC
+RpsCA-0022,Biomass,CIPB,WECC
+RpsCA-0023,Biomass,CIPV,WECC
+RpsCA-0024,PV,BANC,WECC
+RpsCA-0025,PV,CIPV,WECC
+RpsCA-0026,Biomass,CIPV,WECC
+RpsCA-0032,PV,CIPV,WECC
+RpsCA-0035,Geothermal,CIPV,WECC
+RpsCA-0036,PV,CISC,WECC
+RpsCA-0038,PV,CISC,WECC
+RpsCA-0039,PV,CISC,WECC
+RpsCA-0040,PV,IID,WECC
+RpsCA-0041,PV,CISC,WECC
+RpsCA-0042,Wind,LDWP,WECC
+RpsCA-0046,Wind,CISC,WECC
+RpsCA-0047,PV,CISC,WECC
+RpsCA-0048,PV,IID,WECC
+RpsCA-0049,Biomass,CIPV,WECC
+RpsCA-0050,Biomass,CIPV,WECC
+RpsCA-0051,PV,CIPV,WECC
+RpsCA-0053,PV,CIPV,WECC
+RpsCA-0054,PV,CISC,WECC
+RpsCA-0055,PV,CISC,WECC
+RpsCA-0056,PV,CISC,WECC
+RpsCA-0057,PV,CISC,WECC
+RpsCA-0059,PV,CISC,WECC
+RpsCA-0064,Biomass,CISC,WECC
+RpsCA-0067,Geothermal,SPPC,WECC
+RpsCA-0068,Geothermal,CISC,WECC
+RpsCA-0069,PV,CISC,WECC
+RpsCA-0070,PV,CIPV,WECC
+RpsCA-0071,Wind,AESO,WECC
+RpsCA-0072,Wind,AESO,WECC
+RpsCA-0073,Wind,AESO,WECC
+RpsCA-0074,PV,CISC,WECC
+RpsCA-0076,PV,CISD,WECC
+RpsCA-0077,PV,CISD,WECC
+RpsCA-0078,PV,IID,WECC
+RpsCA-0079,PV,CISD,WECC
+RpsCA-0080,Geothermal,IID,WECC
+RpsCA-0083,PV,CISC,WECC
+RpsCA-0085,Wind,CISC,WECC
+RpsCA-0086,Wind,CISC,WECC
+RpsCA-0087,PV,CISC,WECC
+RpsCA-0089,PV,CISC,WECC
+RpsCA-0091,PV,CIPV,WECC
+RpsCA-0092,Wind,CISC,WECC
+RpsCA-0093,PV,CISC,WECC
+RpsCA-0098,PV,CIPV,WECC
+RpsCA-0099,PV,CIPV,WECC
+RpsCA-0100,PV,CIPV,WECC
+RpsCA-0101,PV,CIPV,WECC
+RpsCA-0102,PV,CIPV,WECC
+RpsCA-0103,PV,CIPV,WECC
+RpsCA-0104,PV,CIPV,WECC
+RpsCA-0105,PV,CIPV,WECC
+RpsCA-0106,PV,CIPV,WECC
+RpsCA-0107,PV,CIPV,WECC
+RpsCA-0108,PV,CIPV,WECC
+RpsCA-0109,PV,CIPV,WECC
+RpsCA-0110,PV,CIPV,WECC
+RpsCA-0111,PV,CIPV,WECC
+RpsCA-0112,PV,CIPV,WECC
+RpsCA-0113,PV,CIPV,WECC
+RpsCA-0114,PV,CIPV,WECC
+RpsCA-0115,PV,CIPV,WECC
+RpsCA-0116,PV,CIPV,WECC
+RpsCA-0117,PV,CIPV,WECC
+RpsCA-0118,PV,CIPV,WECC
+RpsCA-0119,PV,CIPV,WECC
+RpsCA-0120,PV,CIPV,WECC
+RpsCA-0121,PV,CIPV,WECC
+RpsCA-0122,PV,CISC,WECC
+RpsCA-0123,PV,CISC,WECC
+RpsCA-0124,PV,CISC,WECC
+RpsCA-0125,PV,CISC,WECC
+RpsCA-0126,PV,CISC,WECC
+RpsCA-0127,PV,CIPV,WECC
+RpsCA-0128,PV,CIPV,WECC
+RpsCA-0129,PV,CIPV,WECC
+RpsCA-0130,PV,CISC,WECC
+RpsCA-0131,PV,CIPV,WECC
+RpsCA-0132,PV,CIPV,WECC
+RpsCA-0133,PV,CISC,WECC
+RpsCA-0134,PV,CISC,WECC
+RpsCA-0135,PV,CISC,WECC
+RpsCA-0136,PV,CISC,WECC
+RpsCA-0137,PV,CIPV,WECC
+RpsCA-0138,PV,CIPV,WECC
+RpsCA-0139,PV,CIPV,WECC
+RpsCA-0140,PV,CIPV,WECC
+RpsCA-0141,PV,CIPV,WECC
+RpsCA-0142,PV,CIPV,WECC
+RpsCA-0143,PV,CIPV,WECC
+RpsCA-0144,PV,CIPV,WECC
+RpsCA-0145,PV,CIPV,WECC
+RpsCA-0146,PV,CIPV,WECC
+RpsCA-0147,PV,CIPV,WECC
+RpsCA-0148,PV,CIPV,WECC
+RpsCA-0149,PV,CIPV,WECC
+RpsCA-0150,PV,CIPV,WECC
+RpsCA-0151,PV,CIPV,WECC
+RpsCA-0152,PV,CIPV,WECC
+RpsCA-0153,PV,CIPV,WECC
+RpsCA-0154,PV,CIPV,WECC
+RpsCA-0155,PV,CIPV,WECC
+RpsCA-0156,PV,CIPV,WECC
+RpsCA-0157,PV,CIPV,WECC
+RpsCA-0158,PV,CIPV,WECC
+RpsCA-0159,PV,CIPV,WECC
+RpsCA-0160,PV,CIPV,WECC
+RpsCA-0161,PV,CIPV,WECC
+RpsCA-0162,PV,CISC,WECC
+RpsCA-0163,PV,CISC,WECC
+RpsCA-0164,PV,CIPV,WECC
+RpsCA-0165,PV,CIPV,WECC
+RpsCA-0166,PV,CIPV,WECC
+RpsCA-0167,PV,CIPV,WECC
+RpsCA-0168,PV,CIPV,WECC
+RpsCA-0169,PV,CIPV,WECC
+RpsCA-0170,PV,CIPV,WECC
+RpsCA-0171,PV,CIPV,WECC
+RpsCA-0172,PV,CIPV,WECC
+RpsCA-0173,PV,CIPV,WECC
+RpsCA-0174,PV,CIPV,WECC
+RpsCA-0175,PV,CIPV,WECC
+RpsCA-0176,PV,CIPV,WECC
+RpsCA-0177,PV,CISC,WECC
+RpsCA-0178,PV,CISC,WECC
+RpsCA-0179,PV,CIPV,WECC
+RpsCA-0180,PV,CISC,WECC
+RpsCA-0181,PV,CISC,WECC
+RpsCA-0182,PV,CIPV,WECC
+RpsCA-0183,PV,CIPV,WECC
+RpsCA-0184,PV,CISD,WECC
+RpsCA-0185,PV,CISD,WECC
+RpsCA-0186,PV,CISC,WECC
+RpsCA-0187,PV,CISC,WECC
+RpsCA-0188,PV,CISC,WECC
+RpsCA-0189,PV,CISC,WECC
+RpsCA-0190,PV,CISC,WECC
+RpsCA-0191,PV,CISC,WECC
+RpsCA-0192,PV,CISC,WECC
+RpsCA-0193,PV,CISC,WECC
+RpsCA-0194,PV,CISC,WECC
+RpsCA-0195,PV,CISC,WECC
+RpsCA-0196,PV,CISC,WECC
+RpsCA-0197,PV,CISC,WECC
+RpsCA-0198,PV,CISC,WECC
+RpsCA-0199,PV,CISC,WECC
+RpsCA-0200,PV,CISC,WECC
+RpsCA-0201,PV,CISC,WECC
+RpsCA-0202,PV,CISC,WECC
+RpsCA-0203,PV,CISC,WECC
+RpsCA-0204,PV,CISC,WECC
+RpsCA-0205,PV,CISC,WECC
+RpsCA-0206,PV,CISC,WECC
+RpsCA-0207,PV,CISC,WECC
+RpsCA-0208,PV,CISC,WECC
+RpsCA-0209,PV,CISC,WECC
+RpsCA-0210,PV,CISC,WECC
+RpsCA-0211,PV,CISC,WECC
+RpsCA-0212,PV,CISC,WECC
+RpsCA-0213,PV,CISC,WECC
+RpsCA-0214,PV,CISC,WECC
+RpsCA-0215,PV,CISC,WECC
+RpsCA-0216,PV,CISC,WECC
+RpsCA-0217,PV,CISC,WECC
+RpsCA-0218,PV,CISC,WECC
+RpsCA-0219,PV,CISC,WECC
+RpsCA-0220,PV,CISC,WECC
+RpsCA-0221,PV,CISC,WECC
+RpsCA-0222,PV,CISC,WECC
+RpsCA-0223,PV,CISC,WECC
+RpsCA-0224,PV,CISC,WECC
+RpsCA-0225,PV,CISD,WECC
+RpsCA-0226,PV,CIPB,WECC
+RpsCA-0227,PV,CIPB,WECC
+RpsCA-0228,PV,CIPB,WECC
+RpsCA-0229,PV,CIPB,WECC
+RpsCA-0230,PV,CIPB,WECC
+RpsCA-0231,PV,CIPB,WECC
+RpsCA-0232,PV,CIPB,WECC
+RpsCA-0233,PV,CIPB,WECC
+RpsCA-0234,PV,CIPB,WECC
+RpsCA-0235,PV,CIPB,WECC
+RpsCA-0236,PV,CIPB,WECC
+RpsCA-0237,PV,CIPB,WECC
+RpsCA-0238,PV,CIPB,WECC
+RpsCA-0239,PV,CIPB,WECC
+RpsCA-0240,PV,CIPB,WECC
+RpsCA-0241,PV,CIPB,WECC
+RpsCA-0242,PV,CIPB,WECC
+RpsCA-0243,PV,CIPB,WECC
+RpsCA-0244,PV,CIPB,WECC
+RpsCA-0245,PV,CIPB,WECC
+RpsCA-0246,PV,CIPB,WECC
+RpsCA-0247,PV,CIPB,WECC
+RpsCA-0248,PV,CIPB,WECC
+RpsCA-0249,PV,CIPB,WECC
+RpsCA-0250,PV,CISC,WECC
+RpsCA-0251,PV,CIPV,WECC
+RpsCA-0252,PV,CIPV,WECC
+RpsCA-0253,PV,CIPV,WECC
+RpsCA-0254,PV,CIPV,WECC
+RpsCA-0255,PV,CIPV,WECC
+RpsCA-0256,PV,CIPV,WECC
+RpsCA-0257,PV,CIPV,WECC
+RpsCA-0258,PV,CISC,WECC
+RpsCA-0261,PV,CISC,WECC
+RpsCA-0262,PV,CISD,WECC
+RpsCA-0263,PV,CISD,WECC
+RpsCA-0264,PV,CISD,WECC
+RpsCA-0265,PV,CISD,WECC
+RpsCA-0266,PV,CISD,WECC
+RpsCA-0267,PV,CISD,WECC
+RpsCA-0268,PV,CISD,WECC
+RpsCA-0269,PV,CISD,WECC
+RpsCA-0270,PV,CISD,WECC
+RpsCA-0271,PV,CISC,WECC
+RpsCA-0272,PV,CISC,WECC
+RpsCA-0273,PV,CISC,WECC
+RpsCA-0274,PV,CISC,WECC
+RpsCA-0275,PV,CISC,WECC
+RpsCA-0276,PV,CISC,WECC
+RpsCA-0277,PV,CISC,WECC
+RpsCA-0278,PV,CIPV,WECC
+RpsCA-0279,PV,CIPV,WECC
+RpsCA-0280,PV,CIPV,WECC
+RpsCA-0281,PV,CIPV,WECC
+RpsCA-0282,PV,CIPV,WECC
+RpsCA-0283,PV,CIPV,WECC
+RpsCA-0284,PV,CIPV,WECC
+RpsCA-0285,PV,CIPV,WECC
+RpsCA-0286,PV,CIPB,WECC
+RpsCA-0287,PV,CIPB,WECC
+RpsCA-0288,PV,CIPV,WECC
+RpsCA-0289,PV,CIPV,WECC
+RpsCA-0290,PV,CIPV,WECC
+RpsCA-0291,PV,CIPV,WECC
+RpsCA-0292,PV,CIPV,WECC
+RpsCA-0293,PV,CISC,WECC
+RpsCA-0294,PV,CISD,WECC
+RpsCA-0295,PV,CISC,WECC
+RpsCA-0296,PV,CISC,WECC
+RpsCA-0297,PV,CISC,WECC
+RpsCA-0298,PV,CISC,WECC
+RpsCA-0299,PV,CISC,WECC
+RpsCA-0934,PV,CIPV,WECC
+RpsCA-0935,Wind,CIPV,WECC
+RpsCA-0936,Biomass,CIPB,WECC
+RpsCA-0937,PV,BANC,WECC
+RpsCA-0939,PV,CIPV,WECC
+RpsCA-0940,PV,CIPV,WECC
+RpsCA-0942,Geothermal,CISC,WECC
+RpsCA-0943,Wind,CISC,WECC
+RpsCA-0944,PV,CISC,WECC
+RpsCA-0945,PV,CISC,WECC
+RpsCA-0946,PV,CISC,WECC
+RpsCA-0947,PV,CISC,WECC
+RpsCA-0948,PV,CISC,WECC
+RpsCA-0949,Wind,CISC,WECC
+RpsCA-0950,Geothermal,CISC,WECC
+RpsCA-0951,PV,CISD,WECC
+RpsCA-0952,PV,CISD,WECC
+RpsCA-0953,PV,IID,WECC
+RpsCA-0954,PV,IID,WECC
+RpsCA-0955,PV,IID,WECC
+RpsCA-0956,Geothermal,IID,WECC
+RpsCA-0957,Geothermal,IID,WECC
+RpsCA-0958,Geothermal,IID,WECC
+RpsCA-0959,PV,CIPV,WECC
+Ruedi_1,Hydro,PSCO,WECC
+RuggedSolarLLC1,CSP,CISD,WECC
+Rundle1_1,Hydro,AESO,WECC
+Rundle2_2,Hydro,AESO,WECC
+Rupert_Cgn,Gas CC,IPMV,WECC
+Rupert_GT_1,Gas CT,BCHA,WECC
+Rupert_GT_2,Gas CT,BCHA,WECC
+Rush_Creek_1,Hydro,CISC,WECC
+Rush_Creek_2,Hydro,CISC,WECC
+Ruskin_1,Hydro,BCHA,WECC
+Ruskin_2,Hydro,BCHA,WECC
+Ruskin_3,Hydro,BCHA,WECC
+Russell_D_smith,Hydro,SCL,WECC
+Russell_Wind,Wind,CIPV,WECC
+RussellCityCC-Total,Gas CC,CIPB,WECC
+RutherfordCrk1,Hydro,BCHA,WECC
+RutherfordCrk2,Hydro,BCHA,WECC
+Ruxton_Park_1,Hydro,WACM,WECC
+RV_Apex,PV,NEVP,WECC
+Ryan1,Hydro,NWMT,WECC
+Ryan2_Upgrd,Hydro,NWMT,WECC
+Ryan3,Hydro,NWMT,WECC
+Ryan4_Upgrd,Hydro,NWMT,WECC
+Ryan5,Hydro,NWMT,WECC
+Ryan6,Hydro,NWMT,WECC
+Ryegrass,Wind,IPTV,WECC
+S.CranberryCrk1,Hydro,BCHA,WECC
+S.CranberryCrk2,Hydro,BCHA,WECC
+S.CranberryCrk3,Hydro,BCHA,WECC
+S.CranberryCrk4,Hydro,BCHA,WECC
+S.Sutton_Creek,Hydro,BCHA,WECC
+S_E_Hazelton1,Hydro,IPMV,WECC
+S_E_Hazelton2,Hydro,IPMV,WECC
+S_E_Hazelton3,Hydro,IPMV,WECC
+S_Slocan_1,Hydro,BCHA,WECC
+S_Slocan_2,Hydro,BCHA,WECC
+S_Slocan_3,Hydro,BCHA,WECC
+Saddle_Mountain,PV,AZPS,WECC
+Sagebrush_1,Hydro,IPMV,WECC
+SagebrushWind,Wind,BPAT,WECC
+Saguaro_1,Other,AZPS,WECC
+Saguaro_2,Other,AZPS,WECC
+Saguaro_PV1,PV,AZPS,WECC
+SaguaroAZ1,Gas CT,AZPS,WECC
+SaguaroAZ2,Gas CT,AZPS,WECC
+SaguaroCTG1,Gas CT,NEVP,WECC
+SaguaroCTG2,Gas CT,NEVP,WECC
+SaguaroCTG3,Gas CT,NEVP,WECC
+SaguaroGE1,Gas CT,AZPS,WECC
+Sahko_1,Hydro,IPMV,WECC
+SAIT_1,Gas CT,AESO,WECC
+SakwiCreek,Hydro,BCHA,WECC
+Salida_1,Hydro,PSCO,WECC
+Salida_2,Hydro,PSCO,WECC
+SalinasRiverCgn,CHP-QF,CIPV,WECC
+SalkInstitute,Gas CT,CISD,WECC
+Salmon_Falls,Wind,IPMV,WECC
+Salt_Springs_1,Hydro,CIPV,WECC
+Salt_Springs_2,Hydro,CIPV,WECC
+Salt_Wells1,Geothermal,SPPC,WECC
+Salt_Wells2,Geothermal,SPPC,WECC
+Salton13a,Geothermal,IID,WECC
+Salton3a,Geothermal,IID,WECC
+Salton4a,Geothermal,IID,WECC
+Salton5a,Geothermal,IID,WECC
+SaltonSea1,Geothermal,IID,WECC
+SaltonSea2-1,Geothermal,IID,WECC
+SaltonSea2-2,Geothermal,IID,WECC
+SaltonSea2-3,Geothermal,IID,WECC
+SaltonSea3,Geothermal,IID,WECC
+SaltonSea4,Geothermal,IID,WECC
+SaltonSea5,Geothermal,IID,WECC
+San_Dimas_1,Hydro,CISC,WECC
+San_Dimas_Wash,Hydro,CISC,WECC
+San_Fernando_1,Hydro,CISC,WECC
+San_Fernando_2,Hydro,CISC,WECC
+San_Gabriel,Gas CT,CISC,WECC
+SAN_JOAQUIN,Gas CT,CIPV,WECC
+San_Joaquin_2_1,Hydro,CIPV,WECC
+San_Joaquin_3_3,Hydro,CIPV,WECC
+San_Joaquin_Cgn,CHP-QF,CIPV,WECC
+San_Juan_1,Coal,PNM,WECC
+San_Juan_4,Coal,PNM,WECC
+SAN_MARCOS_LF,Biomass,CISD,WECC
+Sand_Bar,Hydro,CIPV,WECC
+SandDrag,PV,CIPV,WECC
+SanEmidio-Empire,Geothermal,SPPC,WECC
+SanFrancisq1_1A,Hydro,LDWP,WECC
+SanFrancisq1-3,Hydro,LDWP,WECC
+SanFrancisq1-4,Hydro,LDWP,WECC
+SanFrancisq1-6,Hydro,LDWP,WECC
+SanFrancisq2_1,Hydro,LDWP,WECC
+SanFrancisq2_2,Hydro,LDWP,WECC
+SanFrancisq2_3,Hydro,LDWP,WECC
+SanGabrielHydroU1,Hydro,CISC,WECC
+SanGabrielHydroU2,Hydro,CISC,WECC
+SanJoaquin1A,Hydro,CIPV,WECC
+SanJoseCgn,Gas CT,CIPB,WECC
+SanLuisValleySolar,PV,PSCO,WECC
+SanMarcosEnrgy,Biomass,CISD,WECC
+Santa_Ana_3_1,Hydro,CISC,WECC
+Santa_Ana1-1,Hydro,CISC,WECC
+SANTA_CLARA,Biomass,CISC,WECC
+Santa_ClaraCgn1,Gas CT,CIPB,WECC
+Santa_ClaraCgn2,Gas CT,CIPB,WECC
+Santa_ClaraWGNS,Wind,CIPB,WECC
+Santa_Cruz1,Biomass,CIPV,WECC
+Santa_Cruz2,Biomass,CIPV,WECC
+Santa_Cruz3,Biomass,CIPV,WECC
+Santa_Felicia1,Hydro,CISC,WECC
+Santa_Felicia2,Hydro,CISC,WECC
+Santa_Maria_Cgn,Gas CT,CIPV,WECC
+Santa_Maria_LFG,Biomass,CIPV,WECC
+SantaAna1-2,Hydro,CISC,WECC
+SantaAna1-3,Hydro,CISC,WECC
+SantaAna1-4,Hydro,CISC,WECC
+SantaCruzEnergy,Biomass,CIPV,WECC
+SantaCruzHigh,PV,TEPC,WECC
+Santan1,Gas CC,SRP,WECC
+Santan2,Gas CC,SRP,WECC
+Santan3,Gas CC,SRP,WECC
+Santan4,Gas CC,SRP,WECC
+Santan5CC-Total,Gas CC,SRP,WECC
+Santan6CC-Total,Gas CC,SRP,WECC
+SantaYnezCC-Total,Gas CC,CISC,WECC
+Sargent_Canyon,CHP-QF,CIPV,WECC
+SAUGUS,Hydro,CISC,WECC
+Savona_ERG_1,Other,BCHA,WECC
+Sawtelle_1,Hydro,CISC,WECC
+SawtoothWind,Wind,IPTV,WECC
+SB1SolarRooftop,PV,LDWP,WECC
+SCACogen2CC-Total,Gas CC,BANC,WECC
+SCACogen2GT,Gas CT,BANC,WECC
+Scattergood_4,Gas CT,LDWP,WECC
+Scattergood_5,Gas CT,LDWP,WECC
+Scattergood_6,Gas CT,LDWP,WECC
+Scattergood_7,Gas CT,LDWP,WECC
+Scattergood_8,CHP-QF,LDWP,WECC
+Scattergood_9,CHP-QF,LDWP,WECC
+SCE_PVF_24019,PV,CISC,WECC
+SCE_PVF_24058,PV,CISC,WECC
+SCE_PVF_24085,PV,CISC,WECC
+SCE_PVF_24087,PV,CISC,WECC
+SCE_PVF_24097,PV,CISC,WECC
+SCE_PVF_24112,PV,CISC,WECC
+SCE_PVF_24136,PV,CISC,WECC
+SCE_PVF_24137,PV,CISC,WECC
+SCE_PVF_24141,PV,CISC,WECC
+SCE_PVF_24151,PV,CISC,WECC
+SCE_PVF_24219,PV,CISC,WECC
+SCE_PVF_24234,PV,CISC,WECC
+SCE_PVF_24251,PV,CISC,WECC
+SCE_PVF_24701,PV,CISC,WECC
+SCE_PVF_24717,PV,CISC,WECC
+SCE_PVF_24729,PV,CISC,WECC
+SCE_PVF_24748,PV,CISC,WECC
+SCE_PVF_24801,PV,CISC,WECC
+SCE_PVF_24900,PV,CISC,WECC
+SCE_PVF_25401,PV,CISC,WECC
+SCE_PVF_25405,PV,CISC,WECC
+SCE_PVF_25406,PV,CISC,WECC
+SCE_PVF_29206,PV,CISC,WECC
+SCE_PVF_29402,PV,CISC,WECC
+SCE_PVR_24015,RPV,CISC,WECC
+SCE_PVR_24016,RPV,CISC,WECC
+SCE_PVR_24021,RPV,CISC,WECC
+SCE_PVR_24025,RPV,CISC,WECC
+SCE_PVR_24029,RPV,CISC,WECC
+SCE_PVR_24036,RPV,CISC,WECC
+SCE_PVR_24056,RPV,CISC,WECC
+SCE_PVR_24058,RPV,CISC,WECC
+SCE_PVR_24059,RPV,CISC,WECC
+SCE_PVR_24061,RPV,CISC,WECC
+SCE_PVR_24069,RPV,CISC,WECC
+SCE_PVR_24072,RPV,CISC,WECC
+SCE_PVR_24074,RPV,CISC,WECC
+SCE_PVR_24076,RPV,CISC,WECC
+SCE_PVR_24084,RPV,CISC,WECC
+SCE_PVR_24087,RPV,CISC,WECC
+SCE_PVR_24088,RPV,CISC,WECC
+SCE_PVR_24091,RPV,CISC,WECC
+SCE_PVR_24092,RPV,CISC,WECC
+SCE_PVR_24099,RPV,CISC,WECC
+SCE_PVR_24100,RPV,CISC,WECC
+SCE_PVR_24106,RPV,CISC,WECC
+SCE_PVR_24112,RPV,CISC,WECC
+SCE_PVR_24126,RPV,CISC,WECC
+SCE_PVR_24128,RPV,CISC,WECC
+SCE_PVR_24132,RPV,CISC,WECC
+SCE_PVR_24134,RPV,CISC,WECC
+SCE_PVR_24137,RPV,CISC,WECC
+SCE_PVR_24141,RPV,CISC,WECC
+SCE_PVR_24151,RPV,CISC,WECC
+SCE_PVR_24154,RPV,CISC,WECC
+SCE_PVR_24158,RPV,CISC,WECC
+SCE_PVR_24230,RPV,CISC,WECC
+SCE_PVR_24234,RPV,CISC,WECC
+SCE_PVR_24236,RPV,CISC,WECC
+SCE_PVR_24801,RPV,CISC,WECC
+SCE_PVR_24806,RPV,CISC,WECC
+SCE_PVR_24901,RPV,CISC,WECC
+SCE_PVR_24920,RPV,CISC,WECC
+SCE_PVR_25001,RPV,CISC,WECC
+SCE_PVR_25654,RPV,CISC,WECC
+SCE_PVR_25666,RPV,CISC,WECC
+SCE_PVR_29040,RPV,CISC,WECC
+SCE_PVT_24019,PV,CISC,WECC
+SCE_PVT_24058,PV,CISC,WECC
+SCE_PVT_24134,PV,CISC,WECC
+SCE_PVT_24137,PV,CISC,WECC
+SCE_PVT_24151,PV,CISC,WECC
+SCE_PVT_24154,PV,CISC,WECC
+SCE_PVT_24155,PV,CISC,WECC
+SCE_PVT_24200,PV,CISC,WECC
+SCE_PVT_24219,PV,CISC,WECC
+SCE_PVT_24245,PV,CISC,WECC
+SCE_PVT_24251,PV,CISC,WECC
+SCE_PVT_24305,PV,CISC,WECC
+SCE_PVT_24350,PV,CISC,WECC
+SCE_PVT_24401,PV,CISC,WECC
+SCE_PVT_24701,PV,CISC,WECC
+SCE_PVT_24717,PV,CISC,WECC
+SCE_PVT_24729,PV,CISC,WECC
+SCE_PVT_24748,PV,CISC,WECC
+SCE_PVT_24900,PV,CISC,WECC
+SCE_PVT_24918,PV,CISC,WECC
+SCE_PVT_24920,PV,CISC,WECC
+SCE_PVT_25001,PV,CISC,WECC
+SCE_PVT_25402,PV,CISC,WECC
+SCE_PVT_25405,PV,CISC,WECC
+SCE_PVT_25616,PV,CISC,WECC
+SCE_PVT_25666,PV,CISC,WECC
+SCE_PVT_29206,PV,CISC,WECC
+Schaffner_1,Hydro,IPFE,WECC
+School_Section,Wind,BPAT,WECC
+ScotfordUpgdCC-Total,Gas CC,AESO,WECC
+ScottFlat7P,Hydro,CIPV,WECC
+SDGE_PVF_22609,PV,CISD,WECC
+SDGE_PVF_26010,PV,CISD,WECC
+SDGE_PVF_26042,PV,CISD,WECC
+SDGE_PVF_26104,PV,CISD,WECC
+SDGE_PVR_22227,RPV,CISD,WECC
+SDGE_PVR_22260,RPV,CISD,WECC
+SDGE_PVR_22261,RPV,CISD,WECC
+SDGE_PVR_22430,RPV,CISD,WECC
+SDGE_PVR_22464,RPV,CISD,WECC
+SDGE_PVR_22466,RPV,CISD,WECC
+SDGE_PVR_22467,RPV,CISD,WECC
+SDGE_PVR_22596,RPV,CISD,WECC
+SDGE_PVR_22597,RPV,CISD,WECC
+SDGE_PVR_22652,RPV,CISD,WECC
+SDGE_PVR_22716,RPV,CISD,WECC
+SDGE_PVR_22771,RPV,CISD,WECC
+SDGE_PVR_22832,RPV,CISD,WECC
+SDGE_PVR_22844,RPV,CISD,WECC
+SDGE_PVR_22885,RPV,CISD,WECC
+SDGE_PVT_22260,PV,CISD,WECC
+SDGE_PVT_22844,PV,CISD,WECC
+SDGE_PVT_26103,PV,CISD,WECC
+SDGE_PVT_26105,PV,CISD,WECC
+SE_Resource,Biomass,CISC,WECC
+Searchlight1-1,PV,NEVP,WECC
+SeaWest_Altech,Wind,CIPB,WECC
+SeaWest_CWES,Wind,CIPB,WECC
+SeaWest_Seawest,Wind,CIPB,WECC
+SeaWest_Taxvest,Wind,CISC,WECC
+SeaWest_Viking,Wind,CIPB,WECC
+SeaWest_Western,Wind,CIPB,WECC
+SecondImp1,Geothermal,IID,WECC
+SecondImp10,Geothermal,IID,WECC
+SecondImp11,Geothermal,IID,WECC
+SecondImp12,Geothermal,IID,WECC
+SecondImp13,Geothermal,IID,WECC
+SecondImp14,Geothermal,IID,WECC
+SecondImp2,Geothermal,IID,WECC
+SecondImp3,Geothermal,IID,WECC
+SecondImp4,Geothermal,IID,WECC
+SecondImp5,Geothermal,IID,WECC
+SecondImp6,Geothermal,IID,WECC
+SecondImp7,Geothermal,IID,WECC
+SecondImp8,Geothermal,IID,WECC
+SecondImp9,Geothermal,IID,WECC
+SeeGen_1,Biomass,BCHA,WECC
+SEGS_I_GEN1,CSP,CISC,WECC
+SEGS_II_GEN1,CSP,CISC,WECC
+SEGS_III_GEN1,CSP,CISC,WECC
+SEGS_IV_GEN1,CSP,CISC,WECC
+SEGS_IX_GEN1,CSP,CISC,WECC
+SEGS_V_GEN1,CSP,CISC,WECC
+SEGS_VI_GEN1,CSP,CISC,WECC
+SEGS_VII_GEN1,CSP,CISC,WECC
+SEGS_VIII_GEN1,CSP,CISC,WECC
+SEKernRiverCgn1,Gas CT,CIPV,WECC
+SEKernRiverCgn2,Gas CT,CIPV,WECC
+SEKernRiverCgn3,Gas CT,CIPV,WECC
+Seminoe_1,Hydro,WACM,WECC
+Seminoe_2,Hydro,WACM,WECC
+Seminoe_3,Hydro,WACM,WECC
+Seneca,Biomass,BPAT,WECC
+SentinelEnergyCTG1,Gas CT,CISC,WECC
+SentinelEnergyCTG2,Gas CT,CISC,WECC
+SentinelEnergyCTG3,Gas CT,CISC,WECC
+SentinelEnergyCTG4,Gas CT,CISC,WECC
+SentinelEnergyCTG5,Gas CT,CISC,WECC
+SentinelEnergyCTG6,Gas CT,CISC,WECC
+SentinelEnergyCTG7,Gas CT,CISC,WECC
+SentinelEnergyCTG8,Gas CT,CISC,WECC
+SepulvedaCanyon,Hydro,CISC,WECC
+Seton_1,Hydro,BCHA,WECC
+Seven_Mile_1,Hydro,BCHA,WECC
+Seven_Mile_2,Hydro,BCHA,WECC
+Seven_Mile_3,Hydro,BCHA,WECC
+Seven_Mile_4,Hydro,BCHA,WECC
+SevenMileHill1,Wind,PAWY,WECC
+SevenMileHill2,Wind,PAWY,WECC
+SevenSisters,PV,PAUT,WECC
+SGS_Solar_PV1G,PV,TEPC,WECC
+SGS_Solar_PV1H,PV,TEPC,WECC
+Shasta_1,Hydro,CIPV,WECC
+Shasta_2,Hydro,BANC,WECC
+Shasta_3,Hydro,BANC,WECC
+Shasta_4,Hydro,BANC,WECC
+Shasta_5,Hydro,BANC,WECC
+Shasta_River_1,Hydro,BANC,WECC
+Shasta1,Biomass,CIPV,WECC
+Shasta2,Biomass,CIPV,WECC
+Shasta3,Biomass,CIPV,WECC
+Shasta4,Biomass,CIPV,WECC
+SHCG1-1,Gas CT,AESO,WECC
+Sheep_Creek1,Hydro,BPAT,WECC
+Sheerness_2_2,Coal,AESO,WECC
+Sheerness1-1,Coal,AESO,WECC
+ShepardEnrgyCC-Total,Gas CC,AESO,WECC
+Sherritt_2_2,Gas CT,AESO,WECC
+Sherritt_SOLAR3,Gas CT,AESO,WECC
+Sherritt1-1,Gas CT,AESO,WECC
+Shiloh_I,Wind,CIPB,WECC
+Shiloh_III,Wind,CIPV,WECC
+Shiloh_IV,Wind,CIPV,WECC
+Shiloh_Wind2,Wind,CIPB,WECC
+Shingle_Creek_1,Hydro,IPTV,WECC
+ShoshnFalls2,Hydro,IPMV,WECC
+ShoshnFalls3,Hydro,IPMV,WECC
+Shoshone_1,Hydro,WACM,WECC
+Shoshone_A,Hydro,PSCO,WECC
+Shoshone_B,Hydro,PSCO,WECC
+Shuswap_1,Hydro,BCHA,WECC
+Shuswap_2,Hydro,BCHA,WECC
+Shute_Creek021A,Gas CT,PAWY,WECC
+Shute_Creek021B,Gas CT,PAWY,WECC
+Shute_Creek021C,Gas CT,PAWY,WECC
+Sierra_Pwr,Biomass,CISC,WECC
+Sierra_SunTower,CSP,CISC,WECC
+Sierra1,Hydro,CIPV,WECC
+Sierra2,Hydro,CIPV,WECC
+Silver_Lake,Hydro,PSCO,WECC
+Silver_Sage,Wind,WACM,WECC
+Silver_StatePV1,PV,NEVP,WECC
+Silver_StatePV2,PV,NEVP,WECC
+SilverhawkCC-Total,Gas CC,NEVP,WECC
+SIMI_VALLEY,Biomass,CISC,WECC
+Simi_Valley1,Biomass,CISC,WECC
+Simi_Valley2,Biomass,CISC,WECC
+Simplot_Leasing,Other,IPFE,WECC
+SimpsonTacoma,Biomass,BPAT,WECC
+Siphon1,Hydro,PACW,WECC
+Siphon2,Hydro,PACW,WECC
+Site_980_65,Hydro,CIPV,WECC
+Site_C_G1_1,Hydro,BCHA,WECC
+Site_C_G2_2,Hydro,BCHA,WECC
+Site_C_G3_3,Hydro,BCHA,WECC
+Site_C_G4_4,Hydro,BCHA,WECC
+Site_C_G5_5,Hydro,BCHA,WECC
+Site_C_G6_6,Hydro,BCHA,WECC
+Skookum_Crk1,Hydro,BCHA,WECC
+Skookum_Crk2,Hydro,BCHA,WECC
+Skookumchuck1,Hydro,BPAT,WECC
+Sky_Blue,PV,PNM,WECC
+SLAB_CREEK,Hydro,BANC,WECC
+Slab_Creek_1,Hydro,BANC,WECC
+Slate_Creek,Hydro,PACW,WECC
+Slide_Creek_1,Hydro,PACW,WECC
+Sly_Creek_1,Hydro,CIPV,WECC
+Smith_Falls1,Hydro,BPAT,WECC
+Smith_Falls2,Hydro,BPAT,WECC
+Smith_Falls3,Hydro,BPAT,WECC
+SmithCreek,Hydro,PSEI,WECC
+SMUD_PVF_37002,PV,BANC,WECC
+SMUD_PVF_37005,PV,BANC,WECC
+SMUD_PVF_37009,PV,BANC,WECC
+SMUD_PVF_37021,PV,BANC,WECC
+SMUD_PVF_38257,PV,BANC,WECC
+SMUD_PVR_37003,RPV,BANC,WECC
+SMUD_PVR_37009,RPV,BANC,WECC
+SMUD_PVR_37012,RPV,BANC,WECC
+SMUD_PVR_37013,RPV,BANC,WECC
+SMUD_PVR_37028,RPV,BANC,WECC
+SMUD_PVR_37520,RPV,BANC,WECC
+SMUD_PVR_37524,RPV,BANC,WECC
+SMUD_PVR_37544,RPV,BANC,WECC
+SMUD_PVR_37548,RPV,BANC,WECC
+SMUD_PVR_37558,RPV,BANC,WECC
+Snake_River,Hydro,IPMV,WECC
+SnDiegoStCC-Total,Gas CC,CISD,WECC
+Snedigar_1,Hydro,IPMV,WECC
+Snoqualmie1-1Repower,Hydro,PSEI,WECC
+Snoqualmie1-2Repower,Hydro,PSEI,WECC
+Snoqualmie1-3Repower,Hydro,PSEI,WECC
+Snoqualmie1-4Repower,Hydro,PSEI,WECC
+Snoqualmie1-5Repower,Hydro,PSEI,WECC
+Snoqualmie2-6Repower,Hydro,PSEI,WECC
+Snoqualmie2-7Repower,Hydro,PSEI,WECC
+Snowflake,Biomass,AZPS,WECC
+Soda_1,Hydro,PAID,WECC
+Soda_2,Hydro,PAID,WECC
+Soda_Springs_1,Hydro,PACW,WECC
+SODER_W1_1,Wind,AESO,WECC
+SODER_W2_1,Wind,AESO,WECC
+Solana1,CSP,AZPS,WECC
+Solana2,CSP,AZPS,WECC
+SolanoSMUD1,Wind,CIPV,WECC
+SolanoSMUD2,Wind,CIPV,WECC
+SolanoSMUD2B,Wind,CIPV,WECC
+SolanoSMUD3,Wind,CIPV,WECC
+SolanoWind3,Wind,CIPV,WECC
+Solar_(SRP)_1,PV,SRP,WECC
+Solar_FIT_2013,PV,LDWP,WECC
+Solar_FIT_2014,PV,LDWP,WECC
+Solar_FIT_2015,PV,LDWP,WECC
+Solar_FIT_2016,PV,LDWP,WECC
+Solar_FIT_2017,PV,LDWP,WECC
+Solar_FIT_2018,PV,LDWP,WECC
+Solar_FIT_2019,PV,LDWP,WECC
+Solar_FIT_2020,PV,LDWP,WECC
+Solar_FIT_2021,PV,LDWP,WECC
+Solar_FIT_2022,PV,LDWP,WECC
+Solar_FIT_2023,PV,LDWP,WECC
+Solar_FIT_2024,PV,LDWP,WECC
+Solar_Ormat_1,CSP,IID,WECC
+Solar_Owens2017,PV,LDWP,WECC
+Solar_Owens2018,PV,LDWP,WECC
+Solar_Owens2019,PV,LDWP,WECC
+Solar_Owens2020,PV,LDWP,WECC
+Solar_PV#02_S1B,PV,CISC,WECC
+Solar_Voltaic_1,PV,SRP,WECC
+Solar_Voltaic_2,PV,SRP,WECC
+Solar_Voltaic_4,PV,SRP,WECC
+SolarBasin2013,PV,LDWP,WECC
+SolarBasin2014,PV,LDWP,WECC
+SolarBasin2015,PV,LDWP,WECC
+SolarBasin2016,PV,LDWP,WECC
+SolarBasin2017,PV,LDWP,WECC
+SolarBasin2018,PV,LDWP,WECC
+SolarBasin2019,PV,LDWP,WECC
+SolarBasin2020,PV,LDWP,WECC
+SolarBasin2021,PV,LDWP,WECC
+SolarGarden2014,PV,WACM,WECC
+SolarGarden2015,PV,WACM,WECC
+SolarRooftop_LA,PV,LDWP,WECC
+SolarSB1-2013,PV,LDWP,WECC
+SolarSB1-2014,PV,LDWP,WECC
+SolarSB1-2015,PV,LDWP,WECC
+SolarSB1-2016,PV,LDWP,WECC
+SolarSB1-2017,PV,LDWP,WECC
+SolarSB1-2018,PV,LDWP,WECC
+SolarSB1-2019,PV,LDWP,WECC
+SolarSB1-2020,PV,LDWP,WECC
+SolarSB1-2021,PV,LDWP,WECC
+SolarSB1-2022,PV,LDWP,WECC
+SolarSB1-2023,PV,LDWP,WECC
+SolarSB1-2024,PV,LDWP,WECC
+SolarTurbinesInc,Gas CT,CISD,WECC
+SolonBMGS,PV,TEPC,WECC
+SolonPrairieFire,PV,TEPC,WECC
+SolOrchard_1,CSP,IID,WECC
+SonomaCaliforniaGeo,Geothermal,CIPV,WECC
+SonomaCentralLF1+2,Biomass,CIPV,WECC
+SonomaCountyBio,Biomass,CIPV,WECC
+Sonora2,Biomass,CIPV,WECC
+SoTreatmentCC-Total,Biomass,BPAT,WECC
+South_1,Hydro,CIPV,WECC
+South_Hurlburt3,Wind,BPAT,WECC
+South_Hurlburt4,Wind,BPAT,WECC
+SouthBelridge1,Gas CT,CIPV,WECC
+SouthBelridge2,Gas CT,CIPV,WECC
+SouthBelridge3,Gas CT,CIPV,WECC
+SouthConsol,Hydro,SRP,WECC
+SouthDryCreekHydro1,Hydro,NWMT,WECC
+SouthForkTolt,Hydro,SCL,WECC
+SouthPointCC-Total,Gas CC,WALC,WECC
+SouthWind,Wind,CISC,WECC
+SPACogenCC-Total,Gas CC,BANC,WECC
+Spaulding_2_1,Hydro,CIPV,WECC
+Spaulding_3_1,Hydro,CIPV,WECC
+Spaulding1-1,Hydro,CIPV,WECC
+Spectrum,PV,NEVP,WECC
+Spicer_Meadow1,Hydro,CIPV,WECC
+Spicer_Meadow2,Hydro,CIPV,WECC
+Spicer_Meadow3,Hydro,CIPV,WECC
+Spillimacheen_1,Hydro,BCHA,WECC
+Spillimacheen_2,Hydro,BCHA,WECC
+Spillimacheen_3,Hydro,BCHA,WECC
+Spindle_Hill1,Gas CT,PSCO,WECC
+Spindle_Hill2,Gas CT,PSCO,WECC
+Spion_Kop,Wind,NWMT,WECC
+SpiritMountain1,Hydro,WACM,WECC
+Spokane1,Biomass,AVA,WECC
+SPP_PVF_64054,PV,SPPC,WECC
+SPP_PVF_64124,PV,SPPC,WECC
+SPP_PVF_64379,PV,SPPC,WECC
+SPP_PVF_64460,PV,SPPC,WECC
+SPP_PVT_64379,PV,SPPC,WECC
+Spray1_1,Hydro,AESO,WECC
+Spray2_1,Hydro,AESO,WECC
+SpreckelsSugarComp,Steam,IID,WECC
+Spring_Canyon_1,Wind,PSCO,WECC
+Spring_Creek_1,Hydro,CIPV,WECC
+Spring_Creek_2,Hydro,BANC,WECC
+Spring_Gap_1,Hydro,CIPV,WECC
+Spring_Valley,Wind,SPPC,WECC
+Springerville_1,Coal,TEPC,WECC
+Springerville_2,Coal,TEPC,WECC
+Springerville_3,Coal,TEPC,WECC
+Springerville_4,Coal,TEPC,WECC
+SpringervillePV1,PV,TEPC,WECC
+SpringervillePV2,PV,TEPC,WECC
+Springs1,Gas CT,CISC,WECC
+Springs2,Gas CT,CISC,WECC
+Springs3,Gas CT,CISC,WECC
+Springs4,Gas CT,CISC,WECC
+Springville,Hydro,CISC,WECC
+Sprott_FortGT_2,Gas CT,AESO,WECC
+SPVP005Redlands,PV,CISC,WECC
+SPVP007Redlands,PV,CISC,WECC
+SPVP010_1,PV,CISC,WECC
+SPVP015_1,PV,CISC,WECC
+SPVP023_1,PV,CISC,WECC
+Squamish,Biomass,BCHA,WECC
+SRI_Int_Cgn,Gas CT,CIPB,WECC
+SRP_Gas_Peaker1,Gas CT,SRP,WECC
+SRP_Gas_Peaker2,Gas CT,SRP,WECC
+SRP_Gas_Peaker3,Gas CT,SRP,WECC
+SRP_Gas_Peaker4,Gas CT,SRP,WECC
+SS_Creek,Hydro,BCHA,WECC
+St.Johns,Hydro,CISC,WECC
+St_George1,Other,PAUT,WECC
+St_George2,Other,PAUT,WECC
+St_Marys_Dam,Hydro,AESO,WECC
+Stagecoach,Hydro,PSCO,WECC
+Stampede_1,Hydro,CIPV,WECC
+Stampede_2,Hydro,CIPV,WECC
+STANDBY_AGG._3,Other,TPWR,WECC
+Stanislaus_HC1,Hydro,CIPV,WECC
+StanislausEnrgy,Biomass,CIPV,WECC
+Stanton_1,PV,EPE,WECC
+Star_Point,Wind,BPAT,WECC
+Starwood1,Gas CT,CIPV,WECC
+Starwood2,Gas CT,CIPV,WECC
+Stave_Falls_1,Hydro,BCHA,WECC
+Stave_Falls_2,Hydro,BCHA,WECC
+Steamboat2-1,Geothermal,SPPC,WECC
+Steamboat2-2,Geothermal,SPPC,WECC
+Steamboat3-1,Geothermal,SPPC,WECC
+Steamboat3-2,Geothermal,SPPC,WECC
+StewartMountain,Hydro,SRP,WECC
+Stillwater1,PV,SPPC,WECC
+Stillwater1_1,Geothermal,SPPC,WECC
+Stillwater1-2,Geothermal,SPPC,WECC
+Stillwater2_1,Geothermal,SPPC,WECC
+Stillwater2_2,Geothermal,SPPC,WECC
+Stokke1,Hydro,BCHA,WECC
+Stokke2,Hydro,BCHA,WECC
+Stone_Creek_1,Hydro,PGE,WECC
+Stone_Drop_1,Hydro,BANC,WECC
+StonyGorge1,Hydro,CIPV,WECC
+StonyGorge2,Hydro,CIPV,WECC
+Strathcona_1,Hydro,BCHA,WECC
+Strathcona_2,Hydro,BCHA,WECC
+StrawberryCreek1,Hydro,WAUW,WECC
+StrawberryCreek2,Hydro,WAUW,WECC
+StrawberryCreek3,Hydro,WAUW,WECC
+Strontia1,Hydro,PSCO,WECC
+Strontia2,Hydro,PSCO,WECC
+Stroud,PV,CIPV,WECC
+Sugarloaf,Hydro,PSCO,WECC
+Sullivan_1,Hydro,PGE,WECC
+Sullivan_10,Hydro,PGE,WECC
+Sullivan_11,Hydro,PGE,WECC
+Sullivan_12,Hydro,PGE,WECC
+Sullivan_13,Hydro,PGE,WECC
+Sullivan_2,Hydro,PGE,WECC
+Sullivan_3,Hydro,PGE,WECC
+Sullivan_4,Hydro,PGE,WECC
+Sullivan_5,Hydro,PGE,WECC
+Sullivan_6,Hydro,PGE,WECC
+Sullivan_7,Hydro,PGE,WECC
+Sullivan_8,Hydro,PGE,WECC
+Sullivan_9,Hydro,PGE,WECC
+SumasPowerCC-Total,Gas CC,PSEI,WECC
+Summer_Falls1,Hydro,TPWR,WECC
+Summer_Falls2,Hydro,TPWR,WECC
+SummerviewG1,Wind,AESO,WECC
+SummerviewG2,Wind,AESO,WECC
+SummerviewG3,Wind,AESO,WECC
+SummerviewG4,Wind,AESO,WECC
+SummitG1,Gas CT,AESO,WECC
+SummitG2,Gas CT,AESO,WECC
+SummitG3,Gas CT,AESO,WECC
+SunCity,PV,CIPV,WECC
+Suncor1,Gas CT,AESO,WECC
+Suncor2,Gas CT,AESO,WECC
+SundanceAB3,Coal,AESO,WECC
+SundanceAB4,Coal,AESO,WECC
+SundanceAB5,Coal,AESO,WECC
+SundanceAB6,Coal,AESO,WECC
+SundanceAB-CC-Total,Gas CC,AESO,WECC
+SundanceAZ01,Gas CT,AZPS,WECC
+SundanceAZ02,Gas CT,AZPS,WECC
+SundanceAZ03,Gas CT,AZPS,WECC
+SundanceAZ04,Gas CT,AZPS,WECC
+SundanceAZ05,Gas CT,AZPS,WECC
+SundanceAZ06,Gas CT,AZPS,WECC
+SundanceAZ07,Gas CT,AZPS,WECC
+SundanceAZ08,Gas CT,AZPS,WECC
+SundanceAZ09,Gas CT,AZPS,WECC
+SundanceAZ10,Gas CT,AZPS,WECC
+SunE_EPE1,PV,EPE,WECC
+SunE_EPE2,PV,EPE,WECC
+Sunnyside_Cgn,Coal,PAUT,WECC
+SunPeak_Solar_1,PV,IID,WECC
+SunPeak5657,Gas CT,NEVP,WECC
+SunPeak5658,Gas CT,NEVP,WECC
+SunPeak5659,Gas CT,NEVP,WECC
+SunriseCC-Total,Gas CC,CIPV,WECC
+SunsetReservoir,PV,CIPB,WECC
+SunshineCO,Hydro,PSCO,WECC
+SurpriseLandfil,Biomass,AZPS,WECC
+SutterEnergyCC-Total,Gas CC,CIPV,WECC
+Swan_Falls_1,Hydro,IPTV,WECC
+Swan_Falls_2,Hydro,IPTV,WECC
+SwanHillsSagCC,Gas CC,AESO,WECC
+SwanHillsSagCT,Other,AESO,WECC
+SwaukValleyRanchWind,Wind,PSEI,WECC
+Swift_1_HY11,Hydro,PACW,WECC
+Swift_1_HY12,Hydro,PACW,WECC
+Swift_1_HY13,Hydro,PACW,WECC
+Swift_2_21,Hydro,PACW,WECC
+Swift_2_22,Hydro,PACW,WECC
+SWJuniorHigh1,PV,AZPS,WECC
+Sycamore_CgnAB,CHP-QF,CISC,WECC
+Sycamore_CgnBG,CHP-QF,CISC,WECC
+Sycamore_CgnCG,CHP-QF,CISC,WECC
+Sycamore_CgnDG,CHP-QF,CISC,WECC
+Sycamore1,Biomass,CISD,WECC
+Sycamore1-2,Biomass,CISD,WECC
+Sycamore1-2A,Biomass,CISD,WECC
+Sycamore1-3,Biomass,CISD,WECC
+Sycamore1A,Biomass,CISD,WECC
+SygitowiczCreek,Hydro,PSEI,WECC
+SyncrudeCC-Total,Gas CC,AESO,WECC
+TABER_WG1_1,Wind,AESO,WECC
+TABER_WG2_2,Wind,AESO,WECC
+TableMountainQF,Hydro,CIPV,WECC
+Tacoma_1,Hydro,PSCO,WECC
+Tacoma_2,Hydro,PSCO,WECC
+Taft_Cgn1,Gas CT,CIPV,WECC
+Taft_Cgn2,Gas CT,CIPV,WECC
+Taft_Cgn3,Gas CT,CIPV,WECC
+Taft_Cgn4,Gas CT,CIPV,WECC
+Tajiguas,Biomass,CISC,WECC
+Tamarack,Biomass,IPTV,WECC
+Taylor_Draw,Hydro,PSCO,WECC
+TaylorHydro,Hydro,AESO,WECC
+TaylorWind1_1,Wind,AESO,WECC
+TaylorWind2_2,Wind,AESO,WECC
+TaylorWind3_3,Wind,AESO,WECC
+TCC-1,PV,TEPC,WECC
+TehachapiWind-1e,Wind,CISC,WECC
+TehachapiWind-2-1,Wind,CISC,WECC
+TehachapiWind-2-2,Wind,CISC,WECC
+TehachapiWind-2p,Wind,CISC,WECC
+Temescal_1,Hydro,CISC,WECC
+TEP_Warehouse_1,PV,TEPC,WECC
+TermoMexiCC-Total,Gas CC,CISD,WECC
+Tesla_1,Hydro,WACM,WECC
+TESLA_QF,Hydro,CIPV,WECC
+TesoroCgn1,Gas CT,PAUT,WECC
+TesoroCgn2,Gas CT,PAUT,WECC
+TesoroICs,Other,PSEI,WECC
+TexacoExplorAgg,Gas CT,CISC,WECC
+TGP_1,Geothermal,SPPC,WECC
+The_Dalles_1,Hydro,BPAT,WECC
+The_Dalles_10,Hydro,BPAT,WECC
+The_Dalles_11,Hydro,BPAT,WECC
+The_Dalles_12,Hydro,BPAT,WECC
+The_Dalles_13,Hydro,BPAT,WECC
+The_Dalles_14,Hydro,BPAT,WECC
+The_Dalles_15,Hydro,BPAT,WECC
+The_Dalles_16,Hydro,BPAT,WECC
+The_Dalles_17,Hydro,BPAT,WECC
+The_Dalles_18,Hydro,BPAT,WECC
+The_Dalles_19,Hydro,BPAT,WECC
+The_Dalles_2,Hydro,BPAT,WECC
+The_Dalles_20,Hydro,BPAT,WECC
+The_Dalles_21,Hydro,BPAT,WECC
+The_Dalles_22,Hydro,BPAT,WECC
+The_Dalles_3,Hydro,BPAT,WECC
+The_Dalles_4,Hydro,BPAT,WECC
+The_Dalles_5,Hydro,BPAT,WECC
+The_Dalles_6,Hydro,BPAT,WECC
+The_Dalles_7,Hydro,BPAT,WECC
+The_Dalles_8,Hydro,BPAT,WECC
+The_Dalles_9,Hydro,BPAT,WECC
+The_Dalles_F1,Hydro,BPAT,WECC
+The_Dalles_F2,Hydro,BPAT,WECC
+ThermalEnrgyDev,Biomass,CIPV,WECC
+Thermalito_1,Hydro,CIPV,WECC
+Thermalito_2,Storage,CIPV,WECC
+Thermalito_3,Storage,CIPV,WECC
+Thermalito_4,Storage,CIPV,WECC
+ThermalitoDiverson,Hydro,CIPV,WECC
+ThermoGreeley1,Gas CC,PSCO,WECC
+Thompson_Falls1,Hydro,NWMT,WECC
+Thompson_Falls2,Hydro,NWMT,WECC
+Thompson_Falls3,Hydro,NWMT,WECC
+Thompson_Falls4,Hydro,NWMT,WECC
+Thompson_Falls5,Hydro,NWMT,WECC
+Thompson_Falls6,Hydro,NWMT,WECC
+Thompson_Falls7,Hydro,NWMT,WECC
+ThousandSpring1,Hydro,IPMV,WECC
+ThousandSpring2,Hydro,IPMV,WECC
+ThousandSpring3,Hydro,IPMV,WECC
+ThousandSprings,Wind,IPMV,WECC
+Three_Sisters_1,Hydro,AESO,WECC
+ThreeForksWater,Hydro,CIPV,WECC
+THUMS_GEN1,Gas CT,CISC,WECC
+Tiber_Dam,Hydro,WAUW,WECC
+TID_Solar_1,PV,CIPV,WECC
+TIDC_PVR_38400,RPV,TIDC,WECC
+TietonDamHydroUNIT1,Hydro,BPAT,WECC
+TietonDamHydroUNIT2,Hydro,BPAT,WECC
+Tiger_Creek_H1,Hydro,CIPV,WECC
+Tiger_Creek_H2,Hydro,CIPV,WECC
+Tipella1,Hydro,BCHA,WECC
+Tipella2,Hydro,BCHA,WECC
+Toadtown_1,Hydro,CIPV,WECC
+TohonoOodhm-2,PV,TEPC,WECC
+Toketee_Falls_1,Hydro,PACW,WECC
+Toketee_Falls_2,Hydro,PACW,WECC
+Toketee_Falls_3,Hydro,PACW,WECC
+Toland,Biomass,CISC,WECC
+ToledoMill1,Biomass,BPAT,WECC
+TopazSolarFarmTPZ1,PV,CIPV,WECC
+TopazSolarFarmTPZ2,PV,CIPV,WECC
+TopazSolarFarmTPZ3,PV,CIPV,WECC
+TopazSolarFarmTPZ4,PV,CIPV,WECC
+TopazSolarFarmTPZ5,PV,CIPV,WECC
+TopoftheWorld,Wind,PAWY,WECC
+Total_Joslyn_1,Gas CT,AESO,WECC
+TotalEngyFacCC-Total,Biomass,LDWP,WECC
+Towaoc_1,Hydro,WACM,WECC
+Toyon1,Biomass,LDWP,WECC
+Toyon2,Biomass,LDWP,WECC
+Toyon4,Biomass,CISC,WECC
+Toyon5,Biomass,CISC,WECC
+TPE-CC-Total,Gas CC,PSCO,WECC
+Tracy_3,Other,SPPC,WECC
+TracyCACC-Total,Gas CC,CIPV,WECC
+TracyNVCC1-Total,Gas CC,SPPC,WECC
+TracyNVCC2-Total,Gas CC,SPPC,WECC
+TracyPump1,Other,BANC,WECC
+TracyPump2,Other,BANC,WECC
+TracyPump3,Other,BANC,WECC
+TracyPump4,Other,BANC,WECC
+TracyPump5,Other,BANC,WECC
+TracyPump6,Other,BANC,WECC
+TracyPumpYG,Other,BANC,WECC
+Trail_Bridge,Hydro,BPAT,WECC
+Tres_Vaqueros1,Wind,CIPV,WECC
+Tres_Vaqueros2,Wind,CIPV,WECC
+TrethewayCreek1,Hydro,BCHA,WECC
+TrethewayCreek2,Hydro,BCHA,WECC
+Tri_Cities_TC1,Biomass,SRP,WECC
+Tri_Cities_TC2,Biomass,SRP,WECC
+Tri_Cities_TC3,Biomass,SRP,WECC
+Tri_Cities_TC4,Biomass,SRP,WECC
+Tri_Cities_TC5,Biomass,SRP,WECC
+TriCntrNaniwa3,Gas CT,SPPC,WECC
+TriCntrNaniwa4,Gas CT,SPPC,WECC
+TriCntrNaniwa5,Gas CT,SPPC,WECC
+TriCntrNaniwa6,Gas CT,SPPC,WECC
+Trinity_1,Hydro,BANC,WECC
+Trinity_2,Hydro,BANC,WECC
+Trio_1,Hydro,BCHA,WECC
+Trio_2,Hydro,BCHA,WECC
+TroutCoBillngsleyCrk,Hydro,IPMV,WECC
+Truckhaven,Geothermal,IID,WECC
+TRW-Plant,Gas CT,CISD,WECC
+TS_Pwr_Plant1,Coal,SPPC,WECC
+TuanaGulch,Wind,IPMV,WECC
+TuanaSprings,Wind,IPMV,WECC
+Tulare_Success,Hydro,CISC,WECC
+Tule_River1,Hydro,CISC,WECC
+Tule_River2,Hydro,CISC,WECC
+Tule_River3,Hydro,CISC,WECC
+Tule_River4,Hydro,CISC,WECC
+Tulloch_1,Hydro,CIPV,WECC
+Tulloch_2,Hydro,CIPV,WECC
+Tumbler_Ridge1,Wind,BCHA,WECC
+Tumbler_Ridge2,Wind,BCHA,WECC
+Tumbler_Ridge3,Wind,BCHA,WECC
+Tumbler_Ridge4,Wind,BCHA,WECC
+Tumbler_Ridge5,Wind,BCHA,WECC
+Tunnel,Hydro,IPTV,WECC
+Tuolumne1,Wind,BPAT,WECC
+Tuolumne2,Wind,BPAT,WECC
+Turlock_Lake_1,Hydro,TIDC,WECC
+Turlock_Lake_2,Hydro,TIDC,WECC
+Turlock_Lake_3,Hydro,TIDC,WECC
+Turlock_TFC,Biomass,CIPV,WECC
+Turnbull1,Hydro,NWMT,WECC
+Turnbull2,Hydro,NWMT,WECC
+Turnip_1,Hydro,IID,WECC
+Tuscarora_G9200,Geothermal,SPPC,WECC
+Tuscarora_G9201,Geothermal,SPPC,WECC
+Twin_Buttes,Wind,PSCO,WECC
+Twin_Falls_1,Hydro,IPMV,WECC
+Twin_Falls_2,Hydro,IPMV,WECC
+Twin_Falls1,Hydro,PSEI,WECC
+Twin_Falls2,Hydro,PSEI,WECC
+Two_Dot,Wind,NWMT,WECC
+Two_Ponds,Wind,IPTV,WECC
+Tyson_Creek_1,Hydro,BCHA,WECC
+U_Bonnington_1,Hydro,BCHA,WECC
+U_Bonnington_2,Hydro,BCHA,WECC
+U_Bonnington_3,Hydro,BCHA,WECC
+U_Bonnington_4,Hydro,BCHA,WECC
+U_Bonnington_5,Hydro,BCHA,WECC
+U_Bonnington_6,Hydro,BCHA,WECC
+UASTP_I_UATP1,PV,TEPC,WECC
+UASTP_II_UATP2,PV,TEPC,WECC
+UCDavisCC-Total,CHP-QF,BANC,WECC
+UCIFaciltiesCC-Total,Gas CC,CISC,WECC
+UCLA-So-CC-Total,CHP-QF,LDWP,WECC
+UCSanDiegoCC-Total,Gas CC,CISD,WECC
+Unidentified,Gas CT,TEPC,WECC
+Unidentified_1,Geothermal,IID,WECC
+Union_Valley_1,Hydro,BANC,WECC
+UnionTribunePublish,Gas CT,CISD,WECC
+UnitedCogenCC-Total,CHP-QF,CIPB,WECC
+University_QF,CHP-QF,CIPV,WECC
+UofA1,Gas CT,AESO,WECC
+UofA2,Gas CT,AESO,WECC
+UofC_Cgn1,Gas CT,AESO,WECC
+UofCO-CC-Total,Gas CC,PSCO,WECC
+UofOR-CC-Total,Gas CC,BPAT,WECC
+Upper_Baker_1,Hydro,PSEI,WECC
+Upper_Baker_2,Hydro,PSEI,WECC
+Upper_Bear,Hydro,BCHA,WECC
+Upper_Beaver_1,Hydro,PAUT,WECC
+Upper_Beaver_2,Hydro,PAUT,WECC
+Upper_Clowhom_1,Hydro,BCHA,WECC
+Upper_Dawson_1,Hydro,TIDC,WECC
+Upper_Falls_1,Hydro,AVA,WECC
+Upper_Lillooet1,Hydro,BCHA,WECC
+Upper_Lillooet2,Hydro,BCHA,WECC
+Upper_Lillooet3,Hydro,BCHA,WECC
+Upper_Lillooet4,Hydro,BCHA,WECC
+Upper_Malad_1,Hydro,IPMV,WECC
+Upper_Mamquam_1,Hydro,BCHA,WECC
+Upper_Mamquam_2,Hydro,BCHA,WECC
+Upper_Molina_1,Hydro,WALC,WECC
+Upper_Salmon1,Hydro,IPMV,WECC
+Upper_Salmon2,Hydro,IPMV,WECC
+Upper_Salmon3,Hydro,IPMV,WECC
+Upper_Salmon4,Hydro,IPMV,WECC
+Upper_Stave1,Hydro,BCHA,WECC
+Upper_Stave2,Hydro,BCHA,WECC
+Upper_Stave3,Hydro,BCHA,WECC
+Upper_Stave4,Hydro,BCHA,WECC
+UpperGorge1,Hydro,LDWP,WECC
+UpperPwr4,Hydro,BPAT,WECC
+UpprTobaValley1,Hydro,BCHA,WECC
+UpprTobaValley2,Hydro,BCHA,WECC
+Upriver_Dam1,Hydro,AVA,WECC
+Upriver_Dam2,Hydro,AVA,WECC
+Upriver_Dam3,Hydro,AVA,WECC
+Upriver_Dam4,Hydro,AVA,WECC
+Upriver_Dam5,Hydro,AVA,WECC
+US_Borax_GEN1,Gas CT,CISC,WECC
+US_Magnesium1,Gas CT,PAUT,WECC
+US_Magnesium2,Gas CT,PAUT,WECC
+US_Magnesium3,Gas CT,PAUT,WECC
+Vaca_DixonPV,PV,CIPV,WECC
+VacaDixonPeaker,Gas CT,CIPV,WECC
+VACAVILLE_QF,Wind,CIPV,WECC
+Valencia_GT1,Gas CT,TEPC,WECC
+Valencia_GT2,Gas CT,TEPC,WECC
+Valencia_GT3,Gas CT,TEPC,WECC
+Valencia_GT4,Gas CT,TEPC,WECC
+Valencia1,Gas CT,PNM,WECC
+ValeroCgn1,Gas CT,CIPV,WECC
+Vallecito1,Hydro,PSCO,WECC
+Vallecito2,Hydro,PSCO,WECC
+Vallecito3,Hydro,PSCO,WECC
+Valley_5,Gas CT,LDWP,WECC
+Valley_View_1,Hydro,CISC,WECC
+ValleyCC-Total,Gas CC,LDWP,WECC
+Valleyview1_1,Gas CT,AESO,WECC
+Valleyview2_1,Gas CT,AESO,WECC
+Valmont7,Gas CT,PSCO,WECC
+Valmont8,Gas CT,PSCO,WECC
+Van_Horn_1,PV,EPE,WECC
+Vancouver4,Biomass,BCHA,WECC
+VanderHaakDairy,Biomass,PSEI,WECC
+Vansycle_II,Wind,PACW,WECC
+Vansycle_OR,Wind,BPAT,WECC
+Vansycle_WA,Wind,PACW,WECC
+Vansycle_WGNS,Wind,BPAT,WECC
+Vantage,Wind,PSEI,WECC
+Vasco_Winds_1,Wind,CIPB,WECC
+VecinoVineyards,Hydro,CIPV,WECC
+Venice_1,Hydro,CISC,WECC
+Verdi_1,Hydro,SPPC,WECC
+Vestal_AreaAgg,Hydro,CISC,WECC
+Vincent_AreaAgg,Wind,CISC,WECC
+Volcano_Creek_1,Hydro,BCHA,WECC
+Volcano_Creek_2,Hydro,BCHA,WECC
+Volta_2_1,Hydro,CIPV,WECC
+VOLTA_QF,Hydro,CIPV,WECC
+Volta1-1,Hydro,CIPV,WECC
+Vulcan1,Geothermal,IID,WECC
+Vulcan2,Geothermal,IID,WECC
+W_E_Warne_1,Hydro,CIPV,WECC
+W_E_Warne_2,Hydro,CISC,WECC
+W_R_Gianelli_1,Storage,CIPV,WECC
+W_R_Gianelli_2,Storage,CIPV,WECC
+W_R_Gianelli_3,Storage,CIPV,WECC
+W_R_Gianelli_4,Storage,CIPV,WECC
+W_R_Gianelli_5,Storage,CIPV,WECC
+W_R_Gianelli_6,Storage,CIPV,WECC
+W_R_Gianelli_7,Storage,CIPV,WECC
+W_R_Gianelli_8,Storage,CIPV,WECC
+Wabuska_1,Geothermal,SPPC,WECC
+Wabuska_2,Geothermal,SPPC,WECC
+Wabuska_3,Geothermal,SPPC,WECC
+Waddell-PS1,Other,AZPS,WECC
+Waddell-PS3,Other,AZPS,WECC
+Waddell-PS6,Other,AZPS,WECC
+Waddell-PS7,Other,AZPS,WECC
+WadhamEnrgy,Biomass,CIPV,WECC
+Wahleach_1,Hydro,BCHA,WECC
+WALC-Q2008G12,CSP,WALC,WECC
+WALC-Q2008G29,CSP,WALC,WECC
+WALC-Q2008G32,CSP,WALC,WECC
+WALC-Q2008G33,CSP,WALC,WECC
+Walden_North_1,Hydro,BCHA,WECC
+Walden_North_2,Hydro,BCHA,WECC
+Walden_North_3,Hydro,BCHA,WECC
+Walden_North_4,Hydro,BCHA,WECC
+Walden_North_5,Hydro,BCHA,WECC
+Walker_Wind,Wind,CIPB,WECC
+Walnut_1,Gas CT,TIDC,WECC
+Walnut_2,Gas CT,TIDC,WECC
+WalnutCreekEPark1,Gas CT,CISC,WECC
+WalnutCreekEPark2,Gas CT,CISC,WECC
+WalnutCreekEPark3,Gas CT,CISC,WECC
+WalnutCreekEPark4,Gas CT,CISC,WECC
+WalnutCreekEPark5,Gas CT,CISC,WECC
+WalnutEnergyCC-Total,Gas CC,TIDC,WECC
+WalterHardman1,Hydro,BCHA,WECC
+WalterHardman2,Hydro,BCHA,WECC
+Walterville_1,Hydro,BPAT,WECC
+Wanapum01A,Hydro,GCPD,WECC
+Wanapum02A,Hydro,GCPD,WECC
+Wanapum03,Hydro,GCPD,WECC
+Wanapum04,Hydro,GCPD,WECC
+Wanapum05A,Hydro,GCPD,WECC
+Wanapum06,Hydro,GCPD,WECC
+Wanapum07A,Hydro,GCPD,WECC
+Wanapum08,Hydro,GCPD,WECC
+Wanapum09,Hydro,GCPD,WECC
+Wanapum10,Hydro,GCPD,WECC
+Waneta1,Hydro,BCHA,WECC
+Waneta1_Exp,Hydro,BCHA,WECC
+Waneta2,Hydro,BCHA,WECC
+Waneta2_Exp,Hydro,BCHA,WECC
+Waneta3,Hydro,BCHA,WECC
+Waneta4,Hydro,BCHA,WECC
+WarmSprings,Hydro,CIPV,WECC
+WarmSpringsPwr,Hydro,PACW,WECC
+Washoe_1,Hydro,SPPC,WECC
+Washoe_2,Hydro,SPPC,WECC
+WATERTON_2_2,Gas CT,AESO,WECC
+Waterton_Dam,Hydro,AESO,WECC
+WATERTON1-1,Gas CT,AESO,WECC
+WATERWHEELRANCH,Hydro,CIPV,WECC
+WatsonCogenCC-Total,CHP-QF,CISC,WECC
+WaunaMill,Biomass,BPAT,WECC
+WAUW_Reserve,Other,WAUW,WECC
+Weeks_Falls,Hydro,PSEI,WECC
+WeldwoodTG1,Biomass,AESO,WECC
+WeldwoodTG2,Biomass,AESO,WECC
+Wellhead,Gas CT,CISC,WECC
+Wells01,Hydro,DOPD,WECC
+Wells02,Hydro,DOPD,WECC
+Wells03,Hydro,DOPD,WECC
+Wells04,Hydro,DOPD,WECC
+Wells05,Hydro,DOPD,WECC
+Wells06,Hydro,DOPD,WECC
+Wells07,Hydro,DOPD,WECC
+Wells08,Hydro,DOPD,WECC
+Wells09,Hydro,DOPD,WECC
+Wells10,Hydro,DOPD,WECC
+Welport_Lease,Gas CT,CIPV,WECC
+West_Ford_Flat1,Geothermal,CIPV,WECC
+West_Ford_Flat2,Geothermal,CIPV,WECC
+West_Phoenix_1B,Gas CC,AZPS,WECC
+West_Valley1,Gas CT,PAUT,WECC
+West_Valley2,Gas CT,PAUT,WECC
+West_Valley3,Gas CT,PAUT,WECC
+West_Valley4,Gas CT,PAUT,WECC
+West_Valley5,Gas CT,PAUT,WECC
+WestButteWind,Wind,BPAT,WECC
+Western_A101,Other,SPPC,WECC
+Western_B102,Other,SPPC,WECC
+Western_B202,Other,SPPC,WECC
+Western_C102,Other,SPPC,WECC
+Western_C202,Other,SPPC,WECC
+Western_D101,Other,SPPC,WECC
+Western_E102,Other,SPPC,WECC
+Western_E202,Other,SPPC,WECC
+Western_F102,Other,SPPC,WECC
+Western_F202,Other,SPPC,WECC
+Western_G102,Other,SPPC,WECC
+Western_G202,Other,SPPC,WECC
+Western_H102,Other,SPPC,WECC
+Western_H202,Other,SPPC,WECC
+Western_PV1,PV,SPPC,WECC
+WESTLOCKG1_1,Biomass,AESO,WECC
+WesTPhoenix_2B,Gas CC,AZPS,WECC
+WestPhoenix_3B,Gas CC,AZPS,WECC
+WestPhoenix_GT1,Gas CT,AZPS,WECC
+WestPhoenix_GT2,Gas CT,AZPS,WECC
+WestPhoenixCC4-Total,Gas CC,AZPS,WECC
+WestPhoenixCC5-Total,Gas CC,AZPS,WECC
+WestPoint_1,Hydro,CIPV,WECC
+WestsidePV,PV,CIPV,WECC
+WEYERHAEUSER_CO,Gas CT,CISC,WECC
+WeyerhaeuserBio,Biomass,AESO,WECC
+WeyerhaeuserWA2,Biomass,BPAT,WECC
+WeyerhaeuserWA3,Biomass,BPAT,WECC
+WeyerhaeuserWA4,Biomass,BPAT,WECC
+Whatshan_1,Hydro,BCHA,WECC
+Wheat_Field,Wind,BPAT,WECC
+WheelabratorCC-Total,Gas CC,LDWP,WECC
+WheelerRidgePump1-1,Other,CIPV,WECC
+WheelerRidgePump1-2,Other,CIPV,WECC
+WheelerRidgePump1-3,Other,CIPV,WECC
+WheelerRidgePump1-4,Other,CIPV,WECC
+WheelerRidgePump1-5,Other,CIPV,WECC
+WheelerRidgePump2-1,Other,CIPV,WECC
+WheelerRidgePump2-2,Other,CIPV,WECC
+WheelerRidgePump2-3,Other,CIPV,WECC
+WheelerRidgePump2-4,Other,CIPV,WECC
+Whiskeytown_1,Hydro,BANC,WECC
+White_Creek1,Wind,BPAT,WECC
+White_Creek2,Wind,BPAT,WECC
+White_RiverPV,PV,CIPV,WECC
+WHITECOURT_CGN,Biomass,AESO,WECC
+Whitehead_K1,Other,PAUT,WECC
+Whitehead_K2,Other,PAUT,WECC
+Whitehead_K3,Other,PAUT,WECC
+Whitehead_K4,Other,PAUT,WECC
+Whitehorn_2,Gas CT,PSEI,WECC
+Whitehorn_3,Gas CT,PSEI,WECC
+WhiteRock1,Hydro,BANC,WECC
+WhiteRock2,Hydro,BANC,WECC
+Whitewater_Hill,Wind,CISC,WECC
+WhitewaterHydroWWHI,Hydro,CISC,WECC
+WhiteWaterRanch,Hydro,IPMV,WECC
+Wild_Horse_W1,Wind,PSEI,WECC
+Wild_Horse_W2,Wind,PSEI,WECC
+Wild_Horse_W3,Wind,PSEI,WECC
+Wild_Rose,Geothermal,SPPC,WECC
+Wildmare_Wind_1,Wind,BCHA,WECC
+Wildmare_Wind_2,Wind,BCHA,WECC
+Wildmare_Wind_3,Wind,BCHA,WECC
+WildRoseWind01,Wind,AESO,WECC
+WildRoseWind02,Wind,AESO,WECC
+WildRoseWind03,Wind,AESO,WECC
+WildRoseWind04,Wind,AESO,WECC
+WildRoseWind05,Wind,AESO,WECC
+WildRoseWind06,Wind,AESO,WECC
+WildRoseWind07,Wind,AESO,WECC
+WildRoseWind08,Wind,AESO,WECC
+WildRoseWind09,Wind,AESO,WECC
+WildRoseWind10,Wind,AESO,WECC
+Wilkins_Wind,Wind,BPAT,WECC
+Williams_Fork1,Hydro,WACM,WECC
+Williams_Fork2,Hydro,WACM,WECC
+WillowCreekEC,Wind,BPAT,WECC
+WilmingtonCalciner,Steam,CISC,WECC
+WilmngtnHydrgn,Other,LDWP,WECC
+WilsonLake1,Hydro,IPMV,WECC
+WilsonLake2,Hydro,IPMV,WECC
+Wind_SC3_APS_14017,Wind,AZPS,WECC
+Wind_SC3_AVA_40905,Wind,BPAT,WECC
+Wind_SC3_AVA_48512,Wind,AVA,WECC
+Wind_SC3_AVA_48524,Wind,AVA,WECC
+Wind_SC3_BPA_40141,Wind,BPAT,WECC
+Wind_SC3_BPA_40307,Wind,BPAT,WECC
+Wind_SC3_BPA_40355,Wind,BPAT,WECC
+Wind_SC3_BPA_40381,Wind,BPAT,WECC
+Wind_SC3_BPA_40443,Wind,BPAT,WECC
+Wind_SC3_BPA_40451,Wind,BPAT,WECC
+Wind_SC3_BPA_40557,Wind,BPAT,WECC
+Wind_SC3_BPA_40684,Wind,BPAT,WECC
+Wind_SC3_BPA_40813,Wind,BPAT,WECC
+Wind_SC3_BPA_40895,Wind,BPAT,WECC
+Wind_SC3_BPA_40986,Wind,BPAT,WECC
+Wind_SC3_BPA_41043,Wind,BPAT,WECC
+Wind_SC3_BPA_41135,Wind,BPAT,WECC
+Wind_SC3_BPA_41161,Wind,BPAT,WECC
+Wind_SC3_BPA_41401,Wind,BPAT,WECC
+Wind_SC3_BPA_41450,Wind,BPAT,WECC
+Wind_SC3_BPA_47827,Wind,BPAT,WECC
+Wind_SC3_BPA_47856,Wind,BPAT,WECC
+Wind_SC3_FAR EAST_60064,Wind,IPTV,WECC
+Wind_SC3_FAR EAST_60073,Wind,IPFE,WECC
+Wind_SC3_GCPD_46045,Wind,GCPD,WECC
+Wind_SC3_GCPD_46065,Wind,GCPD,WECC
+Wind_SC3_IID_21007,Wind,IID,WECC
+Wind_SC3_IID_21076,Wind,IID,WECC
+Wind_SC3_MAGIC VLY_60006,Wind,IPMV,WECC
+Wind_SC3_NEVP_18620,Wind,NEVP,WECC
+Wind_SC3_NWMT_62004,Wind,NWMT,WECC
+Wind_SC3_NWMT_62030,Wind,NWMT,WECC
+Wind_SC3_NWMT_62071,Wind,NWMT,WECC
+Wind_SC3_NWMT_62365,Wind,NWMT,WECC
+Wind_SC3_PACE_ID_65665,Wind,PAID,WECC
+Wind_SC3_PACE_WY_65420,Wind,PAWY,WECC
+Wind_SC3_PACE_WY_65460,Wind,PAWY,WECC
+Wind_SC3_PACE_WY_65895,Wind,PAWY,WECC
+Wind_SC3_PACE_WY_65955,Wind,PAWY,WECC
+Wind_SC3_PACE_WY_65975,Wind,PAWY,WECC
+Wind_SC3_PACE_WY_66145,Wind,PAWY,WECC
+Wind_SC3_PACW_45029,Wind,PACW,WECC
+Wind_SC3_PACW_45075,Wind,PACW,WECC
+Wind_SC3_PACW_47572,Wind,PACW,WECC
+Wind_SC3_PG&E_BAY_33175,Wind,CIPB,WECC
+Wind_SC3_PG&E_BAY_33176,Wind,CIPB,WECC
+Wind_SC3_PG&E_BAY_33177,Wind,CIPB,WECC
+Wind_SC3_PG&E_VLY_30045,Wind,CIPV,WECC
+Wind_SC3_PNM_10116,Wind,PNM,WECC
+Wind_SC3_PNM_12082,Wind,PNM,WECC
+Wind_SC3_PSC_70032,Wind,PSCO,WECC
+Wind_SC3_PSC_70072,Wind,PSCO,WECC
+Wind_SC3_PSC_70237,Wind,PSCO,WECC
+Wind_SC3_PSC_70375,Wind,PSCO,WECC
+Wind_SC3_PSC_70820,Wind,PSCO,WECC
+Wind_SC3_PSC_70960,Wind,PSCO,WECC
+Wind_SC3_PSC_73535,Wind,PSCO,WECC
+Wind_SC3_PSC_79091,Wind,PSCO,WECC
+Wind_SC3_PSE_42312,Wind,PSEI,WECC
+Wind_SC3_PSE_42361,Wind,PSEI,WECC
+Wind_SC3_SCE_24085,Wind,CISC,WECC
+Wind_SC3_SCE_24245,Wind,CISC,WECC
+Wind_SC3_SCE_24261,Wind,CISC,WECC
+Wind_SC3_SCE_24273,Wind,CISC,WECC
+Wind_SC3_SCE_24401,Wind,CISC,WECC
+Wind_SC3_SCE_24736,Wind,CISC,WECC
+Wind_SC3_SCE_29402,Wind,CISC,WECC
+Wind_SC3_SDGE_22430,Wind,CISD,WECC
+Wind_SC3_SMUD_37640,Wind,BANC,WECC
+Wind_SC3_SPP_64124,Wind,SPPC,WECC
+Wind_SC3_SRP_15041,Wind,SRP,WECC
+Wind_SC3_TREAS VLY_60159,Wind,IPMV,WECC
+Wind_SC3_TREAS VLY_60312,Wind,IPTV,WECC
+Wind_SC3_WACM_73536,Wind,WACM,WECC
+Wind_SC3_WACM_73571,Wind,WACM,WECC
+Wind_SC3_WACM_79054,Wind,WACM,WECC
+Wind_SC3_WALC_17102,Wind,WALC,WECC
+Wind_SC3_WALC_19029,Wind,WALC,WECC
+Wind_SC3_WALC_19072,Wind,WALC,WECC
+Wind_SC3_WALC_79043,Wind,WALC,WECC
+Wind_SC4_CFE_20251,Wind,CISC,WECC
+Wind_SC4_IID_21918,Wind,IID,WECC
+Wind_SC4_PG&E_VLY_30040,Wind,CIPV,WECC
+Wind_SC4_PG&E_VLY_30185,Wind,CIPV,WECC
+Wind_SC4_PG&E_VLY_30190,Wind,CIPV,WECC
+Wind_SC4_PG&E_VLY_30465,Wind,CIPV,WECC
+Wind_SC4_PG&E_VLY_30479,Wind,CIPV,WECC
+Wind_SC4_PG&E_VLY_30480,Wind,CIPV,WECC
+Wind_SC4_PG&E_VLY_30571,Wind,CIPV,WECC
+Wind_SC4_PG&E_VLY_38610,Wind,CIPV,WECC
+Wind_SC4_SCE_24251,Wind,CISC,WECC
+Wind_SC4_SCE_24273,Wind,CISC,WECC
+Wind_SC4_SDGE_22467,Wind,CISD,WECC
+Wind_SC4_SDGE_37560,Wind,BANC,WECC
+WindFarm1,Wind,WALC,WECC
+WindFarm2,Wind,WALC,WECC
+WindFarm3,Wind,WALC,WECC
+WindFarm4,Wind,WALC,WECC
+WindGapPump1-1,Other,CIPV,WECC
+WindGapPump1-2,Other,CIPV,WECC
+WindGapPump1-3,Other,CIPV,WECC
+WindGapPump2-1,Other,CIPV,WECC
+WindGapPump2-2,Other,CIPV,WECC
+WindGapPump3-1,Other,CIPV,WECC
+WindGapPump3-2,Other,CIPV,WECC
+WindGapPump4-1,Other,CIPV,WECC
+WindGapPump4-2,Other,CIPV,WECC
+WindPineCanyon1,Wind,LDWP,WECC
+Windstar,Wind,CISC,WECC
+WindyFlats1,Wind,BPAT,WECC
+WindyFlats2,Wind,BPAT,WECC
+WindyFlats3,Wind,BPAT,WECC
+Wintec,Wind,CISC,WECC
+WinteringHills1,Wind,AESO,WECC
+WinteringHills2,Wind,AESO,WECC
+WinteringHills3,Wind,AESO,WECC
+WinteringHills4,Wind,AESO,WECC
+WinteringHills5,Wind,AESO,WECC
+WinteringHills6,Wind,AESO,WECC
+Wise1,Hydro,CIPV,WECC
+Wise2,Hydro,CIPV,WECC
+Wister,Geothermal,IID,WECC
+WKN_Wagner_GEN1,Wind,CISC,WECC
+WM_Landfill_1,Biomass,PSCO,WECC
+Wolfskill,Gas CT,CIPV,WECC
+Woodland_Bio,Biomass,CIPV,WECC
+Woodland1,Gas CT,BANC,WECC
+Woodland3A,Steam,BANC,WECC
+Woodland3B,Steam,BANC,WECC
+Woodland3C,Steam,BANC,WECC
+Woodland3D,Steam,BANC,WECC
+Woodland3E,Steam,BANC,WECC
+Woodland3F,Steam,BANC,WECC
+WoodlandCC-Total,Gas CC,BANC,WECC
+Woodleaf,Hydro,CIPV,WECC
+Woodward,Hydro,CIPV,WECC
+WPSIncCC-Total,CHP-QF,CIPV,WECC
+Wrangler,PV,EPE,WECC
+WSMR_I_WSMR1,PV,EPE,WECC
+WSMR_I_WSMR2,PV,EPE,WECC
+Wygen1,Coal,WACM,WECC
+Wygen2,Coal,WACM,WECC
+Wygen3,Coal,WACM,WECC
+Wynoochee,Hydro,TPWR,WECC
+Wyodak,Coal,PAWY,WECC
+WyomingWindGE15,Wind,PAWY,WECC
+YahooCreek,Wind,IPMV,WECC
+YakamaDrop2,Hydro,BPAT,WECC
+YakamaDrop3-1,Hydro,BPAT,WECC
+YakamaDrop3-2,Hydro,BPAT,WECC
+Yale1,Hydro,PACW,WECC
+Yale2,Hydro,PACW,WECC
+Yellowstone_Eng,Coal,NWMT,WECC
+Yellowtail_1,Hydro,WAUW,WECC
+Yellowtail_2,Hydro,WAUW,WECC
+Yellowtail_3,Hydro,WAUW,WECC
+Yellowtail_4,Hydro,WAUW,WECC
+Yelm_1,Hydro,BPAT,WECC
+Yelm_2,Hydro,BPAT,WECC
+Yelm_3,Hydro,BPAT,WECC
+YoloPower1,Biomass,CIPV,WECC
+YoloPower2,Biomass,CIPV,WECC
+YoloPower3,Biomass,CIPV,WECC
+YoloPower4,Biomass,CIPV,WECC
+YoloPower5,Biomass,CIPV,WECC
+Yorba_Linda,Hydro,CISC,WECC
+YoungsCreek,Hydro,BPAT,WECC
+Yuba_City_Cogen,CHP-QF,CIPV,WECC
+Yuba_City_EC,Gas CT,CIPV,WECC
+Yucca_GT1,Gas CT,AZPS,WECC
+Yucca_GT2,Gas CT,AZPS,WECC
+Yucca_GT21,Other,AZPS,WECC
+Yucca_GT3,Gas CT,AZPS,WECC
+Yucca_GT4,Other,AZPS,WECC
+Yucca_GT5,Gas CT,AZPS,WECC
+Yucca_GT6,Gas CT,AZPS,WECC
+Yucca_ST1,Other,AZPS,WECC
+Yuma NAF,Geothermal,IID,WECC
+YumaCogenCC-Total,Gas CC,IID,WECC
+Zeballos_Lake_1,Hydro,BCHA,WECC
+Zeballos_Lake_2,Hydro,BCHA,WECC
+Zeballos_Lake_3,Hydro,BCHA,WECC
+ZondWind1,Wind,CISC,WECC
+ZondWind2,Wind,CISC,WECC
+OOS_PV_Storage_AZ,Storage,AZPS,WECC
+OOS_PV_Storage_CO,Storage,PSCO,WECC
+OOS_PV_Storage_ID,Storage,IPTV,WECC
+OOS_PV_Storage_MT,Storage,NWMT,WECC
+OOS_PV_Storage_NM,Storage,PNM,WECC
+OOS_PV_Storage_NV,Storage,NEVP,WECC
+OOS_PV_Storage_PNW,Storage,BPAT,WECC
+OOS_PV_Storage_UT,Storage,PAUT,WECC
+OOS_PV_Storage_WY,Storage,PAWY,WECC
+Wind_SC2_AVA_48512,Wind,AVA,WECC
+Wind_SC2_BPA_40443,Wind,BPAT,WECC
+Wind_SC2_BPA_41161,Wind,BPAT,WECC
+Wind_SC2_EPE_11080,Wind,EPE,WECC
+Wind_SC2_FAR EAST_60064,Wind,IPFE,WECC
+Wind_SC2_FAR EAST_60312,Wind,IPFE,WECC
+Wind_SC2_NEVP_18620,Wind,NEVP,WECC
+Wind_SC2_NEVP_18912,Wind,NEVP,WECC
+Wind_SC2_NWMT_62004,Wind,NWMT,WECC
+Wind_SC2_NWMT_62019,Wind,NWMT,WECC
+Wind_SC2_NWMT_62030,Wind,NWMT,WECC
+Wind_SC2_NWMT_62036,Wind,NWMT,WECC
+Wind_SC2_NWMT_62071,Wind,NWMT,WECC
+Wind_SC2_NWMT_62331,Wind,NWMT,WECC
+Wind_SC2_NWMT_62365,Wind,NWMT,WECC
+Wind_SC2_PACE_UT_65309,Wind,PAUT,WECC
+Wind_SC2_PACE_UT_65805,Wind,PAUT,WECC
+Wind_SC2_PACE_WY_65580,Wind,PAWY,WECC
+Wind_SC2_PACE_WY_65720,Wind,PAWY,WECC
+Wind_SC2_PACE_WY_65875,Wind,PAWY,WECC
+Wind_SC2_PACE_WY_66240,Wind,PAWY,WECC
+Wind_SC2_PACE_WY_66270,Wind,PAWY,WECC
+Wind_SC2_PACE_WY_66740,Wind,PAWY,WECC
+Wind_SC2_PNM_10999,Wind,PNM,WECC
+Wind_SC2_PSC_70001,Wind,PSCO,WECC
+Wind_SC2_PSC_70375,Wind,PSCO,WECC
+Wind_SC2_PSC_70820,Wind,PSCO,WECC
+Wind_SC2_PSC_70960,Wind,PSCO,WECC
+Wind_SC2_PSE_42361,Wind,PSEI,WECC
+Wind_SC2_PSE_48512,Wind,PSEI,WECC
+Wind_SC2_SPP_64890,Wind,SPPC,WECC
+Wind_SC2_WACM_73036,Wind,WACM,WECC
+Wind_SC2_WACM_73143,Wind,WACM,WECC
+Wind_SC2_WACM_73224,Wind,WACM,WECC
+Wind_SC2_WALC_17102,Wind,WALC,WECC
+Wind_SC2_WALC_19029,Wind,WALC,WECC
+Wind_SC2_WAUW_62026,Wind,WAUW,WECC
+Wind_SC2_WAUW_63010,Wind,WAUW,WECC
+Additional_CTS_01,Gas CT,CISC,WECC
+Additional_CTS_02,Gas CT,CISC,WECC
+Additional_CTS_03,Gas CT,CISC,WECC
+Additional_CTS_04,Gas CT,CISC,WECC
+Additional_CTS_05,Gas CT,CISC,WECC
+Additional_CTS_06,Gas CT,CISC,WECC
+Additional_CTS_07,Gas CT,CISC,WECC
+Additional_CTS_08,Gas CT,CISC,WECC
+Additional_CTS_09,Gas CT,CISC,WECC
+Additional_CTS_10,Gas CT,CISC,WECC
+Additional_CTS_11,Gas CT,CISC,WECC
+PV_SC2_WACM_73380,PV,WACM,WECC
+Wind_SC2_PNM_10116,Wind,PNM,WECC
+Wind_SC2_WACM_73107,Wind,WACM,WECC
+Wind_SC2_WACM_73186,Wind,WACM,WECC
+PathfinderImaginaryCC,Gas CC,PAUT,WECC
+agr_pump_iid,,IID,WECC
+agr_pump_pge_vly,,CIPV,WECC
+agr_pump_sce,,CISC,WECC
+agr_pump_smud,,BANC,WECC
+agr_pump_tidc,,TIDC,WECC
+data_center_iid,,IID,WECC
+data_center_ldwp,,LDWP,WECC
+data_center_pge_bay,,CIPB,WECC
+data_center_pge_vly,,CIPV,WECC
+data_center_sce,,CISC,WECC
+data_center_sdge,,CISD,WECC
+data_center_smud,,BANC,WECC
+data_center_tidc,,TIDC,WECC
+ref_ware_iid,,IID,WECC
+ref_ware_ldwp,,LDWP,WECC
+ref_ware_pge_bay,,CIPB,WECC
+ref_ware_pge_vly,,CIPV,WECC
+ref_ware_sce,,CISC,WECC
+ref_ware_sdge,,CISD,WECC
+ref_ware_smud,,BANC,WECC
+ref_ware_tidc,,TIDC,WECC
+res_water_iid,,IID,WECC
+res_water_ldwp,,LDWP,WECC
+res_water_pge_bay,,CIPB,WECC
+res_water_pge_vly,,CIPV,WECC
+res_water_sce,,CISC,WECC
+res_water_sdge,,CISD,WECC
+res_water_smud,,BANC,WECC
+res_water_tidc,,TIDC,WECC
+waste_pump_iid,,IID,WECC
+waste_pump_ldwp,,LDWP,WECC
+waste_pump_pge_bay,,CIPB,WECC
+waste_pump_pge_vly,,CIPV,WECC
+waste_pump_sce,,CISC,WECC
+waste_pump_sdge,,CISD,WECC
+waste_pump_smud,,BANC,WECC
+waste_pump_tidc,,TIDC,WECC
+LDWP_Opt_EV,,LDWP,WECC
+PGE_BAY_Opt_EV,,CIPB,WECC
+PGE_VLY_Opt_EV,,CIPV,WECC
+SCE_Opt_EV,,CISC,WECC
+SDGE_Opt_EV,,CISD,WECC
+SMUD_Opt_EV,,BANC,WECC
+LDWP_Opp_EV,,LDWP,WECC
+PGE_BAY_Opp_EV,,CIPB,WECC
+PGE_VLY_Opp_EV,,CIPV,WECC
+SCE_Opp_EV,,CISC,WECC
+SDGE_Opp_EV,,CISD,WECC
+SMUD_Opp_EV,,BANC,WECC
+LDWP_Unman_EV,,LDWP,WECC
+PGE_BAY_Unman_EV,,CIPB,WECC
+PGE_VLY_Unman_EV,,CIPV,WECC
+SCE_Unman_EV,,CISC,WECC
+SDGE_Unman_EV,,CISD,WECC
+SMUD_Unman_EV,,BANC,WECC
+Palouse_1,Wind,AVA,WECC
+,,TH_Malin,WECC
+,,TH_Mead,WECC
+,,TH_PV,WECC
