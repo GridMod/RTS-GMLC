@@ -2,7 +2,7 @@
 #------------------------------------------------------------------------------|
 # USER INPUT: set input parameters ----
 #------------------------------------------------------------------------------|
-magma.dir        = '../MAGMA'
+magma.dir        = 'MAGMA'
 input.csv        = 'input_data_rts.csv'
 db.loc           = 'solution'
 output.dir       = 'reports'
