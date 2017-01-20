@@ -13,6 +13,10 @@ query.data       = TRUE
 save.data        = FALSE
 load.data        = '<Name of file to load if query.data=FALSE >'
 save.data.name   = '<Name of file to save data. Will save in output.dir>'
+reassign.zones   = FALSE
+use.gen.type.csv = FALSE
+gen.type.csv.loc = NULL
+gen.region.zone  = '../gen_name_mapping_WECC_RTS.csv'
 #------------------------------------------------------------------------------|
 # Run code to create HTML
 #------------------------------------------------------------------------------|
