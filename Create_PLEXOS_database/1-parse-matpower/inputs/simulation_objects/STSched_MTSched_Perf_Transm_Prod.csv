@@ -3,6 +3,7 @@ class,name,category,description,notes
 ST Schedule,ST Nodal,,,
 ST Schedule,ST Regional,,,
 Performance,Xpress-MP 0.5 MIP,,,
+Performance,Xpress-MP 1 MIP,,,
 Transmission,Tx - All lines,,,
 Transmission,Tx No lines,,,
 Production,Production LP,,,
@@ -20,6 +21,12 @@ Xpress-MP 0.5 MIP,Performance,Small MIP Relative Gap,0.005,
 Xpress-MP 0.5 MIP,Performance,MIP Maximum Threads,2,"Could revise later. Loads computer less, Greg Brinkman says higher numbers don't help runtime much."
 Xpress-MP 0.5 MIP,Performance,Small MIP Max Time,3600,Maximum time before each ST step times out for small problems
 Xpress-MP 0.5 MIP,Performance,MIP Max Time,3600,Maximum time before each ST step times out for large problems
+Xpress-MP 1 MIP,Performance,SOLVER,2,selects Xpress-MP
+Xpress-MP 1 MIP,Performance,MIP Relative Gap,0.01,
+Xpress-MP 1 MIP,Performance,Small MIP Relative Gap,0.01,
+Xpress-MP 1 MIP,Performance,MIP Maximum Threads,2,"Could revise later. Loads computer less, Greg Brinkman says higher numbers don't help runtime much."
+Xpress-MP 1 MIP,Performance,Small MIP Max Time,3600,Maximum time before each ST step times out for small problems
+Xpress-MP 1 MIP,Performance,MIP Max Time,3600,Maximum time before each ST step times out for large problems
 Tx - All lines,Transmission,MVA Base,100,default
 Tx - All lines,Transmission,Losses Enabled,0,
 Tx - All lines,Transmission,OPF Method,1,Fixed shift factor. (Variable = 0)

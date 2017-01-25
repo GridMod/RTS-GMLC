@@ -211,27 +211,6 @@ gen.startshut <- gen.startshut[,.(Generator, `Start Cost`, `Shutdown Cost`)]
 
 all.tabs <- c(all.tabs, "gen.startshut")
 
-#------------------------------------------------------------------------------|
-# min gen ----
-#------------------------------------------------------------------------------|
-# reads in table 07 again ("fuels and fuel price)
-
-gen.mingen <- fread("inputs/from_updated_UW_tables/Table-06_mingen_edits.txt")
-gen.unit.type <- fread("inputs/from_updated_UW_tables/Table-07_edits.txt")
-
-# have to match min gen to individual unit, because these are by size and fuel
-gen.mingen <- merge(gen.unit.type[, .(Generator = paste0(Bus, "_", ID), Unit, PG)],
-                    gen.mingen, 
-                    by = "Unit",
-                    all.x = TRUE)
-
-# gen.mingen[,MinGen/PG]
-
-# keep only relevant columns
-gen.mingen <- gen.mingen[,.(Generator, `Min Stable Level` = MinGen)]
-
-# add to all.tabs to be written out
-all.tabs <- c(all.tabs, "gen.mingen")
 
 #------------------------------------------------------------------------------|
 # attach VG ----
@@ -259,7 +238,7 @@ generator.data <- merge(generator.data,
                         by = c("Generator", "Max Capacity", "Node",
                                "Min Stable Level"),
                         all = TRUE)
-      
+
 # add units since don't have this in mpc file
 generator.data[, Units := "1"]
 
@@ -274,7 +253,41 @@ gen.fuel <- rbind(gen.fuel, vg.gen.fuel)
 
 # add these to all.tabs to be written out at the end
 all.tabs <- c(all.tabs, "gen.da.vg", "gen.rt.vg")
- 
+
+
+#------------------------------------------------------------------------------|
+# min gen ----
+#------------------------------------------------------------------------------|
+# reads in table 07 again ("fuels and fuel price)
+
+gen.mingen <- fread("inputs/from_updated_UW_tables/Table-06_mingen_edits.txt")
+gen.unit.type <- fread("inputs/from_updated_UW_tables/Table-07_edits.txt")
+
+# have to match min gen to individual unit, because these are by size and fuel
+gen.mingen <- merge(gen.unit.type[, .(Generator = paste0(Bus, "_", ID), Unit, PG)],
+                    gen.mingen, 
+                    by = "Unit",
+                    all.x = TRUE)
+
+# gen.mingen[,MinGen/PG]
+
+# keep only relevant columns
+gen.mingen <- gen.mingen[,.(Generator, `Min Stable Level` = MinGen)]
+
+gen.mingen.rtpv <- gen.fuel[Fuel=='RTPV']
+gen.mingen.rtpv[, Fuel := NULL]
+gen.mingen.rtpv0 <- gen.mingen.rtpv
+gen.mingen.rtpv0[, `Min Stable Level` := 0]
+
+gen.mingen.rtpv = merge(gen.mingen.rtpv, generator.data[,.(Generator, `Max Capacity`)], by='Generator')
+gen.mingen.rtpv[, `Min Stable Level` := as.numeric(`Max Capacity`)*0.6 ]
+gen.mingen.rtpv[, `Max Capacity` := NULL]
+
+gen.mingen = rbind(gen.mingen, gen.mingen.rtpv)
+
+# add to all.tabs to be written out
+all.tabs <- c(all.tabs, "gen.mingen", "gen.mingen.rtpv0")
+
 #------------------------------------------------------------------------------|
 # attach hydro ----
 #------------------------------------------------------------------------------|
