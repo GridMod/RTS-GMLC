@@ -77,6 +77,12 @@ object.property.list <- list(
 
 )
 
+# define filepointers for day ahead to real time 
+interleave.models.list <- list(
+  list('da_rt.csv',
+       template.fuel = 'da_rt_filepointer_template.csv')
+)
+
 # define as many files as needed for generic imports
 # currently, this defines horizons, ST and MT schedules, reports, and models
 generic.import.files <- c(
