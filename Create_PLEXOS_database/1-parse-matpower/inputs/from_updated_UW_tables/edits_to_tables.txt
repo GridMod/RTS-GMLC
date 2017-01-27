@@ -1,9 +1,0 @@
-replace all tabs with spaces
-
-remove 2nd line of header and ---- line or         line
-remove footer
-remove spaces between column header
-
-in 06: change fuel type header to "Fuel"
-in 07: the three gens at bus 115 were labeled 4, 5, 6. Changed them to 1, 2, 3
-in 10: changed colnames to MinUp, MinDown, HotStart, WarmStart, ColdStart, RampRate, Unit, Type, Size

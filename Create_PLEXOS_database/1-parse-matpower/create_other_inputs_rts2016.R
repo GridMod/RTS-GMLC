@@ -13,6 +13,8 @@
 
 # list of tables to write out in the end
 if (!exists("all.tabs")) all.tabs <- c()
+gen.params = fread('inputs/gen_params.csv')
+gen.id = fread('inputs/gen_id.csv')
 
 #------------------------------------------------------------------------------|
 # temp? adjust regions/zones to match old NESTA RTS ----
@@ -59,14 +61,12 @@ all.tabs <- c(all.tabs, "node.lpf")
 #------------------------------------------------------------------------------|
 
 # add unit type to generator
-gen.fuel <- fread("inputs/from_updated_UW_tables/Table-07_edits.txt")
-gen.fuel[,Generator := paste0(Bus, "_", ID)]
+gen.fuel <- gen.id[,Generator := paste0(Bus, "_", ID)]
 
 gen.fuel <- gen.fuel[,.(Generator, Type = Unit)]
 
 # fuel type to unit type
-fuels <- fread("inputs/from_updated_UW_tables/Table-06_edits.txt")
-fuels <- fuels[,.(Type = Unit, Fuel)]
+fuels <- gen.params[,.(Type = Unit, Fuel)]
 
 # fuel type to generator
 gen.fuel <- merge(gen.fuel, fuels, all.x = TRUE, by='Type')
@@ -88,13 +88,11 @@ all.tabs <- c(all.tabs, "gen.fuel", "fuel.price")
 #------------------------------------------------------------------------------|
 
 # read gen types
-gen.type = fread("inputs/from_updated_UW_tables/Table-07_edits.txt")
-gen.type[,Generator := paste0(Bus, "_", ID)]
+gen.type = gen.id[,Generator := paste0(Bus, "_", ID)]
 gen.type = gen.type[,.(Generator, Unit)]
 
 # read generator outage info
-gen.outages = fread('inputs/from_updated_UW_tables/Table-06_edits.txt')
-gen.outages = gen.outages[, .(Unit, `Forced Outage Rate` = Outage)]
+gen.outages = gen.params[, .(Unit, `Forced Outage Rate` = Outage)]
 
 # combine gens to outage
 gen.outages = merge(gen.type, gen.outages, all.x=TRUE, by='Unit')
@@ -258,18 +256,12 @@ all.tabs <- c(all.tabs, "gen.da.vg", "gen.rt.vg")
 #------------------------------------------------------------------------------|
 # min gen ----
 #------------------------------------------------------------------------------|
-# reads in table 07 again ("fuels and fuel price)
-
-gen.mingen <- fread("inputs/from_updated_UW_tables/Table-06_mingen_edits.txt")
-gen.unit.type <- fread("inputs/from_updated_UW_tables/Table-07_edits.txt")
 
 # have to match min gen to individual unit, because these are by size and fuel
-gen.mingen <- merge(gen.unit.type[, .(Generator = paste0(Bus, "_", ID), Unit, PG)],
-                    gen.mingen, 
+gen.mingen <- merge(gen.id[, .(Generator, Unit, PG)],
+                    gen.params[,.(Unit, MinGen)], 
                     by = "Unit",
                     all.x = TRUE)
-
-# gen.mingen[,MinGen/PG]
 
 # keep only relevant columns
 gen.mingen <- gen.mingen[,.(Generator, `Min Stable Level` = MinGen)]
@@ -317,13 +309,12 @@ all.tabs <- c(all.tabs, "gen.ramps")
 #------------------------------------------------------------------------------|
 # min up/down ----
 #------------------------------------------------------------------------------|
-# min up/down comes from a UW table. times are in hours.
+
+# times are in hours.
 # requires that gen.unit.type has been read in
 
-gen.minupdown <- fread("inputs/from_updated_UW_tables/Table-10_edits.txt")
-
-gen.minupdown <- merge(gen.unit.type[,.(Generator = paste0(Bus, "_", ID), Unit)],
-                   gen.minupdown[,.(Unit, 
+gen.minupdown <- merge(gen.id[,.(Generator, Unit)],
+                   gen.params[,.(Unit, 
                                 `Min Down Time` = MinDown, 
                                 `Min Up Time` = MinUp)],
                    all.x = TRUE, by='Unit')
