@@ -76,6 +76,13 @@ object.property.list <- list(
     list("fuel.price.csv")
 
 )
+ 
+#reserve
+reserve.files <- list(
+  reserves = 'reserve.data.csv',list(scenario.name = "Add Spin Up"),
+  reserve.generators = 'reserve_generators.csv',
+  reserve.regions = 'reserve_regions.csv'
+)
 
 # define filepointers for day ahead to real time 
 interleave.models.list <- list(

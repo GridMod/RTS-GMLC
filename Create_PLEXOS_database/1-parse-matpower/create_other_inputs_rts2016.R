@@ -10,6 +10,7 @@
 # - add VG
 # - attach load
 # - attach hydro
+# - add spin up reserve
 
 # list of tables to write out in the end
 if (!exists("all.tabs")) all.tabs <- c()
@@ -290,6 +291,34 @@ gen.hydro <- fread("inputs/hydro_profiles.csv")
 
 # add to all.tabs
 all.tabs <- c(all.tabs, "gen.hydro")
+
+#------------------------------------------------------------------------------|
+# add spin up reserve ----
+#------------------------------------------------------------------------------|
+# add reserve that is x% of load in each region and what gens can provide it
+# inputs
+reserve.name <- "Spin Up"
+reserve.type <- 1
+reserve.load.percent <- 3.0
+eligible.gens <- c("Oil/Steam","Coal/Steam","Oil/CT","NG/CC","NG/CT")
+scenario.name <- 'Add Spin Up'
+reserve.violation <- 4000.0
+reserve.timeframe.sec <- 600.0
+
+reserve.data <- data.table('Reserve' = reserve.name,
+                            'Is Enabled' = -1,
+                            'Type' = reserve.type,
+                            'Scenario' = scenario.name,
+                            'Timeframe' = 600.0,
+                            'VoRS' = reserve.violation)
+reserve_generators <- gen.fuel[Fuel %in% eligible.gens,]
+reserve_generators <- reserve_generators[,.(Reserve = reserve.name,Generator)]
+
+reserve_regions <- region.refnode.data[]
+reserve_regions <- reserve_regions[,.(Reserve = reserve.name,Region,`Load Risk` = reserve.load.percent)]
+
+# add to all.tabs
+all.tabs <- c(all.tabs, "reserve.data","reserve_generators","reserve_regions")
 
 #------------------------------------------------------------------------------|
 # ramps ----

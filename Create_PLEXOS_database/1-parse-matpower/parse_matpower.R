@@ -337,6 +337,7 @@ source(other.inputs)
 # - add VG
 # - attach load
 # - attach hydro
+# - add spin up reserve
 
 #------------------------------------------------------------------------------|
 # write out ----
