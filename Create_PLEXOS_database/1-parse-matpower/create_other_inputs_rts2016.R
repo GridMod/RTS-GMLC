@@ -240,6 +240,14 @@ generator.data <- merge(generator.data,
 
 # add units since don't have this in mpc file
 generator.data[, Units := "1"]
+# get rid of some PV/Wind units
+disappear.units <- c("101_pv","101_pv_2","101_pv_3","101_pv_4","102_pv","103_pv","104_pv",
+                     "119_pv","310_pv","310_pv_2","312_pv","314_pv","314_pv_2","314_pv_3",
+                     "314_pv_4","319_pv","324_pv","324_pv_2","324_pv_3","118_rtpv","118_rtpv_8",
+                     "308_rtpv","313_rtpv_11","320_rtpv","320_rtpv_2","320_rtpv_3","320_rtpv_4",
+                     "320_rtpv_5","320_rtpv_6","314_pv_5","303_wind","317_wind")
+generator.data[Generator %in% disappear.units, Units:="0"]
+
 
 # add fuel types to these gens
 vg.gen.fuel <- vg.gens[,.(Generator)]

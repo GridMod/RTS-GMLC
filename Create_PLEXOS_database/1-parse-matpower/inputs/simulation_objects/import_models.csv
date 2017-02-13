@@ -9,7 +9,7 @@ PASA,,,,,,,,,,,,,,
 ST Schedule,ST Nodal,ST Nodal,ST Nodal,ST Nodal,ST Nodal,ST Nodal,ST Nodal,ST Nodal,ST Nodal,ST Nodal,ST Nodal,ST Nodal,ST Nodal,ST Nodal
 MT Schedule,,,,,,,,,,,,,,
 Production,Production MIP,Production MIP,Production MIP,Production MIP,Production MIP,Production MIP,Production MIP,Production MIP,Production MIP,Production MIP,Production MIP,Production MIP,Production MIP,Production MIP
-Performance,Xpress-MP 1 MIP,Xpress-MP 1 MIP,Xpress-MP 1 MIP,Xpress-MP 1 MIP,Xpress-MP 1 MIP,Xpress-MP 1 MIP,Xpress-MP 1 MIP,Xpress-MP 1 MIP,Xpress-MP 1 MIP,Xpress-MP 1 MIP,Xpress-MP 1 MIP,Xpress-MP 1 MIP,Xpress-MP 1 MIP,Xpress-MP 1 MIP
+Performance,Xpress-MP 0.1 MIP,Xpress-MP 0.1 MIP,Xpress-MP 0.1 MIP,Xpress-MP 0.1 MIP,Xpress-MP 0.1 MIP,Xpress-MP 0.1 MIP,Xpress-MP 0.1 MIP,Xpress-MP 0.1 MIP,Xpress-MP 0.1 MIP,Xpress-MP 0.1 MIP,Xpress-MP 0.1 MIP,Xpress-MP 0.1 MIP,Xpress-MP 0.1 MIP,Xpress-MP 0.1 MIP
 Report,Default Report,Default Report,Default Report,Default Report,Default Report,Default Report,Default Report,Default Report,Default Report,Default Report,Default Report,Default Report,Default Report,Default Report
 Diagnostic,,,,,,,,,,,,,,
 /START SCENARIOS,,,,,,,,,,,,,,
