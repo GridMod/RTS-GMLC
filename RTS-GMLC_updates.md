@@ -3,6 +3,7 @@ The Reliability Test System of the Grid Modernization Laboratory Consoritum (RTS
 
 1. The changes documented in [Hedman et. al](http://smartgridcenter.tamu.edu/ratc/web/wp-content/uploads/2014/10/J7.pdf) increase the congestion occurance in economic dispatch problems:
   1.remove the following transmission lines: [111-113](https://github.nrel.gov/PCM/RTS-2016/blob/master/nesta_case73_ieee_rts.m#L356), [211-213](https://github.nrel.gov/PCM/RTS-2016/blob/master/nesta_case73_ieee_rts.m#L396), and [311-313](https://github.nrel.gov/PCM/RTS-2016/blob/master/nesta_case73_ieee_rts.m#L434)
+  
   2. The bus load for nodes 13, 14, 15 ,19, and 20 should be changed to the following in each region: 
   ```
   Bus		 Pd
