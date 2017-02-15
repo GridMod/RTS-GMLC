@@ -27,7 +27,7 @@ The Reliability Test System of the Grid Modernization Laboratory Consoritum (RTS
     ```
   
 2. Generated relative node locations, based upon line distances to enable network geo-location for load, wind, solar, and hydro timeseries data population.
-  1. Nominally chose a southwestern U.S. location for data population
+  1. Nominally chose a southwestern U.S. location for data population ![RTS-GMLC](https://github.com/GridMod/RTS-GMLC/blob/master/node_re_basemap.png)
   2. Regional load profile shapes derived from WECC TEPPC 2024 case used for the [LCGS Study](http://www.nrel.gov/docs/fy16osti/64884.pdf) from Arizona Public Service Company (APS), Nevada Energy (NVE), and Los Angeles Division of Water and Power (LADWP) balancing areas.
   3. Wind, Utility PV, Rooftop PV, and Hydro generation profiles were selected from the [LCGS Study](http://www.nrel.gov/docs/fy16osti/64884.pdf) datasets.
   
