@@ -2,7 +2,7 @@ pacman::p_load(data.table)
 
 setwd(dirname(sys.frame(1)$ofile))
 
-file.p <- "inputs/RTS.m"
+file.p <- "../../RTS_Data/RTS.m"
 
 # other.inputs <- "create_other_inputs.R" # old 
 other.inputs <- "create_other_inputs_rts2016.R"# new

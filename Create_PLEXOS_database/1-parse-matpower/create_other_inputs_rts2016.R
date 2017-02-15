@@ -14,8 +14,8 @@
 
 # list of tables to write out in the end
 if (!exists("all.tabs")) all.tabs <- c()
-gen.params = fread('inputs/gen_params.csv')
-gen.id = fread('inputs/gen_id.csv')
+gen.params = fread('../../RTS_Data/gen_params.csv')
+gen.id = fread('../../RTS_Data/gen_id.csv')
 
 #------------------------------------------------------------------------------|
 # temp? adjust regions/zones to match old NESTA RTS ----
@@ -37,10 +37,10 @@ all.tabs <- c(all.tabs, "node.data")
 # hardcode reigonal filepointers
 
 region.load.da <- data.table(Region = c(1:3), 
-                             Load = "data_files\\load\\DA_hourly.csv")
+                             Load = "timeseries_data_files\\load\\DA_hourly.csv")
 
 region.load.rt <- data.table(Region = c(1:3), 
-                             Load = "data_files\\load\\RT_5min.csv")
+                             Load = "timeseries_data_files\\load\\RT_5min.csv")
 
 # add to all.tabs
 all.tabs <- c(all.tabs, "region.load.da", "region.load.rt")
@@ -79,7 +79,7 @@ gen.fuel[,Type := NULL]
 gen.fuel[is.na(Fuel), Fuel := 'SynchCond']
 
 # get fuel price (2010$/MMBtu)
-fuel.price <- fread("inputs/fuel_prices.csv")
+fuel.price <- fread("../../RTS_Data/fuel_prices.csv")
 
 # add to get written out
 all.tabs <- c(all.tabs, "gen.fuel", "fuel.price")
@@ -222,11 +222,11 @@ all.tabs <- c(all.tabs, "gen.startshut")
 
 # read in profiles to read out again (inefficient but at least treated the 
 # same as all other property files...)
-gen.da.vg <- fread("inputs/vg_gens_DA.csv")
-gen.rt.vg <- fread("inputs/vg_gens_RT.csv")
+gen.da.vg <- fread("../../RTS_Data/vg_gens_DA.csv")
+gen.rt.vg <- fread("../../RTS_Data/vg_gens_RT.csv")
 
 # get vg max cap and add to total generator.table
-vg.gens <- fread("inputs/vg_gens_maxMW.csv", colClasses = "character")
+vg.gens <- fread("../../RTS_Data/vg_gens_maxMW.csv", colClasses = "character")
 
 # add node
 vg.gens[,Node := tstrsplit(Generator, "_")[[1]]]
@@ -287,7 +287,7 @@ all.tabs <- c(all.tabs, "gen.mingen", "gen.mingen.rtpv0")
 # just like vg profiles, just read in to write out (to keep in same format as
 # everything else and also in case we need to do something with it eventually)
 
-gen.hydro <- fread("inputs/hydro_profiles.csv")
+gen.hydro <- fread("../../RTS_Data/hydro_profiles.csv")
 
 # add to all.tabs
 all.tabs <- c(all.tabs, "gen.hydro")
@@ -365,6 +365,6 @@ line.data = rbind(line.data, dc.line, fill=TRUE)
 # simulation objects passthrough ----
 #------------------------------------------------------------------------------|
 
-file.copy(list.files("inputs/simulation_objects", full.names = TRUE), 
+file.copy(list.files("../../RTS_Data/simulation_objects", full.names = TRUE), 
           output.dir,
           overwrite = TRUE)
