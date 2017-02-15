@@ -4,27 +4,28 @@ The Reliability Test System of the Grid Modernization Laboratory Consoritum (RTS
 1. The changes documented in [Hedman et. al](http://smartgridcenter.tamu.edu/ratc/web/wp-content/uploads/2014/10/J7.pdf) increase the congestion occurance in economic dispatch problems:
 
   1. Remove the following transmission lines: [111-113](https://github.nrel.gov/PCM/RTS-2016/blob/master/nesta_case73_ieee_rts.m#L356), [211-213](https://github.nrel.gov/PCM/RTS-2016/blob/master/nesta_case73_ieee_rts.m#L396), and [311-313](https://github.nrel.gov/PCM/RTS-2016/blob/master/nesta_case73_ieee_rts.m#L434)
-  
   2. The bus load for nodes 13, 14, 15 ,19, and 20 should be changed to the following in each region: 
-  ```
-  Bus		 Pd
-  13		 745
-  14		 80
-  15		 132
-  19		 75
-  20		 53
-  ```
+
+    ```
+    Bus		 Pd
+    13		 745
+    14		 80
+    15		 132
+    19		 75
+    20		 53
+    ``` 
   3. Reduce the capcity of lines [114-116](https://github.nrel.gov/PCM/RTS-2016/blob/master/nesta_case73_ieee_rts.m#L362), [214-216](https://github.nrel.gov/PCM/RTS-2016/blob/master/nesta_case73_ieee_rts.m#L401), and [314-316](https://github.nrel.gov/PCM/RTS-2016/blob/master/nesta_case73_ieee_rts.m#439) to ```350 MW```, each
   4. Add the following generating units in each region:
-  ```
-  Bus		Pmax
-  1		100 MW
-  7		100 MW
-  15		100 MW
-  15		155 MW
-  23		155 MW
-  ```
-
+  
+    ```
+    Bus		Pmax
+    1		100 MW
+    7		100 MW
+    15		100 MW
+    15		155 MW
+    23		155 MW
+    ```
+  
 2. Generated relative node locations, based upon line distances to enable network geo-location for load, wind, solar, and hydro timeseries data population.
   1. Nominally chose a southwestern U.S. location for data population
   2. Regional load profile shapes derived from WECC TEPPC 2024 case used for the [LCGS Study](http://www.nrel.gov/docs/fy16osti/64884.pdf) from Arizona Public Service Company (APS), Nevada Energy (NVE), and Los Angeles Division of Water and Power (LADWP) balancing areas.
