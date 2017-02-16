@@ -79,7 +79,7 @@ object.property.list <- list(
  
 #reserve
 reserve.files <- list(
-  reserves = 'reserve.data.csv',list(scenario.name = "Add Spin Up"),
+  reserves = 'reserve.data.csv',
   reserve.generators = 'reserve_generators.csv',
   reserve.regions = 'reserve_regions.csv'
 )

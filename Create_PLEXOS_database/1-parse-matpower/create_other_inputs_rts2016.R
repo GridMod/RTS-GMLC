@@ -10,7 +10,7 @@
 # - add VG
 # - attach load
 # - attach hydro
-# - add spin up reserve
+# - add reserves
 
 # list of tables to write out in the end
 if (!exists("all.tabs")) all.tabs <- c()
@@ -301,29 +301,42 @@ gen.hydro <- fread("inputs/hydro_profiles.csv")
 all.tabs <- c(all.tabs, "gen.hydro")
 
 #------------------------------------------------------------------------------|
-# add spin up reserve ----
+# add reserves ----
 #------------------------------------------------------------------------------|
-# add reserve that is x% of load in each region and what gens can provide it
-# inputs
-reserve.name <- "Spin Up"
-reserve.type <- 1
-reserve.load.percent <- 3.0
-eligible.gens <- c("Oil/Steam","Coal/Steam","Oil/CT","NG/CC","NG/CT")
-scenario.name <- 'Add Spin Up'
-reserve.violation <- 4000.0
-reserve.timeframe.sec <- 600.0
+eligible.gens <- c("Oil/Steam","Coal/Steam","Oil/CT","NG/CC","NG/CT","PV","Wind")
 
-reserve.data <- data.table('Reserve' = reserve.name,
-                            'Is Enabled' = -1,
-                            'Type' = reserve.type,
-                            'Scenario' = scenario.name,
-                            'Timeframe' = 600.0,
-                            'VoRS' = reserve.violation)
+# add reserve(s) which is x% of load in each region and what gens can provide it
+l.reserve <- c("Spin Up")
+l.is.enabled <- c(1)
+l.reserve.type <- c(1)
+l.reserve.percent <- c(3.0)
+l.scenario.name <- c("Add Spin Up")
+l.reserve.violation <- c(4000.0)
+l.reserve.timeframe.sec <- c(600.0)
+l.mutually.exclusive <- c(1)
+
+# add reserve(s) in which risk is defined with data file
+d.reserve <- c("Flex Up","Flex Down","Reg Up","Reg Down")
+d.is.enabled <- c(1,1,1,1)
+d.reserve.type <- c(1,2,1,2)
+d.scenario.name <- c("Add Flex Reserves","Add Flex Reserves","Add Regulation Reserves","Add Regulation Reserves")
+d.reserve.violation <- c(4100,4100,3900,3900)
+d.reserve.timeframe.sec <- c(1200.0,1200.0,300.0,300.0)
+d.mutually.exclusive <- c(1,1,1,1)
+
+reserve.data <- data.table('Reserve' = c(l.reserve,d.reserve),
+                          'Is Enabled' = c(l.is.enabled,d.is.enabled),
+                          'Type' = c(l.reserve.type,d.reserve.type),
+                          'Scenario' = c(l.scenario.name,d.scenario.name),
+                          'Timeframe' = c(l.reserve.timeframe.sec,d.reserve.timeframe.sec),
+                          'VoRS' = c(l.reserve.violation,d.reserve.violation),
+                          'Mutually Exclusive' = c(l.mutually.exclusive,d.mutually.exclusive))
 reserve_generators <- gen.fuel[Fuel %in% eligible.gens,]
-reserve_generators <- reserve_generators[,.(Reserve = reserve.name,Generator)]
+reserve_generators <- reserve_generators[,.(Reserve = c(rep(l.reserve,length(Generator)*length(l.reserve)),rep(d.reserve,each = length(Generator))),
+                                            Generator = c(rep(Generator,times = length(l.reserve)+length(d.reserve))))]
 
 reserve_regions <- region.refnode.data[]
-reserve_regions <- reserve_regions[,.(Reserve = reserve.name,Region,`Load Risk` = reserve.load.percent)]
+reserve_regions <- reserve_regions[,.(Reserve = l.reserve,Region,`Load Risk` = l.reserve.percent)]
 
 # add to all.tabs
 all.tabs <- c(all.tabs, "reserve.data","reserve_generators","reserve_regions")
