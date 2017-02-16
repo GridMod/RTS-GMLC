@@ -93,14 +93,14 @@ gen.type = gen.id[,Generator := paste0(Bus, "_", ID)]
 gen.type = gen.type[,.(Generator, Unit)]
 
 # read generator outage info
-gen.outages = gen.params[, .(Unit, `Forced Outage Rate` = Outage)]
+gen.outages = gen.params[, .(Unit, `Forced Outage Rate` = Outage, `Mean Time to Repair` = MTTR)]
 
 # combine gens to outage
 gen.outages = merge(gen.type, gen.outages, all.x=TRUE, by='Unit')
-gen.outages = gen.outages[, .(Generator, `Forced Outage Rate`)]
+gen.outages = gen.outages[, .(Generator, `Forced Outage Rate`, `Mean Time to Repair`)]
 
 # set outage for synchronous condensers to 0
-gen.outages[is.na(`Forced Outage Rate`), `Forced Outage Rate` := 0]
+gen.outages[is.na(`Forced Outage Rate`), ":=" (`Forced Outage Rate` = 0, `Mean Time to Repair` = 0)]
 
 # add to get written out
 all.tabs <- c(all.tabs, "gen.outages")
