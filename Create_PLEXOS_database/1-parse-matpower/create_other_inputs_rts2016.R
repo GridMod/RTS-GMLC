@@ -80,6 +80,7 @@ gen.fuel[is.na(Fuel), Fuel := 'SynchCond']
 
 # get fuel price (2010$/MMBtu)
 fuel.price <- fread("inputs/fuel_prices.csv")
+fuel.price[, Price := round(Price, 2)]
 
 # add to get written out
 all.tabs <- c(all.tabs, "gen.fuel", "fuel.price")
@@ -115,6 +116,7 @@ gen.cost.data <- cbind(generator.data[,.(Generator)],
 # remove unneeded cols
 model <- gen.cost.data[1,model]
 gen.cost.data[,c("model", "startup", "shutdown", "n") := NULL]
+
 
 if (model == 1) {
   
@@ -179,6 +181,9 @@ if (model == 1) {
   stop("heat rate model is not 1 or 2. not sure how to treat this data.")
 }
 
+# Round values to 1 decimal place
+gen.cost.data[, c('Heat Rate', 'Load Point') := list(round(`Heat Rate`, 1), round(`Load Point`, 1))]
+
 all.tabs <- c(all.tabs, "gen.cost.data")
 
 
@@ -207,6 +212,9 @@ gen.startshut[, `Shutdown Cost` := Price * as.numeric(shutdown)]
 
 # save only plexos property columns
 gen.startshut <- gen.startshut[,.(Generator, `Start Cost`, `Shutdown Cost`)]
+
+# round values to integers
+gen.startshut[, c('Start Cost', 'Shutdown Cost') := list(round(`Start Cost`), round(`Shutdown Cost`))]
 
 all.tabs <- c(all.tabs, "gen.startshut")
 
@@ -283,6 +291,7 @@ gen.mingen.rtpv0[, `Min Stable Level` := 0]
 gen.mingen.rtpv = merge(gen.mingen.rtpv, generator.data[,.(Generator, `Max Capacity`)], by='Generator')
 gen.mingen.rtpv[, `Min Stable Level` := as.numeric(`Max Capacity`)*0.6 ]
 gen.mingen.rtpv[, `Max Capacity` := NULL]
+gen.mingen.rtpv[, `Min Stable Level` := round(`Min Stable Level`)]
 
 gen.mingen = rbind(gen.mingen, gen.mingen.rtpv)
 
