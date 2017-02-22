@@ -2,10 +2,11 @@
 Reliability Test System - Grid Modernization Lab Consortium
 
 ### This repository is for the Reliability Test System Grid Modernization Lab Consortium (RTS-GMLC) which is an updated version of the RTS-96 test system. A summary of updates can be found [here](https://github.com/GridMod/RTS-GMLC/blob/master/RTS-GMLC_updates.md).
-#### The repository has two main sections: 
+#### The repository has three main sections: 
 
-1.	Create_PLEXOS_database. This is a set of scripts, including a git submodule from the PSSE2PLEXOS repository which creates an excel .xlsx file containing data and the proper format to import into PLEXOS as a database. The input data is a combination of a RTS-2016 matpower .m file, updated RTS-2016 data, and additional data for use in PLEXOS simulations.
-2.	HTML_Report. This is a set of scripts, including a git submodule from the MAGMA repository which creates plots and an .HTML file containing tables and plots analyzing a PLEXOS solution file. 
+1. RTS_Data. Contains the MATPOWER caseformat file [RTS.m](https://github.com/GridMod/RTS-GMLC/blob/master/RTS_Data/RTS.m) network data, along with several extra .csv files with timeseries data, fuel price data, and inter-temporal generator parameters.
+2. Create_PLEXOS_database. This is a set of scripts, including a git submodule from the PSSE2PLEXOS repository which creates an excel .xlsx file containing data and the proper format to import into PLEXOS as a database. The input data is a combination of a RTS-2016 matpower .m file, updated RTS-2016 data, and additional data for use in PLEXOS simulations.
+3.	HTML_Report. This is a set of scripts, including a git submodule from the MAGMA repository which creates plots and an .HTML file containing tables and plots analyzing a PLEXOS solution file. 
 
 **The workflow for creating the PLEXOS database is as follows:**
 
