@@ -34,4 +34,54 @@ The Reliability Test System of the Grid Modernization Laboratory Consoritum (RTS
 3. Replaced some Coal and Oil generation in the RTS-96 with NG-CT and NG-CC generators 
   1. Generator operations parameters (Capacity, Min Gen, Ramp Rate, etc.): averages from [LCGS Study](http://www.nrel.gov/docs/fy16osti/64884.pdf)
   2. Startup parameters:[Wartsila](http://www.wartsila.com/energy/learning-center/technical-comparisons/combustion-engine-vs-gas-turbine-startup-time), [Gas Power Journal](http://gastopowerjournal.com/documents/110918_kraftwerkstechnisches_kolloquium_ccpp_as_ideal_so2.pdf), [Siemens](http://www.energy.siemens.com/us/pool/hq/power-generation/power-plants/gas-fired-power-plants/combined-cycle-powerplants/Flexible_future_for_combined_cycle_US.pdf), [GE](https://powergen.gepower.com/services/upgrade-and-life-extension/heavy-duty-gas-turbine-upgrades-f-class/ka26-fast-start.html)
+  3. The changes are summarized here:
+  
+  | Remove |       |       |      |            | Add    |       |       |     |       |
+  |--------|-------|-------|------|------------|--------|-------|-------|-----|-------|
+  | Region | BusID | Group | MW   | Type       | Region | BusID | Group | MW  | Type  |
+  |   R1     | 107   | U100  | 80   | Oil/Steam  | R1     | 107   | U350  | 350 | GasCC |
+  | R1     | 107   | U100  | 80   | Oil/Steam  | R1     | 113   | U55   | 55  | GasCT |
+  | R1     | 107   | U100  | 80   | Oil/Steam  | R1     | 113   | U55   | 55  | GasCT |
+  | R1     | 113   | U197  | 95.1 | Oil/Steam  | R1     | 113   | U55   | 55  | GasCT |
+  | R1     | 113   | U197  | 95.1 | Oil/Steam  | R1     | 113   | U55   | 55  | GasCT |
+  | R1     | 113   | U197  | 95.1 | Oil/Steam  | R1     | 118   | U350  | 350 | GasCC |
+  | R1     | 115   | U12   | 12   | Oil/Steam  | R1     | 123   | U55   | 55  | GasCT |
+  | R1     | 115   | U12   | 12   | Oil/Steam  | R1     | 123   | U55   | 55  | GasCT |
+  | R1     | 115   | U12   | 12   | Oil/Steam  | R1     | 123   | U55   | 55  | GasCT |
+  | R1     | 118   | U400  | 400  | Nuclear    |        |       |       |     |       |
+  | R1     | 123   | U155  | 155  | Coal/Steam |        |       |       |     |       |
+  | R2     | 201   | U76   | 76   | Coal/Steam | R2     | 201   | U50   | 50  | Hydro |
+  | R2     | 207   | U100  | 80   | Oil/Steam  | R2     | 207   | U55   | 55  | GasCT |
+  | R2     | 207   | U100  | 80   | Oil/Steam  | R2     | 207   | U55   | 55  | GasCT |
+  | R2     | 207   | U100  | 80   | Oil/Steam  | R2     | 213   | U55   | 55  | GasCT |
+  | R2     | 213   | U197  | 95.1 | Oil/Steam  | R2     | 213   | U55   | 55  | GasCT |
+  | R2     | 213   | U197  | 95.1 | Oil/Steam  | R2     | 213   | U350  | 350 | GasCC |
+  | R2     | 213   | U197  | 95.1 | Oil/Steam  | R2     | 215   | U50   | 50  | Hydro |
+  | R2     | 215   | U155  | 155  | Coal/Steam | R2     | 215   | U50   | 50  | Hydro |
+  | R2     | 215   | U12   | 12   | Oil/Steam  | R2     | 215   | U50   | 50  | Hydro |
+  | R2     | 215   | U12   | 12   | Oil/Steam  | R2     | 215   | U55   | 55  | GasCT |
+  | R2     | 215   | U12   | 12   | Oil/Steam  | R2     | 215   | U55   | 55  | GasCT |
+  | R2     | 215   | U12   | 12   | Oil/Steam  | R2     | 218   | U350  | 350 | GasCC |
+  | R2     | 215   | U12   | 12   | Oil/Steam  | R2     | 221   | U350  | 350 | GasCC |
+  | R2     | 218   | U400  | 400  | Nuclear    | R2     | 223   | U55   | 55  | GasCT |
+  | R2     | 221   | U400  | 400  | Nuclear    | R2     | 223   | U55   | 55  | GasCT |
+  |        |       |       |      |            | R2     | 223   | U55   | 55  | GasCT |
+  | R3     | 301   | U76   | 76   | Coal/Steam | R3     | 301   | U55   | 55  | GasCT |
+  | R3     | 301   | U76   | 76   | Coal/Steam | R3     | 301   | U55   | 55  | GasCT |
+  | R3     | 302   | U76   | 76   | Coal/Steam | R3     | 302   | U55   | 55  | GasCT |
+  | R3     | 302   | U76   | 76   | Coal/Steam | R3     | 302   | U55   | 55  | GasCT |
+  | R3     | 307   | U100  | 80   | Oil/Steam  | R3     | 307   | U55   | 55  | GasCT |
+  | R3     | 307   | U100  | 80   | Oil/Steam  | R3     | 307   | U55   | 55  | GasCT |
+  | R3     | 307   | U100  | 80   | Oil/Steam  | R3     | 313   | U350  | 350 | GasCC |
+  | R3     | 313   | U197  | 95.1 | Oil/Steam  | R3     | 315   | U55   | 55  | GasCT |
+  | R3     | 313   | U197  | 95.1 | Oil/Steam  | R3     | 315   | U55   | 55  | GasCT |
+  | R3     | 313   | U197  | 95.1 | Oil/Steam  | R3     | 315   | U55   | 55  | GasCT |
+  | R3     | 315   | U155  | 155  | Coal/Steam | R3     | 318   | U350  | 350 | GasCC |
+  | R3     | 318   | U400  | 400  | Nuclear    | R3     | 321   | U350  | 350 | GasCC |
+  | R3     | 321   | U400  | 400  | Nuclear    | R3     | 322   | U55   | 55  | GasCT |
+  | R3     | 322   | U50   | 50   | Hydro      | R3     | 322   | U55   | 55  | GasCT |
+  | R3     | 322   | U50   | 50   | Hydro      | R3     | 323   | U350  | 350 | GasCC |
+  | R3     | 323   | U155  | 155  | Coal/Steam | R3     | 323   | U350  | 350 | GasCC |
+  | R3     | 323   | U155  | 155  | Coal/Steam |        |       |       |     |       |
+  | R3     | 323   | U350  | 350  | Coal/Steam |        |       |       |     |       |
   
