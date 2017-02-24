@@ -12,7 +12,7 @@ Reliability Test System - Grid Modernization Lab Consortium
 
 1.	Source parse_matpower.R in the 1-parse-matpower directory. This file will import data from the inputs subfolder which contains the RTS.m matpower file (RTS-2016 data). Then it calls the create_other_inputs_rts2016.R file.  In this file R will pull data from input csv files in the inputs subfolder as well some updated RTS-2016 data that is manually added for our PLEXOS simulations, and then write files out into the outputs subfolder which are used in the next step. The create_other_inputs_rts2015.R file adds PLEXOS specific properties. Parse_matpower.R should not have to be edited, but create_other_inputs_rts2016.R can be if additional PLEXOs properties or objects are desired.
 2.	Source run_PSSE2PLEXOS.R in the 2-create-excel directory. This file calls input_params.R and then create_plexos_db_from_raw_master_script.R. Input_params.R specifies what property files should be read in from the outputs subfolder in the previous step and if those properties should have scenarios, datafiles, etc. It is where the PLEXOS properties get specified. Create_plexos_db_from_raw_master_script.R is part of the PSSE2PLEXOS submodule and is the master script to create the PLEXOS database in .xlsx format. 
-3.	Import the .xlsx database into PLEXOS with the import tool.
+3.	Import the .xlsx database into PLEXOS with the import tool. If applicable, then manually switch the Base Unit System from Metric to Imperial (bottom left corner in Settings).
 
 **The workflow for creating a MAGMA HTML PLEXOS run report is as follows:**
 
