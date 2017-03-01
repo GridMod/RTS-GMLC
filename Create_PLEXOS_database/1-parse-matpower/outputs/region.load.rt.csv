@@ -1,4 +1,4 @@
 Region,Load
-1,data_files\load\RT_5min.csv
-2,data_files\load\RT_5min.csv
-3,data_files\load\RT_5min.csv
+1,timeseries_data_files\load\RT_5min.csv
+2,timeseries_data_files\load\RT_5min.csv
+3,timeseries_data_files\load\RT_5min.csv

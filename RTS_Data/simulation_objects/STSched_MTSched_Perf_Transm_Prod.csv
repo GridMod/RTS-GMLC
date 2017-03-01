@@ -1,0 +1,75 @@
+/ BEGIN,Objects,,,
+class,name,category,description,notes
+ST Schedule,ST Nodal,,,
+ST Schedule,ST Regional,,,
+Performance,Xpress-MP 0.5 MIP,,,
+Performance,Xpress-MP 1 MIP,,,
+Performance,Xpress-MP 0.1 MIP,,,
+Transmission,Tx - All lines,,,
+Transmission,Tx No lines,,,
+Production,Production LP,,,
+Production,Production RR,,,
+Production,Production MIP,,,
+/ END,Objects,,,
+/ BEGIN,Attributes,,,
+name,class,attribute,value,notes
+ST Nodal,ST Schedule,Stochastic Method,0,selects deterministic unit commitment
+ST Regional,ST Schedule,Stochastic Method,0,selects deterministic unit commitment
+ST Regional,ST Schedule,Transmission Detail,0,"Plexos documentation conflicts with itself here. It says that ""1"" means regional but Plexos reads in 0 as regional and 1 as nodal."
+Xpress-MP 0.5 MIP,Performance,SOLVER,2,selects Xpress-MP
+Xpress-MP 0.5 MIP,Performance,MIP Relative Gap,0.005,
+Xpress-MP 0.5 MIP,Performance,Small MIP Relative Gap,0.005,
+Xpress-MP 0.5 MIP,Performance,MIP Maximum Threads,4,"Could revise later. Loads computer less, Greg Brinkman says higher numbers don't help runtime much."
+Xpress-MP 0.5 MIP,Performance,Small MIP Max Time,3600,Maximum time before each ST step times out for small problems
+Xpress-MP 0.5 MIP,Performance,MIP Max Time,3600,Maximum time before each ST step times out for large problems
+Xpress-MP 0.5 MIP,Performance,Small LP Optimizer,5,
+Xpress-MP 0.5 MIP,Performance,Cold Start Optimizer 1,6,
+Xpress-MP 0.5 MIP,Performance,Hot Start Optimizer 1,6,
+Xpress-MP 0.5 MIP,Performance,MIP Root Optimizer,6,
+Xpress-MP 0.5 MIP,Performance,MIP Node Optimizer,6,
+Xpress-MP 1 MIP,Performance,Small LP Optimizer,5,
+Xpress-MP 1 MIP,Performance,Cold Start Optimizer 1,6,
+Xpress-MP 1 MIP,Performance,Hot Start Optimizer 1,6,
+Xpress-MP 1 MIP,Performance,MIP Root Optimizer,6,
+Xpress-MP 1 MIP,Performance,MIP Node Optimizer,6,
+Xpress-MP 1 MIP,Performance,Small LP Optimizer,5,
+Xpress-MP 0.1 MIP,Performance,Cold Start Optimizer 1,6,
+Xpress-MP 0.1 MIP,Performance,Hot Start Optimizer 1,6,
+Xpress-MP 0.1 MIP,Performance,MIP Root Optimizer,6,
+Xpress-MP 0.1 MIP,Performance,MIP Node Optimizer,6,
+Xpress-MP 0.1 MIP,Performance,SOLVER,2,selects Xpress-MP
+Xpress-MP 0.1 MIP,Performance,MIP Relative Gap,0.01,
+Xpress-MP 1 MIP,Performance,Small MIP Relative Gap,0.01,
+Xpress-MP 1 MIP,Performance,MIP Maximum Threads,4,"Could revise later. Loads computer less, Greg Brinkman says higher numbers don't help runtime much."
+Xpress-MP 1 MIP,Performance,Small MIP Max Time,3600,Maximum time before each ST step times out for small problems
+Xpress-MP 1 MIP,Performance,MIP Max Time,3600,Maximum time before each ST step times out for large problems
+Xpress-MP 0.1 MIP,Performance,SOLVER,2,selects Xpress-MP
+Xpress-MP 0.1 MIP,Performance,MIP Relative Gap,0.001,
+Xpress-MP 0.1 MIP,Performance,Small MIP Relative Gap,0.001,
+Xpress-MP 0.1 MIP,Performance,MIP Maximum Threads,4,"Could revise later. Loads computer less, Greg Brinkman says higher numbers don't help runtime much."
+Xpress-MP 0.1 MIP,Performance,Small MIP Max Time,3600,Maximum time before each ST step times out for small problems
+Xpress-MP 0.1 MIP,Performance,MIP Max Time,3600,Maximum time before each ST step times out for large problems
+Tx - All lines,Transmission,MVA Base,100,default
+Tx - All lines,Transmission,Losses Enabled,0,
+Tx - All lines,Transmission,OPF Method,1,Fixed shift factor. (Variable = 0)
+Tx - All lines,Transmission,PTDF Method,3,Distributed gen slack bus based on capacity
+Tx - All lines,Transmission,Bound Node Phase Angles,0,Don't enforce phase angle bounds
+Tx - All lines,Transmission,Interface Constraints Enabled,-1,
+Tx - All lines,Transmission,Allow Dump Energy ,-1,
+Tx - All lines,Transmission,Formulate Upfront,-1,Formulate constraints upfront helps speed up solving when only enforcing interfaces
+Tx - All lines,Transmission,Constraint Voltage Threshold,138,
+Tx - All lines,Transmission,Internal VoLL,10000000,
+Tx No lines,Transmission,MVA Base,100,default
+Tx No lines,Transmission,Losses Enabled,0,
+Tx No lines,Transmission,OPF Method,0,Variable shift factor
+Tx No lines,Transmission,PTDF Method,3,Distributed gen slack bus based on capacity
+Tx No lines,Transmission,Bound Node Phase Angles,0,Don't enforce phase angle bounds
+Tx No lines,Transmission,Interface Constraints Enabled,-1,
+Tx No lines,Transmission,Allow Dump Energy ,-1,
+Tx No lines,Transmission,Formulate Upfront,-1,Formulate constraints upfront helps speed up solving when only enforcing interfaces
+Tx No lines,Transmission,Constraint Voltage Threshold,1000,
+Tx No lines,Transmission,Internal VoLL,10000000,
+Production LP,Production,Unit Commitment Optimality,0,Linear relaxation
+Production RR,Production,Unit Commitment Optimality,1,Rounded relaxation
+Production MIP,Production,Unit Commitment Optimality,2,Mixed-integer program
+/ END,Attributes,,,

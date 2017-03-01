@@ -20,7 +20,7 @@ inputfiles.dir <- '../1-parse-matpower/outputs'
 input.params <- 'input_params.R'
 
 # name of output workbook
-output.wb.name <- "rts_2016.xlsx"
+output.wb.name <- "../RTS_Data/rts_PLEXOS.xlsx"
 
 # check data and save summary plots
 data.check.plots <- TRUE

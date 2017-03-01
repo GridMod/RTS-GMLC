@@ -2,7 +2,7 @@ pacman::p_load(data.table)
 
 setwd(dirname(sys.frame(1)$ofile))
 
-file.p <- "inputs/RTS.m"
+file.p <- "../../RTS_Data/RTS.m"
 
 # other.inputs <- "create_other_inputs.R" # old 
 other.inputs <- "create_other_inputs_rts2016.R"# new
@@ -76,7 +76,7 @@ func.find.objs <- function(dt, strct.strng) {
     file.dt[grepl(paste0("^[^%]*",strct.strng, "\\..*="), orig.text),
             obj.new := TRUE]
     file.dt[grepl("=.*\\[", orig.text) & obj.new == TRUE, tag := "table.beg"]
-    file.dt[grepl("\\].*;", orig.text) & is.na(obj.new), tag := "table.end"]
+    file.dt[grepl("\\]", orig.text) & is.na(obj.new), tag := "table.end"]
     file.dt[obj.new & is.na(tag), tag := "one.line"]
     
     # grab info
@@ -100,7 +100,7 @@ func.build.list <- function(dt, obj.locs) {
     }
 
     for (i in seq(nrow(obj.locs))) {
-        
+       
         # get object name            
         i.str <- dt[obj.locs[i, index], orig.text]
         
@@ -121,6 +121,7 @@ func.build.list <- function(dt, obj.locs) {
             i.table <- dt[obj.locs[i, index+1]:obj.locs[i+1, index-1],
                           # tstrsplit(gsub(";","",gsub("\\s+", "\t", orig.text)), "\t| ")]
                           tstrsplit(gsub(";","", orig.text), "\t|\\s+")]
+           
             
             # deal with nans if needed
             for (j in names(i.table)) {
