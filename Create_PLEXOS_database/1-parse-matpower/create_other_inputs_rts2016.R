@@ -81,7 +81,7 @@ gen.fuel[is.na(Fuel), Fuel := 'SynchCond']
 # get fuel price (2010$/MMBtu)
 
 fuel.price <- fread("../../RTS_Data/fuel_prices.csv")
-
+fuel.price[, Price := round(Price, 3)]
 
 # add to get written out
 all.tabs <- c(all.tabs, "gen.fuel", "fuel.price")
