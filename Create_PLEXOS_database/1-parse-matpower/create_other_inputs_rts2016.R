@@ -348,8 +348,8 @@ reserve.generators <- reserve.generators[,.(Reserve = c(rep(l.reserve,length(Gen
 reserve.regions <- region.refnode.data[]
 reserve.regions <- reserve.regions[,.(Reserve = l.reserve,Region,`Load Risk` = l.reserve.percent)]
 
-reserve.provisions <- fread('inputs/reserves.csv')
-reserve.provisions.rt  <- fread('inputs/reserves_RT.csv')
+reserve.provisions <- fread('../../RTS_Data/reserves.csv')
+reserve.provisions.rt  <- fread('../../RTS_Data/reserves_RT.csv')
 
 # add to all.tabs
 all.tabs <- c(all.tabs, "reserve.data","reserve.generators","reserve.regions","reserve.provisions","reserve.provisions.rt")
