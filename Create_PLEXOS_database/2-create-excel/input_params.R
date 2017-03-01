@@ -73,15 +73,22 @@ object.property.list <- list(
     list("gen.startshut.csv"),
     
     # fuel price
-    list("fuel.price.csv")
+    list("fuel.price.csv"),
+    
+    # reserve profiles
+    list("reserve.provisions.csv",
+         list(datafile.col = 'Min Provision')),
+    list("reserve.provisions.rt.csv",
+         list(datafile.col = 'Min Provision',
+              scenario.name = 'RT Run'))
 
 )
  
 #reserve
 reserve.files <- list(
   reserves = 'reserve.data.csv',
-  reserve.generators = 'reserve_generators.csv',
-  reserve.regions = 'reserve_regions.csv'
+  reserve.generators = 'reserve.generators.csv',
+  reserve.regions = 'reserve.regions.csv'
 )
 
 # define filepointers for day ahead to real time 

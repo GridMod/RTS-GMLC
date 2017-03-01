@@ -340,15 +340,18 @@ reserve.data <- data.table('Reserve' = c(l.reserve,d.reserve),
                           'Timeframe' = c(l.reserve.timeframe.sec,d.reserve.timeframe.sec),
                           'VoRS' = c(l.reserve.violation,d.reserve.violation),
                           'Mutually Exclusive' = c(l.mutually.exclusive,d.mutually.exclusive))
-reserve_generators <- gen.fuel[Fuel %in% eligible.gens,]
-reserve_generators <- reserve_generators[,.(Reserve = c(rep(l.reserve,length(Generator)*length(l.reserve)),rep(d.reserve,each = length(Generator))),
+reserve.generators <- gen.fuel[Fuel %in% eligible.gens,]
+reserve.generators <- reserve.generators[,.(Reserve = c(rep(l.reserve,length(Generator)*length(l.reserve)),rep(d.reserve,each = length(Generator))),
                                             Generator = c(rep(Generator,times = length(l.reserve)+length(d.reserve))))]
 
-reserve_regions <- region.refnode.data[]
-reserve_regions <- reserve_regions[,.(Reserve = l.reserve,Region,`Load Risk` = l.reserve.percent)]
+reserve.regions <- region.refnode.data[]
+reserve.regions <- reserve.regions[,.(Reserve = l.reserve,Region,`Load Risk` = l.reserve.percent)]
+
+reserve.provisions <- fread('inputs/reserves.csv')
+reserve.provisions.rt  <- fread('inputs/reserves_RT.csv')
 
 # add to all.tabs
-all.tabs <- c(all.tabs, "reserve.data","reserve_generators","reserve_regions")
+all.tabs <- c(all.tabs, "reserve.data","reserve.generators","reserve.regions","reserve.provisions","reserve.provisions.rt")
 
 #------------------------------------------------------------------------------|
 # ramps ----

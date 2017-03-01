@@ -19,19 +19,34 @@ ST Regional,ST Schedule,Transmission Detail,0,"Plexos documentation conflicts wi
 Xpress-MP 0.5 MIP,Performance,SOLVER,2,selects Xpress-MP
 Xpress-MP 0.5 MIP,Performance,MIP Relative Gap,0.005,
 Xpress-MP 0.5 MIP,Performance,Small MIP Relative Gap,0.005,
-Xpress-MP 0.5 MIP,Performance,MIP Maximum Threads,2,"Could revise later. Loads computer less, Greg Brinkman says higher numbers don't help runtime much."
+Xpress-MP 0.5 MIP,Performance,MIP Maximum Threads,4,"Could revise later. Loads computer less, Greg Brinkman says higher numbers don't help runtime much."
 Xpress-MP 0.5 MIP,Performance,Small MIP Max Time,3600,Maximum time before each ST step times out for small problems
 Xpress-MP 0.5 MIP,Performance,MIP Max Time,3600,Maximum time before each ST step times out for large problems
-Xpress-MP 1 MIP,Performance,SOLVER,2,selects Xpress-MP
-Xpress-MP 1 MIP,Performance,MIP Relative Gap,0.01,
+Xpress-MP 0.5 MIP,Performance,Small LP Optimizer,5,
+Xpress-MP 0.5 MIP,Performance,Cold Start Optimizer 1,6,
+Xpress-MP 0.5 MIP,Performance,Hot Start Optimizer 1,6,
+Xpress-MP 0.5 MIP,Performance,MIP Root Optimizer,6,
+Xpress-MP 0.5 MIP,Performance,MIP Node Optimizer,6,
+Xpress-MP 1 MIP,Performance,Small LP Optimizer,5,
+Xpress-MP 1 MIP,Performance,Cold Start Optimizer 1,6,
+Xpress-MP 1 MIP,Performance,Hot Start Optimizer 1,6,
+Xpress-MP 1 MIP,Performance,MIP Root Optimizer,6,
+Xpress-MP 1 MIP,Performance,MIP Node Optimizer,6,
+Xpress-MP 1 MIP,Performance,Small LP Optimizer,5,
+Xpress-MP 0.1 MIP,Performance,Cold Start Optimizer 1,6,
+Xpress-MP 0.1 MIP,Performance,Hot Start Optimizer 1,6,
+Xpress-MP 0.1 MIP,Performance,MIP Root Optimizer,6,
+Xpress-MP 0.1 MIP,Performance,MIP Node Optimizer,6,
+Xpress-MP 0.1 MIP,Performance,SOLVER,2,selects Xpress-MP
+Xpress-MP 0.1 MIP,Performance,MIP Relative Gap,0.01,
 Xpress-MP 1 MIP,Performance,Small MIP Relative Gap,0.01,
-Xpress-MP 1 MIP,Performance,MIP Maximum Threads,2,"Could revise later. Loads computer less, Greg Brinkman says higher numbers don't help runtime much."
+Xpress-MP 1 MIP,Performance,MIP Maximum Threads,4,"Could revise later. Loads computer less, Greg Brinkman says higher numbers don't help runtime much."
 Xpress-MP 1 MIP,Performance,Small MIP Max Time,3600,Maximum time before each ST step times out for small problems
 Xpress-MP 1 MIP,Performance,MIP Max Time,3600,Maximum time before each ST step times out for large problems
 Xpress-MP 0.1 MIP,Performance,SOLVER,2,selects Xpress-MP
 Xpress-MP 0.1 MIP,Performance,MIP Relative Gap,0.001,
 Xpress-MP 0.1 MIP,Performance,Small MIP Relative Gap,0.001,
-Xpress-MP 0.1 MIP,Performance,MIP Maximum Threads,2,"Could revise later. Loads computer less, Greg Brinkman says higher numbers don't help runtime much."
+Xpress-MP 0.1 MIP,Performance,MIP Maximum Threads,4,"Could revise later. Loads computer less, Greg Brinkman says higher numbers don't help runtime much."
 Xpress-MP 0.1 MIP,Performance,Small MIP Max Time,3600,Maximum time before each ST step times out for small problems
 Xpress-MP 0.1 MIP,Performance,MIP Max Time,3600,Maximum time before each ST step times out for large problems
 Tx - All lines,Transmission,MVA Base,100,default
@@ -42,7 +57,7 @@ Tx - All lines,Transmission,Bound Node Phase Angles,0,Don't enforce phase angle 
 Tx - All lines,Transmission,Interface Constraints Enabled,-1,
 Tx - All lines,Transmission,Allow Dump Energy ,-1,
 Tx - All lines,Transmission,Formulate Upfront,-1,Formulate constraints upfront helps speed up solving when only enforcing interfaces
-Tx - All lines,Transmission,Constraint Voltage Threshold,0,
+Tx - All lines,Transmission,Constraint Voltage Threshold,138,
 Tx - All lines,Transmission,Internal VoLL,10000000,
 Tx No lines,Transmission,MVA Base,100,default
 Tx No lines,Transmission,Losses Enabled,0,
