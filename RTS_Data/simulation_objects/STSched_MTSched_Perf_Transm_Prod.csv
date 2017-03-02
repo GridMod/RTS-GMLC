@@ -59,6 +59,7 @@ Tx - All lines,Transmission,Allow Dump Energy ,-1,
 Tx - All lines,Transmission,Formulate Upfront,-1,Formulate constraints upfront helps speed up solving when only enforcing interfaces
 Tx - All lines,Transmission,Constraint Voltage Threshold,138,
 Tx - All lines,Transmission,Internal VoLL,10000000,
+Tx - All lines,Transmission,Wheeling PTDF Threshold,0,
 Tx No lines,Transmission,MVA Base,100,default
 Tx No lines,Transmission,Losses Enabled,0,
 Tx No lines,Transmission,OPF Method,0,Variable shift factor
@@ -69,6 +70,7 @@ Tx No lines,Transmission,Allow Dump Energy ,-1,
 Tx No lines,Transmission,Formulate Upfront,-1,Formulate constraints upfront helps speed up solving when only enforcing interfaces
 Tx No lines,Transmission,Constraint Voltage Threshold,1000,
 Tx No lines,Transmission,Internal VoLL,10000000,
+Tx No lines,Transmission,Wheeling PTDF Threshold,0,
 Production LP,Production,Unit Commitment Optimality,0,Linear relaxation
 Production RR,Production,Unit Commitment Optimality,1,Rounded relaxation
 Production MIP,Production,Unit Commitment Optimality,2,Mixed-integer program
