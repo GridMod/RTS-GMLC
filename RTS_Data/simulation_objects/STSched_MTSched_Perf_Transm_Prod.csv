@@ -32,13 +32,13 @@ Xpress-MP 1 MIP,Performance,Cold Start Optimizer 1,6,
 Xpress-MP 1 MIP,Performance,Hot Start Optimizer 1,6,
 Xpress-MP 1 MIP,Performance,MIP Root Optimizer,6,
 Xpress-MP 1 MIP,Performance,MIP Node Optimizer,6,
-Xpress-MP 1 MIP,Performance,Small LP Optimizer,5,
+Xpress-MP 0.1 MIP,Performance,Small LP Optimizer,5,
 Xpress-MP 0.1 MIP,Performance,Cold Start Optimizer 1,6,
 Xpress-MP 0.1 MIP,Performance,Hot Start Optimizer 1,6,
 Xpress-MP 0.1 MIP,Performance,MIP Root Optimizer,6,
 Xpress-MP 0.1 MIP,Performance,MIP Node Optimizer,6,
-Xpress-MP 0.1 MIP,Performance,SOLVER,2,selects Xpress-MP
-Xpress-MP 0.1 MIP,Performance,MIP Relative Gap,0.01,
+Xpress-MP 1 MIP,Performance,SOLVER,2,selects Xpress-MP
+Xpress-MP 1 MIP,Performance,MIP Relative Gap,0.01,
 Xpress-MP 1 MIP,Performance,Small MIP Relative Gap,0.01,
 Xpress-MP 1 MIP,Performance,MIP Maximum Threads,4,"Could revise later. Loads computer less, Greg Brinkman says higher numbers don't help runtime much."
 Xpress-MP 1 MIP,Performance,Small MIP Max Time,3600,Maximum time before each ST step times out for small problems
