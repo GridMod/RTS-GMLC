@@ -233,6 +233,8 @@ all.tabs <- c(all.tabs, "gen.startshut")
 # same as all other property files...)
 gen.da.vg <- fread("../../RTS_Data/vg_gens_DA.csv")
 gen.rt.vg <- fread("../../RTS_Data/vg_gens_RT.csv")
+gen.da.csp <- fread("../../RTS_Data/csp_gens_DA.csv")
+gen.rt.csp <- fread("../../RTS_Data/csp_gens_RT.csv")
 
 # get vg max cap and add to total generator.table
 vg.gens <- fread("../../RTS_Data/vg_gens_maxMW.csv", colClasses = "character")
@@ -262,13 +264,14 @@ generator.data[Generator %in% disappear.units, Units:="0"]
 vg.gen.fuel <- vg.gens[,.(Generator)]
 
 vg.gen.fuel[grepl("_pv", Generator), Fuel := "PV"]
+vg.gen.fuel[grepl("_csp", Generator), Fuel := "CSP"]
 vg.gen.fuel[grepl("_rtpv", Generator), Fuel := "RTPV"]
 vg.gen.fuel[grepl("_wind", Generator), Fuel := "Wind"]
 
 gen.fuel <- rbind(gen.fuel, vg.gen.fuel)
 
 # add these to all.tabs to be written out at the end
-all.tabs <- c(all.tabs, "gen.da.vg", "gen.rt.vg")
+all.tabs <- c(all.tabs, "gen.da.vg", "gen.rt.vg", "gen.da.csp", "gen.rt.csp")
 
 
 #------------------------------------------------------------------------------|
@@ -313,11 +316,11 @@ all.tabs <- c(all.tabs, "gen.hydro")
 #------------------------------------------------------------------------------|
 # add reserves ----
 #------------------------------------------------------------------------------|
-eligible.gens <- c("Oil/Steam","Coal/Steam","Oil/CT","NG/CC","NG/CT","PV","Wind")
+eligible.gens <- c("Oil/Steam","Coal/Steam","Oil/CT","NG/CC","NG/CT","PV","Wind", "CSP")
 
 # add reserve(s) which is x% of load in each region and what gens can provide it
 l.reserve <- c("Spin Up")
-l.is.enabled <- c(1)
+l.is.enabled <- c(-1)
 l.reserve.type <- c(1)
 l.reserve.percent <- c(3.0)
 l.scenario.name <- c("Add Spin Up")
@@ -327,7 +330,7 @@ l.mutually.exclusive <- c(1)
 
 # add reserve(s) in which risk is defined with data file
 d.reserve <- c("Flex Up","Flex Down","Reg Up","Reg Down")
-d.is.enabled <- c(1,1,1,1)
+d.is.enabled <- c(-1,-1,-1,-1)
 d.reserve.type <- c(1,2,1,2)
 d.scenario.name <- c("Add Flex Reserves","Add Flex Reserves","Add Regulation Reserves","Add Regulation Reserves")
 d.reserve.violation <- c(4100,4100,3900,3900)

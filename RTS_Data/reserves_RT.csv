@@ -1,3 +1,3 @@
 Reserve,Min Provision
-Reg Down,data_files\reserves\RT_regDown.csv
-Reg Up,data_files\reserves\RT_regUp.csv
+Reg Down,timeseries_data_files\reserves\RT_regDown.csv
+Reg Up,timeseries_data_files\reserves\RT_regUp.csv

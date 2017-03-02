@@ -59,6 +59,12 @@ object.property.list <- list(
               scenario.name = "RE: RT")),    
     list("gen.hydro.csv",
          list(datafile.col = "Fixed Load")),
+    list("gen.da.csp.csv",
+         list(datafile.col = "Rating",
+              scenario.name = "CSP: DA")),
+    list("gen.rt.csp.csv",
+         list(datafile.col = "Rating",
+              scenario.name = "CSP: RT")),
     
     # generator properties
     list("gen.outages.csv", 

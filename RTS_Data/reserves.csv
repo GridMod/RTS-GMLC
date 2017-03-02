@@ -1,5 +1,5 @@
 Reserve,Min Provision
-Flex Down,data_files\reserves\DA_flexDown.csv
-Flex Up,data_files\reserves\DA_flexUp.csv
-Reg Down,data_files\reserves\DA_regDown.csv
-Reg Up,data_files\reserves\DA_regUp.csv
+Flex Down,timeseries_data_files\reserves\DA_flexDown.csv
+Flex Up,timeseries_data_files\reserves\DA_flexUp.csv
+Reg Down,timeseries_data_files\reserves\DA_regDown.csv
+Reg Up,timeseries_data_files\reserves\DA_regUp.csv
