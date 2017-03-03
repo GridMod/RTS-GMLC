@@ -1,2 +1,0 @@
-Generator,Rating,Min Up Time,Min Down Time,Max Ramp Up,Min Stable Level,Start Cost
-104_csp,timeseries_data_files\wind_pv_rtpv\RT_pv.csv,1,1,10,15,100
