@@ -396,7 +396,7 @@ all.tabs <- c(all.tabs, "gen.minupdown")
 # DC Line ----
 #------------------------------------------------------------------------------|
 
-dc.line = data.table(`Node From`=113, `Node To`=316, Resistance=0, Reactance=NA, `Max Flow`=100, rateA=100, rateB=100, rateC=100, Units=NA, Line='113_316_1', `Min Flow`=-100)
+dc.line = data.table(Line='113_316_1', `Node From`=113, `Node To`=316, Resistance=0, Reactance=NA, `Max Flow`=100, rateA=100, rateB=100, rateC=100, Units=NA, `Min Flow`=-100)
 line.data = rbind(line.data, dc.line, fill=TRUE) 
 
 #------------------------------------------------------------------------------|

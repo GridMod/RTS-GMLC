@@ -325,6 +325,7 @@ line.data[,Line := paste0(`Node From`, "_", `Node To`, "_", id)]
 line.data[,id := NULL]
 
 line.data[,`Min Flow` := -1 * as.numeric(`Max Flow`)]
+setcolorder(line.data,unique(c("Line",names(line.data))))
 
 all.tabs <- c()
 
