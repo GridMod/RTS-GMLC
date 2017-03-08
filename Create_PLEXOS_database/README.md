@@ -7,6 +7,10 @@ That means that all inputs are in **1-parse-matpower/inputs.** Changes in csv fi
 
 Then, then excel file and data_files folder are all that are needed to create a plexos database.
 
+If you are a command-line junkie, you can run the "Create_RTS_spreadsheet.R" script to execute steps 1 and 2 above without opening R.
+This command line method is not recommended for debugging
+	> [filepath to R]/bin/Rscript.exe Create_RTS_spreadsheet.R
+
 ### notes about subfolders
 
 **1-parse-matpower**: run `parse-matpower.R.` This will parse what's in the .m file and call `create_other_inputs_rts2016.R,` which adds in information that is not in the m file. Those scripts use the **inputs** folder and dump all results into **outputs**
