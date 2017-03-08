@@ -302,8 +302,7 @@ node.data <- struct.list$bus[,.(Node = bus_i, Voltage = baseKV, Region = area,
 
 # generators
 generator.data <- struct.list$gen[,.(Node = bus, Units = status, 
-                                     `Max Capacity` = Pmax, 
-                                     `Min Stable Level` = Pmin)]
+                                     `Max Capacity` = Pmax)]
 
 generator.data[,id := 1:.N, by = Node]
 generator.data[,Generator := paste0(Node, "_", id)]
