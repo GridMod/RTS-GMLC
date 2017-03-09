@@ -28,6 +28,7 @@ Default Report,System,Generator,Generators,Start & Shutdown Cost,4,TRUE,TRUE,FAL
 Default Report,System,Generator,Generators,VO&M Cost,4,TRUE,TRUE,FALSE,FALSE
 Default Report,System,Generator,Generators,Installed Capacity,4,TRUE,TRUE,FALSE,FALSE
 Default Report,System,Generator,Generators,SRMC,4,TRUE,TRUE,FALSE,FALSE
+Default Report,System,Generator,Generators,Pump Load,4,TRUE,TRUE,FALSE,FALSE
 Default Report,System,Fuel,Fuels,Price,4,TRUE,TRUE,FALSE,FALSE
 Default Report,System,Fuel,Fuels,Time-weighted Price,4,TRUE,TRUE,FALSE,FALSE
 Default Report,System,Fuel,Fuels,Offtake,4,TRUE,TRUE,FALSE,FALSE
@@ -87,5 +88,7 @@ Default Report,System,Decision Variable,Decision Variables,Reduced Cost,4,TRUE,T
 Default Report,System,Variable,Variables,Value,4,TRUE,TRUE,FALSE,FALSE
 Default Report,System,Reserve,Reserves,Provision,4,TRUE,TRUE,FALSE,FALSE
 Default Report,System,Reserve,Reserves,Shortage,4,TRUE,TRUE,FALSE,FALSE
+Default Report,System,Reserve,Reserves,Price,4,TRUE,TRUE,FALSE,FALSE
 Default Report,System,Interface,Interfaces,Flow,4,TRUE,TRUE,FALSE,FALSE
+Default Report,Reserve,Generator,Generators,Provision,4,TRUE,TRUE,FALSE,FALSE
 / END,Reports,,,,,,,,
