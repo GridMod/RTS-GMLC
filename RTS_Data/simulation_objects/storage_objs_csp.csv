@@ -1,16 +1,17 @@
-/ BEGIN,Objects,,,,,,
-class,name,category, , ,,,
-Storage,CSP_Storage_212_csp,CSP Storage,,,,,
-/ END,Objects,,,,,,
-/ BEGIN,Properties,,,,,,
-parent_class,child_class,collection,parent_object,child_object,property,band_id,value
-System,Storage,Storages,System,CSP_Storage_212_csp,Max Volume,1,1.2
-System,Storage,Storages,System,CSP_Storage_212_csp,Decomposition Method,1,0
-System,Storage,Storages,System,CSP_Storage_212_csp,End Effects Method,1,1
-System,Storage,Storages,System,CSP_Storage_212_csp,Spill Penalty,1,0
-System,Storage,Storages,System,CSP_Storage_212_csp,Max Spill,1,1E+30
-/ END,Properties,,,,,,
-/ BEGIN,Memberships,,,,,,
-parent_class,child_class,collection,parent_object,child_object,,,
-Generator,Storage,Head Storage,212_csp,CSP_Storage_212_csp,,,
-/ END,Memberships,,,,,,
+/ BEGIN,Objects,,,,,,,
+class,name,category, , ,,,,
+Storage,CSP_Storage_212_csp,CSP Storage,,,,,,
+/ END,Objects,,,,,,,
+/ BEGIN,Properties,,,,,,,
+parent_class,child_class,collection,parent_object,child_object,property,band_id,value,scenario
+System,Storage,Storages,System,CSP_Storage_212_csp,Max Volume,1,1.2,
+System,Storage,Storages,System,CSP_Storage_212_csp,Decomposition Method,1,0,
+System,Storage,Storages,System,CSP_Storage_212_csp,End Effects Method,1,1,
+System,Storage,Storages,System,CSP_Storage_212_csp,Spill Penalty,1,0,
+System,Storage,Storages,System,CSP_Storage_212_csp,Max Spill,1,1.00E+30,
+System,Storage,Storages,System,CSP_Storage_212_csp,Enforce Bounds,1,0.00E+00,{Object}RT Run
+/ END,Properties,,,,,,,
+/ BEGIN,Memberships,,,,,,,
+parent_class,child_class,collection,parent_object,child_object,,,,
+Generator,Storage,Head Storage,212_csp,CSP_Storage_212_csp,,,,
+/ END,Memberships,,,,,,,
