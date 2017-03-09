@@ -246,8 +246,7 @@ vg.gens[, `Min Stable Level` := "0"]
 
 generator.data <- merge(generator.data,
                         vg.gens,
-                        by = c("Generator", "Max Capacity", "Node",
-                               "Min Stable Level"),
+                        by = c("Generator", "Max Capacity", "Node"),
                         all = TRUE)
 
 # add units since don't have this in mpc file
