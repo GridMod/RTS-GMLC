@@ -1,5 +1,6 @@
 *.Rhistory
 RTS_Data/rts_PLEXOS_data_check
+RTS_Data/rts_PLEXOS.xlsx
 Create_PLEXOS_database/1-parse-matpower/outputs/*.csv
 Create_PLEXOS_database/1-parse-matpower/outputs/
 HTML_Report/.Rhistory

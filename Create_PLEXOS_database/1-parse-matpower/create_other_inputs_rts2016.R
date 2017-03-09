@@ -234,8 +234,7 @@ all.tabs <- c(all.tabs, "gen.startshut")
 gen.da.vg <- fread("../../RTS_Data/vg_gens_DA.csv")
 gen.rt.vg <- fread("../../RTS_Data/vg_gens_RT.csv")
 gen.csp <- fread("../../RTS_Data/csp_gens.csv")
-storage.csp.da <- fread("../../RTS_Data/storage.csp.da.csv") 
-storage.csp.rt <- fread("../../RTS_Data/storage.csp.rt.csv")
+storage.csp <- fread("../../RTS_Data/storage.csp.csv") 
 
 # get vg max cap and add to total generator.table
 vg.gens <- fread("../../RTS_Data/vg_gens_maxMW.csv", colClasses = "character")
@@ -256,7 +255,7 @@ disappear.units <- c("101_pv","101_pv_2","101_pv_3","101_pv_4","102_pv","103_pv"
                      "119_pv","310_pv","310_pv_2","312_pv","314_pv","314_pv_2","314_pv_3",
                      "314_pv_4","319_pv","324_pv","324_pv_2","324_pv_3","118_rtpv","118_rtpv_8",
                      "308_rtpv","313_rtpv_11","320_rtpv","320_rtpv_2","320_rtpv_3","320_rtpv_4",
-                     "320_rtpv_5","320_rtpv_6","314_pv_5","303_wind","317_wind", "104_csp")
+                     "320_rtpv_5","320_rtpv_6","314_pv_5","303_wind","317_wind", "212_csp")
 generator.data[Generator %in% disappear.units, Units:="0"]
 
 
@@ -271,7 +270,7 @@ vg.gen.fuel[grepl("_wind", Generator), Fuel := "Wind"]
 gen.fuel <- rbind(gen.fuel, vg.gen.fuel)
 
 # add these to all.tabs to be written out at the end
-all.tabs <- c(all.tabs, "gen.da.vg", "gen.rt.vg", "gen.csp", "storage.csp.da", "storage.csp.rt")
+all.tabs <- c(all.tabs, "gen.da.vg", "gen.rt.vg", "gen.csp", "storage.csp")
 
 
 #------------------------------------------------------------------------------|
