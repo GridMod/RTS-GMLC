@@ -61,11 +61,8 @@ object.property.list <- list(
          list(datafile.col = "Fixed Load")),
     list("gen.csp.csv",
          list(scenario.name = "Add CSP")),
-    list("storage.csp.da.csv",
+    list("storage.csp.csv",
          list(datafile.col = "Natural Inflow")),
-    list("storage.csp.rt.csv",
-         list(datafile.col = "Natural Inflow",
-              scenario.name = "RT Run")),
     
     # generator properties
     list("gen.outages.csv", 

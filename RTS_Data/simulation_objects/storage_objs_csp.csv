@@ -1,8 +1,12 @@
-/ BEGIN,Objects,,,
-class,name,category, , 
-Storage,CSP_Storage_104_csp,CSP Storage,,
-/ END,Objects,,,
-/ BEGIN,Memberships,,,
-parent_class,child_class,collection,parent_object,child_object
-Generator,Storage,Head Storage,104_csp,CSP_Storage_104_csp
-/ END,Memberships,,,
+/ BEGIN,Objects,,,,,,
+class,name,category, , ,,,
+Storage,CSP_Storage_212_csp,CSP Storage,,,,,
+/ END,Objects,,,,,,
+/ BEGIN,Properties,,,,,,
+parent_class,child_class,collection,parent_object,child_object,property,band_id,value
+System,Storage,Storages,System,CSP_Storage_212_csp,Max Volume,1,1.2
+/ END,Properties,,,,,,
+/ BEGIN,Memberships,,,,,,
+parent_class,child_class,collection,parent_object,child_object,,,
+Generator,Storage,Head Storage,212_csp,CSP_Storage_212_csp,,,
+/ END,Memberships,,,,,,
