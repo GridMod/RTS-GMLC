@@ -62,11 +62,10 @@ object.property.list <- list(
     list("gen.csp.csv",
          list(scenario.name = "Add CSP")),
     list("storage.csp.da.csv",
-         list(datafile.col = "Natural Inflow",
-              scenario.name = "CSP: DA")),
+         list(datafile.col = "Natural Inflow")),
     list("storage.csp.rt.csv",
          list(datafile.col = "Natural Inflow",
-              scenario.name = "CSP: RT")),
+              scenario.name = "RT Run")),
     
     # generator properties
     list("gen.outages.csv", 
@@ -102,7 +101,8 @@ reserve.files <- list(
 # define filepointers for day ahead to real time 
 interleave.models.list <- list(
   list('da_rt.csv',
-       template.fuel = 'da_rt_filepointer_template.csv')
+       template.fuel = 'da_rt_filepointer_template.csv',
+       interleave = TRUE)
 )
 
 # define as many files as needed for generic imports
