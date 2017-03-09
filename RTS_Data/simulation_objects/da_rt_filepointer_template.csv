@@ -8,6 +8,6 @@ Oil/CT,,Model [DA MODEL] Solution\interval\ST Generator(*).Units Out.csv,
 Oil/Steam,,Model [DA MODEL] Solution\interval\ST Generator(*).Units Out.csv,
 PV,,,
 RTPV,,,
-CSP,,,
+CSP,,,Model [DA MODEL] Solution\interval\ST Generator(*).Generation.csv
 SynchCond,,,
 Wind,,,
