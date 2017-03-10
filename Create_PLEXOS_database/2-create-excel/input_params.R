@@ -103,7 +103,7 @@ reserve.files <- list(
 interleave.models.list <- list(
   list('da_rt.csv',
        template.fuel = 'da_rt_filepointer_template.csv',
-       interleave = TRUE)
+       interleave = FALSE)
 )
 
 # define as many files as needed for generic imports
