@@ -235,6 +235,8 @@ gen.da.vg <- fread("../../RTS_Data/vg_gens_DA.csv")
 gen.rt.vg <- fread("../../RTS_Data/vg_gens_RT.csv")
 gen.csp <- fread("../../RTS_Data/csp_gens.csv")
 storage.csp <- fread("../../RTS_Data/storage.csp.csv") 
+storage.props <- fread("../../RTS_Data/storage.props.csv") 
+storage.props.rt <- fread("../../RTS_Data/storage.props.rt.csv") 
 
 # get vg max cap and add to total generator.table
 vg.gens <- fread("../../RTS_Data/vg_gens_maxMW.csv", colClasses = "character")
@@ -270,7 +272,7 @@ vg.gen.fuel[grepl("_wind", Generator), Fuel := "Wind"]
 gen.fuel <- rbind(gen.fuel, vg.gen.fuel)
 
 # add these to all.tabs to be written out at the end
-all.tabs <- c(all.tabs, "gen.da.vg", "gen.rt.vg", "gen.csp", "storage.csp")
+all.tabs <- c(all.tabs, "gen.da.vg", "gen.rt.vg", "gen.csp", "storage.csp", "storage.props", "storage.props.rt")
 
 
 #------------------------------------------------------------------------------|
