@@ -122,9 +122,9 @@ gen.cost.data[,c("model", "startup", "shutdown", "n") := NULL]
 if (model == 1) {
   
   # assumes heat rates are in $/hr and calculated using a dummy fuel price
-  # of $1/MMBtu
-  # converts from $/hr to MMBtu/MWh by diving by load point
-  # ($/hr * 1 MMBtu/$1 * 1 hr/[loadpoint MW * hr = MWh])
+  # of 1$/1mmBtu
+  # converts from $/hr to Btu/kWh by diving by load point and fuel price
+  # ($/hr * 1mmBtu/1$ * 1 hr/[loadpoint MW * hr = MWh])
   
   # reset names to be load point and heat rate for plexos
   names.to.convert <- names(gen.cost.data)
@@ -136,7 +136,7 @@ if (model == 1) {
   setnames(gen.cost.data, names.to.convert, names.converted)
   
   # names are almost plexos names, but have band id numbers at end
-  # now, melt down, get band id, convert to real MMBtu/MWh 
+  # now, melt down, get band id, convert to real mmBtu/MWh 
   # there is probably a fancier/more efficient way to do this
   gen.cost.data <- melt(gen.cost.data, id.vars = "Generator", 
                         variable.factor = FALSE, value.factor = FALSE)
@@ -154,10 +154,9 @@ if (model == 1) {
                         merge(gen.fuel,
                               fuel.price,by='Fuel')[,.(Generator,Price)],
                         by='Generator')
-  # heat rate is in $/hr, assuming fuel is $1/MMBtu. Convert to MMBtu/MWh
-  gen.cost.data[, `Heat Rate` := `Heat Rate`/(`Load Point`*`Price`)][,Price:=NULL]
+  # heat rate is in $/hr, assuming fuel is $/mmBtu. Convert to Btu/kWh
+  gen.cost.data[, `Heat Rate` := `Heat Rate`/(`Load Point`*`Price`)*1000][,Price:=NULL]
   
-  # TODO HMMM SOMETHING IS WRONG WITH THESE HEAT RATE NUMBERS
   
 } else if (model == 2) {
   # polynomial function coefficients
@@ -197,7 +196,7 @@ all.tabs <- c(all.tabs, "gen.cost.data")
 gen.startshut <- cbind(generator.data[,.(Generator)],
                    struct.list$gencost[,.(startup, shutdown)])
 
-# start and shutdown costs are given in MMBtu. convert this to $ by
+# start and shutdown costs are given in mmBtu. convert this to $ by
 # adding gen fuel type and fuel prices, then multiplying by fuel price
 gen.startshut <- merge(gen.startshut, gen.fuel, by = "Generator", all.x = TRUE)
 gen.startshut <- merge(gen.startshut, fuel.price, by = "Fuel", all.x = TRUE)
