@@ -196,22 +196,26 @@ all.tabs <- c(all.tabs, "gen.cost.data")
 gen.startshut <- cbind(generator.data[,.(Generator)],
                    struct.list$gencost[,.(startup, shutdown)])
 
-# start and shutdown costs are given in mmBtu. convert this to $ by
-# adding gen fuel type and fuel prices, then multiplying by fuel price
-gen.startshut <- merge(gen.startshut, gen.fuel, by = "Generator", all.x = TRUE)
-gen.startshut <- merge(gen.startshut, fuel.price, by = "Fuel", all.x = TRUE)
+# Start and shutdown costs should now be given in $. No changes required.
 
-gen.startshut[, Price := as.numeric(Price)]
-
-# Use Oil/Steam price to calculate coal gen start and shutdown costs
-gen.startshut[Fuel == "Coal/Steam", Price := fuel.price[Fuel == "Oil/Steam", Price]]
-
-# calculate and add start and shutdown costs based on input heat and fuel price
-gen.startshut[, `Start Cost` := Price * as.numeric(startup)]
-gen.startshut[, `Shutdown Cost` := Price * as.numeric(shutdown)]
+# # start and shutdown costs are given in mmBtu. convert this to $ by
+# # adding gen fuel type and fuel prices, then multiplying by fuel price
+# gen.startshut <- merge(gen.startshut, gen.fuel, by = "Generator", all.x = TRUE)
+# gen.startshut <- merge(gen.startshut, fuel.price, by = "Fuel", all.x = TRUE)
+# 
+# gen.startshut[, Price := as.numeric(Price)]
+# 
+# # Use Oil/Steam price to calculate coal gen start and shutdown costs
+# gen.startshut[Fuel == "Coal/Steam", Price := fuel.price[Fuel == "Oil/Steam", Price]]
+# 
+# # calculate and add start and shutdown costs based on input heat and fuel price
+# gen.startshut[, `Start Cost` := Price * as.numeric(startup)]
+# gen.startshut[, `Shutdown Cost` := Price * as.numeric(shutdown)]
 
 # save only plexos property columns
-gen.startshut <- gen.startshut[,.(Generator, `Start Cost`, `Shutdown Cost`)]
+gen.startshut <- gen.startshut[,.(Generator, `Start Cost` = startup, `Shutdown Cost` = shutdown)]
+gen.startshut[, `Start Cost` := as.numeric(`Start Cost`)]
+gen.startshut[, `Shutdown Cost` := as.numeric(`Shutdown Cost`)]
 
 # round values to integers
 gen.startshut[, c('Start Cost', 'Shutdown Cost') := list(round(`Start Cost`), round(`Shutdown Cost`))]
