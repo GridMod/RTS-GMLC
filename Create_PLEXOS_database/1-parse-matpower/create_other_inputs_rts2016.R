@@ -246,7 +246,6 @@ vg.gens <- fread("../../RTS_Data/vg_gens_maxMW.csv", colClasses = "character")
 
 # add node
 vg.gens[,Node := tstrsplit(Generator, "_")[[1]]]
-vg.gens[, `Min Stable Level` := "0"]
 
 generator.data <- merge(generator.data,
                         vg.gens,
