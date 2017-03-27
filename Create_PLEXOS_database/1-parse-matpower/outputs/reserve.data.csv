@@ -1,6 +1,0 @@
-Reserve,Is Enabled,Type,Scenario,Timeframe,VoRS,Mutually Exclusive
-Spin Up,-1,1,Add Spin Up,600,4000,1
-Flex Up,-1,1,Add Flex Reserves,1200,4100,1
-Flex Down,-1,2,Add Flex Reserves,1200,4100,1
-Reg Up,-1,1,Add Regulation Reserves,300,3900,1
-Reg Down,-1,2,Add Regulation Reserves,300,3900,1
