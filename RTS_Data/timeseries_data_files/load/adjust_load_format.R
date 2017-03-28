@@ -1,50 +1,70 @@
 # sets wd if sourced
+
+source('../../../Create_PLEXOS_database/1-parse-matpower/parse_matpower.R')
 setwd(dirname(sys.frame(1)$ofile))
 library(data.table)
 
 # read in DA files
-da.reg1 <- fread("Melted_APS_2020.csv")
-da.reg2 <- fread("Melted_NEVP_2020.csv")
-da.reg3 <- fread("Melted_LDWP_2020.csv")
+da.reg1 <- data.table(melt(fread("APS_Promod_2020.csv"),id.vars=c('Year','Month','Day'),variable.name = 'Period',variable.factor = F))
+da.reg1[,Period:=as.integer(Period)]
+da.reg2 <- data.table(melt(fread("NEVP_Promod_2020.csv"),id.vars=c('Year','Month','Day'),variable.name = 'Period',variable.factor = F))
+da.reg2[,Period:=as.integer(Period)]
+da.reg3 <- data.table(melt(fread("LDWP_Promod_2020.csv"),id.vars=c('Year','Month','Day'),variable.name = 'Period',variable.factor = F))
+da.reg3[,Period:=as.integer(Period)]
 
 # read in RT files
-rt.reg1 <- fread("Melted_RT_APS_Promod_2020.csv")
-rt.reg2 <- fread("Melted_RT_NEVP_Promod_2020.csv")
-rt.reg3 <- fread("Melted_RT_LDWP_Promod_2020.csv")
+rt.reg1 <- data.table(melt(fread("RT_APS_Promod_2020.csv"),id.vars=c('Year','Month','Day'),variable.name = 'Period',variable.factor = F))
+rt.reg1[,Period:=as.integer(Period)]
+rt.reg2 <- data.table(melt(fread("RT_NEVP_Promod_2020.csv"),id.vars=c('Year','Month','Day'),variable.name = 'Period',variable.factor = F))
+rt.reg2[,Period:=as.integer(Period)]
+rt.reg3 <- data.table(melt(fread("RT_LDWP_Promod_2020.csv"),id.vars=c('Year','Month','Day'),variable.name = 'Period',variable.factor = F))
+rt.reg3[,Period:=as.integer(Period)]
+
+region.load = merge(node.data,node.lpf,by='Node')[,.(Load = sum(as.numeric(Load))),by=.(Region)]
 
 # DA: fix columns
-da.reg1[,c("V1", "Hour", "Minutes") := NULL]
+da.reg1[,c("Hour", "Minutes") := NULL]
 da.reg1[,Period := 1:24, by = .(Year, Month, Day)]
-setnames(da.reg1, "Load", "1")
+setnames(da.reg1, "value", "1")
 
-da.reg2[,c("V1", "Hour", "Minutes") := NULL]
+da.reg2[,c("Hour", "Minutes") := NULL]
 da.reg2[,Period := 1:24, by = .(Year, Month, Day)]
-setnames(da.reg2, "Load", "2")
+setnames(da.reg2, "value", "2")
 
-da.reg3[,c("V1", "Hour", "Minutes") := NULL]
+da.reg3[,c("Hour", "Minutes") := NULL]
 da.reg3[,Period := 1:24, by = .(Year, Month, Day)]
-setnames(da.reg3, "Load", "3")
+setnames(da.reg3, "value", "3")
 
 # DA: combine
 da.load <- Reduce(function(...) merge(..., all = TRUE), 
                   list(da.reg1, da.reg2, da.reg3))
 
+da.load[,`1`:=`1`/max(`1`)*region.load[Region==1]$Load-110] # for some reason the APS load profile seems to be shifted through some normalization... shifting back 
+da.load[,`2`:=`2`/max(`2`)*region.load[Region==2]$Load]
+da.load[,`3`:=`3`/max(`3`)*region.load[Region==3]$Load]
+
+
+
 # RT: fix columns and combin
-rt.reg1[,c("V1", "Hour", "Minutes") := NULL]
+rt.reg1[,c("Hour", "Minutes") := NULL]
 rt.reg1[,Period := 1:288, by = .(Year, Month, Day)]
-setnames(rt.reg1, "Load", "1")
+setnames(rt.reg1, "value", "1")
 
-rt.reg2[,c("V1", "Hour", "Minutes") := NULL]
+rt.reg2[,c("Hour", "Minutes") := NULL]
 rt.reg2[,Period := 1:288, by = .(Year, Month, Day)]
-setnames(rt.reg2, "Load", "2")
+setnames(rt.reg2, "value", "2")
 
-rt.reg3[,c("V1", "Hour", "Minutes") := NULL]
+rt.reg3[,c("Hour", "Minutes") := NULL]
 rt.reg3[,Period := 1:288, by = .(Year, Month, Day)]
-setnames(rt.reg3, "Load", "3")
+setnames(rt.reg3, "value", "3")
 
 # RT: combine
 rt.load <- Reduce(function(...) merge(..., all = TRUE), 
                   list(rt.reg1, rt.reg2, rt.reg3))
+
+rt.load[,`1`:=`1`/max(`1`)*region.load[Region==1]$Load]
+rt.load[,`2`:=`2`/max(`2`)*region.load[Region==2]$Load]
+rt.load[,`3`:=`3`/max(`3`)*region.load[Region==3]$Load]
 
 # write out
 write.csv(da.load, 
