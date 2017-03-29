@@ -1,0 +1,8 @@
+Object,Description,,
+Simulation_Name,,Annual_DA,Annual_RT
+Periods_per_Step,the number of descrete periods represented in each simulation step,24,12
+Period_Resolution,period resolution in seconds,3600,300
+Date_From,simulation beginning period,1/1/2024 00:00:00,1/1/2024 00:00:00
+Date_To,simulation ending period (must acconunt for lookahed data availability),12/31/2024 00:00:00,12/31/2024 00:00:00
+Look_Ahead_Periods_per_Step,the number of look ahead periods included in each optimization step,24,0
+Look_Ahead_Resolution,look-ahead period resolution,3600,
