@@ -246,6 +246,7 @@ def create_rts_MATPOWER_file(folder):
 
         pivot_heat_rate['io_cost'] = pivot_heat_rate.apply(io, axis=1)
         _generators = pd.concat([_generators,pivot_heat_rate['io_cost']],axis=1)
+        _generators.to_csv('_generators.csv')
 
         NaN = pd.np.NaN
 
@@ -330,7 +331,7 @@ mpc.gen = [''')
             gen['Qmin'] = g['QMin MVAR']
             gen['Vg'] = g['V Setpoint p.u.']
             gen['mBase'] = 100.0 #default
-            if g['Fuel'] in ['Wind','Solar','Hydro']:
+            if g['Fuel'] in ['Wind','Solar']:
                 gen['status'] = 0
             else:
                 gen['status'] = 1 #default
@@ -394,7 +395,7 @@ mpc.gencost = [''')
             gen['shutdown'] = (g['Start Heat Cold MBTU'] * g['Fuel Price $/MMBTU'] if not np.isnan(g['Start Heat Cold MBTU'] * g['Fuel Price $/MMBTU']) else 0.0)
             gen['cost'] = list()
             gen['cost'] = g['io_cost']
-            if np.isnan(g['io_cost']).any():
+            if all(v[1]  == 0.0 for v in g['io_cost']): #np.isnan(g['io_cost']).any():
                 if g['Fuel'] == 'Sync_Cond':
                     print('Synchronous condensor!')
                     g['PMax MW'] = 1
