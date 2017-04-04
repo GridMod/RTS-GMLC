@@ -1,4 +1,4 @@
-Simulation,GEN UID,Parameter,Data File
+Simulation,Object,Parameter,Data File
 DAY_AHEAD,122_HYDRO_1,PMax MW,../timeseries_data_files/HYDRO/DAY_AHEAD_hydro.csv
 DAY_AHEAD,122_HYDRO_2,PMax MW,../timeseries_data_files/HYDRO/DAY_AHEAD_hydro.csv
 DAY_AHEAD,122_HYDRO_3,PMax MW,../timeseries_data_files/HYDRO/DAY_AHEAD_hydro.csv
