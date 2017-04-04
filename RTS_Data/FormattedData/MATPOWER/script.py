@@ -35,7 +35,6 @@ def create_rts_MATPOWER_file(folder):
 
         pivot_heat_rate['io_cost'] = pivot_heat_rate.apply(io, axis=1)
         _generators = pd.concat([_generators,pivot_heat_rate['io_cost']],axis=1)
-        _generators.to_csv('_generators.csv')
 
         NaN = pd.np.NaN
 
