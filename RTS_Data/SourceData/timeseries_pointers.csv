@@ -130,11 +130,11 @@ DAY_AHEAD,118_RTPV_8,PMin MW,../timeseries_data_files/RTPV/DAY_AHEAD_rtpv.csv
 DAY_AHEAD,118_RTPV_9,PMin MW,../timeseries_data_files/RTPV/DAY_AHEAD_rtpv.csv
 DAY_AHEAD,118_RTPV_10,PMin MW,../timeseries_data_files/RTPV/DAY_AHEAD_rtpv.csv
 DAY_AHEAD,213_RTPV_1,PMin MW,../timeseries_data_files/RTPV/DAY_AHEAD_rtpv.csv
-DAY_AHEAD,Flex_Down,Requirement,../timeseries_data_files/Reserves/DAY_AHEAD_regional_Flex_Up.csv
+DAY_AHEAD,Flex_Down,Requirement,../timeseries_data_files/Reserves/DAY_AHEAD_regional_Flex_Down.csv
 DAY_AHEAD,Flex_Up,Requirement,../timeseries_data_files/Reserves/DAY_AHEAD_regional_Flex_Up.csv
-DAY_AHEAD,Reg_Down,Requirement,../timeseries_data_files/Reserves/DAY_AHEAD_regional_Flex_Up.csv
-DAY_AHEAD,Reg_Up,Requirement,../timeseries_data_files/Reserves/DAY_AHEAD_regional_Flex_Up.csv
-DAY_AHEAD,Spin_Up,Requirement,../timeseries_data_files/Reserves/DAY_AHEAD_regional_Flex_Up.csv
+DAY_AHEAD,Reg_Down,Requirement,../timeseries_data_files/Reserves/DAY_AHEAD_regional_Reg_Down.csv
+DAY_AHEAD,Reg_Up,Requirement,../timeseries_data_files/Reserves/DAY_AHEAD_regional_Reg_Up.csv
+DAY_AHEAD,Spin_Up,Requirement,../timeseries_data_files/Reserves/DAY_AHEAD_regional_Spin_Up.csv
 DAY_AHEAD,Load,Requirement,../timeseries_data_files/Load/DAY_AHEAD_regional_Load.csv
 DAY_AHEAD,CSP_Storage_212_CSP_1,Natural_Inflow,../timeseries_data_files/CSP/DAY_AHEAD_Natural_Inflow.csv
 REAL_TIME,122_HYDRO_1,PMax MW,../timeseries_data_files/HYDRO/REAL_TIME_hydro.csv
@@ -268,7 +268,7 @@ REAL_TIME,118_RTPV_8,PMin MW,../timeseries_data_files/RTPV/REAL_TIME_rtpv.csv
 REAL_TIME,118_RTPV_9,PMin MW,../timeseries_data_files/RTPV/REAL_TIME_rtpv.csv
 REAL_TIME,118_RTPV_10,PMin MW,../timeseries_data_files/RTPV/REAL_TIME_rtpv.csv
 REAL_TIME,213_RTPV_1,PMin MW,../timeseries_data_files/RTPV/REAL_TIME_rtpv.csv
-REAL_TIME,Reg_Down,Requirement,../timeseries_data_files/Reserves/REAL_TIME_regional_Reg_Up.csv
+REAL_TIME,Reg_Down,Requirement,../timeseries_data_files/Reserves/REAL_TIME_regional_Reg_Down.csv
 REAL_TIME,Reg_Up,Requirement,../timeseries_data_files/Reserves/REAL_TIME_regional_Reg_Up.csv
-REAL_TIME,Spin_Up,Requirement,../timeseries_data_files/Reserves/REAL_TIME_regional_Reg_Up.csv
+REAL_TIME,Spin_Up,Requirement,../timeseries_data_files/Reserves/REAL_TIME_regional_Spin_Up.csv
 REAL_TIME,Load,Requirement,../timeseries_data_files/Load/REAL_TIME_regional_Load.csv
