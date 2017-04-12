@@ -125,7 +125,20 @@ This folder contains six CSV files wit all RTS-GMLC (non-timeseries) data and pr
 | Column     | Description                                                                                |
 |------------|--------------------------------------------------------------------------------------------|
 | Simulation | Simulation name                                                                            |
-| GEN UID    | Unique generator ID: Concatenated from Bus ID_Unit Type_Gen ID                             |
+| Object     | Unique generator ID: Concatenated from Bus ID_Unit Type_Gen ID, or other object ID/name    |
 | Parameter  | Parameter from gen.csv columns                                                             |
 | Data File  | pointer to datafile with timeseries values (must be consistent with simulation resolution) |
 
+## `storage.csv`
+| Column          | Description                                     |
+|-----------------|-------------------------------------------------|
+| GEN UID         | Gen ID associated with storage                  |
+| Storage         | Storage object name                             |
+| Max Volume GWh  | Energy storage capacity                         |
+
+## `reserves.csv`
+| Column              | Description                                     |
+|---------------------|-------------------------------------------------|
+| Reserve Product     | Reserve product name                            |
+| Timeframe (sec)     | Response time to satisfy reserve requirement    |
+| Elegible Gen Types  | Parameter from gen.csv columns                  |
