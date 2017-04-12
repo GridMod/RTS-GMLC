@@ -1,0 +1,13 @@
+Fuel,Commit,Units Out,Fixed Load
+Coal/Steam,Model [DA MODEL] Solution\interval\ST Generator(*).Units Generating.csv,Model [DA MODEL] Solution\interval\ST Generator(*).Units Out.csv,
+Hydro,,Model [DA MODEL] Solution\interval\ST Generator(*).Units Out.csv,Model [DA MODEL] Solution\interval\ST Generator(*).Generation.csv
+NG/CC,Model [DA MODEL] Solution\interval\ST Generator(*).Units Generating.csv,Model [DA MODEL] Solution\interval\ST Generator(*).Units Out.csv,
+NG/CT,,Model [DA MODEL] Solution\interval\ST Generator(*).Units Out.csv,
+Nuclear,Model [DA MODEL] Solution\interval\ST Generator(*).Units Generating.csv,Model [DA MODEL] Solution\interval\ST Generator(*).Units Out.csv,
+Oil/CT,,Model [DA MODEL] Solution\interval\ST Generator(*).Units Out.csv,
+Oil/Steam,,Model [DA MODEL] Solution\interval\ST Generator(*).Units Out.csv,
+PV,,,
+RTPV,,,
+CSP,,,Model [DA MODEL] Solution\interval\ST Generator(*).Generation.csv
+SynchCond,,,
+Wind,,,

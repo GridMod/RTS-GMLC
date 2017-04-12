@@ -1,0 +1,10 @@
+parent.model,child.model,filepointer.scenario,datafileobj.scenario
+Year DA,Year RT,RT Filepointers,RT Run
+Q1 DA,Q1 RT,RT Filepointers_Q1,RT Run
+Q2 DA,Q2 RT,RT Filepointers_Q2,RT Run
+Q3 DA,Q3 RT,RT Filepointers_Q3,RT Run
+Q4 DA,Q4 RT,RT Filepointers_Q4,RT Run
+Q1 Week1 DA,Q1 Week1 RT,RT Filepointers_Q1 Week1,RT Run
+Q2 Week1 DA,Q2 Week1 RT,RT Filepointers_Q2 Week1,RT Run
+Q3 Week1 DA,Q3 Week1 RT,RT Filepointers_Q3 Week1,RT Run
+Q4 Week1 DA,Q4 Week1 RT,RT Filepointers_Q4 Week1,RT Run

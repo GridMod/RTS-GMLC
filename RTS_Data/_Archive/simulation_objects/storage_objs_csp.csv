@@ -1,0 +1,8 @@
+/ BEGIN,Objects,,,
+class,name,category, , 
+Storage,CSP_Storage_212_csp,CSP Storage,,
+/ END,Objects,,,
+/ BEGIN,Memberships,,,
+parent_class,child_class,collection,parent_object,child_object
+Generator,Storage,Head Storage,212_csp,CSP_Storage_212_csp
+/ END,Memberships,,,

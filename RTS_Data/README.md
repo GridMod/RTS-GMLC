@@ -1,1 +1,7 @@
-# TODO: Complete descriptions of each file and folder contents, including column names, and data and format descriptions.
+# RTS-Data
+
+`SourceData` contains all RTS-GMLC data in accessable CSV format.
+
+`FormattedData` contains tool specific formatted input datasets, scripts to convert from `SourceData`, and example problem solutions.
+
+
