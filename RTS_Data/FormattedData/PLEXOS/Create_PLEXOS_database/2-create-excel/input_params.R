@@ -73,8 +73,6 @@ object.property.list <- list(
     # generator properties
     list("gen.outages.csv", 
          list(scenario.name = "Gen Outages")),
-    list("gen.mingen.rtpv0.csv",
-         list(scenario.name = "No RTPV MinGen")),
     list("gen.cost.data.csv",
          list(band.col = "Band")),    
     list("gen.mingen.csv"),
