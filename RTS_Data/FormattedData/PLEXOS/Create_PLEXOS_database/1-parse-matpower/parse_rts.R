@@ -68,9 +68,28 @@ all.tabs = c(all.tabs,"gen.startshut")
 generator.data = src.gen[,.(Generator = `GEN UID`, `Max Capacity` = `PMax MW`, Node = `Bus ID`, Units = 1)]
 all.tabs = c(all.tabs,"generator.data")
 
-# tx line data
+# tx AC line data
 line.data = src.branch[,.(Line = ID, `Node From` = `From Bus`, `Node To` = `To Bus`, Resistance = R, Reactance = X,
               `Max Flow` = `Cont Rating`, rateA = `LTE Rating`, rateB = `STE Rating`, rateC = `STE Rating`, Units = 1, `Min Flow` = `Cont Rating` * -1)]
+
+# tx DC line data
+dc.max.flow = as.numeric(src.dc_branch[Variable == 'Power demand (MW):',Value])
+dc.nodes = unique(src.dc_branch[grepl('Converter bus',Filter),Filter])
+dc.node.from = as.numeric(strsplit(dc.nodes[1],'=')[[1]][2])
+dc.node.to = as.numeric(strsplit(dc.nodes[2],'=')[[1]][2])
+
+dc.line.data = data.table(Line = paste0(dc.node.from,'_',dc.node.to,'_1'),
+                          `Node From`=dc.node.from,`Node To`=dc.node.to,
+                          Resistance = 0,Reactance = NA,
+                          `Max Flow`=dc.max.flow,
+                          rateA=dc.max.flow, rateB=dc.max.flow, rateC=dc.max.flow,
+                          Units=1,
+                          `Min Flow`=-1*dc.max.flow)
+
+rm(dc.max.flow,dc.nodes,dc.node.from,dc.node.to)
+
+line.data = rbind(line.data,dc.line.data,fill=TRUE)
+
 all.tabs = c(all.tabs,"line.data")
 
 # node data
