@@ -1,0 +1,22 @@
+Generator category,Fuel,Start Fuel,Region,scenario,total.cap.x.units,avg.capacity,total.capacity,min.capacity,max.capacity,sd.capacity,avg.units,total.units,min.units,max.units,sd.units
+Coal,Coal,NA,1,No scenario,1119,139.875,1119,76,350,93.4718253959831,1,8,1,1,0
+Hydro,Hydro,NA,1,No scenario,300,50,300,50,50,0,1,6,1,1,0
+NG,NG,NA,1,No scenario,1095,121.666666666667,1095,55,355,132.28756555323,1,9,1,1,0
+Nuclear,Nuclear,NA,1,No scenario,400,400,400,400,400,NA,1,1,1,1,NA
+Oil,Oil,NA,1,No scenario,104,17.3333333333333,104,12,20,4.13118223595458,1,6,1,1,0
+Solar,Solar,NA,1,No scenario,498.1,24.905,498.1,4.5,93.6,23.2183338402175,1,20,1,1,0
+Sync_Cond,Sync_Cond,NA,1,No scenario,0,0,0,0,0,NA,1,1,1,1,NA
+Wind,Wind,NA,1,No scenario,713.5,713.5,713.5,713.5,713.5,NA,1,1,1,1,NA
+Coal,Coal,NA,2,No scenario,1043,149,1043,76,350,97.0360757656656,1,7,1,1,0
+Hydro,Hydro,NA,2,No scenario,500,50,500,50,50,0,1,10,1,1,0
+NG,NG,NA,2,No scenario,1560,130,1560,55,355,135.680105059994,1,12,1,1,0
+Oil,Oil,NA,2,No scenario,80,20,80,20,20,0,1,4,1,1,0
+Solar,Solar,NA,2,No scenario,338.3,112.766666666667,338.3,13.2,200,94.008740728367,1,3,1,1,0
+Sync_Cond,Sync_Cond,NA,2,No scenario,0,0,0,0,0,NA,1,1,1,1,NA
+Coal,Coal,NA,3,No scenario,155,155,155,155,155,NA,1,1,1,1,NA
+Hydro,Hydro,NA,3,No scenario,200,50,200,50,50,0,1,4,1,1,0
+NG,NG,NA,3,No scenario,2380,148.75,2380,55,355,143.614066163451,1,16,1,1,0
+Oil,Oil,NA,3,No scenario,140,15.5555555555556,140,12,20,4.21637021355784,1,9,1,1,0
+Solar,Solar,NA,3,No scenario,2079.5,61.1617647058824,2079.5,9.4,188.2,32.6857768595555,1,34,1,1,0
+Sync_Cond,Sync_Cond,NA,3,No scenario,0,0,0,0,0,NA,1,1,1,1,NA
+Wind,Wind,NA,3,No scenario,1794.4,598.133333333333,1794.4,148.3,847,390.302604825196,1,3,1,1,0

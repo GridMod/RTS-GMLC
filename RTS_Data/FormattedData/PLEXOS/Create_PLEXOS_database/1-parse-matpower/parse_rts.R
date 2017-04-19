@@ -51,7 +51,7 @@ gen.minupdown = gen.minupdown[!(`Min Down Time` == 0 & `Min Up Time` == 0),]
 all.tabs = c(all.tabs,"gen.minupdown")
 
 # outage rates
-gen.outages = src.gen[,.(Generator = `GEN UID`,`Forced Outage Rate` = FOR, `Mean Time to Repair` = `MTTR Hr` )]
+gen.outages = src.gen[,.(Generator = `GEN UID`,`Forced Outage Rate` = 100*FOR, `Mean Time to Repair` = `MTTR Hr` )]
 gen.outages = gen.outages[!(`Forced Outage Rate` == 0 & `Mean Time to Repair` == 0),]
 all.tabs = c(all.tabs,"gen.outages")
 
