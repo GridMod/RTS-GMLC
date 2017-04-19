@@ -123,7 +123,7 @@ eligible.gens = melt(eligible.gens,id.vars = 'Reserve Product',value.name = 'Ele
 
 direction = data.frame(row.names = c('Up','Down'),value = c(1,2))
 reserve.data = src.reserves[,.(Reserve = `Reserve Product`,
-                               `Is Enabled` = 1,
+                               `Is Enabled` = -1,
                                Type = direction[gsub('.*_(.*)','\\1',`Reserve Product`),'value'], 
                                Scenario = paste0('Add ',`Reserve Product`),
                                Timeframe = `Timeframe (sec)`,
