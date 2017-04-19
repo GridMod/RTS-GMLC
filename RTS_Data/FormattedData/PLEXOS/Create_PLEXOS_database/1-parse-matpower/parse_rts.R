@@ -144,7 +144,7 @@ gen.vg.rt.fixed = src.timeseries_pointers[( grepl('hydro',Object,ignore.case = T
 gen.da.vg = src.timeseries_pointers[( grepl('wind',Object,ignore.case = T) | grepl('_pv',Object,ignore.case = T) | grepl('csp',Object,ignore.case = T) ) & Simulation == 'DAY_AHEAD' & Parameter == 'PMax MW',.(Generator = Object, Rating = paste0('../',`Data File`))]
 gen.rt.vg = src.timeseries_pointers[( grepl('wind',Object,ignore.case = T) | grepl('_pv',Object,ignore.case = T) | grepl('csp',Object,ignore.case = T) ) & Simulation == 'REAL_TIME' & Parameter == 'PMax MW',.(Generator = Object, Rating = paste0('../',`Data File`))]
 
-storage.csp = src.timeseries_pointers[grepl('csp',Object,ignore.case = T) & Simulation == 'DAY_AHEAD' & Parameter == 'Natural_Inflow',.(Generator = Object, `Natural Inflow` = paste0('../',`Data File`))]
+storage.csp = src.timeseries_pointers[grepl('csp',Object,ignore.case = T) & Simulation == 'DAY_AHEAD' & Parameter == 'Natural_Inflow',.(Storage = Object, `Natural Inflow` = paste0('../',`Data File`))]
 
 all.tabs = c(all.tabs,"gen.vg.da.fixed","gen.vg.rt.fixed","gen.da.vg","gen.rt.vg","storage.csp")
 
