@@ -20,7 +20,7 @@ inputfiles.dir <- '../1-parse-matpower/outputs'
 input.params <- 'input_params.R'
 
 # name of output workbook
-output.wb.name <- "../rts_PLEXOS.xlsx"
+output.wb.name <- "../rts_PLEXOS_4_12.xlsx"
 
 # check data and save summary plots
 data.check.plots <- TRUE
@@ -42,7 +42,7 @@ if (interactive()) {
   if(inherits(t, "try-error")) {
     warning("Make sure you are in the PSSE2PLEXOS submodule path")
   } else {
-    script.dir = dirname(sys.frame(1)$ofile)
+    script.dir = dirname(parent.frame(2)$ofile)
     setwd(script.dir)
   }
 } else {
