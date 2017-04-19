@@ -139,15 +139,15 @@ region.load.rt = data.table(unique(src.bus[,.(Region = Area)]), src.timeseries_p
 all.tabs = c(all.tabs,"region.load.da","region.load.rt" )
 
 # VG
-gen.vg.da.fixed = src.timeseries_pointers[( grepl('hydro',Object,ignore.case = T) | grepl('rtpv',Object,ignore.case = T) ) & Simulation == 'DAY_AHEAD' & Parameter == 'PMax MW',.(Generator = Object, `Fixed Load` = paste0('../',`Data File`))]
-gen.vg.rt.fixed = src.timeseries_pointers[( grepl('hydro',Object,ignore.case = T) | grepl('rtpv',Object,ignore.case = T) ) & Simulation == 'REAL_TIME' & Parameter == 'PMax MW',.(Generator = Object, `Fixed Load` = paste0('../',`Data File`))]
+gen.da.vg.fixed = src.timeseries_pointers[( grepl('hydro',Object,ignore.case = T) | grepl('rtpv',Object,ignore.case = T) ) & Simulation == 'DAY_AHEAD' & Parameter == 'PMax MW',.(Generator = Object, `Fixed Load` = paste0('../',`Data File`))]
+gen.rt.vg.fixed = src.timeseries_pointers[( grepl('hydro',Object,ignore.case = T) | grepl('rtpv',Object,ignore.case = T) ) & Simulation == 'REAL_TIME' & Parameter == 'PMax MW',.(Generator = Object, `Fixed Load` = paste0('../',`Data File`))]
 
 gen.da.vg = src.timeseries_pointers[( grepl('wind',Object,ignore.case = T) | grepl('_pv',Object,ignore.case = T) | grepl('csp',Object,ignore.case = T) ) & Simulation == 'DAY_AHEAD' & Parameter == 'PMax MW',.(Generator = Object, Rating = paste0('../',`Data File`))]
 gen.rt.vg = src.timeseries_pointers[( grepl('wind',Object,ignore.case = T) | grepl('_pv',Object,ignore.case = T) | grepl('csp',Object,ignore.case = T) ) & Simulation == 'REAL_TIME' & Parameter == 'PMax MW',.(Generator = Object, Rating = paste0('../',`Data File`))]
 
 storage.csp = src.timeseries_pointers[grepl('csp',Object,ignore.case = T) & Simulation == 'DAY_AHEAD' & Parameter == 'Natural_Inflow',.(Storage = Object, `Natural Inflow` = paste0('../',`Data File`))]
 
-all.tabs = c(all.tabs,"gen.vg.da.fixed","gen.vg.rt.fixed","gen.da.vg","gen.rt.vg","storage.csp")
+all.tabs = c(all.tabs,"gen.da.vg.fixed","gen.rt.vg.fixed","gen.da.vg","gen.rt.vg","storage.csp")
 
 # CSP Storage
 storage.props = src.storage[,.(Storage = paste(Storage,'Storage',`GEN UID`,sep='_'),`Max Volume`= `Max Volume GWh`,`Decomposition Method` = 0, `End Effects Method` = 1, `Spill Penalty` = 0, `Max Spill` = 1e+30)]
