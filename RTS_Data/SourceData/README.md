@@ -78,14 +78,14 @@ This folder contains six CSV files wit all RTS-GMLC (non-timeseries) data and pr
 | Output_pct_1             | Output point 1 on heat rate curve as a percentage of PMax        |
 | Output_pct_2             | Output point 2 on heat rate curve as a percentage of PMax        |
 | Output_pct_3             | Output point 3 on heat rate curve as a percentage of PMax        |
-| Inc_Heat_Rate_0          | Incremental heat rate between output points 0 and 1 in MMBTU/MWh |
-| Inc_Heat_Rate_1          | Incremental heat rate between output points 1 and 2 in MMBTU/MWh |
-| Inc_Heat_Rate_2          | Incremental heat rate between output points 2 and 3 in MMBTU/MWh |
-| Inc_Heat_Rate_3          | Incremental heat rate above output point 3 in MMBTU/MWh          |
-| Net_Heat_Rate_0          | Net heat rate at output point 0 in MMBTU/MWh                     |
-| Net_Heat_Rate_1          | Net heat rate at output point 1 in MMBTU/MWh                     |
-| Net_Heat_Rate_2          | Net heat rate at output point 2 in MMBTU/MWh                     |
-| Net_Heat_Rate_3          | Net heat rate at output point 3 in MMBTU/MWh                     |
+| Inc_Heat_Rate_0          | Incremental heat rate between output points 0 and 1 in BTU/kWh   |
+| Inc_Heat_Rate_1          | Incremental heat rate between output points 1 and 2 in BTU/kWh   |
+| Inc_Heat_Rate_2          | Incremental heat rate between output points 2 and 3 in BTU/kWh   |
+| Inc_Heat_Rate_3          | Incremental heat rate above output point 3 in BTU/kWh            |
+| Net_Heat_Rate_0          | Net heat rate at output point 0 in BTU/kWh                       |
+| Net_Heat_Rate_1          | Net heat rate at output point 1 in BTU/kWh                       |
+| Net_Heat_Rate_2          | Net heat rate at output point 2 in BTU/kWh                       |
+| Net_Heat_Rate_3          | Net heat rate at output point 3 in BTU/kWh                       |
 | Fuel Sulfur Content %    | Fuel Sulfur Content                                              |
 | Emissions SO2 Lbs/MMBTU  | SO2 Emissions Rate                                               |
 | Emissions NOX Lbs/MMBTU  | NOX Emissions Rate                                               |
