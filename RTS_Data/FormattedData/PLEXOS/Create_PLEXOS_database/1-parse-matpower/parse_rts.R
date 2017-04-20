@@ -33,12 +33,20 @@ all.tabs = c(all.tabs,"gen.fuel")
 
 # Gen Cost Data
 hr.traunches = tstrsplit(names(src.gen)[grep('Output_pct',names(src.gen))],'_')[[3]]
-gen.cost.data = src.gen[,.SD,.SDcols = c('GEN UID',paste0('Net_Heat_Rate_',hr.traunches),paste0('Output_pct_',hr.traunches)) ]
-gen.cost.data = melt(gen.cost.data,id.vars = 'GEN UID')
+gen.cost.data = src.gen[,.SD,.SDcols = c('GEN UID','PMax MW',paste0('Net_Heat_Rate_',hr.traunches),paste0('Output_pct_',hr.traunches)) ]
+gen.cost.data = melt(gen.cost.data,id.vars = c('GEN UID','PMax MW'))
 gen.cost.data[,Band:= gsub('.*_([0-9]+).*','\\1',variable)]
+
+  # make sure bands start at 1
+  if(min(as.numeric(gen.cost.data[,Band]))==0){
+      gen.cost.data[,Band:=as.numeric(Band)+1]
+  }
+
 gen.cost.data[,variable:= gsub('(.*)_[0-9]+.*','\\1',variable)]
-gen.cost.data = dcast.data.table(gen.cost.data, `GEN UID`+Band~variable)
-names(gen.cost.data) = c('Generator','Band','Heat Rate','Load Point')
+gen.cost.data = dcast.data.table(gen.cost.data, `GEN UID`+`PMax MW`+Band~variable)
+names(gen.cost.data) = c('Generator','Max Capacity', 'Band','Heat Rate','Load Point')
+gen.cost.data[,`Load Point`:=`Load Point`*`Max Capacity`]
+gen.cost.data[,`Max Capacity`:=NULL]
 all.tabs = c(all.tabs,"gen.cost.data")
 
 # Min Gen
@@ -51,7 +59,7 @@ gen.minupdown = gen.minupdown[!(`Min Down Time` == 0 & `Min Up Time` == 0),]
 all.tabs = c(all.tabs,"gen.minupdown")
 
 # outage rates
-gen.outages = src.gen[,.(Generator = `GEN UID`,`Forced Outage Rate` = FOR, `Mean Time to Repair` = `MTTR Hr` )]
+gen.outages = src.gen[,.(Generator = `GEN UID`,`Forced Outage Rate` = 100*FOR, `Mean Time to Repair` = `MTTR Hr` )]
 gen.outages = gen.outages[!(`Forced Outage Rate` == 0 & `Mean Time to Repair` == 0),]
 all.tabs = c(all.tabs,"gen.outages")
 
@@ -115,7 +123,7 @@ eligible.gens = melt(eligible.gens,id.vars = 'Reserve Product',value.name = 'Ele
 
 direction = data.frame(row.names = c('Up','Down'),value = c(1,2))
 reserve.data = src.reserves[,.(Reserve = `Reserve Product`,
-                               `Is Enabled` = 1,
+                               `Is Enabled` = -1,
                                Type = direction[gsub('.*_(.*)','\\1',`Reserve Product`),'value'], 
                                Scenario = paste0('Add ',`Reserve Product`),
                                Timeframe = `Timeframe (sec)`,

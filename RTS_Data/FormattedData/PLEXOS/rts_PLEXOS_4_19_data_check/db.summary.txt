@@ -1,0 +1,67 @@
+**Database Summary Report**
+--------------------------- 
+
+
+Summary of database components
+------------
+
+Number of objects of each type:
+ Object class # objects
+       Region         3
+         Node        73
+    Generator       157
+         Zone         6
+         Line       121
+     Scenario        12
+      Storage         1
+         Fuel         8
+      Horizon         2
+        Model         2
+       Report         2
+      Reserve         5
+    Data File         3
+   Production         3
+  ST Schedule         2
+ Transmission         2
+  Performance         3
+
+Number of nodes in each region and/or zone:
+        Region/Zone # nodes
+ Region           1      24
+ Region           2      24
+ Region           3      25
+   Zone          11      12
+   Zone          12      12
+   Zone          21      12
+   Zone          22      12
+   Zone          31      12
+   Zone          32      13
+
+
+Summary of generators in database
+------------
+
+To see this information by region, see ../../rts_PLEXOS_4_19_data_check/generator.summary.by.fuel.region.csv
+
+ Generator category      Fuel Start Fuel    scenario total.cap.x.units avg.capacity total.capacity min.capacity max.capacity sd.capacity avg.units total.units min.units max.units sd.units
+               Coal      Coal         NA No scenario            2317.0    144.81250         2317.0         76.0          350   88.722954         1          16         1         1        0
+              Hydro     Hydro         NA No scenario            1000.0     50.00000         1000.0         50.0           50    0.000000         1          20         1         1        0
+                 NG        NG         NA No scenario            5035.0    136.08108         5035.0         55.0          355  135.067551         1          37         1         1        0
+            Nuclear   Nuclear         NA No scenario             400.0    400.00000          400.0        400.0          400          NA         1           1         1         1       NA
+                Oil       Oil         NA No scenario             324.0     17.05263          324.0         12.0           20    3.964757         1          19         1         1        0
+              Solar     Solar         NA No scenario            2915.9     51.15614         2915.9          4.5          200   40.476567         1          57         1         1        0
+          Sync_Cond Sync_Cond         NA No scenario               0.0      0.00000            0.0          0.0            0    0.000000         1           3         1         1        0
+               Wind      Wind         NA No scenario            2507.9    626.97500         2507.9        148.3          847  323.859202         1           4         1         1        0
+
+
+Summary of connected components in network of the database.
+------------
+
+This analysis is done on the base network - scenarios on Lines/Transformers are ignored.
+List of nodes that belong to islands saved in ../../rts_PLEXOS_4_19_data_check/isolated.nodes.csv
+Islands are any groups of nodes not connected to the largest connected component.
+
+ Component size Nodes in 'Remove Isolated Nodes' scenario
+             73                                         0
+
+
