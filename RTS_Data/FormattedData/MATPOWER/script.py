@@ -179,7 +179,7 @@ mpc.gencost = [''')
 
         for i, g in _generators.iterrows():
             gen['model'] = 1
-            gen['startup'] = ((g['Start Heat Cold MBTU'] * g['Fuel Price $/MMBTU']) + g['Non Fuel Start Cost $'] if not np.isnan(g['Start Heat Cold MBTU'] * g['Fuel Price $/MMBTU']) else 0.0) 
+            gen['startup'] = ((g['Start Heat Cold MBTU'] * g['Fuel Price $/MMBTU']) + g['Non Fuel Start Cost $'] if not np.isnan((g['Start Heat Cold MBTU'] * g['Fuel Price $/MMBTU']) +g['Non Fuel Start Cost $']) else 0.0) 
             gen['shutdown'] = (g['Start Heat Cold MBTU'] * g['Fuel Price $/MMBTU'] if not np.isnan(g['Start Heat Cold MBTU'] * g['Fuel Price $/MMBTU']) else 0.0)
             gen['cost'] = list()
             gen['cost'] = g['io_cost']
