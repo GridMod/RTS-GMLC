@@ -47,6 +47,7 @@ gen.cost.data = dcast.data.table(gen.cost.data, `GEN UID`+`PMax MW`+Band~variabl
 names(gen.cost.data) = c('Generator','Max Capacity', 'Band','Heat Rate','Load Point')
 gen.cost.data[,`Load Point`:=`Load Point`*`Max Capacity`]
 gen.cost.data[,`Max Capacity`:=NULL]
+gen.cost.data[grepl('HYDRO',Generator),c('Heat Rate','Load Point'):=0]
 all.tabs = c(all.tabs,"gen.cost.data")
 
 # Min Gen
