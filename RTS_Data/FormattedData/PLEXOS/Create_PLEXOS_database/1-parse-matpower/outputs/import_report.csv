@@ -179,4 +179,5 @@ Default Report_flatFiles,System,Reserve,Reserves,Shortage,4,TRUE,TRUE,FALSE,FALS
 Default Report_flatFiles,System,Reserve,Reserves,Price,4,TRUE,TRUE,FALSE,FALSE
 Default Report_flatFiles,System,Interface,Interfaces,Flow,4,TRUE,TRUE,FALSE,FALSE
 Default Report_flatFiles,Reserve,Generator,Generators,Provision,4,TRUE,TRUE,FALSE,FALSE
+Default Report_flatFiles,System,Node,Nodes,Generation,4,TRUE,TRUE,FALSE,FALSE
 / END,Reports,,,,,,,,

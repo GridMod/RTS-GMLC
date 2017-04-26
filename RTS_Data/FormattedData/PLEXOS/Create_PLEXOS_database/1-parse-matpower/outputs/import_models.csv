@@ -1,23 +1,23 @@
-names,DAY_AHEAD,REAL_TIME
-category,,
-/START ATTRIBUTES,,
-Random Number Seed,10,10
-/START MEMBERSHIPS,,
-Horizon,DAY_AHEAD,REAL_TIME
-Transmission,Tx - All lines,Tx - All lines
-PASA,,
-ST Schedule,ST Nodal,ST Nodal
-MT Schedule,,
-Production,Production MIP,Production MIP
-Performance,Xpress-MP 0.1 MIP,Xpress-MP 0.1 MIP
-Report,Default Report_flatFiles,Default Report
-Diagnostic,,
-/START SCENARIOS,,
-,Load: DA,Load: RT
-,RE: DA,RE: RT
-,Gen Outages,Gen Outages
-,Add Flex_Down,Add Reg_Down
-,Add Flex_Up,Add Reg_Up
-,Add Reg_Down,Add Spin_Up
-,Add Reg_Up,
-,Add Spin_Up,
+names,DAY_AHEAD,REAL_TIME,GD A
+category,,,GeoDecomp_A
+/START ATTRIBUTES,,,
+Random Number Seed,10,10,10
+/START MEMBERSHIPS,,,
+Horizon,DAY_AHEAD,REAL_TIME,DAY_AHEAD
+Transmission,Tx - All lines,Tx - All lines,Tx - All lines
+PASA,,,
+ST Schedule,ST Nodal,ST Nodal,ST Nodal
+MT Schedule,,,
+Production,Production MIP,Production MIP,Production LP
+Performance,Xpress-MP 0.1 MIP,Xpress-MP 0.1 MIP,Xpress-MP 0.1 MIP
+Report,Default Report_flatFiles,Default Report,Default Report_flatFiles
+Diagnostic,,,
+/START SCENARIOS,,,
+,Load: DA,Load: RT,Load: DA
+,RE: DA,RE: RT,RE: DA
+,Gen Outages,Gen Outages,Gen Outages
+,Add Flex_Down,Add Reg_Down,Add Flex_Down
+,Add Flex_Up,Add Reg_Up,Add Flex_Up
+,Add Reg_Down,Add Spin_Up,Add Reg_Down
+,Add Reg_Up,,Add Reg_Up
+,Add Spin_Up,,Add Spin_Up
