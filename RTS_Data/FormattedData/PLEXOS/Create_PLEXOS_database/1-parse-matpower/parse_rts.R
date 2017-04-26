@@ -70,7 +70,7 @@ gen.ramps = gen.ramps[!(`Max Ramp Up` == 0 & `Max Ramp Down` == 0),]
 all.tabs = c(all.tabs,"gen.ramps")
 
 # UC costs
-gen.startshut = src.gen[,.(Generator = `GEN UID`,`Start Cost` = `Start Heat Cold MBTU` * `Fuel Price $/MMBTU` , `Shutdown Cost` = `Start Heat Cold MBTU` * `Fuel Price $/MMBTU` )]
+gen.startshut = src.gen[,.(Generator = `GEN UID`,`Start Cost` = (`Start Heat Cold MBTU` * `Fuel Price $/MMBTU`) + `Non Fuel Start Cost $` , `Shutdown Cost` = `Start Heat Cold MBTU` * `Fuel Price $/MMBTU` )]
 gen.startshut = gen.startshut[!(`Start Cost` == 0 &  `Shutdown Cost` == 0),]
 all.tabs = c(all.tabs,"gen.startshut")
 
