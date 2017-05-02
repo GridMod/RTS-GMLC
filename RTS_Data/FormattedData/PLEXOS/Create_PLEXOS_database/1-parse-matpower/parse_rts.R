@@ -26,6 +26,7 @@ all.tabs <- c()
 
 # Fuel Prices
 fuel.price = unique(src.gen[,.(Fuel, Price = `Fuel Price $/MMBTU`)])
+fuel.price = fuel.price[Fuel!="None"]
 all.tabs = c(all.tabs,"fuel.price")
 
 gen.fuel = src.gen[,.(Generator = `GEN UID`, Fuel)]
@@ -68,6 +69,11 @@ all.tabs = c(all.tabs,"gen.outages")
 gen.ramps = src.gen[,.(Generator = `GEN UID`,`Max Ramp Up` = `Ramp Rate MW/Min`, `Max Ramp Down` = `Ramp Rate MW/Min` )]
 gen.ramps = gen.ramps[!(`Max Ramp Up` == 0 & `Max Ramp Down` == 0),]
 all.tabs = c(all.tabs,"gen.ramps")
+
+# pump characteristics
+gen.pumps = src.gen[,.(Generator = `GEN UID`, `Pump Load` = `Pump Load MW`,`Pump Efficiency` = `Storage Roundtrip Efficiency` )]
+gen.pumps = gen.pumps[!(`Pump Load` == 0 & `Pump Efficiency` == 0),]
+all.tabs = c(all.tabs,"gen.pumps")
 
 # UC costs
 gen.startshut = src.gen[,.(Generator = `GEN UID`,`Start Cost` = (`Start Heat Cold MBTU` * `Fuel Price $/MMBTU`) + `Non Fuel Start Cost $` , `Shutdown Cost` = `Start Heat Cold MBTU` * `Fuel Price $/MMBTU` )]
@@ -159,8 +165,8 @@ storage.csp = src.timeseries_pointers[grepl('csp',Object,ignore.case = T) & Simu
 all.tabs = c(all.tabs,"gen.da.vg.fixed","gen.rt.vg.fixed","gen.da.vg","gen.rt.vg","storage.csp")
 
 # CSP Storage
-storage.props = src.storage[,.(Storage = paste(Storage,'Storage',`GEN UID`,sep='_'),`Max Volume`= `Max Volume GWh`,`Decomposition Method` = 0, `End Effects Method` = 1, `Spill Penalty` = 0, `Max Spill` = 1e+30)]
-storage.props.rt = src.storage[,.(Storage = paste(Storage,'Storage',`GEN UID`,sep='_'),`Enforce Bounds`= 0)]
+storage.props = src.storage[,.(Storage = `Storage`,`Max Volume`= `Max Volume GWh`,`Initial Volume` = `Initial Volume GWh`,`Decomposition Method` = 0, `End Effects Method` = 1, `Spill Penalty` = 0, `Max Spill` = 1e+30)]
+storage.props.rt = src.storage[,.(Storage = `Storage`,`Enforce Bounds`= 0)]
 
 all.tabs = c(all.tabs, "storage.props","storage.props.rt")
 
