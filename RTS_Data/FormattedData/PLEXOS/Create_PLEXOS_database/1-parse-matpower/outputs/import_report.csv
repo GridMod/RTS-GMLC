@@ -72,7 +72,6 @@ Default Report,System,Zone,Zones,Load,4,TRUE,TRUE,FALSE,FALSE
 Default Report,System,Zone,Zones,Generation,4,TRUE,TRUE,FALSE,FALSE
 Default Report,System,Zone,Zones,Imports,4,TRUE,TRUE,FALSE,FALSE
 Default Report,System,Zone,Zones,Exports,4,TRUE,TRUE,FALSE,FALSE
-Default Report,System,Zone,Zones,Unserved Energy,4,TRUE,TRUE,FALSE,FALSE
 Default Report,System,Zone,Zones,Net Interchange,4,TRUE,TRUE,FALSE,FALSE
 Default Report,System,Zone,Zones,Unserved Energy,4,TRUE,TRUE,FALSE,FALSE
 Default Report,System,Zone,Zones,Dump Energy,4,TRUE,TRUE,FALSE,FALSE
@@ -154,7 +153,6 @@ Default Report_flatFiles,System,Zone,Zones,Load,4,TRUE,TRUE,FALSE,FALSE
 Default Report_flatFiles,System,Zone,Zones,Generation,4,TRUE,TRUE,FALSE,FALSE
 Default Report_flatFiles,System,Zone,Zones,Imports,4,TRUE,TRUE,FALSE,FALSE
 Default Report_flatFiles,System,Zone,Zones,Exports,4,TRUE,TRUE,FALSE,FALSE
-Default Report_flatFiles,System,Zone,Zones,Unserved Energy,4,TRUE,TRUE,FALSE,FALSE
 Default Report_flatFiles,System,Zone,Zones,Net Interchange,4,TRUE,TRUE,FALSE,FALSE
 Default Report_flatFiles,System,Zone,Zones,Unserved Energy,4,TRUE,TRUE,FALSE,FALSE
 Default Report_flatFiles,System,Zone,Zones,Dump Energy,4,TRUE,TRUE,FALSE,FALSE
