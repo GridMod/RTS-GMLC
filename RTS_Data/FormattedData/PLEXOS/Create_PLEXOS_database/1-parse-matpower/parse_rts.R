@@ -26,10 +26,11 @@ all.tabs <- c()
 
 # Fuel Prices
 fuel.price = unique(src.gen[,.(Fuel, Price = `Fuel Price $/MMBTU`)])
-fuel.price = fuel.price[Fuel!="None"]
+fuel.price = fuel.price[!is.na(Fuel)]
 all.tabs = c(all.tabs,"fuel.price")
 
 gen.fuel = src.gen[,.(Generator = `GEN UID`, Fuel)]
+gen.fuel = gen.fuel[!is.na(Fuel)]
 all.tabs = c(all.tabs,"gen.fuel")
 
 # Gen Cost Data
@@ -121,12 +122,12 @@ region.refnode.data = src.bus[`Bus Type`=='Ref',.(Region = Area, `Region.Referen
 all.tabs = c(all.tabs,"region.refnode.data")
 
 # Reserve DAta
-eligible.gens = src.reserves[,.(`Reserve Product`,`Elegible Gen Types`)]
+eligible.gens = src.reserves[,.(`Reserve Product`,`Elegible Gen Categories`)]
 
-eligible.gens[,`Elegible Gen Types` := gsub("\\(",'',`Elegible Gen Types`)]
-eligible.gens[,`Elegible Gen Types` := gsub("\\)",'',`Elegible Gen Types`)]
-eligible.gens = cbind(eligible.gens, setDT(tstrsplit(eligible.gens$`Elegible Gen Types`,",")))[,`Elegible Gen Types`:=NULL]
-eligible.gens = melt(eligible.gens,id.vars = 'Reserve Product',value.name = 'Elegible Gen Types')[,variable:=NULL]
+eligible.gens[,`Elegible Gen Categories` := gsub("\\(",'',`Elegible Gen Categories`)]
+eligible.gens[,`Elegible Gen Categories` := gsub("\\)",'',`Elegible Gen Categories`)]
+eligible.gens = cbind(eligible.gens, setDT(tstrsplit(eligible.gens$`Elegible Gen Categories`,",")))[,`Elegible Gen Categories`:=NULL]
+eligible.gens = melt(eligible.gens,id.vars = 'Reserve Product',value.name = 'Elegible Gen Categories')[,variable:=NULL]
 
 direction = data.frame(row.names = c('Up','Down'),value = c(1,2))
 reserve.data = src.reserves[,.(Reserve = `Reserve Product`,
@@ -137,9 +138,9 @@ reserve.data = src.reserves[,.(Reserve = `Reserve Product`,
                                VoRS = 4000,
                                `Mutually Exclusive` = 1)]
 
-reserve.generators = merge(eligible.gens[,.(Reserve = `Reserve Product`,`Unit Type` = `Elegible Gen Types`)],
-                           src.gen[,.(Generator = `GEN UID`,`Unit Type`)],by = "Unit Type",
-                           allow.cartesian = T)[,`Unit Type`:= NULL]
+reserve.generators = merge(eligible.gens[,.(Reserve = `Reserve Product`,`Category` = `Elegible Gen Categories`)],
+                           src.gen[,.(Generator = `GEN UID`,`Category`)],by = "Category",
+                           allow.cartesian = T)[,`Category`:= NULL]
 
 reserve.provisions = src.timeseries_pointers[Simulation=='DAY_AHEAD' & Object %in% unique(src.reserves$`Reserve Product`),
                         .(Reserve = Object,`Min Provision` = paste0('../',`Data File`))]
