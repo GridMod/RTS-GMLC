@@ -29,10 +29,6 @@ fuel.price = unique(src.gen[,.(Fuel, Price = `Fuel Price $/MMBTU`)])
 fuel.price = fuel.price[!is.na(Fuel)]
 all.tabs = c(all.tabs,"fuel.price")
 
-gen.fuel = src.gen[,.(Generator = `GEN UID`, Fuel)]
-gen.fuel = gen.fuel[!is.na(Fuel)]
-all.tabs = c(all.tabs,"gen.fuel")
-
 # Gen Cost Data
 hr.traunches = tstrsplit(names(src.gen)[grep('Output_pct',names(src.gen))],'_')[[3]]
 gen.cost.data = src.gen[,.SD,.SDcols = c('GEN UID','PMax MW',paste0('Net_Heat_Rate_',hr.traunches),paste0('Output_pct_',hr.traunches)) ]
@@ -52,37 +48,28 @@ gen.cost.data[,`Max Capacity`:=NULL]
 gen.cost.data[grepl('HYDRO',Generator),c('Heat Rate','Load Point'):=0]
 all.tabs = c(all.tabs,"gen.cost.data")
 
-# Min Gen
-gen.mingen = src.gen[,.(Generator = `GEN UID`, `Min Stable Level` = `PMin MW`)]
-all.tabs = c(all.tabs,"gen.mingen")
-
-# Min up down times
-gen.minupdown = src.gen[,.(Generator = `GEN UID`, `Min Down Time` = `Min Down Time Hr`,`Min Up Time` = `Min Up Time Hr`)]
-gen.minupdown = gen.minupdown[!(`Min Down Time` == 0 & `Min Up Time` == 0),]
-all.tabs = c(all.tabs,"gen.minupdown")
-
 # outage rates
 gen.outages = src.gen[,.(Generator = `GEN UID`,`Forced Outage Rate` = 100*FOR, `Mean Time to Repair` = `MTTR Hr` )]
 gen.outages = gen.outages[!(`Forced Outage Rate` == 0 & `Mean Time to Repair` == 0),]
 all.tabs = c(all.tabs,"gen.outages")
 
-# ramp rates
-gen.ramps = src.gen[,.(Generator = `GEN UID`,`Max Ramp Up` = `Ramp Rate MW/Min`, `Max Ramp Down` = `Ramp Rate MW/Min` )]
-gen.ramps = gen.ramps[!(`Max Ramp Up` == 0 & `Max Ramp Down` == 0),]
-all.tabs = c(all.tabs,"gen.ramps")
-
-# pump characteristics
-gen.pumps = src.gen[,.(Generator = `GEN UID`, `Pump Load` = `Pump Load MW`,`Pump Efficiency` = `Storage Roundtrip Efficiency` )]
-gen.pumps = gen.pumps[!(`Pump Load` == 0 & `Pump Efficiency` == 0),]
-all.tabs = c(all.tabs,"gen.pumps")
-
-# UC costs
-gen.startshut = src.gen[,.(Generator = `GEN UID`,`Start Cost` = (`Start Heat Cold MBTU` * `Fuel Price $/MMBTU`) + `Non Fuel Start Cost $` , `Shutdown Cost` = `Start Heat Cold MBTU` * `Fuel Price $/MMBTU` )]
-gen.startshut = gen.startshut[!(`Start Cost` == 0 &  `Shutdown Cost` == 0),]
-all.tabs = c(all.tabs,"gen.startshut")
-
-#  Gen Data
-generator.data = src.gen[,.(Generator = `GEN UID`, `Max Capacity` = `PMax MW`, Node = `Bus ID`, Units = 1)]
+# generator parameters
+generator.data = src.gen[,.(Generator = `GEN UID`,
+                            Category = Category,
+                            Nodes_Node = `Bus ID`,
+                            Fuels_Fuel = Fuel,
+                            `Max Capacity` = `PMax MW`,
+                            Units = 1,
+                            `Shutdown Cost` = `Start Heat Cold MBTU` * `Fuel Price $/MMBTU` ,
+                            `Start Cost` = (`Start Heat Cold MBTU` * `Fuel Price $/MMBTU`) + `Non Fuel Start Cost $` ,
+                            `Max Ramp Up` = ifelse(`Ramp Rate MW/Min` == 0, NA,`Ramp Rate MW/Min`),
+                            `Max Ramp Down` = ifelse(`Ramp Rate MW/Min` == 0, NA,`Ramp Rate MW/Min`),
+                            `Pump Load` = ifelse(`Pump Load MW` == 0, NA, `Pump Load MW`),
+                            `Pump Efficiency` = ifelse(`Storage Roundtrip Efficiency` == 0, NA, `Storage Roundtrip Efficiency`),
+                            `Min Down Time` = `Min Down Time Hr`,
+                            `Min Up Time` = `Min Up Time Hr`,
+                            `Min Stable Level` = `PMin MW`
+                            )]
 all.tabs = c(all.tabs,"generator.data")
 
 # tx AC line data

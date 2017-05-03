@@ -20,7 +20,6 @@ choose.input <- 'pre.parsed'
 # network data
 node.file <- "node.data.csv"
 line.file <- "line.data.csv"
-generator.file <- "generator.data.csv"
 load.file <- "node.lpf.csv"
 
 # add new generators
@@ -75,14 +74,6 @@ object.property.list <- list(
          list(scenario.name = "Gen Outages")),
     list("gen.cost.data.csv",
          list(band.col = "Band")),    
-    list("gen.mingen.csv"),
-    list("gen.minupdown.csv"),
-    list("gen.ramps.csv"),
-    list("gen.startshut.csv"),
-    list("gen.pumps.csv"),
-    
-    # fuel price
-    list("fuel.price.csv"),
     
     # reserve profiles
     list("reserve.provisions.csv",
@@ -91,6 +82,11 @@ object.property.list <- list(
          list(datafile.col = 'Min Provision',
               scenario.name = 'RT Run'))
 
+)
+
+objects.list <- list(
+    "generator.data.csv",
+    "fuel.price.csv"
 )
  
 #reserve
