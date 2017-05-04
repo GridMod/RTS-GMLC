@@ -15,7 +15,7 @@ master.script.dir <- '../PSSE2PLEXOS'
 outputfiles.dir <- '..'
 
 # directory of input files - point to result of matpower parsing
-inputfiles.dir <- '../1-parse-matpower/outputs'
+inputfiles.dir <- '../1-parse-SourceData/outputs'
 
 input.params <- 'input_params.R'
 

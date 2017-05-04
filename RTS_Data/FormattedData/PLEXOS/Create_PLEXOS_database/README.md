@@ -1,18 +1,17 @@
 This is a self-contained set of scripts and csvs that makes a plexos database from the data we have for the RTS 2016. Some information about how this works:
 
-1. script in **1-parse-matpower** should be run first. this parses *all* inputfiles, including UW files and the .mpc case, into csvs that can be read by PSSE2PLEXOS
-2. script in **2-create-excel** should be run to pull the results of step 1 and spit out an excel file and data_check folder.
+The `create_RTS_spreadsheet.R` script performs the following:
+1. cleans the `1-parse-SourceData/outputs/` folder
+2. copies the `1-parse-SourceDat/extra_inputs/` contents to the `1-parse-SourceData/outputs/` folder
+3. runs script in **1-parse-SourceData** tos parses *all* inputfiles into csvs that can be read by PSSE2PLEXOS
+4. runs script in **2-create-excel** to pull the results of step 1 and spit out an excel file and data_check folder.
 
-That means that all inputs are in **1-parse-matpower/inputs.** Changes in csv files anywhere else will be overwritten next time things are run.
+That means that all inputs are in **1-parse-SourceDatar/outputs** Changes in csv files anywhere else will be overwritten next time things are run.
 
 Then, then excel file and data_files folder are all that are needed to create a plexos database.
 
-If you are a command-line junkie, you can run the "Create_RTS_spreadsheet.R" script to execute steps 1 and 2 above without opening R.
 This command line method is not recommended for debugging
 	> [filepath to R]/bin/Rscript.exe Create_RTS_spreadsheet.R
 
-### notes about subfolders
 
-**1-parse-matpower**: run `parse-matpower.R.` This will parse what's in the .m file and call `create_other_inputs_rts2016.R,` which adds in information that is not in the m file. Those scripts use the **inputs** folder and dump all results into **outputs**
 
-**2-create-excel**: run `run_PSSE2PLEXOS.R`. This requires a pointer to the location of the `PSSE2PLEXOS` repo somewhere on your computer. This repo should be on the `psse2plx_data_check` branch. Adjusting `input_params.R` if needed, then running `run_PSSE2PLEXOS.R` will spit out the excel file and data_checks folder one level up.
