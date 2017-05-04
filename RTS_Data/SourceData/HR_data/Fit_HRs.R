@@ -44,10 +44,13 @@ final.fits.filter[group_type == 'Combustion turbine (Natural Gas)',category:='NG
 final.fits.filter = final.fits.filter[!is.na(category)]
 
 gen = fread('../gen.csv')
+HR.cols = c('HR_avg_0','HR_incr_1','HR_incr_2','HR_incr_3')
+gen[,c(HR.cols):=0]
+gen[,c(HR.cols):=NULL]
 
-gen.noHR = gen[!grepl('Coal|Oil|NG',Fuel)]
+gen.noHR = gen[!grepl('Coal|Oil|Gas',Category)]
 
-gen = gen[grepl('Coal|Oil|NG',Fuel)]
+gen = gen[grepl('Coal|Oil|Gas',Category)]
 gen[Fuel == 'Oil'&`Unit Type`=='STEAM',category:= 'Oil Steam']
 gen[Fuel == 'Oil'&`Unit Type`=='CT',category:= 'Oil CT']
 gen[Fuel == 'NG'&`Unit Type`=='CT',category:= 'NG CT']
@@ -75,26 +78,26 @@ gen[,Output_pct_1:= (`PMin MW` + (1/3)*(`PMax MW`-`PMin MW`)) / `PMax MW`]
 gen[,Output_pct_2:= (`PMin MW` + (2/3)*(`PMax MW`-`PMin MW`)) / `PMax MW`]
 gen[,Output_pct_3:= 1]
 
-cols.to.delete = names(gen)[grepl('Inc_Heat_Rate|Net_Heat_Rate',names(gen))]
-gen[,c(cols.to.delete,'category'):=NULL]
+# cols.to.delete = names(gen)[grepl('Inc_Heat_Rate|Net_Heat_Rate',names(gen))]
+# gen[,c(cols.to.delete,'category'):=NULL]
+gen[,category:=NULL]
 
 # take care of wind, solar, CSP, hydro, Nuclear and Sync_Cond
-HR.cols = c('HR_avg_0','HR_incr_1','HR_incr_2','HR_incr_3')
 
-gen.noHR[Fuel == 'Nuclear',Output_pct_0:= `PMin MW`/`PMax MW`]
-gen.noHR[Fuel == 'Nuclear',Output_pct_1:= (`PMin MW` + (1/3)*(`PMax MW`-`PMin MW`))/`PMax MW`]
-gen.noHR[Fuel == 'Nuclear',Output_pct_2:= (`PMin MW` + (2/3)*(`PMax MW`-`PMin MW`))/`PMax MW`]
-gen.noHR[Fuel == 'Nuclear',Output_pct_3:= 1]
-gen.noHR[Fuel == 'Nuclear',c(HR.cols):=Net_Heat_Rate_3]
+gen.noHR[Category == 'Nuclear',Output_pct_0:= `PMin MW`/`PMax MW`]
+gen.noHR[Category == 'Nuclear',Output_pct_1:= (`PMin MW` + (1/3)*(`PMax MW`-`PMin MW`))/`PMax MW`]
+gen.noHR[Category == 'Nuclear',Output_pct_2:= (`PMin MW` + (2/3)*(`PMax MW`-`PMin MW`))/`PMax MW`]
+gen.noHR[Category == 'Nuclear',Output_pct_3:= 1]
+gen.noHR[Category == 'Nuclear',c(HR.cols):=Net_Heat_Rate_3]
 
-gen.noHR[Fuel == 'Wind'|Fuel == 'Solar'|Fuel == 'Sync_Cond'|Fuel == 'CSP',
+gen.noHR[Category == 'Wind'|Category == 'Solar'|Category == 'Sync_Cond'|Category == 'CSP'|Category == 'Storage',
           c(HR.cols):=0]
 
-gen.noHR[Fuel == 'Hydro',
+gen.noHR[Category == 'Hydro',
           c(HR.cols):=0]
-gen.noHR[Fuel == 'Hydro',HR_avg_0:=Net_Heat_Rate_0]
+gen.noHR[Category == 'Hydro',HR_avg_0:=Net_Heat_Rate_0]
 
-gen.noHR[,c(cols.to.delete):=NULL]
+# gen.noHR[,c(cols.to.delete):=NULL]
 
 # combine modified and non-modified heat rates
 gen.newHR = rbind(gen,gen.noHR)
@@ -112,8 +115,8 @@ gen.newHR = gen.newHR[,c(output.cols):=lapply(.SD,function(x) round(x,3)),.SDcol
 gen.newHR = gen.newHR[,c(HR.cols):=lapply(.SD,function(x) round(x,2)),.SDcols = c(HR.cols)]
 
 # return to old column order
-col.order = c('GEN UID','Bus ID','Gen ID','Unit Group','Unit Type','Fuel')
+col.order = c('GEN UID','Bus ID','Gen ID','Unit Group','Unit Type','Category','Fuel')
 setcolorder(gen.newHR,c(col.order,
                         names(gen.newHR)[!names(gen.newHR)%in%col.order]))
 
-write.csv(gen.newHR,'../gen.newHRs.csv',row.names = FALSE)
+write.csv(gen.newHR,'../gen.csv',row.names = FALSE)
