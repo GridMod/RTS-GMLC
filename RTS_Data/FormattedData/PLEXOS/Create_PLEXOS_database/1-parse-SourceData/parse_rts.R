@@ -59,6 +59,7 @@ names(gen.cost.data) = c('Generator','Max Capacity', 'Band','Heat Rate Incr','Lo
 gen.cost.data[,`Load Point`:=`Load Point`*`Max Capacity`]
 gen.cost.data[,`Max Capacity`:=NULL]
 gen.cost.data[grepl('HYDRO',Generator),c('Heat Rate Incr','Load Point'):=0]
+gen.cost.data[,`Load Point`:=round(`Load Point`,1)]
 all.tabs = c(all.tabs,"gen.cost.data")
 
 # outage rates
@@ -73,8 +74,8 @@ generator.data = src.gen[,.(Generator = `GEN UID`,
                             Fuels_Fuel = Fuel,
                             `Max Capacity` = `PMax MW`,
                             Units = 1,
-                            `Shutdown Cost` = `Start Heat Cold MBTU` * `Fuel Price $/MMBTU` ,
-                            `Start Cost` = (`Start Heat Cold MBTU` * `Fuel Price $/MMBTU`) + `Non Fuel Start Cost $` ,
+                            `Shutdown Cost` = round(`Start Heat Cold MBTU` * `Fuel Price $/MMBTU`) ,
+                            `Start Cost` = round((`Start Heat Cold MBTU` * `Fuel Price $/MMBTU`) + `Non Fuel Start Cost $` ),
                             `Max Ramp Up` = ifelse(`Ramp Rate MW/Min` == 0, NA,`Ramp Rate MW/Min`),
                             `Max Ramp Down` = ifelse(`Ramp Rate MW/Min` == 0, NA,`Ramp Rate MW/Min`),
                             `Pump Load` = ifelse(`Pump Load MW` == 0, NA, `Pump Load MW`),
