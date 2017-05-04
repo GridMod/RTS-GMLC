@@ -34,7 +34,7 @@ gen.fuel = src.gen[,.(Generator = `GEN UID`, Fuel)]
 
 # Gen Base Cost Data
 gen.cost.data.base = src.gen[,.(`GEN UID`,`PMin MW`,HR_avg_0)]
-gen.cost.data.base[,`Heat Rate Base`:=0.75*`PMin MW`*HR_avg_0]
+gen.cost.data.base[,`Heat Rate Base`:=0.75*`PMin MW`*HR_avg_0*0.001] # to get mmBTU
 setnames(gen.cost.data.base,c('GEN UID'),c('Generator'))
 gen.cost.data.base = gen.cost.data.base[,.(Generator,`Heat Rate Base`)]
 all.tabs = c(all.tabs,"gen.cost.data.base")
@@ -74,8 +74,8 @@ generator.data = src.gen[,.(Generator = `GEN UID`,
                             Fuels_Fuel = Fuel,
                             `Max Capacity` = `PMax MW`,
                             Units = 1,
-                            `Shutdown Cost` = round(`Start Heat Cold MBTU` * `Fuel Price $/MMBTU`) ,
-                            `Start Cost` = round((`Start Heat Cold MBTU` * `Fuel Price $/MMBTU`) + `Non Fuel Start Cost $` ),
+                            `Shutdown Cost` = `Start Heat Cold MBTU` * `Fuel Price $/MMBTU` ,
+                            `Start Cost` = (`Start Heat Cold MBTU` * `Fuel Price $/MMBTU`) + `Non Fuel Start Cost $` ,
                             `Max Ramp Up` = ifelse(`Ramp Rate MW/Min` == 0, NA,`Ramp Rate MW/Min`),
                             `Max Ramp Down` = ifelse(`Ramp Rate MW/Min` == 0, NA,`Ramp Rate MW/Min`),
                             `Pump Load` = ifelse(`Pump Load MW` == 0, NA, `Pump Load MW`),
