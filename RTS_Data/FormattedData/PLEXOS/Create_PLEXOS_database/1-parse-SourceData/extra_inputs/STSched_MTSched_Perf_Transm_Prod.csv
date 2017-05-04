@@ -74,7 +74,7 @@ Tx No lines,Transmission,Wheeling PTDF Threshold,0,
 Production LP,Production,Unit Commitment Optimality,0,Linear relaxation
 Production RR,Production,Unit Commitment Optimality,1,Rounded relaxation
 Production MIP,Production,Unit Commitment Optimality,2,Mixed-integer program
-Production LP,Production,Max Heat Rate Tranches,4,
-Production RR,Production,Max Heat Rate Tranches,4,
-Production MIP,Production,Max Heat Rate Tranches,4,
+-Production LP,Production,Max Heat Rate Tranches,4,
+-Production RR,Production,Max Heat Rate Tranches,4,
+-Production MIP,Production,Max Heat Rate Tranches,4,
 / END,Attributes,,,

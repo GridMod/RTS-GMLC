@@ -1,4 +1,0 @@
-Storage,Max Volume,Initial Volume,Decomposition Method,End Effects Method,Spill Penalty,Max Spill
-212_CSP_HEAD_STORAGE,1.2,0,0,1,0,1e+30
-313_HEAD_STORAGE,0.15,0.075,0,1,0,1e+30
-313_TAIL_STORAGE,0.15,0.075,0,1,0,1e+30
