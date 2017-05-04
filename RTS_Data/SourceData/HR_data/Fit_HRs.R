@@ -102,17 +102,17 @@ gen.noHR[Category == 'Hydro',HR_avg_0:=Net_Heat_Rate_0]
 # combine modified and non-modified heat rates
 gen.newHR = rbind(gen,gen.noHR)
 
-# change units from mmBTU/MWh to GJ/MWh
-gen.newHR = gen.newHR[grepl('Coal|Oil|NG',Fuel),c(HR.cols):=lapply(.SD,function(x) x*1.05505585),
+# change units to mmBTU / kWh
+gen.newHR = gen.newHR[grepl('Coal|Oil|NG',Fuel),c(HR.cols):=lapply(.SD,function(x) x*1000),
                       .SDcols = c(HR.cols)]
-gen.newHR = gen.newHR[!grepl('Coal|Oil|NG',Fuel),c(HR.cols):=lapply(.SD,function(x) x*1.05505585*0.001),
+gen.newHR = gen.newHR[!grepl('Coal|Oil|NG',Fuel),c(HR.cols):=lapply(.SD,function(x) x),
                       .SDcols = c(HR.cols)]
 
 # round
 output.cols = c('Output_pct_0','Output_pct_1','Output_pct_2','Output_pct_3')
 
-gen.newHR = gen.newHR[,c(output.cols):=lapply(.SD,function(x) round(x,3)),.SDcols = c(output.cols)]
-gen.newHR = gen.newHR[,c(HR.cols):=lapply(.SD,function(x) round(x,2)),.SDcols = c(HR.cols)]
+# gen.newHR = gen.newHR[,c(output.cols):=lapply(.SD,function(x) round(x,3)),.SDcols = c(output.cols)]
+gen.newHR = gen.newHR[,c(HR.cols):=lapply(.SD,function(x) round(x)),.SDcols = c(HR.cols)]
 
 # return to old column order
 col.order = c('GEN UID','Bus ID','Gen ID','Unit Group','Unit Type','Category','Fuel')
