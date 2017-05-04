@@ -1,0 +1,4 @@
+Reserve,Min Provision
+Reg_Down,../../timeseries_data_files/Reserves/REAL_TIME_regional_Reg_Down.csv
+Reg_Up,../../timeseries_data_files/Reserves/REAL_TIME_regional_Reg_Up.csv
+Spin_Up,../../timeseries_data_files/Reserves/REAL_TIME_regional_Spin_Up.csv

@@ -1,0 +1,181 @@
+/ BEGIN,Objects,,,,,,,,
+class,name,category,description,,,,,,
+Report,Default Report,,,,,,,,
+Report,Default Report_flatFiles,,,,,,,,
+/ END,Objects,,,,,,,,
+/ BEGIN,Attributes,,,,,,,,
+name,class,attribute,value,,,,,,
+Default Report,Report,Output Results by Day,-1,,,,,,
+Default Report,Report,Output Results by Month,-1,,,,,,
+Default Report,Report,Output Results by Fiscal Year,-1,,,,,,
+Default Report_flatFiles,Report,Write Flat Files,-1,,,,,,
+Default Report_flatFiles,Report,Output Results by Day,-1,,,,,,
+Default Report_flatFiles,Report,Output Results by Month,-1,,,,,,
+Default Report_flatFiles,Report,Output Results by Fiscal Year,-1,,,,,,
+/ END,Attributes,,,,,,,,
+/ BEGIN,Reports,,,,,,,,
+object,parent_class,child_class,collection,property,phase_id,report_period,report_summary,report_statistics,report_samples
+Default Report,System,Generator,Generators,Generation,4,TRUE,TRUE,FALSE,FALSE
+Default Report,System,Generator,Generators,Units Generating,4,TRUE,FALSE,FALSE,FALSE
+Default Report,System,Generator,Generators,Fuel Transport Cost,4,TRUE,TRUE,FALSE,FALSE
+Default Report,System,Generator,Generators,Generation Cost,4,TRUE,TRUE,FALSE,FALSE
+Default Report,System,Generator,Generators,Total Generation Cost,4,TRUE,TRUE,FALSE,FALSE
+Default Report,System,Generator,Generators,Offer Quantity,4,TRUE,FALSE,FALSE,FALSE
+Default Report,System,Generator,Generators,Offer Price,4,TRUE,FALSE,FALSE,FALSE
+Default Report,System,Generator,Generators,Offer Cleared,4,TRUE,FALSE,FALSE,FALSE
+Default Report,System,Generator,Generators,Price Received,4,TRUE,TRUE,FALSE,FALSE
+Default Report,System,Generator,Generators,Pool Revenue,4,TRUE,TRUE,FALSE,FALSE
+Default Report,System,Generator,Generators,Net Revenue,4,TRUE,TRUE,FALSE,FALSE
+Default Report,System,Generator,Generators,Available Capacity,4,TRUE,TRUE,FALSE,FALSE
+Default Report,System,Generator,Generators,Emissions Cost,4,TRUE,TRUE,FALSE,FALSE
+Default Report,System,Generator,Generators,Fuel Cost,4,TRUE,TRUE,FALSE,FALSE
+Default Report,System,Generator,Generators,Start & Shutdown Cost,4,TRUE,TRUE,FALSE,FALSE
+Default Report,System,Generator,Generators,VO&M Cost,4,TRUE,TRUE,FALSE,FALSE
+Default Report,System,Generator,Generators,Installed Capacity,4,TRUE,TRUE,FALSE,FALSE
+Default Report,System,Generator,Generators,SRMC,4,TRUE,TRUE,FALSE,FALSE
+Default Report,System,Generator,Generators,Pump Load,4,TRUE,TRUE,FALSE,FALSE
+Default Report,System,Generator,Generators,Units Out,4,TRUE,FALSE,FALSE,FALSE
+Default Report,System,Fuel,Fuels,Price,4,TRUE,TRUE,FALSE,FALSE
+Default Report,System,Fuel,Fuels,Time-weighted Price,4,TRUE,TRUE,FALSE,FALSE
+Default Report,System,Fuel,Fuels,Offtake,4,TRUE,TRUE,FALSE,FALSE
+Default Report,System,Fuel,Fuels,Cost,4,TRUE,TRUE,FALSE,FALSE
+Default Report,System,Emission,Emissions,Production,4,TRUE,TRUE,FALSE,FALSE
+Default Report,System,Storage,Storages,Initial Volume,4,TRUE,TRUE,FALSE,FALSE
+Default Report,System,Storage,Storages,End Volume,4,TRUE,TRUE,FALSE,FALSE
+Default Report,System,Storage,Storages,Inflow,4,TRUE,TRUE,FALSE,FALSE
+Default Report,System,Storage,Storages,Release,4,TRUE,TRUE,FALSE,FALSE
+Default Report,System,Waterway,Waterways,Flow,4,TRUE,TRUE,FALSE,FALSE
+Default Report,System,Physical Contract,Physical Contracts,Generation,4,TRUE,TRUE,TRUE,TRUE
+Default Report,System,Physical Contract,Physical Contracts,Load,4,TRUE,TRUE,TRUE,TRUE
+Default Report,System,Purchaser,Purchasers,Load,4,TRUE,TRUE,TRUE,TRUE
+Default Report,System,Battery,Batteries,SoC,4,TRUE,TRUE,FALSE,FALSE
+Default Report,System,Battery,Batteries,Generation,4,TRUE,TRUE,FALSE,FALSE
+Default Report,System,Battery,Batteries,Load,4,TRUE,TRUE,FALSE,FALSE
+Default Report,System,Battery,Batteries,Net Generation,4,TRUE,TRUE,FALSE,FALSE
+Default Report,System,Maintenance,Maintenances,Hours Active,4,TRUE,TRUE,FALSE,FALSE
+Default Report,System,Maintenance,Maintenances,Cost,4,TRUE,TRUE,FALSE,FALSE
+Default Report,System,Maintenance,Maintenances,Outage,4,TRUE,TRUE,FALSE,FALSE
+Default Report,System,Region,Regions,Load,4,TRUE,TRUE,FALSE,FALSE
+Default Report,System,Region,Regions,Generation,4,TRUE,TRUE,FALSE,FALSE
+Default Report,System,Region,Regions,Imports,4,TRUE,TRUE,FALSE,FALSE
+Default Report,System,Region,Regions,Exports,4,TRUE,TRUE,FALSE,FALSE
+Default Report,System,Region,Regions,Net Interchange,4,TRUE,TRUE,FALSE,FALSE
+Default Report,System,Region,Regions,Unserved Energy,4,TRUE,TRUE,FALSE,FALSE
+Default Report,System,Region,Regions,Dump Energy,4,TRUE,TRUE,FALSE,FALSE
+Default Report,System,Region,Regions,Generation Cost,4,TRUE,TRUE,FALSE,FALSE
+Default Report,System,Region,Regions,Total Generation Cost,4,TRUE,TRUE,FALSE,FALSE
+Default Report,System,Region,Regions,Price,4,TRUE,TRUE,FALSE,FALSE
+Default Report,System,Region,Regions,Cost to Load,4,TRUE,TRUE,FALSE,FALSE
+Default Report,System,Region,Regions,Generator Pool Revenue,4,TRUE,TRUE,FALSE,FALSE
+Default Report,System,Region,Regions,Settlement Surplus,4,TRUE,TRUE,FALSE,FALSE
+Default Report,System,Zone,Zones,Load,4,TRUE,TRUE,FALSE,FALSE
+Default Report,System,Zone,Zones,Generation,4,TRUE,TRUE,FALSE,FALSE
+Default Report,System,Zone,Zones,Imports,4,TRUE,TRUE,FALSE,FALSE
+Default Report,System,Zone,Zones,Exports,4,TRUE,TRUE,FALSE,FALSE
+Default Report,System,Zone,Zones,Net Interchange,4,TRUE,TRUE,FALSE,FALSE
+Default Report,System,Zone,Zones,Unserved Energy,4,TRUE,TRUE,FALSE,FALSE
+Default Report,System,Zone,Zones,Dump Energy,4,TRUE,TRUE,FALSE,FALSE
+Default Report,System,Zone,Zones,Price,4,TRUE,TRUE,FALSE,FALSE
+Default Report,System,Zone,Zones,Cost to Load,4,TRUE,TRUE,FALSE,FALSE
+Default Report,System,Zone,Zones,Generator Pool Revenue,4,TRUE,TRUE,FALSE,FALSE
+Default Report,System,Zone,Zones,Settlement Surplus,4,TRUE,TRUE,FALSE,FALSE
+Default Report,System,Line,Lines,Flow,4,TRUE,TRUE,FALSE,FALSE
+Default Report,System,Line,Lines,Export Limit,4,TRUE,TRUE,FALSE,FALSE
+Default Report,System,Line,Lines,Import Limit,4,TRUE,TRUE,FALSE,FALSE
+Default Report,System,Hub,Hubs,Price,4,TRUE,TRUE,FALSE,FALSE
+Default Report,System,Market,Markets,Sales,4,TRUE,TRUE,FALSE,FALSE
+Default Report,System,Market,Markets,Purchases,4,TRUE,TRUE,FALSE,FALSE
+Default Report,System,Market,Markets,Price,4,TRUE,TRUE,FALSE,FALSE
+Default Report,System,Constraint,Constraints,Hours Binding,4,TRUE,TRUE,FALSE,FALSE
+Default Report,System,Constraint,Constraints,Price,4,TRUE,TRUE,FALSE,FALSE
+Default Report,System,Decision Variable,Decision Variables,Value,4,TRUE,TRUE,FALSE,FALSE
+Default Report,System,Decision Variable,Decision Variables,Reduced Cost,4,TRUE,TRUE,FALSE,FALSE
+Default Report,System,Variable,Variables,Value,4,TRUE,TRUE,FALSE,FALSE
+Default Report,System,Reserve,Reserves,Provision,4,TRUE,TRUE,FALSE,FALSE
+Default Report,System,Reserve,Reserves,Shortage,4,TRUE,TRUE,FALSE,FALSE
+Default Report,System,Reserve,Reserves,Price,4,TRUE,TRUE,FALSE,FALSE
+Default Report,System,Interface,Interfaces,Flow,4,TRUE,TRUE,FALSE,FALSE
+Default Report,Reserve,Generator,Generators,Provision,4,TRUE,TRUE,FALSE,FALSE
+Default Report_flatFiles,System,Generator,Generators,Generation,4,TRUE,TRUE,FALSE,FALSE
+Default Report_flatFiles,System,Generator,Generators,Units Generating,4,TRUE,FALSE,FALSE,FALSE
+Default Report_flatFiles,System,Generator,Generators,Fuel Transport Cost,4,TRUE,TRUE,FALSE,FALSE
+Default Report_flatFiles,System,Generator,Generators,Generation Cost,4,TRUE,TRUE,FALSE,FALSE
+Default Report_flatFiles,System,Generator,Generators,Total Generation Cost,4,TRUE,TRUE,FALSE,FALSE
+Default Report_flatFiles,System,Generator,Generators,Offer Quantity,4,TRUE,FALSE,FALSE,FALSE
+Default Report_flatFiles,System,Generator,Generators,Offer Price,4,TRUE,FALSE,FALSE,FALSE
+Default Report_flatFiles,System,Generator,Generators,Offer Cleared,4,TRUE,FALSE,FALSE,FALSE
+Default Report_flatFiles,System,Generator,Generators,Price Received,4,TRUE,TRUE,FALSE,FALSE
+Default Report_flatFiles,System,Generator,Generators,Pool Revenue,4,TRUE,TRUE,FALSE,FALSE
+Default Report_flatFiles,System,Generator,Generators,Net Revenue,4,TRUE,TRUE,FALSE,FALSE
+Default Report_flatFiles,System,Generator,Generators,Available Capacity,4,TRUE,TRUE,FALSE,FALSE
+Default Report_flatFiles,System,Generator,Generators,Emissions Cost,4,TRUE,TRUE,FALSE,FALSE
+Default Report_flatFiles,System,Generator,Generators,Fuel Cost,4,TRUE,TRUE,FALSE,FALSE
+Default Report_flatFiles,System,Generator,Generators,Start & Shutdown Cost,4,TRUE,TRUE,FALSE,FALSE
+Default Report_flatFiles,System,Generator,Generators,VO&M Cost,4,TRUE,TRUE,FALSE,FALSE
+Default Report_flatFiles,System,Generator,Generators,Installed Capacity,4,TRUE,TRUE,FALSE,FALSE
+Default Report_flatFiles,System,Generator,Generators,SRMC,4,TRUE,TRUE,FALSE,FALSE
+Default Report_flatFiles,System,Generator,Generators,Pump Load,4,TRUE,TRUE,FALSE,FALSE
+Default Report_flatFiles,System,Generator,Generators,Units Out,4,TRUE,FALSE,FALSE,FALSE
+Default Report_flatFiles,System,Fuel,Fuels,Price,4,TRUE,TRUE,FALSE,FALSE
+Default Report_flatFiles,System,Fuel,Fuels,Time-weighted Price,4,TRUE,TRUE,FALSE,FALSE
+Default Report_flatFiles,System,Fuel,Fuels,Offtake,4,TRUE,TRUE,FALSE,FALSE
+Default Report_flatFiles,System,Fuel,Fuels,Cost,4,TRUE,TRUE,FALSE,FALSE
+Default Report_flatFiles,System,Emission,Emissions,Production,4,TRUE,TRUE,FALSE,FALSE
+Default Report_flatFiles,System,Storage,Storages,Initial Volume,4,TRUE,TRUE,FALSE,FALSE
+Default Report_flatFiles,System,Storage,Storages,End Volume,4,TRUE,TRUE,FALSE,FALSE
+Default Report_flatFiles,System,Storage,Storages,Inflow,4,TRUE,TRUE,FALSE,FALSE
+Default Report_flatFiles,System,Storage,Storages,Release,4,TRUE,TRUE,FALSE,FALSE
+Default Report_flatFiles,System,Waterway,Waterways,Flow,4,TRUE,TRUE,FALSE,FALSE
+Default Report_flatFiles,System,Physical Contract,Physical Contracts,Generation,4,TRUE,TRUE,TRUE,TRUE
+Default Report_flatFiles,System,Physical Contract,Physical Contracts,Load,4,TRUE,TRUE,TRUE,TRUE
+Default Report_flatFiles,System,Purchaser,Purchasers,Load,4,TRUE,TRUE,TRUE,TRUE
+Default Report_flatFiles,System,Battery,Batteries,SoC,4,TRUE,TRUE,FALSE,FALSE
+Default Report_flatFiles,System,Battery,Batteries,Generation,4,TRUE,TRUE,FALSE,FALSE
+Default Report_flatFiles,System,Battery,Batteries,Load,4,TRUE,TRUE,FALSE,FALSE
+Default Report_flatFiles,System,Battery,Batteries,Net Generation,4,TRUE,TRUE,FALSE,FALSE
+Default Report_flatFiles,System,Maintenance,Maintenances,Hours Active,4,TRUE,TRUE,FALSE,FALSE
+Default Report_flatFiles,System,Maintenance,Maintenances,Cost,4,TRUE,TRUE,FALSE,FALSE
+Default Report_flatFiles,System,Maintenance,Maintenances,Outage,4,TRUE,TRUE,FALSE,FALSE
+Default Report_flatFiles,System,Region,Regions,Load,4,TRUE,TRUE,FALSE,FALSE
+Default Report_flatFiles,System,Region,Regions,Generation,4,TRUE,TRUE,FALSE,FALSE
+Default Report_flatFiles,System,Region,Regions,Imports,4,TRUE,TRUE,FALSE,FALSE
+Default Report_flatFiles,System,Region,Regions,Exports,4,TRUE,TRUE,FALSE,FALSE
+Default Report_flatFiles,System,Region,Regions,Net Interchange,4,TRUE,TRUE,FALSE,FALSE
+Default Report_flatFiles,System,Region,Regions,Unserved Energy,4,TRUE,TRUE,FALSE,FALSE
+Default Report_flatFiles,System,Region,Regions,Dump Energy,4,TRUE,TRUE,FALSE,FALSE
+Default Report_flatFiles,System,Region,Regions,Generation Cost,4,TRUE,TRUE,FALSE,FALSE
+Default Report_flatFiles,System,Region,Regions,Total Generation Cost,4,TRUE,TRUE,FALSE,FALSE
+Default Report_flatFiles,System,Region,Regions,Price,4,TRUE,TRUE,FALSE,FALSE
+Default Report_flatFiles,System,Region,Regions,Cost to Load,4,TRUE,TRUE,FALSE,FALSE
+Default Report_flatFiles,System,Region,Regions,Generator Pool Revenue,4,TRUE,TRUE,FALSE,FALSE
+Default Report_flatFiles,System,Region,Regions,Settlement Surplus,4,TRUE,TRUE,FALSE,FALSE
+Default Report_flatFiles,System,Zone,Zones,Load,4,TRUE,TRUE,FALSE,FALSE
+Default Report_flatFiles,System,Zone,Zones,Generation,4,TRUE,TRUE,FALSE,FALSE
+Default Report_flatFiles,System,Zone,Zones,Imports,4,TRUE,TRUE,FALSE,FALSE
+Default Report_flatFiles,System,Zone,Zones,Exports,4,TRUE,TRUE,FALSE,FALSE
+Default Report_flatFiles,System,Zone,Zones,Net Interchange,4,TRUE,TRUE,FALSE,FALSE
+Default Report_flatFiles,System,Zone,Zones,Unserved Energy,4,TRUE,TRUE,FALSE,FALSE
+Default Report_flatFiles,System,Zone,Zones,Dump Energy,4,TRUE,TRUE,FALSE,FALSE
+Default Report_flatFiles,System,Zone,Zones,Price,4,TRUE,TRUE,FALSE,FALSE
+Default Report_flatFiles,System,Zone,Zones,Cost to Load,4,TRUE,TRUE,FALSE,FALSE
+Default Report_flatFiles,System,Zone,Zones,Generator Pool Revenue,4,TRUE,TRUE,FALSE,FALSE
+Default Report_flatFiles,System,Zone,Zones,Settlement Surplus,4,TRUE,TRUE,FALSE,FALSE
+Default Report_flatFiles,System,Line,Lines,Flow,4,TRUE,TRUE,FALSE,FALSE
+Default Report_flatFiles,System,Line,Lines,Export Limit,4,TRUE,TRUE,FALSE,FALSE
+Default Report_flatFiles,System,Line,Lines,Import Limit,4,TRUE,TRUE,FALSE,FALSE
+Default Report_flatFiles,System,Hub,Hubs,Price,4,TRUE,TRUE,FALSE,FALSE
+Default Report_flatFiles,System,Market,Markets,Sales,4,TRUE,TRUE,FALSE,FALSE
+Default Report_flatFiles,System,Market,Markets,Purchases,4,TRUE,TRUE,FALSE,FALSE
+Default Report_flatFiles,System,Market,Markets,Price,4,TRUE,TRUE,FALSE,FALSE
+Default Report_flatFiles,System,Constraint,Constraints,Hours Binding,4,TRUE,TRUE,FALSE,FALSE
+Default Report_flatFiles,System,Constraint,Constraints,Price,4,TRUE,TRUE,FALSE,FALSE
+Default Report_flatFiles,System,Decision Variable,Decision Variables,Value,4,TRUE,TRUE,FALSE,FALSE
+Default Report_flatFiles,System,Decision Variable,Decision Variables,Reduced Cost,4,TRUE,TRUE,FALSE,FALSE
+Default Report_flatFiles,System,Variable,Variables,Value,4,TRUE,TRUE,FALSE,FALSE
+Default Report_flatFiles,System,Reserve,Reserves,Provision,4,TRUE,TRUE,FALSE,FALSE
+Default Report_flatFiles,System,Reserve,Reserves,Shortage,4,TRUE,TRUE,FALSE,FALSE
+Default Report_flatFiles,System,Reserve,Reserves,Price,4,TRUE,TRUE,FALSE,FALSE
+Default Report_flatFiles,System,Interface,Interfaces,Flow,4,TRUE,TRUE,FALSE,FALSE
+Default Report_flatFiles,Reserve,Generator,Generators,Provision,4,TRUE,TRUE,FALSE,FALSE
+Default Report_flatFiles,System,Node,Nodes,Generation,4,TRUE,TRUE,FALSE,FALSE
+/ END,Reports,,,,,,,,
