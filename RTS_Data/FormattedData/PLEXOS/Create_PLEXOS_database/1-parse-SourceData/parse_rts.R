@@ -30,7 +30,7 @@ fuel.price = fuel.price[!is.na(Fuel)]
 all.tabs = c(all.tabs,"fuel.price")
 
 gen.fuel = src.gen[,.(Generator = `GEN UID`, Fuel)]
-all.tabs = c(all.tabs,"gen.fuel")
+#all.tabs = c(all.tabs,"gen.fuel")
 
 # Gen Base Cost Data
 gen.cost.data.base = src.gen[,.(`GEN UID`,`PMin MW`,HR_avg_0)]
