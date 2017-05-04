@@ -5,7 +5,7 @@ output.dir = normalizePath(file.path('./1-parse-matpower/outputs/'))
 src.bus = fread(file.path(SourceData,'bus.csv'))
 src.branch = fread(file.path(SourceData,'branch.csv'))
 src.dc_branch = fread(file.path(SourceData,'dc_branch.csv'))
-src.gen = fread(file.path(SourceData,'gen.csv'),colClasses = 'numeric')
+src.gen = fread(file.path(SourceData,'gen.newHRs.csv'),colClasses = 'numeric')
 src.simulation_objects = fread(file.path(SourceData,'simulation_objects.csv'))
 src.timeseries_pointers = fread(file.path(SourceData,'timeseries_pointers.csv'))
 src.reserves = fread(file.path(SourceData,'reserves.csv'))
@@ -31,23 +31,33 @@ all.tabs = c(all.tabs,"fuel.price")
 gen.fuel = src.gen[,.(Generator = `GEN UID`, Fuel)]
 all.tabs = c(all.tabs,"gen.fuel")
 
+# Gen Base Cost Data
+gen.cost.data.base = src.gen[,.(`GEN UID`,`PMin MW`,HR_avg_0)]
+gen.cost.data.base[,`Heat Rate Base`:=0.75*`PMin MW`*HR_avg_0]
+setnames(gen.cost.data.base,c('GEN UID'),c('Generator'))
+gen.cost.data.base = gen.cost.data.base[,.(Generator,`Heat Rate Base`)]
+all.tabs = c(all.tabs,"gen.cost.data.base")
+
 # Gen Cost Data
+setnames(src.gen,'HR_avg_0','HR_incr_0')
 hr.traunches = tstrsplit(names(src.gen)[grep('Output_pct',names(src.gen))],'_')[[3]]
-gen.cost.data = src.gen[,.SD,.SDcols = c('GEN UID','PMax MW',paste0('Net_Heat_Rate_',hr.traunches),paste0('Output_pct_',hr.traunches)) ]
+gen.cost.data = src.gen[,.SD,.SDcols = c('GEN UID','PMax MW',paste0('HR_incr_',hr.traunches),
+                                         paste0('Output_pct_',hr.traunches)) ]
+gen.cost.data[,HR_incr_0:=0.25*HR_incr_0]
 gen.cost.data = melt(gen.cost.data,id.vars = c('GEN UID','PMax MW'))
 gen.cost.data[,Band:= gsub('.*_([0-9]+).*','\\1',variable)]
 
-  # make sure bands start at 1
-  if(min(as.numeric(gen.cost.data[,Band]))==0){
-      gen.cost.data[,Band:=as.numeric(Band)+1]
-  }
+# make sure bands start at 1
+if(min(as.numeric(gen.cost.data[,Band]))==0){
+  gen.cost.data[,Band:=as.numeric(Band)+1]
+}
 
 gen.cost.data[,variable:= gsub('(.*)_[0-9]+.*','\\1',variable)]
 gen.cost.data = dcast.data.table(gen.cost.data, `GEN UID`+`PMax MW`+Band~variable)
-names(gen.cost.data) = c('Generator','Max Capacity', 'Band','Heat Rate','Load Point')
+names(gen.cost.data) = c('Generator','Max Capacity', 'Band','Heat Rate Incr','Load Point')
 gen.cost.data[,`Load Point`:=`Load Point`*`Max Capacity`]
 gen.cost.data[,`Max Capacity`:=NULL]
-gen.cost.data[grepl('HYDRO',Generator),c('Heat Rate','Load Point'):=0]
+gen.cost.data[grepl('HYDRO',Generator),c('Heat Rate Incr','Load Point'):=0]
 all.tabs = c(all.tabs,"gen.cost.data")
 
 # Min Gen

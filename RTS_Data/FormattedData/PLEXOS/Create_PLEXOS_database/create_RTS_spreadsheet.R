@@ -1,4 +1,4 @@
-#setwd(dirname(parent.frame(2)$ofile))
+setwd(dirname(parent.frame(2)$ofile))
 pacman::p_load(data.table)
 SourceData = normalizePath(file.path('../../../SourceData/'))
 output.dir = normalizePath(file.path('./1-parse-matpower/outputs/'))
