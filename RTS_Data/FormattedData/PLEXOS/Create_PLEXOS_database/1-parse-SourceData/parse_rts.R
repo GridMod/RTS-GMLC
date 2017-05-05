@@ -37,6 +37,7 @@ gen.cost.data.base = src.gen[,.(`GEN UID`,`PMin MW`,HR_avg_0)]
 gen.cost.data.base[,`Heat Rate Base`:=0.75*`PMin MW`*HR_avg_0*0.001] # to get mmBTU
 setnames(gen.cost.data.base,c('GEN UID'),c('Generator'))
 gen.cost.data.base = gen.cost.data.base[,.(Generator,`Heat Rate Base`)]
+gen.cost.data.base = gen.cost.data.base[`Heat Rate Base` != 0]
 all.tabs = c(all.tabs,"gen.cost.data.base")
 
 # Gen Cost Data
@@ -60,6 +61,7 @@ gen.cost.data[,`Load Point`:=`Load Point`*`Max Capacity`]
 gen.cost.data[,`Max Capacity`:=NULL]
 gen.cost.data[grepl('HYDRO',Generator),c('Heat Rate Incr','Load Point'):=0]
 gen.cost.data[,`Load Point`:=round(`Load Point`,1)]
+gen.cost.data = gen.cost.data[`Load Point`!=0]
 all.tabs = c(all.tabs,"gen.cost.data")
 
 # outage rates
@@ -167,8 +169,8 @@ storage.csp = src.timeseries_pointers[grepl('csp',Object,ignore.case = T) & Simu
 all.tabs = c(all.tabs,"gen.da.vg.fixed","gen.rt.vg.fixed","gen.da.vg","gen.rt.vg","storage.csp")
 
 # CSP Storage
-storage.props = src.storage[,.(Storage = `Storage`,`Max Volume`= `Max Volume GWh`,`Initial Volume` = `Initial Volume GWh`,`Decomposition Method` = 0, `End Effects Method` = 1, `Spill Penalty` = 0, `Max Spill` = 1e+30)]
-storage.props.rt = src.storage[,.(Storage = `Storage`,`Enforce Bounds`= 0)]
+storage.props = src.storage[,.(Storage = `Storage`,`Max Volume`= `Max Volume GWh`,`Initial Volume` = `Initial Volume GWh`,`Decomposition Method` = 0, `End Effects Method` = c(1,2,2), `Max Spill` = 1e+30)]
+storage.props.rt = src.storage[,.(Storage = `Storage`,`Enforce Bounds`= 0,`End Effects Method` = 1)]
 
 all.tabs = c(all.tabs, "storage.props","storage.props.rt")
 

@@ -1,6 +1,6 @@
 Reserve Product,Timeframe (sec),Elegible Gen Categories
-Spin_Up,600,"(Gas CT,Gas CC,Oil CT,Oil ST,Coal,Solar,Wind, CSP)"
-Flex_Up,1200,"(Gas CT,Gas CC,Oil CT,Oil ST,Coal,Solar,Wind, CSP)"
-Flex_Down,1200,"(Gas CT,Gas CC,Oil CT,Oil ST,Coal,Solar,Wind, CSP)"
-Reg_Up,300,"(Gas CT,Gas CC,Oil CT,Oil ST,Coal,Solar,Wind, CSP)"
-Reg_Down,300,"(Gas CT,Gas CC,Oil CT,Oil ST,Coal,Solar,Wind, CSP)"
+Spin_Up,600,"(Gas CT,Gas CC,Oil CT,Oil ST,Coal,Solar,Wind,CSP)"
+Flex_Up,1200,"(Gas CT,Gas CC,Oil CT,Oil ST,Coal,Solar,Wind,CSP)"
+Flex_Down,1200,"(Gas CT,Gas CC,Oil CT,Oil ST,Coal,Solar,Wind,CSP)"
+Reg_Up,300,"(Gas CT,Gas CC,Oil CT,Oil ST,Coal,Solar,Wind,CSP)"
+Reg_Down,300,"(Gas CT,Gas CC,Oil CT,Oil ST,Coal,Solar,Wind,CSP)"
