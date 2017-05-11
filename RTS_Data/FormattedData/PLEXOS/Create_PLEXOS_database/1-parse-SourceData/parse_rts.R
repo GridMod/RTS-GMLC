@@ -1,6 +1,9 @@
 pacman::p_load(data.table)
 SourceData = normalizePath(file.path('../../../SourceData/'))
 output.dir = normalizePath(file.path('./1-parse-SourceData/outputs/'))
+extra_input.dir = normalizePath(file.path('./1-parse-SourceData/extra_inputs'))
+unlink(file.path(output.dir,'*.csv'))
+file.copy(list.files(extra_input.dir,pattern = '*.csv',full.names = T),output.dir)
 
 src.bus = fread(file.path(SourceData,'bus.csv'))
 src.branch = fread(file.path(SourceData,'branch.csv'))

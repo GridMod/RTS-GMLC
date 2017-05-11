@@ -1,10 +1,4 @@
-setwd(dirname(parent.frame(2)$ofile))
-pacman::p_load(data.table)
-SourceData = normalizePath(file.path('../../../SourceData'))
-extra_input.dir = normalizePath(file.path('./1-parse-SourceData/extra_inputs'))
-output.dir = normalizePath(file.path('./1-parse-SourceData/outputs/'))
-unlink(file.path(output.dir,'*.csv'))
-file.copy(list.files(extra_input.dir,pattern = '*.csv',full.names = T),output.dir)
+if(interactive()){setwd(dirname(parent.frame(2)$ofile))}
 source('1-parse-SourceData/parse_rts.R')
 setwd('2-create-excel')
 source('run_PSSE2PLEXOS.R')
