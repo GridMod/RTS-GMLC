@@ -7,7 +7,9 @@ Steps 1 and 2 can both be accomplished by instead executing an R script (Create_
 
     $ C:/users/USERNAME/Documents/R/R-3.3.3/bin/Rscript.exe create_RTS_spreadsheet.R
 
-3.	Import the .xlsx database into PLEXOS with the import tool. If applicable, then manually switch the Base Unit System from Metric to Imperial (bottom left corner in Settings).
+3.	Import the .xlsx database into PLEXOS with the import tool. 
+
+4.  IMPORTANT STEP: Then, manually switch the Base Unit System from Metric to Imperial (bottom left corner in Settings).
 
 **The workflow for creating a MAGMA HTML PLEXOS run report is as follows:**
 
