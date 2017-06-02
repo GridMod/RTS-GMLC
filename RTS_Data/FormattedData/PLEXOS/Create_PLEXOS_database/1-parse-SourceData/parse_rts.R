@@ -92,7 +92,7 @@ generator.data = src.gen[,.(Generator = `GEN UID`,
 all.tabs = c(all.tabs,"generator.data")
 
 # tx AC line data
-line.data = src.branch[,.(Line = ID, `Node From` = `From Bus`, `Node To` = `To Bus`, Resistance = R, Reactance = X,
+line.data = src.branch[,.(Line = UID, `Node From` = `From Bus`, `Node To` = `To Bus`, Resistance = R, Reactance = X,
               `Max Flow` = `Cont Rating`, rateA = `LTE Rating`, rateB = `STE Rating`, rateC = `STE Rating`, Units = 1, `Min Flow` = `Cont Rating` * -1)]
 
 # tx DC line data
