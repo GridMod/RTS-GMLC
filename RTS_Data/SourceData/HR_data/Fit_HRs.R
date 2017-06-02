@@ -2,7 +2,7 @@
 library(data.table)
 setwd(dirname(parent.frame(2)$ofile))
 
-set.seed(2716) # or else HRs will be different every time
+set.seed(2716) # Keep at 2716. Or else HRs will be different every time. 
 # ---------------------------------------------------------------------------------|
 # make new heat rates
 # ---------------------------------------------------------------------------------|
@@ -88,14 +88,14 @@ gen.noHR[Category == 'Nuclear',Output_pct_0:= `PMin MW`/`PMax MW`]
 gen.noHR[Category == 'Nuclear',Output_pct_1:= (`PMin MW` + (1/3)*(`PMax MW`-`PMin MW`))/`PMax MW`]
 gen.noHR[Category == 'Nuclear',Output_pct_2:= (`PMin MW` + (2/3)*(`PMax MW`-`PMin MW`))/`PMax MW`]
 gen.noHR[Category == 'Nuclear',Output_pct_3:= 1]
-gen.noHR[Category == 'Nuclear',c(HR.cols):=Net_Heat_Rate_3]
+gen.noHR[Category == 'Nuclear',c(HR.cols):=10000] # hard coded
 
 gen.noHR[Category == 'Wind'|Category == 'Solar'|Category == 'Sync_Cond'|Category == 'CSP'|Category == 'Storage',
           c(HR.cols):=0]
 
 gen.noHR[Category == 'Hydro',
           c(HR.cols):=0]
-gen.noHR[Category == 'Hydro',HR_avg_0:=Net_Heat_Rate_0]
+gen.noHR[Category == 'Hydro',HR_avg_0:=3412] # hard coded
 
 # gen.noHR[,c(cols.to.delete):=NULL]
 
