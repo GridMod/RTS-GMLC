@@ -161,6 +161,7 @@ Default Report_flatFiles,System,Zone,Zones,Price,4,TRUE,TRUE,FALSE,FALSE
 Default Report_flatFiles,System,Zone,Zones,Cost to Load,4,TRUE,TRUE,FALSE,FALSE
 Default Report_flatFiles,System,Zone,Zones,Generator Pool Revenue,4,TRUE,TRUE,FALSE,FALSE
 Default Report_flatFiles,System,Zone,Zones,Settlement Surplus,4,TRUE,TRUE,FALSE,FALSE
+Default Report_flatFiles,System,Node,Nodes,Price,4,TRUE,TRUE,FALSE,FALSE
 Default Report_flatFiles,System,Line,Lines,Flow,4,TRUE,TRUE,FALSE,FALSE
 Default Report_flatFiles,System,Line,Lines,Export Limit,4,TRUE,TRUE,FALSE,FALSE
 Default Report_flatFiles,System,Line,Lines,Import Limit,4,TRUE,TRUE,FALSE,FALSE
