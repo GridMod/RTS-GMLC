@@ -15,8 +15,8 @@ def create_rts_MATPOWER_file(folder):
 
 
         pivot_heat_rate = pd.DataFrame(_generators[['Output_pct_0', 'Output_pct_1', 'Output_pct_2', 'Output_pct_3',
-                                                     'Inc_Heat_Rate_0', 'Inc_Heat_Rate_1', 'Inc_Heat_Rate_2', 'Inc_Heat_Rate_3', 
-                                                     'Net_Heat_Rate_0', 'Net_Heat_Rate_1', 'Net_Heat_Rate_2', 'Net_Heat_Rate_3']])
+                                                     'HR_incr_1', 'HR_incr_2', 'HR_incr_3', 
+                                                     'HR_avg_0']])
 
         def io(r):
             segments = 1
@@ -24,12 +24,12 @@ def create_rts_MATPOWER_file(folder):
             x2 = np.linspace(r['Output_pct_1'], r['Output_pct_2'], segments+1)
             x3 = np.linspace(r['Output_pct_2'], r['Output_pct_3'], segments+1)
 
-            if r['Net_Heat_Rate_0'] <= 3412:
-                r['Net_Heat_Rate_0'] = 3412
+            if r['HR_avg_0'] <= 3412:
+                r['HR_avg_0'] = 3412
 
-            y1 = ( x1 - x1.min() ) * r['Inc_Heat_Rate_0'] + r['Net_Heat_Rate_0'] *  x1.min()
-            y2 = ( x2 - x2.min() ) * r['Inc_Heat_Rate_1'] + y1.max()
-            y3 = ( x3 - x3.min() ) * r['Inc_Heat_Rate_2'] + y2.max()
+            y1 = ( x1 - x1.min() ) * 0 + r['HR_avg_0'] *  x1.min()
+            y2 = ( x2 - x2.min() ) * r['HR_incr_1'] + y1.max()
+            y3 = ( x3 - x3.min() ) * r['HR_incr_2'] + y2.max()
 
             return zip(list(np.concatenate([x1[:-1], x2[:-1], x3[:-1]])), list(np.concatenate([y1[:-1], y2[:-1], y3[:-1]])))
 
@@ -55,7 +55,7 @@ def create_rts_MATPOWER_file(folder):
         l('')
 
         l(s('RTS 96 Test Case'))
-        l(s('By : Clayton Barrows, Ali Ehlen, Matt O Connell, and Dheepak Krishnamurthy'))
+        l(s('By : Clayton Barrows, Ali Ehlen, Matt O Connell, Dheepak Krishnamurthy, amd Bremdan McBennett of the National Renewable Energy Lab, Golden CO'))
         l(s('%', padding=''))
 
         l('')
