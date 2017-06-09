@@ -27,14 +27,16 @@ def create_rts_MATPOWER_file(folder):
             if r['HR_avg_0'] <= 3412:
                 r['HR_avg_0'] = 3412
 
-            y1 = ( x1 - x1.min() ) * 0 + r['HR_avg_0'] *  x1.min()
-            y2 = ( x2 - x2.min() ) * r['HR_incr_1'] + y1.max()
-            y3 = ( x3 - x3.min() ) * r['HR_incr_2'] + y2.max()
+            y1 = ( x1 - x1.min() ) * r['HR_incr_1'] + r['HR_avg_0'] *  x1.min()
+            y2 = ( x2 - x2.min() ) * r['HR_incr_2'] + y1.max()
+            y3 = ( x3 - x3.min() ) * r['HR_incr_3'] + y2.max()
+            print(list(np.concatenate([y1[:-1], y2[:-1], y3[:-1]])))
 
             return zip(list(np.concatenate([x1[:-1], x2[:-1], x3[:-1]])), list(np.concatenate([y1[:-1], y2[:-1], y3[:-1]])))
 
         pivot_heat_rate['io_cost'] = pivot_heat_rate.apply(io, axis=1)
         _generators = pd.concat([_generators,pivot_heat_rate['io_cost']],axis=1)
+        _generators.to_csv('_generators.csv')
 
         NaN = pd.np.NaN
 
