@@ -1,7 +1,7 @@
 function mpc = RTS96
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% RTS 96 Test Case %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
- By : Clayton Barrows, Ali Ehlen, Matt O Connell, Dheepak Krishnamurthy, amd Bremdan McBennett of the National Renewable Energy Lab, Golden CO 
+% By : Clayton Barrows, Ali Ehlen, Matt O Connell, Dheepak Krishnamurthy, amd Bremdan McBennett of the National Renewable Energy Lab, Golden CO 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 mpc.version = '2';
