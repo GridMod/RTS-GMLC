@@ -2,6 +2,7 @@
 Reliability Test System - Grid Modernization Lab Consortium 
 
 ### This repository is for the Reliability Test System Grid Modernization Lab Consortium (RTS-GMLC) which is an updated version of the RTS-96 test system. A summary of updates can be found in [GMLC_updates.md](https://github.com/GridMod/RTS-GMLC/blob/master/RTS-GMLC_updates.md).
+This repository, and the associated data has been developed to facilitate Production Cost Modeling. Reliability calculations using the updated RTS-GMLC data in this repository amd the RTS3 program, provided by [Gene Preston](http:/egpreston.com) can be found [here](http://egpreston.com/NEWRTS.zip).
 ![RTS-GMLC-layers](https://github.com/GridMod/RTS-GMLC/blob/master/rts_layers.png)
 
 #### The [RTS_Data](https://github.com/GridMod/RTS-GMLC/tree/master/RTS_Data) folder contains data in an open `csv` format, and in grid modeling tool specific formats: 
