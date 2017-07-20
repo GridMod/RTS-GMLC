@@ -15,7 +15,7 @@ Diagnostic,,
 /START SCENARIOS,,
 ,Load: DA,Load: RT
 ,RE: DA,RE: RT
-,Gen Outages,Gen Outages
+,Gen Outages,
 ,Add Flex_Down,Add Reg_Down
 ,Add Flex_Up,Add Reg_Up
 ,Add Reg_Down,Add Spin_Up
