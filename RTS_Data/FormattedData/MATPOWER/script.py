@@ -204,7 +204,7 @@ mpc.gencost = [''')
 %% DC line data
 % F_BUS T_BUS BR_STATUS PF PT QF QT VF VT PMIN PMAX QMINF QMAXF QMINT QMAXT LOSS0 LOSS1 MU_PMIN MU_PMAX MU_QMINF MU_QMAXF MU_QMINT MU_QMAXT
 mpc.dcline = [
-	113 316 1 0 0 0 0 1 1 0 inf -inf inf -inf inf 0 0 0 0 0 0 0 0
+	113 316 1 0 0 0 0 1 1 100 -100 -inf inf -inf inf 0 0 0 0 0 0 0 0
 ]
 ''')
 
