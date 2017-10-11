@@ -122,7 +122,7 @@ mpc.gen = [''')
             gen['Qmin'] = g['QMin MVAR']
             gen['Vg'] = g['V Setpoint p.u.']
             gen['mBase'] = 100.0 #default
-            if g['Fuel'] in ['Wind','Solar']:
+            if g['Fuel'] in ['Wind','Solar', 'Storage']:
                 gen['status'] = 0
             else:
                 gen['status'] = 1 #default
