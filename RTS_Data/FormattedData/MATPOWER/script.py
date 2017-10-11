@@ -192,8 +192,8 @@ mpc.gencost = [''')
                 if g['Fuel'] == 'Sync_Cond':
                     print('Synchronous condensor!')
                     g['PMax MW'] = 1
-                gen['cost'] = '{:.05f}\t0\t{:.05f}\t0\t{:.05f}\t0'.format(*(pd.np.linspace(0, g['PMax MW'], 4)))
                 gen['ncost'] = 4
+                gen['cost'] = '{:.05f}\t\t0\t\t{:.05f}\t\t0\t\t{:.05f}\t\t0\t\t{:.05f}\t\t0'.format(*(pd.np.linspace(0, g['PMax MW'], 4)))
             else:
                 gen['cost'] = '\t'.join(['{:.05f}\t{:.05f}'.format(x*g['PMax MW'], y*g['PMax MW']*g['Fuel Price $/MMBTU']/1000) for x, y in gen['cost']]) # BTU/kWh * (1000kWH/MWh) * MWh * $/MMBTU  * (1MMBTU/100000BTU) = 1/1000
                 gen['ncost'] = len(g['io_cost'])
