@@ -6,6 +6,7 @@ import numpy as np
 
 curr_dir = os.path.dirname(os.path.realpath(__file__))
 
+DIGITS = 5
 
 def create_rts_MATPOWER_file(folder):
 
@@ -15,7 +16,7 @@ def create_rts_MATPOWER_file(folder):
 
 
         pivot_heat_rate = pd.DataFrame(_generators[['Output_pct_0', 'Output_pct_1', 'Output_pct_2', 'Output_pct_3',
-                                                     'HR_incr_1', 'HR_incr_2', 'HR_incr_3', 
+                                                     'HR_incr_1', 'HR_incr_2', 'HR_incr_3',
                                                      'HR_avg_0']])
 
         def io(r):
@@ -31,7 +32,7 @@ def create_rts_MATPOWER_file(folder):
             y2 = ( x2 - x2.min() ) * r['HR_incr_2'] + y1.max()
             y3 = ( x3 - x3.min() ) * r['HR_incr_3'] + y2.max()
 
-            return zip(list(np.concatenate([x1[:-1], x2[:-1], x3[:-1]])), list(np.concatenate([y1[:-1], y2[:-1], y3[:-1]])))
+            return list(zip(list(np.concatenate([x1[:1], x1[-1:], x2[-1:], x3[-1:]])), list(np.concatenate([y1[:1], y1[-1:], y2[-1:], y3[-1:]]))))
 
         pivot_heat_rate['io_cost'] = pivot_heat_rate.apply(io, axis=1)
         _generators = pd.concat([_generators,pivot_heat_rate['io_cost']],axis=1)
@@ -100,7 +101,8 @@ mpc.bus = [''')
             bus['zone'] = int(b['Zone'])
             bus['Vmax'] = 1.05 #default
             bus['Vmin'] = 0.95 #default
-            l('\t{bus_i}\t{type}\t{Pd}\t{Qd}\t{Gs}\t{Bs}\t{area}\t{Vm}\t{Va}\t{baseKV}\t{zone}\t{Vmax}\t{Vmin}'.format(**bus))
+            bus["PRECISION"] = DIGITS
+            l('\t{bus_i}\t{type}\t{Pd}\t{Qd}\t{Gs}\t{Bs}\t{area}\t{Vm:.{PRECISION}f}\t{Va:.{PRECISION}f}\t{baseKV}\t{zone}\t{Vmax}\t{Vmin}'.format(**bus))
 
         l('];')
 
@@ -137,8 +139,9 @@ mpc.gen = [''')
             gen['ramp_30'] = g['Ramp Rate MW/Min']
             gen['ramp_q'] = g['Ramp Rate MW/Min']
             gen['apf'] = 0.0 #default
+            gen["PRECISION"] = DIGITS
 
-            l('	{bus}	{Pg}	{Qg}	{Qmax}	{Qmin}	{Vg}	{mBase}	{status}	{Pmax}	{Pmin}	{Pc1}	{Pc2}	{Qc1min}	{Qc1max}	{Qc2min}	{Qc2max}	{ramp_agc}	{ramp_10}	{ramp_30}	{ramp_q}	{apf}'.format(**gen))
+            l('	{bus}	{Pg}	{Qg}	{Qmax}	{Qmin}	{Vg:.{PRECISION}f}	{mBase}	{status}	{Pmax}	{Pmin}	{Pc1}	{Pc2}	{Qc1min}	{Qc1max}	{Qc2min}	{Qc2max}	{ramp_agc}	{ramp_10}	{ramp_30}	{ramp_q}	{apf}'.format(**gen))
 
         l('];')
 
@@ -163,8 +166,9 @@ mpc.branch = [''')
             branch['status'] = 1 #default
             branch['angmin'] = -180 #default
             branch['angmax'] = 180 #default
+            branch['PRECISION'] = DIGITS
 
-            l('	{fbus}	{tbus}	{r}	{x}	{b}	{rateA}	{rateB}	{rateC}	{ratio}	{angle}	{status}	{angmin}	{angmax}'.format(**branch))
+            l('	{fbus}	{tbus}	{r:.{PRECISION}f}	{x:.{PRECISION}f}	{b:.{PRECISION}f}	{rateA}	{rateB}	{rateC}	{ratio}	{angle}	{status}	{angmin}	{angmax}'.format(**branch))
 
         l('];')
 
@@ -180,7 +184,7 @@ mpc.gencost = [''')
 
         for i, g in _generators.iterrows():
             gen['model'] = 1
-            gen['startup'] = ((g['Start Heat Cold MBTU'] * g['Fuel Price $/MMBTU']) + g['Non Fuel Start Cost $'] if not np.isnan((g['Start Heat Cold MBTU'] * g['Fuel Price $/MMBTU']) +g['Non Fuel Start Cost $']) else 0.0) 
+            gen['startup'] = ((g['Start Heat Cold MBTU'] * g['Fuel Price $/MMBTU']) + g['Non Fuel Start Cost $'] if not np.isnan((g['Start Heat Cold MBTU'] * g['Fuel Price $/MMBTU']) +g['Non Fuel Start Cost $']) else 0.0)
             gen['shutdown'] = (g['Start Heat Cold MBTU'] * g['Fuel Price $/MMBTU'] if not np.isnan(g['Start Heat Cold MBTU'] * g['Fuel Price $/MMBTU']) else 0.0)
             gen['cost'] = list()
             gen['cost'] = g['io_cost']
@@ -188,10 +192,10 @@ mpc.gencost = [''')
                 if g['Fuel'] == 'Sync_Cond':
                     print('Synchronous condensor!')
                     g['PMax MW'] = 1
-                gen['cost'] = '{}\t0\t{}\t0\t{}\t0'.format(*(pd.np.linspace(0, g['PMax MW'], 3)))
-                gen['ncost'] = 3
+                gen['cost'] = '{:.05f}\t0\t{:.05f}\t0\t{:.05f}\t0'.format(*(pd.np.linspace(0, g['PMax MW'], 4)))
+                gen['ncost'] = 4
             else:
-                gen['cost'] = '\t'.join(['{}\t{}'.format(x*g['PMax MW'], y*g['PMax MW']*g['Fuel Price $/MMBTU']/1000) for x, y in gen['cost']]) # BTU/kWh * (1000kWH/MWh) * MWh * $/MMBTU  * (1MMBTU/100000BTU) = 1/1000
+                gen['cost'] = '\t'.join(['{:.05f}\t{:.05f}'.format(x*g['PMax MW'], y*g['PMax MW']*g['Fuel Price $/MMBTU']/1000) for x, y in gen['cost']]) # BTU/kWh * (1000kWH/MWh) * MWh * $/MMBTU  * (1MMBTU/100000BTU) = 1/1000
                 gen['ncost'] = len(g['io_cost'])
             l('	{model}	{startup}	{shutdown}	{ncost}	{cost}'.format(**gen))
 
