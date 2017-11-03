@@ -1,7 +1,7 @@
-function mpc = RTS96
+function mpc = RTS_GMLC
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% RTS 96 Test Case %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
- % By : Clayton Barrows, Ali Ehlen, Matt O Connell, Dheepak Krishnamurthy, amd Bremdan McBennett of the National Renewable Energy Lab, Golden CO 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% RTS-GMLC Test Case %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ % By : Clayton Barrows, Ali Ehlen, Matt O Connell, Dheepak Krishnamurthy, Bremdan McBennett, and Aaron Bloom of the National Renewable Energy Lab, Golden CO 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 mpc.version = '2';
