@@ -57,7 +57,9 @@ def create_rts_MATPOWER_file(folder):
         l('')
 
         l(s('RTS-GMLC Test Case'))
-        l(s('% By : Clayton Barrows, Ali Ehlen, Matt O Connell, Dheepak Krishnamurthy, Bremdan McBennett, and Aaron Bloom of the National Renewable Energy Lab, Golden CO'))
+        l(s('By: Clayton Barrows, Ali Ehlen, Matt O Connell,'))
+        l(s('Dheepak Krishnamurthy, Brendan McBennett, and Aaron Bloom'))
+        l(s('National Renewable Energy Lab, Golden CO'))
         l(s('%', padding=''))
 
         l('')
