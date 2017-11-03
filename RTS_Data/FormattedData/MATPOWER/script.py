@@ -213,7 +213,7 @@ mpc.dcline = [
 ''')
 
 
-        with open('./RTS.m', 'w') as f:
+        with open('./RTS_GMLC.m', 'w') as f:
             f.write('\n'.join(string_list))
 
 
