@@ -6,7 +6,11 @@ function mpc = RTS_GMLC
 %%%%%%%%%%%%%%%%%%% National Renewable Energy Lab, Golden CO %%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+%% MATPOWER Case Format : Version 2
 mpc.version = '2';
+
+%%-----  Power Flow Data  -----%%
+%% system MVA base
 mpc.baseMVA = 100.0;
 
 %% area data
@@ -383,10 +387,10 @@ mpc.branch = [
 	323	325	0.00000	0.00900	0.00000	722	722	722	1.0	0.0	1	-180	180
 ];
 
+%%-----  OPF Data  -----%%
 %% generator cost data
-%	1	startup	shutdown	n	P0,c(0)	...	Pn-1,c(n-1)
-%	2	startup	shutdown	n	c(n-1)	...	c0
-
+%   1   startup shutdown    n   x1  y1  ... xn  yn
+%   2   startup shutdown    n   c(n-1)  ... c0
 mpc.gencost = [
 	1	51.747	51.747	4	8.00000	1085.77625	12.00000	1477.23196	16.00000	1869.51562	20.00000	2298.06357
 	1	51.747	51.747	4	8.00000	1085.77625	12.00000	1477.23196	16.00000	1869.51562	20.00000	2298.06357
@@ -549,8 +553,84 @@ mpc.gencost = [
 ];
 
 
+ %% bus names
+mpc.bus_name = {
+	'ABEL        ';
+	'ADAMS       ';
+	'ADLER       ';
+	'AGRICOLA    ';
+	'AIKEN       ';
+	'ALBER       ';
+	'ALDER       ';
+	'ALGER       ';
+	'ALI         ';
+	'ALLEN       ';
+	'ANNA        ';
+	'ARCHER      ';
+	'ARNE        ';
+	'ARNOLD      ';
+	'ARTHUR      ';
+	'ASSER       ';
+	'ASTON       ';
+	'ASTOR       ';
+	'ATTAR       ';
+	'ATTILA      ';
+	'ATTLEE      ';
+	'AUBREY      ';
+	'AUSTEN      ';
+	'AVERY       ';
+	'BACH        ';
+	'BACON       ';
+	'BAFFIN      ';
+	'BAILEY      ';
+	'BAIN        ';
+	'BAJER       ';
+	'BAKER       ';
+	'BALCH       ';
+	'BALZAC      ';
+	'BANKS       ';
+	'BARDEEN     ';
+	'BARKLA      ';
+	'BARLOW      ';
+	'BARRY       ';
+	'BARTON      ';
+	'BASOV       ';
+	'BATES       ';
+	'BAYLE       ';
+	'BEDE        ';
+	'BEETHOVEN   ';
+	'BEHRING     ';
+	'BELL        ';
+	'BLOCH       ';
+	'BORDET      ';
+	'CABELL      ';
+	'CABOT       ';
+	'CAESAR      ';
+	'CAINE       ';
+	'CALVIN      ';
+	'CAMUS       ';
+	'CAREW       ';
+	'CARREL      ';
+	'CARTER      ';
+	'CARUSO      ';
+	'CARY        ';
+	'CAXTON      ';
+	'CECIL       ';
+	'CHAIN       ';
+	'CHASE       ';
+	'CHIFA       ';
+	'CHUHSI      ';
+	'CLARK       ';
+	'CLAY        ';
+	'CLIVE       ';
+	'COBB        ';
+	'COLE        ';
+	'COMTE       ';
+	'CURIE       ';
+	'CURTISS     ';
+];
 
-%% DC line data
+%%-----  DC Line Data  -----%%
 % F_BUS T_BUS BR_STATUS PF PT QF QT VF VT PMIN PMAX QMINF QMAXF QMINT QMAXT LOSS0 LOSS1 MU_PMIN MU_PMAX MU_QMINF MU_QMAXF MU_QMINT MU_QMAXT
 mpc.dcline = [
 	113 316 1 0 0 0 0 1 1 -100 100 -inf inf -inf inf 0 0 0 0 0 0 0 0

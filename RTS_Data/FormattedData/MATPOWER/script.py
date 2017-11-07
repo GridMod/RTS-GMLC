@@ -63,7 +63,11 @@ def create_rts_MATPOWER_file(folder):
         l(s('%', padding=''))
 
         l('')
+        l('%% MATPOWER Case Format : Version 2')
         l("mpc.version = '2';")
+        l('')
+        l("%%-----  Power Flow Data  -----%%")
+        l("%% system MVA base")
         l("mpc.baseMVA = 100.0;")
 
         l('''
@@ -176,10 +180,10 @@ mpc.branch = [''')
 
 
         l('''
+%%-----  OPF Data  -----%%
 %% generator cost data
-%	1	startup	shutdown	n	P0,c(0)	...	Pn-1,c(n-1)
-%	2	startup	shutdown	n	c(n-1)	...	c0
-
+%   1   startup shutdown    n   x1  y1  ... xn  yn
+%   2   startup shutdown    n   c(n-1)  ... c0
 mpc.gencost = [''')
 
         gen = dict()
@@ -204,10 +208,19 @@ mpc.gencost = [''')
         l('];')
 
         l('')
-        l('')
+        l('''
+ %% bus names
+mpc.bus_name = {''')
+        bn = dict()
+        for i,b in buses.iterrows():
+            bn['bn'] ="\t'{:12}'".format(b['Bus Name']).upper()
+            l('''{bn};'''.format(**bn))
+
+        l('];')
+
 
         l('''
-%% DC line data
+%%-----  DC Line Data  -----%%
 % F_BUS T_BUS BR_STATUS PF PT QF QT VF VT PMIN PMAX QMINF QMAXF QMINT QMAXT LOSS0 LOSS1 MU_PMIN MU_PMAX MU_QMINF MU_QMAXF MU_QMINT MU_QMAXT
 mpc.dcline = [
 	113 316 1 0 0 0 0 1 1 -100 100 -inf inf -inf inf 0 0 0 0 0 0 0 0
