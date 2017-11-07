@@ -216,7 +216,7 @@ mpc.bus_name = {''')
             bn['bn'] ="\t'{:12}'".format(b['Bus Name']).upper()
             l('''{bn};'''.format(**bn))
 
-        l('];')
+        l('};')
 
 
         l('''
