@@ -1,0 +1,1190 @@
+ This report is provided by Gene Preston <g.preston@ieee.org> on November 8, 2017.
+
+ P33 - Probabilistic Load Flow - Version: 20170911 - Run 11/ 8/17 - Page    1
+ November 07, 2017 19:41:38; Simulator Version 19; Build Date 2017_9_5
+
+ Base MVA              =     100.0
+
+ Load Flow Solution Monitor:
+ Initial ## buses used =        73     80000 max
+ Number buses not used =         0
+ Total number of buses =        73     80000 max
+ Number AC ckts in svc =       120    112000 max
+ Number AC ckts off    =         0
+ Number of xformers    =        15     32000 max
+   of these # autos    =        15        60 kVmin
+ Number of areas       =         3       480 max
+ Number of adj shunts  =         3      8000 max
+ Number of generators  =        30
+ Read load flow data   =   0h  0m  1s
+
+ changing slack bus for area           1  from           0  to         113
+
+ swing bus (main ntwk) =       113  area     1  buses=    73
+
+ no area interchange, adjust loads system wide
+ flat start bus voltages to specifications
+ remote bus regulation range is:    101 -    325
+
+ building  matrix
+ ordering  matrix
+ factoring matrix
+ Matrix processes time =   0h  0m  1s
+ Matrix max array size =       291    400000 max
+
+ load flow solution monitor (P+jQ sum into bus)...
+ iter  0    bus    223  perr=    712.22    bus    219  qerr=    175.69
+ iter  1    bus    312  perr=     43.66    bus    110  qerr=     64.09
+ iter  2    bus    110  perr=     -6.40    bus    110  qerr=     11.94
+ iter  3    bus    110  perr=      0.72    bus    313  qerr=     -3.15
+ iter  4    bus    308  perr=     -0.17    bus    313  qerr=     -0.84
+ iter  5    bus    308  perr=     -0.05    bus    315  qerr=     -0.72
+ iter  6    bus    308  perr=     -0.02    bus    315  qerr=     -0.76
+ iter  7    bus    308  perr=     -0.01    bus    315  qerr=     -0.77
+ iter  8    bus    318  perr=      0.00    bus    315  qerr=     -0.77
+ iter  9    bus    118  perr=      0.00    bus    213  qerr=      0.00
+ sys swing bus error   =    -0.003 MW
+ sum of abs bus errors =     0.087 MW     0.033 MVAR
+
+ iteration time        =         0 sec
+ total load flow time  =         0 sec
+ a load flow solution has been found in   9 iter
+
+
+ P33 - Probabilistic Load Flow - Version: 20170911 - Run 11/ 8/17 - Page    2
+ November 07, 2017 19:41:38; Simulator Version 19; Build Date 2017_9_5
+
+ AREA SUMMARY REPORT:
+
+                 GENERATION      ---LOAD---       ---LOSS---   INTERCHANGE  DIFF  SLACK
+  A#   AREA      MW     MVAR     MW     MVAR      MW    MVAR     MW   MVAR   MW    dMW
+  -- --------  ------  ------  ------  ------   ------ ------  ----- -----  ----  -----
+   1 1           2956     446    2850     579     39.5   -120     67   -12  0.00   0.00
+   2 2           2978     531    2850     579     50.8    -61     77    12  0.00
+   3 3           2770     740    2850     579     63.7    160   -144     0  0.00
+
+     TOTALS      8704    1718    8550    1739    154.0    -21
+
+
+ P33 - Probabilistic Load Flow - Version: 20170911 - Run 11/ 8/17 - Page    3
+ November 07, 2017 19:41:38; Simulator Version 19; Build Date 2017_9_5
+
+ ZONE SUMMARY REPORT:
+
+                        GENERATION       ---LOAD---    ---LOSS---   INTERCHANGE  -BUS--RANGE-    #
+ ZONE   NAME    A#    MW    MAX   MVAR    MW   MVAR    MW    MVAR    MW    MVAR   MIN    MAX   BUSES
+ ---- -------- ---  -----  -----  ----  -----  ----  -----   ----  -----  -----  -----  -----  -----
+    1 1          0      0      0     0      0     0    0.0      0      0      0      0      0      0
+   11 11         1    168    192    10    433    87    1.2     -7   -266    -69    101    105      4
+   12 12         1    523    547    54    529   107    5.1     68    -11   -121    102    108      4
+   13 13         1      0      0     0    370    75    3.4   -216   -373    140    109    112      4
+   14 14         1    220    220    76    265    53    1.9     -5    -46     27    113    113      1
+   15 15         1    670    670    25    309    62    9.7      2    351    -40    119    123      3
+   16 16         1    320    334   275    611   122    6.7     54   -297     97    114    124      4
+   17 17         1   1055   1055     5    333    67   11.5    -15    710    -47    117    122      4
+   21 21         2    142    166    21    433    87    3.0     -5   -294    -60    201    205      4
+   22 22         2    278    302    52    529   107    1.0     51   -252   -107    202    208      4
+   23 23         2      0      0     0    370    75   12.8   -140   -382     64    209    212      4
+   24 24         2    465    465   154    265    53    4.2     11    195     88    213    213      1
+   25 25         2    726    825     0    309    62   11.0    -12    406    -50    219    223      3
+   26 26         2    415    415   291    611   122    8.5     51   -204    116    214    224      4
+   27 27         2    952   1010    10    333    67   10.4    -18    608    -38    217    222      4
+   31 31         3    104    150    48    433    87    2.1     -3   -331    -35    301    305      4
+   32 32         3    236    260    72    529   107    0.4     47   -293    -83    302    308      4
+   33 33         3      0      0     0    370    75   15.0   -101   -385     25    309    312      4
+   34 34         3    355    355   149    265    53    3.5      7     86     88    313    313      1
+   35 35         3    710    710    74    309    62   17.6     66    383    -54    319    325      4
+   36 36         3    345    380   374    611   122   12.5    128   -278    123    314    324      4
+   37 37         3   1020   1020    19    333    67   12.5     16    674    -64    317    322      4
+      TOTALS         8704   9076         8550        153.9
+                    & OFF  14550
+
+ Note: The generation MVAR column includes variable shunt reactive.
+       The line loss column includes fixed shunt MW and MVAR.
+
+
+ P33 - Probabilistic Load Flow - Version: 20170911 - Run 11/ 8/17 - Page    4
+ November 07, 2017 19:41:38; Simulator Version 19; Build Date 2017_9_5
+
+ GENERATION SUMMARY REPORT:
+
+  BUS#   BUS NAME    kV  W AR# AREANAME ZN# ZONENAME    MW     MVAR    QMAX    QMIN    PMAX   RESERV  %   mi  : TSSBUS TSS-BUS-NAME  kV
+ ----- ------------ ---- - --- -------- --- --------  ------  ------  ------  ------  ------  ------ --- ---- : ------ ------------ ----
+   101 ABEL          138     1 1         11 11        168.00     11.     80.    -50.    192.0    24.  88  104 :    101 ABEL          138
+   102 ADAMS         138     1 1         12 12        168.00      5.     80.    -50.    192.0    24.  88  107 :    102 ADAMS         138
+   107 ALDER         138     1 1         12 12        355.00     49.    150.    -25.    355.0     0. 100    0 :    107 ALDER         138
+   113 ARNE          230     1 1         14 14        220.00     76.     76.    -60.    220.0     0. 100   92 :    113 ARNE          230
+   115 ARTHUR        230     1 1         16 16        165.00     92.     92.    -50.    179.0    14.  92  126 :    115 ARTHUR        230
+   116 ASSER         230     1 1         16 16        155.00     80.     80.    -50.    155.0     0. 100  115 :    116 ASSER         230
+   118 ASTOR         230     1 1         17 17        355.00     68.    150.    -25.    355.0     0. 100  178 :    118 ASTOR         230
+   121 ATTLEE        230     1 1         17 17        400.00    -22.    200.    -50.    400.0     0. 100  160 :    121 ATTLEE        230
+   122 AUBREY        230     1 1         17 17        300.00    -41.     96.    -60.    300.0     0. 100  207 :    122 AUBREY        230
+   123 AUSTEN        230     1 1         15 15        670.00     25.    287.   -120.    670.0     0. 100  126 :    123 AUSTEN        230
+   201 BACH          138     2 2         21 21        142.00     22.     66.    -35.    166.0    24.  86   97 :    201 BACH          138
+   202 BACON         138     2 2         22 22        168.00     14.     80.    -50.    192.0    24.  88  100 :    202 BACON         138
+   207 BAKER         138     2 2         22 22        110.00     38.     38.    -30.    110.0     0. 100  132 :    207 BAKER         138
+   213 BARLOW        230     2 2         24 24        465.00    154.    188.    -55.    465.0     0. 100  106 :    213 BARLOW        230
+   215 BARTON        230     2 2         26 26        260.00     86.     86.    -60.    260.0     0. 100  144 :    215 BARTON        230
+   216 BASOV         230     2 2         26 26        155.00     80.     80.    -50.    155.0     0. 100  156 :    216 BASOV         230
+   218 BAYLE         230     2 2         27 27        355.00     60.    150.    -25.    355.0     0. 100  196 :    218 BAYLE         230
+   221 BEHRING       230     2 2         27 27        296.97     -8.    150.    -25.    355.0    58.  84  178 :    221 BEHRING       230
+   222 BELL          230     2 2         27 27        300.00    -42.     96.    -60.    300.0     0. 100  225 :    222 BELL          230
+   223 BLOCH         230     2 2         25 25        726.00      1.    367.   -170.    825.0    99.  88  215 :    223 BLOCH         230
+   301 CABELL        138     3 3         31 31        104.00     49.     58.    -30.    150.0    46.  69  340 :    301 CABELL        138
+   302 CABOT         138     3 3         32 32        126.00     34.     58.    -30.    150.0    24.  84  343 :    302 CABOT         138
+   307 CAREW         138     3 3         32 32        110.00     38.     38.    -30.    110.0     0. 100  354 :    307 CAREW         138
+   313 CECIL         230 H   3 3         34 34        355.00    150.    150.    -25.    355.0     0. 100  288 :    313 CECIL         230
+   315 CHASE         230     3 3         36 36        190.00    129.    128.    -30.    225.0    35.  84  299 :    315 CHASE         230
+   316 CHIFA         230     3 3         36 36        155.00     79.     80.    -50.    155.0     0. 100  287 :    316 CHIFA         230
+   318 CLARK         230     3 3         37 37        355.00     63.    150.    -25.    355.0     0. 100  315 :    318 CLARK         230
+   321 COBB          230     3 3         37 37        355.00     -4.    150.    -25.    355.0     0. 100  333 :    321 COBB          230
+   322 COLE          230     3 3         37 37        310.00    -40.    102.    -70.    310.0     0. 100  378 :    322 COLE          230
+   323 COMTE         230     3 3         35 35        710.00     75.    300.    -50.    710.0     0. 100  228 :    323 COMTE         230
+
+ P33 - Probabilistic Load Flow - Version: 20170911 - Run 11/ 8/17 - Page    5
+ November 07, 2017 19:41:38; Simulator Version 19; Build Date 2017_9_5
+
+ HIGHEST LOADED CIRCUITS (NO-GEN-STEPUP) SUMMARY REPORT:
+
+    306 CAMUS    138  -to-   310 CARUSO   138   Ratg=  175   Pct Load=  95.4
+    107 ALDER    138  -to-   108 ALGER    138   Ratg=  175   Pct Load=  92.5
+    106 ALBER    138  -to-   110 ALLEN    138   Ratg=  175   Pct Load=  91.7
+    206 BAJER    138  -to-   210 BANKS    138   Ratg=  175   Pct Load=  89.5
+    314 CHAIN    230  -to-   316 CHIFA    230   Ratg=  500   Pct Load=  66.7
+    303 CAESAR   138  -to-   324 CURIE    230   Ratg=  400   Pct Load=  63.0
+    308 CARREL   138  -to-   309 CARTER   138   Ratg=  175   Pct Load=  61.2
+    208 BALCH    138  -to-   209 BALZAC   138   Ratg=  175   Pct Load=  60.1
+    310 CARUSO   138  -to-   312 CAXTON   230   Ratg=  400   Pct Load=  59.2
+    312 CAXTON   230  -to-   323 COMTE    230   Ratg=  500   Pct Load=  55.9
+    316 CHIFA    230  -to-   317 CHUHSI   230   Ratg=  500   Pct Load=  55.3
+    214 BARRY    230  -to-   216 BASOV    230   Ratg=  500   Pct Load=  54.4
+    210 BANKS    138  -to-   212 BARKLA   230   Ratg=  400   Pct Load=  53.1
+    308 CARREL   138  -to-   310 CARUSO   138   Ratg=  175   Pct Load=  52.3
+    208 BALCH    138  -to-   210 BANKS    138   Ratg=  175   Pct Load=  51.8
+    114 ARNOLD   230  -to-   116 ASSER    230   Ratg=  500   Pct Load=  51.6
+    315 CHASE    230  -to-   324 CURIE    230   Ratg=  500   Pct Load=  50.4
+    310 CARUSO   138  -to-   311 CARY     230   Ratg=  400   Pct Load=  50.0
+    313 CECIL    230  -to-   323 COMTE    230   Ratg=  500   Pct Load=  48.5
+    216 BASOV    230  -to-   217 BATES    230   Ratg=  500   Pct Load=  47.7
+    116 ASSER    230  -to-   117 ASTON    230   Ratg=  500   Pct Load=  46.3
+    103 ADLER    138  -to-   124 AVERY    230   Ratg=  400   Pct Load=  46.3
+    203 BAFFIN   138  -to-   224 BORDET   230   Ratg=  400   Pct Load=  45.9
+    309 CARTER   138  -to-   312 CAXTON   230   Ratg=  400   Pct Load=  45.3
+    212 BARKLA   230  -to-   223 BLOCH    230   Ratg=  500   Pct Load=  44.3
+    210 BANKS    138  -to-   211 BARDEEN  230   Ratg=  400   Pct Load=  43.8
+    211 BARDEEN  230  -to-   213 BARLOW   230   Ratg=  500   Pct Load=  42.7
+    110 ALLEN    138  -to-   112 ARCHER   230   Ratg=  400   Pct Load=  41.8
+    209 BALZAC   138  -to-   212 BARKLA   230   Ratg=  400   Pct Load=  40.8
+    112 ARCHER   230  -to-   123 AUSTEN   230   Ratg=  500   Pct Load=  40.2
+    315 CHASE    230  -to-   321 COBB     230   Ratg=  500   Pct Load=  40.1
+    315 CHASE    230  -to-   321 COBB     230   Ratg=  500   Pct Load=  40.1
+    311 CARY     230  -to-   313 CECIL    230   Ratg=  500   Pct Load=  39.2
+    309 CARTER   138  -to-   311 CARY     230   Ratg=  400   Pct Load=  37.8
+    304 CAINE    138  -to-   309 CARTER   138   Ratg=  175   Pct Load=  37.7
+    115 ARTHUR   230  -to-   124 AVERY    230   Ratg=  500   Pct Load=  37.0
+    215 BARTON   230  -to-   224 BORDET   230   Ratg=  500   Pct Load=  36.8
+    215 BARTON   230  -to-   221 BEHRING  230   Ratg=  500   Pct Load=  35.4
+    215 BARTON   230  -to-   221 BEHRING  230   Ratg=  500   Pct Load=  35.4
+    113 ARNE     230  -to-   123 AUSTEN   230   Ratg=  500   Pct Load=  34.9
+    213 BARLOW   230  -to-   223 BLOCH    230   Ratg=  500   Pct Load=  34.2
+    115 ARTHUR   230  -to-   121 ATTLEE   230   Ratg=  500   Pct Load=  34.1
+    115 ARTHUR   230  -to-   121 ATTLEE   230   Ratg=  500   Pct Load=  34.1
+    107 ALDER    138  -to-   203 BAFFIN   138   Ratg=  175   Pct Load=  33.6
+    209 BALZAC   138  -to-   211 BARDEEN  230   Ratg=  400   Pct Load=  32.9
+    110 ALLEN    138  -to-   111 ANNA     230   Ratg=  400   Pct Load=  32.8
+    109 ALI      138  -to-   112 ARCHER   230   Ratg=  400   Pct Load=  32.5
+    321 COBB     230  -to-   322 COLE     230   Ratg=  500   Pct Load=  32.3
+
+ P33 - Probabilistic Load Flow - Version: 20170911 - Run 11/ 8/17 - Page    6
+ November 07, 2017 19:41:38; Simulator Version 19; Build Date 2017_9_5
+
+ LOW VOLTAGE SUMMARY REPORT:
+
+    3    308  CARREL   138  0.9506              3    307  CAREW    138  0.9568
+    2    208  BALCH    138  0.9638              2    207  BAKER    138  0.9699
+    3    303  CAESAR   138  0.9982              3    324  CURIE    230  0.9993
+    3    312  CAXTON   230  1.0026              3    309  CARTER   138  1.0070
+    3    304  CAINE    138  1.0074              1    103  ADLER    138  1.0113
+    1    124  AVERY    230  1.0132              2    204  BAILEY   138  1.0153
+    2    224  BORDET   230  1.0166              1    108  ALGER    138  1.0167
+    1    104  AGRICOLA 138  1.0175              2    212  BARKLA   230  1.0178
+    3    311  CARY     230  1.0181              2    203  BAFFIN   138  1.0185
+    3    306  CAMUS    138  1.0196              1    112  ARCHER   230  1.0197
+    2    209  BALZAC   138  1.0201              1    109  ALI      138  1.0266
+    1    111  ANNA     230  1.0270              2    206  BAJER    138  1.0275
+    3    305  CALVIN   138  1.0283              2    211  BARDEEN  230  1.0284
+    1    106  ALBER    138  1.0324              3    310  CARUSO   138  1.0324
+    2    205  BAIN     138  1.0335              1    113  ARNE     230  1.0347
+    3    313  CECIL    230  1.0350              1    105  AIKEN    138  1.0354
+    3    319  CLAY     230  1.0390              1    119  ATTAR    230  1.0398
+    2    219  BEDE     230  1.0404              3    315  CHASE    230  1.0422
+    2    210  BANKS    138  1.0428              1    115  ARTHUR   230  1.0428
+    3    320  CLIVE    230  1.0436              2    215  BARTON   230  1.0437
+    1    120  ATTILA   230  1.0439              2    220  BEETHOVE 230  1.0440
+    1    114  ARNOLD   230  1.0441              3    316  CHIFA    230  1.0449
+    1    116  ASSER    230  1.0461              1    102  ADAMS    138  1.0467
+    1    101  ABEL     138  1.0468              2    216  BASOV    230  1.0473
+    3    317  CHUHSI   230  1.0475              1    117  ASTON    230  1.0483
+    3    325  CURTISS  230  1.0492              2    217  BATES    230  1.0494
+    1    110  ALLEN    138  1.0500              1    107  ALDER    138  1.0500
+    1    118  ASTOR    230  1.0500              1    121  ATTLEE   230  1.0500
+    1    122  AUBREY   230  1.0500              1    123  AUSTEN   230  1.0500
+    2    201  BACH     138  1.0500              2    202  BACON    138  1.0500
+    2    213  BARLOW   230  1.0500              2    214  BARRY    230  1.0500
+    2    218  BAYLE    230  1.0500              2    221  BEHRING  230  1.0500
+    2    222  BELL     230  1.0500              2    223  BLOCH    230  1.0500
+    3    301  CABELL   138  1.0500              3    302  CABOT    138  1.0500
+    3    314  CHAIN    230  1.0500              3    318  CLARK    230  1.0500
+    3    321  COBB     230  1.0500              3    322  COLE     230  1.0500
+    3    323  COMTE    230  1.0500
+
+ P33 - Probabilistic Load Flow - Version: 20170911 - Run 11/ 8/17 - Page    7
+ November 07, 2017 19:41:38; Simulator Version 19; Build Date 2017_9_5
+
+ HIGH VOLTAGE SUMMARY REPORT:
+
+    1    107  ALDER    138  1.0500              1    118  ASTOR    230  1.0500
+    1    121  ATTLEE   230  1.0500              1    122  AUBREY   230  1.0500
+    1    123  AUSTEN   230  1.0500              2    201  BACH     138  1.0500
+    2    202  BACON    138  1.0500              2    213  BARLOW   230  1.0500
+    2    214  BARRY    230  1.0500              2    218  BAYLE    230  1.0500
+    2    221  BEHRING  230  1.0500              2    222  BELL     230  1.0500
+    2    223  BLOCH    230  1.0500              3    301  CABELL   138  1.0500
+    3    302  CABOT    138  1.0500              3    314  CHAIN    230  1.0500
+    3    318  CLARK    230  1.0500              3    321  COBB     230  1.0500
+    3    322  COLE     230  1.0500              3    323  COMTE    230  1.0500
+    1    110  ALLEN    138  1.0500              2    217  BATES    230  1.0494
+    3    325  CURTISS  230  1.0492              1    117  ASTON    230  1.0483
+    3    317  CHUHSI   230  1.0475              2    216  BASOV    230  1.0473
+    1    101  ABEL     138  1.0468              1    102  ADAMS    138  1.0467
+    1    116  ASSER    230  1.0461              3    316  CHIFA    230  1.0449
+    1    114  ARNOLD   230  1.0441              2    220  BEETHOVE 230  1.0440
+    1    120  ATTILA   230  1.0439              2    215  BARTON   230  1.0437
+    3    320  CLIVE    230  1.0436              1    115  ARTHUR   230  1.0428
+    2    210  BANKS    138  1.0428              3    315  CHASE    230  1.0422
+    2    219  BEDE     230  1.0404              1    119  ATTAR    230  1.0398
+    3    319  CLAY     230  1.0390              1    105  AIKEN    138  1.0354
+    3    313  CECIL    230  1.0350              1    113  ARNE     230  1.0347
+    2    205  BAIN     138  1.0335              3    310  CARUSO   138  1.0324
+    1    106  ALBER    138  1.0324              2    211  BARDEEN  230  1.0284
+    3    305  CALVIN   138  1.0283              2    206  BAJER    138  1.0275
+    1    111  ANNA     230  1.0270              1    109  ALI      138  1.0266
+    2    209  BALZAC   138  1.0201              1    112  ARCHER   230  1.0197
+    3    306  CAMUS    138  1.0196              2    203  BAFFIN   138  1.0185
+    3    311  CARY     230  1.0181              2    212  BARKLA   230  1.0178
+    1    104  AGRICOLA 138  1.0175              1    108  ALGER    138  1.0167
+    2    224  BORDET   230  1.0166              2    204  BAILEY   138  1.0153
+    1    124  AVERY    230  1.0132              1    103  ADLER    138  1.0113
+    3    304  CAINE    138  1.0074              3    309  CARTER   138  1.0070
+    3    312  CAXTON   230  1.0026              3    324  CURIE    230  0.9993
+    3    303  CAESAR   138  0.9982              2    207  BAKER    138  0.9699
+    2    208  BALCH    138  0.9638              3    307  CAREW    138  0.9568
+
+ P33 - Probabilistic Load Flow - Version: 20170911 - Run 11/ 8/17 - Page    8
+ November 07, 2017 19:41:38; Simulator Version 19; Build Date 2017_9_5
+
+ GREATEST CHANGE IN BUS VOLTAGE SUMMARY REPORT:
+
+       307  CAREW    138  0.957 -0.081       207  BAKER    138  0.970 -0.070
+       308  CARREL   138  0.951 -0.060       208  BALCH    138  0.964 -0.048
+       309  CARTER   138  1.007 -0.019       310  CARUSO   138  1.032 -0.018
+       312  CAXTON   230  1.003 -0.016       306  CAMUS    138  1.020 -0.013
+       107  ALDER    138  1.050  0.013       213  BARLOW   230  1.050  0.012
+       303  CAESAR   138  0.998 -0.012       324  CURIE    230  0.999 -0.011
+       304  CAINE    138  1.007 -0.010       311  CARY     230  1.018 -0.010
+       305  CALVIN   138  1.028 -0.008       209  BALZAC   138  1.020 -0.008
+       210  BANKS    138  1.043 -0.007       214  BARRY    230  1.050  0.007
+       108  ALGER    138  1.017  0.006       206  BAJER    138  1.028 -0.005
+       314  CHAIN    230  1.050  0.004       204  BAILEY   138  1.015 -0.004
+       313  CECIL    230  1.035 -0.003       205  BAIN     138  1.033 -0.003
+       224  BORDET   230  1.017  0.002       216  BASOV    230  1.047  0.002
+       124  AVERY    230  1.013  0.002       201  BACH     138  1.050  0.002
+       202  BACON    138  1.050  0.002       212  BARKLA   230  1.018 -0.001
+       301  CABELL   138  1.050  0.001       302  CABOT    138  1.050  0.001
+       102  ADAMS    138  1.047 -0.001       211  BARDEEN  230  1.028  0.001
+
+ P33 - Probabilistic Load Flow - Version: 20170911 - Run 11/ 8/17 - Page    9
+ November 07, 2017 19:41:38; Simulator Version 19; Build Date 2017_9_5
+
+ GENERATOR BUSES NOT MEETING SPECIFIED VREG:
+
+   Bus#   A#    Bus Name     Vreg   Vact   Voff   Qmin <= Qact <= Qmax
+   ----  ---  ------------  -----  -----  -----  ------  ------  ------
+
+ P33 - Probabilistic Load Flow - Version: 20170911 - Run 11/ 8/17 - Page   10
+ November 07, 2017 19:41:38; Simulator Version 19; Build Date 2017_9_5
+
+ GENERATOR REACTIVE OUT OF RANGE SUMMARY REPORT:
+
+   Bus#   A#    Bus Name     Vgen   Pact    Qmin    Qact    Qmax    Qout
+   ----  ---  ------------  -----  ------  ------  ------  ------  ------
+    315    3  CHASE    230  1.042   190.0   -30.0   128.8   128.0     0.8
+    215    2  BARTON   230  1.044   260.0   -60.0    86.3    86.0     0.3
+    115    1  ARTHUR   230  1.043   165.0   -50.0    92.2    92.0     0.2
+    113    1  ARNE     230  1.035   220.0   -60.0    76.1    76.0     0.1
+                                                          TOTAL:      1.3
+
+ P33 - Probabilistic Load Flow - Version: 20170911 - Run 11/ 8/17 - Page   11
+ November 07, 2017 19:41:38; Simulator Version 19; Build Date 2017_9_5
+
+ AUTOTRANSFORMER VOLTAGE CONTROLLED BUSES NOT MEETING SPECIFIED  VMIN - VMAX:
+
+ FromBus ToBus   Tap     Vfrm   Vto    Pfrm   Qfrm   Vmax   Vmin   Vact   Voff
+  -----  -----  -----   -----  -----  -----  -----  -----  -----  -----  -----
+
+ P33 - Probabilistic Load Flow - Version: 20170911 - Run 11/ 8/17 - Page   12
+ November 07, 2017 19:41:38; Simulator Version 19; Build Date 2017_9_5
+
+ AUTOTRANSFORMERS SORTED BY ABS(Q/Rat) Q>.5Rat:
+
+ FromBus ToBus   Tap     Vfrm   Vto    Pfrm   Qfrm   Rat    %I
+  -----  -----  -----   -----  -----  -----  -----  -----  ----
+
+ P33 - Probabilistic Load Flow - Version: 20170911 - Run 11/ 8/17 - Page   13
+ November 07, 2017 19:41:38; Simulator Version 19; Build Date 2017_9_5
+
+ LARGEST CHANGES IN AUTOTRANSFORMER VOLTAGE TAP:
+
+                 Org    New    Chg
+ FromBus ToBus   Tap    Tap    Tap
+  -----  -----  -----  -----  -----
+
+ P33 - Probabilistic Load Flow - Version: 20170911 - Run 11/ 8/17 - Page   14
+ November 07, 2017 19:41:38; Simulator Version 19; Build Date 2017_9_5
+
+ DETAILED BUS AND CIRCUIT REPORT  (-area = bus is part of an island system)
+
+ FromBus ----Name---- Area Zone ID  --MW--  -Mvar-  Ratg   %I   V/Tap/Ang/mi
+    101  ABEL     138    1   11 2    108.0    22.0              1.047   -8.6
+         Generation :                168.0    10.7R  192
+  ToBus
+    102  ADAMS    138    1   12 1      7.8   -26.2   175  14.9       3.00 mi
+    103  ADLER    138    1   11 1     -0.6    14.6   175   8.0      55.00 mi
+    105  AIKEN    138    1   11 1     52.7     0.2   175  28.8      22.00 mi
+
+ FromBus ----Name---- Area Zone ID  --MW--  -Mvar-  Ratg   %I   V/Tap/Ang/mi
+    102  ADAMS    138    1   12 2     97.0    20.0              1.047   -8.6
+         Generation :                168.0     4.7R  192
+  ToBus
+    101  ABEL     138    1   11 1     -7.8   -24.3   175  13.9       3.00 mi
+    104  AGRICOLA 138    1   11 1     34.9    13.7   175  20.5      33.00 mi
+    106  ALBER    138    1   12 1     43.9    -4.7   175  24.1      50.00 mi
+
+ FromBus ----Name---- Area Zone ID  --MW--  -Mvar-  Ratg   %I   V/Tap/Ang/mi
+    103  ADLER    138    1   11 0    180.0    37.0              1.011   -8.0
+  ToBus
+    101  ABEL     138    1   11 1      0.7   -20.1   175  11.4      55.00 mi
+    109  ALI      138    1   13 1      3.7   -15.6   175   9.0      31.00 mi
+    124  AVERY    230    1   16 1   -184.4    -1.4   400  45.6 ^1.015
+
+ FromBus ----Name---- Area Zone ID  --MW--  -Mvar-  Ratg   %I   V/Tap/Ang/mi
+    104  AGRICOLA 138    1   11 0     74.0    15.0              1.017  -10.7
+  ToBus
+    102  ADAMS    138    1   12 1    -34.5   -15.6   175  21.3      33.00 mi
+    109  ALI      138    1   13 1    -39.5     0.6   175  22.2      27.00 mi
+
+ FromBus ----Name---- Area Zone ID  --MW--  -Mvar-  Ratg   %I   V/Tap/Ang/mi
+    105  AIKEN    138    1   11 0     71.0    14.0              1.035  -10.9
+  ToBus
+    101  ABEL     138    1   11 1    -52.2    -0.5   175  28.8      22.00 mi
+    110  ALLEN    138    1   13 1    -18.8   -13.5   175  12.8      23.00 mi
+
+ FromBus ----Name---- Area Zone ID  --MW--  -Mvar-  Ratg   %I   V/Tap/Ang/mi
+    106  ALBER    138    1   12 0    136.0    28.0              1.032  -13.2
+         Fixed Shunt:                  0.0   106.6
+  ToBus
+    102  ADAMS    138    1   12 1    -43.0     2.5   175  23.8      50.00 mi
+    110  ALLEN    138    1   13 1    -93.0  -137.1   175  91.7      16.00 mi
+
+ FromBus ----Name---- Area Zone ID  --MW--  -Mvar-  Ratg   %I   V/Tap/Ang/mi
+    107  ALDER    138    1   12 2    125.0    25.0              1.050   -4.0
+         Generation :                355.0    49.5R  355
+  ToBus
+    108  ALGER    138    1   12 1    168.7    19.7   175  92.4      16.00 mi
+    203 ^BAFFIN   138    2   21 1     61.3     4.8   175  33.5      42.00 mi
+
+ FromBus ----Name---- Area Zone ID  --MW--  -Mvar-  Ratg   %I   V/Tap/Ang/mi
+    108  ALGER    138    1   12 0    171.0    35.0              1.017   -9.3
+  ToBus
+    107  ALDER    138    1   12 1   -164.5    -5.6   175  92.5      16.00 mi
+    109  ALI      138    1   13 1    -10.6    -5.6   175   6.7      43.00 mi
+    110  ALLEN    138    1   13 1      4.1   -23.8   175  13.6      43.00 mi
+
+ FromBus ----Name---- Area Zone ID  --MW--  -Mvar-  Ratg   %I   V/Tap/Ang/mi
+    109  ALI      138    1   13 0    175.0    36.0              1.027   -8.5
+  ToBus
+    103  ADLER    138    1   11 1     -3.6    12.5   175   7.2      31.00 mi
+    104  AGRICOLA 138    1   11 1     39.9    -2.0   175  22.2      27.00 mi
+    108  ALGER    138    1   12 1     10.6     1.1   175   6.0      43.00 mi
+    111  ANNA     230    1   13 1    -93.7   -30.2   400  24.0 ^1.030 
+    112  ARCHER   230    1   13 1   -128.2   -17.4   400  31.5 ^1.030 
+
+ FromBus ----Name---- Area Zone ID  --MW--  -Mvar-  Ratg   %I   V/Tap/Ang/mi
+    110  ALLEN    138    1   13 0    195.0    40.0              1.050  -10.2
+  ToBus
+    105  AIKEN    138    1   11 1     18.9    11.3   175  12.0      23.00 mi
+    106  ALBER    138    1   12 1     94.1  -124.5   175  85.0      16.00 mi
+    108  ALGER    138    1   12 1     -3.9    19.8   175  11.0      43.00 mi
+    111  ANNA     230    1   13 1   -134.4    19.6   400  32.3 ^1.015 
+    112  ARCHER   230    1   13 1   -169.8    33.9   400  41.2 ^1.015 
+
+ FromBus ----Name---- Area Zone ID  --MW--  -Mvar-  Ratg   %I   V/Tap/Ang/mi
+    111  ANNA     230    1   13 0      0.0     0.0              1.027   -4.1
+  ToBus
+    109  ALI      138    1   13 1     93.9    38.4   400  24.7 *1.030
+    110  ALLEN    138    1   13 1    134.7    -5.1   400  32.8 *1.015 
+    113  ARNE     230    1   14 1   -156.5     3.5   500  30.5      33.00 mi
+    114  ARNOLD   230    1   16 1    -72.1   -36.8   500  15.8      29.00 mi
+
+ FromBus ----Name---- Area Zone ID  --MW--  -Mvar-  Ratg   %I   V/Tap/Ang/mi
+    112  ARCHER   230    1   13 0      0.0     0.0              1.020   -2.4
+  ToBus
+    109  ALI      138    1   13 1    128.6    31.5   400  32.5 *1.030 
+    110  ALLEN    138    1   13 1    170.3   -10.4   400  41.8 *1.015 
+    113  ARNE     230    1   14 1    -94.2   -23.5   500  19.0      33.00 mi
+    123  AUSTEN   230    1   15 1   -204.7     2.3   500  40.2      67.00 mi
+
+ FromBus ----Name---- Area Zone ID  --MW--  -Mvar-  Ratg   %I   V/Tap/Ang/mi
+    113  ARNE     230    1   14 3    265.0    54.0              1.035    0.0
+         Generation :                220.0    76.1H  220
+  ToBus
+    111  ANNA     230    1   13 1    157.9    -3.0   500  30.5      33.00 mi
+    112  ARCHER   230    1   13 1     94.7    17.2   500  18.6      33.00 mi
+    123  AUSTEN   230    1   15 1   -179.7     8.1   500  34.8      60.00 mi
+    215 ^BARTON   230    2   26 1   -117.9    -0.2   500  22.8      52.00 mi
+
+ FromBus ----Name---- Area Zone ID  --MW--  -Mvar-  Ratg   %I   V/Tap/Ang/mi
+    114  ARNOLD   230    1   16 2    194.0    39.0              1.044   -2.6
+         Generation :                  0.0   103.2R    0
+  ToBus
+    111  ANNA     230    1   13 1     72.4    29.9   500  15.0      29.00 mi
+    116  ASSER    230    1   16 1   -266.4    34.3   500  51.4      27.00 mi
+
+ FromBus ----Name---- Area Zone ID  --MW--  -Mvar-  Ratg   %I   V/Tap/Ang/mi
+    115  ARTHUR   230    1   16 2    317.0    64.0              1.043    6.0
+         Generation :                165.0    92.2H  179
+  ToBus
+    116  ASSER    230    1   16 1     14.6   -23.9   500   5.4      12.00 mi
+    121  ATTLEE   230    1   17 1   -177.0     7.9   500  34.0      34.00 mi
+    121  ATTLEE   230    1   17 2   -177.0     7.9   500  34.0      34.00 mi
+    124  AVERY    230    1   16 1    187.5    36.3   500  36.6      36.00 mi
+
+ FromBus ----Name---- Area Zone ID  --MW--  -Mvar-  Ratg   %I   V/Tap/Ang/mi
+    116  ASSER    230    1   16 2    100.0    20.0              1.046    5.8
+         Generation :                155.0    79.9R  155
+  ToBus
+    114  ARNOLD   230    1   16 1    269.7    -4.1   500  51.6      27.00 mi
+    115  ARTHUR   230    1   16 1    -14.6    20.1   500   4.7      12.00 mi
+    117  ASTON    230    1   17 1   -240.9    22.8   500  46.3      18.00 mi
+    119  ATTAR    230    1   15 1     40.7    21.0   500   8.8      16.00 mi
+
+ FromBus ----Name---- Area Zone ID  --MW--  -Mvar-  Ratg   %I   V/Tap/Ang/mi
+    117  ASTON    230    1   17 0      0.0     0.0              1.048    9.1
+  ToBus
+    116  ASSER    230    1   16 1    242.5   -14.9   500  46.3      18.00 mi
+    118  ASTOR    230    1   17 1   -111.1     2.5   500  21.2      10.00 mi
+    122  AUBREY   230    1   17 1   -131.4    12.4   500  25.2      73.00 mi
+
+ FromBus ----Name---- Area Zone ID  --MW--  -Mvar-  Ratg   %I   V/Tap/Ang/mi
+    118  ASTOR    230    1   17 2    333.0    68.0              1.050   10.0
+         Generation :                355.0    68.4R  355
+  ToBus
+    117  ASTON    230    1   17 1    111.3    -4.3   500  21.2      10.00 mi
+    121  ATTLEE   230    1   17 1    -44.7     2.4   500   8.5      18.00 mi
+    121  ATTLEE   230    1   17 2    -44.7     2.4   500   8.5      18.00 mi
+
+ FromBus ----Name---- Area Zone ID  --MW--  -Mvar-  Ratg   %I   V/Tap/Ang/mi
+    119  ATTAR    230    1   15 0    181.0    37.0              1.040    5.4
+  ToBus
+    116  ASSER    230    1   16 1    -40.7   -25.9   500   9.3      16.00 mi
+    120  ATTILA   230    1   15 1    -70.2    -5.6   500  13.5      27.50 mi
+    120  ATTILA   230    1   15 2    -70.2    -5.6   500  13.5      27.50 mi
+
+ FromBus ----Name---- Area Zone ID  --MW--  -Mvar-  Ratg   %I   V/Tap/Ang/mi
+    120  ATTILA   230    1   15 0    128.0    26.0              1.044    6.8
+  ToBus
+    119  ATTAR    230    1   15 1     70.4    -1.6   500  13.5      27.50 mi
+    119  ATTAR    230    1   15 2     70.4    -1.6   500  13.5      27.50 mi
+    123  AUSTEN   230    1   15 1   -134.4   -11.4   500  25.8      15.00 mi
+    123  AUSTEN   230    1   15 2   -134.4   -11.4   500  25.8      15.00 mi
+
+ FromBus ----Name---- Area Zone ID  --MW--  -Mvar-  Ratg   %I   V/Tap/Ang/mi
+    121  ATTLEE   230    1   17 2      0.0     0.0              1.050   10.6
+         Generation :                400.0   -21.9R  400
+  ToBus
+    115  ARTHUR   230    1   16 1    178.8    -5.0   500  34.1      34.00 mi
+    115  ARTHUR   230    1   16 2    178.8    -5.0   500  34.1      34.00 mi
+    118  ASTOR    230    1   17 1     44.7    -7.9   500   8.7      18.00 mi
+    118  ASTOR    230    1   17 2     44.7    -7.9   500   8.7      18.00 mi
+    122  AUBREY   230    1   17 1   -164.1    22.6   500  31.6      47.00 mi
+    325 *CURTISS  230    3   35 1    117.1   -18.7   500  22.6      67.00 mi
+
+ FromBus ----Name---- Area Zone ID  --MW--  -Mvar-  Ratg   %I   V/Tap/Ang/mi
+    122  AUBREY   230    1   17 2      0.0     0.0              1.050   16.5
+         Generation :                300.0   -40.8R  300
+  ToBus
+    117  ASTON    230    1   17 1    133.6   -19.7   500  25.7      73.00 mi
+    121  ATTLEE   230    1   17 1    166.4   -21.1   500  31.9      47.00 mi
+
+ FromBus ----Name---- Area Zone ID  --MW--  -Mvar-  Ratg   %I   V/Tap/Ang/mi
+    123  AUSTEN   230    1   15 2      0.0     0.0              1.050    8.4
+         Generation :                670.0    25.1R  670
+  ToBus
+    112  ARCHER   230    1   13 1    209.6    15.2   500  40.0      67.00 mi
+    113  ARNE     230    1   14 1    183.1    -1.4   500  34.9      60.00 mi
+    120  ATTILA   230    1   15 1    134.9    10.0   500  25.8      15.00 mi
+    120  ATTILA   230    1   15 2    134.9    10.0   500  25.8      15.00 mi
+    217 ^BATES    230    2   27 1      7.6    -8.7   500   2.2      51.00 mi
+
+ FromBus ----Name---- Area Zone ID  --MW--  -Mvar-  Ratg   %I   V/Tap/Ang/mi
+    124  AVERY    230    1   16 0      0.0     0.0              1.013    0.8
+  ToBus
+    103  ADLER    138    1   11 1    185.1    30.1   400  46.3 *1.015
+    115  ARTHUR   230    1   16 1   -185.1   -30.1   500  37.0      36.00 mi
+
+ FromBus ----Name---- Area Zone ID  --MW--  -Mvar-  Ratg   %I   V/Tap/Ang/mi
+    201  BACH     138    2   21 2    108.0    22.0              1.050  -12.6
+         Generation :                142.0    21.7R  166
+  ToBus
+    202  BACON    138    2   22 1      5.2   -26.5   175  14.7       3.00 mi
+    203  BAFFIN   138    2   21 1    -24.8    19.9   175  17.3      55.00 mi
+    205  BAIN     138    2   21 1     53.6     6.3   175  29.4      22.00 mi
+
+ FromBus ----Name---- Area Zone ID  --MW--  -Mvar-  Ratg   %I   V/Tap/Ang/mi
+    202  BACON    138    2   22 2     97.0    20.0              1.050  -12.7
+         Generation :                168.0    14.3R  192
+  ToBus
+    201  BACH     138    2   21 1     -5.2   -24.3   175  13.5       3.00 mi
+    204  BAILEY   138    2   21 1     31.5    19.1   175  20.0      33.00 mi
+    206  BAJER    138    2   22 1     44.7    -0.5   175  24.4      50.00 mi
+
+ FromBus ----Name---- Area Zone ID  --MW--  -Mvar-  Ratg   %I   V/Tap/Ang/mi
+    203  BAFFIN   138    2   21 0    180.0    37.0              1.019   -9.1
+  ToBus
+    107 *ALDER    138    1   12 1    -59.8    -3.9   175  33.6      42.00 mi
+    201  BACH     138    2   21 1     25.4   -23.8   175  19.5      55.00 mi
+    209  BALZAC   138    2   23 1     38.8   -12.1   175  22.8      31.00 mi
+    224  BORDET   230    2   26 1   -184.4     2.8   400  45.3 ^1.015 
+
+ FromBus ----Name---- Area Zone ID  --MW--  -Mvar-  Ratg   %I   V/Tap/Ang/mi
+    204  BAILEY   138    2   21 0     74.0    15.0              1.015  -14.4
+  ToBus
+    202  BACON    138    2   22 1    -31.1   -21.0   175  21.1      33.00 mi
+    209  BALZAC   138    2   23 1    -42.9     6.0   175  24.4      27.00 mi
+
+ FromBus ----Name---- Area Zone ID  --MW--  -Mvar-  Ratg   %I   V/Tap/Ang/mi
+    205  BAIN     138    2   21 0     71.0    14.0              1.033  -14.9
+  ToBus
+    201  BACH     138    2   21 1    -53.0    -6.6   175  29.5      22.00 mi
+    210  BANKS    138    2   23 1    -18.0    -7.4   175  10.8      23.00 mi
+
+ FromBus ----Name---- Area Zone ID  --MW--  -Mvar-  Ratg   %I   V/Tap/Ang/mi
+    206  BAJER    138    2   22 0    136.0    28.0              1.028  -17.2
+         Fixed Shunt:                  0.0   105.6
+  ToBus
+    202  BACON    138    2   22 1    -43.8    -1.6   175  24.4      50.00 mi
+    210  BANKS    138    2   23 1    -92.2  -132.0   175  89.5      16.00 mi
+
+ FromBus ----Name---- Area Zone ID  --MW--  -Mvar-  Ratg   %I   V/Tap/Ang/mi
+    207  BAKER    138    2   22 2    125.0    25.0              0.970  -22.4
+         Generation :                110.0    38.0H  110
+  ToBus
+    208  BALCH    138    2   22 1    -15.0    13.0   175  11.7      16.00 mi
+
+ FromBus ----Name---- Area Zone ID  --MW--  -Mvar-  Ratg   %I   V/Tap/Ang/mi
+    208  BALCH    138    2   22 0    171.0    35.0              0.964  -21.7
+  ToBus
+    207  BAKER    138    2   22 1     15.1   -14.3   175  12.3      16.00 mi
+    209  BALZAC   138    2   23 1   -101.3     0.2   175  60.1      43.00 mi
+    210  BANKS    138    2   23 1    -84.7   -20.9   175  51.8      43.00 mi
+
+ FromBus ----Name---- Area Zone ID  --MW--  -Mvar-  Ratg   %I   V/Tap/Ang/mi
+    209  BALZAC   138    2   23 0    175.0    36.0              1.020  -11.8
+  ToBus
+    203  BAFFIN   138    2   21 1    -38.3    10.6   175  22.3      31.00 mi
+    204  BAILEY   138    2   21 1     43.4    -7.0   175  24.7      27.00 mi
+    208  BALCH    138    2   22 1    106.1    13.6   175  59.9      43.00 mi
+    211  BARDEEN  230    2   23 1   -125.4   -35.4   400  31.9 ^1.030 
+    212  BARKLA   230    2   23 1   -160.8   -17.8   400  39.7 ^1.030 
+
+ FromBus ----Name---- Area Zone ID  --MW--  -Mvar-  Ratg   %I   V/Tap/Ang/mi
+    210  BANKS    138    2   23 0    195.0    40.0              1.043  -14.2
+  ToBus
+    205  BAIN     138    2   21 1     18.1     5.1   175  10.3      23.00 mi
+    206  BAJER    138    2   22 1     93.3  -126.6   175  86.2      16.00 mi
+    208  BALCH    138    2   22 1     88.2    29.8   175  51.0      43.00 mi
+    211  BARDEEN  230    2   23 1   -179.3    16.0   400  43.2 ^1.015 
+    212  BARKLA   230    2   23 1   -215.3    35.8   400  52.3 ^1.015 
+
+ FromBus ----Name---- Area Zone ID  --MW--  -Mvar-  Ratg   %I   V/Tap/Ang/mi
+    211  BARDEEN  230    2   23 0      0.0     0.0              1.028   -6.0
+  ToBus
+    209  BALZAC   138    2   23 1    125.7    49.9   400  32.9 *1.030 
+    210  BANKS    138    2   23 1    179.9     9.8   400  43.8 *1.015
+    213  BARLOW   230    2   24 1   -219.0   -13.7   500  42.7      33.00 mi
+    214  BARRY    230    2   26 1    -86.7   -46.0   500  19.1      29.00 mi
+
+ FromBus ----Name---- Area Zone ID  --MW--  -Mvar-  Ratg   %I   V/Tap/Ang/mi
+    212  BARKLA   230    2   23 0      0.0     0.0              1.018   -4.2
+  ToBus
+    209  BALZAC   138    2   23 1    161.4    40.2   400  40.8 *1.030 
+    210  BANKS    138    2   23 1    216.2     2.1   400  53.1 *1.015 
+    213  BARLOW   230    2   24 1   -152.1   -49.7   500  31.4      33.00 mi
+    223  BLOCH    230    2   25 1   -225.5     7.3   500  44.3      67.00 mi
+
+ FromBus ----Name---- Area Zone ID  --MW--  -Mvar-  Ratg   %I   V/Tap/Ang/mi
+    213  BARLOW   230    2   24 2    265.0    54.0              1.050   -0.4
+         Generation :                465.0   154.2R  465
+  ToBus
+    211  BARDEEN  230    2   23 1    221.7    24.7   500  42.5      33.00 mi
+    212  BARKLA   230    2   23 1    153.6    50.6   500  30.8      33.00 mi
+    223  BLOCH    230    2   25 1   -175.3    24.9   500  33.7      60.00 mi
+
+ FromBus ----Name---- Area Zone ID  --MW--  -Mvar-  Ratg   %I   V/Tap/Ang/mi
+    214  BARRY    230    2   26 2    194.0    39.0              1.050   -4.1
+         Generation :                  0.0   125.3R    0
+  ToBus
+    211  BARDEEN  230    2   23 1     87.1    40.2   500  18.3      29.00 mi
+    216  BASOV    230    2   26 1   -281.1    46.1   500  54.3      27.00 mi
+
+ FromBus ----Name---- Area Zone ID  --MW--  -Mvar-  Ratg   %I   V/Tap/Ang/mi
+    215  BARTON   230    2   26 2    317.0    64.0              1.044    4.7
+         Generation :                260.0    86.3H  260
+  ToBus
+    113 *ARNE     230    1   14 1    119.2    -7.1   500  22.9      52.00 mi
+    216  BASOV    230    2   26 1      4.5   -24.6   500   4.8      12.00 mi
+    221  BEHRING  230    2   27 1   -184.1    11.3   500  35.3      34.00 mi
+    221  BEHRING  230    2   27 2   -184.1    11.3   500  35.3      34.00 mi
+    224  BORDET   230    2   26 1    187.4    31.4   500  36.4      36.00 mi
+
+ FromBus ----Name---- Area Zone ID  --MW--  -Mvar-  Ratg   %I   V/Tap/Ang/mi
+    216  BASOV    230    2   26 2    100.0    20.0              1.047    4.7
+         Generation :                155.0    79.8R  155
+  ToBus
+    214  BARRY    230    2   26 1    284.8   -11.4   500  54.4      27.00 mi
+    215  BARTON   230    2   26 1     -4.5    20.7   500   4.1      12.00 mi
+    217  BATES    230    2   27 1   -248.1    24.5   500  47.6      18.00 mi
+    219  BEDE     230    2   25 1     22.8    26.0   500   6.6      16.00 mi
+
+ FromBus ----Name---- Area Zone ID  --MW--  -Mvar-  Ratg   %I   V/Tap/Ang/mi
+    217  BATES    230    2   27 0      0.0     0.0              1.049    8.1
+  ToBus
+    123 *AUSTEN   230    1   15 1     -7.6    -8.3   500   2.1      51.00 mi
+    216  BASOV    230    2   26 1    249.8   -15.8   500  47.7      18.00 mi
+    218  BAYLE    230    2   27 1   -110.8    10.7   500  21.2      10.00 mi
+    222  BELL     230    2   27 1   -131.4    13.5   500  25.2      73.00 mi
+
+ FromBus ----Name---- Area Zone ID  --MW--  -Mvar-  Ratg   %I   V/Tap/Ang/mi
+    218  BAYLE    230    2   27 2    333.0    68.0              1.050    8.9
+         Generation :                355.0    60.3R  355
+  ToBus
+    217  BATES    230    2   27 1    111.1   -12.4   500  21.3      10.00 mi
+    221  BEHRING  230    2   27 1    -44.5     2.3   500   8.5      18.00 mi
+    221  BEHRING  230    2   27 2    -44.5     2.3   500   8.5      18.00 mi
+
+ FromBus ----Name---- Area Zone ID  --MW--  -Mvar-  Ratg   %I   V/Tap/Ang/mi
+    219  BEDE     230    2   25 0    181.0    37.0              1.040    4.4
+  ToBus
+    216  BASOV    230    2   26 1    -22.7   -31.0   500   7.4      16.00 mi
+    220  BEETHOVE 230    2   25 1    -79.1    -3.0   500  15.2      27.50 mi
+    220  BEETHOVE 230    2   25 2    -79.1    -3.0   500  15.2      27.50 mi
+
+ FromBus ----Name---- Area Zone ID  --MW--  -Mvar-  Ratg   %I   V/Tap/Ang/mi
+    220  BEETHOVE 230    2   25 0    128.0    26.0              1.044    6.1
+         BEETHOVEN    
+  ToBus
+    219  BEDE     230    2   25 1     79.4    -3.7   500  15.2      27.50 mi
+    219  BEDE     230    2   25 2     79.4    -3.7   500  15.2      27.50 mi
+    223  BLOCH    230    2   25 1   -143.4    -9.3   500  27.5      15.00 mi
+    223  BLOCH    230    2   25 2   -143.4    -9.3   500  27.5      15.00 mi
+
+ FromBus ----Name---- Area Zone ID  --MW--  -Mvar-  Ratg   %I   V/Tap/Ang/mi
+    221  BEHRING  230    2   27 2      0.0     0.0              1.050    9.5
+         Generation :                297.0    -7.6R  355
+  ToBus
+    215  BARTON   230    2   26 1    185.9    -7.2   500  35.4      34.00 mi
+    215  BARTON   230    2   26 2    185.9    -7.2   500  35.4      34.00 mi
+    218  BAYLE    230    2   27 1     44.6    -7.9   500   8.6      18.00 mi
+    218  BAYLE    230    2   27 2     44.6    -7.9   500   8.6      18.00 mi
+    222  BELL     230    2   27 1   -164.1    22.6   500  31.5      47.00 mi
+
+ FromBus ----Name---- Area Zone ID  --MW--  -Mvar-  Ratg   %I   V/Tap/Ang/mi
+    222  BELL     230    2   27 2      0.0     0.0              1.050   15.5
+         Generation :                300.0   -41.8R  300
+  ToBus
+    217  BATES    230    2   27 1    133.7   -20.7   500  25.8      73.00 mi
+    221  BEHRING  230    2   27 1    166.3   -21.1   500  31.9      47.00 mi
+
+ FromBus ----Name---- Area Zone ID  --MW--  -Mvar-  Ratg   %I   V/Tap/Ang/mi
+    223  BLOCH    230    2   25 2      0.0     0.0              1.050    7.8
+         Generation :                726.0     0.7R  825
+  ToBus
+    212  BARKLA   230    2   23 1    231.4    18.8   500  44.2      67.00 mi
+    213  BARLOW   230    2   24 1    178.5   -19.8   500  34.2      60.00 mi
+    220  BEETHOVE 230    2   25 1    144.0     8.4   500  27.5      15.00 mi
+    220  BEETHOVE 230    2   25 2    144.0     8.4   500  27.5      15.00 mi
+    318 *CLARK    230    3   37 1     28.2   -15.2   500   6.1      72.00 mi
+
+ FromBus ----Name---- Area Zone ID  --MW--  -Mvar-  Ratg   %I   V/Tap/Ang/mi
+    224  BORDET   230    2   26 0      0.0     0.0              1.017   -0.4
+  ToBus
+    203  BAFFIN   138    2   21 1    185.0    25.5   400  45.9 *1.015
+    215  BARTON   230    2   26 1   -185.0   -25.5   500  36.8      36.00 mi
+
+ FromBus ----Name---- Area Zone ID  --MW--  -Mvar-  Ratg   %I   V/Tap/Ang/mi
+    301  CABELL   138    3   31 2    108.0    22.0              1.050  -23.5
+         Generation :                104.0    49.0R  150
+  ToBus
+    302  CABOT    138    3   32 1      8.6   -27.3   175  15.6       3.00 mi
+    303  CAESAR   138    3   31 1    -39.9    35.6   175  29.1      55.00 mi
+    305  CALVIN   138    3   31 1     27.2    18.7   175  18.0      22.00 mi
+
+ FromBus ----Name---- Area Zone ID  --MW--  -Mvar-  Ratg   %I   V/Tap/Ang/mi
+    302  CABOT    138    3   32 2     97.0    20.0              1.050  -23.6
+         Generation :                126.0    34.3R  150
+  ToBus
+    301  CABELL   138    3   31 1     -8.6   -23.6   175  13.7       3.00 mi
+    304  CAINE    138    3   31 1     11.1    30.5   175  17.7      33.00 mi
+    306  CAMUS    138    3   32 1     26.5     7.4   175  15.0      50.00 mi
+
+ FromBus ----Name---- Area Zone ID  --MW--  -Mvar-  Ratg   %I   V/Tap/Ang/mi
+    303  CAESAR   138    3   31 0    180.0    37.0              0.998  -17.7
+  ToBus
+    301  CABELL   138    3   31 1     41.4   -35.6   175  31.3      55.00 mi
+    309  CARTER   138    3   33 1     26.1   -15.3   175  17.3      31.00 mi
+    324  CURIE    230    3   36 1   -247.5    13.9   400  62.1 ^1.015
+
+ FromBus ----Name---- Area Zone ID  --MW--  -Mvar-  Ratg   %I   V/Tap/Ang/mi
+    304  CAINE    138    3   31 0     74.0    15.0              1.007  -23.8
+  ToBus
+    302  CABOT    138    3   32 1    -10.8   -32.7   175  19.6      33.00 mi
+    309  CARTER   138    3   33 1    -63.2    17.7   175  37.2      27.00 mi
+
+ FromBus ----Name---- Area Zone ID  --MW--  -Mvar-  Ratg   %I   V/Tap/Ang/mi
+    305  CALVIN   138    3   31 0     71.0    14.0              1.028  -24.5
+  ToBus
+    301  CABELL   138    3   31 1    -27.0   -20.3   175  18.8      22.00 mi
+    310  CARUSO   138    3   33 1    -44.0     6.3   175  24.7      23.00 mi
+
+ FromBus ----Name---- Area Zone ID  --MW--  -Mvar-  Ratg   %I   V/Tap/Ang/mi
+    306  CAMUS    138    3   32 0    136.0    28.0              1.020  -26.0
+         Fixed Shunt:                  0.0   104.0
+  ToBus
+    302  CABOT    138    3   32 1    -26.1   -11.5   175  16.0      50.00 mi
+    310  CARUSO   138    3   33 1   -109.9  -120.4   175  91.4      16.00 mi
+
+ FromBus ----Name---- Area Zone ID  --MW--  -Mvar-  Ratg   %I   V/Tap/Ang/mi
+    307  CAREW    138    3   32 2    125.0    25.0              0.957  -30.7
+         Generation :                110.0    38.0H  110
+  ToBus
+    308  CARREL   138    3   32 1    -15.0    13.0   175  11.8      16.00 mi
+
+ FromBus ----Name---- Area Zone ID  --MW--  -Mvar-  Ratg   %I   V/Tap/Ang/mi
+    308  CARREL   138    3   32 0    171.0    35.0              0.951  -29.9
+  ToBus
+    307  CAREW    138    3   32 1     15.1   -14.2   175  12.5      16.00 mi
+    309  CARTER   138    3   33 1   -101.9     1.2   175  61.2      43.00 mi
+    310  CARUSO   138    3   33 1    -84.2   -22.0   175  52.3      43.00 mi
+
+ FromBus ----Name---- Area Zone ID  --MW--  -Mvar-  Ratg   %I   V/Tap/Ang/mi
+    309  CARTER   138    3   33 0    175.0    36.0              1.007  -19.7
+  ToBus
+    303  CAESAR   138    3   31 1    -25.9    13.1   175  16.4      31.00 mi
+    304  CAINE    138    3   31 1     64.4   -16.1   175  37.7      27.00 mi
+    308  CARREL   138    3   32 1    106.8    13.4   175  61.1      43.00 mi
+    311  CARY     230    3   33 1   -143.5   -35.1   400  36.7 ^1.030 
+    312  CAXTON   230    3   33 1   -176.8   -11.3   400  44.0 ^1.030 
+
+ FromBus ----Name---- Area Zone ID  --MW--  -Mvar-  Ratg   %I   V/Tap/Ang/mi
+    310  CARUSO   138    3   33 0    195.0    40.0              1.032  -22.3
+  ToBus
+    305  CALVIN   138    3   31 1     44.5    -7.2   175  24.9      23.00 mi
+    306  CAMUS    138    3   32 1    111.5  -131.3   175  95.4      16.00 mi
+    308  CARREL   138    3   32 1     87.8    31.2   175  51.6      43.00 mi
+    311  CARY     230    3   33 1   -202.6    20.5   400  49.3 ^1.015 
+    312  CAXTON   230    3   33 1   -236.1    46.8   400  58.3 ^1.015 
+
+ FromBus ----Name---- Area Zone ID  --MW--  -Mvar-  Ratg   %I   V/Tap/Ang/mi
+    311  CARY     230    3   33 0      0.0     0.0              1.018  -12.8
+  ToBus
+    309  CARTER   138    3   33 1    143.9    54.2   400  37.8 *1.030 
+    310  CARUSO   138    3   33 1    203.4    13.1   400  50.0 *1.015 
+    313  CECIL    230    3   34 1   -199.5    -7.0   500  39.2      33.00 mi
+    314  CHAIN    230    3   36 1   -147.8   -60.4   500  31.4      29.00 mi
+
+ FromBus ----Name---- Area Zone ID  --MW--  -Mvar-  Ratg   %I   V/Tap/Ang/mi
+    312  CAXTON   230    3   33 0      0.0     0.0              1.003  -11.0
+  ToBus
+    309  CARTER   138    3   33 1    177.5    38.9   400  45.3 *1.030 
+    310  CARUSO   138    3   33 1    237.3     0.3   400  59.2 *1.015 
+    313  CECIL    230    3   34 1   -134.9   -52.1   500  28.8      33.00 mi
+    323  COMTE    230    3   35 1   -279.9    12.9   500  55.9      67.00 mi
+
+ FromBus ----Name---- Area Zone ID  --MW--  -Mvar-  Ratg   %I   V/Tap/Ang/mi
+    313  CECIL    230    3   34 2    265.0    54.0              1.035   -7.6
+         Generation :                355.0   150.0H  355
+  ToBus
+    311  CARY     230    3   33 1    201.9    14.9   500  39.1      33.00 mi
+    312  CAXTON   230    3   33 1    136.1    51.5   500  28.1      33.00 mi
+    323  COMTE    230    3   35 1   -247.9    29.6   500  48.3      60.00 mi
+
+ FromBus ----Name---- Area Zone ID  --MW--  -Mvar-  Ratg   %I   V/Tap/Ang/mi
+    314  CHAIN    230    3   36 2    194.0    39.0              1.050   -9.7
+         Generation :                  0.0   166.7R    0
+  ToBus
+    311  CARY     230    3   33 1    149.0    61.1   500  30.7      29.00 mi
+    316  CHIFA    230    3   36 1   -343.0    66.7   500  66.6      27.00 mi
+
+ FromBus ----Name---- Area Zone ID  --MW--  -Mvar-  Ratg   %I   V/Tap/Ang/mi
+    315  CHASE    230    3   36 2    317.0    64.0              1.042    1.5
+         Generation :                190.0   128.8H  225
+  ToBus
+    316  CHIFA    230    3   36 1     35.6   -22.6   500   8.1      12.00 mi
+    321  COBB     230    3   37 1   -207.9    13.2   500  40.0      34.00 mi
+    321  COBB     230    3   37 2   -207.9    13.2   500  40.0      34.00 mi
+    324  CURIE    230    3   36 1    253.2    61.0   500  50.0      36.00 mi
+
+ FromBus ----Name---- Area Zone ID  --MW--  -Mvar-  Ratg   %I   V/Tap/Ang/mi
+    316  CHIFA    230    3   36 2    100.0    20.0              1.045    1.2
+         Generation :                155.0    79.1R  155
+  ToBus
+    314  CHAIN    230    3   36 1    348.5   -10.0   500  66.7      27.00 mi
+    315  CHASE    230    3   36 1    -35.6    18.9   500   7.7      12.00 mi
+    317  CHUHSI   230    3   37 1   -286.7    29.8   500  55.2      18.00 mi
+    319  CLAY     230    3   35 1     28.8    20.4   500   6.8      16.00 mi
+
+ FromBus ----Name---- Area Zone ID  --MW--  -Mvar-  Ratg   %I   V/Tap/Ang/mi
+    317  CHUHSI   230    3   37 0      0.0     0.0              1.047    5.1
+  ToBus
+    316  CHIFA    230    3   36 1    289.0   -16.0   500  55.3      18.00 mi
+    318  CLARK    230    3   37 1   -150.0     2.3   500  28.6      10.00 mi
+    322  COLE     230    3   37 1   -139.0    13.6   500  26.7      73.00 mi
+
+ FromBus ----Name---- Area Zone ID  --MW--  -Mvar-  Ratg   %I   V/Tap/Ang/mi
+    318  CLARK    230    3   37 2    333.0    68.0              1.050    6.2
+         Generation :                355.0    63.2R  355
+  ToBus
+    223 ^BLOCH    230    2   25 1    -28.1    -8.1   500   5.6      72.00 mi
+    317  CHUHSI   230    3   37 1    150.4    -2.8   500  28.7      10.00 mi
+    321  COBB     230    3   37 1    -50.2     3.1   500   9.6      18.00 mi
+    321  COBB     230    3   37 2    -50.2     3.1   500   9.6      18.00 mi
+
+ FromBus ----Name---- Area Zone ID  --MW--  -Mvar-  Ratg   %I   V/Tap/Ang/mi
+    319  CLAY     230    3   35 0    181.0    37.0              1.039    0.8
+  ToBus
+    316  CHIFA    230    3   36 1    -28.7   -25.5   500   7.4      16.00 mi
+    320  CLIVE    230    3   35 1    -76.1    -5.8   500  14.7      27.50 mi
+    320  CLIVE    230    3   35 2    -76.1    -5.8   500  14.7      27.50 mi
+
+ FromBus ----Name---- Area Zone ID  --MW--  -Mvar-  Ratg   %I   V/Tap/Ang/mi
+    320  CLIVE    230    3   35 0    128.0    26.0              1.044    2.5
+  ToBus
+    319  CLAY     230    3   35 1     76.4    -1.1   500  14.6      27.50 mi
+    319  CLAY     230    3   35 2     76.4    -1.1   500  14.6      27.50 mi
+    323  COMTE    230    3   35 1   -140.4   -11.9   500  27.0      15.00 mi
+    323  COMTE    230    3   35 2   -140.4   -11.9   500  27.0      15.00 mi
+
+ FromBus ----Name---- Area Zone ID  --MW--  -Mvar-  Ratg   %I   V/Tap/Ang/mi
+    321  COBB     230    3   37 2      0.0     0.0              1.050    6.9
+         Generation :                355.0    -3.5R  355
+  ToBus
+    315  CHASE    230    3   36 1    210.3    -4.8   500  40.1      34.00 mi
+    315  CHASE    230    3   36 2    210.3    -4.8   500  40.1      34.00 mi
+    318  CLARK    230    3   37 1     50.2    -8.5   500   9.7      18.00 mi
+    318  CLARK    230    3   37 2     50.2    -8.5   500   9.7      18.00 mi
+    322  COLE     230    3   37 1   -166.2    23.1   500  32.0      47.00 mi
+
+ FromBus ----Name---- Area Zone ID  --MW--  -Mvar-  Ratg   %I   V/Tap/Ang/mi
+    322  COLE     230    3   37 2      0.0     0.0              1.050   12.9
+         Generation :                310.0   -40.0R  310
+  ToBus
+    317  CHUHSI   230    3   37 1    141.5   -18.8   500  27.2      73.00 mi
+    321  COBB     230    3   37 1    168.5   -21.2   500  32.3      47.00 mi
+
+ FromBus ----Name---- Area Zone ID  --MW--  -Mvar-  Ratg   %I   V/Tap/Ang/mi
+    323  COMTE    230    3   35 2      0.0     0.0              1.050    4.1
+         Generation :                710.0    74.9R  710
+  ToBus
+    312  CAXTON   230    3   33 1    289.3    41.9   500  55.7      67.00 mi
+    313  CECIL    230    3   34 1    254.4     1.8   500  48.5      60.00 mi
+    320  CLIVE    230    3   35 1    141.0    10.9   500  26.9      15.00 mi
+    320  CLIVE    230    3   35 2    141.0    10.9   500  26.9      15.00 mi
+    325  CURTISS  230    3   35 1   -115.6     9.5   722  15.3
+
+ FromBus ----Name---- Area Zone ID  --MW--  -Mvar-  Ratg   %I   V/Tap/Ang/mi
+    324  CURIE    230    3   36 0      0.0     0.0              0.999   -5.5
+  ToBus
+    303  CAESAR   138    3   31 1    248.8    39.5   400  63.0 *1.015
+    315  CHASE    230    3   36 1   -248.8   -39.5   500  50.4      36.00 mi
+
+ FromBus ----Name---- Area Zone ID  --MW--  -Mvar-  Ratg   %I   V/Tap/Ang/mi
+    325  CURTISS  230    3   35 0      0.0     0.0              1.049    4.6
+  ToBus
+    121 ^ATTLEE   230    1   17 1   -115.6     8.4   500  22.1      67.00 mi
+    323  COMTE    230    3   35 1    115.6    -8.4   722  15.3
+
+ P33 - Probabilistic Load Flow - Version: 20170911 - Run 11/ 8/17 - Page   15
+ November 07, 2017 19:41:38; Simulator Version 19; Build Date 2017_9_5
+
+ ZIPFLOW single circuit outage analysis summary...
+
+ removing :   101 ABEL     138 -   102 ADAMS    138 1  in 1        12
+
+ removing :   101 ABEL     138 -   103 ADLER    138 1  in 1        11
+
+ removing :   101 ABEL     138 -   105 AIKEN    138 1  in 1        11
+
+ removing :   102 ADAMS    138 -   104 AGRICOLA 138 1  in 1        11
+
+ removing :   102 ADAMS    138 -   106 ALBER    138 1  in 1        12
+ overloads:   106 ALBER    138 -   110 ALLEN    138 1  in 1        13        106.%  175 MVA  16 mi
+
+ removing :   103 ADLER    138 -   109 ALI      138 1  in 1        13
+
+ removing :   104 AGRICOLA 138 -   109 ALI      138 1  in 1        13
+
+ removing :   105 AIKEN    138 -   110 ALLEN    138 1  in 1        13
+
+ removing :   106 ALBER    138 -   110 ALLEN    138 1  in 1        13
+
+ removing :   107 ALDER    138 -   108 ALGER    138 1  in 1        12
+ overloads:   107 ALDER    138 -   203 BAFFIN   138 1  in 2        21        126.%  175 MVA  42 mi
+
+ removing :   107 ALDER    138 -   203 BAFFIN   138 1  in 2        21
+ overloads:   107 ALDER    138 -   108 ALGER    138 1  in 1        12        126.%  175 MVA  16 mi
+
+ removing :   108 ALGER    138 -   109 ALI      138 1  in 1        13
+
+ removing :   108 ALGER    138 -   110 ALLEN    138 1  in 1        13
+
+ removing :   111 ANNA     230 -   113 ARNE     230 1  in 1        14
+
+ removing :   111 ANNA     230 -   114 ARNOLD   230 1  in 1        16
+
+ removing :   112 ARCHER   230 -   113 ARNE     230 1  in 1        14
+
+ removing :   112 ARCHER   230 -   123 AUSTEN   230 1  in 1        15
+
+ removing :   113 ARNE     230 -   123 AUSTEN   230 1  in 1        15
+
+ removing :   113 ARNE     230 -   215 BARTON   230 1  in 2        26
+ overloads:   107 ALDER    138 -   108 ALGER    138 1  in 1        12        104.%  175 MVA  16 mi
+
+ removing :   114 ARNOLD   230 -   116 ASSER    230 1  in 1        16
+
+ removing :   115 ARTHUR   230 -   116 ASSER    230 1  in 1        16
+
+ removing :   115 ARTHUR   230 -   121 ATTLEE   230 1  in 1        17
+
+ removing :   115 ARTHUR   230 -   121 ATTLEE   230 2  in 1        17
+
+ removing :   115 ARTHUR   230 -   124 AVERY    230 1  in 1        16
+ overloads:   107 ALDER    138 -   108 ALGER    138 1  in 1        12        102.%  175 MVA  16 mi
+
+ removing :   116 ASSER    230 -   117 ASTON    230 1  in 1        17
+
+ removing :   116 ASSER    230 -   119 ATTAR    230 1  in 1        15
+
+ removing :   117 ASTON    230 -   118 ASTOR    230 1  in 1        17
+
+ removing :   117 ASTON    230 -   122 AUBREY   230 1  in 1        17
+
+ removing :   118 ASTOR    230 -   121 ATTLEE   230 1  in 1        17
+
+ removing :   118 ASTOR    230 -   121 ATTLEE   230 2  in 1        17
+
+ removing :   119 ATTAR    230 -   120 ATTILA   230 1  in 1        15
+
+ removing :   119 ATTAR    230 -   120 ATTILA   230 2  in 1        15
+
+ removing :   120 ATTILA   230 -   123 AUSTEN   230 1  in 1        15
+
+ removing :   120 ATTILA   230 -   123 AUSTEN   230 2  in 1        15
+
+ removing :   121 ATTLEE   230 -   122 AUBREY   230 1  in 1        17
+
+ removing :   123 AUSTEN   230 -   217 BATES    230 1  in 2        27
+
+ removing :   201 BACH     138 -   202 BACON    138 1  in 2        22
+
+ removing :   201 BACH     138 -   203 BAFFIN   138 1  in 2        21
+
+ removing :   201 BACH     138 -   205 BAIN     138 1  in 2        21
+
+ removing :   202 BACON    138 -   204 BAILEY   138 1  in 2        21
+
+ removing :   202 BACON    138 -   206 BAJER    138 1  in 2        22
+ overloads:   206 BAJER    138 -   210 BANKS    138 1  in 2        23        106.%  175 MVA  16 mi
+
+ removing :   203 BAFFIN   138 -   209 BALZAC   138 1  in 2        23
+
+ removing :   204 BAILEY   138 -   209 BALZAC   138 1  in 2        23
+
+ removing :   205 BAIN     138 -   210 BANKS    138 1  in 2        23
+
+ removing :   206 BAJER    138 -   210 BANKS    138 1  in 2        23
+
+ removing :   207 BAKER    138 -   208 BALCH    138 1  in 2        22
+ creates an island
+
+ removing :   208 BALCH    138 -   209 BALZAC   138 1  in 2        23
+ overloads:   208 BALCH    138 -   210 BANKS    138 1  in 2        23        111.%  175 MVA  43 mi
+
+ removing :   208 BALCH    138 -   210 BANKS    138 1  in 2        23
+ overloads:   208 BALCH    138 -   209 BALZAC   138 1  in 2        23        111.%  175 MVA  43 mi
+
+ removing :   211 BARDEEN  230 -   213 BARLOW   230 1  in 2        24
+
+ removing :   211 BARDEEN  230 -   214 BARRY    230 1  in 2        26
+
+ removing :   212 BARKLA   230 -   213 BARLOW   230 1  in 2        24
+
+ removing :   212 BARKLA   230 -   223 BLOCH    230 1  in 2        25
+
+ removing :   213 BARLOW   230 -   223 BLOCH    230 1  in 2        25
+
+ removing :   214 BARRY    230 -   216 BASOV    230 1  in 2        26
+
+ removing :   215 BARTON   230 -   216 BASOV    230 1  in 2        26
+
+ removing :   215 BARTON   230 -   221 BEHRING  230 1  in 2        27
+
+ removing :   215 BARTON   230 -   221 BEHRING  230 2  in 2        27
+
+ removing :   215 BARTON   230 -   224 BORDET   230 1  in 2        26
+
+ removing :   216 BASOV    230 -   217 BATES    230 1  in 2        27
+
+ removing :   216 BASOV    230 -   219 BEDE     230 1  in 2        25
+
+ removing :   217 BATES    230 -   218 BAYLE    230 1  in 2        27
+
+ removing :   217 BATES    230 -   222 BELL     230 1  in 2        27
+
+ removing :   218 BAYLE    230 -   221 BEHRING  230 1  in 2        27
+
+ removing :   218 BAYLE    230 -   221 BEHRING  230 2  in 2        27
+
+ removing :   219 BEDE     230 -   220 BEETHOVE 230 1  in 2        25
+
+ removing :   219 BEDE     230 -   220 BEETHOVE 230 2  in 2        25
+
+ removing :   220 BEETHOVE 230 -   223 BLOCH    230 1  in 2        25
+
+ removing :   220 BEETHOVE 230 -   223 BLOCH    230 2  in 2        25
+
+ removing :   221 BEHRING  230 -   222 BELL     230 1  in 2        27
+
+ removing :   301 CABELL   138 -   302 CABOT    138 1  in 3        32
+
+ removing :   301 CABELL   138 -   303 CAESAR   138 1  in 3        31
+
+ removing :   301 CABELL   138 -   305 CALVIN   138 1  in 3        31
+
+ removing :   302 CABOT    138 -   304 CAINE    138 1  in 3        31
+
+ removing :   302 CABOT    138 -   306 CAMUS    138 1  in 3        32
+ overloads:   306 CAMUS    138 -   310 CARUSO   138 1  in 3        33        107.%  175 MVA  16 mi
+
+ removing :   303 CAESAR   138 -   309 CARTER   138 1  in 3        33
+
+ removing :   304 CAINE    138 -   309 CARTER   138 1  in 3        33
+
+ removing :   305 CALVIN   138 -   310 CARUSO   138 1  in 3        33
+
+ removing :   306 CAMUS    138 -   310 CARUSO   138 1  in 3        33
+
+ removing :   307 CAREW    138 -   308 CARREL   138 1  in 3        32
+ creates an island
+
+ removing :   308 CARREL   138 -   309 CARTER   138 1  in 3        33
+ overloads:   308 CARREL   138 -   310 CARUSO   138 1  in 3        33        113.%  175 MVA  43 mi
+
+ removing :   308 CARREL   138 -   310 CARUSO   138 1  in 3        33
+ overloads:   308 CARREL   138 -   309 CARTER   138 1  in 3        33        113.%  175 MVA  43 mi
+
+ removing :   311 CARY     230 -   313 CECIL    230 1  in 3        34
+
+ removing :   311 CARY     230 -   314 CHAIN    230 1  in 3        36
+
+ removing :   312 CAXTON   230 -   313 CECIL    230 1  in 3        34      
+
+ removing :   312 CAXTON   230 -   323 COMTE    230 1  in 3        35      
+
+ removing :   313 CECIL    230 -   323 COMTE    230 1  in 3        35      
+
+ removing :   314 CHAIN    230 -   316 CHIFA    230 1  in 3        36      
+
+ removing :   315 CHASE    230 -   316 CHIFA    230 1  in 3        36      
+
+ removing :   315 CHASE    230 -   321 COBB     230 1  in 3        37      
+
+ removing :   315 CHASE    230 -   321 COBB     230 2  in 3        37      
+
+ removing :   315 CHASE    230 -   324 CURIE    230 1  in 3        36      
+ overloads:   306 CAMUS    138 -   310 CARUSO   138 1  in 3        33        102.%  175 MVA  16 mi
+
+ removing :   316 CHIFA    230 -   317 CHUHSI   230 1  in 3        37      
+
+ removing :   316 CHIFA    230 -   319 CLAY     230 1  in 3        35      
+
+ removing :   317 CHUHSI   230 -   318 CLARK    230 1  in 3        37      
+
+ removing :   317 CHUHSI   230 -   322 COLE     230 1  in 3        37      
+
+ removing :   318 CLARK    230 -   223 BLOCH    230 1  in 2        25      
+
+ removing :   318 CLARK    230 -   321 COBB     230 1  in 3        37      
+
+ removing :   318 CLARK    230 -   321 COBB     230 2  in 3        37      
+
+ removing :   319 CLAY     230 -   320 CLIVE    230 1  in 3        35      
+
+ removing :   319 CLAY     230 -   320 CLIVE    230 2  in 3        35      
+
+ removing :   320 CLIVE    230 -   323 COMTE    230 1  in 3        35      
+
+ removing :   320 CLIVE    230 -   323 COMTE    230 2  in 3        35      
+
+ removing :   321 COBB     230 -   322 COLE     230 1  in 3        37      
+
+ removing :   323 COMTE    230 -   325 CURTISS  230 1  in 3        35      
+
+ removing :   325 CURTISS  230 -   121 ATTLEE   230 1  in 1        17      
+
+ removing :   103 ADLER    138 -   124 AVERY    230 1  in 1        16      
+ overloads:   107 ALDER    138 -   108 ALGER    138 1  in 1        12        102.%  175 MVA  16 mi
+
+ removing :   109 ALI      138 -   111 ANNA     230 1  in 1        13      
+
+ removing :   109 ALI      138 -   112 ARCHER   230 1  in 1        13      
+
+ removing :   110 ALLEN    138 -   111 ANNA     230 1  in 1        13      
+
+ removing :   110 ALLEN    138 -   112 ARCHER   230 1  in 1        13
+ overloads:   107 ALDER    138 -   108 ALGER    138 1  in 1        12        100.%  175 MVA  16 mi
+
+ removing :   203 BAFFIN   138 -   224 BORDET   230 1  in 2        26
+
+ removing :   209 BALZAC   138 -   211 BARDEEN  230 1  in 2        23
+
+ removing :   209 BALZAC   138 -   212 BARKLA   230 1  in 2        23
+
+ removing :   210 BANKS    138 -   211 BARDEEN  230 1  in 2        23
+
+ removing :   210 BANKS    138 -   212 BARKLA   230 1  in 2        23
+
+ removing :   303 CAESAR   138 -   324 CURIE    230 1  in 3        36
+ overloads:   306 CAMUS    138 -   310 CARUSO   138 1  in 3        33        102.%  175 MVA  16 mi
+
+ removing :   309 CARTER   138 -   311 CARY     230 1  in 3        33
+
+ removing :   309 CARTER   138 -   312 CAXTON   230 1  in 3        33
+
+ removing :   310 CARUSO   138 -   311 CARY     230 1  in 3        33
+
+ removing :   310 CARUSO   138 -   312 CAXTON   230 1  in 3        33
+
+         120 lines outaged
+
+ Total run time        =   0h  0m  1s
