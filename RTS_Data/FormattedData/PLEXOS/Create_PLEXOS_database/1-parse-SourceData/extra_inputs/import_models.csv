@@ -16,8 +16,8 @@ Diagnostic,,
 ,Load: DA,Load: RT
 ,RE: DA,RE: RT
 ,Gen Outages,
-,Add Flex_Down,Add Reg_Down
-,Add Flex_Up,Add Reg_Up
-,Add Reg_Down,Add Spin_Up
-,Add Reg_Up,
-,Add Spin_Up,
+,Add Flex Down,Add Reg Down
+,Add Flex Up,Add Reg Up
+,Add Reg Down,Add Spin Up
+,Add Reg Up,
+,Add Spin Up,

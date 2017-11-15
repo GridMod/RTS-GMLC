@@ -1,7 +1,7 @@
 pacman::p_load(data.table)
-SourceData = normalizePath(file.path('../../../SourceData/'))
-output.dir = normalizePath(file.path('./1-parse-SourceData/outputs/'))
-extra_input.dir = normalizePath(file.path('./1-parse-SourceData/extra_inputs'))
+SourceData = normalizePath(file.path('../../../../SourceData/'))
+output.dir = normalizePath(file.path('../1-parse-SourceData/outputs/'))
+extra_input.dir = normalizePath(file.path('../1-parse-SourceData/extra_inputs'))
 unlink(file.path(output.dir,'*.csv'))
 file.copy(list.files(extra_input.dir,pattern = '*.csv',full.names = T),output.dir)
 
@@ -139,7 +139,7 @@ direction = data.frame(row.names = c('Up','Down'),value = c(1,2))
 reserve.data = src.reserves[,.(Reserve = `Reserve Product`,
                                `Is Enabled` = -1,
                                Type = direction[gsub('.*_(.*)','\\1',`Reserve Product`),'value'], 
-                               Scenario = paste0('Add ',`Reserve Product`),
+                               scenario = paste0('Add ',`Reserve Product`),
                                Timeframe = `Timeframe (sec)`,
                                VoRS = 4000,
                                `Mutually Exclusive` = 1)]
