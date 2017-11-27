@@ -1,7 +1,7 @@
 pacman::p_load(data.table)
-SourceData = normalizePath(file.path('../../../../SourceData/'))
-output.dir = normalizePath(file.path('../1-parse-SourceData/outputs/'))
-extra_input.dir = normalizePath(file.path('../1-parse-SourceData/extra_inputs'))
+SourceData = normalizePath(file.path('../../../SourceData/'))
+output.dir = normalizePath(file.path('1-parse-SourceData/outputs/'))
+extra_input.dir = normalizePath(file.path('1-parse-SourceData/extra_inputs'))
 unlink(file.path(output.dir,'*.csv'))
 file.copy(list.files(extra_input.dir,pattern = '*.csv',full.names = T),output.dir)
 
@@ -127,26 +127,38 @@ all.tabs = c(all.tabs,"node.lpf")
 region.refnode.data = src.bus[`Bus Type`=='Ref',.(Region = Area, `Region.Reference Node` = `Bus ID`)]
 all.tabs = c(all.tabs,"region.refnode.data")
 
-# Reserve DAta
-eligible.gens = src.reserves[,.(`Reserve Product`,`Elegible Gen Categories`)]
+# Reserve Data
+eligible.gens = src.reserves[,.(`Reserve Product`,`Eligible Gen Categories`)]
+eligible.regions = src.reserves[,.(`Reserve Product`,`Eligible Regions`)]
 
-eligible.gens[,`Elegible Gen Categories` := gsub("\\(",'',`Elegible Gen Categories`)]
-eligible.gens[,`Elegible Gen Categories` := gsub("\\)",'',`Elegible Gen Categories`)]
-eligible.gens = cbind(eligible.gens, setDT(tstrsplit(eligible.gens$`Elegible Gen Categories`,",")))[,`Elegible Gen Categories`:=NULL]
-eligible.gens = melt(eligible.gens,id.vars = 'Reserve Product',value.name = 'Elegible Gen Categories')[,variable:=NULL]
+eligible.gens[,`Eligible Gen Categories` := gsub("\\(",'',`Eligible Gen Categories`)]
+eligible.gens[,`Eligible Gen Categories` := gsub("\\)",'',`Eligible Gen Categories`)]
+eligible.regions[,`Eligible Regions` := gsub("\\(",'',`Eligible Regions`)]
+eligible.regions[,`Eligible Regions` := gsub("\\)",'',`Eligible Regions`)]
+eligible.gens = cbind(eligible.gens, setDT(tstrsplit(eligible.gens$`Eligible Gen Categories`,",")))[,`Eligible Gen Categories`:=NULL]
+eligible.regions = cbind(eligible.regions, setDT(tstrsplit(eligible.regions$`Eligible Regions`,",")))[,`Eligible Regions`:=NULL]
+eligible.gens = melt(eligible.gens,id.vars = 'Reserve Product',value.name = 'Eligible Gen Categories')[,variable:=NULL]
+eligible.regions = melt(eligible.regions,id.vars = 'Reserve Product',value.name = 'Eligible Regions')[,variable:=NULL]
 
-direction = data.frame(row.names = c('Up','Down'),value = c(1,2))
+eligible.gens = merge(eligible.gens,eligible.regions[!is.na(`Eligible Regions`)],by = c('Reserve Product'),allow.cartesian = TRUE)
+
 reserve.data = src.reserves[,.(Reserve = `Reserve Product`,
                                `Is Enabled` = -1,
-                               Type = direction[gsub('.*_(.*)','\\1',`Reserve Product`),'value'], 
+                               Type = ifelse(grepl("Down",`Reserve Product`),2,1), 
                                scenario = paste0('Add ',`Reserve Product`),
                                Timeframe = `Timeframe (sec)`,
                                VoRS = 4000,
                                `Mutually Exclusive` = 1)]
 
-reserve.generators = merge(eligible.gens[,.(Reserve = `Reserve Product`,`Category` = `Elegible Gen Categories`)],
-                           src.gen[,.(Generator = `GEN UID`,`Category`)],by = "Category",
-                           allow.cartesian = T)[,`Category`:= NULL]
+reserve.map = merge(src.gen[,.(Generator = `GEN UID`,`Category`,Bus = `Bus ID`)],
+                    src.bus[,.(Bus = `Bus ID`,Region = as.character(`Area`))],
+                    by = 'Bus')
+
+reserve.generators = merge(eligible.gens[,.(Reserve = `Reserve Product`,`Category` = `Eligible Gen Categories`,`Region` = `Eligible Regions`)],
+                           reserve.map,by = c("Category","Region"),
+                           allow.cartesian = T)[,c("Category","Region","Bus"):= NULL]
+
+rm(reserve.map)
 
 reserve.provisions = src.timeseries_pointers[Simulation=='DAY_AHEAD' & Object %in% unique(src.reserves$`Reserve Product`),
                         .(Reserve = Object,`Min Provision` = paste0('../',`Data File`))]
