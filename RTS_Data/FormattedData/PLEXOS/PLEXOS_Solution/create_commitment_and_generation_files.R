@@ -14,15 +14,18 @@ attributes(db)$class = c("rplexos","data.frame","tbl_df")
 
 commitment = query_interval(db, 'Generator', 'Units Generating')
 generation = query_interval(db, 'Generator', 'Generation')
+cost = query_interval(db, 'Generator', 'Total Generation Cost')
 price = query_interval(db, 'Node', 'Price')
 
 commitment = dcast(commitment, time~name, value.var='value')
 generation = dcast(generation, time~name, value.var='value')
+cost = dcast(cost, time~name, value.var='value')
 price = dcast(price, time~name, value.var='value')
 
-write.csv(commitment, 'DAY_AHEAD Solution Files/PLEXOS_DA_solution_commitment.csv', row.names = FALSE)
-write.csv(generation, 'DAY_AHEAD Solution Files/PLEXOS_DA_solution_generation.csv', row.names = FALSE)
-write.csv(price, 'DAY_AHEAD Solution Files/PLEXOS_DA_solution_price.csv', row.names = FALSE)
+write.csv(commitment, 'DAY_AHEAD Solution Files/PLEXOS_DA_solution_commitment_2.csv', row.names = FALSE)
+write.csv(generation, 'DAY_AHEAD Solution Files/PLEXOS_DA_solution_generation_2.csv', row.names = FALSE)
+write.csv(cost, 'DAY_AHEAD Solution Files/PLEXOS_DA_solution_cost.csv',row.names = FALSE)
+write.csv(price, 'DAY_AHEAD Solution Files/PLEXOS_DA_solution_price_2.csv', row.names = FALSE)
 
 # %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 # Real time run data querying
