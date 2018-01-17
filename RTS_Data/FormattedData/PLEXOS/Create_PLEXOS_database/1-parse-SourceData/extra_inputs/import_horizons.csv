@@ -10,5 +10,5 @@ Chrono Step Count,365,,14,,105120,
 Chrono Step Type,2,daily,2,daily,0,minute
 Chrono At a Time,1,,1,,5,
 Chrono Period To,24,,24,,288,
-Look-ahead Indicator,-1,Turn on lookahead,-1,Turn on lookahead,0,No lookahead
+Look-ahead Indicator,-1,Turn on lookahead,0,No lookahead,0,No lookahead
 Look-ahead Periods per Day,6,4-hour resolution,6,4-hour resolution,,
