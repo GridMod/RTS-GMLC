@@ -1,5 +1,5 @@
 ref.scenario,Scenario.Names,PLEXOS.Gen.Category,PLEXOS.Desired.Type,Gen.Type,Plot.Color,Gen.Order,Renewable.Types.for.Curtailment,DA.RT.Plot.Types,Key.Periods,Start.Time,End.Time,Ignore.Zones,Ignore.Regions,Interfaces.for.Flows,Lines.for.Flows,Sections.to.Run,
-,RTS-2016,Curtailment,Curtailment,Curtailment,red,Curtailment,Solar,Solar,Summer,7/1/2024,7/7/2024,,,,,1,4
+,RTS-2016,Curtailment,Curtailment,Curtailment,red,Curtailment,Solar,Solar,Summer,7/5/2020,7/18/2020,,,,,1,4
 ,,CSP,CSP,CSP,goldenrod,CSP,Wind,Wind,,,,,,,,2,5
 ,,Solar,Solar,Solar,goldenrod1,Solar,CSP,Gas CT,,,,,,,,3,6
 ,,Wind,Wind,Wind,steelblue3,Wind,,Gas CC,,,,,,,,,7
