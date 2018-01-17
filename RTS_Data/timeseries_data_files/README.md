@@ -12,7 +12,7 @@ The [`REAL_TIME_hydro.csv`](https://github.com/GridMod/RTS-GMLC/blob/master/RTS_
 *NOTE: the DAY-AHEAD and REAL-TIME hydro profiles are exactly the same, just with a different number of intervals defined*
 
 ## Load
-The [`load.csv`](https://github.com/GridMod/RTS-GMLC/blob/master/RTS_Data/timeseries_data_files/Load/DAY_AHEAD_regional_load.csv) contains the forecasted power demand for each of the three regions by hour.
+The [`DAY_AHEAD_regional_Load.csv`](https://github.com/GridMod/RTS-GMLC/blob/master/RTS_Data/timeseries_data_files/Load/DAY_AHEAD_regional_Load.csv) contains the forecasted power demand for each of the three regions by hour.
 
 The [`REAL_TIME_regional_load.csv`](https://github.com/GridMod/RTS-GMLC/blob/master/RTS_Data/timeseries_data_files/Load/REAL_TIME_regional_load.csv) contains the actual power demand for each of the three regions by 5-minute interval.
 
