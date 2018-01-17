@@ -74,14 +74,14 @@ object.property.list <- list(
          list(scenario.name = "Gen Outages")),
     list("gen.cost.data.base.csv"),
     list("gen.cost.data.csv",
-         list(band.col = "Band")),    
+         list(band.col = "Band"))   
     
     # reserve profiles
-    list("reserve.provisions.csv",
-         list(datafile.col = 'Min Provision')),
-    list("reserve.provisions.rt.csv",
-         list(datafile.col = 'Min Provision',
-              scenario.name = 'RT Run'))
+    # list("reserve.provisions.csv",
+    #      list(datafile.col = 'Min Provision')),
+    # list("reserve.provisions.rt.csv",
+    #      list(datafile.col = 'Min Provision',
+    #           scenario.name = 'RT Run'))
 
 )
 
@@ -92,9 +92,9 @@ objects.list <- list(
  
 #reserve
 reserve.files <- list(
-  reserves = 'reserve.data.csv',
-  reserve.generators = 'reserve.generators.csv',
-  reserve.regions = 'reserve.regions.csv'
+  # reserves = 'reserve.data.csv',
+  # reserve.generators = 'reserve.generators.csv',
+  # reserve.regions = 'reserve.regions.csv'
 )
 
 # define filepointers for day ahead to real time 
