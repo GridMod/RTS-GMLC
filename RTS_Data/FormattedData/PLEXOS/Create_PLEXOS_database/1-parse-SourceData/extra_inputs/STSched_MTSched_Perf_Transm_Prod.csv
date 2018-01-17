@@ -52,7 +52,7 @@ Xpress-MP 0.1 MIP,Performance,MIP Max Time,3600,Maximum time before each ST step
 Tx - All lines,Transmission,MVA Base,100,default
 Tx - All lines,Transmission,Losses Enabled,0,
 Tx - All lines,Transmission,OPF Method,1,Fixed shift factor. (Variable = 0)
-Tx - All lines,Transmission,PTDF Method,3,Distributed gen slack bus based on capacity
+Tx - All lines,Transmission,PTDF Method,0,Distributed gen slack bus based on capacity
 Tx - All lines,Transmission,Bound Node Phase Angles,0,Don't enforce phase angle bounds
 Tx - All lines,Transmission,Interface Constraints Enabled,-1,
 Tx - All lines,Transmission,Allow Dump Energy ,-1,
@@ -63,7 +63,7 @@ Tx - All lines,Transmission,Wheeling PTDF Threshold,0,
 Tx No lines,Transmission,MVA Base,100,default
 Tx No lines,Transmission,Losses Enabled,0,
 Tx No lines,Transmission,OPF Method,1,Fixed shift factor. (Variable = 0)
-Tx No lines,Transmission,PTDF Method,3,Distributed gen slack bus based on capacity
+Tx No lines,Transmission,PTDF Method,0,Distributed gen slack bus based on capacity
 Tx No lines,Transmission,Bound Node Phase Angles,0,Don't enforce phase angle bounds
 Tx No lines,Transmission,Constraints Enabled,0,Do not enforce lines
 Tx No lines,Transmission,Interface Constraints Enabled,0,Do not enforce interfaces

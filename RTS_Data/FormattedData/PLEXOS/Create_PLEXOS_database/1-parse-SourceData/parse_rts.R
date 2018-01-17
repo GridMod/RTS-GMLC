@@ -78,7 +78,7 @@ generator.data = src.gen[,.(Generator = `GEN UID`,
                             Nodes_Node = `Bus ID`,
                             Fuels_Fuel = Fuel,
                             `Max Capacity` = `PMax MW`,
-                            Units = 1,
+                            Units = ifelse(grepl('Storage|CSP',Category,0,1)),
                             `Shutdown Cost` = `Start Heat Cold MBTU` * `Fuel Price $/MMBTU` ,
                             `Start Cost` = (`Start Heat Cold MBTU` * `Fuel Price $/MMBTU`) + `Non Fuel Start Cost $` ,
                             `Max Ramp Up` = ifelse(`Ramp Rate MW/Min` == 0, NA,`Ramp Rate MW/Min`),
@@ -116,7 +116,8 @@ line.data = rbind(line.data,dc.line.data,fill=TRUE)
 all.tabs = c(all.tabs,"line.data")
 
 # node data
-node.data = src.bus[,.(Node = `Bus ID`, Voltage = BaseKV, Region = Area, Zone = `Sub Area`)]
+node.data = src.bus[,.(Node = `Bus ID`, Voltage = BaseKV, Region = Area, Zone = `Sub Area`,
+                       `Is Slack Bus` = ifelse(`Bus ID` == '113',-1,0))]
 all.tabs = c(all.tabs,"node.data")
 
 # node load participation factors 
