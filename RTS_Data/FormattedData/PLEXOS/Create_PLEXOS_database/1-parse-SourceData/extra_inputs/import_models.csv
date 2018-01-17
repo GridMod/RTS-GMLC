@@ -3,7 +3,7 @@ category,
 /START ATTRIBUTES,
 Random Number Seed,10
 /START MEMBERSHIPS,
-Horizon,DAY_AHEAD
+Horizon,DAY_AHEAD 1W
 Transmission,Tx No lines
 PASA,
 ST Schedule,ST Nodal
