@@ -116,6 +116,9 @@ Default Report_flatFiles,System,Generator,Generators,Installed Capacity,4,TRUE,T
 Default Report_flatFiles,System,Generator,Generators,SRMC,4,TRUE,TRUE,FALSE,FALSE
 Default Report_flatFiles,System,Generator,Generators,Pump Load,4,TRUE,TRUE,FALSE,FALSE
 Default Report_flatFiles,System,Generator,Generators,Units Out,4,TRUE,FALSE,FALSE,FALSE
+Default Report_flatFiles,System,Generator,Generators,Hours of Operation,4,TRUE,TRUE,FALSE,FALSE
+Default Report_flatFiles,System,Generator,Generators,Hours Up,4,TRUE,TRUE,FALSE,FALSE
+Default Report_flatFiles,System,Generator,Generators,Hours Down,4,TRUE,TRUE,FALSE,FALSE
 Default Report_flatFiles,System,Fuel,Fuels,Price,4,TRUE,TRUE,FALSE,FALSE
 Default Report_flatFiles,System,Fuel,Fuels,Time-weighted Price,4,TRUE,TRUE,FALSE,FALSE
 Default Report_flatFiles,System,Fuel,Fuels,Offtake,4,TRUE,TRUE,FALSE,FALSE
