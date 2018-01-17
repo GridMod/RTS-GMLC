@@ -259,5 +259,16 @@ mpc.dcline = [
 '''
     )
 
+    l('')
+    l('''
+ %% gen names
+mpc.gen_name = {''')
+    gn = dict()
+    for i, g in _generators.iterrows():
+        gn['gn'] = "\t'{:12}'".format(g['GEN UID']).upper()
+        l('''{gn};'''.format(**gn))
+
+    l('};')
+
     with open('./RTS_GMLC.m', 'w') as f:
         f.write('\n'.join(string_list))
