@@ -78,10 +78,10 @@ This folder contains six CSV files wit all RTS-GMLC (non-timeseries) data and pr
 | Output_pct_1             | Output point 1 on heat rate curve as a percentage of PMax        |
 | Output_pct_2             | Output point 2 on heat rate curve as a percentage of PMax        |
 | Output_pct_3             | Output point 3 on heat rate curve as a percentage of PMax        |
-| HR_Avg_0                 | Net heat rate at output point 0 in BTU/kWh                       |
-| HR_Incr_1                | Incremental heat rate between output points 1 and 2 in BTU/kWh   |
-| HR_Incr_2                | Incremental heat rate between output points 2 and 3 in BTU/kWh   |
-| HR_Incr_3                | Incremental heat rate above output point 3 in BTU/kWh            |
+| HR_Avg_0                 | Average heat rate between 0 and output point 0 in BTU/kWh        |
+| HR_Incr_1                | Incremental heat rate between output points 0 and 1 in BTU/kWh   |
+| HR_Incr_2                | Incremental heat rate between output points 1 and 2 in BTU/kWh   |
+| HR_Incr_3                | Incremental heat rate between output points 2 and 3 (PMax) in BTU/kWh           |
 | Fuel Sulfur Content %    | Fuel Sulfur Content                                              |
 | Emissions SO2 Lbs/MMBTU  | SO2 Emissions Rate                                               |
 | Emissions NOX Lbs/MMBTU  | NOX Emissions Rate                                               |
