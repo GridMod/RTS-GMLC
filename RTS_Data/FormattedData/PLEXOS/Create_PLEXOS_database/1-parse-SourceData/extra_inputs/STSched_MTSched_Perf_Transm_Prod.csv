@@ -6,7 +6,7 @@ Performance,Xpress-MP 0.5 MIP,,,
 Performance,Xpress-MP 1 MIP,,,
 Performance,Xpress-MP 0.1 MIP,,,
 Transmission,Tx - All lines,,,
-Transmission,Tx No lines,,,
+Transmission,Tx - No lines,,,
 Production,Production LP,,,
 Production,Production RR,,,
 Production,Production MIP,,,
@@ -60,18 +60,18 @@ Tx - All lines,Transmission,Formulate Upfront,-1,Formulate constraints upfront h
 Tx - All lines,Transmission,Constraint Voltage Threshold,138,
 Tx - All lines,Transmission,Internal VoLL,10000000,
 Tx - All lines,Transmission,Wheeling PTDF Threshold,0,
-Tx No lines,Transmission,MVA Base,100,default
-Tx No lines,Transmission,Losses Enabled,0,
-Tx No lines,Transmission,OPF Method,1,Fixed shift factor. (Variable = 0)
-Tx No lines,Transmission,PTDF Method,0,Distributed gen slack bus based on capacity
-Tx No lines,Transmission,Bound Node Phase Angles,0,Don't enforce phase angle bounds
-Tx No lines,Transmission,Constraints Enabled,0,Do not enforce lines
-Tx No lines,Transmission,Interface Constraints Enabled,0,Do not enforce interfaces
-Tx No lines,Transmission,Allow Dump Energy ,-1,
-Tx No lines,Transmission,Formulate Upfront,-1,Formulate constraints upfront helps speed up solving when only enforcing interfaces
-Tx No lines,Transmission,Constraint Voltage Threshold,1000,
-Tx No lines,Transmission,Internal VoLL,10000000,
-Tx No lines,Transmission,Wheeling PTDF Threshold,0,
+Tx - No lines,Transmission,MVA Base,100,default
+Tx - No lines,Transmission,Losses Enabled,0,
+Tx - No lines,Transmission,OPF Method,1,Fixed shift factor. (Variable = 0)
+Tx - No lines,Transmission,PTDF Method,0,Distributed gen slack bus based on capacity
+Tx - No lines,Transmission,Bound Node Phase Angles,0,Don't enforce phase angle bounds
+Tx - No lines,Transmission,Constraints Enabled,0,Do not enforce lines
+Tx - No lines,Transmission,Interface Constraints Enabled,0,Do not enforce interfaces
+Tx - No lines,Transmission,Allow Dump Energy ,-1,
+Tx - No lines,Transmission,Formulate Upfront,-1,Formulate constraints upfront helps speed up solving when only enforcing interfaces
+Tx - No lines,Transmission,Constraint Voltage Threshold,1000,
+Tx - No lines,Transmission,Internal VoLL,10000000,
+Tx - No lines,Transmission,Wheeling PTDF Threshold,0,
 Production LP,Production,Unit Commitment Optimality,0,Linear relaxation
 Production RR,Production,Unit Commitment Optimality,1,Rounded relaxation
 Production MIP,Production,Unit Commitment Optimality,2,Mixed-integer program
