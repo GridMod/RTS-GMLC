@@ -8,7 +8,7 @@ if ( length(list.files(path = '../', pattern = c("DAY_AHEAD", "\\.db$")))>1 ) {
   message('More than one day ahead solution file found. Please include only the one to generate results for.')
 }
 
-db = plexos_open('../Model DAY_AHEAD Solution')
+db = plexos_open('../Model DAY_AHEAD_NO_TX Solution')
 db = db[grep('DAY_AHEAD', db$filename),]
 attributes(db)$class = c("rplexos","data.frame","tbl_df")
 
@@ -22,10 +22,10 @@ generation = dcast(generation, time~name, value.var='value')
 cost = dcast(cost, time~name, value.var='value')
 price = dcast(price, time~name, value.var='value')
 
-write.csv(commitment, 'DAY_AHEAD Solution Files/PLEXOS_DA_solution_commitment_2.csv', row.names = FALSE)
-write.csv(generation, 'DAY_AHEAD Solution Files/PLEXOS_DA_solution_generation_2.csv', row.names = FALSE)
+write.csv(commitment, 'DAY_AHEAD Solution Files/PLEXOS_DA_solution_commitment.csv', row.names = FALSE)
+write.csv(generation, 'DAY_AHEAD Solution Files/PLEXOS_DA_solution_generation.csv', row.names = FALSE)
 write.csv(cost, 'DAY_AHEAD Solution Files/PLEXOS_DA_solution_cost.csv',row.names = FALSE)
-write.csv(price, 'DAY_AHEAD Solution Files/PLEXOS_DA_solution_price_2.csv', row.names = FALSE)
+write.csv(price, 'DAY_AHEAD Solution Files/PLEXOS_DA_solution_price.csv', row.names = FALSE)
 
 # %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 # Real time run data querying

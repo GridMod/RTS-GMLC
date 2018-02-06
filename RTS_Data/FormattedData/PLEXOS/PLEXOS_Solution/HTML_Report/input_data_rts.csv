@@ -1,24 +1,27 @@
-ref.scenario,Scenario.Names,PLEXOS.Gen.Category,PLEXOS.Desired.Type,Gen.Type,Plot.Color,Gen.Order,Renewable.Types.for.Curtailment,DA.RT.Plot.Types,Key.Periods,Start.Time,End.Time,Ignore.Zones,Ignore.Regions,Interfaces.for.Flows,Lines.for.Flows,Sections.to.Run,
-,RTS-2016,Curtailment,Curtailment,Curtailment,red,Curtailment,Solar,Solar,Summer,7/5/2020,7/18/2020,,,,,1,4
-,,CSP,CSP,CSP,goldenrod,CSP,Wind,Wind,,,,,,,,2,5
-,,Solar,Solar,Solar,goldenrod1,Solar,CSP,Gas CT,,,,,,,,3,6
-,,Wind,Wind,Wind,steelblue3,Wind,,Gas CC,,,,,,,,,7
-,,Sync_Cond,Sync_Cond,Oil CT,lightpink2,Sync_Cond,,Coal,,,,,,,,,8
-,,Oil CT,Oil CT,Oil ST,orchid4,Oil CT,,,,,,,,,,,9
-,,Oil ST,Oil ST,Coal,gray20,Oil ST,,,,,,,,,,,10
-,,Nuclear,Nuclear,Nuclear,firebrick,Storage,,,,,,,,,,,11
-,,Storage,Storage,Sync_Cond,khaki1,Gas CT,,,,,,,,,,,12
-,,Hydro,Hydro,Storage,darkorange2,Gas CC,,,,,,,,,,,13
-,,Coal,Coal,Hydro,lightblue,Hydro,,,,,,,,,,,14
-,,Gas CC,Gas CC,Gas CT,lightpink,Coal,,,,,,,,,,,15
-,,Gas CT,Gas CT,Gas CC,darkolivegreen4,Nuclear,,,,,,,,,,,22
-,,,,,,,,,,,,,,,,,23
-,,,,,,,,,,,,,,,,,24
-,,,,,,,,,,,,,,,,,25
-,,,,,,,,,,,,,,,,,26
-,,,,,,,,,,,,,,,,,27
-,,,,,,,,,,,,,,,,,28
-,,,,,,,,,,,,,,,,,29
-,,,,,,,,,,,,,,,,,32
-,,,,,,,,,,,,,,,,,35
-,,,,,,,,,,,,,,,,,36
+ref.scenario,Scenario.Names,PLEXOS.Gen.Category,PLEXOS.Desired.Type,Gen.Type,Plot.Color,Gen.Order,Renewable.Types.for.Curtailment,DA.RT.Plot.Types,Key.Periods,Start.Time,End.Time,Ignore.Zones,Ignore.Regions,Interfaces.for.Flows,Lines.for.Flows,Sections.to.Run
+,RTS-2016,Curtailment,Curtailment,Curtailment,red,Curtailment,Solar,,Summer,7/15/2020,7/16/2020,,,,,1
+,,CSP,CSP,CSP,goldenrod,CSP,Wind,,,,,,,,,2
+,,Solar,Solar,Solar,goldenrod1,Solar,CSP,,,,,,,,,3
+,,Wind,Wind,Wind,steelblue3,Wind,,,,,,,,,,4
+,,Sync_Cond,Sync_Cond,Oil CT,lightpink2,Sync_Cond,,,,,,,,,,5
+,,Oil CT,Oil CT,Oil ST,orchid4,Oil CT,,,,,,,,,,6
+,,Oil ST,Oil ST,Coal,gray20,Oil ST,,,,,,,,,,7
+,,Nuclear,Nuclear,Nuclear,firebrick,Storage,,,,,,,,,,8
+,,Storage,Storage,Sync_Cond,khaki1,Gas CT,,,,,,,,,,9
+,,Hydro,Hydro,Storage,darkorange2,Gas CC,,,,,,,,,,10
+,,Coal,Coal,Hydro,lightblue,Hydro,,,,,,,,,,11
+,,Gas CC,Gas CC,Gas CT,lightpink,Coal,,,,,,,,,,12
+,,Gas CT,Gas CT,Gas CC,darkolivegreen4,Nuclear,,,,,,,,,,13
+,,,,,,,,,,,,,,,,14
+,,,,,,,,,,,,,,,,15
+,,,,,,,,,,,,,,,,22
+,,,,,,,,,,,,,,,,23
+,,,,,,,,,,,,,,,,24
+,,,,,,,,,,,,,,,,25
+,,,,,,,,,,,,,,,,26
+,,,,,,,,,,,,,,,,27
+,,,,,,,,,,,,,,,,28
+,,,,,,,,,,,,,,,,29
+,,,,,,,,,,,,,,,,32
+,,,,,,,,,,,,,,,,35
+,,,,,,,,,,,,,,,,36
