@@ -5,11 +5,11 @@
 setwd(dirname(parent.frame(2)$ofile))
 magma.dir        = 'MAGMA'
 input.csv        = '../input_data_rts.csv'
-db.loc           = '../../..'
+db.loc           = '../../../Model DAY_AHEAD_ALL_TX Solution'
 output.dir       = '../Reports'
 fig.path.name    = '../Plots'
-output.name      = 'RTS_html.html'
-db.day.ahead.loc = NULL
+output.name      = 'RTS_allTX_7.15.html'
+db.day.ahead.loc = '../../../Model DAY_AHEAD_ALL_TX Solution'
 query.data       = TRUE
 save.data        = FALSE
 load.data        = '<Name of file to load if query.data=FALSE >'
