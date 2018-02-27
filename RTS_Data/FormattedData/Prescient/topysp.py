@@ -62,8 +62,8 @@ Branch = namedtuple('Branch',
                      'FromBus',
                      'ToBus',
                      'R',
-                     'X',
-                     'B',
+                     'X', # csv file is in PU, multiple by 100 to make consistent with MW
+                     'B', 
                      'ContRating'],
                     verbose=False)
 
@@ -164,10 +164,10 @@ for branch_index in branch_df.index.tolist():
     new_branch = Branch(this_branch_dict["UID"],
                         this_branch_dict["From Bus"],
                         this_branch_dict["To Bus"],
-                        this_branch_dict["R"],
-                        this_branch_dict["X"],
-                        this_branch_dict["B"],
-                        this_branch_dict["Cont Rating"])
+                        float(this_branch_dict["R"]),
+                        float(this_branch_dict["X"]) / 100.0, # nix per unit
+                        float(this_branch_dict["B"]),
+                        float(this_branch_dict["Cont Rating"]))
     branch_dict[new_branch.ID] = new_branch
 
 for timeseries_pointer_index in timeseries_pointer_df.index.tolist():
@@ -231,7 +231,7 @@ for load_row in load_dict["data"]:
                                 float(load_row[2]),
                                 float(load_row[3])))
 
-unit_on_time_df = pd.read_table("../FormattedData/PLEXOS/PLEXOS_Solution/DAY_AHEAD Solution Files/on_time.csv",
+unit_on_time_df = pd.read_table("../FormattedData/PLEXOS/PLEXOS_Solution/DAY_AHEAD Solution Files/noTX/on_time_7.12.csv",
                                 header=0,
                                 sep=",")
 unit_on_time_df_as_dict = unit_on_time_df.to_dict(orient="split")
