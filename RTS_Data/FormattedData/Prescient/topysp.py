@@ -538,6 +538,23 @@ for gen_id, gen_spec in generator_dict.items():
     print(");", file=sources_file)
     print("", file=sources_file)
 
+if copper_sheet:
+    print("Source(CopperSheet,", file=sources_file)
+    print("source_type=\"load\",", file=sources_file)
+    print("forecasts_file=\"timeseries_data_files/Load_forecasts_actuals.csv\",", file=sources_file)
+    print("actuals_file=\"timeseries_data_files/Load_forecasts_actuals.csv\"", file=sources_file)
+    print(");", file=sources_file)
+else:
+    for bus_name, bus_spec in bus_dict.items():
+        bus_id = bus_spec.ID
+        bus_load_filename_prefix = "Bus_%d_Load_zone%d" % (bus_id, bus_spec.Area)
+        print("", file=sources_file)
+        print("Source(%s," % bus_name, file=sources_file)
+        print("source_type=\"load\",", file=sources_file)
+        print("forecasts_file=\"timeseries_data_files/%s_forecasts_actuals.csv\"," % bus_load_filename_prefix, file=sources_file)
+        print("actuals_file=\"timeseries_data_files/%s_forecasts_actuals.csv\"" % bus_load_filename_prefix, file=sources_file)        
+        print(");", file=sources_file)
+
 sources_file.close()
 
 print("Prescient sources file written to sources.txt")
