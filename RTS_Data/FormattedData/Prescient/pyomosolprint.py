@@ -22,7 +22,8 @@ class UCPrettyPrint(pyomo.util.plugin.SingletonPlugin):
       print("Minimum demand=%5.2f" % minimum_demand)
       print("Average demand=%5.2f" % average_demand)
       print("Maximum demand=%5.2f" % maximum_demand)
-      print("Average-to-min ratio=%5.2f" % (average_demand / minimum_demand))
+      if minimum_demand > 0.0:
+         print("Average-to-min ratio=%5.2f" % (average_demand / minimum_demand))
       print("Peak-to-average ratio=%5.2f" % (maximum_demand / average_demand))
 
       total_t0_power_output = 0.0
