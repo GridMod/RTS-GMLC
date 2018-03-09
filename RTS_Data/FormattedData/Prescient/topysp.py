@@ -525,9 +525,9 @@ for gen_id, gen_spec in generator_dict.items():
     else:
         source_string = "wind"
     forecasts_actuals_filename = "timeseries_data_files" + os.sep + gen_id + "_forecasts_actuals.csv"
-    fraction_nondispatchable = 1.0
+    fraction_nondispatchable = 0.0
     if gen_spec.UnitType == "HYDRO" or gen_spec.UnitType == "RTPV":
-        fraction_nondispatchable = 0.0
+        fraction_nondispatchable = 1.0
         
     print("Source(%s," % gen_id, file=sources_file)
     print("source_type=\"%s\"," % source_string, file=sources_file)
