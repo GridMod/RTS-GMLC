@@ -3,7 +3,7 @@ Attribute,,,,Upscaling Method = 0,Upscaling Method = 0
 CSP,,,Model [DA MODEL] Solution\interval\ST Generator(*).Generation.csv,,
 Coal,Model [DA MODEL] Solution\interval\ST Generator(*).Units Generating.csv,Model [DA MODEL] Solution\interval\ST Generator(*).Units Out.csv,,,
 Hydro,,Model [DA MODEL] Solution\interval\ST Generator(*).Units Out.csv,,,
-Gas CC,,Model [DA MODEL] Solution\interval\ST Generator(*).Units Out.csv,,,
+Gas CC,Model [DA MODEL] Solution\interval\ST Generator(*).Units Generating.csv,Model [DA MODEL] Solution\interval\ST Generator(*).Units Out.csv,,,
 Gas CT,,Model [DA MODEL] Solution\interval\ST Generator(*).Units Out.csv,,,
 Nuclear,Model [DA MODEL] Solution\interval\ST Generator(*).Units Generating.csv,Model [DA MODEL] Solution\interval\ST Generator(*).Units Out.csv,,,
 Oil CT,,Model [DA MODEL] Solution\interval\ST Generator(*).Units Out.csv,,,
