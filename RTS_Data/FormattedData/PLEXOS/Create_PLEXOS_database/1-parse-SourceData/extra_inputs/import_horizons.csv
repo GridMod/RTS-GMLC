@@ -9,6 +9,7 @@ Chrono Date From,43831,1/1/2024,43831,1/1/2024
 Chrono Step Count,365,,105120,
 Chrono Step Type,2,daily,0,minute
 Chrono At a Time,1,,5,
-Chrono Period To,24,,288,
-Look-ahead Indicator,-1,Turn on lookahead,0,No lookahead
-Look-ahead Periods per Day,6,4-hour resolution,,
+Chrono Period To,24,,12,
+Look-ahead Indicator,-1,Turn on lookahead,-1,Turn on lookahead
+Look-ahead Periods per Day,6,4-hour resolution,24,1-hour resolution
+Look-ahead Type,1,day,0,hour
