@@ -9,7 +9,9 @@ objects.list <- list(
     "node.data.csv",
     "line.data.csv",
     "generator.data.csv",
-    "fuel.price.csv"
+    "fuel.data.csv",
+    "region.data.csv",
+    "zone.data.csv"
 )
 
 # add memberships between objects

@@ -28,9 +28,9 @@ all.tabs <- c()
 
 
 # Fuel Prices
-fuel.price = unique(src.gen[,.(Fuel, Price = `Fuel Price $/MMBTU`)])
-fuel.price = fuel.price[!is.na(Fuel)]
-all.tabs = c(all.tabs,"fuel.price")
+fuel.data = unique(src.gen[,.(Fuel, Price = `Fuel Price $/MMBTU`)])
+fuel.data = fuel.data[!is.na(Fuel)]
+all.tabs = c(all.tabs,"fuel.data")
 
 gen.fuel = src.gen[,.(Generator = `GEN UID`, Fuel)]
 #all.tabs = c(all.tabs,"gen.fuel")
@@ -74,7 +74,7 @@ all.tabs = c(all.tabs,"gen.outages")
 
 # generator parameters
 generator.data = src.gen[,.(Generator = `GEN UID`,
-                            Category = Category,
+                            category = Category,
                             Nodes_Node = `Bus ID`,
                             Fuels_Fuel = Fuel,
                             `Max Capacity` = `PMax MW`,
@@ -92,8 +92,8 @@ generator.data = src.gen[,.(Generator = `GEN UID`,
 all.tabs = c(all.tabs,"generator.data")
 
 # tx AC line data
-line.data = src.branch[,.(Line = UID, `Node From` = `From Bus`, `Node To` = `To Bus`, Resistance = R, Reactance = X,
-              `Max Flow` = `Cont Rating`, rateA = `LTE Rating`, rateB = `STE Rating`, rateC = `STE Rating`, Units = 1, `Min Flow` = `Cont Rating` * -1)]
+line.data = src.branch[,.(Line = UID, `Node From_Node` = `From Bus`, `Node To_Node` = `To Bus`, Resistance = R, Reactance = X,
+              `Max Flow` = `Cont Rating`, `Min Flow` = `Cont Rating` * -1, rateA = `LTE Rating`, rateB = `STE Rating`, rateC = `STE Rating`, Units = 1)]
 
 # tx DC line data
 dc.max.flow = as.numeric(src.dc_branch[Variable == 'Power demand (MW):',Value])
@@ -102,12 +102,13 @@ dc.node.from = as.numeric(strsplit(dc.nodes[1],'=')[[1]][2])
 dc.node.to = as.numeric(strsplit(dc.nodes[2],'=')[[1]][2])
 
 dc.line.data = data.table(Line = paste0(dc.node.from,'_',dc.node.to,'_1'),
-                          `Node From`=dc.node.from,`Node To`=dc.node.to,
+                          `Node From_Node`=dc.node.from,`Node To_Node`=dc.node.to,
                           Resistance = 0,Reactance = NA,
                           `Max Flow`=dc.max.flow,
+                          `Min Flow`=-1*dc.max.flow,
                           rateA=dc.max.flow, rateB=dc.max.flow, rateC=dc.max.flow,
-                          Units=1,
-                          `Min Flow`=-1*dc.max.flow)
+                          Units=1
+                          )
 
 rm(dc.max.flow,dc.nodes,dc.node.from,dc.node.to)
 
@@ -116,8 +117,16 @@ line.data = rbind(line.data,dc.line.data,fill=TRUE)
 all.tabs = c(all.tabs,"line.data")
 
 # node data
-node.data = src.bus[,.(Node = `Bus ID`, Voltage = BaseKV, Region = Area, Zone = `Sub Area`)]
+node.data = src.bus[,.(Node = `Bus ID`, Voltage = BaseKV, Region_Region = Area, Zone_Zone = `Sub Area`)]
 all.tabs = c(all.tabs,"node.data")
+
+# region data
+region.data = unique(node.data[,`Region_Region`])
+all.tabs = c(all.tabs,"region.data")
+
+# zone data
+zone.data = unique(node.data[,`Zone_Zone`])
+all.tabs = c(all.tabs,"zone.data")
 
 # node load participation factors 
 node.lpf = src.bus[,.(Node = `Bus ID`, Load = `MW Load`, Status = 1)]
