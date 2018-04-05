@@ -6,10 +6,8 @@ rm(list=ls())
 #------------------------------------------------------------------------------|
 # file paths can be absolute or relative to location of this script
 
-# directory of PSSE2PLEXOS master script - this is comp. specific because we
-# don't have PSSE2PLEXOS as a submodule
-# NOTE: be on the pssw2plx_data_checks branch
-master.script.dir <- '../PSSE2PLEXOS'
+# directory of PIDG master script
+pidg.dir <- '../PIDG'
 
 # directory to export to
 outputfiles.dir <- '..'
@@ -21,7 +19,7 @@ input.params <- 'input_params.R'
 
 # name of output workbook
 output.wb.name <- "../rts_PLEXOS.xlsx"
-
+export.wb <- TRUE
 
 # check data and save summary plots
 data.check.plots <- TRUE
@@ -41,7 +39,7 @@ data.check.plots <- TRUE
 if (interactive()) {
   t=try(dirname(sys.frame(1)$ofile),silent = T)
   if(inherits(t, "try-error")) {
-    warning("Make sure you are in the PSSE2PLEXOS submodule path")
+    warning("Make sure you are in the PIDG submodule path")
   } else {
     script.dir = dirname(parent.frame(2)$ofile)
     setwd(script.dir)
@@ -63,7 +61,7 @@ if (interactive()) {
 #------------------------------------------------------------------------------|
 
 # run the scripts
-args <- c(master.script.dir, input.params, inputfiles.dir, outputfiles.dir)
+args <- c(pidg.dir, input.params, inputfiles.dir, outputfiles.dir)
 
-source(file.path(master.script.dir, 
-  'create_plexos_db_from_raw_master_script.R'))
+source(file.path(pidg.dir, 
+  'driver.R'))
