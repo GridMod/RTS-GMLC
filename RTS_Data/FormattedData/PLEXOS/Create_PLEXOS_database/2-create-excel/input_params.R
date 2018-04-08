@@ -11,7 +11,8 @@ objects.list <- list(
     "generator.data.csv",
     "fuel.data.csv",
     "region.data.csv",
-    "zone.data.csv"
+    "zone.data.csv",
+    "storage.data.csv"
 )
 
 # add memberships between objects
@@ -22,33 +23,17 @@ memberships.list <- list(
 object.property.list <- list(
     
     # load
-    list("region.load.da.csv",
-         list(datafile.col = "Load",
-              scenario.name = "Load: DA")),
-    list("region.load.rt.csv",
-         list(datafile.col = "Load",
-              scenario.name = "Load: RT")),
-    "node.lpf.csv",
-    
-    # VG and hydro generator profiles
-    list("gen.da.vg.csv",
-         list(datafile.col = "Rating",
-              scenario.name = "RE: DA")),    
-    list("gen.rt.vg.csv",
-         list(datafile.col = "Rating",
-              scenario.name = "RE: RT")),    
-    list("gen.da.vg.fixed.csv",
-         list(datafile.col = "Fixed Load",
-              scenario.name = "RE: DA")),
-    list("gen.rt.vg.fixed.csv",
-         list(datafile.col = "Fixed Load",
-              scenario.name = "RE: RT")),
-    list("storage.csp.csv",
-         list(datafile.col = "Natural Inflow",
-              scenario.name = "RE: DA")),
-    list("storage.props.csv"),
-    list("storage.props.rt.csv",
-         list(scenario.name = "RT Run")),
+    list("region.load.da.csv", datafile.col = c("Load")),
+    list("region.load.rt.csv", datafile.col = c("Load")),
+
+        # VG and hydro generator profiles
+    list("gen.da.vg.csv", datafile.col = c("Rating")),
+    list("gen.rt.vg.csv", datafile.col = c("Rating")),
+    list("gen.da.vg.fixed.csv", datafile.col = c("Fixed Load")),
+    list("gen.rt.vg.fixed.csv", datafile.col = c("Fixed Load")),
+    list("storage.csp.csv", datafile.col = c("Natural Inflow")),
+
+    "storage.props.rt.csv",
     
     # generator properties
     list("gen.outages.csv", 

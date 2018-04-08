@@ -177,26 +177,30 @@ reserve.provisions.rt = src.timeseries_pointers[Simulation=='REAL_TIME' & Object
 all.tabs <- c(all.tabs, "reserve.data","reserve.generators","reserve.provisions","reserve.provisions.rt")
 
 # load
-region.load.da = data.table(unique(src.bus[,.(Region = Area)]), src.timeseries_pointers[Object == 'Load' & Simulation == 'DAY_AHEAD',.(Load = paste0('../',`Data File`))])
-region.load.rt = data.table(unique(src.bus[,.(Region = Area)]), src.timeseries_pointers[Object == 'Load' & Simulation == 'REAL_TIME',.(Load = paste0('../',`Data File`))])
+region.load.da = data.table(unique(src.bus[,.(Region = Area)]), 
+                            src.timeseries_pointers[Object == 'Load' & Simulation == 'DAY_AHEAD',.(Load = paste0('../',`Data File`))],
+                            scenario = "Load: DA")
+region.load.rt = data.table(unique(src.bus[,.(Region = Area)]), 
+                            src.timeseries_pointers[Object == 'Load' & Simulation == 'REAL_TIME',.(Load = paste0('../',`Data File`))],
+                            scenario = "Load: RT")
 all.tabs = c(all.tabs,"region.load.da","region.load.rt" )
 
 # VG
-gen.da.vg.fixed = src.timeseries_pointers[( grepl('hydro',Object,ignore.case = T) | grepl('rtpv',Object,ignore.case = T) ) & Simulation == 'DAY_AHEAD' & Parameter == 'PMax MW',.(Generator = Object, `Fixed Load` = paste0('../',`Data File`))]
-gen.rt.vg.fixed = src.timeseries_pointers[( grepl('hydro',Object,ignore.case = T) | grepl('rtpv',Object,ignore.case = T) ) & Simulation == 'REAL_TIME' & Parameter == 'PMax MW',.(Generator = Object, `Fixed Load` = paste0('../',`Data File`))]
+gen.da.vg.fixed = src.timeseries_pointers[( grepl('hydro',Object,ignore.case = T) | grepl('rtpv',Object,ignore.case = T) ) & Simulation == 'DAY_AHEAD' & Parameter == 'PMax MW',.(Generator = Object, `Fixed Load` = paste0('../',`Data File`),scenario = "RE: DA")]
+gen.rt.vg.fixed = src.timeseries_pointers[( grepl('hydro',Object,ignore.case = T) | grepl('rtpv',Object,ignore.case = T) ) & Simulation == 'REAL_TIME' & Parameter == 'PMax MW',.(Generator = Object, `Fixed Load` = paste0('../',`Data File`),scenario = "RE: RT")]
 
-gen.da.vg = src.timeseries_pointers[( grepl('wind',Object,ignore.case = T) | grepl('_pv',Object,ignore.case = T) | grepl('csp',Object,ignore.case = T) | grepl('rtpv',Object,ignore.case = T) ) & Simulation == 'DAY_AHEAD' & Parameter == 'PMax MW',.(Generator = Object, Rating = paste0('../',`Data File`))]
-gen.rt.vg = src.timeseries_pointers[( grepl('wind',Object,ignore.case = T) | grepl('_pv',Object,ignore.case = T) | grepl('csp',Object,ignore.case = T) | grepl('rtpv',Object,ignore.case = T) ) & Simulation == 'REAL_TIME' & Parameter == 'PMax MW',.(Generator = Object, Rating = paste0('../',`Data File`))]
+gen.da.vg = src.timeseries_pointers[( grepl('wind',Object,ignore.case = T) | grepl('_pv',Object,ignore.case = T) | grepl('csp',Object,ignore.case = T) | grepl('rtpv',Object,ignore.case = T) ) & Simulation == 'DAY_AHEAD' & Parameter == 'PMax MW',.(Generator = Object, Rating = paste0('../',`Data File`),scenario = "RE: DA")]
+gen.rt.vg = src.timeseries_pointers[( grepl('wind',Object,ignore.case = T) | grepl('_pv',Object,ignore.case = T) | grepl('csp',Object,ignore.case = T) | grepl('rtpv',Object,ignore.case = T) ) & Simulation == 'REAL_TIME' & Parameter == 'PMax MW',.(Generator = Object, Rating = paste0('../',`Data File`),scenario = "RE: RT")]
 
-storage.csp = src.timeseries_pointers[grepl('csp',Object,ignore.case = T) & Simulation == 'DAY_AHEAD' & Parameter == 'Natural_Inflow',.(Storage = Object, `Natural Inflow` = paste0('../',`Data File`))]
+storage.csp = src.timeseries_pointers[grepl('csp',Object,ignore.case = T) & Simulation == 'DAY_AHEAD' & Parameter == 'Natural_Inflow',.(Storage = Object, `Natural Inflow` = paste0('../',`Data File`),scenario = "RE: DA")]
 
 all.tabs = c(all.tabs,"gen.da.vg.fixed","gen.rt.vg.fixed","gen.da.vg","gen.rt.vg","storage.csp")
 
-# CSP Storage
-storage.props = src.storage[,.(Storage = `Storage`,`Max Volume`= `Max Volume GWh`,`Initial Volume` = `Initial Volume GWh`,`Decomposition Method` = 0, `End Effects Method` = c(1,2,2), `Max Spill` = 1e+30)]
-storage.props.rt = src.storage[,.(Storage = `Storage`,`Enforce Bounds`= 0,`End Effects Method` = 1)]
+# CSP and pumped storage
+storage.data = src.storage[,.(Storage = `Storage`,`Max Volume`= `Max Volume GWh`,`Initial Volume` = `Initial Volume GWh`,`Decomposition Method` = 0, `End Effects Method` = c(1,2,2), `Max Spill` = 1e+30)]
+storage.props.rt = src.storage[,.(Storage = `Storage`,`Enforce Bounds`= 0,`End Effects Method` = 1,scenario = "RT Run")]
 
-all.tabs = c(all.tabs, "storage.props","storage.props.rt")
+all.tabs = c(all.tabs, "storage.data","storage.props.rt")
 
 for (tab in all.tabs) {
   
