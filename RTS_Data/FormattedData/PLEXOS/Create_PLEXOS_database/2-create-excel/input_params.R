@@ -13,12 +13,13 @@ objects.list <- list(
     "region.data.csv",
     "zone.data.csv",
     "storage.data.csv",
-    "reserves.csv"
+    "reserve.data.csv"
 )
 
 # add memberships between objects
 memberships.list <- list(
-    'reserve.generators.csv'
+    'generator.memberships.csv',
+    'reserve.memberships.csv'
 )
 
 # add properties to objects. 
@@ -53,8 +54,7 @@ object.property.list <- list(
 # define as many files as needed for generic imports
 generic.import.files <- c(
     "STSched_MTSched_Perf_Transm_Prod.csv",
-    "import_report.csv",
-    "storage_objs_csp.csv"
+    "import_report.csv"
 )
 
 # compact generic files format (different file for each object type)

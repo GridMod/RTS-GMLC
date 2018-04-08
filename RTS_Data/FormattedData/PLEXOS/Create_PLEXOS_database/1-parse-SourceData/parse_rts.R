@@ -92,6 +92,14 @@ generator.data = src.gen[,.(Generator = `GEN UID`,
                             )]
 all.tabs = c(all.tabs,"generator.data")
 
+# generator-storage memberships
+generator.memberships = src.storage[,.(Generator = `GEN UID`,Storage)]
+generator.memberships[,membership:="Tail Storage_Storage"]
+generator.memberships[grepl('HEAD',Storage),membership:="Head Storage_Storage"]
+generator.memberships = data.table(dcast(generator.memberships,Generator ~ membership,
+                                         value.var = c('Storage')))
+
+all.tabs = c(all.tabs,"generator.memberships")
 # tx AC line data
 line.data = src.branch[,.(Line = UID, 
                          category = paste0('AC_',substr(`From Bus`,1,1)),
@@ -173,10 +181,10 @@ reserve.map = merge(src.gen[,.(Generator = `GEN UID`,`Category`,Bus = `Bus ID`)]
                     src.bus[,.(Bus = `Bus ID`,Region = as.character(`Area`))],
                     by = 'Bus')
 
-reserve.generators = merge(eligible.gens[,.(Reserve = `Reserve Product`,`Category` = `Eligible Gen Categories`,`Region` = `Eligible Regions`)],
+reserve.memberships = merge(eligible.gens[,.(Reserve = `Reserve Product`,`Category` = `Eligible Gen Categories`,`Region` = `Eligible Regions`)],
                            reserve.map,by = c("Category","Region"),
                            allow.cartesian = T)[,c("Category","Region","Bus"):= NULL]
-setnames(reserve.generators,'Generator','Generators_Generator')
+setnames(reserve.memberships,'Generator','Generators_Generator')
 
 rm(reserve.map)
 
@@ -186,7 +194,7 @@ reserve.provisions = src.timeseries_pointers[Simulation=='DAY_AHEAD' & Object %i
 reserve.provisions.rt = src.timeseries_pointers[Simulation=='REAL_TIME' & Object %in% unique(src.reserves$`Reserve Product`),
                                                 .(Reserve = Object,`Min Provision` = paste0('../',`Data File`),
                                                 scenario = 'RT Run',scenario.cat = "Object properties")]
-all.tabs <- c(all.tabs, "reserve.data","reserve.generators","reserve.enable","reserve.provisions","reserve.provisions.rt")
+all.tabs <- c(all.tabs, "reserve.data","reserve.memberships","reserve.enable","reserve.provisions","reserve.provisions.rt")
 
 # load
 region.load.da = data.table(unique(src.bus[,.(Region = Area)]), 
@@ -209,8 +217,15 @@ storage.csp = src.timeseries_pointers[grepl('csp',Object,ignore.case = T) & Simu
 all.tabs = c(all.tabs,"gen.da.vg.fixed","gen.rt.vg.fixed","gen.da.vg","gen.rt.vg","storage.csp")
 
 # CSP and pumped storage
-storage.data = src.storage[,.(Storage = `Storage`,`Max Volume`= `Max Volume GWh`,`Initial Volume` = `Initial Volume GWh`,`Decomposition Method` = 0, `End Effects Method` = c(1,2,2), `Max Spill` = 1e+30)]
-storage.props.rt = src.storage[,.(Storage = `Storage`,`Enforce Bounds`= 0,`End Effects Method` = 1,scenario = "RT Run")]
+storage.data = src.storage[,.(Storage = `Storage`,
+                             category = 'Storage',
+                             `Max Volume`= `Max Volume GWh`,
+                             `Initial Volume` = `Initial Volume GWh`,
+                             `Decomposition Method` = 0, 
+                             `End Effects Method` = c(1,2,2),
+                             `Max Spill` = 1e+30)]
+storage.data[grepl('CSP',Storage),category:='CSP Storage']
+storage.props.rt = src.storage[,.(Storage = `Storage`,`Enforce Bounds`= 0,`End Effects Method` = 1,scenario = "RT Run",scenario.cat = "Object properties")]
 
 all.tabs = c(all.tabs, "storage.data","storage.props.rt")
 
