@@ -68,7 +68,8 @@ gen.cost.data = gen.cost.data[`Load Point`!=0]
 all.tabs = c(all.tabs,"gen.cost.data")
 
 # outage rates
-gen.outages = src.gen[,.(Generator = `GEN UID`,`Forced Outage Rate` = 100*FOR, `Mean Time to Repair` = `MTTR Hr`,scenario = "Gen Outages")]
+gen.outages = src.gen[,.(Generator = `GEN UID`,`Forced Outage Rate` = 100*FOR, `Mean Time to Repair` = `MTTR Hr`,
+                         scenario = "Gen Outages",scenario.cat = 'Object properties')]
 gen.outages = gen.outages[!(`Forced Outage Rate` == 0 & `Mean Time to Repair` == 0),]
 all.tabs = c(all.tabs,"gen.outages")
 
@@ -92,8 +93,14 @@ generator.data = src.gen[,.(Generator = `GEN UID`,
 all.tabs = c(all.tabs,"generator.data")
 
 # tx AC line data
-line.data = src.branch[,.(Line = UID, `Node From_Node` = `From Bus`, `Node To_Node` = `To Bus`, Resistance = R, Reactance = X,
-              `Max Flow` = `Cont Rating`, `Min Flow` = `Cont Rating` * -1, rateA = `LTE Rating`, rateB = `STE Rating`, rateC = `STE Rating`, Units = 1)]
+line.data = src.branch[,.(Line = UID, 
+                         category = paste0('AC_',substr(`From Bus`,1,1)),
+                        `Node From_Node` = `From Bus`, `Node To_Node` = `To Bus`, 
+                         Resistance = R, Reactance = X,
+                        `Max Flow` = `Cont Rating`, `Min Flow` = `Cont Rating` * -1, 
+                         rateA = `LTE Rating`, rateB = `STE Rating`, rateC = `STE Rating`,
+                         Units = 1)]
+line.data[!(substr(`Node From_Node`,1,1) == substr(`Node To_Node`,1,1)),category := "Interregion_AC"]
 
 # tx DC line data
 dc.max.flow = as.numeric(src.dc_branch[Variable == 'Power demand (MW):',Value])
@@ -102,6 +109,7 @@ dc.node.from = as.numeric(strsplit(dc.nodes[1],'=')[[1]][2])
 dc.node.to = as.numeric(strsplit(dc.nodes[2],'=')[[1]][2])
 
 dc.line.data = data.table(Line = paste0(dc.node.from,'_',dc.node.to,'_1'),
+                          category = 'Interregion_DC',
                           `Node From_Node`=dc.node.from,`Node To_Node`=dc.node.to,
                           Resistance = 0,Reactance = NA,
                           `Max Flow`=dc.max.flow,
@@ -117,18 +125,18 @@ line.data = rbind(line.data,dc.line.data,fill=TRUE)
 all.tabs = c(all.tabs,"line.data")
 
 # node data
-node.data = src.bus[,.(Node = `Bus ID`, Voltage = BaseKV, `Load Participation Factor` = `MW Load`,Region_Region = Area, Zone_Zone = `Sub Area`)]
+node.data = src.bus[,.(Node = `Bus ID`,category = Area, Voltage = BaseKV, `Load Participation Factor` = `MW Load`,Region_Region = Area, Zone_Zone = `Sub Area`)]
 node.data[,`Load Participation Factor`:=`Load Participation Factor`/sum(`Load Participation Factor`),by = c("Region_Region")]
 node.data[is.nan(`Load Participation Factor`),`Load Participation Factor`:=0]
 all.tabs = c(all.tabs,"node.data")
 
 # region data
 region.data = unique(node.data[,.(Region = `Region_Region`)])
-region.refnode.data = src.bus[`Bus Type`=='Ref',.(Region = Area, `Reference Node_Node` = as.character(`Bus ID`))]
-region.data = merge(region.data,region.refnode.data,all.x = TRUE,by = c('Region'))
-region.data[is.na(`Reference Node_Node`),`Reference Node_Node`:=""]
+# region.refnode.data = src.bus[`Bus Type`=='Ref',.(Region = Area, `Reference Node_Node` = as.character(`Bus ID`))]
+# region.data = merge(region.data,region.refnode.data,all.x = TRUE,by = c('Region'))
+# region.data[is.na(`Reference Node_Node`),`Reference Node_Node`:=""]
 all.tabs = c(all.tabs,"region.data")
-rm(region.refnode.data)
+# rm(region.refnode.data)
 
 # zone data
 zone.data = unique(node.data[,.(Zone = `Zone_Zone`)])
@@ -150,12 +158,16 @@ eligible.regions = melt(eligible.regions,id.vars = 'Reserve Product',value.name 
 eligible.gens = merge(eligible.gens,eligible.regions[!is.na(`Eligible Regions`)],by = c('Reserve Product'),allow.cartesian = TRUE)
 
 reserve.data = src.reserves[,.(Reserve = `Reserve Product`,
-                               `Is Enabled` = -1,
+                               `Is Enabled` = 0,
                                Type = ifelse(grepl("Down",`Reserve Product`),2,1), 
-                               scenario = paste0('Add ',`Reserve Product`),
                                Timeframe = `Timeframe (sec)`,
                                VoRS = 4000,
                                `Mutually Exclusive` = 1)]
+
+reserve.enable = src.reserves[,.(Reserve = `Reserve Product`,
+                                `Is Enabled` = -1,
+                                scenario = paste0('Add ',`Reserve Product`),
+                                scenario.cat = "Reserves")]
 
 reserve.map = merge(src.gen[,.(Generator = `GEN UID`,`Category`,Bus = `Bus ID`)],
                     src.bus[,.(Bus = `Bus ID`,Region = as.character(`Area`))],
@@ -164,6 +176,7 @@ reserve.map = merge(src.gen[,.(Generator = `GEN UID`,`Category`,Bus = `Bus ID`)]
 reserve.generators = merge(eligible.gens[,.(Reserve = `Reserve Product`,`Category` = `Eligible Gen Categories`,`Region` = `Eligible Regions`)],
                            reserve.map,by = c("Category","Region"),
                            allow.cartesian = T)[,c("Category","Region","Bus"):= NULL]
+setnames(reserve.generators,'Generator','Generators_Generator')
 
 rm(reserve.map)
 
@@ -171,26 +184,27 @@ reserve.provisions = src.timeseries_pointers[Simulation=='DAY_AHEAD' & Object %i
                         .(Reserve = Object,`Min Provision` = paste0('../',`Data File`))]
 
 reserve.provisions.rt = src.timeseries_pointers[Simulation=='REAL_TIME' & Object %in% unique(src.reserves$`Reserve Product`),
-                                                .(Reserve = Object,`Min Provision` = paste0('../',`Data File`),scenario = c('RT Run'))]
-all.tabs <- c(all.tabs, "reserve.data","reserve.generators","reserve.provisions","reserve.provisions.rt")
+                                                .(Reserve = Object,`Min Provision` = paste0('../',`Data File`),
+                                                scenario = 'RT Run',scenario.cat = "Object properties")]
+all.tabs <- c(all.tabs, "reserve.data","reserve.generators","reserve.enable","reserve.provisions","reserve.provisions.rt")
 
 # load
 region.load.da = data.table(unique(src.bus[,.(Region = Area)]), 
                             src.timeseries_pointers[Object == 'Load' & Simulation == 'DAY_AHEAD',.(Load = paste0('../',`Data File`))],
-                            scenario = "Load: DA")
+                            scenario = "Load: DA",scenario.cat = "Object properties")
 region.load.rt = data.table(unique(src.bus[,.(Region = Area)]), 
                             src.timeseries_pointers[Object == 'Load' & Simulation == 'REAL_TIME',.(Load = paste0('../',`Data File`))],
-                            scenario = "Load: RT")
+                            scenario = "Load: RT",scenario.cat = "Object properties")
 all.tabs = c(all.tabs,"region.load.da","region.load.rt" )
 
 # VG
-gen.da.vg.fixed = src.timeseries_pointers[( grepl('hydro',Object,ignore.case = T) | grepl('rtpv',Object,ignore.case = T) ) & Simulation == 'DAY_AHEAD' & Parameter == 'PMax MW',.(Generator = Object, `Fixed Load` = paste0('../',`Data File`),scenario = "RE: DA")]
-gen.rt.vg.fixed = src.timeseries_pointers[( grepl('hydro',Object,ignore.case = T) | grepl('rtpv',Object,ignore.case = T) ) & Simulation == 'REAL_TIME' & Parameter == 'PMax MW',.(Generator = Object, `Fixed Load` = paste0('../',`Data File`),scenario = "RE: RT")]
+gen.da.vg.fixed = src.timeseries_pointers[( grepl('hydro',Object,ignore.case = T) | grepl('rtpv',Object,ignore.case = T) ) & Simulation == 'DAY_AHEAD' & Parameter == 'PMax MW',.(Generator = Object, `Fixed Load` = paste0('../',`Data File`),scenario = "RE: DA",scenario.cat = "Object properties")]
+gen.rt.vg.fixed = src.timeseries_pointers[( grepl('hydro',Object,ignore.case = T) | grepl('rtpv',Object,ignore.case = T) ) & Simulation == 'REAL_TIME' & Parameter == 'PMax MW',.(Generator = Object, `Fixed Load` = paste0('../',`Data File`),scenario = "RE: RT",scenario.cat = "Object properties")]
 
-gen.da.vg = src.timeseries_pointers[( grepl('wind',Object,ignore.case = T) | grepl('_pv',Object,ignore.case = T) | grepl('csp',Object,ignore.case = T) | grepl('rtpv',Object,ignore.case = T) ) & Simulation == 'DAY_AHEAD' & Parameter == 'PMax MW',.(Generator = Object, Rating = paste0('../',`Data File`),scenario = "RE: DA")]
-gen.rt.vg = src.timeseries_pointers[( grepl('wind',Object,ignore.case = T) | grepl('_pv',Object,ignore.case = T) | grepl('csp',Object,ignore.case = T) | grepl('rtpv',Object,ignore.case = T) ) & Simulation == 'REAL_TIME' & Parameter == 'PMax MW',.(Generator = Object, Rating = paste0('../',`Data File`),scenario = "RE: RT")]
+gen.da.vg = src.timeseries_pointers[( grepl('wind',Object,ignore.case = T) | grepl('_pv',Object,ignore.case = T) | grepl('csp',Object,ignore.case = T) | grepl('rtpv',Object,ignore.case = T) ) & Simulation == 'DAY_AHEAD' & Parameter == 'PMax MW',.(Generator = Object, Rating = paste0('../',`Data File`),scenario = "RE: DA",scenario.cat = "Object properties")]
+gen.rt.vg = src.timeseries_pointers[( grepl('wind',Object,ignore.case = T) | grepl('_pv',Object,ignore.case = T) | grepl('csp',Object,ignore.case = T) | grepl('rtpv',Object,ignore.case = T) ) & Simulation == 'REAL_TIME' & Parameter == 'PMax MW',.(Generator = Object, Rating = paste0('../',`Data File`),scenario = "RE: RT",scenario.cat = "Object properties")]
 
-storage.csp = src.timeseries_pointers[grepl('csp',Object,ignore.case = T) & Simulation == 'DAY_AHEAD' & Parameter == 'Natural_Inflow',.(Storage = Object, `Natural Inflow` = paste0('../',`Data File`),scenario = "RE: DA")]
+storage.csp = src.timeseries_pointers[grepl('csp',Object,ignore.case = T) & Simulation == 'DAY_AHEAD' & Parameter == 'Natural_Inflow',.(Storage = Object, `Natural Inflow` = paste0('../',`Data File`),scenario = "RE: DA",scenario.cat = "Object properties")]
 
 all.tabs = c(all.tabs,"gen.da.vg.fixed","gen.rt.vg.fixed","gen.da.vg","gen.rt.vg","storage.csp")
 

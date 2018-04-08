@@ -12,11 +12,13 @@ objects.list <- list(
     "fuel.data.csv",
     "region.data.csv",
     "zone.data.csv",
-    "storage.data.csv"
+    "storage.data.csv",
+    "reserves.csv"
 )
 
 # add memberships between objects
 memberships.list <- list(
+    'reserve.generators.csv'
 )
 
 # add properties to objects. 
@@ -39,16 +41,13 @@ object.property.list <- list(
     list("gen.cost.data.csv",band.col = c("Band")),
     "storage.props.rt.csv",
 
+    # reserve properties
+    "reserve.enable.csv",
+    
     # reserve filepointers
     list("reserve.provisions.csv",datafile.col = c('Min Provision')),
     list("reserve.provisions.rt.csv",datafile.col = c('Min Provision'))
 
-)
-
-# reserves - keep for now
-reserve.files <- list(
-  reserves = 'reserve.data.csv',
-  reserve.generators = 'reserve.generators.csv'
 )
 
 # define as many files as needed for generic imports
