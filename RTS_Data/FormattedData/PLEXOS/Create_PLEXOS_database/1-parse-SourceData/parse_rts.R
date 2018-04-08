@@ -121,20 +121,20 @@ node.data = src.bus[,.(Node = `Bus ID`, Voltage = BaseKV, Region_Region = Area, 
 all.tabs = c(all.tabs,"node.data")
 
 # region data
-region.data = unique(node.data[,`Region_Region`])
+region.data = unique(node.data[,.(Region = `Region_Region`)])
+region.refnode.data = src.bus[`Bus Type`=='Ref',.(Region = Area, `Reference Node_Node` = as.character(`Bus ID`))]
+region.data = merge(region.data,region.refnode.data,all.x = TRUE,by = c('Region'))
+region.data[is.na(`Reference Node_Node`),`Reference Node_Node`:=""]
 all.tabs = c(all.tabs,"region.data")
+rm(region.refnode.data)
 
 # zone data
-zone.data = unique(node.data[,`Zone_Zone`])
+zone.data = unique(node.data[,.(Zone = `Zone_Zone`)])
 all.tabs = c(all.tabs,"zone.data")
 
 # node load participation factors 
 node.lpf = src.bus[,.(Node = `Bus ID`, Load = `MW Load`, Status = 1)]
 all.tabs = c(all.tabs,"node.lpf")
-
-# reference node(s)
-region.refnode.data = src.bus[`Bus Type`=='Ref',.(Region = Area, `Region.Reference Node` = `Bus ID`)]
-all.tabs = c(all.tabs,"region.refnode.data")
 
 # Reserve Data
 eligible.gens = src.reserves[,.(`Reserve Product`,`Eligible Gen Categories`)]

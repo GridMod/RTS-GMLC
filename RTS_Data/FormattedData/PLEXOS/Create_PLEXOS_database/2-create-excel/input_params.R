@@ -16,8 +16,6 @@ objects.list <- list(
 
 # add memberships between objects
 memberships.list <- list(
-    'region.refnode.data.csv',
-    "gen.fuel.csv"
 )
 
 # add properties to objects. 
