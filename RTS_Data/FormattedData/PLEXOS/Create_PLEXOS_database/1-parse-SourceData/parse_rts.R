@@ -68,7 +68,7 @@ gen.cost.data = gen.cost.data[`Load Point`!=0]
 all.tabs = c(all.tabs,"gen.cost.data")
 
 # outage rates
-gen.outages = src.gen[,.(Generator = `GEN UID`,`Forced Outage Rate` = 100*FOR, `Mean Time to Repair` = `MTTR Hr` )]
+gen.outages = src.gen[,.(Generator = `GEN UID`,`Forced Outage Rate` = 100*FOR, `Mean Time to Repair` = `MTTR Hr`,scenario = "Gen Outages")]
 gen.outages = gen.outages[!(`Forced Outage Rate` == 0 & `Mean Time to Repair` == 0),]
 all.tabs = c(all.tabs,"gen.outages")
 
@@ -117,7 +117,9 @@ line.data = rbind(line.data,dc.line.data,fill=TRUE)
 all.tabs = c(all.tabs,"line.data")
 
 # node data
-node.data = src.bus[,.(Node = `Bus ID`, Voltage = BaseKV, Region_Region = Area, Zone_Zone = `Sub Area`)]
+node.data = src.bus[,.(Node = `Bus ID`, Voltage = BaseKV, `Load Participation Factor` = `MW Load`,Region_Region = Area, Zone_Zone = `Sub Area`)]
+node.data[,`Load Participation Factor`:=`Load Participation Factor`/sum(`Load Participation Factor`),by = c("Region_Region")]
+node.data[is.nan(`Load Participation Factor`),`Load Participation Factor`:=0]
 all.tabs = c(all.tabs,"node.data")
 
 # region data
@@ -131,10 +133,6 @@ rm(region.refnode.data)
 # zone data
 zone.data = unique(node.data[,.(Zone = `Zone_Zone`)])
 all.tabs = c(all.tabs,"zone.data")
-
-# node load participation factors 
-node.lpf = src.bus[,.(Node = `Bus ID`, Load = `MW Load`, Status = 1)]
-all.tabs = c(all.tabs,"node.lpf")
 
 # Reserve Data
 eligible.gens = src.reserves[,.(`Reserve Product`,`Eligible Gen Categories`)]
@@ -173,7 +171,7 @@ reserve.provisions = src.timeseries_pointers[Simulation=='DAY_AHEAD' & Object %i
                         .(Reserve = Object,`Min Provision` = paste0('../',`Data File`))]
 
 reserve.provisions.rt = src.timeseries_pointers[Simulation=='REAL_TIME' & Object %in% unique(src.reserves$`Reserve Product`),
-                                                .(Reserve = Object,`Min Provision` = paste0('../',`Data File`))]
+                                                .(Reserve = Object,`Min Provision` = paste0('../',`Data File`),scenario = c('RT Run'))]
 all.tabs <- c(all.tabs, "reserve.data","reserve.generators","reserve.provisions","reserve.provisions.rt")
 
 # load

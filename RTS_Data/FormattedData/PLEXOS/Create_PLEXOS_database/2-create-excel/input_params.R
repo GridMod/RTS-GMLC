@@ -22,40 +22,33 @@ memberships.list <- list(
 # add properties to objects. 
 object.property.list <- list(
     
-    # load
+    # load filepointers
     list("region.load.da.csv", datafile.col = c("Load")),
     list("region.load.rt.csv", datafile.col = c("Load")),
 
-        # VG and hydro generator profiles
+    # VG and hydro generator profiles
     list("gen.da.vg.csv", datafile.col = c("Rating")),
     list("gen.rt.vg.csv", datafile.col = c("Rating")),
     list("gen.da.vg.fixed.csv", datafile.col = c("Fixed Load")),
     list("gen.rt.vg.fixed.csv", datafile.col = c("Fixed Load")),
     list("storage.csp.csv", datafile.col = c("Natural Inflow")),
 
-    "storage.props.rt.csv",
-    
     # generator properties
-    list("gen.outages.csv", 
-         list(scenario.name = "Gen Outages")),
-    list("gen.cost.data.base.csv"),
-    list("gen.cost.data.csv",
-         list(band.col = "Band")),    
-    
-    # reserve profiles
-    list("reserve.provisions.csv",
-         list(datafile.col = 'Min Provision')),
-    list("reserve.provisions.rt.csv",
-         list(datafile.col = 'Min Provision',
-              scenario.name = 'RT Run'))
+    "gen.outages.csv",
+    "gen.cost.data.base.csv",
+    list("gen.cost.data.csv",band.col = c("Band")),
+    "storage.props.rt.csv",
+
+    # reserve filepointers
+    list("reserve.provisions.csv",datafile.col = c('Min Provision')),
+    list("reserve.provisions.rt.csv",datafile.col = c('Min Provision'))
 
 )
 
 # reserves - keep for now
 reserve.files <- list(
   reserves = 'reserve.data.csv',
-  reserve.generators = 'reserve.generators.csv',
-  reserve.regions = 'reserve.regions.csv'
+  reserve.generators = 'reserve.generators.csv'
 )
 
 # define as many files as needed for generic imports
