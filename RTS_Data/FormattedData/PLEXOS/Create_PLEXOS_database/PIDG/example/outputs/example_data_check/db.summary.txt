@@ -1,0 +1,60 @@
+**Database Summary Report**
+--------------------------- 
+
+
+Summary of database components
+------------
+
+Number of objects of each type:
+ Object class # objects
+    Generator         7
+         Line         4
+         Node         5
+       Region         2
+     Scenario         1
+
+Number of nodes in each region and/or zone:
+        Region/Zone # nodes
+ Region     region1       2
+ Region     region2       3
+
+
+Summary of generator/fuel memberships
+------------
+
+ category collection fuel N
+       VG         NA   NA 2
+    hydro         NA   NA 2
+  thermal         NA   NA 3
+
+
+Summary of generators in database
+------------
+
+To see this information by region, see outputs/example_data_check/generator.summary.by.fuel.region.csv
+
+ Generator category Fuel Start Fuel    scenario total.cap.x.units
+                 VG   NA         NA No scenario                60
+              hydro   NA         NA No scenario               100
+            thermal   NA         NA No scenario               500
+ avg.capacity total.capacity min.capacity max.capacity sd.capacity
+      30.0000             60           30           30      0.0000
+      50.0000            100           50           50      0.0000
+     166.6667            500          100          300    115.4701
+ avg.units total.units min.units max.units sd.units
+         1           2         1         1        0
+         1           2         1         1        0
+         1           3         1         1        0
+
+
+Summary of connected components in network of the database.
+------------
+
+This analysis is done on the base network - scenarios on Lines/Transformers are ignored.
+List of nodes that belong to islands saved in outputs/example_data_check/isolated.nodes.csv
+Islands are any groups of nodes not connected to the largest connected component.
+
+ Component size Nodes in 'Remove Isolated Nodes' scenario
+              5                                         0
+
+
