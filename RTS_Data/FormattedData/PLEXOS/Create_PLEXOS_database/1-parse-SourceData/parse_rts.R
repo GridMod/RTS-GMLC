@@ -106,7 +106,6 @@ line.data = src.branch[,.(Line = UID,
                         `Node From_Node` = `From Bus`, `Node To_Node` = `To Bus`, 
                          Resistance = R, Reactance = X,
                         `Max Flow` = `Cont Rating`, `Min Flow` = `Cont Rating` * -1, 
-                         rateA = `LTE Rating`, rateB = `STE Rating`, rateC = `STE Rating`,
                          Units = 1)]
 line.data[!(substr(`Node From_Node`,1,1) == substr(`Node To_Node`,1,1)),category := "Interregion_AC"]
 
@@ -122,7 +121,6 @@ dc.line.data = data.table(Line = paste0(dc.node.from,'_',dc.node.to,'_1'),
                           Resistance = 0,Reactance = NA,
                           `Max Flow`=dc.max.flow,
                           `Min Flow`=-1*dc.max.flow,
-                          rateA=dc.max.flow, rateB=dc.max.flow, rateC=dc.max.flow,
                           Units=1
                           )
 
@@ -133,7 +131,7 @@ line.data = rbind(line.data,dc.line.data,fill=TRUE)
 all.tabs = c(all.tabs,"line.data")
 
 # node data
-node.data = src.bus[,.(Node = `Bus ID`,category = Area, Voltage = BaseKV, `Load Participation Factor` = `MW Load`,Region_Region = Area, Zone_Zone = `Sub Area`)]
+node.data = src.bus[,.(Node = `Bus ID`,category = Area, Voltage = BaseKV, `Load Participation Factor` = `MW Load`,Region_Region = Area, Zone_Zone = `Sub Area`,Units = 1)]
 node.data[,`Load Participation Factor`:=`Load Participation Factor`/sum(`Load Participation Factor`),by = c("Region_Region")]
 node.data[is.nan(`Load Participation Factor`),`Load Participation Factor`:=0]
 all.tabs = c(all.tabs,"node.data")
