@@ -1,6 +1,0 @@
-Generator category,Fuel,Start Fuel,Region,scenario,total.cap.x.units,avg.capacity,total.capacity,min.capacity,max.capacity,sd.capacity,avg.units,total.units,min.units,max.units,sd.units
-VG,NA,NA,region1,No scenario,30,30,30,30,30,NA,1,1,1,1,NA
-thermal,NA,NA,region1,No scenario,200,100,200,100,100,0,1,2,1,1,0
-VG,NA,NA,region2,No scenario,30,30,30,30,30,NA,1,1,1,1,NA
-hydro,NA,NA,region2,No scenario,100,50,100,50,50,0,1,2,1,1,0
-thermal,NA,NA,region2,No scenario,300,300,300,300,300,NA,1,1,1,1,NA

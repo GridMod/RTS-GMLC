@@ -1,4 +1,0 @@
-***Warnings***
-
-WARNING: At least one Node is missing Zone.
-See file outputs/example_data_check/node.missing.zone.csv

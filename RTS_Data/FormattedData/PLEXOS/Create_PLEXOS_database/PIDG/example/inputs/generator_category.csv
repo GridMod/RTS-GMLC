@@ -1,6 +1,0 @@
-Node,category,Region_Region,Voltage,Units
-node1,region1_nodes,region1,100,1
-node2,region1_nodes,region1,200,1
-node3,region2_nodes,region2,100,1
-node4,region2_nodes,region2,200,1
-node5,region2_nodes,region2,300,1

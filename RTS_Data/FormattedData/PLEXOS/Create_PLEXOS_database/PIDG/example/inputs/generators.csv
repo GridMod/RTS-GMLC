@@ -1,8 +1,0 @@
-Generator,category,Nodes_Node,Units,Max Capacity,VO&M Charge
-gen1,thermal,node1,1,100,20
-gen2,thermal,node1,1,100,30
-gen3,thermal,node3,1,300,40
-gen4,hydro,node4,1,50,0
-gen5,hydro,node4,1,50,0
-gen6,VG,node1,1,30,0
-gen7,VG,node3,1,30,0

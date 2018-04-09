@@ -1,6 +1,0 @@
-Line,category,Node From_Node,Node To_Node,Units,Max Flow,scenario
-interregion_line1,interregion_lines,node2,node5,1,100,
-line1,region1_lines,node2,node1,1,100,
-line2,region2_lines,node5,node3,1,100,
-line3,region2_lines,node5,node4,1,100,
-interregion_line1,interregion_lines,,,,200,Increase interregion line flow
