@@ -8,7 +8,7 @@ Fit_HRs.R - script which extracts heat rates from Final_Fits.csv and adds them t
 
 1) Random number seed ensures that heat rates are reproducible
 
-2) Uses Final_Fits.csv coefficents a0 - a4 to get following for all generators
+2) Uses Final_Fits.csv coefficients a0 - a4 to get following for all generators
     a) an average heat rate at min stable level
     b) an incremental heat rate at MSL + 33%, MSL + 66% and max capacity
 
