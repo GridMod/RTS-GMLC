@@ -19,14 +19,14 @@ The [`REAL_TIME_regional_load.csv`](https://github.com/GridMod/RTS-GMLC/blob/mas
 To get nodal load, multiply the regional load timeseries by the proportion of the total regional load consumed at each bus defined in the [`bus.csv`](https://github.com/GridMod/RTS-GMLC/blob/master/RTS_Data/SourceData/bus.csv)
 
 ## PV
-The [`DAY_AHEAD_pv.csv`](https://github.com/GridMod/RTS-GMLC/blob/master/RTS_Data/timeseries_data_files/PV/DAY_AHEAD_pv.csv) contains the forecasted avialable energy generation for each utility scale PV plant by hour.
+The [`DAY_AHEAD_pv.csv`](https://github.com/GridMod/RTS-GMLC/blob/master/RTS_Data/timeseries_data_files/PV/DAY_AHEAD_pv.csv) contains the forecasted available energy generation for each utility scale PV plant by hour.
 
-The [`REAL_TIME_pv.csv`](https://github.com/GridMod/RTS-GMLC/blob/master/RTS_Data/timeseries_data_files/PV/REAL_TIME_pv.csv) contains the actual avialable energy generation for each utility scale PV plant by 5-minute interval.
+The [`REAL_TIME_pv.csv`](https://github.com/GridMod/RTS-GMLC/blob/master/RTS_Data/timeseries_data_files/PV/REAL_TIME_pv.csv) contains the actual available energy generation for each utility scale PV plant by 5-minute interval.
 
 ## RTPV
-The [`DAY_AHEAD_pv.csv`](https://github.com/GridMod/RTS-GMLC/blob/master/RTS_Data/timeseries_data_files/RTPV/DAY_AHEAD_rtpv.csv) contains the forecasted energy generation for each rooftop PV plant by hour.
+The [`DAY_AHEAD_rtpv.csv`](https://github.com/GridMod/RTS-GMLC/blob/master/RTS_Data/timeseries_data_files/RTPV/DAY_AHEAD_rtpv.csv) contains the forecasted energy generation for each rooftop PV plant by hour.
 
-The [`REAL_TIME_pv.csv`](https://github.com/GridMod/RTS-GMLC/blob/master/RTS_Data/timeseries_data_files/RTPV/REAL_TIME_rtpv.csv) contains the actual  energy generation for each rooftop PV plant by 5-minute interval.
+The [`REAL_TIME_rtpv.csv`](https://github.com/GridMod/RTS-GMLC/blob/master/RTS_Data/timeseries_data_files/RTPV/REAL_TIME_rtpv.csv) contains the actual  energy generation for each rooftop PV plant by 5-minute interval.
 
 *note, RTPV is typically not dispatchable in PCMs*
 
@@ -37,4 +37,4 @@ Real-time reserve requirements are defined for the Reg_Down, Spin_Up_R1, Spin_Up
 ## WIND
 The [`DAY_AHEAD_wind.csv`](https://github.com/GridMod/RTS-GMLC/blob/master/RTS_Data/timeseries_data_files/WIND/DAY_AHEAD_wind.csv) contains the forecasted avialable energy generation for each wind plant by hour.
 
-The [`REAL_TIME_pv.csv`](https://github.com/GridMod/RTS-GMLC/blob/master/RTS_Data/timeseries_data_files/WIND/REAL_TIME_wind.csv) contains the actual avialable energy generation for each wind plant by 5-minute interval.
+The [`REAL_TIME_wind.csv`](https://github.com/GridMod/RTS-GMLC/blob/master/RTS_Data/timeseries_data_files/WIND/REAL_TIME_wind.csv) contains the actual avialable energy generation for each wind plant by 5-minute interval.
