@@ -35,20 +35,23 @@ all.tabs = c(all.tabs,"fuel.data")
 gen.fuel = src.gen[,.(Generator = `GEN UID`, Fuel)]
 #all.tabs = c(all.tabs,"gen.fuel")
 
-# Gen Base Cost Data
+hr.split = 0.75 # allocation heat requirement below min stable level to Heat Rate Base
+
+# Gen Base Heat Data
 gen.cost.data.base = src.gen[,.(`GEN UID`,`PMin MW`,HR_avg_0)]
-gen.cost.data.base[,`Heat Rate Base`:=0.75*`PMin MW`*HR_avg_0*0.001] # to get mmBTU
+gen.cost.data.base[,`Heat Rate Base`:=hr.split*`PMin MW`*HR_avg_0*0.001] # to get mmBTU
 setnames(gen.cost.data.base,c('GEN UID'),c('Generator'))
 gen.cost.data.base = gen.cost.data.base[,.(Generator,`Heat Rate Base`)]
 gen.cost.data.base = gen.cost.data.base[`Heat Rate Base` != 0]
+gen.cost.data.base = gen.cost.data.base[!(Generator == "212_CSP_1")] # exclude CSP
 all.tabs = c(all.tabs,"gen.cost.data.base")
 
-# Gen Cost Data
+# Gen Heat Data
 setnames(src.gen,'HR_avg_0','HR_incr_0')
 hr.traunches = tstrsplit(names(src.gen)[grep('Output_pct',names(src.gen))],'_')[[3]]
 gen.cost.data = src.gen[,.SD,.SDcols = c('GEN UID','PMax MW',paste0('HR_incr_',hr.traunches),
                                          paste0('Output_pct_',hr.traunches)) ]
-gen.cost.data[,HR_incr_0:=0.25*HR_incr_0]
+gen.cost.data[,HR_incr_0:=ifelse(`GEN UID` == "212_CSP_1",HR_incr_0,(1-hr.split)*HR_incr_0)]
 gen.cost.data = melt(gen.cost.data,id.vars = c('GEN UID','PMax MW'))
 gen.cost.data[,Band:= gsub('.*_([0-9]+).*','\\1',variable)]
 
@@ -65,7 +68,12 @@ gen.cost.data[,`Max Capacity`:=NULL]
 gen.cost.data[grepl('HYDRO',Generator),c('Heat Rate Incr','Load Point'):=0]
 gen.cost.data[,`Load Point`:=round(`Load Point`,1)]
 gen.cost.data = gen.cost.data[`Load Point`!=0]
-all.tabs = c(all.tabs,"gen.cost.data")
+
+gen.efficiency.data = gen.cost.data[grepl('CSP',Generator)]
+setnames(gen.efficiency.data,'Heat Rate Incr','Efficiency Incr')
+gen.cost.data = gen.cost.data[!(Generator == "212_CSP_1")]
+
+all.tabs = c(all.tabs,"gen.cost.data","gen.efficiency.data")
 
 # outage rates
 gen.outages = src.gen[,.(Generator = `GEN UID`,`Forced Outage Rate` = 100*FOR, `Mean Time to Repair` = `MTTR Hr`,
@@ -81,7 +89,7 @@ generator.data = src.gen[,.(Generator = `GEN UID`,
                             `Max Capacity` = `PMax MW`,
                             Units = 1,
                             `VO&M Charge` = VOM,
-                            `Shutdown Cost` = `Start Heat Cold MBTU` * `Fuel Price $/MMBTU` ,
+                            `Shutdown Cost` = (`Start Heat Cold MBTU` * `Fuel Price $/MMBTU`) + `Non Fuel Shutdown Cost $`  ,
                             `Start Cost` = (`Start Heat Cold MBTU` * `Fuel Price $/MMBTU`) + `Non Fuel Start Cost $` ,
                             `Max Ramp Up` = ifelse(`Ramp Rate MW/Min` == 0, NA,`Ramp Rate MW/Min`),
                             `Max Ramp Down` = ifelse(`Ramp Rate MW/Min` == 0, NA,`Ramp Rate MW/Min`),
@@ -226,7 +234,11 @@ storage.data = src.storage[,.(Storage = `Storage`,
 storage.data[grepl('CSP',Storage),category:='CSP Storage']
 storage.props.rt = src.storage[,.(Storage = `Storage`,`Enforce Bounds`= 0,`End Effects Method` = 1,scenario = "RT Run",scenario.cat = "Object properties")]
 
-all.tabs = c(all.tabs, "storage.data","storage.props.rt")
+generator.start.energy = src.storage[!is.na(`Start Energy`),.(Storage,
+                                                            Generator = `GEN UID`,
+                                                            `Flow at Start` = `Start Energy`)]
+
+all.tabs = c(all.tabs, "storage.data","storage.props.rt","generator.start.energy")
 
 for (tab in all.tabs) {
   
