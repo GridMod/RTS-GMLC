@@ -54,6 +54,7 @@ gen.cost.data = src.gen[,.SD,.SDcols = c('GEN UID','PMax MW',paste0('HR_incr_',h
 gen.cost.data[,HR_incr_0:=ifelse(`GEN UID` == "212_CSP_1",HR_incr_0,(1-hr.split)*HR_incr_0)]
 gen.cost.data = melt(gen.cost.data,id.vars = c('GEN UID','PMax MW'))
 gen.cost.data[,Band:= gsub('.*_([0-9]+).*','\\1',variable)]
+gen.cost.data = gen.cost.data[!is.na(value)] # remove higher-band NAs
 
 # make sure bands start at 1
 if(min(as.numeric(gen.cost.data[,Band]))==0){
@@ -219,7 +220,10 @@ gen.rt.vg.fixed = src.timeseries_pointers[( grepl('hydro',Object,ignore.case = T
 gen.da.vg = src.timeseries_pointers[( grepl('wind',Object,ignore.case = T) | grepl('_pv',Object,ignore.case = T) | grepl('csp',Object,ignore.case = T) | grepl('rtpv',Object,ignore.case = T) ) & Simulation == 'DAY_AHEAD' & Parameter == 'PMax MW',.(Generator = Object, Rating = paste0('../',`Data File`),scenario = "RE: DA",scenario.cat = "Object properties")]
 gen.rt.vg = src.timeseries_pointers[( grepl('wind',Object,ignore.case = T) | grepl('_pv',Object,ignore.case = T) | grepl('csp',Object,ignore.case = T) | grepl('rtpv',Object,ignore.case = T) ) & Simulation == 'REAL_TIME' & Parameter == 'PMax MW',.(Generator = Object, Rating = paste0('../',`Data File`),scenario = "RE: RT",scenario.cat = "Object properties")]
 
-storage.csp = src.timeseries_pointers[grepl('csp',Object,ignore.case = T) & Simulation == 'DAY_AHEAD' & Parameter == 'Natural_Inflow',.(Storage = Object, `Natural Inflow` = paste0('../',`Data File`),scenario = "RE: DA",scenario.cat = "Object properties")]
+storage.da.csp = src.timeseries_pointers[grepl('csp',Object,ignore.case = T) & Simulation == 'DAY_AHEAD' & Parameter == 'Natural_Inflow',.(Storage = Object, `Natural Inflow` = paste0('../',`Data File`),scenario = "RE: DA",scenario.cat = "Object properties")]
+storage.rt.csp = src.timeseries_pointers[grepl('csp',Object,ignore.case = T) & Simulation == 'REAL_TIME' & Parameter == 'Natural_Inflow',.(Storage = Object, `Natural Inflow` = paste0('../',`Data File`),scenario = "RE: RT",scenario.cat = "Object properties")]
+storage.csp = rbind(storage.da.csp,storage.rt.csp)
+rm(storage.da.csp,storage.rt.csp)
 
 all.tabs = c(all.tabs,"gen.da.vg.fixed","gen.rt.vg.fixed","gen.da.vg","gen.rt.vg","storage.csp")
 
