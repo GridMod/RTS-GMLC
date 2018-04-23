@@ -1,7 +1,7 @@
 # RTS-GMLC updates relative to RTS-96
-The Reliability Test System of the Grid Modernization Laboratory Consoritum (RTS-GMLC) is based upon the 1979 and 1996 Reliaiblity Test Systems ([RTS-96](http://ieeexplore.ieee.org/document/780914/?arnumber=780914&tag=1)). The RTS-GMLC features several key changes from the RTS-96 to enable simulations of hourly and 5-minute operations for a year:
+The Reliability Test System of the Grid Modernization Laboratory Consortium (RTS-GMLC) is based upon the 1979 and 1996 Reliability Test Systems ([RTS-96](http://ieeexplore.ieee.org/document/780914/?arnumber=780914&tag=1)). The RTS-GMLC features several key changes from the RTS-96 to enable simulations of hourly and 5-minute operations for a year:
 
-1. The changes documented in [Hedman et. al](http://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=4957010) increase the congestion occurance in economic dispatch problems:
+1. The changes documented in [Hedman et. al](http://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=4957010) increase the congestion occurrence in economic dispatch problems:
 
   ***The RTS test system has three zones, distinguished by the hundredth digit in the zone number. 100, 200, and 300 represent the three zones. For example, when bus 13 is mentioned below, it refers to buses 113, 213 and 313.***
 
@@ -16,7 +16,7 @@ The Reliability Test System of the Grid Modernization Laboratory Consoritum (RTS
     19		 75
     20		 53
     ``` 
-  3. Reduce the capcity of lines [114-116](https://github.nrel.gov/PCM/RTS-2016/blob/master/nesta_case73_ieee_rts.m#L362), [214-216](https://github.nrel.gov/PCM/RTS-2016/blob/master/nesta_case73_ieee_rts.m#L401), and [314-316](https://github.nrel.gov/PCM/RTS-2016/blob/master/nesta_case73_ieee_rts.m#439) to ```350 MW```, each
+  3. Reduce the capacity of lines [114-116](https://github.nrel.gov/PCM/RTS-2016/blob/master/nesta_case73_ieee_rts.m#L362), [214-216](https://github.nrel.gov/PCM/RTS-2016/blob/master/nesta_case73_ieee_rts.m#L401), and [314-316](https://github.nrel.gov/PCM/RTS-2016/blob/master/nesta_case73_ieee_rts.m#439) to ```350 MW```, each
   4. Add the following generating units in each region:
   
     ```

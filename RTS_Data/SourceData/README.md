@@ -13,12 +13,12 @@ This folder contains six CSV files wit all RTS-GMLC (non-timeseries) data and pr
 | Bus Type     | Bus control type                  |
 | MW Load      | Real power demand                 |
 | MVAR Load    | Reactive power demand             |
-| V Mag        | Voltage magnitude stepoint        |
+| V Mag        | Voltage magnitude setpoint        |
 | V Angle      | Voltage angle setpoint in degrees |
-| MW Shunt G   | Shunt conductnace                 |
+| MW Shunt G   | Shunt conductance                 |
 | MVAR Shunt B | Shunt susceptance                 |
 | Area         | Area membership                   |
-| Sub Area     | Sub are membership                |
+| Sub Area     | Sub area membership               |
 | Zone         | Zone membership                   |
 | lat          | Bus latitude location             |
 | lng          | Bus longitude location            |
@@ -93,7 +93,7 @@ This folder contains six CSV files wit all RTS-GMLC (non-timeseries) data and pr
 | Emissions VOCs Lbs/MMBTU | VOC Emissions Rate                                               |
 | Damping Ratio            | Damping coefficient of swing equation                            |
 | Inertia MJ/MW            | Unit rotor inertia                                               |
-| Base MVA                 | Unit equivelant circuit BaseMVA                                  |
+| Base MVA                 | Unit equivalent circuit BaseMVA                                  |
 | Transformer X p.u.       | Unit transformer reactance p.u.                                  |
 | Unit X p.u.              | Unit reactance p.u.                                              |
 
@@ -137,4 +137,4 @@ This folder contains six CSV files wit all RTS-GMLC (non-timeseries) data and pr
 |---------------------|-------------------------------------------------|
 | Reserve Product     | Reserve product name                            |
 | Timeframe (sec)     | Response time to satisfy reserve requirement    |
-| Elegible Gen Types  | Parameter from gen.csv columns                  |
+| Eligible Gen Types  | Parameter from gen.csv columns                  |
