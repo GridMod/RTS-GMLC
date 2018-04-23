@@ -21,6 +21,7 @@ name,Type,Region,Zone
 213_CC_3,Gas CC,2,22
 218_CC_1,Gas CC,2,22
 221_CC_1,Gas CC,2,22
+313_CC_1,Gas CC,3,32
 318_CC_1,Gas CC,3,32
 321_CC_1,Gas CC,3,32
 323_CC_1,Gas CC,3,32
@@ -47,7 +48,6 @@ name,Type,Region,Zone
 302_CT_4,Gas CT,3,31
 307_CT_1,Gas CT,3,31
 307_CT_2,Gas CT,3,31
-313_CC_1,Gas CT,3,32
 315_CT_6,Gas CT,3,32
 315_CT_7,Gas CT,3,32
 315_CT_8,Gas CT,3,32
