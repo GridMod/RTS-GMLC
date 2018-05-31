@@ -9,7 +9,7 @@ This repository, and the associated data has been developed to facilitate Produc
 
 1. [SourceData](https://github.com/GridMod/RTS-GMLC/tree/master/RTS_Data/SourceData) contains several `csv` files that describe all the RTS-GMLC data.
 2. [FormattedData](https://github.com/GridMod/RTS-GMLC/tree/master/RTS_Data/FormattedData) contains folders for each tool specific data format. Currently, [MATPOWER](https://github.com/GridMod/RTS-GMLC/tree/master/RTS_Data/FormattedData/MATPOWER) and [PLEXOS](https://github.com/GridMod/RTS-GMLC/tree/master/RTS_Data/FormattedData/PLEXOS) formatted datasets are included. 
- - Each tool specific folder also cotntains a script that automates the conversion from `SourceData`.
+ - Each tool specific folder also contains a script that automates the conversion from `SourceData`.
  - Solutions obtained from each tool are contained in the `FormattedData/*tool*/*tool*_Solution` folder.
 
 
