@@ -553,7 +553,8 @@ mpc.gencost = [
 ];
 
 
- %% bus names
+% bus names
+%column_names%	name
 mpc.bus_name = {
 	'ABEL        ';
 	'ADAMS       ';
@@ -630,15 +631,9 @@ mpc.bus_name = {
 	'CURTISS     ';
 };
 
-%%-----  DC Line Data  -----%%
-% F_BUS T_BUS BR_STATUS PF PT QF QT VF VT PMIN PMAX QMINF QMAXF QMINT QMAXT LOSS0 LOSS1 MU_PMIN MU_PMAX MU_QMINF MU_QMAXF MU_QMINT MU_QMAXT
-mpc.dcline = [
-	113 316 1 0 0 0 0 1 1 -100 100 -inf inf -inf inf 0 0 0 0 0 0 0 0
-];
 
-
-
- %% gen names
+% generator names
+%column_names%	name
 mpc.gen_name = {
 	'101_CT_1    ';
 	'101_CT_2    ';
@@ -799,3 +794,9 @@ mpc.gen_name = {
 	'122_WIND_1  ';
 	'313_STORAGE_1';
 };
+
+%%-----  DC Line Data  -----%%
+% F_BUS T_BUS BR_STATUS PF PT QF QT VF VT PMIN PMAX QMINF QMAXF QMINT QMAXT LOSS0 LOSS1 MU_PMIN MU_PMAX MU_QMINF MU_QMAXF MU_QMINT MU_QMAXT
+mpc.dcline = [
+	113 316 1 0 0 0 0 1 1 -100 100 -9999 9999 -9999 9999 0 0 0 0 0 0 0 0
+];
