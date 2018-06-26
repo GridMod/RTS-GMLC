@@ -240,7 +240,8 @@ mpc.gencost = ['''
 
     l('')
     l('''
- %% bus names
+% bus names
+%column_names%	name
 mpc.bus_name = {''')
     bn = dict()
     for i, b in buses.iterrows():
@@ -249,12 +250,24 @@ mpc.bus_name = {''')
 
     l('};')
 
+    l('')
+    l('''
+% generator names
+%column_names%	name
+mpc.gen_name = {''')
+    gn = dict()
+    for i, g in _generators.iterrows():
+        gn['gn'] = "\t'{:12}'".format(g['GEN UID']).upper()
+        l('''{gn};'''.format(**gn))
+
+    l('};')
+
     l(
         '''
 %%-----  DC Line Data  -----%%
 % F_BUS T_BUS BR_STATUS PF PT QF QT VF VT PMIN PMAX QMINF QMAXF QMINT QMAXT LOSS0 LOSS1 MU_PMIN MU_PMAX MU_QMINF MU_QMAXF MU_QMINT MU_QMAXT
 mpc.dcline = [
-	113 316 1 0 0 0 0 1 1 -100 100 -inf inf -inf inf 0 0 0 0 0 0 0 0
+	113 316 1 0 0 0 0 1 1 -100 100 -9999 9999 -9999 9999 0 0 0 0 0 0 0 0
 ];
 '''
     )
