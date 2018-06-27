@@ -245,20 +245,22 @@ mpc.gencost = ['''
 mpc.bus_name = {''')
     bn = dict()
     for i, b in buses.iterrows():
-        bn['bn'] = "\t'{:12}'".format(b['Bus Name']).upper()
+        bn['bn'] = "\t'{:}'".format(b['Bus Name']).upper()
         l('''{bn};'''.format(**bn))
 
     l('};')
 
     l('')
     l('''
-% generator names
-%column_names%	name
+% generator names types and fuels
+%column_names%	name    type    fuel
 mpc.gen_name = {''')
     gn = dict()
     for i, g in _generators.iterrows():
-        gn['gn'] = "\t'{:12}'".format(g['GEN UID']).upper()
-        l('''{gn};'''.format(**gn))
+        gn['gn'] = "\t'{:}'".format(g['GEN UID']).upper()
+        gn['type'] = "'{:}'".format(g['Unit Type'])
+        gn['fuel'] = "'{:}'".format(g['Fuel'])
+        l('{gn}\t{type}\t{fuel};'.format(**gn))
 
     l('};')
 
