@@ -8,10 +8,13 @@ This repository, and the associated data has been developed to facilitate Produc
 #### The [RTS_Data](https://github.com/GridMod/RTS-GMLC/tree/master/RTS_Data) folder contains data in an open `csv` format, and in grid modeling tool specific formats: 
 
 1. [SourceData](https://github.com/GridMod/RTS-GMLC/tree/master/RTS_Data/SourceData) contains several `csv` files that describe all the RTS-GMLC data.
-2. [FormattedData](https://github.com/GridMod/RTS-GMLC/tree/master/RTS_Data/FormattedData) contains folders for each tool specific data format. Currently, [MATPOWER](https://github.com/GridMod/RTS-GMLC/tree/master/RTS_Data/FormattedData/MATPOWER) and [PLEXOS](https://github.com/GridMod/RTS-GMLC/tree/master/RTS_Data/FormattedData/PLEXOS) formatted datasets are included. 
- - Each tool specific folder also contains a script that automates the conversion from `SourceData`.
- - Solutions obtained from each tool are contained in the `FormattedData/*tool*/*tool*_Solution` folder.
-
+2. [FormattedData](https://github.com/GridMod/RTS-GMLC/tree/master/RTS_Data/FormattedData) contains folders for each tool specific data format. Each tool specific folder is also intended to contain a script that automates the conversion from `SourceData` in addition to solutions obtained from each tool in the `FormattedData/*tool*/*tool*_Solution` folder. Currently datasets are included in the following formats:
+ - [MATPOWER](http://www.pserc.cornell.edu/matpower/)
+ - [PowerWorld](https://www.powerworld.com/)
+ - [PSS/E](https://www.siemens.com/global/en/home/products/energy/services/transmission-distribution-smart-grid/consulting-and-planning/pss-software/pss-e.html) v31 and v33
+ - [PLEXOS](https://energyexemplar.com/)
+ - [Prescient](https://energy.sandia.gov/tag/prescient/)
+ - [RTS3](http://egpreston.com/)
 
 ## Setup
 ```bash
@@ -20,6 +23,10 @@ cd RTS-GMLC
 git submodule init
 git submodule update
 ```
+
+## Contributing
+
+Contributions to the development and enahancement of RTS data is welcome. Please see [CONTRIBUTING.md](https://github.com/GridMod/RTS-GMLC/blob/master/CONTRIBUTING.md) for contribution guidelines.
 
 ## DATA USE DISCLAIMER AGREEMENT
 *(“Agreement”)*
