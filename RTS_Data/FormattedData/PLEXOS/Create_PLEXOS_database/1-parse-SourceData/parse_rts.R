@@ -77,8 +77,7 @@ gen.cost.data = gen.cost.data[!(Generator == "212_CSP_1")]
 all.tabs = c(all.tabs,"gen.cost.data","gen.efficiency.data")
 
 # outage rates
-gen.outages = src.gen[,.(Generator = `GEN UID`,`Forced Outage Rate` = 100*FOR, `Mean Time to Repair` = `MTTR Hr`,
-                         scenario = "Gen Outages",scenario.cat = 'Object properties')]
+gen.outages = src.gen[,.(Generator = `GEN UID`,`Forced Outage Rate` = 0, `Mean Time to Repair` = `MTTR Hr` )]
 gen.outages = gen.outages[!(`Forced Outage Rate` == 0 & `Mean Time to Repair` == 0),]
 all.tabs = c(all.tabs,"gen.outages")
 
@@ -88,9 +87,8 @@ generator.data = src.gen[,.(Generator = `GEN UID`,
                             Nodes_Node = `Bus ID`,
                             Fuels_Fuel = Fuel,
                             `Max Capacity` = `PMax MW`,
-                            Units = 1,
-                            `VO&M Charge` = VOM,
-                            `Shutdown Cost` = (`Start Heat Cold MBTU` * `Fuel Price $/MMBTU`) + `Non Fuel Shutdown Cost $`  ,
+                            Units = ifelse(grepl('Storage|CSP',Category),0,1),
+                            `Shutdown Cost` = `Start Heat Cold MBTU` * `Fuel Price $/MMBTU` ,
                             `Start Cost` = (`Start Heat Cold MBTU` * `Fuel Price $/MMBTU`) + `Non Fuel Start Cost $` ,
                             `Max Ramp Up` = ifelse(`Ramp Rate MW/Min` == 0, NA,`Ramp Rate MW/Min`),
                             `Max Ramp Down` = ifelse(`Ramp Rate MW/Min` == 0, NA,`Ramp Rate MW/Min`),
@@ -141,7 +139,7 @@ line.data = rbind(line.data,dc.line.data,fill=TRUE)
 all.tabs = c(all.tabs,"line.data")
 
 # node data
-node.data = src.bus[,.(Node = `Bus ID`,category = Area, Voltage = BaseKV, `Load Participation Factor` = `MW Load`,Region_Region = Area, Zone_Zone = `Sub Area`,Units = 1)]
+node.data = src.bus[,.(Node = `Bus ID`,category = Area, Voltage = BaseKV, `Load Participation Factor` = `MW Load`,Region_Region = Area, Zone_Zone = `Sub Area`,Units = 1,`Is Slack Bus` = ifelse(`Bus ID` == '113',-1,0)))]
 node.data[,`Load Participation Factor`:=`Load Participation Factor`/sum(`Load Participation Factor`),by = c("Region_Region")]
 node.data[is.nan(`Load Participation Factor`),`Load Participation Factor`:=0]
 all.tabs = c(all.tabs,"node.data")

@@ -51,6 +51,11 @@ object.property.list <- list(
     list("reserve.provisions.csv",datafile.col = c('Min Provision')),
     list("reserve.provisions.rt.csv",datafile.col = c('Min Provision'))
 
+# define filepointers for day ahead to real time 
+interleave.models.list <- list(
+  # list('da_rt.csv',
+  #      template.fuel = 'da_rt_filepointer_template.csv',
+  #      interleave = FALSE)
 )
 
 # define as many files as needed for generic imports

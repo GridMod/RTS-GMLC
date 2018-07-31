@@ -1,9 +1,9 @@
 ref.scenario,Scenario.Names,PLEXOS.Gen.Category,PLEXOS.Desired.Type,Gen.Type,Plot.Color,Gen.Order,Renewable.Types.for.Curtailment,DA.RT.Plot.Types,Key.Periods,Start.Time,End.Time,Ignore.Zones,Ignore.Regions,Interfaces.for.Flows,Lines.for.Flows,Sections.to.Run
-,RTS Real-Time,Curtailment,Curtailment,Curtailment,red,Curtailment,Solar,Solar,Summer,7/1/2020,7/7/2020,,,,,1
-,,CSP,CSP,CSP,goldenrod,CSP,Wind,Wind,,,,,,,,2
-,,Solar,Solar,Solar,goldenrod1,Solar,,Gas CT,,,,,,,,3
-,,Wind,Wind,Wind,steelblue3,Wind,,Gas CC,,,,,,,,4
-,,Sync_Cond,Sync_Cond,Oil CT,lightpink2,Sync_Cond,,Coal,,,,,,,,5
+,RTS-GMLC-PLEXOS,Curtailment,Curtailment,Curtailment,red,Curtailment,Solar,,Day1,7/12/20,7/13/20,,,,,1
+,,CSP,CSP,CSP,goldenrod,CSP,Wind,,Day2,7/15/20,7/16/20,,,,,2
+,,Solar,Solar,Solar,goldenrod1,Solar,CSP,,Summer Week,7/10/20,7/16/20,,,,,3
+,,Wind,Wind,Wind,steelblue3,Wind,,,,,,,,,,4
+,,Sync_Cond,Sync_Cond,Oil CT,lightpink2,Sync_Cond,,,,,,,,,,5
 ,,Oil CT,Oil CT,Oil ST,orchid4,Oil CT,,,,,,,,,,6
 ,,Oil ST,Oil ST,Coal,gray20,Oil ST,,,,,,,,,,7
 ,,Nuclear,Nuclear,Nuclear,firebrick,Storage,,,,,,,,,,8
@@ -12,7 +12,7 @@ ref.scenario,Scenario.Names,PLEXOS.Gen.Category,PLEXOS.Desired.Type,Gen.Type,Plo
 ,,Coal,Coal,Hydro,lightblue,Hydro,,,,,,,,,,11
 ,,Gas CC,Gas CC,Gas CT,lightpink,Coal,,,,,,,,,,12
 ,,Gas CT,Gas CT,Gas CC,darkolivegreen4,Nuclear,,,,,,,,,,13
-,,,,,,,,,,,,,,,,14
+,,,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,,,15
 ,,,,,,,,,,,,,,,,22
 ,,,,,,,,,,,,,,,,23
@@ -24,3 +24,4 @@ ref.scenario,Scenario.Names,PLEXOS.Gen.Category,PLEXOS.Desired.Type,Gen.Type,Plo
 ,,,,,,,,,,,,,,,,29
 ,,,,,,,,,,,,,,,,32
 ,,,,,,,,,,,,,,,,35
+,,,,,,,,,,,,,,,,36

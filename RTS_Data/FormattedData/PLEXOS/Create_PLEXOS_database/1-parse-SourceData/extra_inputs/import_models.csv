@@ -1,25 +1,17 @@
-names,DAY_AHEAD,REAL_TIME
+names,DAY_AHEAD_NO_TX,DAY_AHEAD_ALL_TX
 category,,
 /START ATTRIBUTES,,
 Random Number Seed,10,10
 /START MEMBERSHIPS,,
-Horizon,DAY_AHEAD,REAL_TIME
-Transmission,Tx - All lines,Tx - All lines
+Horizon,DAY_AHEAD 1W,DAY_AHEAD 1W
+Transmission,Tx - No lines,Tx - All lines
 PASA,,
 ST Schedule,ST Nodal,ST Nodal
 MT Schedule,,
 Production,Production MIP,Production MIP
 Performance,Xpress-MP 0.1 MIP,Xpress-MP 0.1 MIP
-Report,Default Report_flatFiles,Default Report
+Report,Default Report_flatFiles,Default Report_flatFiles
 Diagnostic,,
 /START SCENARIOS,,
-,Load: DA,Load: RT
-,RE: DA,RE: RT
-,Gen Outages,
-,Add Flex_Down,Add Reg_Down
-,Add Flex_Up,Add Reg_Up
-,Add Reg_Down,Add Spin_Up_R1
-,Add Reg_Up,Add Spin_Up_R2
-,Add Spin_Up_R1,Add Spin_Up_R3
-,Add Spin_Up_R2,
-,Add Spin_Up_R3,
+,Load: DA,Load: DA
+,RE: DA,RE: DA
