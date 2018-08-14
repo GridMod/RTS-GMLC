@@ -64,10 +64,11 @@ This folder contains six CSV files wit all RTS-GMLC (non-timeseries) data and pr
 | Min Down Time Hr         | Minimum off time required before unit restart                    |
 | Min Up Time Hr           | Minimum on time required before unit shutdown                    |
 | Ramp Rate MW/Min         | Maximum ramp up and ramp down rate                               |
-| Start Time Cold Hr       | Time required to startup from cold                               |
-| Start Time Hot Hr        | Time required to startup from hot                                |
-| Start Time Warm Hr       | Time required to startup from warm                               |
+| Start Time Cold Hr       | Time since shutdown after which a cold start is required |
+| Start Time Hot Hr        | Time since shutdown after which a hot start is required |
+| Start Time Warm Hr       | Time since shutdown after which a warm start is required |
 | Start Heat Cold MBTU     | Heat required to startup from cold                               |
+| Start Heat Warm MBTU     | Heat required to startup from warm                               |
 | Start Heat Hot MBTU      | Heat required to startup from hot                                |
 | FOR                      | Forced outage rate                                               |
 | MTTF Hr                  | Meant time to forced outage                                      |
@@ -97,6 +98,9 @@ This folder contains six CSV files wit all RTS-GMLC (non-timeseries) data and pr
 | Transformer X p.u.       | Unit transformer reactance p.u.                                  |
 | Unit X p.u.              | Unit reactance p.u.                                              |
 
+*Startup Modeling Notes:*
+ - Hot/Warm/Cold Startup Times reflect the time from a shutdown event until a hot/warm/cold heat state is reached.
+ - Start Heat Hot/Warm/Cold represents the heat input required to startup from a hot/warm/cold heat state.
 
 ## `dc_branch.csv`
 
