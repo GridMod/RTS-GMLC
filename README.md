@@ -18,10 +18,10 @@ This repository, and the associated data has been developed to facilitate Produc
 
 ## TODO and Identified Areas of Improvement:
  - Conventional Plant Data:
-  - Add information about different operating configuration for combined cycle plants
-  - Evaluate/address the realism of the relative sizes of units in different categories
+   - Add information about different operating configuration for combined cycle plants
+   - Evaluate/address the realism of the relative sizes of units in different categories
  - Wind and Solar Data:
-  - Update to the state-of-the-art datasets ([NSRDB](https://nsrdb.nrel.gov/) and [WindToolkit](https://www.nrel.gov/grid/wind-toolkit.html)) and add raw weather data
+   - Update to the state-of-the-art datasets ([NSRDB](https://nsrdb.nrel.gov/) and [WindToolkit](https://www.nrel.gov/grid/wind-toolkit.html)) and add raw weather data
 
 
 ## Setup
