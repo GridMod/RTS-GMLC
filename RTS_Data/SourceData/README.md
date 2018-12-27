@@ -141,9 +141,9 @@ This folder contains six CSV files wit all RTS-GMLC (non-timeseries) data and pr
 | DC Branch Capacity           | Dur. (hr.)                                       | Line Outage Dur 1                    |
 | DC Branch Capacity           | Dur. (hr.)                                       | Line Outage Dur 2                    |
 | DC Branch Capacity           | Dur. (hr.)                                       | Line Outage Dur 3                    |
-| DC Branch Capacity           | Loading                                          | Line Outage Loading 1                |
-| DC Branch Capacity           | Loading                                          | Line Outage Loading 2                |
-| DC Branch Capacity           | Loading                                          | Line Outage Loading 3                |
+| DC Branch Capacity           | Loading Point 1 for Outage Curve                                         | Line Outage Loading 1                |
+| DC Branch Capacity           | Loading Point 2 for Outage Curve                                         | Line Outage Loading 2                |
+| DC Branch Capacity           | Loading Point 3 for Outage Curve                                          | Line Outage Loading 3                |
 | DC Branch Rectifier Inverter | Number of bridges in series:                     | From Series Bridges                  |
 | DC Branch Rectifier Inverter | Nominal maximum firing angle:                    | From Max Firing Angle                |
 | DC Branch Rectifier Inverter | Minimum steady state firing angle:               | From Min Firing Angle                |
