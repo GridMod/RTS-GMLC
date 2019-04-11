@@ -9,6 +9,8 @@ import pandapower.converter as cv
 import pandapower.plotting as plt
 
 DIGITS = 5
+miles_to_km = 1.60934
+baseMVA = 100.
 
 
 def _read_csv(table):
@@ -135,7 +137,7 @@ def create_gens():
 
 def create_ppc():
     ppc = dict()
-    ppc["baseMVA"] = 100.
+    ppc["baseMVA"] = baseMVA
     # ppc["areas"] =
     ppc["bus"] = create_buses()
     ppc["branch"] = create_branches()
@@ -144,15 +146,68 @@ def create_ppc():
     return ppc
 
 
+def _update_line_data(net, branch_data, element="line"):
+    b = net["bus"].loc[:, "id"].values.astype(int)
+    from_var = "from_bus"
+    to_var = "to_bus"
+
+    for i in branch_data.index:
+        a = branch_data.loc[i, ["From Bus", "To Bus"]].values.astype(int)
+        bus_ind = np.where(np.in1d(b, a))[0]
+        element_rows = (net[element].loc[:, [from_var, to_var]] == bus_ind).values
+        element_index = element_rows[:, 0] & element_rows[:, 1]
+        net[element].loc[element_index, "name"] = branch_data.at[i, "UID"]
+        net[element].loc[element_index, "length_km"] = branch_data.at[i, "Length"] * miles_to_km
+
+
+def create_trafo_c35(net, branch_data):
+    rk = branch_data.loc[119, 'R']
+    xk = branch_data.loc[119, 'X']
+    zk = (rk ** 2 + xk ** 2) ** 0.5
+    sn = branch_data.loc[119, 'Cont Rating']
+    i0_percent = -branch_data.loc[119, 'B'] * 100 * baseMVA / sn
+
+    pp.create_transformer_from_parameters(net, hv_bus=70, lv_bus=72, sn_mva=sn,
+                                          vn_hv_kv=net.bus.loc[70, "vn_kv"], vn_lv_kv=net.bus.loc[72, "vn_kv"],
+                                          vk_percent=np.sign(xk) * zk * sn * 100 / baseMVA,
+                                          vkr_percent=rk * sn * 100 / baseMVA, max_loading_percent=100,
+                                          i0_percent=i0_percent, pfe_kw=0.,
+                                          tap_side="lv", tap_neutral=0, name=branch_data.loc[119, "UID"],
+                                          shift_degree=0., tap_step_percent=1.5, tap_pos=0, tap_phase_shifter=False)
+
+
 def add_additional_information(net):
     bus_data = _read_csv("bus")
-    bus_index = net["bus"].loc[:, "name"].values == bus_data["Bus ID"]
+    # store bus id
+    net["bus"].loc[:, "id"] = net["bus"].loc[:, "name"].values
+    # check if indices are identical
+    assert np.allclose(bus_data["Bus ID"].values.astype(int), net["bus"].loc[:, "id"].values.astype(int))
     # bus names
-    net["bus"].loc[:, "name"] = bus_data.loc[bus_index, "Bus Name"]
+    net["bus"].loc[:, "name"] = bus_data.loc[:, "Bus Name"]
 
     # bus geodata
     net["bus_geodata"] = pd.DataFrame(index=np.arange(len(bus_data)), columns=["x", "y", "coords"])
-    net["bus_geodata"].loc[:, ["x", "y"]] = bus_data.loc[bus_index, ["lat", "lng"]].values
+    net["bus_geodata"].loc[:, ["x", "y"]] = bus_data.loc[:, ["lat", "lng"]].values
+
+    # correct line names and lengths
+    branch_data = _read_csv("branch")
+    _update_line_data(net, branch_data, element="line")
+
+    # 104 is a transformer, not a line
+    net["line"].drop(104, inplace=True)
+    create_trafo_c35(net, branch_data)
+    # set trafo names
+    net.trafo.loc[:, "name"] = branch_data.loc[branch_data.loc[:, "Length"] == 0.0, "UID"]
+
+    # manual corrections
+    net["line"].loc[102:103, "name"] = branch_data.loc[117:118, "UID"].values
+    net["line"].loc[102:103, "length_km"] = branch_data.loc[117:118, "Length"].values * miles_to_km
+
+    # correct R, X, and C (since they are in per_km)
+    net["line"].loc[:, "r_ohm_per_km"] /= net["line"].loc[:, "length_km"].values
+    net["line"].loc[:, "x_ohm_per_km"] /= net["line"].loc[:, "length_km"].values
+    net["line"].loc[:, "c_nf_per_km"] /= net["line"].loc[:, "length_km"].values
+    net["line"].loc[:, "g_us_per_km"] /= net["line"].loc[:, "length_km"].values
 
     return net
 
@@ -162,9 +217,16 @@ def create_pp_from_ppc():
     ppc = create_ppc()
     # convert it to a pandapower net
     net = cv.from_ppc(ppc, validate_conversion=False)
-    net = add_additional_information(net)
-    # run power flow
+    # run a power flow
     pp.runpp(net)
+    vm_pu_before = net.res_bus.vm_pu.values
+    # manual corrections and additional information such as line length in km and names
+    net = add_additional_information(net)
+    # run power flow again and validate results
+    pp.runpp(net)
+    vm_pu_after = net.res_bus.vm_pu.values
+    # power flow results should not change
+    assert np.allclose(vm_pu_after, vm_pu_before)
     # save it
     pp.to_json(net, "pandapower_net.json")
     # plot it :)
