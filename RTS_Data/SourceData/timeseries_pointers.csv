@@ -1,283 +1,283 @@
 Simulation,Category,Object,Parameter,Parameter Source,Data File
-DAY_AHEAD,Generator,122_HYDRO_1,PMax MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Hydro/DAY_AHEAD_hydro.csv
-DAY_AHEAD,Generator,122_HYDRO_2,PMax MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Hydro/DAY_AHEAD_hydro.csv
-DAY_AHEAD,Generator,122_HYDRO_3,PMax MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Hydro/DAY_AHEAD_hydro.csv
-DAY_AHEAD,Generator,122_HYDRO_4,PMax MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Hydro/DAY_AHEAD_hydro.csv
-DAY_AHEAD,Generator,122_HYDRO_5,PMax MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Hydro/DAY_AHEAD_hydro.csv
-DAY_AHEAD,Generator,122_HYDRO_6,PMax MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Hydro/DAY_AHEAD_hydro.csv
-DAY_AHEAD,Generator,201_HYDRO_4,PMax MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Hydro/DAY_AHEAD_hydro.csv
-DAY_AHEAD,Generator,215_HYDRO_1,PMax MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Hydro/DAY_AHEAD_hydro.csv
-DAY_AHEAD,Generator,215_HYDRO_2,PMax MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Hydro/DAY_AHEAD_hydro.csv
-DAY_AHEAD,Generator,215_HYDRO_3,PMax MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Hydro/DAY_AHEAD_hydro.csv
-DAY_AHEAD,Generator,222_HYDRO_1,PMax MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Hydro/DAY_AHEAD_hydro.csv
-DAY_AHEAD,Generator,222_HYDRO_2,PMax MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Hydro/DAY_AHEAD_hydro.csv
-DAY_AHEAD,Generator,222_HYDRO_3,PMax MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Hydro/DAY_AHEAD_hydro.csv
-DAY_AHEAD,Generator,222_HYDRO_4,PMax MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Hydro/DAY_AHEAD_hydro.csv
-DAY_AHEAD,Generator,222_HYDRO_5,PMax MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Hydro/DAY_AHEAD_hydro.csv
-DAY_AHEAD,Generator,222_HYDRO_6,PMax MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Hydro/DAY_AHEAD_hydro.csv
-DAY_AHEAD,Generator,322_HYDRO_1,PMax MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Hydro/DAY_AHEAD_hydro.csv
-DAY_AHEAD,Generator,322_HYDRO_2,PMax MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Hydro/DAY_AHEAD_hydro.csv
-DAY_AHEAD,Generator,322_HYDRO_3,PMax MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Hydro/DAY_AHEAD_hydro.csv
-DAY_AHEAD,Generator,322_HYDRO_4,PMax MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Hydro/DAY_AHEAD_hydro.csv
-DAY_AHEAD,Generator,320_PV_1,PMax MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Renewable/PV/DAY_AHEAD_pv.csv
-DAY_AHEAD,Generator,314_PV_1,PMax MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Renewable/PV/DAY_AHEAD_pv.csv
-DAY_AHEAD,Generator,314_PV_2,PMax MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Renewable/PV/DAY_AHEAD_pv.csv
-DAY_AHEAD,Generator,313_PV_1,PMax MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Renewable/PV/DAY_AHEAD_pv.csv
-DAY_AHEAD,Generator,314_PV_3,PMax MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Renewable/PV/DAY_AHEAD_pv.csv
-DAY_AHEAD,Generator,314_PV_4,PMax MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Renewable/PV/DAY_AHEAD_pv.csv
-DAY_AHEAD,Generator,313_PV_2,PMax MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Renewable/PV/DAY_AHEAD_pv.csv
-DAY_AHEAD,Generator,310_PV_1,PMax MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Renewable/PV/DAY_AHEAD_pv.csv
-DAY_AHEAD,Generator,324_PV_1,PMax MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Renewable/PV/DAY_AHEAD_pv.csv
-DAY_AHEAD,Generator,312_PV_1,PMax MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Renewable/PV/DAY_AHEAD_pv.csv
-DAY_AHEAD,Generator,310_PV_2,PMax MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Renewable/PV/DAY_AHEAD_pv.csv
-DAY_AHEAD,Generator,324_PV_2,PMax MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Renewable/PV/DAY_AHEAD_pv.csv
-DAY_AHEAD,Generator,324_PV_3,PMax MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Renewable/PV/DAY_AHEAD_pv.csv
-DAY_AHEAD,Generator,113_PV_1,PMax MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Renewable/PV/DAY_AHEAD_pv.csv
-DAY_AHEAD,Generator,319_PV_1,PMax MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Renewable/PV/DAY_AHEAD_pv.csv
-DAY_AHEAD,Generator,215_PV_1,PMax MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Renewable/PV/DAY_AHEAD_pv.csv
-DAY_AHEAD,Generator,102_PV_1,PMax MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Renewable/PV/DAY_AHEAD_pv.csv
-DAY_AHEAD,Generator,101_PV_1,PMax MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Renewable/PV/DAY_AHEAD_pv.csv
-DAY_AHEAD,Generator,102_PV_2,PMax MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Renewable/PV/DAY_AHEAD_pv.csv
-DAY_AHEAD,Generator,104_PV_1,PMax MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Renewable/PV/DAY_AHEAD_pv.csv
-DAY_AHEAD,Generator,101_PV_2,PMax MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Renewable/PV/DAY_AHEAD_pv.csv
-DAY_AHEAD,Generator,101_PV_3,PMax MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Renewable/PV/DAY_AHEAD_pv.csv
-DAY_AHEAD,Generator,101_PV_4,PMax MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Renewable/PV/DAY_AHEAD_pv.csv
-DAY_AHEAD,Generator,103_PV_1,PMax MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Renewable/PV/DAY_AHEAD_pv.csv
-DAY_AHEAD,Generator,119_PV_1,PMax MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Renewable/PV/DAY_AHEAD_pv.csv
-DAY_AHEAD,Generator,308_RTPV_1,PMax MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Renewable/RTPV/DAY_AHEAD_rtpv.csv
-DAY_AHEAD,Generator,313_RTPV_1,PMax MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Renewable/RTPV/DAY_AHEAD_rtpv.csv
-DAY_AHEAD,Generator,313_RTPV_2,PMax MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Renewable/RTPV/DAY_AHEAD_rtpv.csv
-DAY_AHEAD,Generator,313_RTPV_3,PMax MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Renewable/RTPV/DAY_AHEAD_rtpv.csv
-DAY_AHEAD,Generator,313_RTPV_4,PMax MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Renewable/RTPV/DAY_AHEAD_rtpv.csv
-DAY_AHEAD,Generator,313_RTPV_5,PMax MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Renewable/RTPV/DAY_AHEAD_rtpv.csv
-DAY_AHEAD,Generator,313_RTPV_6,PMax MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Renewable/RTPV/DAY_AHEAD_rtpv.csv
-DAY_AHEAD,Generator,313_RTPV_7,PMax MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Renewable/RTPV/DAY_AHEAD_rtpv.csv
-DAY_AHEAD,Generator,313_RTPV_8,PMax MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Renewable/RTPV/DAY_AHEAD_rtpv.csv
-DAY_AHEAD,Generator,313_RTPV_9,PMax MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Renewable/RTPV/DAY_AHEAD_rtpv.csv
-DAY_AHEAD,Generator,313_RTPV_10,PMax MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Renewable/RTPV/DAY_AHEAD_rtpv.csv
-DAY_AHEAD,Generator,313_RTPV_11,PMax MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Renewable/RTPV/DAY_AHEAD_rtpv.csv
-DAY_AHEAD,Generator,313_RTPV_12,PMax MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Renewable/RTPV/DAY_AHEAD_rtpv.csv
-DAY_AHEAD,Generator,320_RTPV_1,PMax MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Renewable/RTPV/DAY_AHEAD_rtpv.csv
-DAY_AHEAD,Generator,320_RTPV_2,PMax MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Renewable/RTPV/DAY_AHEAD_rtpv.csv
-DAY_AHEAD,Generator,320_RTPV_3,PMax MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Renewable/RTPV/DAY_AHEAD_rtpv.csv
-DAY_AHEAD,Generator,313_RTPV_13,PMax MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Renewable/RTPV/DAY_AHEAD_rtpv.csv
-DAY_AHEAD,Generator,320_RTPV_4,PMax MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Renewable/RTPV/DAY_AHEAD_rtpv.csv
-DAY_AHEAD,Generator,320_RTPV_5,PMax MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Renewable/RTPV/DAY_AHEAD_rtpv.csv
-DAY_AHEAD,Generator,118_RTPV_1,PMax MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Renewable/RTPV/DAY_AHEAD_rtpv.csv
-DAY_AHEAD,Generator,118_RTPV_2,PMax MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Renewable/RTPV/DAY_AHEAD_rtpv.csv
-DAY_AHEAD,Generator,118_RTPV_3,PMax MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Renewable/RTPV/DAY_AHEAD_rtpv.csv
-DAY_AHEAD,Generator,118_RTPV_4,PMax MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Renewable/RTPV/DAY_AHEAD_rtpv.csv
-DAY_AHEAD,Generator,118_RTPV_5,PMax MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Renewable/RTPV/DAY_AHEAD_rtpv.csv
-DAY_AHEAD,Generator,118_RTPV_6,PMax MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Renewable/RTPV/DAY_AHEAD_rtpv.csv
-DAY_AHEAD,Generator,320_RTPV_6,PMax MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Renewable/RTPV/DAY_AHEAD_rtpv.csv
-DAY_AHEAD,Generator,118_RTPV_7,PMax MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Renewable/RTPV/DAY_AHEAD_rtpv.csv
-DAY_AHEAD,Generator,118_RTPV_8,PMax MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Renewable/RTPV/DAY_AHEAD_rtpv.csv
-DAY_AHEAD,Generator,118_RTPV_9,PMax MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Renewable/RTPV/DAY_AHEAD_rtpv.csv
-DAY_AHEAD,Generator,118_RTPV_10,PMax MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Renewable/RTPV/DAY_AHEAD_rtpv.csv
-DAY_AHEAD,Generator,213_RTPV_1,PMax MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Renewable/RTPV/DAY_AHEAD_rtpv.csv
-DAY_AHEAD,Generator,309_WIND_1,PMax MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Renewable/WIND/DAY_AHEAD_wind.csv
-DAY_AHEAD,Generator,317_WIND_1,PMax MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Renewable/WIND/DAY_AHEAD_wind.csv
-DAY_AHEAD,Generator,303_WIND_1,PMax MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Renewable/WIND/DAY_AHEAD_wind.csv
-DAY_AHEAD,Generator,122_WIND_1,PMax MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Renewable/WIND/DAY_AHEAD_wind.csv
-DAY_AHEAD,Generator,122_HYDRO_1,PMin MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Hydro/DAY_AHEAD_hydro.csv
-DAY_AHEAD,Generator,122_HYDRO_2,PMin MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Hydro/DAY_AHEAD_hydro.csv
-DAY_AHEAD,Generator,122_HYDRO_3,PMin MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Hydro/DAY_AHEAD_hydro.csv
-DAY_AHEAD,Generator,122_HYDRO_4,PMin MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Hydro/DAY_AHEAD_hydro.csv
-DAY_AHEAD,Generator,122_HYDRO_5,PMin MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Hydro/DAY_AHEAD_hydro.csv
-DAY_AHEAD,Generator,122_HYDRO_6,PMin MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Hydro/DAY_AHEAD_hydro.csv
-DAY_AHEAD,Generator,201_HYDRO_4,PMin MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Hydro/DAY_AHEAD_hydro.csv
-DAY_AHEAD,Generator,215_HYDRO_1,PMin MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Hydro/DAY_AHEAD_hydro.csv
-DAY_AHEAD,Generator,215_HYDRO_2,PMin MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Hydro/DAY_AHEAD_hydro.csv
-DAY_AHEAD,Generator,215_HYDRO_3,PMin MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Hydro/DAY_AHEAD_hydro.csv
-DAY_AHEAD,Generator,222_HYDRO_1,PMin MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Hydro/DAY_AHEAD_hydro.csv
-DAY_AHEAD,Generator,222_HYDRO_2,PMin MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Hydro/DAY_AHEAD_hydro.csv
-DAY_AHEAD,Generator,222_HYDRO_3,PMin MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Hydro/DAY_AHEAD_hydro.csv
-DAY_AHEAD,Generator,222_HYDRO_4,PMin MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Hydro/DAY_AHEAD_hydro.csv
-DAY_AHEAD,Generator,222_HYDRO_5,PMin MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Hydro/DAY_AHEAD_hydro.csv
-DAY_AHEAD,Generator,222_HYDRO_6,PMin MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Hydro/DAY_AHEAD_hydro.csv
-DAY_AHEAD,Generator,322_HYDRO_1,PMin MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Hydro/DAY_AHEAD_hydro.csv
-DAY_AHEAD,Generator,322_HYDRO_2,PMin MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Hydro/DAY_AHEAD_hydro.csv
-DAY_AHEAD,Generator,322_HYDRO_3,PMin MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Hydro/DAY_AHEAD_hydro.csv
-DAY_AHEAD,Generator,322_HYDRO_4,PMin MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Hydro/DAY_AHEAD_hydro.csv
-DAY_AHEAD,Generator,308_RTPV_1,PMin MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Renewable/RTPV/DAY_AHEAD_rtpv.csv
-DAY_AHEAD,Generator,313_RTPV_1,PMin MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Renewable/RTPV/DAY_AHEAD_rtpv.csv
-DAY_AHEAD,Generator,313_RTPV_2,PMin MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Renewable/RTPV/DAY_AHEAD_rtpv.csv
-DAY_AHEAD,Generator,313_RTPV_3,PMin MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Renewable/RTPV/DAY_AHEAD_rtpv.csv
-DAY_AHEAD,Generator,313_RTPV_4,PMin MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Renewable/RTPV/DAY_AHEAD_rtpv.csv
-DAY_AHEAD,Generator,313_RTPV_5,PMin MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Renewable/RTPV/DAY_AHEAD_rtpv.csv
-DAY_AHEAD,Generator,313_RTPV_6,PMin MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Renewable/RTPV/DAY_AHEAD_rtpv.csv
-DAY_AHEAD,Generator,313_RTPV_7,PMin MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Renewable/RTPV/DAY_AHEAD_rtpv.csv
-DAY_AHEAD,Generator,313_RTPV_8,PMin MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Renewable/RTPV/DAY_AHEAD_rtpv.csv
-DAY_AHEAD,Generator,313_RTPV_9,PMin MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Renewable/RTPV/DAY_AHEAD_rtpv.csv
-DAY_AHEAD,Generator,313_RTPV_10,PMin MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Renewable/RTPV/DAY_AHEAD_rtpv.csv
-DAY_AHEAD,Generator,313_RTPV_11,PMin MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Renewable/RTPV/DAY_AHEAD_rtpv.csv
-DAY_AHEAD,Generator,313_RTPV_12,PMin MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Renewable/RTPV/DAY_AHEAD_rtpv.csv
-DAY_AHEAD,Generator,320_RTPV_1,PMin MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Renewable/RTPV/DAY_AHEAD_rtpv.csv
-DAY_AHEAD,Generator,320_RTPV_2,PMin MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Renewable/RTPV/DAY_AHEAD_rtpv.csv
-DAY_AHEAD,Generator,320_RTPV_3,PMin MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Renewable/RTPV/DAY_AHEAD_rtpv.csv
-DAY_AHEAD,Generator,313_RTPV_13,PMin MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Renewable/RTPV/DAY_AHEAD_rtpv.csv
-DAY_AHEAD,Generator,320_RTPV_4,PMin MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Renewable/RTPV/DAY_AHEAD_rtpv.csv
-DAY_AHEAD,Generator,320_RTPV_5,PMin MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Renewable/RTPV/DAY_AHEAD_rtpv.csv
-DAY_AHEAD,Generator,118_RTPV_1,PMin MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Renewable/RTPV/DAY_AHEAD_rtpv.csv
-DAY_AHEAD,Generator,118_RTPV_2,PMin MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Renewable/RTPV/DAY_AHEAD_rtpv.csv
-DAY_AHEAD,Generator,118_RTPV_3,PMin MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Renewable/RTPV/DAY_AHEAD_rtpv.csv
-DAY_AHEAD,Generator,118_RTPV_4,PMin MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Renewable/RTPV/DAY_AHEAD_rtpv.csv
-DAY_AHEAD,Generator,118_RTPV_5,PMin MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Renewable/RTPV/DAY_AHEAD_rtpv.csv
-DAY_AHEAD,Generator,118_RTPV_6,PMin MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Renewable/RTPV/DAY_AHEAD_rtpv.csv
-DAY_AHEAD,Generator,320_RTPV_6,PMin MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Renewable/RTPV/DAY_AHEAD_rtpv.csv
-DAY_AHEAD,Generator,118_RTPV_7,PMin MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Renewable/RTPV/DAY_AHEAD_rtpv.csv
-DAY_AHEAD,Generator,118_RTPV_8,PMin MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Renewable/RTPV/DAY_AHEAD_rtpv.csv
-DAY_AHEAD,Generator,118_RTPV_9,PMin MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Renewable/RTPV/DAY_AHEAD_rtpv.csv
-DAY_AHEAD,Generator,118_RTPV_10,PMin MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Renewable/RTPV/DAY_AHEAD_rtpv.csv
-DAY_AHEAD,Generator,213_RTPV_1,PMin MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Renewable/RTPV/DAY_AHEAD_rtpv.csv
-DAY_AHEAD,Reserve,Flex_Down,Requirement,Category,./Reserves/DAY_AHEAD_regional_Flex_Down.csv
-DAY_AHEAD,Reserve,Flex_Up,Requirement,Category,./Reserves/DAY_AHEAD_regional_Flex_Up.csv
-DAY_AHEAD,Reserve,Reg_Down,Requirement,Category,./Reserves/DAY_AHEAD_regional_Reg_Down.csv
-DAY_AHEAD,Reserve,Reg_Up,Requirement,Category,./Reserves/DAY_AHEAD_regional_Reg_Up.csv
-DAY_AHEAD,Reserve,Spin_Up_R1,Requirement,Category,./Reserves/DAY_AHEAD_regional_Spin_Up_R1.csv
-DAY_AHEAD,Reserve,Spin_Up_R2,Requirement,Category,./Reserves/DAY_AHEAD_regional_Spin_Up_R2.csv
-DAY_AHEAD,Reserve,Spin_Up_R3,Requirement,Category,./Reserves/DAY_AHEAD_regional_Spin_Up_R3.csv
-DAY_AHEAD,LoadZone,1,MW Load,Bus,../forecasts/RTS_GMLC_forecasts/load/DAY_AHEAD_regional_Load.csv
-DAY_AHEAD,LoadZone,2,MW Load,Bus,../forecasts/RTS_GMLC_forecasts/load/DAY_AHEAD_regional_Load.csv
-DAY_AHEAD,LoadZone,3,MW Load,Bus,../forecasts/RTS_GMLC_forecasts/load/DAY_AHEAD_regional_Load.csv
-DAY_AHEAD,Generator,212_CSP_1,PMax MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Renewable/CSP/DAY_AHEAD_Natural_Inflow.csv
-REAL_TIME,Generator,212_CSP_1,PMax MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Renewable/CSP/REAL_TIME_Natural_Inflow.csv
-REAL_TIME,Generator,122_HYDRO_1,PMax MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Hydro/REAL_TIME_hydro.csv
-REAL_TIME,Generator,122_HYDRO_2,PMax MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Hydro/REAL_TIME_hydro.csv
-REAL_TIME,Generator,122_HYDRO_3,PMax MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Hydro/REAL_TIME_hydro.csv
-REAL_TIME,Generator,122_HYDRO_4,PMax MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Hydro/REAL_TIME_hydro.csv
-REAL_TIME,Generator,122_HYDRO_5,PMax MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Hydro/REAL_TIME_hydro.csv
-REAL_TIME,Generator,122_HYDRO_6,PMax MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Hydro/REAL_TIME_hydro.csv
-REAL_TIME,Generator,201_HYDRO_4,PMax MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Hydro/REAL_TIME_hydro.csv
-REAL_TIME,Generator,215_HYDRO_1,PMax MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Hydro/REAL_TIME_hydro.csv
-REAL_TIME,Generator,215_HYDRO_2,PMax MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Hydro/REAL_TIME_hydro.csv
-REAL_TIME,Generator,215_HYDRO_3,PMax MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Hydro/REAL_TIME_hydro.csv
-REAL_TIME,Generator,222_HYDRO_1,PMax MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Hydro/REAL_TIME_hydro.csv
-REAL_TIME,Generator,222_HYDRO_2,PMax MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Hydro/REAL_TIME_hydro.csv
-REAL_TIME,Generator,222_HYDRO_3,PMax MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Hydro/REAL_TIME_hydro.csv
-REAL_TIME,Generator,222_HYDRO_4,PMax MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Hydro/REAL_TIME_hydro.csv
-REAL_TIME,Generator,222_HYDRO_5,PMax MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Hydro/REAL_TIME_hydro.csv
-REAL_TIME,Generator,222_HYDRO_6,PMax MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Hydro/REAL_TIME_hydro.csv
-REAL_TIME,Generator,322_HYDRO_1,PMax MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Hydro/REAL_TIME_hydro.csv
-REAL_TIME,Generator,322_HYDRO_2,PMax MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Hydro/REAL_TIME_hydro.csv
-REAL_TIME,Generator,322_HYDRO_3,PMax MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Hydro/REAL_TIME_hydro.csv
-REAL_TIME,Generator,322_HYDRO_4,PMax MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Hydro/REAL_TIME_hydro.csv
-REAL_TIME,Generator,320_PV_1,PMax MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Renewable/PV/REAL_TIME_pv.csv
-REAL_TIME,Generator,314_PV_1,PMax MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Renewable/PV/REAL_TIME_pv.csv
-REAL_TIME,Generator,314_PV_2,PMax MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Renewable/PV/REAL_TIME_pv.csv
-REAL_TIME,Generator,313_PV_1,PMax MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Renewable/PV/REAL_TIME_pv.csv
-REAL_TIME,Generator,314_PV_3,PMax MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Renewable/PV/REAL_TIME_pv.csv
-REAL_TIME,Generator,314_PV_4,PMax MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Renewable/PV/REAL_TIME_pv.csv
-REAL_TIME,Generator,313_PV_2,PMax MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Renewable/PV/REAL_TIME_pv.csv
-REAL_TIME,Generator,310_PV_1,PMax MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Renewable/PV/REAL_TIME_pv.csv
-REAL_TIME,Generator,324_PV_1,PMax MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Renewable/PV/REAL_TIME_pv.csv
-REAL_TIME,Generator,312_PV_1,PMax MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Renewable/PV/REAL_TIME_pv.csv
-REAL_TIME,Generator,310_PV_2,PMax MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Renewable/PV/REAL_TIME_pv.csv
-REAL_TIME,Generator,324_PV_2,PMax MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Renewable/PV/REAL_TIME_pv.csv
-REAL_TIME,Generator,324_PV_3,PMax MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Renewable/PV/REAL_TIME_pv.csv
-REAL_TIME,Generator,113_PV_1,PMax MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Renewable/PV/REAL_TIME_pv.csv
-REAL_TIME,Generator,319_PV_1,PMax MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Renewable/PV/REAL_TIME_pv.csv
-REAL_TIME,Generator,215_PV_1,PMax MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Renewable/PV/REAL_TIME_pv.csv
-REAL_TIME,Generator,102_PV_1,PMax MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Renewable/PV/REAL_TIME_pv.csv
-REAL_TIME,Generator,101_PV_1,PMax MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Renewable/PV/REAL_TIME_pv.csv
-REAL_TIME,Generator,102_PV_2,PMax MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Renewable/PV/REAL_TIME_pv.csv
-REAL_TIME,Generator,104_PV_1,PMax MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Renewable/PV/REAL_TIME_pv.csv
-REAL_TIME,Generator,101_PV_2,PMax MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Renewable/PV/REAL_TIME_pv.csv
-REAL_TIME,Generator,101_PV_3,PMax MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Renewable/PV/REAL_TIME_pv.csv
-REAL_TIME,Generator,101_PV_4,PMax MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Renewable/PV/REAL_TIME_pv.csv
-REAL_TIME,Generator,103_PV_1,PMax MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Renewable/PV/REAL_TIME_pv.csv
-REAL_TIME,Generator,119_PV_1,PMax MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Renewable/PV/REAL_TIME_pv.csv
-REAL_TIME,Generator,308_RTPV_1,PMax MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Renewable/RTPV/REAL_TIME_rtpv.csv
-REAL_TIME,Generator,313_RTPV_1,PMax MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Renewable/RTPV/REAL_TIME_rtpv.csv
-REAL_TIME,Generator,313_RTPV_2,PMax MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Renewable/RTPV/REAL_TIME_rtpv.csv
-REAL_TIME,Generator,313_RTPV_3,PMax MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Renewable/RTPV/REAL_TIME_rtpv.csv
-REAL_TIME,Generator,313_RTPV_4,PMax MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Renewable/RTPV/REAL_TIME_rtpv.csv
-REAL_TIME,Generator,313_RTPV_5,PMax MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Renewable/RTPV/REAL_TIME_rtpv.csv
-REAL_TIME,Generator,313_RTPV_6,PMax MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Renewable/RTPV/REAL_TIME_rtpv.csv
-REAL_TIME,Generator,313_RTPV_7,PMax MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Renewable/RTPV/REAL_TIME_rtpv.csv
-REAL_TIME,Generator,313_RTPV_8,PMax MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Renewable/RTPV/REAL_TIME_rtpv.csv
-REAL_TIME,Generator,313_RTPV_9,PMax MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Renewable/RTPV/REAL_TIME_rtpv.csv
-REAL_TIME,Generator,313_RTPV_10,PMax MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Renewable/RTPV/REAL_TIME_rtpv.csv
-REAL_TIME,Generator,313_RTPV_11,PMax MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Renewable/RTPV/REAL_TIME_rtpv.csv
-REAL_TIME,Generator,313_RTPV_12,PMax MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Renewable/RTPV/REAL_TIME_rtpv.csv
-REAL_TIME,Generator,320_RTPV_1,PMax MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Renewable/RTPV/REAL_TIME_rtpv.csv
-REAL_TIME,Generator,320_RTPV_2,PMax MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Renewable/RTPV/REAL_TIME_rtpv.csv
-REAL_TIME,Generator,320_RTPV_3,PMax MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Renewable/RTPV/REAL_TIME_rtpv.csv
-REAL_TIME,Generator,313_RTPV_13,PMax MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Renewable/RTPV/REAL_TIME_rtpv.csv
-REAL_TIME,Generator,320_RTPV_4,PMax MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Renewable/RTPV/REAL_TIME_rtpv.csv
-REAL_TIME,Generator,320_RTPV_5,PMax MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Renewable/RTPV/REAL_TIME_rtpv.csv
-REAL_TIME,Generator,118_RTPV_1,PMax MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Renewable/RTPV/REAL_TIME_rtpv.csv
-REAL_TIME,Generator,118_RTPV_2,PMax MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Renewable/RTPV/REAL_TIME_rtpv.csv
-REAL_TIME,Generator,118_RTPV_3,PMax MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Renewable/RTPV/REAL_TIME_rtpv.csv
-REAL_TIME,Generator,118_RTPV_4,PMax MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Renewable/RTPV/REAL_TIME_rtpv.csv
-REAL_TIME,Generator,118_RTPV_5,PMax MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Renewable/RTPV/REAL_TIME_rtpv.csv
-REAL_TIME,Generator,118_RTPV_6,PMax MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Renewable/RTPV/REAL_TIME_rtpv.csv
-REAL_TIME,Generator,320_RTPV_6,PMax MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Renewable/RTPV/REAL_TIME_rtpv.csv
-REAL_TIME,Generator,118_RTPV_7,PMax MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Renewable/RTPV/REAL_TIME_rtpv.csv
-REAL_TIME,Generator,118_RTPV_8,PMax MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Renewable/RTPV/REAL_TIME_rtpv.csv
-REAL_TIME,Generator,118_RTPV_9,PMax MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Renewable/RTPV/REAL_TIME_rtpv.csv
-REAL_TIME,Generator,118_RTPV_10,PMax MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Renewable/RTPV/REAL_TIME_rtpv.csv
-REAL_TIME,Generator,213_RTPV_1,PMax MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Renewable/RTPV/REAL_TIME_rtpv.csv
-REAL_TIME,Generator,309_WIND_1,PMax MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Renewable/WIND/REAL_TIME_wind.csv
-REAL_TIME,Generator,317_WIND_1,PMax MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Renewable/WIND/REAL_TIME_wind.csv
-REAL_TIME,Generator,303_WIND_1,PMax MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Renewable/WIND/REAL_TIME_wind.csv
-REAL_TIME,Generator,122_WIND_1,PMax MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Renewable/WIND/REAL_TIME_wind.csv
-REAL_TIME,Generator,122_HYDRO_1,PMin MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Hydro/REAL_TIME_hydro.csv
-REAL_TIME,Generator,122_HYDRO_2,PMin MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Hydro/REAL_TIME_hydro.csv
-REAL_TIME,Generator,122_HYDRO_3,PMin MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Hydro/REAL_TIME_hydro.csv
-REAL_TIME,Generator,122_HYDRO_4,PMin MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Hydro/REAL_TIME_hydro.csv
-REAL_TIME,Generator,122_HYDRO_5,PMin MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Hydro/REAL_TIME_hydro.csv
-REAL_TIME,Generator,122_HYDRO_6,PMin MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Hydro/REAL_TIME_hydro.csv
-REAL_TIME,Generator,201_HYDRO_4,PMin MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Hydro/REAL_TIME_hydro.csv
-REAL_TIME,Generator,215_HYDRO_1,PMin MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Hydro/REAL_TIME_hydro.csv
-REAL_TIME,Generator,215_HYDRO_2,PMin MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Hydro/REAL_TIME_hydro.csv
-REAL_TIME,Generator,215_HYDRO_3,PMin MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Hydro/REAL_TIME_hydro.csv
-REAL_TIME,Generator,222_HYDRO_1,PMin MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Hydro/REAL_TIME_hydro.csv
-REAL_TIME,Generator,222_HYDRO_2,PMin MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Hydro/REAL_TIME_hydro.csv
-REAL_TIME,Generator,222_HYDRO_3,PMin MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Hydro/REAL_TIME_hydro.csv
-REAL_TIME,Generator,222_HYDRO_4,PMin MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Hydro/REAL_TIME_hydro.csv
-REAL_TIME,Generator,222_HYDRO_5,PMin MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Hydro/REAL_TIME_hydro.csv
-REAL_TIME,Generator,222_HYDRO_6,PMin MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Hydro/REAL_TIME_hydro.csv
-REAL_TIME,Generator,322_HYDRO_1,PMin MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Hydro/REAL_TIME_hydro.csv
-REAL_TIME,Generator,322_HYDRO_2,PMin MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Hydro/REAL_TIME_hydro.csv
-REAL_TIME,Generator,322_HYDRO_3,PMin MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Hydro/REAL_TIME_hydro.csv
-REAL_TIME,Generator,322_HYDRO_4,PMin MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Hydro/REAL_TIME_hydro.csv
-REAL_TIME,Generator,308_RTPV_1,PMin MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Renewable/RTPV/REAL_TIME_rtpv.csv
-REAL_TIME,Generator,313_RTPV_1,PMin MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Renewable/RTPV/REAL_TIME_rtpv.csv
-REAL_TIME,Generator,313_RTPV_2,PMin MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Renewable/RTPV/REAL_TIME_rtpv.csv
-REAL_TIME,Generator,313_RTPV_3,PMin MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Renewable/RTPV/REAL_TIME_rtpv.csv
-REAL_TIME,Generator,313_RTPV_4,PMin MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Renewable/RTPV/REAL_TIME_rtpv.csv
-REAL_TIME,Generator,313_RTPV_5,PMin MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Renewable/RTPV/REAL_TIME_rtpv.csv
-REAL_TIME,Generator,313_RTPV_6,PMin MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Renewable/RTPV/REAL_TIME_rtpv.csv
-REAL_TIME,Generator,313_RTPV_7,PMin MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Renewable/RTPV/REAL_TIME_rtpv.csv
-REAL_TIME,Generator,313_RTPV_8,PMin MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Renewable/RTPV/REAL_TIME_rtpv.csv
-REAL_TIME,Generator,313_RTPV_9,PMin MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Renewable/RTPV/REAL_TIME_rtpv.csv
-REAL_TIME,Generator,313_RTPV_10,PMin MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Renewable/RTPV/REAL_TIME_rtpv.csv
-REAL_TIME,Generator,313_RTPV_11,PMin MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Renewable/RTPV/REAL_TIME_rtpv.csv
-REAL_TIME,Generator,313_RTPV_12,PMin MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Renewable/RTPV/REAL_TIME_rtpv.csv
-REAL_TIME,Generator,320_RTPV_1,PMin MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Renewable/RTPV/REAL_TIME_rtpv.csv
-REAL_TIME,Generator,320_RTPV_2,PMin MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Renewable/RTPV/REAL_TIME_rtpv.csv
-REAL_TIME,Generator,320_RTPV_3,PMin MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Renewable/RTPV/REAL_TIME_rtpv.csv
-REAL_TIME,Generator,313_RTPV_13,PMin MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Renewable/RTPV/REAL_TIME_rtpv.csv
-REAL_TIME,Generator,320_RTPV_4,PMin MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Renewable/RTPV/REAL_TIME_rtpv.csv
-REAL_TIME,Generator,320_RTPV_5,PMin MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Renewable/RTPV/REAL_TIME_rtpv.csv
-REAL_TIME,Generator,118_RTPV_1,PMin MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Renewable/RTPV/REAL_TIME_rtpv.csv
-REAL_TIME,Generator,118_RTPV_2,PMin MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Renewable/RTPV/REAL_TIME_rtpv.csv
-REAL_TIME,Generator,118_RTPV_3,PMin MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Renewable/RTPV/REAL_TIME_rtpv.csv
-REAL_TIME,Generator,118_RTPV_4,PMin MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Renewable/RTPV/REAL_TIME_rtpv.csv
-REAL_TIME,Generator,118_RTPV_5,PMin MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Renewable/RTPV/REAL_TIME_rtpv.csv
-REAL_TIME,Generator,118_RTPV_6,PMin MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Renewable/RTPV/REAL_TIME_rtpv.csv
-REAL_TIME,Generator,320_RTPV_6,PMin MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Renewable/RTPV/REAL_TIME_rtpv.csv
-REAL_TIME,Generator,118_RTPV_7,PMin MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Renewable/RTPV/REAL_TIME_rtpv.csv
-REAL_TIME,Generator,118_RTPV_8,PMin MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Renewable/RTPV/REAL_TIME_rtpv.csv
-REAL_TIME,Generator,118_RTPV_9,PMin MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Renewable/RTPV/REAL_TIME_rtpv.csv
-REAL_TIME,Generator,118_RTPV_10,PMin MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Renewable/RTPV/REAL_TIME_rtpv.csv
-REAL_TIME,Generator,213_RTPV_1,PMin MW,Category,../forecasts/RTS_GMLC_forecasts/gen/Renewable/RTPV/REAL_TIME_rtpv.csv
-REAL_TIME,Reserve,Reg_Down,Requirement,Category,./Reserves/REAL_TIME_regional_Reg_Down.csv
-REAL_TIME,Reserve,Reg_Up,Requirement,Category,./Reserves/REAL_TIME_regional_Reg_Up.csv
-REAL_TIME,Reserve,Spin_Up_R1,Requirement,Category,./Reserves/REAL_TIME_regional_Spin_Up_R1.csv
-REAL_TIME,Reserve,Spin_Up_R2,Requirement,Category,./Reserves/REAL_TIME_regional_Spin_Up_R2.csv
-REAL_TIME,Reserve,Spin_Up_R3,Requirement,Category,./Reserves/REAL_TIME_regional_Spin_Up_R3.csv
-REAL_TIME,LoadZone,1,MW Load,Bus,../forecasts/RTS_GMLC_forecasts/load/REAL_TIME_regional_Load.csv
-REAL_TIME,LoadZone,2,MW Load,Bus,../forecasts/RTS_GMLC_forecasts/load/REAL_TIME_regional_Load.csv
-REAL_TIME,LoadZone,3,MW Load,Bus,../forecasts/RTS_GMLC_forecasts/load/REAL_TIME_regional_Load.csv
+DAY_AHEAD,Generator,122_HYDRO_1,PMax MW,Category,../timeseries_data_files/HYDRO/DAY_AHEAD_hydro.csv
+DAY_AHEAD,Generator,122_HYDRO_2,PMax MW,Category,../timeseries_data_files/HYDRO/DAY_AHEAD_hydro.csv
+DAY_AHEAD,Generator,122_HYDRO_3,PMax MW,Category,../timeseries_data_files/HYDRO/DAY_AHEAD_hydro.csv
+DAY_AHEAD,Generator,122_HYDRO_4,PMax MW,Category,../timeseries_data_files/HYDRO/DAY_AHEAD_hydro.csv
+DAY_AHEAD,Generator,122_HYDRO_5,PMax MW,Category,../timeseries_data_files/HYDRO/DAY_AHEAD_hydro.csv
+DAY_AHEAD,Generator,122_HYDRO_6,PMax MW,Category,../timeseries_data_files/HYDRO/DAY_AHEAD_hydro.csv
+DAY_AHEAD,Generator,201_HYDRO_4,PMax MW,Category,../timeseries_data_files/HYDRO/DAY_AHEAD_hydro.csv
+DAY_AHEAD,Generator,215_HYDRO_1,PMax MW,Category,../timeseries_data_files/HYDRO/DAY_AHEAD_hydro.csv
+DAY_AHEAD,Generator,215_HYDRO_2,PMax MW,Category,../timeseries_data_files/HYDRO/DAY_AHEAD_hydro.csv
+DAY_AHEAD,Generator,215_HYDRO_3,PMax MW,Category,../timeseries_data_files/HYDRO/DAY_AHEAD_hydro.csv
+DAY_AHEAD,Generator,222_HYDRO_1,PMax MW,Category,../timeseries_data_files/HYDRO/DAY_AHEAD_hydro.csv
+DAY_AHEAD,Generator,222_HYDRO_2,PMax MW,Category,../timeseries_data_files/HYDRO/DAY_AHEAD_hydro.csv
+DAY_AHEAD,Generator,222_HYDRO_3,PMax MW,Category,../timeseries_data_files/HYDRO/DAY_AHEAD_hydro.csv
+DAY_AHEAD,Generator,222_HYDRO_4,PMax MW,Category,../timeseries_data_files/HYDRO/DAY_AHEAD_hydro.csv
+DAY_AHEAD,Generator,222_HYDRO_5,PMax MW,Category,../timeseries_data_files/HYDRO/DAY_AHEAD_hydro.csv
+DAY_AHEAD,Generator,222_HYDRO_6,PMax MW,Category,../timeseries_data_files/HYDRO/DAY_AHEAD_hydro.csv
+DAY_AHEAD,Generator,322_HYDRO_1,PMax MW,Category,../timeseries_data_files/HYDRO/DAY_AHEAD_hydro.csv
+DAY_AHEAD,Generator,322_HYDRO_2,PMax MW,Category,../timeseries_data_files/HYDRO/DAY_AHEAD_hydro.csv
+DAY_AHEAD,Generator,322_HYDRO_3,PMax MW,Category,../timeseries_data_files/HYDRO/DAY_AHEAD_hydro.csv
+DAY_AHEAD,Generator,322_HYDRO_4,PMax MW,Category,../timeseries_data_files/HYDRO/DAY_AHEAD_hydro.csv
+DAY_AHEAD,Generator,320_PV_1,PMax MW,Category,../timeseries_data_files/PV/DAY_AHEAD_pv.csv
+DAY_AHEAD,Generator,314_PV_1,PMax MW,Category,../timeseries_data_files/PV/DAY_AHEAD_pv.csv
+DAY_AHEAD,Generator,314_PV_2,PMax MW,Category,../timeseries_data_files/PV/DAY_AHEAD_pv.csv
+DAY_AHEAD,Generator,313_PV_1,PMax MW,Category,../timeseries_data_files/PV/DAY_AHEAD_pv.csv
+DAY_AHEAD,Generator,314_PV_3,PMax MW,Category,../timeseries_data_files/PV/DAY_AHEAD_pv.csv
+DAY_AHEAD,Generator,314_PV_4,PMax MW,Category,../timeseries_data_files/PV/DAY_AHEAD_pv.csv
+DAY_AHEAD,Generator,313_PV_2,PMax MW,Category,../timeseries_data_files/PV/DAY_AHEAD_pv.csv
+DAY_AHEAD,Generator,310_PV_1,PMax MW,Category,../timeseries_data_files/PV/DAY_AHEAD_pv.csv
+DAY_AHEAD,Generator,324_PV_1,PMax MW,Category,../timeseries_data_files/PV/DAY_AHEAD_pv.csv
+DAY_AHEAD,Generator,312_PV_1,PMax MW,Category,../timeseries_data_files/PV/DAY_AHEAD_pv.csv
+DAY_AHEAD,Generator,310_PV_2,PMax MW,Category,../timeseries_data_files/PV/DAY_AHEAD_pv.csv
+DAY_AHEAD,Generator,324_PV_2,PMax MW,Category,../timeseries_data_files/PV/DAY_AHEAD_pv.csv
+DAY_AHEAD,Generator,324_PV_3,PMax MW,Category,../timeseries_data_files/PV/DAY_AHEAD_pv.csv
+DAY_AHEAD,Generator,113_PV_1,PMax MW,Category,../timeseries_data_files/PV/DAY_AHEAD_pv.csv
+DAY_AHEAD,Generator,319_PV_1,PMax MW,Category,../timeseries_data_files/PV/DAY_AHEAD_pv.csv
+DAY_AHEAD,Generator,215_PV_1,PMax MW,Category,../timeseries_data_files/PV/DAY_AHEAD_pv.csv
+DAY_AHEAD,Generator,102_PV_1,PMax MW,Category,../timeseries_data_files/PV/DAY_AHEAD_pv.csv
+DAY_AHEAD,Generator,101_PV_1,PMax MW,Category,../timeseries_data_files/PV/DAY_AHEAD_pv.csv
+DAY_AHEAD,Generator,102_PV_2,PMax MW,Category,../timeseries_data_files/PV/DAY_AHEAD_pv.csv
+DAY_AHEAD,Generator,104_PV_1,PMax MW,Category,../timeseries_data_files/PV/DAY_AHEAD_pv.csv
+DAY_AHEAD,Generator,101_PV_2,PMax MW,Category,../timeseries_data_files/PV/DAY_AHEAD_pv.csv
+DAY_AHEAD,Generator,101_PV_3,PMax MW,Category,../timeseries_data_files/PV/DAY_AHEAD_pv.csv
+DAY_AHEAD,Generator,101_PV_4,PMax MW,Category,../timeseries_data_files/PV/DAY_AHEAD_pv.csv
+DAY_AHEAD,Generator,103_PV_1,PMax MW,Category,../timeseries_data_files/PV/DAY_AHEAD_pv.csv
+DAY_AHEAD,Generator,119_PV_1,PMax MW,Category,../timeseries_data_files/PV/DAY_AHEAD_pv.csv
+DAY_AHEAD,Generator,308_RTPV_1,PMax MW,Category,../timeseries_data_files/RTPV/DAY_AHEAD_rtpv.csv
+DAY_AHEAD,Generator,313_RTPV_1,PMax MW,Category,../timeseries_data_files/RTPV/DAY_AHEAD_rtpv.csv
+DAY_AHEAD,Generator,313_RTPV_2,PMax MW,Category,../timeseries_data_files/RTPV/DAY_AHEAD_rtpv.csv
+DAY_AHEAD,Generator,313_RTPV_3,PMax MW,Category,../timeseries_data_files/RTPV/DAY_AHEAD_rtpv.csv
+DAY_AHEAD,Generator,313_RTPV_4,PMax MW,Category,../timeseries_data_files/RTPV/DAY_AHEAD_rtpv.csv
+DAY_AHEAD,Generator,313_RTPV_5,PMax MW,Category,../timeseries_data_files/RTPV/DAY_AHEAD_rtpv.csv
+DAY_AHEAD,Generator,313_RTPV_6,PMax MW,Category,../timeseries_data_files/RTPV/DAY_AHEAD_rtpv.csv
+DAY_AHEAD,Generator,313_RTPV_7,PMax MW,Category,../timeseries_data_files/RTPV/DAY_AHEAD_rtpv.csv
+DAY_AHEAD,Generator,313_RTPV_8,PMax MW,Category,../timeseries_data_files/RTPV/DAY_AHEAD_rtpv.csv
+DAY_AHEAD,Generator,313_RTPV_9,PMax MW,Category,../timeseries_data_files/RTPV/DAY_AHEAD_rtpv.csv
+DAY_AHEAD,Generator,313_RTPV_10,PMax MW,Category,../timeseries_data_files/RTPV/DAY_AHEAD_rtpv.csv
+DAY_AHEAD,Generator,313_RTPV_11,PMax MW,Category,../timeseries_data_files/RTPV/DAY_AHEAD_rtpv.csv
+DAY_AHEAD,Generator,313_RTPV_12,PMax MW,Category,../timeseries_data_files/RTPV/DAY_AHEAD_rtpv.csv
+DAY_AHEAD,Generator,320_RTPV_1,PMax MW,Category,../timeseries_data_files/RTPV/DAY_AHEAD_rtpv.csv
+DAY_AHEAD,Generator,320_RTPV_2,PMax MW,Category,../timeseries_data_files/RTPV/DAY_AHEAD_rtpv.csv
+DAY_AHEAD,Generator,320_RTPV_3,PMax MW,Category,../timeseries_data_files/RTPV/DAY_AHEAD_rtpv.csv
+DAY_AHEAD,Generator,313_RTPV_13,PMax MW,Category,../timeseries_data_files/RTPV/DAY_AHEAD_rtpv.csv
+DAY_AHEAD,Generator,320_RTPV_4,PMax MW,Category,../timeseries_data_files/RTPV/DAY_AHEAD_rtpv.csv
+DAY_AHEAD,Generator,320_RTPV_5,PMax MW,Category,../timeseries_data_files/RTPV/DAY_AHEAD_rtpv.csv
+DAY_AHEAD,Generator,118_RTPV_1,PMax MW,Category,../timeseries_data_files/RTPV/DAY_AHEAD_rtpv.csv
+DAY_AHEAD,Generator,118_RTPV_2,PMax MW,Category,../timeseries_data_files/RTPV/DAY_AHEAD_rtpv.csv
+DAY_AHEAD,Generator,118_RTPV_3,PMax MW,Category,../timeseries_data_files/RTPV/DAY_AHEAD_rtpv.csv
+DAY_AHEAD,Generator,118_RTPV_4,PMax MW,Category,../timeseries_data_files/RTPV/DAY_AHEAD_rtpv.csv
+DAY_AHEAD,Generator,118_RTPV_5,PMax MW,Category,../timeseries_data_files/RTPV/DAY_AHEAD_rtpv.csv
+DAY_AHEAD,Generator,118_RTPV_6,PMax MW,Category,../timeseries_data_files/RTPV/DAY_AHEAD_rtpv.csv
+DAY_AHEAD,Generator,320_RTPV_6,PMax MW,Category,../timeseries_data_files/RTPV/DAY_AHEAD_rtpv.csv
+DAY_AHEAD,Generator,118_RTPV_7,PMax MW,Category,../timeseries_data_files/RTPV/DAY_AHEAD_rtpv.csv
+DAY_AHEAD,Generator,118_RTPV_8,PMax MW,Category,../timeseries_data_files/RTPV/DAY_AHEAD_rtpv.csv
+DAY_AHEAD,Generator,118_RTPV_9,PMax MW,Category,../timeseries_data_files/RTPV/DAY_AHEAD_rtpv.csv
+DAY_AHEAD,Generator,118_RTPV_10,PMax MW,Category,../timeseries_data_files/RTPV/DAY_AHEAD_rtpv.csv
+DAY_AHEAD,Generator,213_RTPV_1,PMax MW,Category,../timeseries_data_files/RTPV/DAY_AHEAD_rtpv.csv
+DAY_AHEAD,Generator,309_WIND_1,PMax MW,Category,../timeseries_data_files/WIND/DAY_AHEAD_wind.csv
+DAY_AHEAD,Generator,317_WIND_1,PMax MW,Category,../timeseries_data_files/WIND/DAY_AHEAD_wind.csv
+DAY_AHEAD,Generator,303_WIND_1,PMax MW,Category,../timeseries_data_files/WIND/DAY_AHEAD_wind.csv
+DAY_AHEAD,Generator,122_WIND_1,PMax MW,Category,../timeseries_data_files/WIND/DAY_AHEAD_wind.csv
+DAY_AHEAD,Generator,122_HYDRO_1,PMin MW,Category,../timeseries_data_files/HYDRO/DAY_AHEAD_hydro.csv
+DAY_AHEAD,Generator,122_HYDRO_2,PMin MW,Category,../timeseries_data_files/HYDRO/DAY_AHEAD_hydro.csv
+DAY_AHEAD,Generator,122_HYDRO_3,PMin MW,Category,../timeseries_data_files/HYDRO/DAY_AHEAD_hydro.csv
+DAY_AHEAD,Generator,122_HYDRO_4,PMin MW,Category,../timeseries_data_files/HYDRO/DAY_AHEAD_hydro.csv
+DAY_AHEAD,Generator,122_HYDRO_5,PMin MW,Category,../timeseries_data_files/HYDRO/DAY_AHEAD_hydro.csv
+DAY_AHEAD,Generator,122_HYDRO_6,PMin MW,Category,../timeseries_data_files/HYDRO/DAY_AHEAD_hydro.csv
+DAY_AHEAD,Generator,201_HYDRO_4,PMin MW,Category,../timeseries_data_files/HYDRO/DAY_AHEAD_hydro.csv
+DAY_AHEAD,Generator,215_HYDRO_1,PMin MW,Category,../timeseries_data_files/HYDRO/DAY_AHEAD_hydro.csv
+DAY_AHEAD,Generator,215_HYDRO_2,PMin MW,Category,../timeseries_data_files/HYDRO/DAY_AHEAD_hydro.csv
+DAY_AHEAD,Generator,215_HYDRO_3,PMin MW,Category,../timeseries_data_files/HYDRO/DAY_AHEAD_hydro.csv
+DAY_AHEAD,Generator,222_HYDRO_1,PMin MW,Category,../timeseries_data_files/HYDRO/DAY_AHEAD_hydro.csv
+DAY_AHEAD,Generator,222_HYDRO_2,PMin MW,Category,../timeseries_data_files/HYDRO/DAY_AHEAD_hydro.csv
+DAY_AHEAD,Generator,222_HYDRO_3,PMin MW,Category,../timeseries_data_files/HYDRO/DAY_AHEAD_hydro.csv
+DAY_AHEAD,Generator,222_HYDRO_4,PMin MW,Category,../timeseries_data_files/HYDRO/DAY_AHEAD_hydro.csv
+DAY_AHEAD,Generator,222_HYDRO_5,PMin MW,Category,../timeseries_data_files/HYDRO/DAY_AHEAD_hydro.csv
+DAY_AHEAD,Generator,222_HYDRO_6,PMin MW,Category,../timeseries_data_files/HYDRO/DAY_AHEAD_hydro.csv
+DAY_AHEAD,Generator,322_HYDRO_1,PMin MW,Category,../timeseries_data_files/HYDRO/DAY_AHEAD_hydro.csv
+DAY_AHEAD,Generator,322_HYDRO_2,PMin MW,Category,../timeseries_data_files/HYDRO/DAY_AHEAD_hydro.csv
+DAY_AHEAD,Generator,322_HYDRO_3,PMin MW,Category,../timeseries_data_files/HYDRO/DAY_AHEAD_hydro.csv
+DAY_AHEAD,Generator,322_HYDRO_4,PMin MW,Category,../timeseries_data_files/HYDRO/DAY_AHEAD_hydro.csv
+DAY_AHEAD,Generator,308_RTPV_1,PMin MW,Category,../timeseries_data_files/RTPV/DAY_AHEAD_rtpv.csv
+DAY_AHEAD,Generator,313_RTPV_1,PMin MW,Category,../timeseries_data_files/RTPV/DAY_AHEAD_rtpv.csv
+DAY_AHEAD,Generator,313_RTPV_2,PMin MW,Category,../timeseries_data_files/RTPV/DAY_AHEAD_rtpv.csv
+DAY_AHEAD,Generator,313_RTPV_3,PMin MW,Category,../timeseries_data_files/RTPV/DAY_AHEAD_rtpv.csv
+DAY_AHEAD,Generator,313_RTPV_4,PMin MW,Category,../timeseries_data_files/RTPV/DAY_AHEAD_rtpv.csv
+DAY_AHEAD,Generator,313_RTPV_5,PMin MW,Category,../timeseries_data_files/RTPV/DAY_AHEAD_rtpv.csv
+DAY_AHEAD,Generator,313_RTPV_6,PMin MW,Category,../timeseries_data_files/RTPV/DAY_AHEAD_rtpv.csv
+DAY_AHEAD,Generator,313_RTPV_7,PMin MW,Category,../timeseries_data_files/RTPV/DAY_AHEAD_rtpv.csv
+DAY_AHEAD,Generator,313_RTPV_8,PMin MW,Category,../timeseries_data_files/RTPV/DAY_AHEAD_rtpv.csv
+DAY_AHEAD,Generator,313_RTPV_9,PMin MW,Category,../timeseries_data_files/RTPV/DAY_AHEAD_rtpv.csv
+DAY_AHEAD,Generator,313_RTPV_10,PMin MW,Category,../timeseries_data_files/RTPV/DAY_AHEAD_rtpv.csv
+DAY_AHEAD,Generator,313_RTPV_11,PMin MW,Category,../timeseries_data_files/RTPV/DAY_AHEAD_rtpv.csv
+DAY_AHEAD,Generator,313_RTPV_12,PMin MW,Category,../timeseries_data_files/RTPV/DAY_AHEAD_rtpv.csv
+DAY_AHEAD,Generator,320_RTPV_1,PMin MW,Category,../timeseries_data_files/RTPV/DAY_AHEAD_rtpv.csv
+DAY_AHEAD,Generator,320_RTPV_2,PMin MW,Category,../timeseries_data_files/RTPV/DAY_AHEAD_rtpv.csv
+DAY_AHEAD,Generator,320_RTPV_3,PMin MW,Category,../timeseries_data_files/RTPV/DAY_AHEAD_rtpv.csv
+DAY_AHEAD,Generator,313_RTPV_13,PMin MW,Category,../timeseries_data_files/RTPV/DAY_AHEAD_rtpv.csv
+DAY_AHEAD,Generator,320_RTPV_4,PMin MW,Category,../timeseries_data_files/RTPV/DAY_AHEAD_rtpv.csv
+DAY_AHEAD,Generator,320_RTPV_5,PMin MW,Category,../timeseries_data_files/RTPV/DAY_AHEAD_rtpv.csv
+DAY_AHEAD,Generator,118_RTPV_1,PMin MW,Category,../timeseries_data_files/RTPV/DAY_AHEAD_rtpv.csv
+DAY_AHEAD,Generator,118_RTPV_2,PMin MW,Category,../timeseries_data_files/RTPV/DAY_AHEAD_rtpv.csv
+DAY_AHEAD,Generator,118_RTPV_3,PMin MW,Category,../timeseries_data_files/RTPV/DAY_AHEAD_rtpv.csv
+DAY_AHEAD,Generator,118_RTPV_4,PMin MW,Category,../timeseries_data_files/RTPV/DAY_AHEAD_rtpv.csv
+DAY_AHEAD,Generator,118_RTPV_5,PMin MW,Category,../timeseries_data_files/RTPV/DAY_AHEAD_rtpv.csv
+DAY_AHEAD,Generator,118_RTPV_6,PMin MW,Category,../timeseries_data_files/RTPV/DAY_AHEAD_rtpv.csv
+DAY_AHEAD,Generator,320_RTPV_6,PMin MW,Category,../timeseries_data_files/RTPV/DAY_AHEAD_rtpv.csv
+DAY_AHEAD,Generator,118_RTPV_7,PMin MW,Category,../timeseries_data_files/RTPV/DAY_AHEAD_rtpv.csv
+DAY_AHEAD,Generator,118_RTPV_8,PMin MW,Category,../timeseries_data_files/RTPV/DAY_AHEAD_rtpv.csv
+DAY_AHEAD,Generator,118_RTPV_9,PMin MW,Category,../timeseries_data_files/RTPV/DAY_AHEAD_rtpv.csv
+DAY_AHEAD,Generator,118_RTPV_10,PMin MW,Category,../timeseries_data_files/RTPV/DAY_AHEAD_rtpv.csv
+DAY_AHEAD,Generator,213_RTPV_1,PMin MW,Category,../timeseries_data_files/RTPV/DAY_AHEAD_rtpv.csv
+DAY_AHEAD,Reserve,Flex_Down,Requirement,Category,../timeseries_data_files/Reserves/DAY_AHEAD_regional_Flex_Down.csv
+DAY_AHEAD,Reserve,Flex_Up,Requirement,Category,../timeseries_data_files/Reserves/DAY_AHEAD_regional_Flex_Up.csv
+DAY_AHEAD,Reserve,Reg_Down,Requirement,Category,../timeseries_data_files/Reserves/DAY_AHEAD_regional_Reg_Down.csv
+DAY_AHEAD,Reserve,Reg_Up,Requirement,Category,../timeseries_data_files/Reserves/DAY_AHEAD_regional_Reg_Up.csv
+DAY_AHEAD,Reserve,Spin_Up_R1,Requirement,Category,../timeseries_data_files/Reserves/DAY_AHEAD_regional_Spin_Up_R1.csv
+DAY_AHEAD,Reserve,Spin_Up_R2,Requirement,Category,../timeseries_data_files/Reserves/DAY_AHEAD_regional_Spin_Up_R2.csv
+DAY_AHEAD,Reserve,Spin_Up_R3,Requirement,Category,../timeseries_data_files/Reserves/DAY_AHEAD_regional_Spin_Up_R3.csv
+DAY_AHEAD,LoadZone,1,MW Load,Bus,../timeseries_data_files/Load/DAY_AHEAD_regional_Load.csv
+DAY_AHEAD,LoadZone,2,MW Load,Bus,../timeseries_data_files/Load/DAY_AHEAD_regional_Load.csv
+DAY_AHEAD,LoadZone,3,MW Load,Bus,../timeseries_data_files/Load/DAY_AHEAD_regional_Load.csv
+DAY_AHEAD,Gen erator,212_CSP_HEAD_STORAGE,Natural_Inflow,Category,../timeseries_data_files/CSP/DAY_AHEAD_Natural_Inflow.csv
+REAL_TIME,Gen erator,212_CSP_HEAD_STORAGE,Natural_Inflow,Category,../timeseries_data_files/CSP/REAL_TIME_Natural_Inflow.csv
+REAL_TIME,Gen erator,122_HYDRO_1,PMax MW,Category,../timeseries_data_files/HYDRO/REAL_TIME_hydro.csv
+REAL_TIME,Gen erator,122_HYDRO_2,PMax MW,Category,../timeseries_data_files/HYDRO/REAL_TIME_hydro.csv
+REAL_TIME,Gen erator,122_HYDRO_3,PMax MW,Category,../timeseries_data_files/HYDRO/REAL_TIME_hydro.csv
+REAL_TIME,Gen erator,122_HYDRO_4,PMax MW,Category,../timeseries_data_files/HYDRO/REAL_TIME_hydro.csv
+REAL_TIME,Gen erator,122_HYDRO_5,PMax MW,Category,../timeseries_data_files/HYDRO/REAL_TIME_hydro.csv
+REAL_TIME,Gen erator,122_HYDRO_6,PMax MW,Category,../timeseries_data_files/HYDRO/REAL_TIME_hydro.csv
+REAL_TIME,Gen erator,201_HYDRO_4,PMax MW,Category,../timeseries_data_files/HYDRO/REAL_TIME_hydro.csv
+REAL_TIME,Gen erator,215_HYDRO_1,PMax MW,Category,../timeseries_data_files/HYDRO/REAL_TIME_hydro.csv
+REAL_TIME,Gen erator,215_HYDRO_2,PMax MW,Category,../timeseries_data_files/HYDRO/REAL_TIME_hydro.csv
+REAL_TIME,Gen erator,215_HYDRO_3,PMax MW,Category,../timeseries_data_files/HYDRO/REAL_TIME_hydro.csv
+REAL_TIME,Gen erator,222_HYDRO_1,PMax MW,Category,../timeseries_data_files/HYDRO/REAL_TIME_hydro.csv
+REAL_TIME,Gen erator,222_HYDRO_2,PMax MW,Category,../timeseries_data_files/HYDRO/REAL_TIME_hydro.csv
+REAL_TIME,Gen erator,222_HYDRO_3,PMax MW,Category,../timeseries_data_files/HYDRO/REAL_TIME_hydro.csv
+REAL_TIME,Gen erator,222_HYDRO_4,PMax MW,Category,../timeseries_data_files/HYDRO/REAL_TIME_hydro.csv
+REAL_TIME,Gen erator,222_HYDRO_5,PMax MW,Category,../timeseries_data_files/HYDRO/REAL_TIME_hydro.csv
+REAL_TIME,Gen erator,222_HYDRO_6,PMax MW,Category,../timeseries_data_files/HYDRO/REAL_TIME_hydro.csv
+REAL_TIME,Gen erator,322_HYDRO_1,PMax MW,Category,../timeseries_data_files/HYDRO/REAL_TIME_hydro.csv
+REAL_TIME,Gen erator,322_HYDRO_2,PMax MW,Category,../timeseries_data_files/HYDRO/REAL_TIME_hydro.csv
+REAL_TIME,Gen erator,322_HYDRO_3,PMax MW,Category,../timeseries_data_files/HYDRO/REAL_TIME_hydro.csv
+REAL_TIME,Gen erator,322_HYDRO_4,PMax MW,Category,../timeseries_data_files/HYDRO/REAL_TIME_hydro.csv
+REAL_TIME,Gen erator,320_PV_1,PMax MW,Category,../timeseries_data_files/PV/REAL_TIME_pv.csv
+REAL_TIME,Gen erator,314_PV_1,PMax MW,Category,../timeseries_data_files/PV/REAL_TIME_pv.csv
+REAL_TIME,Gen erator,314_PV_2,PMax MW,Category,../timeseries_data_files/PV/REAL_TIME_pv.csv
+REAL_TIME,Gen erator,313_PV_1,PMax MW,Category,../timeseries_data_files/PV/REAL_TIME_pv.csv
+REAL_TIME,Gen erator,314_PV_3,PMax MW,Category,../timeseries_data_files/PV/REAL_TIME_pv.csv
+REAL_TIME,Gen erator,314_PV_4,PMax MW,Category,../timeseries_data_files/PV/REAL_TIME_pv.csv
+REAL_TIME,Gen erator,313_PV_2,PMax MW,Category,../timeseries_data_files/PV/REAL_TIME_pv.csv
+REAL_TIME,Gen erator,310_PV_1,PMax MW,Category,../timeseries_data_files/PV/REAL_TIME_pv.csv
+REAL_TIME,Gen erator,324_PV_1,PMax MW,Category,../timeseries_data_files/PV/REAL_TIME_pv.csv
+REAL_TIME,Gen erator,312_PV_1,PMax MW,Category,../timeseries_data_files/PV/REAL_TIME_pv.csv
+REAL_TIME,Gen erator,310_PV_2,PMax MW,Category,../timeseries_data_files/PV/REAL_TIME_pv.csv
+REAL_TIME,Gen erator,324_PV_2,PMax MW,Category,../timeseries_data_files/PV/REAL_TIME_pv.csv
+REAL_TIME,Gen erator,324_PV_3,PMax MW,Category,../timeseries_data_files/PV/REAL_TIME_pv.csv
+REAL_TIME,Gen erator,113_PV_1,PMax MW,Category,../timeseries_data_files/PV/REAL_TIME_pv.csv
+REAL_TIME,Gen erator,319_PV_1,PMax MW,Category,../timeseries_data_files/PV/REAL_TIME_pv.csv
+REAL_TIME,Gen erator,215_PV_1,PMax MW,Category,../timeseries_data_files/PV/REAL_TIME_pv.csv
+REAL_TIME,Gen erator,102_PV_1,PMax MW,Category,../timeseries_data_files/PV/REAL_TIME_pv.csv
+REAL_TIME,Gen erator,101_PV_1,PMax MW,Category,../timeseries_data_files/PV/REAL_TIME_pv.csv
+REAL_TIME,Gen erator,102_PV_2,PMax MW,Category,../timeseries_data_files/PV/REAL_TIME_pv.csv
+REAL_TIME,Gen erator,104_PV_1,PMax MW,Category,../timeseries_data_files/PV/REAL_TIME_pv.csv
+REAL_TIME,Gen erator,101_PV_2,PMax MW,Category,../timeseries_data_files/PV/REAL_TIME_pv.csv
+REAL_TIME,Gen erator,101_PV_3,PMax MW,Category,../timeseries_data_files/PV/REAL_TIME_pv.csv
+REAL_TIME,Gen erator,101_PV_4,PMax MW,Category,../timeseries_data_files/PV/REAL_TIME_pv.csv
+REAL_TIME,Gen erator,103_PV_1,PMax MW,Category,../timeseries_data_files/PV/REAL_TIME_pv.csv
+REAL_TIME,Gen erator,119_PV_1,PMax MW,Category,../timeseries_data_files/PV/REAL_TIME_pv.csv
+REAL_TIME,Gen erator,308_RTPV_1,PMax MW,Category,../timeseries_data_files/RTPV/REAL_TIME_rtpv.csv
+REAL_TIME,Gen erator,313_RTPV_1,PMax MW,Category,../timeseries_data_files/RTPV/REAL_TIME_rtpv.csv
+REAL_TIME,Gen erator,313_RTPV_2,PMax MW,Category,../timeseries_data_files/RTPV/REAL_TIME_rtpv.csv
+REAL_TIME,Gen erator,313_RTPV_3,PMax MW,Category,../timeseries_data_files/RTPV/REAL_TIME_rtpv.csv
+REAL_TIME,Gen erator,313_RTPV_4,PMax MW,Category,../timeseries_data_files/RTPV/REAL_TIME_rtpv.csv
+REAL_TIME,Gen erator,313_RTPV_5,PMax MW,Category,../timeseries_data_files/RTPV/REAL_TIME_rtpv.csv
+REAL_TIME,Gen erator,313_RTPV_6,PMax MW,Category,../timeseries_data_files/RTPV/REAL_TIME_rtpv.csv
+REAL_TIME,Gen erator,313_RTPV_7,PMax MW,Category,../timeseries_data_files/RTPV/REAL_TIME_rtpv.csv
+REAL_TIME,Gen erator,313_RTPV_8,PMax MW,Category,../timeseries_data_files/RTPV/REAL_TIME_rtpv.csv
+REAL_TIME,Gen erator,313_RTPV_9,PMax MW,Category,../timeseries_data_files/RTPV/REAL_TIME_rtpv.csv
+REAL_TIME,Gen erator,313_RTPV_10,PMax MW,Category,../timeseries_data_files/RTPV/REAL_TIME_rtpv.csv
+REAL_TIME,Gen erator,313_RTPV_11,PMax MW,Category,../timeseries_data_files/RTPV/REAL_TIME_rtpv.csv
+REAL_TIME,Gen erator,313_RTPV_12,PMax MW,Category,../timeseries_data_files/RTPV/REAL_TIME_rtpv.csv
+REAL_TIME,Gen erator,320_RTPV_1,PMax MW,Category,../timeseries_data_files/RTPV/REAL_TIME_rtpv.csv
+REAL_TIME,Gen erator,320_RTPV_2,PMax MW,Category,../timeseries_data_files/RTPV/REAL_TIME_rtpv.csv
+REAL_TIME,Gen erator,320_RTPV_3,PMax MW,Category,../timeseries_data_files/RTPV/REAL_TIME_rtpv.csv
+REAL_TIME,Gen erator,313_RTPV_13,PMax MW,Category,../timeseries_data_files/RTPV/REAL_TIME_rtpv.csv
+REAL_TIME,Gen erator,320_RTPV_4,PMax MW,Category,../timeseries_data_files/RTPV/REAL_TIME_rtpv.csv
+REAL_TIME,Gen erator,320_RTPV_5,PMax MW,Category,../timeseries_data_files/RTPV/REAL_TIME_rtpv.csv
+REAL_TIME,Gen erator,118_RTPV_1,PMax MW,Category,../timeseries_data_files/RTPV/REAL_TIME_rtpv.csv
+REAL_TIME,Gen erator,118_RTPV_2,PMax MW,Category,../timeseries_data_files/RTPV/REAL_TIME_rtpv.csv
+REAL_TIME,Gen erator,118_RTPV_3,PMax MW,Category,../timeseries_data_files/RTPV/REAL_TIME_rtpv.csv
+REAL_TIME,Gen erator,118_RTPV_4,PMax MW,Category,../timeseries_data_files/RTPV/REAL_TIME_rtpv.csv
+REAL_TIME,Gen erator,118_RTPV_5,PMax MW,Category,../timeseries_data_files/RTPV/REAL_TIME_rtpv.csv
+REAL_TIME,Gen erator,118_RTPV_6,PMax MW,Category,../timeseries_data_files/RTPV/REAL_TIME_rtpv.csv
+REAL_TIME,Gen erator,320_RTPV_6,PMax MW,Category,../timeseries_data_files/RTPV/REAL_TIME_rtpv.csv
+REAL_TIME,Gen erator,118_RTPV_7,PMax MW,Category,../timeseries_data_files/RTPV/REAL_TIME_rtpv.csv
+REAL_TIME,Gen erator,118_RTPV_8,PMax MW,Category,../timeseries_data_files/RTPV/REAL_TIME_rtpv.csv
+REAL_TIME,Gen erator,118_RTPV_9,PMax MW,Category,../timeseries_data_files/RTPV/REAL_TIME_rtpv.csv
+REAL_TIME,Gen erator,118_RTPV_10,PMax MW,Category,../timeseries_data_files/RTPV/REAL_TIME_rtpv.csv
+REAL_TIME,Gen erator,213_RTPV_1,PMax MW,Category,../timeseries_data_files/RTPV/REAL_TIME_rtpv.csv
+REAL_TIME,Gen erator,309_WIND_1,PMax MW,Category,../timeseries_data_files/WIND/REAL_TIME_wind.csv
+REAL_TIME,Gen erator,317_WIND_1,PMax MW,Category,../timeseries_data_files/WIND/REAL_TIME_wind.csv
+REAL_TIME,Gen erator,303_WIND_1,PMax MW,Category,../timeseries_data_files/WIND/REAL_TIME_wind.csv
+REAL_TIME,Gen erator,122_WIND_1,PMax MW,Category,../timeseries_data_files/WIND/REAL_TIME_wind.csv
+REAL_TIME,Gen erator,122_HYDRO_1,PMin MW,Category,../timeseries_data_files/HYDRO/REAL_TIME_hydro.csv
+REAL_TIME,Gen erator,122_HYDRO_2,PMin MW,Category,../timeseries_data_files/HYDRO/REAL_TIME_hydro.csv
+REAL_TIME,Gen erator,122_HYDRO_3,PMin MW,Category,../timeseries_data_files/HYDRO/REAL_TIME_hydro.csv
+REAL_TIME,Gen erator,122_HYDRO_4,PMin MW,Category,../timeseries_data_files/HYDRO/REAL_TIME_hydro.csv
+REAL_TIME,Gen erator,122_HYDRO_5,PMin MW,Category,../timeseries_data_files/HYDRO/REAL_TIME_hydro.csv
+REAL_TIME,Gen erator,122_HYDRO_6,PMin MW,Category,../timeseries_data_files/HYDRO/REAL_TIME_hydro.csv
+REAL_TIME,Gen erator,201_HYDRO_4,PMin MW,Category,../timeseries_data_files/HYDRO/REAL_TIME_hydro.csv
+REAL_TIME,Gen erator,215_HYDRO_1,PMin MW,Category,../timeseries_data_files/HYDRO/REAL_TIME_hydro.csv
+REAL_TIME,Gen erator,215_HYDRO_2,PMin MW,Category,../timeseries_data_files/HYDRO/REAL_TIME_hydro.csv
+REAL_TIME,Gen erator,215_HYDRO_3,PMin MW,Category,../timeseries_data_files/HYDRO/REAL_TIME_hydro.csv
+REAL_TIME,Gen erator,222_HYDRO_1,PMin MW,Category,../timeseries_data_files/HYDRO/REAL_TIME_hydro.csv
+REAL_TIME,Gen erator,222_HYDRO_2,PMin MW,Category,../timeseries_data_files/HYDRO/REAL_TIME_hydro.csv
+REAL_TIME,Gen erator,222_HYDRO_3,PMin MW,Category,../timeseries_data_files/HYDRO/REAL_TIME_hydro.csv
+REAL_TIME,Gen erator,222_HYDRO_4,PMin MW,Category,../timeseries_data_files/HYDRO/REAL_TIME_hydro.csv
+REAL_TIME,Gen erator,222_HYDRO_5,PMin MW,Category,../timeseries_data_files/HYDRO/REAL_TIME_hydro.csv
+REAL_TIME,Gen erator,222_HYDRO_6,PMin MW,Category,../timeseries_data_files/HYDRO/REAL_TIME_hydro.csv
+REAL_TIME,Gen erator,322_HYDRO_1,PMin MW,Category,../timeseries_data_files/HYDRO/REAL_TIME_hydro.csv
+REAL_TIME,Gen erator,322_HYDRO_2,PMin MW,Category,../timeseries_data_files/HYDRO/REAL_TIME_hydro.csv
+REAL_TIME,Gen erator,322_HYDRO_3,PMin MW,Category,../timeseries_data_files/HYDRO/REAL_TIME_hydro.csv
+REAL_TIME,Gen erator,322_HYDRO_4,PMin MW,Category,../timeseries_data_files/HYDRO/REAL_TIME_hydro.csv
+REAL_TIME,Gen erator,308_RTPV_1,PMin MW,Category,../timeseries_data_files/RTPV/REAL_TIME_rtpv.csv
+REAL_TIME,Gen erator,313_RTPV_1,PMin MW,Category,../timeseries_data_files/RTPV/REAL_TIME_rtpv.csv
+REAL_TIME,Gen erator,313_RTPV_2,PMin MW,Category,../timeseries_data_files/RTPV/REAL_TIME_rtpv.csv
+REAL_TIME,Gen erator,313_RTPV_3,PMin MW,Category,../timeseries_data_files/RTPV/REAL_TIME_rtpv.csv
+REAL_TIME,Gen erator,313_RTPV_4,PMin MW,Category,../timeseries_data_files/RTPV/REAL_TIME_rtpv.csv
+REAL_TIME,Gen erator,313_RTPV_5,PMin MW,Category,../timeseries_data_files/RTPV/REAL_TIME_rtpv.csv
+REAL_TIME,Gen erator,313_RTPV_6,PMin MW,Category,../timeseries_data_files/RTPV/REAL_TIME_rtpv.csv
+REAL_TIME,Gen erator,313_RTPV_7,PMin MW,Category,../timeseries_data_files/RTPV/REAL_TIME_rtpv.csv
+REAL_TIME,Gen erator,313_RTPV_8,PMin MW,Category,../timeseries_data_files/RTPV/REAL_TIME_rtpv.csv
+REAL_TIME,Gen erator,313_RTPV_9,PMin MW,Category,../timeseries_data_files/RTPV/REAL_TIME_rtpv.csv
+REAL_TIME,Gen erator,313_RTPV_10,PMin MW,Category,../timeseries_data_files/RTPV/REAL_TIME_rtpv.csv
+REAL_TIME,Gen erator,313_RTPV_11,PMin MW,Category,../timeseries_data_files/RTPV/REAL_TIME_rtpv.csv
+REAL_TIME,Gen erator,313_RTPV_12,PMin MW,Category,../timeseries_data_files/RTPV/REAL_TIME_rtpv.csv
+REAL_TIME,Gen erator,320_RTPV_1,PMin MW,Category,../timeseries_data_files/RTPV/REAL_TIME_rtpv.csv
+REAL_TIME,Gen erator,320_RTPV_2,PMin MW,Category,../timeseries_data_files/RTPV/REAL_TIME_rtpv.csv
+REAL_TIME,Gen erator,320_RTPV_3,PMin MW,Category,../timeseries_data_files/RTPV/REAL_TIME_rtpv.csv
+REAL_TIME,Gen erator,313_RTPV_13,PMin MW,Category,../timeseries_data_files/RTPV/REAL_TIME_rtpv.csv
+REAL_TIME,Gen erator,320_RTPV_4,PMin MW,Category,../timeseries_data_files/RTPV/REAL_TIME_rtpv.csv
+REAL_TIME,Gen erator,320_RTPV_5,PMin MW,Category,../timeseries_data_files/RTPV/REAL_TIME_rtpv.csv
+REAL_TIME,Gen erator,118_RTPV_1,PMin MW,Category,../timeseries_data_files/RTPV/REAL_TIME_rtpv.csv
+REAL_TIME,Gen erator,118_RTPV_2,PMin MW,Category,../timeseries_data_files/RTPV/REAL_TIME_rtpv.csv
+REAL_TIME,Gen erator,118_RTPV_3,PMin MW,Category,../timeseries_data_files/RTPV/REAL_TIME_rtpv.csv
+REAL_TIME,Gen erator,118_RTPV_4,PMin MW,Category,../timeseries_data_files/RTPV/REAL_TIME_rtpv.csv
+REAL_TIME,Gen erator,118_RTPV_5,PMin MW,Category,../timeseries_data_files/RTPV/REAL_TIME_rtpv.csv
+REAL_TIME,Gen erator,118_RTPV_6,PMin MW,Category,../timeseries_data_files/RTPV/REAL_TIME_rtpv.csv
+REAL_TIME,Gen erator,320_RTPV_6,PMin MW,Category,../timeseries_data_files/RTPV/REAL_TIME_rtpv.csv
+REAL_TIME,Gen erator,118_RTPV_7,PMin MW,Category,../timeseries_data_files/RTPV/REAL_TIME_rtpv.csv
+REAL_TIME,Gen erator,118_RTPV_8,PMin MW,Category,../timeseries_data_files/RTPV/REAL_TIME_rtpv.csv
+REAL_TIME,Gen erator,118_RTPV_9,PMin MW,Category,../timeseries_data_files/RTPV/REAL_TIME_rtpv.csv
+REAL_TIME,Gen erator,118_RTPV_10,PMin MW,Category,../timeseries_data_files/RTPV/REAL_TIME_rtpv.csv
+REAL_TIME,Gen erator,213_RTPV_1,PMin MW,Category,../timeseries_data_files/RTPV/REAL_TIME_rtpv.csv
+REAL_TIME,Reserve,Reg_Down,Requirement,Category,../timeseries_data_files/Reserves/REAL_TIME_regional_Reg_Down.csv
+REAL_TIME,Reserve,Reg_Up,Requirement,Category,../timeseries_data_files/Reserves/REAL_TIME_regional_Reg_Up.csv
+REAL_TIME,Reserve,Spin_Up_R1,Requirement,Category,../timeseries_data_files/Reserves/REAL_TIME_regional_Spin_Up_R1.csv
+REAL_TIME,Reserve,Spin_Up_R2,Requirement,Category,../timeseries_data_files/Reserves/REAL_TIME_regional_Spin_Up_R2.csv
+REAL_TIME,Reserve,Spin_Up_R3,Requirement,Category,../timeseries_data_files/Reserves/REAL_TIME_regional_Spin_Up_R3.csv
+REAL_TIME,LoadZone,1,MW Load,Bus,../timeseries_data_files/Load/REAL_TIME_regional_load.csv
+REAL_TIME,LoadZone,2,MW Load,Bus,../timeseries_data_files/Load/REAL_TIME_regional_load.csv
+REAL_TIME,LoadZone,3,MW Load,Bus,../timeseries_data_files/Load/REAL_TIME_regional_load.csv

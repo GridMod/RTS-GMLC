@@ -15,6 +15,7 @@ This repository, and the associated data has been developed to facilitate Produc
  - [PLEXOS](https://energyexemplar.com/)
  - [Prescient](https://energy.sandia.gov/tag/prescient/)
  - [RTS3](http://egpreston.com/)
+ - [pandapower](http://www.pandapower.org)
 
 ## TODO and Identified Areas of Improvement:
  - Conventional Plant Data:
