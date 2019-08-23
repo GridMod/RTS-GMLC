@@ -17,7 +17,7 @@ bus:
 - {custom_name: BaseKV, name: base_voltage}
 - {custom_name: Bus Type, name: bus_type}
 - {custom_name: V Mag, name: voltage}
-- {custom_name: V Angle, name: angle}
+- {custom_name: V Angle, name: angle, unit: degree}
 - {custom_name: Voltage Limit Min, name: voltage_limits_min}
 - {custom_name: Voltage Limit Max, name: voltage_limits_max}
 - {custom_name: MW Shunt G, name: mw_shunt_g}
@@ -111,10 +111,3 @@ storage:
 - {custom_name: QMin MVAR, name: reactive_power_limits_min, system_per_unit: false}
 - {custom_name: Cont Rating, name: rating, system_per_unit: false}
 - {custom_name: efficiency, name: efficiency}
-timeseries_pointers:
-- {custom_name: Simulation, name: simulation}
-- {custom_name: Object, name: component_name}
-- {custom_name: Parameter, name: label}
-- {custom_name: Parameter Source, name: label_source}
-- {custom_name: Category, name: category}
-- {custom_name: Data File, name: data_file}
