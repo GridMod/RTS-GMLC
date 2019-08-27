@@ -61,7 +61,7 @@ generator:
 - {custom_name: Min Down Time Hr, name: min_down_time}
 - {custom_name: Min Up Time Hr, name: min_up_time}
 - {custom_name: Ramp Rate MW/Min, name: ramp_limits, system_per_unit: false}
-- {custom_name: Start Heat Cold MBTU, name: startup_heat_cold_cost}
+- {custom_name: Start Heat Cold MMBTU, name: startup_heat_cold_cost}
 - {custom_name: HR_avg_0, name: heat_rate_avg_0}
 - {custom_name: HR_incr_1, name: heat_rate_avg_1}
 - {custom_name: HR_incr_2, name: heat_rate_avg_2}

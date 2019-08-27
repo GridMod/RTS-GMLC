@@ -29,9 +29,9 @@ Generator = namedtuple('Generator',
                         'StartTimeCold',    # units are hours
                         'StartTimeWarm',    # units are hours
                         'StartTimeHot',     # units are hours
-                        'StartCostCold',    # units are MBTU 
-                        'StartCostWarm',    # units are MBTU
-                        'StartCostHot',     # units are MBTU
+                        'StartCostCold',    # units are MMBTU 
+                        'StartCostWarm',    # units are MMBTU
+                        'StartCostHot',     # units are MMBTU
                         'NonFuelStartCost', # units are $
                         'FuelPrice',        # units are $ / MMBTU
                         'OutputPct0',  
@@ -111,9 +111,9 @@ for generator_index in generator_df.index.tolist():
                               int(this_generator_dict["Start Time Cold Hr"]),
                               int(this_generator_dict["Start Time Warm Hr"]),
                               int(this_generator_dict["Start Time Hot Hr"]),
-                              float(this_generator_dict["Start Heat Cold MBTU"]),
-                              float(this_generator_dict["Start Heat Warm MBTU"]),                                    
-                              float(this_generator_dict["Start Heat Hot MBTU"]),
+                              float(this_generator_dict["Start Heat Cold MMBTU"]),
+                              float(this_generator_dict["Start Heat Warm MMBTU"]),                                    
+                              float(this_generator_dict["Start Heat Hot MMBTU"]),
                               float(this_generator_dict["Non Fuel Start Cost $"]),
                               float(this_generator_dict["Fuel Price $/MMBTU"]),
                               float(this_generator_dict["Output_pct_0"]),

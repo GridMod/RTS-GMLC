@@ -67,14 +67,14 @@ This folder contains six CSV files wit all RTS-GMLC (non-timeseries) data and pr
 | Start Time Cold Hr       | Time since shutdown after which a cold start is required |
 | Start Time Hot Hr        | Time since shutdown after which a hot start is required |
 | Start Time Warm Hr       | Time since shutdown after which a warm start is required |
-| Start Heat Cold MBTU     | Heat required to startup from cold                               |
-| Start Heat Warm MBTU     | Heat required to startup from warm                               |
-| Start Heat Hot MBTU      | Heat required to startup from hot                                |
+| Start Heat Cold MMBTU     | Heat required to startup from cold in million BTU per startup   |
+| Start Heat Warm MMBTU     | Heat required to startup from warm in million BTU per startup   |
+| Start Heat Hot MMBTU      | Heat required to startup from hot in million BTU per startup    |
 | FOR                      | Forced outage rate                                               |
 | MTTF Hr                  | Meant time to forced outage                                      |
 | MTTR Hr                  | Mean time to repair forced outage                                |
 | Scheduled Maint Weeks    | Scheduled outages per year                                       |
-| Fuel Price $/MMBTU       | Fuel price                                                       |
+| Fuel Price $/MMBTU       | Fuel price in Dollars per million BTU                            |
 | Output_pct_0             | Output point 0 on heat rate curve as a percentage of PMax        |
 | Output_pct_1             | Output point 1 on heat rate curve as a percentage of PMax        |
 | Output_pct_2             | Output point 2 on heat rate curve as a percentage of PMax        |
