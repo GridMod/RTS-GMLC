@@ -39,7 +39,6 @@ dc_branch:
 - {custom_name: To X Commutating, name: inverter_xrc}
 - {custom_name: To Tap Max, name: inverter_tap_limits_max}
 - {custom_name: To Tap Min, name: inverter_tap_limits_min}
-- {custom_name: To Tap Min, name: inverter_tap_limits}
 - {custom_name: Margin, name: loss}
 - {custom_name: From Active Power Min, name: min_active_power_limit_from}
 - {custom_name: From Active Power Max, name: max_active_power_limit_from}
