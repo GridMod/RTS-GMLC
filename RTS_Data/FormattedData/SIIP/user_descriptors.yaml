@@ -39,7 +39,6 @@ dc_branch:
 - {custom_name: To X Commutating, name: inverter_xrc}
 - {custom_name: To Tap Max, name: inverter_tap_limits_max}
 - {custom_name: To Tap Min, name: inverter_tap_limits_min}
-- {custom_name: To Tap Min, name: inverter_tap_limits}
 - {custom_name: Margin, name: loss}
 - {custom_name: From Active Power Min, name: min_active_power_limit_from}
 - {custom_name: From Active Power Max, name: max_active_power_limit_from}
@@ -61,12 +60,12 @@ generator:
 - {custom_name: Min Down Time Hr, name: min_down_time}
 - {custom_name: Min Up Time Hr, name: min_up_time}
 - {custom_name: Ramp Rate MW/Min, name: ramp_limits, system_per_unit: false}
-- {custom_name: Start Heat Cold MMBTU, name: startup_heat_cold_cost}
+- {custom_name: Start Heat Cold MBTU, name: startup_heat_cold_cost}
 - {custom_name: HR_avg_0, name: heat_rate_avg_0}
-- {custom_name: HR_incr_1, name: heat_rate_avg_1}
-- {custom_name: HR_incr_2, name: heat_rate_avg_2}
-- {custom_name: HR_incr_3, name: heat_rate_avg_3}
-- {custom_name: HR_incr_4, name: heat_rate_avg_4}
+- {custom_name: HR_incr_1, name: heat_rate_incr_1}
+- {custom_name: HR_incr_2, name: heat_rate_incr_2}
+- {custom_name: HR_incr_3, name: heat_rate_incr_3}
+- {custom_name: HR_incr_4, name: heat_rate_incr_4}
 - {custom_name: Output_pct_0, name: output_percent_0}
 - {custom_name: Output_pct_1, name: output_percent_1}
 - {custom_name: Output_pct_2, name: output_percent_2}
@@ -88,7 +87,7 @@ load: []
 reserves:
 - {custom_name: Reserve Product, name: name}
 - {custom_name: 'Devices', name: contributing_devices}
-- {custom_name: Requirement, name: requirement}
+- {custom_name: Requirement (MW), name: requirement}
 - {custom_name: Timeframe (sec), name: timeframe}
 - {custom_name: Eligible Device Categories, name: eligible_device_categories}
 - {custom_name: Eligible Device SubCategories, name: eligible_device_subcategories}
@@ -97,7 +96,6 @@ reserves:
 - {custom_name: Reserve Category, name: reserve_category}
 simulation_objects: []
 storage:
-- {custom_name: GEN UID, name: name}
 - {custom_name: Storage, name: name}
 - {custom_name: BUS ID, name: bus_id}
 - {custom_name: Energy Level, name: energy_level}
