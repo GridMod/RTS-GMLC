@@ -94,6 +94,7 @@ reserves:
 - {custom_name: Eligible Generator Categories, name: eligible_generator_categories}
 - {custom_name: Eligible Regions, name: eligible_regions}
 - {custom_name: Reserve Category, name: reserve_category}
+- {custom_name: Direction, name: direction}
 simulation_objects: []
 storage:
 - {custom_name: Storage, name: name}
