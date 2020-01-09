@@ -87,7 +87,7 @@ load: []
 reserves:
 - {custom_name: Reserve Product, name: name}
 - {custom_name: 'Devices', name: contributing_devices}
-- {custom_name: Requirement (MW), name: requirement}
+- {custom_name: Requirement (MW), name: requirement, system_per_unit: false}
 - {custom_name: Timeframe (sec), name: timeframe}
 - {custom_name: Eligible Device Categories, name: eligible_device_categories}
 - {custom_name: Eligible Device SubCategories, name: eligible_device_subcategories}
