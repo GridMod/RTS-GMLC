@@ -1,0 +1,34 @@
+# Parsing code ignores type=null.
+
+HydroDispatch:
+#- {fuel: HYDRO, type: null} # uncomment this lines to enable hydro energy scheduling
+#- {fuel: HYDRO, type: HYDRO} # uncomment this lines to enable hydro energy scheduling
+- {fuel: HYDRO, type: INFLOW}
+
+HydroFix:
+- {fuel: HYDRO, type: ROR}
+- {fuel: HYDRO, type: null} # comment this lines to enable hydro energy scheduling
+- {fuel: HYDRO, type: HYDRO} # comment this lines to enable hydro energy scheduling
+
+RenewableDispatch:
+- {fuel: SOLAR, type: PV}
+- {fuel: SOLAR, type: UN}
+- {fuel: WIND, type: WIND}
+- {fuel: WIND, type: null}
+- {fuel: SOLAR, type: CSP}  # TODO: may need a new struct
+
+RenewableFix:
+- {fuel: SOLAR, type: RTPV}
+
+ThermalStandard:
+- {fuel: OIL, type: null}
+- {fuel: COAL, type: null}
+- {fuel: NG, type: null}
+- {fuel: GAS, type: null}
+- {fuel: NUCLEAR, type: null}
+- {fuel: NUC, type: null}
+- {fuel: SYNC_COND, type: SYNC_COND}
+- {fuel: OTHER, type: OT}
+
+GenericBattery:
+- {fuel: STORAGE, type: null}
