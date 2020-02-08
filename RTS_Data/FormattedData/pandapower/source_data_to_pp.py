@@ -33,9 +33,9 @@ def plot_net(net, ax=None):
         fig, ax = plt.subplots(1, 1)
 
     # create plot collection to visualize results
-    cmap, norm = plt.cmap_continous([(0.9, "blue"), (1.0, "green"), (1.1, "red")])
+    cmap, norm = plt.cmap_continuous([(0.9, "blue"), (1.0, "green"), (1.1, "red")])
     collections.append(plt.create_bus_collection(net, size=bus_size, cmap=cmap, norm=norm))
-    cmap, norm = plt.cmap_continous([(0., "green"), (50., "yellow"), (100., "red")])
+    cmap, norm = plt.cmap_continuous([(0., "green"), (50., "yellow"), (100., "red")])
     collections.append(plt.create_line_collection(net, use_bus_geodata=True, linewidth=1., cmap=cmap, norm=norm))
     collections.append(plt.create_trafo_collection(net, size=trafo_size, color="green", alpha=.5))
     collections.append(plt.create_ext_grid_collection(net, size=ext_grid_size, orientation=1.5))
