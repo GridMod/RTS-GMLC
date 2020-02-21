@@ -14,6 +14,7 @@ bus:
 - {custom_name: Bus ID, name: bus_id}
 - {custom_name: Bus Name, name: name}
 - {custom_name: Area, name: area}
+- {custom_name: Zone, name: zone}
 - {custom_name: BaseKV, name: base_voltage}
 - {custom_name: Bus Type, name: bus_type}
 - {custom_name: V Mag, name: voltage}
