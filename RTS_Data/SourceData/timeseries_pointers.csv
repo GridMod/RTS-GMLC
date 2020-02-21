@@ -137,9 +137,9 @@ DAY_AHEAD,Reserve,Reg_Up,Requirement,1,../timeseries_data_files/Reserves/DAY_AHE
 DAY_AHEAD,Reserve,Spin_Up_R1,Requirement,1,../timeseries_data_files/Reserves/DAY_AHEAD_regional_Spin_Up_R1.csv
 DAY_AHEAD,Reserve,Spin_Up_R2,Requirement,1,../timeseries_data_files/Reserves/DAY_AHEAD_regional_Spin_Up_R2.csv
 DAY_AHEAD,Reserve,Spin_Up_R3,Requirement,1,../timeseries_data_files/Reserves/DAY_AHEAD_regional_Spin_Up_R3.csv
-DAY_AHEAD,LoadZone,1,MW Load,2850,../timeseries_data_files/Load/DAY_AHEAD_regional_Load.csv
-DAY_AHEAD,LoadZone,2,MW Load,2850,../timeseries_data_files/Load/DAY_AHEAD_regional_Load.csv
-DAY_AHEAD,LoadZone,3,MW Load,2850,../timeseries_data_files/Load/DAY_AHEAD_regional_Load.csv
+DAY_AHEAD,Area,1,MW Load,2850,../timeseries_data_files/Load/DAY_AHEAD_regional_Load.csv
+DAY_AHEAD,Area,2,MW Load,2850,../timeseries_data_files/Load/DAY_AHEAD_regional_Load.csv
+DAY_AHEAD,Area,3,MW Load,2850,../timeseries_data_files/Load/DAY_AHEAD_regional_Load.csv
 DAY_AHEAD,Generator,212_CSP_HEAD_STORAGE,Natural_Inflow,200,../timeseries_data_files/CSP/DAY_AHEAD_Natural_Inflow.csv
 REAL_TIME,Generator,212_CSP_HEAD_STORAGE,Natural_Inflow,200,../timeseries_data_files/CSP/REAL_TIME_Natural_Inflow.csv
 REAL_TIME,Generator,122_HYDRO_1,PMax MW,52.49761899,../timeseries_data_files/HYDRO/REAL_TIME_hydro.csv
@@ -278,6 +278,6 @@ REAL_TIME,Reserve,Reg_Up,Requirement,1,../timeseries_data_files/Reserves/REAL_TI
 REAL_TIME,Reserve,Spin_Up_R1,Requirement,1,../timeseries_data_files/Reserves/REAL_TIME_regional_Spin_Up_R1.csv
 REAL_TIME,Reserve,Spin_Up_R2,Requirement,1,../timeseries_data_files/Reserves/REAL_TIME_regional_Spin_Up_R2.csv
 REAL_TIME,Reserve,Spin_Up_R3,Requirement,1,../timeseries_data_files/Reserves/REAL_TIME_regional_Spin_Up_R3.csv
-REAL_TIME,LoadZone,1,MW Load,2850,../timeseries_data_files/Load/REAL_TIME_regional_load.csv
-REAL_TIME,LoadZone,2,MW Load,2850,../timeseries_data_files/Load/REAL_TIME_regional_load.csv
-REAL_TIME,LoadZone,3,MW Load,2850,../timeseries_data_files/Load/REAL_TIME_regional_load.csv
+REAL_TIME,Area,1,MW Load,2850,../timeseries_data_files/Load/REAL_TIME_regional_load.csv
+REAL_TIME,Area,2,MW Load,2850,../timeseries_data_files/Load/REAL_TIME_regional_load.csv
+REAL_TIME,Area,3,MW Load,2850,../timeseries_data_files/Load/REAL_TIME_regional_load.csv
