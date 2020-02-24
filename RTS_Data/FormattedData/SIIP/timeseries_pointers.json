@@ -1105,7 +1105,7 @@
     },
     {
         "simulation": "DAY_AHEAD",
-        "category": "LoadZone",
+        "category": "Area",
         "component_name": "1",
         "label": "get_maxactivepower",
         "scaling_factor": 2850.0,
@@ -1113,7 +1113,7 @@
     },
     {
         "simulation": "DAY_AHEAD",
-        "category": "LoadZone",
+        "category": "Area",
         "component_name": "2",
         "label": "get_maxactivepower",
         "scaling_factor": 2850.0,
@@ -1121,7 +1121,7 @@
     },
     {
         "simulation": "DAY_AHEAD",
-        "category": "LoadZone",
+        "category": "Area",
         "component_name": "3",
         "label": "get_maxactivepower",
         "scaling_factor": 2850.0,
@@ -2233,7 +2233,7 @@
     },
     {
         "simulation": "REAL_TIME",
-        "category": "LoadZone",
+        "category": "Area",
         "component_name": "1",
         "label": "get_maxactivepower",
         "scaling_factor": 2850.0,
@@ -2241,7 +2241,7 @@
     },
     {
         "simulation": "REAL_TIME",
-        "category": "LoadZone",
+        "category": "Area",
         "component_name": "2",
         "label": "get_maxactivepower",
         "scaling_factor": 2850.0,
@@ -2249,7 +2249,7 @@
     },
     {
         "simulation": "REAL_TIME",
-        "category": "LoadZone",
+        "category": "Area",
         "component_name": "3",
         "label": "get_maxactivepower",
         "scaling_factor": 2850.0,
