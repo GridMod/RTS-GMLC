@@ -75,8 +75,6 @@ generator:
 - {custom_name: Base MVA, name: base_mva}
 - {custom_name: Variable Cost, name: variable_cost}
 - {custom_name: Fixed Cost, name: fixed_cost}
-- {custom_name: Start-up Cost, name: startup_cost}
-- {custom_name: Shutdown Cost, name: shutdown_cost}
 - {custom_name: Capacity Factor, name: annual_capacity_factor}
 - {custom_name: Curtailment Cost, name: curtailment_cost}
 - {custom_name: Interruption Cost, name: interruption_cost}
