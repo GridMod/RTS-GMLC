@@ -66,9 +66,8 @@ This folder contains six CSV files wit all RTS-GMLC (non-timeseries) data and pr
 | Ramp Rate MW/Min         | Maximum ramp up and ramp down rate                               |
 | Start Time Cold Hr       | Time since shutdown after which a cold start is required |
 | Start Time Hot Hr        | Time since shutdown after which a hot start is required |
-| Start Time Warm Hr       | Time since shutdown after which a warm start is required |
+| Start Time Warm Hr       | Transition time between hot and cold statuses after a shutdown |
 | Start Heat Cold MMBTU     | Heat required to startup from cold in million BTU per startup   |
-| Start Heat Warm MMBTU     | Heat required to startup from warm in million BTU per startup   |
 | Start Heat Hot MMBTU      | Heat required to startup from hot in million BTU per startup    |
 | FOR                      | Forced outage rate                                               |
 | MTTF Hr                  | Meant time to forced outage                                      |

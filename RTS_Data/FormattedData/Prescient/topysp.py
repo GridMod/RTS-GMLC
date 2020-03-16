@@ -16,7 +16,7 @@ if len(sys.argv) > 1:
         print("Unknown argument=%s specified - ignored" % sys.argv[1])
 
 Generator = namedtuple('Generator',
-                       ['ID', # integer 
+                       ['ID', # integer
                         'Bus',
                         'UnitGroup',
                         'UnitType',
@@ -29,12 +29,12 @@ Generator = namedtuple('Generator',
                         'StartTimeCold',    # units are hours
                         'StartTimeWarm',    # units are hours
                         'StartTimeHot',     # units are hours
-                        'StartCostCold',    # units are MMBTU 
+                        'StartCostCold',    # units are MMBTU
                         'StartCostWarm',    # units are MMBTU
                         'StartCostHot',     # units are MMBTU
                         'NonFuelStartCost', # units are $
                         'FuelPrice',        # units are $ / MMBTU
-                        'OutputPct0',  
+                        'OutputPct0',
                         'OutputPct1',
                         'OutputPct2',
                         'OutputPct3',
@@ -63,7 +63,7 @@ Branch = namedtuple('Branch',
                      'ToBus',
                      'R',
                      'X', # csv file is in PU, multiple by 100 to make consistent with MW
-                     'B', 
+                     'B',
                      'ContRating'],
                     verbose=False)
 
@@ -112,7 +112,6 @@ for generator_index in generator_df.index.tolist():
                               int(this_generator_dict["Start Time Warm Hr"]),
                               int(this_generator_dict["Start Time Hot Hr"]),
                               float(this_generator_dict["Start Heat Cold MMBTU"]),
-                              float(this_generator_dict["Start Heat Warm MMBTU"]),                                    
                               float(this_generator_dict["Start Heat Hot MMBTU"]),
                               float(this_generator_dict["Non Fuel Start Cost $"]),
                               float(this_generator_dict["Fuel Price $/MMBTU"]),
@@ -124,7 +123,7 @@ for generator_index in generator_df.index.tolist():
                               float(this_generator_dict["HR_incr_1"]),
                               float(this_generator_dict["HR_incr_2"]),
                               float(this_generator_dict["HR_incr_3"]))
-    
+
     generator_dict[new_generator.ID] = new_generator
 
 bus_id_to_name_dict = {}
@@ -144,7 +143,7 @@ for bus_index in bus_df.index.tolist():
     bus_dict[new_bus.Name] = new_bus
     bus_id_to_name_dict[new_bus.ID] = new_bus.Name
 
-# compute aggregate load per area, and then compute 
+# compute aggregate load per area, and then compute
 # load participation factors from each bus from that data.
 region_total_load = {}
 for this_region in range(1,4):
@@ -194,9 +193,9 @@ for gen_name, gen_spec in generator_dict.items():
             print("***WARNING - No timeseries pointer entry found for generator=%s" % gen_spec.ID)
         else:
             print("Time series for generator=%s will be loaded from file=%s" % (gen_spec.ID, timeseries_pointer_dict[(gen_spec.ID,"DAY_AHEAD")].DataFile))
-            renewables_timeseries_df = pd.read_table(timeseries_pointer_dict[(gen_spec.ID,"DAY_AHEAD")].DataFile, 
-                                                     header=0, 
-                                                     sep=',', 
+            renewables_timeseries_df = pd.read_table(timeseries_pointer_dict[(gen_spec.ID,"DAY_AHEAD")].DataFile,
+                                                     header=0,
+                                                     sep=',',
                                                      parse_dates=[[0, 1, 2, 3]],
                                                      date_parser=lambda *columns: datetime(*map(int,columns[0:3]), int(columns[3])-1))
             this_source_timeseries_df = renewables_timeseries_df.loc[:,["Year_Month_Day_Period", gen_spec.ID]]
@@ -214,9 +213,9 @@ for gen_name, gen_spec in generator_dict.items():
             filtered_timeseries[gen_spec.ID] = renewables_timeseries
 
 load_timeseries_spec = timeseries_pointer_dict[("Load","DAY_AHEAD")]
-load_timeseries_df = pd.read_table(load_timeseries_spec.DataFile, 
-                                   header=0, 
-                                   sep=',', 
+load_timeseries_df = pd.read_table(load_timeseries_spec.DataFile,
+                                   header=0,
+                                   sep=',',
                                    parse_dates=[[0, 1, 2, 3]],
                                    date_parser=lambda *columns: datetime(*map(int,columns[0:3]), int(columns[3])-1))
 load_timeseries_df = load_timeseries_df.rename(columns = {"Year_Month_Day_Period" : "DateTime"})
@@ -235,7 +234,7 @@ unit_on_time_df = pd.read_table("../FormattedData/PLEXOS/PLEXOS_Solution/DAY_AHE
                                 header=0,
                                 sep=",")
 unit_on_time_df_as_dict = unit_on_time_df.to_dict(orient="split")
-unit_on_t0_state_dict = {} 
+unit_on_t0_state_dict = {}
 for i in range(0,len(unit_on_time_df_as_dict["columns"])):
     gen_id = unit_on_time_df_as_dict["columns"][i]
     unit_on_t0_state_dict[gen_id] = int(unit_on_time_df_as_dict["data"][0][i])
@@ -383,7 +382,7 @@ print("", file=dat_file)
 print("param: MinimumPowerOutput MaximumPowerOutput MinimumUpTime MinimumDownTime NominalRampUpLimit NominalRampDownLimit StartupRampLimit ShutdownRampLimit := ", file=dat_file)
 for gen_id, gen_spec in generator_dict.items():
     if gen_spec.Fuel == "Oil" or gen_spec.Fuel == "Coal" or gen_spec.Fuel == "NG" or gen_spec.Fuel == "Nuclear":
-        print("%15s %10.2f %10.2f %2d %2d %10.2f %10.2f %10.2f %10.2f" % (gen_id, 
+        print("%15s %10.2f %10.2f %2d %2d %10.2f %10.2f %10.2f %10.2f" % (gen_id,
                                                                           gen_spec.MinPower,
                                                                           gen_spec.MaxPower,
                                                                           gen_spec.MinUpTime,
@@ -401,7 +400,7 @@ for gen_id, gen_spec in generator_dict.items():
     if gen_spec.Fuel == "Oil" or gen_spec.Fuel == "Coal" or gen_spec.Fuel == "NG" or gen_spec.Fuel == "Nuclear":
         # per Brenan: the following replicates that in PLEXOS runs of RTS-GMLC
         print("set StartupLags[%s] := %d ;" % (gen_id, gen_spec.MinDownTime), file=dat_file)
-        print("set StartupCosts[%s] := %12.2f ;" % (gen_id, gen_spec.StartCostCold * gen_spec.FuelPrice + gen_spec.NonFuelStartCost), file=dat_file)        
+        print("set StartupCosts[%s] := %12.2f ;" % (gen_id, gen_spec.StartCostCold * gen_spec.FuelPrice + gen_spec.NonFuelStartCost), file=dat_file)
 print("", file=dat_file)
 
 print("param ShutdownFixedCost := ", file=dat_file)
@@ -409,7 +408,7 @@ for gen_id, gen_spec in generator_dict.items():
     if gen_spec.Fuel == "Oil" or gen_spec.Fuel == "Coal" or gen_spec.Fuel == "NG" or gen_spec.Fuel == "Nuclear":
         # per Brenan: the following replicates that in PLEXOS runs of RTS-GMLC
         print("%s %12.2f" % (gen_id, gen_spec.StartCostCold * gen_spec.FuelPrice), file=dat_file)
-print(";", file=dat_file)        
+print(";", file=dat_file)
 
 print("", file=dat_file)
 
@@ -425,7 +424,7 @@ for gen_id, gen_spec in generator_dict.items():
               file=dat_file)
         # NOTES:
         # 1) Fuel price is in $/MMBTU
-        # 2) Heat Rate quantities are in BTU/KWH 
+        # 2) Heat Rate quantities are in BTU/KWH
         # 3) 1+2 => need to convert both from BTU->MMBTU and from KWH->MWH
         y0 = gen_spec.FuelPrice * ((gen_spec.HeatRateAvg0 * 1000.0 / 1000000.0) * x0)
         y1 = gen_spec.FuelPrice * (((x1-x0) * (gen_spec.HeatRateIncr1 * 1000.0 / 1000000.0))) + y0
@@ -446,7 +445,7 @@ for gen_id, gen_spec in generator_dict.items():
     if unit_on_t0_state_dict[gen_id] < 0:
         power_generated_t0 = 0.0
     else:
-        power_generated_t0 = gen_spec.MinPower 
+        power_generated_t0 = gen_spec.MinPower
     print("%15s %3d %12.2f" % (gen_id, unit_on_t0_state_dict[gen_id], power_generated_t0),
           file=dat_file)
 print(";", file=dat_file)
@@ -458,7 +457,7 @@ if copper_sheet:
     for i in range(1,len(load_timeseries)+1):
         this_load_spec = load_timeseries[i-1]
         print("%15s %2d %12.2f" % ("CopperSheet",
-                                   i, 
+                                   i,
                                    this_load_spec.Area1 + this_load_spec.Area2 + this_load_spec.Area3),
               file=dat_file)
 else:
@@ -473,11 +472,11 @@ else:
             else:
                 this_bus_load = this_load_spec.Area3
             this_bus_load *= bus_load_participation_factor_dict[bus_name]
-                
+
             print("%15s %2d %12.2f" % (bus_name,
-                                       i, 
+                                       i,
                                        this_bus_load),
-              file=dat_file)            
+              file=dat_file)
 print(";", file=dat_file)
 
 print("", file=dat_file)
@@ -528,7 +527,7 @@ for gen_id, gen_spec in generator_dict.items():
     fraction_nondispatchable = 0.0
     if gen_spec.UnitType == "HYDRO" or gen_spec.UnitType == "RTPV":
         fraction_nondispatchable = 1.0
-        
+
     print("Source(%s," % gen_id, file=sources_file)
     print("source_type=\"%s\"," % source_string, file=sources_file)
     print("forecasts_file=\"%s\"," % forecasts_actuals_filename, file=sources_file)
@@ -552,7 +551,7 @@ else:
         print("Source(%s," % bus_name, file=sources_file)
         print("source_type=\"load\",", file=sources_file)
         print("forecasts_file=\"timeseries_data_files/%s_forecasts_actuals.csv\"," % bus_load_filename_prefix, file=sources_file)
-        print("actuals_file=\"timeseries_data_files/%s_forecasts_actuals.csv\"" % bus_load_filename_prefix, file=sources_file)        
+        print("actuals_file=\"timeseries_data_files/%s_forecasts_actuals.csv\"" % bus_load_filename_prefix, file=sources_file)
         print(");", file=sources_file)
 
 sources_file.close()
