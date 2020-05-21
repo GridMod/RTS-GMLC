@@ -162,6 +162,166 @@
     {
         "simulation": "DAY_AHEAD",
         "category": "Generator",
+        "component_name": "122_HYDRO_1",
+        "label": "get_inflow",
+        "scaling_factor": 52.49761899362675,
+        "data_file": "../../timeseries_data_files/Hydro/DAY_AHEAD_hydro.csv"
+    },
+    {
+        "simulation": "DAY_AHEAD",
+        "category": "Generator",
+        "component_name": "122_HYDRO_2",
+        "label": "get_inflow",
+        "scaling_factor": 52.49761899362675,
+        "data_file": "../../timeseries_data_files/Hydro/DAY_AHEAD_hydro.csv"
+    },
+    {
+        "simulation": "DAY_AHEAD",
+        "category": "Generator",
+        "component_name": "122_HYDRO_3",
+        "label": "get_inflow",
+        "scaling_factor": 52.49761899362675,
+        "data_file": "../../timeseries_data_files/Hydro/DAY_AHEAD_hydro.csv"
+    },
+    {
+        "simulation": "DAY_AHEAD",
+        "category": "Generator",
+        "component_name": "122_HYDRO_4",
+        "label": "get_inflow",
+        "scaling_factor": 52.49761899362675,
+        "data_file": "../../timeseries_data_files/Hydro/DAY_AHEAD_hydro.csv"
+    },
+    {
+        "simulation": "DAY_AHEAD",
+        "category": "Generator",
+        "component_name": "122_HYDRO_5",
+        "label": "get_inflow",
+        "scaling_factor": 52.49761899362675,
+        "data_file": "../../timeseries_data_files/Hydro/DAY_AHEAD_hydro.csv"
+    },
+    {
+        "simulation": "DAY_AHEAD",
+        "category": "Generator",
+        "component_name": "122_HYDRO_6",
+        "label": "get_inflow",
+        "scaling_factor": 52.49761899362675,
+        "data_file": "../../timeseries_data_files/Hydro/DAY_AHEAD_hydro.csv"
+    },
+    {
+        "simulation": "DAY_AHEAD",
+        "category": "Generator",
+        "component_name": "201_HYDRO_4",
+        "label": "get_inflow",
+        "scaling_factor": 52.49761899362675,
+        "data_file": "../../timeseries_data_files/Hydro/DAY_AHEAD_hydro.csv"
+    },
+    {
+        "simulation": "DAY_AHEAD",
+        "category": "Generator",
+        "component_name": "215_HYDRO_1",
+        "label": "get_inflow",
+        "scaling_factor": 52.49761899362675,
+        "data_file": "../../timeseries_data_files/Hydro/DAY_AHEAD_hydro.csv"
+    },
+    {
+        "simulation": "DAY_AHEAD",
+        "category": "Generator",
+        "component_name": "215_HYDRO_2",
+        "label": "get_inflow",
+        "scaling_factor": 52.49761899362675,
+        "data_file": "../../timeseries_data_files/Hydro/DAY_AHEAD_hydro.csv"
+    },
+    {
+        "simulation": "DAY_AHEAD",
+        "category": "Generator",
+        "component_name": "215_HYDRO_3",
+        "label": "get_inflow",
+        "scaling_factor": 52.49761899362675,
+        "data_file": "../../timeseries_data_files/Hydro/DAY_AHEAD_hydro.csv"
+    },
+    {
+        "simulation": "DAY_AHEAD",
+        "category": "Generator",
+        "component_name": "222_HYDRO_1",
+        "label": "get_inflow",
+        "scaling_factor": 52.49761899362675,
+        "data_file": "../../timeseries_data_files/Hydro/DAY_AHEAD_hydro.csv"
+    },
+    {
+        "simulation": "DAY_AHEAD",
+        "category": "Generator",
+        "component_name": "222_HYDRO_2",
+        "label": "get_inflow",
+        "scaling_factor": 52.49761899362675,
+        "data_file": "../../timeseries_data_files/Hydro/DAY_AHEAD_hydro.csv"
+    },
+    {
+        "simulation": "DAY_AHEAD",
+        "category": "Generator",
+        "component_name": "222_HYDRO_3",
+        "label": "get_inflow",
+        "scaling_factor": 52.49761899362675,
+        "data_file": "../../timeseries_data_files/Hydro/DAY_AHEAD_hydro.csv"
+    },
+    {
+        "simulation": "DAY_AHEAD",
+        "category": "Generator",
+        "component_name": "222_HYDRO_4",
+        "label": "get_inflow",
+        "scaling_factor": 52.49761899362675,
+        "data_file": "../../timeseries_data_files/Hydro/DAY_AHEAD_hydro.csv"
+    },
+    {
+        "simulation": "DAY_AHEAD",
+        "category": "Generator",
+        "component_name": "222_HYDRO_5",
+        "label": "get_inflow",
+        "scaling_factor": 52.49761899362675,
+        "data_file": "../../timeseries_data_files/Hydro/DAY_AHEAD_hydro.csv"
+    },
+    {
+        "simulation": "DAY_AHEAD",
+        "category": "Generator",
+        "component_name": "222_HYDRO_6",
+        "label": "get_inflow",
+        "scaling_factor": 52.49761899362675,
+        "data_file": "../../timeseries_data_files/Hydro/DAY_AHEAD_hydro.csv"
+    },
+    {
+        "simulation": "DAY_AHEAD",
+        "category": "Generator",
+        "component_name": "322_HYDRO_1",
+        "label": "get_inflow",
+        "scaling_factor": 52.49761899362675,
+        "data_file": "../../timeseries_data_files/Hydro/DAY_AHEAD_hydro.csv"
+    },
+    {
+        "simulation": "DAY_AHEAD",
+        "category": "Generator",
+        "component_name": "322_HYDRO_2",
+        "label": "get_inflow",
+        "scaling_factor": 52.49761899362675,
+        "data_file": "../../timeseries_data_files/Hydro/DAY_AHEAD_hydro.csv"
+    },
+    {
+        "simulation": "DAY_AHEAD",
+        "category": "Generator",
+        "component_name": "322_HYDRO_3",
+        "label": "get_inflow",
+        "scaling_factor": 52.49761899362675,
+        "data_file": "../../timeseries_data_files/Hydro/DAY_AHEAD_hydro.csv"
+    },
+    {
+        "simulation": "DAY_AHEAD",
+        "category": "Generator",
+        "component_name": "322_HYDRO_4",
+        "label": "get_inflow",
+        "scaling_factor": 52.49761899362675,
+        "data_file": "../../timeseries_data_files/Hydro/DAY_AHEAD_hydro.csv"
+    },
+    {
+        "simulation": "DAY_AHEAD",
+        "category": "Generator",
         "component_name": "320_PV_1",
         "label": "get_rating",
         "scaling_factor": 51.6,
@@ -638,414 +798,6 @@
         "label": "get_rating",
         "scaling_factor": 713.5,
         "data_file": "../../timeseries_data_files/WIND/DAY_AHEAD_wind.csv"
-    },
-    {
-        "simulation": "DAY_AHEAD",
-        "category": "Generator",
-        "component_name": "122_HYDRO_1",
-        "label": "get_active_power_limits_min",
-        "scaling_factor": 52.49761899362675,
-        "data_file": "../../timeseries_data_files/Hydro/DAY_AHEAD_hydro.csv"
-    },
-    {
-        "simulation": "DAY_AHEAD",
-        "category": "Generator",
-        "component_name": "122_HYDRO_2",
-        "label": "get_active_power_limits_min",
-        "scaling_factor": 52.49761899362675,
-        "data_file": "../../timeseries_data_files/Hydro/DAY_AHEAD_hydro.csv"
-    },
-    {
-        "simulation": "DAY_AHEAD",
-        "category": "Generator",
-        "component_name": "122_HYDRO_3",
-        "label": "get_active_power_limits_min",
-        "scaling_factor": 52.49761899362675,
-        "data_file": "../../timeseries_data_files/Hydro/DAY_AHEAD_hydro.csv"
-    },
-    {
-        "simulation": "DAY_AHEAD",
-        "category": "Generator",
-        "component_name": "122_HYDRO_4",
-        "label": "get_active_power_limits_min",
-        "scaling_factor": 52.49761899362675,
-        "data_file": "../../timeseries_data_files/Hydro/DAY_AHEAD_hydro.csv"
-    },
-    {
-        "simulation": "DAY_AHEAD",
-        "category": "Generator",
-        "component_name": "122_HYDRO_5",
-        "label": "get_active_power_limits_min",
-        "scaling_factor": 52.49761899362675,
-        "data_file": "../../timeseries_data_files/Hydro/DAY_AHEAD_hydro.csv"
-    },
-    {
-        "simulation": "DAY_AHEAD",
-        "category": "Generator",
-        "component_name": "122_HYDRO_6",
-        "label": "get_active_power_limits_min",
-        "scaling_factor": 52.49761899362675,
-        "data_file": "../../timeseries_data_files/Hydro/DAY_AHEAD_hydro.csv"
-    },
-    {
-        "simulation": "DAY_AHEAD",
-        "category": "Generator",
-        "component_name": "201_HYDRO_4",
-        "label": "get_active_power_limits_min",
-        "scaling_factor": 52.49761899362675,
-        "data_file": "../../timeseries_data_files/Hydro/DAY_AHEAD_hydro.csv"
-    },
-    {
-        "simulation": "DAY_AHEAD",
-        "category": "Generator",
-        "component_name": "215_HYDRO_1",
-        "label": "get_active_power_limits_min",
-        "scaling_factor": 52.49761899362675,
-        "data_file": "../../timeseries_data_files/Hydro/DAY_AHEAD_hydro.csv"
-    },
-    {
-        "simulation": "DAY_AHEAD",
-        "category": "Generator",
-        "component_name": "215_HYDRO_2",
-        "label": "get_active_power_limits_min",
-        "scaling_factor": 52.49761899362675,
-        "data_file": "../../timeseries_data_files/Hydro/DAY_AHEAD_hydro.csv"
-    },
-    {
-        "simulation": "DAY_AHEAD",
-        "category": "Generator",
-        "component_name": "215_HYDRO_3",
-        "label": "get_active_power_limits_min",
-        "scaling_factor": 52.49761899362675,
-        "data_file": "../../timeseries_data_files/Hydro/DAY_AHEAD_hydro.csv"
-    },
-    {
-        "simulation": "DAY_AHEAD",
-        "category": "Generator",
-        "component_name": "222_HYDRO_1",
-        "label": "get_active_power_limits_min",
-        "scaling_factor": 52.49761899362675,
-        "data_file": "../../timeseries_data_files/Hydro/DAY_AHEAD_hydro.csv"
-    },
-    {
-        "simulation": "DAY_AHEAD",
-        "category": "Generator",
-        "component_name": "222_HYDRO_2",
-        "label": "get_active_power_limits_min",
-        "scaling_factor": 52.49761899362675,
-        "data_file": "../../timeseries_data_files/Hydro/DAY_AHEAD_hydro.csv"
-    },
-    {
-        "simulation": "DAY_AHEAD",
-        "category": "Generator",
-        "component_name": "222_HYDRO_3",
-        "label": "get_active_power_limits_min",
-        "scaling_factor": 52.49761899362675,
-        "data_file": "../../timeseries_data_files/Hydro/DAY_AHEAD_hydro.csv"
-    },
-    {
-        "simulation": "DAY_AHEAD",
-        "category": "Generator",
-        "component_name": "222_HYDRO_4",
-        "label": "get_active_power_limits_min",
-        "scaling_factor": 52.49761899362675,
-        "data_file": "../../timeseries_data_files/Hydro/DAY_AHEAD_hydro.csv"
-    },
-    {
-        "simulation": "DAY_AHEAD",
-        "category": "Generator",
-        "component_name": "222_HYDRO_5",
-        "label": "get_active_power_limits_min",
-        "scaling_factor": 52.49761899362675,
-        "data_file": "../../timeseries_data_files/Hydro/DAY_AHEAD_hydro.csv"
-    },
-    {
-        "simulation": "DAY_AHEAD",
-        "category": "Generator",
-        "component_name": "222_HYDRO_6",
-        "label": "get_active_power_limits_min",
-        "scaling_factor": 52.49761899362675,
-        "data_file": "../../timeseries_data_files/Hydro/DAY_AHEAD_hydro.csv"
-    },
-    {
-        "simulation": "DAY_AHEAD",
-        "category": "Generator",
-        "component_name": "322_HYDRO_1",
-        "label": "get_active_power_limits_min",
-        "scaling_factor": 52.49761899362675,
-        "data_file": "../../timeseries_data_files/Hydro/DAY_AHEAD_hydro.csv"
-    },
-    {
-        "simulation": "DAY_AHEAD",
-        "category": "Generator",
-        "component_name": "322_HYDRO_2",
-        "label": "get_active_power_limits_min",
-        "scaling_factor": 52.49761899362675,
-        "data_file": "../../timeseries_data_files/Hydro/DAY_AHEAD_hydro.csv"
-    },
-    {
-        "simulation": "DAY_AHEAD",
-        "category": "Generator",
-        "component_name": "322_HYDRO_3",
-        "label": "get_active_power_limits_min",
-        "scaling_factor": 52.49761899362675,
-        "data_file": "../../timeseries_data_files/Hydro/DAY_AHEAD_hydro.csv"
-    },
-    {
-        "simulation": "DAY_AHEAD",
-        "category": "Generator",
-        "component_name": "322_HYDRO_4",
-        "label": "get_active_power_limits_min",
-        "scaling_factor": 52.49761899362675,
-        "data_file": "../../timeseries_data_files/Hydro/DAY_AHEAD_hydro.csv"
-    },
-    {
-        "simulation": "DAY_AHEAD",
-        "category": "Generator",
-        "component_name": "308_RTPV_1",
-        "label": "get_active_power_limits_min",
-        "scaling_factor": 100.9,
-        "data_file": "../../timeseries_data_files/RTPV/DAY_AHEAD_rtpv.csv"
-    },
-    {
-        "simulation": "DAY_AHEAD",
-        "category": "Generator",
-        "component_name": "313_RTPV_1",
-        "label": "get_active_power_limits_min",
-        "scaling_factor": 101.70000000000002,
-        "data_file": "../../timeseries_data_files/RTPV/DAY_AHEAD_rtpv.csv"
-    },
-    {
-        "simulation": "DAY_AHEAD",
-        "category": "Generator",
-        "component_name": "313_RTPV_2",
-        "label": "get_active_power_limits_min",
-        "scaling_factor": 63.1,
-        "data_file": "../../timeseries_data_files/RTPV/DAY_AHEAD_rtpv.csv"
-    },
-    {
-        "simulation": "DAY_AHEAD",
-        "category": "Generator",
-        "component_name": "313_RTPV_3",
-        "label": "get_active_power_limits_min",
-        "scaling_factor": 65.4,
-        "data_file": "../../timeseries_data_files/RTPV/DAY_AHEAD_rtpv.csv"
-    },
-    {
-        "simulation": "DAY_AHEAD",
-        "category": "Generator",
-        "component_name": "313_RTPV_4",
-        "label": "get_active_power_limits_min",
-        "scaling_factor": 67.0,
-        "data_file": "../../timeseries_data_files/RTPV/DAY_AHEAD_rtpv.csv"
-    },
-    {
-        "simulation": "DAY_AHEAD",
-        "category": "Generator",
-        "component_name": "313_RTPV_5",
-        "label": "get_active_power_limits_min",
-        "scaling_factor": 64.8,
-        "data_file": "../../timeseries_data_files/RTPV/DAY_AHEAD_rtpv.csv"
-    },
-    {
-        "simulation": "DAY_AHEAD",
-        "category": "Generator",
-        "component_name": "313_RTPV_6",
-        "label": "get_active_power_limits_min",
-        "scaling_factor": 63.800000000000004,
-        "data_file": "../../timeseries_data_files/RTPV/DAY_AHEAD_rtpv.csv"
-    },
-    {
-        "simulation": "DAY_AHEAD",
-        "category": "Generator",
-        "component_name": "313_RTPV_7",
-        "label": "get_active_power_limits_min",
-        "scaling_factor": 64.1,
-        "data_file": "../../timeseries_data_files/RTPV/DAY_AHEAD_rtpv.csv"
-    },
-    {
-        "simulation": "DAY_AHEAD",
-        "category": "Generator",
-        "component_name": "313_RTPV_8",
-        "label": "get_active_power_limits_min",
-        "scaling_factor": 66.6,
-        "data_file": "../../timeseries_data_files/RTPV/DAY_AHEAD_rtpv.csv"
-    },
-    {
-        "simulation": "DAY_AHEAD",
-        "category": "Generator",
-        "component_name": "313_RTPV_9",
-        "label": "get_active_power_limits_min",
-        "scaling_factor": 62.4,
-        "data_file": "../../timeseries_data_files/RTPV/DAY_AHEAD_rtpv.csv"
-    },
-    {
-        "simulation": "DAY_AHEAD",
-        "category": "Generator",
-        "component_name": "313_RTPV_10",
-        "label": "get_active_power_limits_min",
-        "scaling_factor": 66.9,
-        "data_file": "../../timeseries_data_files/RTPV/DAY_AHEAD_rtpv.csv"
-    },
-    {
-        "simulation": "DAY_AHEAD",
-        "category": "Generator",
-        "component_name": "313_RTPV_11",
-        "label": "get_active_power_limits_min",
-        "scaling_factor": 65.2,
-        "data_file": "../../timeseries_data_files/RTPV/DAY_AHEAD_rtpv.csv"
-    },
-    {
-        "simulation": "DAY_AHEAD",
-        "category": "Generator",
-        "component_name": "313_RTPV_12",
-        "label": "get_active_power_limits_min",
-        "scaling_factor": 27.800000000000004,
-        "data_file": "../../timeseries_data_files/RTPV/DAY_AHEAD_rtpv.csv"
-    },
-    {
-        "simulation": "DAY_AHEAD",
-        "category": "Generator",
-        "component_name": "320_RTPV_1",
-        "label": "get_active_power_limits_min",
-        "scaling_factor": 27.3,
-        "data_file": "../../timeseries_data_files/RTPV/DAY_AHEAD_rtpv.csv"
-    },
-    {
-        "simulation": "DAY_AHEAD",
-        "category": "Generator",
-        "component_name": "320_RTPV_2",
-        "label": "get_active_power_limits_min",
-        "scaling_factor": 27.0,
-        "data_file": "../../timeseries_data_files/RTPV/DAY_AHEAD_rtpv.csv"
-    },
-    {
-        "simulation": "DAY_AHEAD",
-        "category": "Generator",
-        "component_name": "320_RTPV_3",
-        "label": "get_active_power_limits_min",
-        "scaling_factor": 28.300000000000004,
-        "data_file": "../../timeseries_data_files/RTPV/DAY_AHEAD_rtpv.csv"
-    },
-    {
-        "simulation": "DAY_AHEAD",
-        "category": "Generator",
-        "component_name": "313_RTPV_13",
-        "label": "get_active_power_limits_min",
-        "scaling_factor": 27.200000000000003,
-        "data_file": "../../timeseries_data_files/RTPV/DAY_AHEAD_rtpv.csv"
-    },
-    {
-        "simulation": "DAY_AHEAD",
-        "category": "Generator",
-        "component_name": "320_RTPV_4",
-        "label": "get_active_power_limits_min",
-        "scaling_factor": 27.0,
-        "data_file": "../../timeseries_data_files/RTPV/DAY_AHEAD_rtpv.csv"
-    },
-    {
-        "simulation": "DAY_AHEAD",
-        "category": "Generator",
-        "component_name": "320_RTPV_5",
-        "label": "get_active_power_limits_min",
-        "scaling_factor": 28.199999999999996,
-        "data_file": "../../timeseries_data_files/RTPV/DAY_AHEAD_rtpv.csv"
-    },
-    {
-        "simulation": "DAY_AHEAD",
-        "category": "Generator",
-        "component_name": "118_RTPV_1",
-        "label": "get_active_power_limits_min",
-        "scaling_factor": 9.3,
-        "data_file": "../../timeseries_data_files/RTPV/DAY_AHEAD_rtpv.csv"
-    },
-    {
-        "simulation": "DAY_AHEAD",
-        "category": "Generator",
-        "component_name": "118_RTPV_2",
-        "label": "get_active_power_limits_min",
-        "scaling_factor": 9.7,
-        "data_file": "../../timeseries_data_files/RTPV/DAY_AHEAD_rtpv.csv"
-    },
-    {
-        "simulation": "DAY_AHEAD",
-        "category": "Generator",
-        "component_name": "118_RTPV_3",
-        "label": "get_active_power_limits_min",
-        "scaling_factor": 9.4,
-        "data_file": "../../timeseries_data_files/RTPV/DAY_AHEAD_rtpv.csv"
-    },
-    {
-        "simulation": "DAY_AHEAD",
-        "category": "Generator",
-        "component_name": "118_RTPV_4",
-        "label": "get_active_power_limits_min",
-        "scaling_factor": 9.1,
-        "data_file": "../../timeseries_data_files/RTPV/DAY_AHEAD_rtpv.csv"
-    },
-    {
-        "simulation": "DAY_AHEAD",
-        "category": "Generator",
-        "component_name": "118_RTPV_5",
-        "label": "get_active_power_limits_min",
-        "scaling_factor": 9.1,
-        "data_file": "../../timeseries_data_files/RTPV/DAY_AHEAD_rtpv.csv"
-    },
-    {
-        "simulation": "DAY_AHEAD",
-        "category": "Generator",
-        "component_name": "118_RTPV_6",
-        "label": "get_active_power_limits_min",
-        "scaling_factor": 9.7,
-        "data_file": "../../timeseries_data_files/RTPV/DAY_AHEAD_rtpv.csv"
-    },
-    {
-        "simulation": "DAY_AHEAD",
-        "category": "Generator",
-        "component_name": "320_RTPV_6",
-        "label": "get_active_power_limits_min",
-        "scaling_factor": 9.4,
-        "data_file": "../../timeseries_data_files/RTPV/DAY_AHEAD_rtpv.csv"
-    },
-    {
-        "simulation": "DAY_AHEAD",
-        "category": "Generator",
-        "component_name": "118_RTPV_7",
-        "label": "get_active_power_limits_min",
-        "scaling_factor": 11.8,
-        "data_file": "../../timeseries_data_files/RTPV/DAY_AHEAD_rtpv.csv"
-    },
-    {
-        "simulation": "DAY_AHEAD",
-        "category": "Generator",
-        "component_name": "118_RTPV_8",
-        "label": "get_active_power_limits_min",
-        "scaling_factor": 11.2,
-        "data_file": "../../timeseries_data_files/RTPV/DAY_AHEAD_rtpv.csv"
-    },
-    {
-        "simulation": "DAY_AHEAD",
-        "category": "Generator",
-        "component_name": "118_RTPV_9",
-        "label": "get_active_power_limits_min",
-        "scaling_factor": 10.3,
-        "data_file": "../../timeseries_data_files/RTPV/DAY_AHEAD_rtpv.csv"
-    },
-    {
-        "simulation": "DAY_AHEAD",
-        "category": "Generator",
-        "component_name": "118_RTPV_10",
-        "label": "get_active_power_limits_min",
-        "scaling_factor": 4.5,
-        "data_file": "../../timeseries_data_files/RTPV/DAY_AHEAD_rtpv.csv"
-    },
-    {
-        "simulation": "DAY_AHEAD",
-        "category": "Generator",
-        "component_name": "213_RTPV_1",
-        "label": "get_active_power_limits_min",
-        "scaling_factor": 13.200000000000001,
-        "data_file": "../../timeseries_data_files/RTPV/DAY_AHEAD_rtpv.csv"
     },
     {
         "simulation": "DAY_AHEAD",
@@ -1782,414 +1534,6 @@
         "label": "get_rating",
         "scaling_factor": 713.5,
         "data_file": "../../timeseries_data_files/WIND/REAL_TIME_wind.csv"
-    },
-    {
-        "simulation": "REAL_TIME",
-        "category": "Generator",
-        "component_name": "122_HYDRO_1",
-        "label": "get_active_power_limits_min",
-        "scaling_factor": 52.49761899362675,
-        "data_file": "../../timeseries_data_files/Hydro/REAL_TIME_hydro.csv"
-    },
-    {
-        "simulation": "REAL_TIME",
-        "category": "Generator",
-        "component_name": "122_HYDRO_2",
-        "label": "get_active_power_limits_min",
-        "scaling_factor": 52.49761899362675,
-        "data_file": "../../timeseries_data_files/Hydro/REAL_TIME_hydro.csv"
-    },
-    {
-        "simulation": "REAL_TIME",
-        "category": "Generator",
-        "component_name": "122_HYDRO_3",
-        "label": "get_active_power_limits_min",
-        "scaling_factor": 52.49761899362675,
-        "data_file": "../../timeseries_data_files/Hydro/REAL_TIME_hydro.csv"
-    },
-    {
-        "simulation": "REAL_TIME",
-        "category": "Generator",
-        "component_name": "122_HYDRO_4",
-        "label": "get_active_power_limits_min",
-        "scaling_factor": 52.49761899362675,
-        "data_file": "../../timeseries_data_files/Hydro/REAL_TIME_hydro.csv"
-    },
-    {
-        "simulation": "REAL_TIME",
-        "category": "Generator",
-        "component_name": "122_HYDRO_5",
-        "label": "get_active_power_limits_min",
-        "scaling_factor": 52.49761899362675,
-        "data_file": "../../timeseries_data_files/Hydro/REAL_TIME_hydro.csv"
-    },
-    {
-        "simulation": "REAL_TIME",
-        "category": "Generator",
-        "component_name": "122_HYDRO_6",
-        "label": "get_active_power_limits_min",
-        "scaling_factor": 52.49761899362675,
-        "data_file": "../../timeseries_data_files/Hydro/REAL_TIME_hydro.csv"
-    },
-    {
-        "simulation": "REAL_TIME",
-        "category": "Generator",
-        "component_name": "201_HYDRO_4",
-        "label": "get_active_power_limits_min",
-        "scaling_factor": 52.49761899362675,
-        "data_file": "../../timeseries_data_files/Hydro/REAL_TIME_hydro.csv"
-    },
-    {
-        "simulation": "REAL_TIME",
-        "category": "Generator",
-        "component_name": "215_HYDRO_1",
-        "label": "get_active_power_limits_min",
-        "scaling_factor": 52.49761899362675,
-        "data_file": "../../timeseries_data_files/Hydro/REAL_TIME_hydro.csv"
-    },
-    {
-        "simulation": "REAL_TIME",
-        "category": "Generator",
-        "component_name": "215_HYDRO_2",
-        "label": "get_active_power_limits_min",
-        "scaling_factor": 52.49761899362675,
-        "data_file": "../../timeseries_data_files/Hydro/REAL_TIME_hydro.csv"
-    },
-    {
-        "simulation": "REAL_TIME",
-        "category": "Generator",
-        "component_name": "215_HYDRO_3",
-        "label": "get_active_power_limits_min",
-        "scaling_factor": 52.49761899362675,
-        "data_file": "../../timeseries_data_files/Hydro/REAL_TIME_hydro.csv"
-    },
-    {
-        "simulation": "REAL_TIME",
-        "category": "Generator",
-        "component_name": "222_HYDRO_1",
-        "label": "get_active_power_limits_min",
-        "scaling_factor": 52.49761899362675,
-        "data_file": "../../timeseries_data_files/Hydro/REAL_TIME_hydro.csv"
-    },
-    {
-        "simulation": "REAL_TIME",
-        "category": "Generator",
-        "component_name": "222_HYDRO_2",
-        "label": "get_active_power_limits_min",
-        "scaling_factor": 52.49761899362675,
-        "data_file": "../../timeseries_data_files/Hydro/REAL_TIME_hydro.csv"
-    },
-    {
-        "simulation": "REAL_TIME",
-        "category": "Generator",
-        "component_name": "222_HYDRO_3",
-        "label": "get_active_power_limits_min",
-        "scaling_factor": 52.49761899362675,
-        "data_file": "../../timeseries_data_files/Hydro/REAL_TIME_hydro.csv"
-    },
-    {
-        "simulation": "REAL_TIME",
-        "category": "Generator",
-        "component_name": "222_HYDRO_4",
-        "label": "get_active_power_limits_min",
-        "scaling_factor": 52.49761899362675,
-        "data_file": "../../timeseries_data_files/Hydro/REAL_TIME_hydro.csv"
-    },
-    {
-        "simulation": "REAL_TIME",
-        "category": "Generator",
-        "component_name": "222_HYDRO_5",
-        "label": "get_active_power_limits_min",
-        "scaling_factor": 52.49761899362675,
-        "data_file": "../../timeseries_data_files/Hydro/REAL_TIME_hydro.csv"
-    },
-    {
-        "simulation": "REAL_TIME",
-        "category": "Generator",
-        "component_name": "222_HYDRO_6",
-        "label": "get_active_power_limits_min",
-        "scaling_factor": 52.49761899362675,
-        "data_file": "../../timeseries_data_files/Hydro/REAL_TIME_hydro.csv"
-    },
-    {
-        "simulation": "REAL_TIME",
-        "category": "Generator",
-        "component_name": "322_HYDRO_1",
-        "label": "get_active_power_limits_min",
-        "scaling_factor": 52.49761899362675,
-        "data_file": "../../timeseries_data_files/Hydro/REAL_TIME_hydro.csv"
-    },
-    {
-        "simulation": "REAL_TIME",
-        "category": "Generator",
-        "component_name": "322_HYDRO_2",
-        "label": "get_active_power_limits_min",
-        "scaling_factor": 52.49761899362675,
-        "data_file": "../../timeseries_data_files/Hydro/REAL_TIME_hydro.csv"
-    },
-    {
-        "simulation": "REAL_TIME",
-        "category": "Generator",
-        "component_name": "322_HYDRO_3",
-        "label": "get_active_power_limits_min",
-        "scaling_factor": 52.49761899362675,
-        "data_file": "../../timeseries_data_files/Hydro/REAL_TIME_hydro.csv"
-    },
-    {
-        "simulation": "REAL_TIME",
-        "category": "Generator",
-        "component_name": "322_HYDRO_4",
-        "label": "get_active_power_limits_min",
-        "scaling_factor": 52.49761899362675,
-        "data_file": "../../timeseries_data_files/Hydro/REAL_TIME_hydro.csv"
-    },
-    {
-        "simulation": "REAL_TIME",
-        "category": "Generator",
-        "component_name": "308_RTPV_1",
-        "label": "get_active_power_limits_min",
-        "scaling_factor": 100.9,
-        "data_file": "../../timeseries_data_files/RTPV/REAL_TIME_rtpv.csv"
-    },
-    {
-        "simulation": "REAL_TIME",
-        "category": "Generator",
-        "component_name": "313_RTPV_1",
-        "label": "get_active_power_limits_min",
-        "scaling_factor": 101.70000000000002,
-        "data_file": "../../timeseries_data_files/RTPV/REAL_TIME_rtpv.csv"
-    },
-    {
-        "simulation": "REAL_TIME",
-        "category": "Generator",
-        "component_name": "313_RTPV_2",
-        "label": "get_active_power_limits_min",
-        "scaling_factor": 63.1,
-        "data_file": "../../timeseries_data_files/RTPV/REAL_TIME_rtpv.csv"
-    },
-    {
-        "simulation": "REAL_TIME",
-        "category": "Generator",
-        "component_name": "313_RTPV_3",
-        "label": "get_active_power_limits_min",
-        "scaling_factor": 65.4,
-        "data_file": "../../timeseries_data_files/RTPV/REAL_TIME_rtpv.csv"
-    },
-    {
-        "simulation": "REAL_TIME",
-        "category": "Generator",
-        "component_name": "313_RTPV_4",
-        "label": "get_active_power_limits_min",
-        "scaling_factor": 67.0,
-        "data_file": "../../timeseries_data_files/RTPV/REAL_TIME_rtpv.csv"
-    },
-    {
-        "simulation": "REAL_TIME",
-        "category": "Generator",
-        "component_name": "313_RTPV_5",
-        "label": "get_active_power_limits_min",
-        "scaling_factor": 64.8,
-        "data_file": "../../timeseries_data_files/RTPV/REAL_TIME_rtpv.csv"
-    },
-    {
-        "simulation": "REAL_TIME",
-        "category": "Generator",
-        "component_name": "313_RTPV_6",
-        "label": "get_active_power_limits_min",
-        "scaling_factor": 63.800000000000004,
-        "data_file": "../../timeseries_data_files/RTPV/REAL_TIME_rtpv.csv"
-    },
-    {
-        "simulation": "REAL_TIME",
-        "category": "Generator",
-        "component_name": "313_RTPV_7",
-        "label": "get_active_power_limits_min",
-        "scaling_factor": 64.1,
-        "data_file": "../../timeseries_data_files/RTPV/REAL_TIME_rtpv.csv"
-    },
-    {
-        "simulation": "REAL_TIME",
-        "category": "Generator",
-        "component_name": "313_RTPV_8",
-        "label": "get_active_power_limits_min",
-        "scaling_factor": 66.6,
-        "data_file": "../../timeseries_data_files/RTPV/REAL_TIME_rtpv.csv"
-    },
-    {
-        "simulation": "REAL_TIME",
-        "category": "Generator",
-        "component_name": "313_RTPV_9",
-        "label": "get_active_power_limits_min",
-        "scaling_factor": 62.4,
-        "data_file": "../../timeseries_data_files/RTPV/REAL_TIME_rtpv.csv"
-    },
-    {
-        "simulation": "REAL_TIME",
-        "category": "Generator",
-        "component_name": "313_RTPV_10",
-        "label": "get_active_power_limits_min",
-        "scaling_factor": 66.9,
-        "data_file": "../../timeseries_data_files/RTPV/REAL_TIME_rtpv.csv"
-    },
-    {
-        "simulation": "REAL_TIME",
-        "category": "Generator",
-        "component_name": "313_RTPV_11",
-        "label": "get_active_power_limits_min",
-        "scaling_factor": 65.2,
-        "data_file": "../../timeseries_data_files/RTPV/REAL_TIME_rtpv.csv"
-    },
-    {
-        "simulation": "REAL_TIME",
-        "category": "Generator",
-        "component_name": "313_RTPV_12",
-        "label": "get_active_power_limits_min",
-        "scaling_factor": 27.800000000000004,
-        "data_file": "../../timeseries_data_files/RTPV/REAL_TIME_rtpv.csv"
-    },
-    {
-        "simulation": "REAL_TIME",
-        "category": "Generator",
-        "component_name": "320_RTPV_1",
-        "label": "get_active_power_limits_min",
-        "scaling_factor": 27.3,
-        "data_file": "../../timeseries_data_files/RTPV/REAL_TIME_rtpv.csv"
-    },
-    {
-        "simulation": "REAL_TIME",
-        "category": "Generator",
-        "component_name": "320_RTPV_2",
-        "label": "get_active_power_limits_min",
-        "scaling_factor": 27.0,
-        "data_file": "../../timeseries_data_files/RTPV/REAL_TIME_rtpv.csv"
-    },
-    {
-        "simulation": "REAL_TIME",
-        "category": "Generator",
-        "component_name": "320_RTPV_3",
-        "label": "get_active_power_limits_min",
-        "scaling_factor": 28.300000000000004,
-        "data_file": "../../timeseries_data_files/RTPV/REAL_TIME_rtpv.csv"
-    },
-    {
-        "simulation": "REAL_TIME",
-        "category": "Generator",
-        "component_name": "313_RTPV_13",
-        "label": "get_active_power_limits_min",
-        "scaling_factor": 27.200000000000003,
-        "data_file": "../../timeseries_data_files/RTPV/REAL_TIME_rtpv.csv"
-    },
-    {
-        "simulation": "REAL_TIME",
-        "category": "Generator",
-        "component_name": "320_RTPV_4",
-        "label": "get_active_power_limits_min",
-        "scaling_factor": 27.0,
-        "data_file": "../../timeseries_data_files/RTPV/REAL_TIME_rtpv.csv"
-    },
-    {
-        "simulation": "REAL_TIME",
-        "category": "Generator",
-        "component_name": "320_RTPV_5",
-        "label": "get_active_power_limits_min",
-        "scaling_factor": 28.199999999999996,
-        "data_file": "../../timeseries_data_files/RTPV/REAL_TIME_rtpv.csv"
-    },
-    {
-        "simulation": "REAL_TIME",
-        "category": "Generator",
-        "component_name": "118_RTPV_1",
-        "label": "get_active_power_limits_min",
-        "scaling_factor": 9.3,
-        "data_file": "../../timeseries_data_files/RTPV/REAL_TIME_rtpv.csv"
-    },
-    {
-        "simulation": "REAL_TIME",
-        "category": "Generator",
-        "component_name": "118_RTPV_2",
-        "label": "get_active_power_limits_min",
-        "scaling_factor": 9.7,
-        "data_file": "../../timeseries_data_files/RTPV/REAL_TIME_rtpv.csv"
-    },
-    {
-        "simulation": "REAL_TIME",
-        "category": "Generator",
-        "component_name": "118_RTPV_3",
-        "label": "get_active_power_limits_min",
-        "scaling_factor": 9.4,
-        "data_file": "../../timeseries_data_files/RTPV/REAL_TIME_rtpv.csv"
-    },
-    {
-        "simulation": "REAL_TIME",
-        "category": "Generator",
-        "component_name": "118_RTPV_4",
-        "label": "get_active_power_limits_min",
-        "scaling_factor": 9.1,
-        "data_file": "../../timeseries_data_files/RTPV/REAL_TIME_rtpv.csv"
-    },
-    {
-        "simulation": "REAL_TIME",
-        "category": "Generator",
-        "component_name": "118_RTPV_5",
-        "label": "get_active_power_limits_min",
-        "scaling_factor": 9.1,
-        "data_file": "../../timeseries_data_files/RTPV/REAL_TIME_rtpv.csv"
-    },
-    {
-        "simulation": "REAL_TIME",
-        "category": "Generator",
-        "component_name": "118_RTPV_6",
-        "label": "get_active_power_limits_min",
-        "scaling_factor": 9.7,
-        "data_file": "../../timeseries_data_files/RTPV/REAL_TIME_rtpv.csv"
-    },
-    {
-        "simulation": "REAL_TIME",
-        "category": "Generator",
-        "component_name": "320_RTPV_6",
-        "label": "get_active_power_limits_min",
-        "scaling_factor": 9.4,
-        "data_file": "../../timeseries_data_files/RTPV/REAL_TIME_rtpv.csv"
-    },
-    {
-        "simulation": "REAL_TIME",
-        "category": "Generator",
-        "component_name": "118_RTPV_7",
-        "label": "get_active_power_limits_min",
-        "scaling_factor": 11.8,
-        "data_file": "../../timeseries_data_files/RTPV/REAL_TIME_rtpv.csv"
-    },
-    {
-        "simulation": "REAL_TIME",
-        "category": "Generator",
-        "component_name": "118_RTPV_8",
-        "label": "get_active_power_limits_min",
-        "scaling_factor": 11.2,
-        "data_file": "../../timeseries_data_files/RTPV/REAL_TIME_rtpv.csv"
-    },
-    {
-        "simulation": "REAL_TIME",
-        "category": "Generator",
-        "component_name": "118_RTPV_9",
-        "label": "get_active_power_limits_min",
-        "scaling_factor": 10.3,
-        "data_file": "../../timeseries_data_files/RTPV/REAL_TIME_rtpv.csv"
-    },
-    {
-        "simulation": "REAL_TIME",
-        "category": "Generator",
-        "component_name": "118_RTPV_10",
-        "label": "get_active_power_limits_min",
-        "scaling_factor": 4.5,
-        "data_file": "../../timeseries_data_files/RTPV/REAL_TIME_rtpv.csv"
-    },
-    {
-        "simulation": "REAL_TIME",
-        "category": "Generator",
-        "component_name": "213_RTPV_1",
-        "label": "get_active_power_limits_min",
-        "scaling_factor": 13.200000000000001,
-        "data_file": "../../timeseries_data_files/RTPV/REAL_TIME_rtpv.csv"
     },
     {
         "simulation": "REAL_TIME",
