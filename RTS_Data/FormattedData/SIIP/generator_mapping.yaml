@@ -1,14 +1,14 @@
 # Parsing code ignores type=null.
 
 HydroEnergyReservoir:
-#- {fuel: HYDRO, type: null} # uncomment this lines to enable hydro energy scheduling
-#- {fuel: HYDRO, type: HYDRO} # uncomment this lines to enable hydro energy scheduling
+- {fuel: HYDRO, type: null} # uncomment this lines to enable hydro energy scheduling
+- {fuel: HYDRO, type: HYDRO} # uncomment this lines to enable hydro energy scheduling
 - {fuel: HYDRO, type: INFLOW}
 
 HydroDispatch:
 - {fuel: HYDRO, type: ROR}
-- {fuel: HYDRO, type: null} # comment this lines to enable hydro energy scheduling
-- {fuel: HYDRO, type: HYDRO} # comment this lines to enable hydro energy scheduling
+#- {fuel: HYDRO, type: null} # comment this lines to enable hydro energy scheduling
+#- {fuel: HYDRO, type: HYDRO} # comment this lines to enable hydro energy scheduling
 
 RenewableDispatch:
 - {fuel: SOLAR, type: PV}
