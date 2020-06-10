@@ -1,17 +1,17 @@
-names,DAY_AHEAD_NO_TX,DAY_AHEAD_ALL_TX
-category,,
-/START ATTRIBUTES,,
-Random Number Seed,10,10
-/START MEMBERSHIPS,,
-Horizon,DAY_AHEAD 1W,DAY_AHEAD 1W
-Transmission,Tx - No lines,Tx - All lines
-PASA,,
-ST Schedule,ST Nodal,ST Nodal
-MT Schedule,,
-Production,Production MIP,Production MIP
-Performance,Xpress-MP 0.1 MIP,Xpress-MP 0.1 MIP
-Report,Default Report_flatFiles,Default Report_flatFiles
-Diagnostic,,
-/START SCENARIOS,,
-,Load: DA,Load: DA
-,RE: DA,RE: DA
+names,DAY_AHEAD_NO_TX,DAY_AHEAD_ALL_TX,REAL_TIME_NO_TX,REAL_TIME_ALL_TX,DAY_AHEAD,REAL_TIME
+category,,,,,,
+/START ATTRIBUTES,,,,,,
+Random Number Seed,10,10,10,10,10,10
+/START MEMBERSHIPS,,,,,,
+Horizon,DAY_AHEAD 1W,DAY_AHEAD 1W,REAL_TIME 1W,REAL_TIME 1W,DAY_AHEAD,REAL_TIME
+Transmission,Tx - No lines,Tx - All lines,Tx - No lines,Tx - All lines,Tx - All lines,Tx - All lines
+PASA,,,,,,
+ST Schedule,ST Nodal,ST Nodal,ST Nodal,ST Nodal,ST Nodal,ST Nodal
+MT Schedule,,,,,,
+Production,Production MIP,Production MIP,Production MIP,Production MIP,Production MIP,Production MIP
+Performance,Xpress-MP 0.1 MIP,Xpress-MP 0.1 MIP,Xpress-MP 0.1 MIP,Xpress-MP 0.1 MIP,Xpress-MP 0.1 MIP,Xpress-MP 0.1 MIP
+Report,Default Report_flatFiles,Default Report_flatFiles,Default Report_flatFiles,Default Report_flatFiles,Default Report_flatFiles,Default Report_flatFiles
+Diagnostic,,,,,,
+/START SCENARIOS,,,,,,
+,Load: DA,Load: DA,Load: RT,Load: RT,Load: DA,Load: RT
+,RE: DA,RE: DA,RE: RT,RE: RT,RE: DA,RE: RT

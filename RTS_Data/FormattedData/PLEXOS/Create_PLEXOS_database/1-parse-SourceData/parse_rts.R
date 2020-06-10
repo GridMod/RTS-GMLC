@@ -88,8 +88,8 @@ generator.data = src.gen[,.(Generator = `GEN UID`,
                             Fuels_Fuel = Fuel,
                             `Max Capacity` = `PMax MW`,
                             Units = ifelse(grepl('Storage|CSP',Category),0,1),
-                            `Shutdown Cost` = `Start Heat Cold MMBTU` * `Fuel Price $/MMBTU` ,
-                            `Start Cost` = (`Start Heat Cold MMBTU` * `Fuel Price $/MMBTU`) + `Non Fuel Start Cost $` ,
+                            `Shutdown Cost` = `Start Heat Cold MBTU` * `Fuel Price $/MMBTU` ,
+                            `Start Cost` = (`Start Heat Cold MBTU` * `Fuel Price $/MMBTU`) + `Non Fuel Start Cost $` ,
                             `Max Ramp Up` = ifelse(`Ramp Rate MW/Min` == 0, NA,`Ramp Rate MW/Min`),
                             `Max Ramp Down` = ifelse(`Ramp Rate MW/Min` == 0, NA,`Ramp Rate MW/Min`),
                             `Pump Load` = ifelse(`Pump Load MW` == 0, NA, `Pump Load MW`),
@@ -118,10 +118,9 @@ line.data = src.branch[,.(Line = UID,
 line.data[!(substr(`Node From_Node`,1,1) == substr(`Node To_Node`,1,1)),category := "Interregion_AC"]
 
 # tx DC line data
-dc.max.flow = as.numeric(src.dc_branch[Variable == 'Power demand (MW):',Value])
-dc.nodes = unique(src.dc_branch[grepl('Converter bus',Filter),Filter])
-dc.node.from = as.numeric(strsplit(dc.nodes[1],'=')[[1]][2])
-dc.node.to = as.numeric(strsplit(dc.nodes[2],'=')[[1]][2])
+dc.max.flow = as.numeric(src.dc_branch[,`MW Load`][1])
+dc.node.from = as.numeric(src.dc_branch[,`From Bus`][1])
+dc.node.to = as.numeric(src.dc_branch[, `To Bus`][1])
 
 dc.line.data = data.table(Line = paste0(dc.node.from,'_',dc.node.to,'_1'),
                           category = 'Interregion_DC',
@@ -132,14 +131,14 @@ dc.line.data = data.table(Line = paste0(dc.node.from,'_',dc.node.to,'_1'),
                           Units=1
                           )
 
-rm(dc.max.flow,dc.nodes,dc.node.from,dc.node.to)
+rm(dc.max.flow,dc.node.from,dc.node.to)
 
 line.data = rbind(line.data,dc.line.data,fill=TRUE)
 
 all.tabs = c(all.tabs,"line.data")
 
 # node data
-node.data = src.bus[,.(Node = `Bus ID`,category = Area, Voltage = BaseKV, `Load Participation Factor` = `MW Load`,Region_Region = Area, Zone_Zone = `Sub Area`,Units = 1,`Is Slack Bus` = ifelse(`Bus ID` == '113',-1,0)))]
+node.data = src.bus[,.(Node = `Bus ID`,category = Area, Voltage = BaseKV, `Load Participation Factor` = `MW Load`,Region_Region = Area, Zone_Zone = `Sub Area`,Units = 1,`Is Slack Bus` = ifelse(`Bus ID` == '113',-1,0))]
 node.data[,`Load Participation Factor`:=`Load Participation Factor`/sum(`Load Participation Factor`),by = c("Region_Region")]
 node.data[is.nan(`Load Participation Factor`),`Load Participation Factor`:=0]
 all.tabs = c(all.tabs,"node.data")
@@ -157,16 +156,16 @@ zone.data = unique(node.data[,.(Zone = `Zone_Zone`)])
 all.tabs = c(all.tabs,"zone.data")
 
 # Reserve Data
-eligible.gens = src.reserves[,.(`Reserve Product`,`Eligible Gen Categories`)]
+eligible.gens = src.reserves[,.(`Reserve Product`,`Eligible Device SubCategories`)]
 eligible.regions = src.reserves[,.(`Reserve Product`,`Eligible Regions`)]
 
-eligible.gens[,`Eligible Gen Categories` := gsub("\\(",'',`Eligible Gen Categories`)]
-eligible.gens[,`Eligible Gen Categories` := gsub("\\)",'',`Eligible Gen Categories`)]
+eligible.gens[,`Eligible Device SubCategories` := gsub("\\(",'',`Eligible Device SubCategories`)]
+eligible.gens[,`Eligible Device SubCategories` := gsub("\\)",'',`Eligible Device SubCategories`)]
 eligible.regions[,`Eligible Regions` := gsub("\\(",'',`Eligible Regions`)]
 eligible.regions[,`Eligible Regions` := gsub("\\)",'',`Eligible Regions`)]
-eligible.gens = cbind(eligible.gens, setDT(tstrsplit(eligible.gens$`Eligible Gen Categories`,",")))[,`Eligible Gen Categories`:=NULL]
+eligible.gens = cbind(eligible.gens, setDT(tstrsplit(eligible.gens$`Eligible Device SubCategories`,",")))[,`Eligible Device SubCategories`:=NULL]
 eligible.regions = cbind(eligible.regions, setDT(tstrsplit(eligible.regions$`Eligible Regions`,",")))[,`Eligible Regions`:=NULL]
-eligible.gens = melt(eligible.gens,id.vars = 'Reserve Product',value.name = 'Eligible Gen Categories')[,variable:=NULL]
+eligible.gens = melt(eligible.gens,id.vars = 'Reserve Product',value.name = 'Eligible Device SubCategories')[,variable:=NULL]
 eligible.regions = melt(eligible.regions,id.vars = 'Reserve Product',value.name = 'Eligible Regions')[,variable:=NULL]
 
 eligible.gens = merge(eligible.gens,eligible.regions[!is.na(`Eligible Regions`)],by = c('Reserve Product'),allow.cartesian = TRUE)
@@ -187,7 +186,7 @@ reserve.map = merge(src.gen[,.(Generator = `GEN UID`,`Category`,Bus = `Bus ID`)]
                     src.bus[,.(Bus = `Bus ID`,Region = as.character(`Area`))],
                     by = 'Bus')
 
-reserve.memberships = merge(eligible.gens[,.(Reserve = `Reserve Product`,`Category` = `Eligible Gen Categories`,`Region` = `Eligible Regions`)],
+reserve.memberships = merge(eligible.gens[,.(Reserve = `Reserve Product`,`Category` = `Eligible Device SubCategories`,`Region` = `Eligible Regions`)],
                            reserve.map,by = c("Category","Region"),
                            allow.cartesian = T)[,c("Category","Region","Bus"):= NULL]
 setnames(reserve.memberships,'Generator','Generators_Generator')
@@ -204,10 +203,10 @@ all.tabs <- c(all.tabs, "reserve.data","reserve.memberships","reserve.enable","r
 
 # load
 region.load.da = data.table(unique(src.bus[,.(Region = Area)]), 
-                            src.timeseries_pointers[Object == 'Load' & Simulation == 'DAY_AHEAD',.(Load = paste0('../',`Data File`))],
+                            src.timeseries_pointers[Category == 'Area' & Simulation == 'DAY_AHEAD',.(Load = paste0('../',`Data File`))],
                             scenario = "Load: DA",scenario.cat = "Object properties")
 region.load.rt = data.table(unique(src.bus[,.(Region = Area)]), 
-                            src.timeseries_pointers[Object == 'Load' & Simulation == 'REAL_TIME',.(Load = paste0('../',`Data File`))],
+                            src.timeseries_pointers[Category == 'Area' & Simulation == 'REAL_TIME',.(Load = paste0('../',`Data File`))],
                             scenario = "Load: RT",scenario.cat = "Object properties")
 all.tabs = c(all.tabs,"region.load.da","region.load.rt" )
 
@@ -231,9 +230,9 @@ storage.data = src.storage[,.(Storage = `Storage`,
                              `Max Volume`= `Max Volume GWh`,
                              `Initial Volume` = `Initial Volume GWh`,
                              `Decomposition Method` = 0, 
-                             `End Effects Method` = c(1,2,2),
+                             `End Effects Method` =2,
                              `Max Spill` = 1e+30)]
-storage.data[grepl('CSP',Storage),category:='CSP Storage']
+storage.data[grepl('CSP',Storage),.(category='CSP Storage', `End Effects Method` = 1)]
 storage.props.rt = src.storage[,.(Storage = `Storage`,`Enforce Bounds`= 0,`End Effects Method` = 1,scenario = "RT Run",scenario.cat = "Object properties")]
 
 generator.start.energy = src.storage[!is.na(`Start Energy`),.(Storage,
