@@ -10,7 +10,7 @@
         "scaling_factor_multiplier": "get_max_active_power",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 52.49761899362675,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Hydro/DAY_AHEAD_hydro.csv"
+        "data_file": "../../timeseries_data_files/Hydro/DAY_AHEAD_hydro.csv"
     },
     {
         "simulation": "DAY_AHEAD",
@@ -23,7 +23,7 @@
         "scaling_factor_multiplier": "get_max_active_power",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 52.49761899362675,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Hydro/DAY_AHEAD_hydro.csv"
+        "data_file": "../../timeseries_data_files/Hydro/DAY_AHEAD_hydro.csv"
     },
     {
         "simulation": "DAY_AHEAD",
@@ -36,7 +36,7 @@
         "scaling_factor_multiplier": "get_max_active_power",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 52.49761899362675,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Hydro/DAY_AHEAD_hydro.csv"
+        "data_file": "../../timeseries_data_files/Hydro/DAY_AHEAD_hydro.csv"
     },
     {
         "simulation": "DAY_AHEAD",
@@ -49,7 +49,7 @@
         "scaling_factor_multiplier": "get_max_active_power",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 52.49761899362675,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Hydro/DAY_AHEAD_hydro.csv"
+        "data_file": "../../timeseries_data_files/Hydro/DAY_AHEAD_hydro.csv"
     },
     {
         "simulation": "DAY_AHEAD",
@@ -62,7 +62,7 @@
         "scaling_factor_multiplier": "get_max_active_power",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 52.49761899362675,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Hydro/DAY_AHEAD_hydro.csv"
+        "data_file": "../../timeseries_data_files/Hydro/DAY_AHEAD_hydro.csv"
     },
     {
         "simulation": "DAY_AHEAD",
@@ -75,7 +75,7 @@
         "scaling_factor_multiplier": "get_max_active_power",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 52.49761899362675,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Hydro/DAY_AHEAD_hydro.csv"
+        "data_file": "../../timeseries_data_files/Hydro/DAY_AHEAD_hydro.csv"
     },
     {
         "simulation": "DAY_AHEAD",
@@ -88,7 +88,7 @@
         "scaling_factor_multiplier": "get_max_active_power",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 52.49761899362675,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Hydro/DAY_AHEAD_hydro.csv"
+        "data_file": "../../timeseries_data_files/Hydro/DAY_AHEAD_hydro.csv"
     },
     {
         "simulation": "DAY_AHEAD",
@@ -101,7 +101,7 @@
         "scaling_factor_multiplier": "get_max_active_power",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 52.49761899362675,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Hydro/DAY_AHEAD_hydro.csv"
+        "data_file": "../../timeseries_data_files/Hydro/DAY_AHEAD_hydro.csv"
     },
     {
         "simulation": "DAY_AHEAD",
@@ -114,7 +114,7 @@
         "scaling_factor_multiplier": "get_max_active_power",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 52.49761899362675,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Hydro/DAY_AHEAD_hydro.csv"
+        "data_file": "../../timeseries_data_files/Hydro/DAY_AHEAD_hydro.csv"
     },
     {
         "simulation": "DAY_AHEAD",
@@ -127,7 +127,7 @@
         "scaling_factor_multiplier": "get_max_active_power",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 52.49761899362675,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Hydro/DAY_AHEAD_hydro.csv"
+        "data_file": "../../timeseries_data_files/Hydro/DAY_AHEAD_hydro.csv"
     },
     {
         "simulation": "DAY_AHEAD",
@@ -140,7 +140,7 @@
         "scaling_factor_multiplier": "get_max_active_power",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 52.49761899362675,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Hydro/DAY_AHEAD_hydro.csv"
+        "data_file": "../../timeseries_data_files/Hydro/DAY_AHEAD_hydro.csv"
     },
     {
         "simulation": "DAY_AHEAD",
@@ -153,7 +153,7 @@
         "scaling_factor_multiplier": "get_max_active_power",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 52.49761899362675,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Hydro/DAY_AHEAD_hydro.csv"
+        "data_file": "../../timeseries_data_files/Hydro/DAY_AHEAD_hydro.csv"
     },
     {
         "simulation": "DAY_AHEAD",
@@ -166,7 +166,7 @@
         "scaling_factor_multiplier": "get_max_active_power",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 52.49761899362675,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Hydro/DAY_AHEAD_hydro.csv"
+        "data_file": "../../timeseries_data_files/Hydro/DAY_AHEAD_hydro.csv"
     },
     {
         "simulation": "DAY_AHEAD",
@@ -179,7 +179,7 @@
         "scaling_factor_multiplier": "get_max_active_power",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 52.49761899362675,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Hydro/DAY_AHEAD_hydro.csv"
+        "data_file": "../../timeseries_data_files/Hydro/DAY_AHEAD_hydro.csv"
     },
     {
         "simulation": "DAY_AHEAD",
@@ -192,7 +192,7 @@
         "scaling_factor_multiplier": "get_max_active_power",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 52.49761899362675,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Hydro/DAY_AHEAD_hydro.csv"
+        "data_file": "../../timeseries_data_files/Hydro/DAY_AHEAD_hydro.csv"
     },
     {
         "simulation": "DAY_AHEAD",
@@ -205,7 +205,7 @@
         "scaling_factor_multiplier": "get_max_active_power",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 52.49761899362675,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Hydro/DAY_AHEAD_hydro.csv"
+        "data_file": "../../timeseries_data_files/Hydro/DAY_AHEAD_hydro.csv"
     },
     {
         "simulation": "DAY_AHEAD",
@@ -218,7 +218,7 @@
         "scaling_factor_multiplier": "get_max_active_power",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 52.49761899362675,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Hydro/DAY_AHEAD_hydro.csv"
+        "data_file": "../../timeseries_data_files/Hydro/DAY_AHEAD_hydro.csv"
     },
     {
         "simulation": "DAY_AHEAD",
@@ -231,7 +231,7 @@
         "scaling_factor_multiplier": "get_max_active_power",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 52.49761899362675,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Hydro/DAY_AHEAD_hydro.csv"
+        "data_file": "../../timeseries_data_files/Hydro/DAY_AHEAD_hydro.csv"
     },
     {
         "simulation": "DAY_AHEAD",
@@ -244,7 +244,7 @@
         "scaling_factor_multiplier": "get_max_active_power",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 52.49761899362675,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Hydro/DAY_AHEAD_hydro.csv"
+        "data_file": "../../timeseries_data_files/Hydro/DAY_AHEAD_hydro.csv"
     },
     {
         "simulation": "DAY_AHEAD",
@@ -257,7 +257,7 @@
         "scaling_factor_multiplier": "get_max_active_power",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 52.49761899362675,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Hydro/DAY_AHEAD_hydro.csv"
+        "data_file": "../../timeseries_data_files/Hydro/DAY_AHEAD_hydro.csv"
     },
     {
         "simulation": "DAY_AHEAD",
@@ -270,7 +270,7 @@
         "scaling_factor_multiplier": "get_storage_capacity",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 52.49761899362675,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Hydro/DAY_AHEAD_hydro.csv"
+        "data_file": "../../timeseries_data_files/Hydro/DAY_AHEAD_hydro.csv"
     },
     {
         "simulation": "DAY_AHEAD",
@@ -283,7 +283,7 @@
         "scaling_factor_multiplier": "get_storage_capacity",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 52.49761899362675,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Hydro/DAY_AHEAD_hydro.csv"
+        "data_file": "../../timeseries_data_files/Hydro/DAY_AHEAD_hydro.csv"
     },
     {
         "simulation": "DAY_AHEAD",
@@ -296,7 +296,7 @@
         "scaling_factor_multiplier": "get_storage_capacity",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 52.49761899362675,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Hydro/DAY_AHEAD_hydro.csv"
+        "data_file": "../../timeseries_data_files/Hydro/DAY_AHEAD_hydro.csv"
     },
     {
         "simulation": "DAY_AHEAD",
@@ -309,7 +309,7 @@
         "scaling_factor_multiplier": "get_storage_capacity",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 52.49761899362675,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Hydro/DAY_AHEAD_hydro.csv"
+        "data_file": "../../timeseries_data_files/Hydro/DAY_AHEAD_hydro.csv"
     },
     {
         "simulation": "DAY_AHEAD",
@@ -322,7 +322,7 @@
         "scaling_factor_multiplier": "get_storage_capacity",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 52.49761899362675,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Hydro/DAY_AHEAD_hydro.csv"
+        "data_file": "../../timeseries_data_files/Hydro/DAY_AHEAD_hydro.csv"
     },
     {
         "simulation": "DAY_AHEAD",
@@ -335,7 +335,7 @@
         "scaling_factor_multiplier": "get_storage_capacity",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 52.49761899362675,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Hydro/DAY_AHEAD_hydro.csv"
+        "data_file": "../../timeseries_data_files/Hydro/DAY_AHEAD_hydro.csv"
     },
     {
         "simulation": "DAY_AHEAD",
@@ -348,7 +348,7 @@
         "scaling_factor_multiplier": "get_storage_capacity",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 52.49761899362675,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Hydro/DAY_AHEAD_hydro.csv"
+        "data_file": "../../timeseries_data_files/Hydro/DAY_AHEAD_hydro.csv"
     },
     {
         "simulation": "DAY_AHEAD",
@@ -361,7 +361,7 @@
         "scaling_factor_multiplier": "get_storage_capacity",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 52.49761899362675,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Hydro/DAY_AHEAD_hydro.csv"
+        "data_file": "../../timeseries_data_files/Hydro/DAY_AHEAD_hydro.csv"
     },
     {
         "simulation": "DAY_AHEAD",
@@ -374,7 +374,7 @@
         "scaling_factor_multiplier": "get_storage_capacity",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 52.49761899362675,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Hydro/DAY_AHEAD_hydro.csv"
+        "data_file": "../../timeseries_data_files/Hydro/DAY_AHEAD_hydro.csv"
     },
     {
         "simulation": "DAY_AHEAD",
@@ -387,7 +387,7 @@
         "scaling_factor_multiplier": "get_storage_capacity",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 52.49761899362675,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Hydro/DAY_AHEAD_hydro.csv"
+        "data_file": "../../timeseries_data_files/Hydro/DAY_AHEAD_hydro.csv"
     },
     {
         "simulation": "DAY_AHEAD",
@@ -400,7 +400,7 @@
         "scaling_factor_multiplier": "get_storage_capacity",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 52.49761899362675,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Hydro/DAY_AHEAD_hydro.csv"
+        "data_file": "../../timeseries_data_files/Hydro/DAY_AHEAD_hydro.csv"
     },
     {
         "simulation": "DAY_AHEAD",
@@ -413,7 +413,7 @@
         "scaling_factor_multiplier": "get_storage_capacity",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 52.49761899362675,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Hydro/DAY_AHEAD_hydro.csv"
+        "data_file": "../../timeseries_data_files/Hydro/DAY_AHEAD_hydro.csv"
     },
     {
         "simulation": "DAY_AHEAD",
@@ -426,7 +426,7 @@
         "scaling_factor_multiplier": "get_storage_capacity",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 52.49761899362675,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Hydro/DAY_AHEAD_hydro.csv"
+        "data_file": "../../timeseries_data_files/Hydro/DAY_AHEAD_hydro.csv"
     },
     {
         "simulation": "DAY_AHEAD",
@@ -439,7 +439,7 @@
         "scaling_factor_multiplier": "get_storage_capacity",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 52.49761899362675,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Hydro/DAY_AHEAD_hydro.csv"
+        "data_file": "../../timeseries_data_files/Hydro/DAY_AHEAD_hydro.csv"
     },
     {
         "simulation": "DAY_AHEAD",
@@ -452,7 +452,7 @@
         "scaling_factor_multiplier": "get_storage_capacity",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 52.49761899362675,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Hydro/DAY_AHEAD_hydro.csv"
+        "data_file": "../../timeseries_data_files/Hydro/DAY_AHEAD_hydro.csv"
     },
     {
         "simulation": "DAY_AHEAD",
@@ -465,7 +465,7 @@
         "scaling_factor_multiplier": "get_storage_capacity",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 52.49761899362675,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Hydro/DAY_AHEAD_hydro.csv"
+        "data_file": "../../timeseries_data_files/Hydro/DAY_AHEAD_hydro.csv"
     },
     {
         "simulation": "DAY_AHEAD",
@@ -478,7 +478,7 @@
         "scaling_factor_multiplier": "get_storage_capacity",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 52.49761899362675,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Hydro/DAY_AHEAD_hydro.csv"
+        "data_file": "../../timeseries_data_files/Hydro/DAY_AHEAD_hydro.csv"
     },
     {
         "simulation": "DAY_AHEAD",
@@ -491,7 +491,7 @@
         "scaling_factor_multiplier": "get_storage_capacity",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 52.49761899362675,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Hydro/DAY_AHEAD_hydro.csv"
+        "data_file": "../../timeseries_data_files/Hydro/DAY_AHEAD_hydro.csv"
     },
     {
         "simulation": "DAY_AHEAD",
@@ -504,7 +504,7 @@
         "scaling_factor_multiplier": "get_storage_capacity",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 52.49761899362675,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Hydro/DAY_AHEAD_hydro.csv"
+        "data_file": "../../timeseries_data_files/Hydro/DAY_AHEAD_hydro.csv"
     },
     {
         "simulation": "DAY_AHEAD",
@@ -517,7 +517,7 @@
         "scaling_factor_multiplier": "get_storage_capacity",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 52.49761899362675,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Hydro/DAY_AHEAD_hydro.csv"
+        "data_file": "../../timeseries_data_files/Hydro/DAY_AHEAD_hydro.csv"
     },
     {
         "simulation": "DAY_AHEAD",
@@ -530,7 +530,7 @@
         "scaling_factor_multiplier": "get_inflow",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 52.49761899362675,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Hydro/DAY_AHEAD_hydro.csv"
+        "data_file": "../../timeseries_data_files/Hydro/DAY_AHEAD_hydro.csv"
     },
     {
         "simulation": "DAY_AHEAD",
@@ -543,7 +543,7 @@
         "scaling_factor_multiplier": "get_inflow",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 52.49761899362675,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Hydro/DAY_AHEAD_hydro.csv"
+        "data_file": "../../timeseries_data_files/Hydro/DAY_AHEAD_hydro.csv"
     },
     {
         "simulation": "DAY_AHEAD",
@@ -556,7 +556,7 @@
         "scaling_factor_multiplier": "get_inflow",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 52.49761899362675,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Hydro/DAY_AHEAD_hydro.csv"
+        "data_file": "../../timeseries_data_files/Hydro/DAY_AHEAD_hydro.csv"
     },
     {
         "simulation": "DAY_AHEAD",
@@ -569,7 +569,7 @@
         "scaling_factor_multiplier": "get_inflow",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 52.49761899362675,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Hydro/DAY_AHEAD_hydro.csv"
+        "data_file": "../../timeseries_data_files/Hydro/DAY_AHEAD_hydro.csv"
     },
     {
         "simulation": "DAY_AHEAD",
@@ -582,7 +582,7 @@
         "scaling_factor_multiplier": "get_inflow",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 52.49761899362675,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Hydro/DAY_AHEAD_hydro.csv"
+        "data_file": "../../timeseries_data_files/Hydro/DAY_AHEAD_hydro.csv"
     },
     {
         "simulation": "DAY_AHEAD",
@@ -595,7 +595,7 @@
         "scaling_factor_multiplier": "get_inflow",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 52.49761899362675,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Hydro/DAY_AHEAD_hydro.csv"
+        "data_file": "../../timeseries_data_files/Hydro/DAY_AHEAD_hydro.csv"
     },
     {
         "simulation": "DAY_AHEAD",
@@ -608,7 +608,7 @@
         "scaling_factor_multiplier": "get_inflow",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 52.49761899362675,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Hydro/DAY_AHEAD_hydro.csv"
+        "data_file": "../../timeseries_data_files/Hydro/DAY_AHEAD_hydro.csv"
     },
     {
         "simulation": "DAY_AHEAD",
@@ -621,7 +621,7 @@
         "scaling_factor_multiplier": "get_inflow",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 52.49761899362675,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Hydro/DAY_AHEAD_hydro.csv"
+        "data_file": "../../timeseries_data_files/Hydro/DAY_AHEAD_hydro.csv"
     },
     {
         "simulation": "DAY_AHEAD",
@@ -634,7 +634,7 @@
         "scaling_factor_multiplier": "get_inflow",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 52.49761899362675,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Hydro/DAY_AHEAD_hydro.csv"
+        "data_file": "../../timeseries_data_files/Hydro/DAY_AHEAD_hydro.csv"
     },
     {
         "simulation": "DAY_AHEAD",
@@ -647,7 +647,7 @@
         "scaling_factor_multiplier": "get_inflow",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 52.49761899362675,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Hydro/DAY_AHEAD_hydro.csv"
+        "data_file": "../../timeseries_data_files/Hydro/DAY_AHEAD_hydro.csv"
     },
     {
         "simulation": "DAY_AHEAD",
@@ -660,7 +660,7 @@
         "scaling_factor_multiplier": "get_inflow",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 52.49761899362675,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Hydro/DAY_AHEAD_hydro.csv"
+        "data_file": "../../timeseries_data_files/Hydro/DAY_AHEAD_hydro.csv"
     },
     {
         "simulation": "DAY_AHEAD",
@@ -673,7 +673,7 @@
         "scaling_factor_multiplier": "get_inflow",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 52.49761899362675,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Hydro/DAY_AHEAD_hydro.csv"
+        "data_file": "../../timeseries_data_files/Hydro/DAY_AHEAD_hydro.csv"
     },
     {
         "simulation": "DAY_AHEAD",
@@ -686,7 +686,7 @@
         "scaling_factor_multiplier": "get_inflow",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 52.49761899362675,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Hydro/DAY_AHEAD_hydro.csv"
+        "data_file": "../../timeseries_data_files/Hydro/DAY_AHEAD_hydro.csv"
     },
     {
         "simulation": "DAY_AHEAD",
@@ -699,7 +699,7 @@
         "scaling_factor_multiplier": "get_inflow",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 52.49761899362675,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Hydro/DAY_AHEAD_hydro.csv"
+        "data_file": "../../timeseries_data_files/Hydro/DAY_AHEAD_hydro.csv"
     },
     {
         "simulation": "DAY_AHEAD",
@@ -712,7 +712,7 @@
         "scaling_factor_multiplier": "get_inflow",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 52.49761899362675,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Hydro/DAY_AHEAD_hydro.csv"
+        "data_file": "../../timeseries_data_files/Hydro/DAY_AHEAD_hydro.csv"
     },
     {
         "simulation": "DAY_AHEAD",
@@ -725,7 +725,7 @@
         "scaling_factor_multiplier": "get_inflow",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 52.49761899362675,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Hydro/DAY_AHEAD_hydro.csv"
+        "data_file": "../../timeseries_data_files/Hydro/DAY_AHEAD_hydro.csv"
     },
     {
         "simulation": "DAY_AHEAD",
@@ -738,7 +738,7 @@
         "scaling_factor_multiplier": "get_inflow",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 52.49761899362675,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Hydro/DAY_AHEAD_hydro.csv"
+        "data_file": "../../timeseries_data_files/Hydro/DAY_AHEAD_hydro.csv"
     },
     {
         "simulation": "DAY_AHEAD",
@@ -751,7 +751,7 @@
         "scaling_factor_multiplier": "get_inflow",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 52.49761899362675,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Hydro/DAY_AHEAD_hydro.csv"
+        "data_file": "../../timeseries_data_files/Hydro/DAY_AHEAD_hydro.csv"
     },
     {
         "simulation": "DAY_AHEAD",
@@ -764,7 +764,7 @@
         "scaling_factor_multiplier": "get_inflow",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 52.49761899362675,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Hydro/DAY_AHEAD_hydro.csv"
+        "data_file": "../../timeseries_data_files/Hydro/DAY_AHEAD_hydro.csv"
     },
     {
         "simulation": "DAY_AHEAD",
@@ -777,7 +777,7 @@
         "scaling_factor_multiplier": "get_inflow",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 52.49761899362675,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Hydro/DAY_AHEAD_hydro.csv"
+        "data_file": "../../timeseries_data_files/Hydro/DAY_AHEAD_hydro.csv"
     },
     {
         "simulation": "DAY_AHEAD",
@@ -790,7 +790,7 @@
         "scaling_factor_multiplier": "get_max_active_power",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 51.6,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Renewable/PV/DAY_AHEAD_pv.csv"
+        "data_file": "../../timeseries_data_files/PV/DAY_AHEAD_pv.csv"
     },
     {
         "simulation": "DAY_AHEAD",
@@ -803,7 +803,7 @@
         "scaling_factor_multiplier": "get_max_active_power",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 51.6,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Renewable/PV/DAY_AHEAD_pv.csv"
+        "data_file": "../../timeseries_data_files/PV/DAY_AHEAD_pv.csv"
     },
     {
         "simulation": "DAY_AHEAD",
@@ -816,7 +816,7 @@
         "scaling_factor_multiplier": "get_max_active_power",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 51.6,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Renewable/PV/DAY_AHEAD_pv.csv"
+        "data_file": "../../timeseries_data_files/PV/DAY_AHEAD_pv.csv"
     },
     {
         "simulation": "DAY_AHEAD",
@@ -829,7 +829,7 @@
         "scaling_factor_multiplier": "get_max_active_power",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 95.1,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Renewable/PV/DAY_AHEAD_pv.csv"
+        "data_file": "../../timeseries_data_files/PV/DAY_AHEAD_pv.csv"
     },
     {
         "simulation": "DAY_AHEAD",
@@ -842,7 +842,7 @@
         "scaling_factor_multiplier": "get_max_active_power",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 92.7,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Renewable/PV/DAY_AHEAD_pv.csv"
+        "data_file": "../../timeseries_data_files/PV/DAY_AHEAD_pv.csv"
     },
     {
         "simulation": "DAY_AHEAD",
@@ -855,7 +855,7 @@
         "scaling_factor_multiplier": "get_max_active_power",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 51.6,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Renewable/PV/DAY_AHEAD_pv.csv"
+        "data_file": "../../timeseries_data_files/PV/DAY_AHEAD_pv.csv"
     },
     {
         "simulation": "DAY_AHEAD",
@@ -868,7 +868,7 @@
         "scaling_factor_multiplier": "get_max_active_power",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 93.3,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Renewable/PV/DAY_AHEAD_pv.csv"
+        "data_file": "../../timeseries_data_files/PV/DAY_AHEAD_pv.csv"
     },
     {
         "simulation": "DAY_AHEAD",
@@ -881,7 +881,7 @@
         "scaling_factor_multiplier": "get_max_active_power",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 51.7,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Renewable/PV/DAY_AHEAD_pv.csv"
+        "data_file": "../../timeseries_data_files/PV/DAY_AHEAD_pv.csv"
     },
     {
         "simulation": "DAY_AHEAD",
@@ -894,7 +894,7 @@
         "scaling_factor_multiplier": "get_max_active_power",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 49.7,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Renewable/PV/DAY_AHEAD_pv.csv"
+        "data_file": "../../timeseries_data_files/PV/DAY_AHEAD_pv.csv"
     },
     {
         "simulation": "DAY_AHEAD",
@@ -907,7 +907,7 @@
         "scaling_factor_multiplier": "get_max_active_power",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 94.1,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Renewable/PV/DAY_AHEAD_pv.csv"
+        "data_file": "../../timeseries_data_files/PV/DAY_AHEAD_pv.csv"
     },
     {
         "simulation": "DAY_AHEAD",
@@ -920,7 +920,7 @@
         "scaling_factor_multiplier": "get_max_active_power",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 51.6,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Renewable/PV/DAY_AHEAD_pv.csv"
+        "data_file": "../../timeseries_data_files/PV/DAY_AHEAD_pv.csv"
     },
     {
         "simulation": "DAY_AHEAD",
@@ -933,7 +933,7 @@
         "scaling_factor_multiplier": "get_max_active_power",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 51.6,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Renewable/PV/DAY_AHEAD_pv.csv"
+        "data_file": "../../timeseries_data_files/PV/DAY_AHEAD_pv.csv"
     },
     {
         "simulation": "DAY_AHEAD",
@@ -946,7 +946,7 @@
         "scaling_factor_multiplier": "get_max_active_power",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 51.0,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Renewable/PV/DAY_AHEAD_pv.csv"
+        "data_file": "../../timeseries_data_files/PV/DAY_AHEAD_pv.csv"
     },
     {
         "simulation": "DAY_AHEAD",
@@ -959,7 +959,7 @@
         "scaling_factor_multiplier": "get_max_active_power",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 93.6,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Renewable/PV/DAY_AHEAD_pv.csv"
+        "data_file": "../../timeseries_data_files/PV/DAY_AHEAD_pv.csv"
     },
     {
         "simulation": "DAY_AHEAD",
@@ -972,7 +972,7 @@
         "scaling_factor_multiplier": "get_max_active_power",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 188.2,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Renewable/PV/DAY_AHEAD_pv.csv"
+        "data_file": "../../timeseries_data_files/PV/DAY_AHEAD_pv.csv"
     },
     {
         "simulation": "DAY_AHEAD",
@@ -985,7 +985,7 @@
         "scaling_factor_multiplier": "get_max_active_power",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 125.1,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Renewable/PV/DAY_AHEAD_pv.csv"
+        "data_file": "../../timeseries_data_files/PV/DAY_AHEAD_pv.csv"
     },
     {
         "simulation": "DAY_AHEAD",
@@ -998,7 +998,7 @@
         "scaling_factor_multiplier": "get_max_active_power",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 25.6,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Renewable/PV/DAY_AHEAD_pv.csv"
+        "data_file": "../../timeseries_data_files/PV/DAY_AHEAD_pv.csv"
     },
     {
         "simulation": "DAY_AHEAD",
@@ -1011,7 +1011,7 @@
         "scaling_factor_multiplier": "get_max_active_power",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 25.900000000000002,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Renewable/PV/DAY_AHEAD_pv.csv"
+        "data_file": "../../timeseries_data_files/PV/DAY_AHEAD_pv.csv"
     },
     {
         "simulation": "DAY_AHEAD",
@@ -1024,7 +1024,7 @@
         "scaling_factor_multiplier": "get_max_active_power",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 25.3,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Renewable/PV/DAY_AHEAD_pv.csv"
+        "data_file": "../../timeseries_data_files/PV/DAY_AHEAD_pv.csv"
     },
     {
         "simulation": "DAY_AHEAD",
@@ -1037,7 +1037,7 @@
         "scaling_factor_multiplier": "get_max_active_power",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 26.8,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Renewable/PV/DAY_AHEAD_pv.csv"
+        "data_file": "../../timeseries_data_files/PV/DAY_AHEAD_pv.csv"
     },
     {
         "simulation": "DAY_AHEAD",
@@ -1050,7 +1050,7 @@
         "scaling_factor_multiplier": "get_max_active_power",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 26.700000000000003,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Renewable/PV/DAY_AHEAD_pv.csv"
+        "data_file": "../../timeseries_data_files/PV/DAY_AHEAD_pv.csv"
     },
     {
         "simulation": "DAY_AHEAD",
@@ -1063,7 +1063,7 @@
         "scaling_factor_multiplier": "get_max_active_power",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 26.200000000000003,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Renewable/PV/DAY_AHEAD_pv.csv"
+        "data_file": "../../timeseries_data_files/PV/DAY_AHEAD_pv.csv"
     },
     {
         "simulation": "DAY_AHEAD",
@@ -1076,7 +1076,7 @@
         "scaling_factor_multiplier": "get_max_active_power",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 25.8,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Renewable/PV/DAY_AHEAD_pv.csv"
+        "data_file": "../../timeseries_data_files/PV/DAY_AHEAD_pv.csv"
     },
     {
         "simulation": "DAY_AHEAD",
@@ -1089,7 +1089,7 @@
         "scaling_factor_multiplier": "get_max_active_power",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 61.5,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Renewable/PV/DAY_AHEAD_pv.csv"
+        "data_file": "../../timeseries_data_files/PV/DAY_AHEAD_pv.csv"
     },
     {
         "simulation": "DAY_AHEAD",
@@ -1102,7 +1102,7 @@
         "scaling_factor_multiplier": "get_max_active_power",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 66.6,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Renewable/PV/DAY_AHEAD_pv.csv"
+        "data_file": "../../timeseries_data_files/PV/DAY_AHEAD_pv.csv"
     },
     {
         "simulation": "DAY_AHEAD",
@@ -1115,7 +1115,7 @@
         "scaling_factor_multiplier": "get_max_active_power",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 100.9,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Renewable/RTPV/DAY_AHEAD_rtpv.csv"
+        "data_file": "../../timeseries_data_files/RTPV/DAY_AHEAD_rtpv.csv"
     },
     {
         "simulation": "DAY_AHEAD",
@@ -1128,7 +1128,7 @@
         "scaling_factor_multiplier": "get_max_active_power",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 101.70000000000002,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Renewable/RTPV/DAY_AHEAD_rtpv.csv"
+        "data_file": "../../timeseries_data_files/RTPV/DAY_AHEAD_rtpv.csv"
     },
     {
         "simulation": "DAY_AHEAD",
@@ -1141,7 +1141,7 @@
         "scaling_factor_multiplier": "get_max_active_power",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 63.1,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Renewable/RTPV/DAY_AHEAD_rtpv.csv"
+        "data_file": "../../timeseries_data_files/RTPV/DAY_AHEAD_rtpv.csv"
     },
     {
         "simulation": "DAY_AHEAD",
@@ -1154,7 +1154,7 @@
         "scaling_factor_multiplier": "get_max_active_power",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 65.4,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Renewable/RTPV/DAY_AHEAD_rtpv.csv"
+        "data_file": "../../timeseries_data_files/RTPV/DAY_AHEAD_rtpv.csv"
     },
     {
         "simulation": "DAY_AHEAD",
@@ -1167,7 +1167,7 @@
         "scaling_factor_multiplier": "get_max_active_power",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 67.0,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Renewable/RTPV/DAY_AHEAD_rtpv.csv"
+        "data_file": "../../timeseries_data_files/RTPV/DAY_AHEAD_rtpv.csv"
     },
     {
         "simulation": "DAY_AHEAD",
@@ -1180,7 +1180,7 @@
         "scaling_factor_multiplier": "get_max_active_power",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 64.8,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Renewable/RTPV/DAY_AHEAD_rtpv.csv"
+        "data_file": "../../timeseries_data_files/RTPV/DAY_AHEAD_rtpv.csv"
     },
     {
         "simulation": "DAY_AHEAD",
@@ -1193,7 +1193,7 @@
         "scaling_factor_multiplier": "get_max_active_power",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 63.800000000000004,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Renewable/RTPV/DAY_AHEAD_rtpv.csv"
+        "data_file": "../../timeseries_data_files/RTPV/DAY_AHEAD_rtpv.csv"
     },
     {
         "simulation": "DAY_AHEAD",
@@ -1206,7 +1206,7 @@
         "scaling_factor_multiplier": "get_max_active_power",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 64.1,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Renewable/RTPV/DAY_AHEAD_rtpv.csv"
+        "data_file": "../../timeseries_data_files/RTPV/DAY_AHEAD_rtpv.csv"
     },
     {
         "simulation": "DAY_AHEAD",
@@ -1219,7 +1219,7 @@
         "scaling_factor_multiplier": "get_max_active_power",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 66.6,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Renewable/RTPV/DAY_AHEAD_rtpv.csv"
+        "data_file": "../../timeseries_data_files/RTPV/DAY_AHEAD_rtpv.csv"
     },
     {
         "simulation": "DAY_AHEAD",
@@ -1232,7 +1232,7 @@
         "scaling_factor_multiplier": "get_max_active_power",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 62.4,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Renewable/RTPV/DAY_AHEAD_rtpv.csv"
+        "data_file": "../../timeseries_data_files/RTPV/DAY_AHEAD_rtpv.csv"
     },
     {
         "simulation": "DAY_AHEAD",
@@ -1245,7 +1245,7 @@
         "scaling_factor_multiplier": "get_max_active_power",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 66.9,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Renewable/RTPV/DAY_AHEAD_rtpv.csv"
+        "data_file": "../../timeseries_data_files/RTPV/DAY_AHEAD_rtpv.csv"
     },
     {
         "simulation": "DAY_AHEAD",
@@ -1258,7 +1258,7 @@
         "scaling_factor_multiplier": "get_max_active_power",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 65.2,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Renewable/RTPV/DAY_AHEAD_rtpv.csv"
+        "data_file": "../../timeseries_data_files/RTPV/DAY_AHEAD_rtpv.csv"
     },
     {
         "simulation": "DAY_AHEAD",
@@ -1271,7 +1271,7 @@
         "scaling_factor_multiplier": "get_max_active_power",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 27.800000000000004,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Renewable/RTPV/DAY_AHEAD_rtpv.csv"
+        "data_file": "../../timeseries_data_files/RTPV/DAY_AHEAD_rtpv.csv"
     },
     {
         "simulation": "DAY_AHEAD",
@@ -1284,7 +1284,7 @@
         "scaling_factor_multiplier": "get_max_active_power",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 27.3,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Renewable/RTPV/DAY_AHEAD_rtpv.csv"
+        "data_file": "../../timeseries_data_files/RTPV/DAY_AHEAD_rtpv.csv"
     },
     {
         "simulation": "DAY_AHEAD",
@@ -1297,7 +1297,7 @@
         "scaling_factor_multiplier": "get_max_active_power",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 27.0,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Renewable/RTPV/DAY_AHEAD_rtpv.csv"
+        "data_file": "../../timeseries_data_files/RTPV/DAY_AHEAD_rtpv.csv"
     },
     {
         "simulation": "DAY_AHEAD",
@@ -1310,7 +1310,7 @@
         "scaling_factor_multiplier": "get_max_active_power",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 28.300000000000004,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Renewable/RTPV/DAY_AHEAD_rtpv.csv"
+        "data_file": "../../timeseries_data_files/RTPV/DAY_AHEAD_rtpv.csv"
     },
     {
         "simulation": "DAY_AHEAD",
@@ -1323,7 +1323,7 @@
         "scaling_factor_multiplier": "get_max_active_power",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 27.200000000000003,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Renewable/RTPV/DAY_AHEAD_rtpv.csv"
+        "data_file": "../../timeseries_data_files/RTPV/DAY_AHEAD_rtpv.csv"
     },
     {
         "simulation": "DAY_AHEAD",
@@ -1336,7 +1336,7 @@
         "scaling_factor_multiplier": "get_max_active_power",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 27.0,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Renewable/RTPV/DAY_AHEAD_rtpv.csv"
+        "data_file": "../../timeseries_data_files/RTPV/DAY_AHEAD_rtpv.csv"
     },
     {
         "simulation": "DAY_AHEAD",
@@ -1349,7 +1349,7 @@
         "scaling_factor_multiplier": "get_max_active_power",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 28.199999999999996,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Renewable/RTPV/DAY_AHEAD_rtpv.csv"
+        "data_file": "../../timeseries_data_files/RTPV/DAY_AHEAD_rtpv.csv"
     },
     {
         "simulation": "DAY_AHEAD",
@@ -1362,7 +1362,7 @@
         "scaling_factor_multiplier": "get_max_active_power",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 9.3,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Renewable/RTPV/DAY_AHEAD_rtpv.csv"
+        "data_file": "../../timeseries_data_files/RTPV/DAY_AHEAD_rtpv.csv"
     },
     {
         "simulation": "DAY_AHEAD",
@@ -1375,7 +1375,7 @@
         "scaling_factor_multiplier": "get_max_active_power",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 9.7,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Renewable/RTPV/DAY_AHEAD_rtpv.csv"
+        "data_file": "../../timeseries_data_files/RTPV/DAY_AHEAD_rtpv.csv"
     },
     {
         "simulation": "DAY_AHEAD",
@@ -1388,7 +1388,7 @@
         "scaling_factor_multiplier": "get_max_active_power",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 9.4,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Renewable/RTPV/DAY_AHEAD_rtpv.csv"
+        "data_file": "../../timeseries_data_files/RTPV/DAY_AHEAD_rtpv.csv"
     },
     {
         "simulation": "DAY_AHEAD",
@@ -1401,7 +1401,7 @@
         "scaling_factor_multiplier": "get_max_active_power",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 9.1,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Renewable/RTPV/DAY_AHEAD_rtpv.csv"
+        "data_file": "../../timeseries_data_files/RTPV/DAY_AHEAD_rtpv.csv"
     },
     {
         "simulation": "DAY_AHEAD",
@@ -1414,7 +1414,7 @@
         "scaling_factor_multiplier": "get_max_active_power",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 9.1,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Renewable/RTPV/DAY_AHEAD_rtpv.csv"
+        "data_file": "../../timeseries_data_files/RTPV/DAY_AHEAD_rtpv.csv"
     },
     {
         "simulation": "DAY_AHEAD",
@@ -1427,7 +1427,7 @@
         "scaling_factor_multiplier": "get_max_active_power",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 9.7,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Renewable/RTPV/DAY_AHEAD_rtpv.csv"
+        "data_file": "../../timeseries_data_files/RTPV/DAY_AHEAD_rtpv.csv"
     },
     {
         "simulation": "DAY_AHEAD",
@@ -1440,7 +1440,7 @@
         "scaling_factor_multiplier": "get_max_active_power",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 9.4,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Renewable/RTPV/DAY_AHEAD_rtpv.csv"
+        "data_file": "../../timeseries_data_files/RTPV/DAY_AHEAD_rtpv.csv"
     },
     {
         "simulation": "DAY_AHEAD",
@@ -1453,7 +1453,7 @@
         "scaling_factor_multiplier": "get_max_active_power",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 11.8,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Renewable/RTPV/DAY_AHEAD_rtpv.csv"
+        "data_file": "../../timeseries_data_files/RTPV/DAY_AHEAD_rtpv.csv"
     },
     {
         "simulation": "DAY_AHEAD",
@@ -1466,7 +1466,7 @@
         "scaling_factor_multiplier": "get_max_active_power",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 11.2,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Renewable/RTPV/DAY_AHEAD_rtpv.csv"
+        "data_file": "../../timeseries_data_files/RTPV/DAY_AHEAD_rtpv.csv"
     },
     {
         "simulation": "DAY_AHEAD",
@@ -1479,7 +1479,7 @@
         "scaling_factor_multiplier": "get_max_active_power",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 10.3,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Renewable/RTPV/DAY_AHEAD_rtpv.csv"
+        "data_file": "../../timeseries_data_files/RTPV/DAY_AHEAD_rtpv.csv"
     },
     {
         "simulation": "DAY_AHEAD",
@@ -1492,7 +1492,7 @@
         "scaling_factor_multiplier": "get_max_active_power",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 4.5,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Renewable/RTPV/DAY_AHEAD_rtpv.csv"
+        "data_file": "../../timeseries_data_files/RTPV/DAY_AHEAD_rtpv.csv"
     },
     {
         "simulation": "DAY_AHEAD",
@@ -1505,7 +1505,7 @@
         "scaling_factor_multiplier": "get_max_active_power",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 13.200000000000001,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Renewable/RTPV/DAY_AHEAD_rtpv.csv"
+        "data_file": "../../timeseries_data_files/RTPV/DAY_AHEAD_rtpv.csv"
     },
     {
         "simulation": "DAY_AHEAD",
@@ -1518,7 +1518,7 @@
         "scaling_factor_multiplier": "get_max_active_power",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 148.3,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Renewable/WIND/DAY_AHEAD_wind.csv"
+        "data_file": "../../timeseries_data_files/WIND/DAY_AHEAD_wind.csv"
     },
     {
         "simulation": "DAY_AHEAD",
@@ -1531,7 +1531,7 @@
         "scaling_factor_multiplier": "get_max_active_power",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 799.1,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Renewable/WIND/DAY_AHEAD_wind.csv"
+        "data_file": "../../timeseries_data_files/WIND/DAY_AHEAD_wind.csv"
     },
     {
         "simulation": "DAY_AHEAD",
@@ -1544,7 +1544,7 @@
         "scaling_factor_multiplier": "get_max_active_power",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 847.0000000000001,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Renewable/WIND/DAY_AHEAD_wind.csv"
+        "data_file": "../../timeseries_data_files/WIND/DAY_AHEAD_wind.csv"
     },
     {
         "simulation": "DAY_AHEAD",
@@ -1557,7 +1557,7 @@
         "scaling_factor_multiplier": "get_max_active_power",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 713.5,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Renewable/WIND/DAY_AHEAD_wind.csv"
+        "data_file": "../../timeseries_data_files/WIND/DAY_AHEAD_wind.csv"
     },
     {
         "simulation": "DAY_AHEAD",
@@ -1570,7 +1570,7 @@
         "scaling_factor_multiplier": "get_requirement",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 98.0,
-        "data_file": "../RTS_GMLC/Reserves/DAY_AHEAD_regional_Flex_Down.csv"
+        "data_file": "../../timeseries_data_files/Reserves/DAY_AHEAD_regional_Flex_Down.csv"
     },
     {
         "simulation": "DAY_AHEAD",
@@ -1583,7 +1583,7 @@
         "scaling_factor_multiplier": "get_requirement",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 96.0,
-        "data_file": "../RTS_GMLC/Reserves/DAY_AHEAD_regional_Flex_Up.csv"
+        "data_file": "../../timeseries_data_files/Reserves/DAY_AHEAD_regional_Flex_Up.csv"
     },
     {
         "simulation": "DAY_AHEAD",
@@ -1596,7 +1596,7 @@
         "scaling_factor_multiplier": "get_requirement",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 77.0,
-        "data_file": "../RTS_GMLC/Reserves/DAY_AHEAD_regional_Reg_Down.csv"
+        "data_file": "../../timeseries_data_files/Reserves/DAY_AHEAD_regional_Reg_Down.csv"
     },
     {
         "simulation": "DAY_AHEAD",
@@ -1609,7 +1609,7 @@
         "scaling_factor_multiplier": "get_requirement",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 72.0,
-        "data_file": "../RTS_GMLC/Reserves/DAY_AHEAD_regional_Reg_Up.csv"
+        "data_file": "../../timeseries_data_files/Reserves/DAY_AHEAD_regional_Reg_Up.csv"
     },
     {
         "simulation": "DAY_AHEAD",
@@ -1622,7 +1622,7 @@
         "scaling_factor_multiplier": "get_requirement",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 40.413,
-        "data_file": "../RTS_GMLC/Reserves/DAY_AHEAD_regional_Spin_Up_R1.csv"
+        "data_file": "../../timeseries_data_files/Reserves/DAY_AHEAD_regional_Spin_Up_R1.csv"
     },
     {
         "simulation": "DAY_AHEAD",
@@ -1635,7 +1635,7 @@
         "scaling_factor_multiplier": "get_requirement",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 42.851,
-        "data_file": "../RTS_GMLC/Reserves/DAY_AHEAD_regional_Spin_Up_R2.csv"
+        "data_file": "../../timeseries_data_files/Reserves/DAY_AHEAD_regional_Spin_Up_R2.csv"
     },
     {
         "simulation": "DAY_AHEAD",
@@ -1648,7 +1648,7 @@
         "scaling_factor_multiplier": "get_requirement",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 56.666,
-        "data_file": "../RTS_GMLC/Reserves/DAY_AHEAD_regional_Spin_Up_R3.csv"
+        "data_file": "../../timeseries_data_files/Reserves/DAY_AHEAD_regional_Spin_Up_R3.csv"
     },
     {
         "simulation": "DAY_AHEAD",
@@ -1661,7 +1661,7 @@
         "scaling_factor_multiplier": "get_max_active_power",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 2850.0,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/load/DAY_AHEAD_regional_Load.csv"
+        "data_file": "../../timeseries_data_files/Load/DAY_AHEAD_regional_Load.csv"
     },
     {
         "simulation": "DAY_AHEAD",
@@ -1674,7 +1674,7 @@
         "scaling_factor_multiplier": "get_max_active_power",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 2850.0,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/load/DAY_AHEAD_regional_Load.csv"
+        "data_file": "../../timeseries_data_files/Load/DAY_AHEAD_regional_Load.csv"
     },
     {
         "simulation": "DAY_AHEAD",
@@ -1687,7 +1687,7 @@
         "scaling_factor_multiplier": "get_max_active_power",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 2850.0,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/load/DAY_AHEAD_regional_Load.csv"
+        "data_file": "../../timeseries_data_files/Load/DAY_AHEAD_regional_Load.csv"
     },
     {
         "simulation": "DAY_AHEAD",
@@ -1700,7 +1700,7 @@
         "scaling_factor_multiplier": "get_max_active_power",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 200.0,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Renewable/CSP/DAY_AHEAD_Natural_Inflow.csv"
+        "data_file": "../../timeseries_data_files/CSP/DAY_AHEAD_Natural_Inflow.csv"
     },
     {
         "simulation": "REAL_TIME",
@@ -1713,7 +1713,7 @@
         "scaling_factor_multiplier": "get_max_active_power",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 200.0,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Renewable/CSP/REAL_TIME_Natural_Inflow.csv"
+        "data_file": "../../timeseries_data_files/CSP/REAL_TIME_Natural_Inflow.csv"
     },
     {
         "simulation": "REAL_TIME",
@@ -1726,7 +1726,7 @@
         "scaling_factor_multiplier": "get_max_active_power",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 52.49761899362675,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Hydro/REAL_TIME_hydro.csv"
+        "data_file": "../../timeseries_data_files/Hydro/REAL_TIME_hydro.csv"
     },
     {
         "simulation": "REAL_TIME",
@@ -1739,7 +1739,7 @@
         "scaling_factor_multiplier": "get_max_active_power",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 52.49761899362675,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Hydro/REAL_TIME_hydro.csv"
+        "data_file": "../../timeseries_data_files/Hydro/REAL_TIME_hydro.csv"
     },
     {
         "simulation": "REAL_TIME",
@@ -1752,7 +1752,7 @@
         "scaling_factor_multiplier": "get_max_active_power",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 52.49761899362675,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Hydro/REAL_TIME_hydro.csv"
+        "data_file": "../../timeseries_data_files/Hydro/REAL_TIME_hydro.csv"
     },
     {
         "simulation": "REAL_TIME",
@@ -1765,7 +1765,7 @@
         "scaling_factor_multiplier": "get_max_active_power",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 52.49761899362675,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Hydro/REAL_TIME_hydro.csv"
+        "data_file": "../../timeseries_data_files/Hydro/REAL_TIME_hydro.csv"
     },
     {
         "simulation": "REAL_TIME",
@@ -1778,7 +1778,7 @@
         "scaling_factor_multiplier": "get_max_active_power",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 52.49761899362675,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Hydro/REAL_TIME_hydro.csv"
+        "data_file": "../../timeseries_data_files/Hydro/REAL_TIME_hydro.csv"
     },
     {
         "simulation": "REAL_TIME",
@@ -1791,7 +1791,7 @@
         "scaling_factor_multiplier": "get_max_active_power",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 52.49761899362675,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Hydro/REAL_TIME_hydro.csv"
+        "data_file": "../../timeseries_data_files/Hydro/REAL_TIME_hydro.csv"
     },
     {
         "simulation": "REAL_TIME",
@@ -1804,7 +1804,7 @@
         "scaling_factor_multiplier": "get_max_active_power",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 52.49761899362675,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Hydro/REAL_TIME_hydro.csv"
+        "data_file": "../../timeseries_data_files/Hydro/REAL_TIME_hydro.csv"
     },
     {
         "simulation": "REAL_TIME",
@@ -1817,7 +1817,7 @@
         "scaling_factor_multiplier": "get_max_active_power",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 52.49761899362675,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Hydro/REAL_TIME_hydro.csv"
+        "data_file": "../../timeseries_data_files/Hydro/REAL_TIME_hydro.csv"
     },
     {
         "simulation": "REAL_TIME",
@@ -1830,7 +1830,7 @@
         "scaling_factor_multiplier": "get_max_active_power",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 52.49761899362675,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Hydro/REAL_TIME_hydro.csv"
+        "data_file": "../../timeseries_data_files/Hydro/REAL_TIME_hydro.csv"
     },
     {
         "simulation": "REAL_TIME",
@@ -1843,7 +1843,7 @@
         "scaling_factor_multiplier": "get_max_active_power",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 52.49761899362675,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Hydro/REAL_TIME_hydro.csv"
+        "data_file": "../../timeseries_data_files/Hydro/REAL_TIME_hydro.csv"
     },
     {
         "simulation": "REAL_TIME",
@@ -1856,7 +1856,7 @@
         "scaling_factor_multiplier": "get_max_active_power",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 52.49761899362675,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Hydro/REAL_TIME_hydro.csv"
+        "data_file": "../../timeseries_data_files/Hydro/REAL_TIME_hydro.csv"
     },
     {
         "simulation": "REAL_TIME",
@@ -1869,7 +1869,7 @@
         "scaling_factor_multiplier": "get_max_active_power",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 52.49761899362675,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Hydro/REAL_TIME_hydro.csv"
+        "data_file": "../../timeseries_data_files/Hydro/REAL_TIME_hydro.csv"
     },
     {
         "simulation": "REAL_TIME",
@@ -1882,7 +1882,7 @@
         "scaling_factor_multiplier": "get_max_active_power",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 52.49761899362675,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Hydro/REAL_TIME_hydro.csv"
+        "data_file": "../../timeseries_data_files/Hydro/REAL_TIME_hydro.csv"
     },
     {
         "simulation": "REAL_TIME",
@@ -1895,7 +1895,7 @@
         "scaling_factor_multiplier": "get_max_active_power",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 52.49761899362675,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Hydro/REAL_TIME_hydro.csv"
+        "data_file": "../../timeseries_data_files/Hydro/REAL_TIME_hydro.csv"
     },
     {
         "simulation": "REAL_TIME",
@@ -1908,7 +1908,7 @@
         "scaling_factor_multiplier": "get_max_active_power",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 52.49761899362675,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Hydro/REAL_TIME_hydro.csv"
+        "data_file": "../../timeseries_data_files/Hydro/REAL_TIME_hydro.csv"
     },
     {
         "simulation": "REAL_TIME",
@@ -1921,7 +1921,7 @@
         "scaling_factor_multiplier": "get_max_active_power",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 52.49761899362675,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Hydro/REAL_TIME_hydro.csv"
+        "data_file": "../../timeseries_data_files/Hydro/REAL_TIME_hydro.csv"
     },
     {
         "simulation": "REAL_TIME",
@@ -1934,7 +1934,7 @@
         "scaling_factor_multiplier": "get_max_active_power",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 52.49761899362675,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Hydro/REAL_TIME_hydro.csv"
+        "data_file": "../../timeseries_data_files/Hydro/REAL_TIME_hydro.csv"
     },
     {
         "simulation": "REAL_TIME",
@@ -1947,7 +1947,7 @@
         "scaling_factor_multiplier": "get_max_active_power",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 52.49761899362675,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Hydro/REAL_TIME_hydro.csv"
+        "data_file": "../../timeseries_data_files/Hydro/REAL_TIME_hydro.csv"
     },
     {
         "simulation": "REAL_TIME",
@@ -1960,7 +1960,7 @@
         "scaling_factor_multiplier": "get_max_active_power",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 52.49761899362675,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Hydro/REAL_TIME_hydro.csv"
+        "data_file": "../../timeseries_data_files/Hydro/REAL_TIME_hydro.csv"
     },
     {
         "simulation": "REAL_TIME",
@@ -1973,7 +1973,7 @@
         "scaling_factor_multiplier": "get_max_active_power",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 52.49761899362675,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Hydro/REAL_TIME_hydro.csv"
+        "data_file": "../../timeseries_data_files/Hydro/REAL_TIME_hydro.csv"
     },
     {
         "simulation": "REAL_TIME",
@@ -1986,7 +1986,7 @@
         "scaling_factor_multiplier": "get_storage_capacity",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 52.49761899362675,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Hydro/REAL_TIME_hydro.csv"
+        "data_file": "../../timeseries_data_files/Hydro/REAL_TIME_hydro.csv"
     },
     {
         "simulation": "REAL_TIME",
@@ -1999,7 +1999,7 @@
         "scaling_factor_multiplier": "get_storage_capacity",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 52.49761899362675,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Hydro/REAL_TIME_hydro.csv"
+        "data_file": "../../timeseries_data_files/Hydro/REAL_TIME_hydro.csv"
     },
     {
         "simulation": "REAL_TIME",
@@ -2012,7 +2012,7 @@
         "scaling_factor_multiplier": "get_storage_capacity",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 52.49761899362675,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Hydro/REAL_TIME_hydro.csv"
+        "data_file": "../../timeseries_data_files/Hydro/REAL_TIME_hydro.csv"
     },
     {
         "simulation": "REAL_TIME",
@@ -2025,7 +2025,7 @@
         "scaling_factor_multiplier": "get_storage_capacity",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 52.49761899362675,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Hydro/REAL_TIME_hydro.csv"
+        "data_file": "../../timeseries_data_files/Hydro/REAL_TIME_hydro.csv"
     },
     {
         "simulation": "REAL_TIME",
@@ -2038,7 +2038,7 @@
         "scaling_factor_multiplier": "get_storage_capacity",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 52.49761899362675,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Hydro/REAL_TIME_hydro.csv"
+        "data_file": "../../timeseries_data_files/Hydro/REAL_TIME_hydro.csv"
     },
     {
         "simulation": "REAL_TIME",
@@ -2051,7 +2051,7 @@
         "scaling_factor_multiplier": "get_storage_capacity",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 52.49761899362675,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Hydro/REAL_TIME_hydro.csv"
+        "data_file": "../../timeseries_data_files/Hydro/REAL_TIME_hydro.csv"
     },
     {
         "simulation": "REAL_TIME",
@@ -2064,7 +2064,7 @@
         "scaling_factor_multiplier": "get_storage_capacity",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 52.49761899362675,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Hydro/REAL_TIME_hydro.csv"
+        "data_file": "../../timeseries_data_files/Hydro/REAL_TIME_hydro.csv"
     },
     {
         "simulation": "REAL_TIME",
@@ -2077,7 +2077,7 @@
         "scaling_factor_multiplier": "get_storage_capacity",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 52.49761899362675,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Hydro/REAL_TIME_hydro.csv"
+        "data_file": "../../timeseries_data_files/Hydro/REAL_TIME_hydro.csv"
     },
     {
         "simulation": "REAL_TIME",
@@ -2090,7 +2090,7 @@
         "scaling_factor_multiplier": "get_storage_capacity",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 52.49761899362675,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Hydro/REAL_TIME_hydro.csv"
+        "data_file": "../../timeseries_data_files/Hydro/REAL_TIME_hydro.csv"
     },
     {
         "simulation": "REAL_TIME",
@@ -2103,7 +2103,7 @@
         "scaling_factor_multiplier": "get_storage_capacity",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 52.49761899362675,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Hydro/REAL_TIME_hydro.csv"
+        "data_file": "../../timeseries_data_files/Hydro/REAL_TIME_hydro.csv"
     },
     {
         "simulation": "REAL_TIME",
@@ -2116,7 +2116,7 @@
         "scaling_factor_multiplier": "get_storage_capacity",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 52.49761899362675,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Hydro/REAL_TIME_hydro.csv"
+        "data_file": "../../timeseries_data_files/Hydro/REAL_TIME_hydro.csv"
     },
     {
         "simulation": "REAL_TIME",
@@ -2129,7 +2129,7 @@
         "scaling_factor_multiplier": "get_storage_capacity",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 52.49761899362675,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Hydro/REAL_TIME_hydro.csv"
+        "data_file": "../../timeseries_data_files/Hydro/REAL_TIME_hydro.csv"
     },
     {
         "simulation": "REAL_TIME",
@@ -2142,7 +2142,7 @@
         "scaling_factor_multiplier": "get_storage_capacity",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 52.49761899362675,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Hydro/REAL_TIME_hydro.csv"
+        "data_file": "../../timeseries_data_files/Hydro/REAL_TIME_hydro.csv"
     },
     {
         "simulation": "REAL_TIME",
@@ -2155,7 +2155,7 @@
         "scaling_factor_multiplier": "get_storage_capacity",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 52.49761899362675,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Hydro/REAL_TIME_hydro.csv"
+        "data_file": "../../timeseries_data_files/Hydro/REAL_TIME_hydro.csv"
     },
     {
         "simulation": "REAL_TIME",
@@ -2168,7 +2168,7 @@
         "scaling_factor_multiplier": "get_storage_capacity",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 52.49761899362675,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Hydro/REAL_TIME_hydro.csv"
+        "data_file": "../../timeseries_data_files/Hydro/REAL_TIME_hydro.csv"
     },
     {
         "simulation": "REAL_TIME",
@@ -2181,7 +2181,7 @@
         "scaling_factor_multiplier": "get_storage_capacity",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 52.49761899362675,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Hydro/REAL_TIME_hydro.csv"
+        "data_file": "../../timeseries_data_files/Hydro/REAL_TIME_hydro.csv"
     },
     {
         "simulation": "REAL_TIME",
@@ -2194,7 +2194,7 @@
         "scaling_factor_multiplier": "get_storage_capacity",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 52.49761899362675,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Hydro/REAL_TIME_hydro.csv"
+        "data_file": "../../timeseries_data_files/Hydro/REAL_TIME_hydro.csv"
     },
     {
         "simulation": "REAL_TIME",
@@ -2207,7 +2207,7 @@
         "scaling_factor_multiplier": "get_storage_capacity",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 52.49761899362675,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Hydro/REAL_TIME_hydro.csv"
+        "data_file": "../../timeseries_data_files/Hydro/REAL_TIME_hydro.csv"
     },
     {
         "simulation": "REAL_TIME",
@@ -2220,7 +2220,7 @@
         "scaling_factor_multiplier": "get_storage_capacity",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 52.49761899362675,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Hydro/REAL_TIME_hydro.csv"
+        "data_file": "../../timeseries_data_files/Hydro/REAL_TIME_hydro.csv"
     },
     {
         "simulation": "REAL_TIME",
@@ -2233,7 +2233,7 @@
         "scaling_factor_multiplier": "get_storage_capacity",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 52.49761899362675,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Hydro/REAL_TIME_hydro.csv"
+        "data_file": "../../timeseries_data_files/Hydro/REAL_TIME_hydro.csv"
     },
     {
         "simulation": "REAL_TIME",
@@ -2246,7 +2246,7 @@
         "scaling_factor_multiplier": "get_inflow",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 52.49761899362675,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Hydro/REAL_TIME_hydro.csv"
+        "data_file": "../../timeseries_data_files/Hydro/REAL_TIME_hydro.csv"
     },
     {
         "simulation": "REAL_TIME",
@@ -2259,7 +2259,7 @@
         "scaling_factor_multiplier": "get_inflow",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 52.49761899362675,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Hydro/REAL_TIME_hydro.csv"
+        "data_file": "../../timeseries_data_files/Hydro/REAL_TIME_hydro.csv"
     },
     {
         "simulation": "REAL_TIME",
@@ -2272,7 +2272,7 @@
         "scaling_factor_multiplier": "get_inflow",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 52.49761899362675,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Hydro/REAL_TIME_hydro.csv"
+        "data_file": "../../timeseries_data_files/Hydro/REAL_TIME_hydro.csv"
     },
     {
         "simulation": "REAL_TIME",
@@ -2285,7 +2285,7 @@
         "scaling_factor_multiplier": "get_inflow",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 52.49761899362675,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Hydro/REAL_TIME_hydro.csv"
+        "data_file": "../../timeseries_data_files/Hydro/REAL_TIME_hydro.csv"
     },
     {
         "simulation": "REAL_TIME",
@@ -2298,7 +2298,7 @@
         "scaling_factor_multiplier": "get_inflow",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 52.49761899362675,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Hydro/REAL_TIME_hydro.csv"
+        "data_file": "../../timeseries_data_files/Hydro/REAL_TIME_hydro.csv"
     },
     {
         "simulation": "REAL_TIME",
@@ -2311,7 +2311,7 @@
         "scaling_factor_multiplier": "get_inflow",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 52.49761899362675,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Hydro/REAL_TIME_hydro.csv"
+        "data_file": "../../timeseries_data_files/Hydro/REAL_TIME_hydro.csv"
     },
     {
         "simulation": "REAL_TIME",
@@ -2324,7 +2324,7 @@
         "scaling_factor_multiplier": "get_inflow",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 52.49761899362675,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Hydro/REAL_TIME_hydro.csv"
+        "data_file": "../../timeseries_data_files/Hydro/REAL_TIME_hydro.csv"
     },
     {
         "simulation": "REAL_TIME",
@@ -2337,7 +2337,7 @@
         "scaling_factor_multiplier": "get_inflow",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 52.49761899362675,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Hydro/REAL_TIME_hydro.csv"
+        "data_file": "../../timeseries_data_files/Hydro/REAL_TIME_hydro.csv"
     },
     {
         "simulation": "REAL_TIME",
@@ -2350,7 +2350,7 @@
         "scaling_factor_multiplier": "get_inflow",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 52.49761899362675,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Hydro/REAL_TIME_hydro.csv"
+        "data_file": "../../timeseries_data_files/Hydro/REAL_TIME_hydro.csv"
     },
     {
         "simulation": "REAL_TIME",
@@ -2363,7 +2363,7 @@
         "scaling_factor_multiplier": "get_inflow",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 52.49761899362675,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Hydro/REAL_TIME_hydro.csv"
+        "data_file": "../../timeseries_data_files/Hydro/REAL_TIME_hydro.csv"
     },
     {
         "simulation": "REAL_TIME",
@@ -2376,7 +2376,7 @@
         "scaling_factor_multiplier": "get_inflow",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 52.49761899362675,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Hydro/REAL_TIME_hydro.csv"
+        "data_file": "../../timeseries_data_files/Hydro/REAL_TIME_hydro.csv"
     },
     {
         "simulation": "REAL_TIME",
@@ -2389,7 +2389,7 @@
         "scaling_factor_multiplier": "get_inflow",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 52.49761899362675,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Hydro/REAL_TIME_hydro.csv"
+        "data_file": "../../timeseries_data_files/Hydro/REAL_TIME_hydro.csv"
     },
     {
         "simulation": "REAL_TIME",
@@ -2402,7 +2402,7 @@
         "scaling_factor_multiplier": "get_inflow",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 52.49761899362675,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Hydro/REAL_TIME_hydro.csv"
+        "data_file": "../../timeseries_data_files/Hydro/REAL_TIME_hydro.csv"
     },
     {
         "simulation": "REAL_TIME",
@@ -2415,7 +2415,7 @@
         "scaling_factor_multiplier": "get_inflow",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 52.49761899362675,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Hydro/REAL_TIME_hydro.csv"
+        "data_file": "../../timeseries_data_files/Hydro/REAL_TIME_hydro.csv"
     },
     {
         "simulation": "REAL_TIME",
@@ -2428,7 +2428,7 @@
         "scaling_factor_multiplier": "get_inflow",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 52.49761899362675,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Hydro/REAL_TIME_hydro.csv"
+        "data_file": "../../timeseries_data_files/Hydro/REAL_TIME_hydro.csv"
     },
     {
         "simulation": "REAL_TIME",
@@ -2441,7 +2441,7 @@
         "scaling_factor_multiplier": "get_inflow",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 52.49761899362675,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Hydro/REAL_TIME_hydro.csv"
+        "data_file": "../../timeseries_data_files/Hydro/REAL_TIME_hydro.csv"
     },
     {
         "simulation": "REAL_TIME",
@@ -2454,7 +2454,7 @@
         "scaling_factor_multiplier": "get_inflow",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 52.49761899362675,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Hydro/REAL_TIME_hydro.csv"
+        "data_file": "../../timeseries_data_files/Hydro/REAL_TIME_hydro.csv"
     },
     {
         "simulation": "REAL_TIME",
@@ -2467,7 +2467,7 @@
         "scaling_factor_multiplier": "get_inflow",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 52.49761899362675,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Hydro/REAL_TIME_hydro.csv"
+        "data_file": "../../timeseries_data_files/Hydro/REAL_TIME_hydro.csv"
     },
     {
         "simulation": "REAL_TIME",
@@ -2480,7 +2480,7 @@
         "scaling_factor_multiplier": "get_inflow",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 52.49761899362675,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Hydro/REAL_TIME_hydro.csv"
+        "data_file": "../../timeseries_data_files/Hydro/REAL_TIME_hydro.csv"
     },
     {
         "simulation": "REAL_TIME",
@@ -2493,7 +2493,7 @@
         "scaling_factor_multiplier": "get_inflow",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 52.49761899362675,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Hydro/REAL_TIME_hydro.csv"
+        "data_file": "../../timeseries_data_files/Hydro/REAL_TIME_hydro.csv"
     },
     {
         "simulation": "REAL_TIME",
@@ -2506,7 +2506,7 @@
         "scaling_factor_multiplier": "get_max_active_power",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 51.6,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Renewable/PV/REAL_TIME_pv.csv"
+        "data_file": "../../timeseries_data_files/PV/REAL_TIME_pv.csv"
     },
     {
         "simulation": "REAL_TIME",
@@ -2519,7 +2519,7 @@
         "scaling_factor_multiplier": "get_max_active_power",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 51.6,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Renewable/PV/REAL_TIME_pv.csv"
+        "data_file": "../../timeseries_data_files/PV/REAL_TIME_pv.csv"
     },
     {
         "simulation": "REAL_TIME",
@@ -2532,7 +2532,7 @@
         "scaling_factor_multiplier": "get_max_active_power",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 51.6,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Renewable/PV/REAL_TIME_pv.csv"
+        "data_file": "../../timeseries_data_files/PV/REAL_TIME_pv.csv"
     },
     {
         "simulation": "REAL_TIME",
@@ -2545,7 +2545,7 @@
         "scaling_factor_multiplier": "get_max_active_power",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 95.1,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Renewable/PV/REAL_TIME_pv.csv"
+        "data_file": "../../timeseries_data_files/PV/REAL_TIME_pv.csv"
     },
     {
         "simulation": "REAL_TIME",
@@ -2558,7 +2558,7 @@
         "scaling_factor_multiplier": "get_max_active_power",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 92.7,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Renewable/PV/REAL_TIME_pv.csv"
+        "data_file": "../../timeseries_data_files/PV/REAL_TIME_pv.csv"
     },
     {
         "simulation": "REAL_TIME",
@@ -2571,7 +2571,7 @@
         "scaling_factor_multiplier": "get_max_active_power",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 51.6,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Renewable/PV/REAL_TIME_pv.csv"
+        "data_file": "../../timeseries_data_files/PV/REAL_TIME_pv.csv"
     },
     {
         "simulation": "REAL_TIME",
@@ -2584,7 +2584,7 @@
         "scaling_factor_multiplier": "get_max_active_power",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 93.3,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Renewable/PV/REAL_TIME_pv.csv"
+        "data_file": "../../timeseries_data_files/PV/REAL_TIME_pv.csv"
     },
     {
         "simulation": "REAL_TIME",
@@ -2597,7 +2597,7 @@
         "scaling_factor_multiplier": "get_max_active_power",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 51.7,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Renewable/PV/REAL_TIME_pv.csv"
+        "data_file": "../../timeseries_data_files/PV/REAL_TIME_pv.csv"
     },
     {
         "simulation": "REAL_TIME",
@@ -2610,7 +2610,7 @@
         "scaling_factor_multiplier": "get_max_active_power",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 49.7,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Renewable/PV/REAL_TIME_pv.csv"
+        "data_file": "../../timeseries_data_files/PV/REAL_TIME_pv.csv"
     },
     {
         "simulation": "REAL_TIME",
@@ -2623,7 +2623,7 @@
         "scaling_factor_multiplier": "get_max_active_power",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 94.1,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Renewable/PV/REAL_TIME_pv.csv"
+        "data_file": "../../timeseries_data_files/PV/REAL_TIME_pv.csv"
     },
     {
         "simulation": "REAL_TIME",
@@ -2636,7 +2636,7 @@
         "scaling_factor_multiplier": "get_max_active_power",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 51.6,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Renewable/PV/REAL_TIME_pv.csv"
+        "data_file": "../../timeseries_data_files/PV/REAL_TIME_pv.csv"
     },
     {
         "simulation": "REAL_TIME",
@@ -2649,7 +2649,7 @@
         "scaling_factor_multiplier": "get_max_active_power",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 51.6,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Renewable/PV/REAL_TIME_pv.csv"
+        "data_file": "../../timeseries_data_files/PV/REAL_TIME_pv.csv"
     },
     {
         "simulation": "REAL_TIME",
@@ -2662,7 +2662,7 @@
         "scaling_factor_multiplier": "get_max_active_power",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 51.0,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Renewable/PV/REAL_TIME_pv.csv"
+        "data_file": "../../timeseries_data_files/PV/REAL_TIME_pv.csv"
     },
     {
         "simulation": "REAL_TIME",
@@ -2675,7 +2675,7 @@
         "scaling_factor_multiplier": "get_max_active_power",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 93.6,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Renewable/PV/REAL_TIME_pv.csv"
+        "data_file": "../../timeseries_data_files/PV/REAL_TIME_pv.csv"
     },
     {
         "simulation": "REAL_TIME",
@@ -2688,7 +2688,7 @@
         "scaling_factor_multiplier": "get_max_active_power",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 188.2,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Renewable/PV/REAL_TIME_pv.csv"
+        "data_file": "../../timeseries_data_files/PV/REAL_TIME_pv.csv"
     },
     {
         "simulation": "REAL_TIME",
@@ -2701,7 +2701,7 @@
         "scaling_factor_multiplier": "get_max_active_power",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 125.1,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Renewable/PV/REAL_TIME_pv.csv"
+        "data_file": "../../timeseries_data_files/PV/REAL_TIME_pv.csv"
     },
     {
         "simulation": "REAL_TIME",
@@ -2714,7 +2714,7 @@
         "scaling_factor_multiplier": "get_max_active_power",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 25.6,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Renewable/PV/REAL_TIME_pv.csv"
+        "data_file": "../../timeseries_data_files/PV/REAL_TIME_pv.csv"
     },
     {
         "simulation": "REAL_TIME",
@@ -2727,7 +2727,7 @@
         "scaling_factor_multiplier": "get_max_active_power",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 25.900000000000002,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Renewable/PV/REAL_TIME_pv.csv"
+        "data_file": "../../timeseries_data_files/PV/REAL_TIME_pv.csv"
     },
     {
         "simulation": "REAL_TIME",
@@ -2740,7 +2740,7 @@
         "scaling_factor_multiplier": "get_max_active_power",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 25.3,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Renewable/PV/REAL_TIME_pv.csv"
+        "data_file": "../../timeseries_data_files/PV/REAL_TIME_pv.csv"
     },
     {
         "simulation": "REAL_TIME",
@@ -2753,7 +2753,7 @@
         "scaling_factor_multiplier": "get_max_active_power",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 26.8,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Renewable/PV/REAL_TIME_pv.csv"
+        "data_file": "../../timeseries_data_files/PV/REAL_TIME_pv.csv"
     },
     {
         "simulation": "REAL_TIME",
@@ -2766,7 +2766,7 @@
         "scaling_factor_multiplier": "get_max_active_power",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 26.700000000000003,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Renewable/PV/REAL_TIME_pv.csv"
+        "data_file": "../../timeseries_data_files/PV/REAL_TIME_pv.csv"
     },
     {
         "simulation": "REAL_TIME",
@@ -2779,7 +2779,7 @@
         "scaling_factor_multiplier": "get_max_active_power",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 26.200000000000003,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Renewable/PV/REAL_TIME_pv.csv"
+        "data_file": "../../timeseries_data_files/PV/REAL_TIME_pv.csv"
     },
     {
         "simulation": "REAL_TIME",
@@ -2792,7 +2792,7 @@
         "scaling_factor_multiplier": "get_max_active_power",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 25.8,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Renewable/PV/REAL_TIME_pv.csv"
+        "data_file": "../../timeseries_data_files/PV/REAL_TIME_pv.csv"
     },
     {
         "simulation": "REAL_TIME",
@@ -2805,7 +2805,7 @@
         "scaling_factor_multiplier": "get_max_active_power",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 61.5,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Renewable/PV/REAL_TIME_pv.csv"
+        "data_file": "../../timeseries_data_files/PV/REAL_TIME_pv.csv"
     },
     {
         "simulation": "REAL_TIME",
@@ -2818,7 +2818,7 @@
         "scaling_factor_multiplier": "get_max_active_power",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 66.6,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Renewable/PV/REAL_TIME_pv.csv"
+        "data_file": "../../timeseries_data_files/PV/REAL_TIME_pv.csv"
     },
     {
         "simulation": "REAL_TIME",
@@ -2831,7 +2831,7 @@
         "scaling_factor_multiplier": "get_max_active_power",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 100.9,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Renewable/RTPV/REAL_TIME_rtpv.csv"
+        "data_file": "../../timeseries_data_files/RTPV/REAL_TIME_rtpv.csv"
     },
     {
         "simulation": "REAL_TIME",
@@ -2844,7 +2844,7 @@
         "scaling_factor_multiplier": "get_max_active_power",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 101.70000000000002,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Renewable/RTPV/REAL_TIME_rtpv.csv"
+        "data_file": "../../timeseries_data_files/RTPV/REAL_TIME_rtpv.csv"
     },
     {
         "simulation": "REAL_TIME",
@@ -2857,7 +2857,7 @@
         "scaling_factor_multiplier": "get_max_active_power",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 63.1,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Renewable/RTPV/REAL_TIME_rtpv.csv"
+        "data_file": "../../timeseries_data_files/RTPV/REAL_TIME_rtpv.csv"
     },
     {
         "simulation": "REAL_TIME",
@@ -2870,7 +2870,7 @@
         "scaling_factor_multiplier": "get_max_active_power",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 65.4,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Renewable/RTPV/REAL_TIME_rtpv.csv"
+        "data_file": "../../timeseries_data_files/RTPV/REAL_TIME_rtpv.csv"
     },
     {
         "simulation": "REAL_TIME",
@@ -2883,7 +2883,7 @@
         "scaling_factor_multiplier": "get_max_active_power",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 67.0,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Renewable/RTPV/REAL_TIME_rtpv.csv"
+        "data_file": "../../timeseries_data_files/RTPV/REAL_TIME_rtpv.csv"
     },
     {
         "simulation": "REAL_TIME",
@@ -2896,7 +2896,7 @@
         "scaling_factor_multiplier": "get_max_active_power",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 64.8,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Renewable/RTPV/REAL_TIME_rtpv.csv"
+        "data_file": "../../timeseries_data_files/RTPV/REAL_TIME_rtpv.csv"
     },
     {
         "simulation": "REAL_TIME",
@@ -2909,7 +2909,7 @@
         "scaling_factor_multiplier": "get_max_active_power",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 63.800000000000004,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Renewable/RTPV/REAL_TIME_rtpv.csv"
+        "data_file": "../../timeseries_data_files/RTPV/REAL_TIME_rtpv.csv"
     },
     {
         "simulation": "REAL_TIME",
@@ -2922,7 +2922,7 @@
         "scaling_factor_multiplier": "get_max_active_power",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 64.1,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Renewable/RTPV/REAL_TIME_rtpv.csv"
+        "data_file": "../../timeseries_data_files/RTPV/REAL_TIME_rtpv.csv"
     },
     {
         "simulation": "REAL_TIME",
@@ -2935,7 +2935,7 @@
         "scaling_factor_multiplier": "get_max_active_power",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 66.6,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Renewable/RTPV/REAL_TIME_rtpv.csv"
+        "data_file": "../../timeseries_data_files/RTPV/REAL_TIME_rtpv.csv"
     },
     {
         "simulation": "REAL_TIME",
@@ -2948,7 +2948,7 @@
         "scaling_factor_multiplier": "get_max_active_power",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 62.4,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Renewable/RTPV/REAL_TIME_rtpv.csv"
+        "data_file": "../../timeseries_data_files/RTPV/REAL_TIME_rtpv.csv"
     },
     {
         "simulation": "REAL_TIME",
@@ -2961,7 +2961,7 @@
         "scaling_factor_multiplier": "get_max_active_power",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 66.9,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Renewable/RTPV/REAL_TIME_rtpv.csv"
+        "data_file": "../../timeseries_data_files/RTPV/REAL_TIME_rtpv.csv"
     },
     {
         "simulation": "REAL_TIME",
@@ -2974,7 +2974,7 @@
         "scaling_factor_multiplier": "get_max_active_power",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 65.2,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Renewable/RTPV/REAL_TIME_rtpv.csv"
+        "data_file": "../../timeseries_data_files/RTPV/REAL_TIME_rtpv.csv"
     },
     {
         "simulation": "REAL_TIME",
@@ -2987,7 +2987,7 @@
         "scaling_factor_multiplier": "get_max_active_power",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 27.800000000000004,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Renewable/RTPV/REAL_TIME_rtpv.csv"
+        "data_file": "../../timeseries_data_files/RTPV/REAL_TIME_rtpv.csv"
     },
     {
         "simulation": "REAL_TIME",
@@ -3000,7 +3000,7 @@
         "scaling_factor_multiplier": "get_max_active_power",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 27.3,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Renewable/RTPV/REAL_TIME_rtpv.csv"
+        "data_file": "../../timeseries_data_files/RTPV/REAL_TIME_rtpv.csv"
     },
     {
         "simulation": "REAL_TIME",
@@ -3013,7 +3013,7 @@
         "scaling_factor_multiplier": "get_max_active_power",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 27.0,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Renewable/RTPV/REAL_TIME_rtpv.csv"
+        "data_file": "../../timeseries_data_files/RTPV/REAL_TIME_rtpv.csv"
     },
     {
         "simulation": "REAL_TIME",
@@ -3026,7 +3026,7 @@
         "scaling_factor_multiplier": "get_max_active_power",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 28.300000000000004,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Renewable/RTPV/REAL_TIME_rtpv.csv"
+        "data_file": "../../timeseries_data_files/RTPV/REAL_TIME_rtpv.csv"
     },
     {
         "simulation": "REAL_TIME",
@@ -3039,7 +3039,7 @@
         "scaling_factor_multiplier": "get_max_active_power",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 27.200000000000003,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Renewable/RTPV/REAL_TIME_rtpv.csv"
+        "data_file": "../../timeseries_data_files/RTPV/REAL_TIME_rtpv.csv"
     },
     {
         "simulation": "REAL_TIME",
@@ -3052,7 +3052,7 @@
         "scaling_factor_multiplier": "get_max_active_power",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 27.0,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Renewable/RTPV/REAL_TIME_rtpv.csv"
+        "data_file": "../../timeseries_data_files/RTPV/REAL_TIME_rtpv.csv"
     },
     {
         "simulation": "REAL_TIME",
@@ -3065,7 +3065,7 @@
         "scaling_factor_multiplier": "get_max_active_power",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 28.199999999999996,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Renewable/RTPV/REAL_TIME_rtpv.csv"
+        "data_file": "../../timeseries_data_files/RTPV/REAL_TIME_rtpv.csv"
     },
     {
         "simulation": "REAL_TIME",
@@ -3078,7 +3078,7 @@
         "scaling_factor_multiplier": "get_max_active_power",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 9.3,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Renewable/RTPV/REAL_TIME_rtpv.csv"
+        "data_file": "../../timeseries_data_files/RTPV/REAL_TIME_rtpv.csv"
     },
     {
         "simulation": "REAL_TIME",
@@ -3091,7 +3091,7 @@
         "scaling_factor_multiplier": "get_max_active_power",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 9.7,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Renewable/RTPV/REAL_TIME_rtpv.csv"
+        "data_file": "../../timeseries_data_files/RTPV/REAL_TIME_rtpv.csv"
     },
     {
         "simulation": "REAL_TIME",
@@ -3104,7 +3104,7 @@
         "scaling_factor_multiplier": "get_max_active_power",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 9.4,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Renewable/RTPV/REAL_TIME_rtpv.csv"
+        "data_file": "../../timeseries_data_files/RTPV/REAL_TIME_rtpv.csv"
     },
     {
         "simulation": "REAL_TIME",
@@ -3117,7 +3117,7 @@
         "scaling_factor_multiplier": "get_max_active_power",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 9.1,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Renewable/RTPV/REAL_TIME_rtpv.csv"
+        "data_file": "../../timeseries_data_files/RTPV/REAL_TIME_rtpv.csv"
     },
     {
         "simulation": "REAL_TIME",
@@ -3130,7 +3130,7 @@
         "scaling_factor_multiplier": "get_max_active_power",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 9.1,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Renewable/RTPV/REAL_TIME_rtpv.csv"
+        "data_file": "../../timeseries_data_files/RTPV/REAL_TIME_rtpv.csv"
     },
     {
         "simulation": "REAL_TIME",
@@ -3143,7 +3143,7 @@
         "scaling_factor_multiplier": "get_max_active_power",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 9.7,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Renewable/RTPV/REAL_TIME_rtpv.csv"
+        "data_file": "../../timeseries_data_files/RTPV/REAL_TIME_rtpv.csv"
     },
     {
         "simulation": "REAL_TIME",
@@ -3156,7 +3156,7 @@
         "scaling_factor_multiplier": "get_max_active_power",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 9.4,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Renewable/RTPV/REAL_TIME_rtpv.csv"
+        "data_file": "../../timeseries_data_files/RTPV/REAL_TIME_rtpv.csv"
     },
     {
         "simulation": "REAL_TIME",
@@ -3169,7 +3169,7 @@
         "scaling_factor_multiplier": "get_max_active_power",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 11.8,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Renewable/RTPV/REAL_TIME_rtpv.csv"
+        "data_file": "../../timeseries_data_files/RTPV/REAL_TIME_rtpv.csv"
     },
     {
         "simulation": "REAL_TIME",
@@ -3182,7 +3182,7 @@
         "scaling_factor_multiplier": "get_max_active_power",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 11.2,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Renewable/RTPV/REAL_TIME_rtpv.csv"
+        "data_file": "../../timeseries_data_files/RTPV/REAL_TIME_rtpv.csv"
     },
     {
         "simulation": "REAL_TIME",
@@ -3195,7 +3195,7 @@
         "scaling_factor_multiplier": "get_max_active_power",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 10.3,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Renewable/RTPV/REAL_TIME_rtpv.csv"
+        "data_file": "../../timeseries_data_files/RTPV/REAL_TIME_rtpv.csv"
     },
     {
         "simulation": "REAL_TIME",
@@ -3208,7 +3208,7 @@
         "scaling_factor_multiplier": "get_max_active_power",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 4.5,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Renewable/RTPV/REAL_TIME_rtpv.csv"
+        "data_file": "../../timeseries_data_files/RTPV/REAL_TIME_rtpv.csv"
     },
     {
         "simulation": "REAL_TIME",
@@ -3221,7 +3221,7 @@
         "scaling_factor_multiplier": "get_max_active_power",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 13.200000000000001,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Renewable/RTPV/REAL_TIME_rtpv.csv"
+        "data_file": "../../timeseries_data_files/RTPV/REAL_TIME_rtpv.csv"
     },
     {
         "simulation": "REAL_TIME",
@@ -3234,7 +3234,7 @@
         "scaling_factor_multiplier": "get_max_active_power",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 148.3,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Renewable/WIND/REAL_TIME_wind.csv"
+        "data_file": "../../timeseries_data_files/WIND/REAL_TIME_wind.csv"
     },
     {
         "simulation": "REAL_TIME",
@@ -3247,7 +3247,7 @@
         "scaling_factor_multiplier": "get_max_active_power",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 799.1,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Renewable/WIND/REAL_TIME_wind.csv"
+        "data_file": "../../timeseries_data_files/WIND/REAL_TIME_wind.csv"
     },
     {
         "simulation": "REAL_TIME",
@@ -3260,7 +3260,7 @@
         "scaling_factor_multiplier": "get_max_active_power",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 847.0000000000001,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Renewable/WIND/REAL_TIME_wind.csv"
+        "data_file": "../../timeseries_data_files/WIND/REAL_TIME_wind.csv"
     },
     {
         "simulation": "REAL_TIME",
@@ -3273,7 +3273,7 @@
         "scaling_factor_multiplier": "get_max_active_power",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 713.5,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/gen/Renewable/WIND/REAL_TIME_wind.csv"
+        "data_file": "../../timeseries_data_files/WIND/REAL_TIME_wind.csv"
     },
     {
         "simulation": "REAL_TIME",
@@ -3286,7 +3286,7 @@
         "scaling_factor_multiplier": "get_requirement",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 77.0,
-        "data_file": "../RTS_GMLC/Reserves/REAL_TIME_regional_Reg_Down.csv"
+        "data_file": "../../timeseries_data_files/Reserves/REAL_TIME_regional_Reg_Down.csv"
     },
     {
         "simulation": "REAL_TIME",
@@ -3299,7 +3299,7 @@
         "scaling_factor_multiplier": "get_requirement",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 72.0,
-        "data_file": "../RTS_GMLC/Reserves/REAL_TIME_regional_Reg_Up.csv"
+        "data_file": "../../timeseries_data_files/Reserves/REAL_TIME_regional_Reg_Up.csv"
     },
     {
         "simulation": "REAL_TIME",
@@ -3312,7 +3312,7 @@
         "scaling_factor_multiplier": "get_requirement",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 40.413,
-        "data_file": "../RTS_GMLC/Reserves/REAL_TIME_regional_Spin_Up_R1.csv"
+        "data_file": "../../timeseries_data_files/Reserves/REAL_TIME_regional_Spin_Up_R1.csv"
     },
     {
         "simulation": "REAL_TIME",
@@ -3325,7 +3325,7 @@
         "scaling_factor_multiplier": "get_requirement",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 42.851,
-        "data_file": "../RTS_GMLC/Reserves/REAL_TIME_regional_Spin_Up_R2.csv"
+        "data_file": "../../timeseries_data_files/Reserves/REAL_TIME_regional_Spin_Up_R2.csv"
     },
     {
         "simulation": "REAL_TIME",
@@ -3338,7 +3338,7 @@
         "scaling_factor_multiplier": "get_requirement",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 56.666,
-        "data_file": "../RTS_GMLC/Reserves/REAL_TIME_regional_Spin_Up_R3.csv"
+        "data_file": "../../timeseries_data_files/Reserves/REAL_TIME_regional_Spin_Up_R3.csv"
     },
     {
         "simulation": "REAL_TIME",
@@ -3351,7 +3351,7 @@
         "scaling_factor_multiplier": "get_max_active_power",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 2850.0,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/load/REAL_TIME_regional_Load.csv"
+        "data_file": "../../timeseries_data_files/Load/REAL_TIME_regional_Load.csv"
     },
     {
         "simulation": "REAL_TIME",
@@ -3364,7 +3364,7 @@
         "scaling_factor_multiplier": "get_max_active_power",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 2850.0,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/load/REAL_TIME_regional_Load.csv"
+        "data_file": "../../timeseries_data_files/Load/REAL_TIME_regional_Load.csv"
     },
     {
         "simulation": "REAL_TIME",
@@ -3377,6 +3377,6 @@
         "scaling_factor_multiplier": "get_max_active_power",
         "scaling_factor_multiplier_module": "PowerSystems",
         "normalization_factor": 2850.0,
-        "data_file": "../forecasts/RTS_GMLC_forecasts/load/REAL_TIME_regional_Load.csv"
+        "data_file": "../../timeseries_data_files/Load/REAL_TIME_regional_Load.csv"
     }
 ]
