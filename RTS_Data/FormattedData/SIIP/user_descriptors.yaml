@@ -70,7 +70,6 @@ generator:
 - {custom_name: Output_pct_2, name: output_point_2, unit_system: device_base}
 - {custom_name: Output_pct_3, name: output_point_3, unit_system: device_base}
 - {custom_name: Output_pct_4, name: output_point_4, unit_system: device_base}
-- {custom_name: MATPOWER BaseMVA, name: base_mva} #TODO just for testing
 - {custom_name: Non Fuel Shutdown Cost $, name: shutdown_cost}
 - {custom_name: Unit Type, name: unit_type}
 - {custom_name: Category, name: category}
@@ -104,4 +103,3 @@ storage:
 - {custom_name: Initial Volume GWh, name: energy_level, unit: GWh}
 - {custom_name: Rating MVA, name: rating} #TODO: add data to connecting gen.rating
 - {custom_name: Rating MVA, name: base_power} #TODO: add ref to connecting gen.base_power
-
