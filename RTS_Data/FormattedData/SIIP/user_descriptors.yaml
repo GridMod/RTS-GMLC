@@ -70,10 +70,21 @@ generator:
 - {custom_name: Output_pct_2, name: output_point_2, unit_system: device_base}
 - {custom_name: Output_pct_3, name: output_point_3, unit_system: device_base}
 - {custom_name: Output_pct_4, name: output_point_4, unit_system: device_base}
-- {custom_name: Base MVA, name: base_mva}
+- {custom_name: MATPOWER BaseMVA, name: base_mva} #TODO just for testing
 - {custom_name: Non Fuel Shutdown Cost $, name: shutdown_cost}
 - {custom_name: Unit Type, name: unit_type}
 - {custom_name: Category, name: category}
+- {custom_name: Start Time Cold Hr, name: cold_start_time}
+- {custom_name: Start Time Warm Hr, name: warm_start_time}
+- {custom_name: Start Time Hot Hr, name: hot_start_time}
+- {custom_name: Startup Ramp Rate MW/min, name: startup_ramp, unit_system: natural_units}
+- {custom_name: Shutdown Ramp Rate MW/min, name: shutdown_ramp, unit_system: natural_units}
+- {custom_name: Status at Start, name: status_at_start}
+- {custom_name: Time at Status, name: time_at_status}
+- {custom_name: Start Cost Cold, name: cold_start_cost}
+- {custom_name: Start Cost Warm, name: warm_start_cost}
+- {custom_name: Start Cost Hot, name: hot_start_cost}
+- {custom_name: Must Run, name: must_run}
 load: []
 reserves:
 - {custom_name: Reserve Product, name: name}
@@ -93,3 +104,4 @@ storage:
 - {custom_name: Initial Volume GWh, name: energy_level, unit: GWh}
 - {custom_name: Rating MVA, name: rating} #TODO: add data to connecting gen.rating
 - {custom_name: Rating MVA, name: base_power} #TODO: add ref to connecting gen.base_power
+
