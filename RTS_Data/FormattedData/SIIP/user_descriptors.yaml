@@ -104,3 +104,4 @@ storage:
 - {custom_name: Initial Volume GWh, name: energy_level, unit: GWh}
 - {custom_name: Rating MVA, name: rating} #TODO: add data to connecting gen.rating
 - {custom_name: Rating MVA, name: base_power} #TODO: add ref to connecting gen.base_power
+- {custom_name: position, name: position}
