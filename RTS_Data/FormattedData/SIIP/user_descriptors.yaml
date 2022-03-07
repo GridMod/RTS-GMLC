@@ -16,8 +16,8 @@ bus:
 - {custom_name: Bus Type, name: bus_type}
 - {custom_name: V Mag, name: voltage, unit_system: device_base}
 - {custom_name: V Angle, name: angle, unit: degree}
-- {custom_name: MW Shunt G, name: mw_shunt_g}
-- {custom_name: MVAR Shunt B, name: mvar_shut_b}
+- {custom_name: MW Shunt G, name: shunt_g, unit_system: natural_units}
+- {custom_name: MVAR Shunt B, name: shunt_b, unit_system: natural_units}
 - {custom_name: MW Load, name: max_active_power, unit_system: natural_units}
 - {custom_name: MVAR Load, name: max_reactive_power, unit_system: natural_units}
 - {custom_name: MW Load, name: active_power, unit_system: natural_units}
