@@ -1,0 +1,1 @@
+**The workflow to create the input data for openTEPES based on the RTS-GMLC is as follows:**
