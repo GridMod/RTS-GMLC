@@ -45,4 +45,4 @@ def GetDictionaries(_path_data, _path_file, CaseName):
     pAreaToRegion['Region'] = 'Region_1'
     pAreaToRegion.to_csv(_path_file + '/openTEPES_RTS-GMLC/oT_Dict_AreaToRegion_' + CaseName + '.csv', sep=',', index=False)
 
-    # Determining number of circuts
+    # Determining number of circuits
