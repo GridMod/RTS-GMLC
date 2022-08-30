@@ -6,27 +6,33 @@ import pandas as pd
 
 def GetDictionaries(_path_data, _path_file, CaseName):
 
-    # reading the bus information
-    df_bus = pd.read_csv(_path_data+'/SourceData/bus.csv')
+    # reading data from the folder SourceData
+    df_bus    = pd.read_csv(_path_data+'/SourceData/bus.csv'   )
+    df_branch = pd.read_csv(_path_data+'/SourceData/branch.csv')
+    df_gen    = pd.read_csv(_path_data+'/SourceData/gen.csv'   )
+
+    # reading data from the folder timeseries_data_file
+    df_TS_CSP = pd.read_csv(_path_data + '/timeseries_data_files/CSP/DAY_AHEAD_Natural_Inflow.csv')
+
 
     # Extracting regions
     pRegions = pd.Series(['Region_1'])
-    pRegions.to_frame('Region').to_csv(_path_file+'/openTEPES_RTS-GMLC/oT_Dict_Region_'+CaseName+'.csv', sep=',', index=False)
+    pRegions.to_frame(name='Region').to_csv(_path_file+'/openTEPES_RTS-GMLC/oT_Dict_Region_'+CaseName+'.csv', sep=',', index=False)
 
     # Extracting areas
     IdxAreas  = df_bus['Area'].unique()
     pAreas     = pd.Series(['Area_'+str(int(i)) for i in IdxAreas])
-    pAreas.to_frame('Area').to_csv(_path_file+'/openTEPES_RTS-GMLC/oT_Dict_Area_'+CaseName+'.csv', sep=',', index=False)
+    pAreas.to_frame(name='Area').to_csv(_path_file+'/openTEPES_RTS-GMLC/oT_Dict_Area_'+CaseName+'.csv', sep=',', index=False)
 
     # Extracting zones
     IdxZones  = df_bus['Zone'].unique()
     pZones     = pd.Series(['Zone_'+str(int(i)) for i in IdxZones])
-    pZones.to_frame('Zone').to_csv(_path_file+'/openTEPES_RTS-GMLC/oT_Dict_Zone_'+CaseName+'.csv', sep=',', index=False)
+    pZones.to_frame(name='Zone').to_csv(_path_file+'/openTEPES_RTS-GMLC/oT_Dict_Zone_'+CaseName+'.csv', sep=',', index=False)
 
     # Extracting nodes
     IdxNodes  = df_bus['Bus ID'].unique()
     pNodes     = pd.Series(['Node_'+str(int(i)) for i in IdxNodes])
-    pNodes.to_frame('Node').to_csv(_path_file+'/openTEPES_RTS-GMLC/oT_Dict_Node_'+CaseName+'.csv', sep=',', index=False)
+    pNodes.to_frame(name='Node').to_csv(_path_file+'/openTEPES_RTS-GMLC/oT_Dict_Node_'+CaseName+'.csv', sep=',', index=False)
 
     # From Node to Zone
     Nodes = ['Node_' + str(int(df_bus['Bus ID'][i])) for i in df_bus.index]
@@ -45,4 +51,51 @@ def GetDictionaries(_path_data, _path_file, CaseName):
     pAreaToRegion['Region'] = 'Region_1'
     pAreaToRegion.to_csv(_path_file + '/openTEPES_RTS-GMLC/oT_Dict_AreaToRegion_' + CaseName + '.csv', sep=',', index=False)
 
-    # Determining number of circuits
+    # Defining circuits
+    pCircuit = pd.Series(['eac1', 'eac2', 'eac3', 'eac4'])
+    pCircuit.to_frame(name='Circuit').to_csv(_path_file + '/openTEPES_RTS-GMLC/oT_Dict_Circuit_' + CaseName + '.csv', sep=',', index=False)
+
+    # Determining generators
+    IdxGenerator = df_gen['GEN UID'].unique()
+    pGenerator   = pd.Series([i for i in IdxGenerator])
+    pGenerator.to_frame(name='Generator').to_csv(_path_file+'/openTEPES_RTS-GMLC/oT_Dict_Generation_'+CaseName+'.csv', sep=',', index=False)
+
+    # Defining line types
+    pLineType = pd.Series(['AC', 'DC'])
+    pLineType.to_frame(name='LineType').to_csv(_path_file + '/openTEPES_RTS-GMLC/oT_Dict_Line_' + CaseName + '.csv', sep=',', index=False)
+
+    # Defining load levels
+    df_TS_CSP['Month' ] = df_TS_CSP.Month.map("{:02}".format)
+    df_TS_CSP['Day'   ] = df_TS_CSP.Day.map("{:02}".format)
+    df_TS_CSP['Period'] = df_TS_CSP.Period.map("{:02}".format)
+    LoadLevels   = [str(df_TS_CSP['Month'][i])+str(df_TS_CSP['Day'][i])+str(df_TS_CSP['Period'][i]) for i in df_TS_CSP.index]
+    pLoadLevels  = pd.DataFrame({'LoadLevel': LoadLevels})
+    pLoadLevels.to_csv(_path_file + '/openTEPES_RTS-GMLC/oT_Dict_LoadLevel_' + CaseName + '.csv', sep=',', index=False)
+
+    # Defining the Period
+    IdxPeriod    = df_TS_CSP['Year'].unique()
+    pPeriod      = pd.Series([i for i in IdxPeriod])
+    pPeriod.to_frame(name='Period').to_csv(_path_file+'/openTEPES_RTS-GMLC/oT_Dict_Period_'+CaseName+'.csv', sep=',', index=False)
+
+    # Defining the Scenario
+    pScenarios   = pd.Series(['sc01'])
+    pScenarios.to_frame(name='Scenario').to_csv(_path_file+'/openTEPES_RTS-GMLC/oT_Dict_Scenario_'+CaseName+'.csv', sep=',', index=False)
+
+    # Defining the Stage
+    pStage       = pd.Series(['st0'])
+    pStage.to_frame(name='Stage').to_csv(_path_file+'/openTEPES_RTS-GMLC/oT_Dict_Stage_'+CaseName+'.csv', sep=',', index=False)
+
+    # Defining the storage type
+    pStorageType = pd.Series(['Daily', 'Weekly'])
+    pStorageType.to_frame(name='StorageType').to_csv(_path_file+'/openTEPES_RTS-GMLC/oT_Dict_StorageType_'+CaseName+'.csv', sep=',', index=False)
+
+    # Defining the generation technologies
+    IdxTechno    = df_gen['Fuel'].unique()
+    pTechnology  = pd.Series([i for i in IdxTechno])
+    pTechnology.to_frame(name='Technology').to_csv(_path_file+'/openTEPES_RTS-GMLC/oT_Dict_Technology_'+CaseName+'.csv', sep=',', index=False)
+
+    # InitialNodes = ['Node_' + str(int(df_branch['From Bus'][i])) for i in df_branch.index]
+    # FinalNodes   = ['Node_' + str(int(df_branch['To Bus'  ][i])) for i in df_branch.index]
+    # pLines = pd.DataFrame({'InitialNode': InitialNodes, 'FinalNode': FinalNodes})
+    # pCircuits = pLines.set_index(['InitialNode', 'FinalNode'])
+    # pCircuits = pCircuits[pCircuits.index.duplicated()].reset_index()
