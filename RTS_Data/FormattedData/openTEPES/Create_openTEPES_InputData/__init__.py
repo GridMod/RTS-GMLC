@@ -16,4 +16,5 @@ Open Generation, Storage, and Transmission Operation and Expansion Planning Mode
 """
 # __version__ = "4.8.0"
 
-from .SourceDataToDictionaries import GetDictionaries
+from .SourceDataToDictionaries import GettingDataTo_oTDict
+from .SourceDataToData         import GettingDataTo_oTData
