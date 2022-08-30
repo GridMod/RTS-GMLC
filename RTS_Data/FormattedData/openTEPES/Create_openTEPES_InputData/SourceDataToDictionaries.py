@@ -1,10 +1,8 @@
 # Libraries
-import os
-import time
 import pandas as pd
 
 
-def GetDictionaries(_path_data, _path_file, CaseName):
+def GettingDataTo_oTDict(_path_data, _path_file, CaseName):
 
     # reading data from the folder SourceData
     df_bus    = pd.read_csv(_path_data+'/SourceData/bus.csv'   )
