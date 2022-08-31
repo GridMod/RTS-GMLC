@@ -1,8 +1,12 @@
 # Libraries
+import time
 import pandas as pd
 
 
 def GettingDataTo_oTDict(_path_data, _path_file, CaseName):
+    print('Transforming data to get the oT_Dict files ****')
+
+    StartTime = time.time()
 
     # reading data from the folder SourceData
     df_bus    = pd.read_csv(_path_data+'/SourceData/bus.csv'   )
@@ -97,3 +101,6 @@ def GettingDataTo_oTDict(_path_data, _path_file, CaseName):
     # pLines = pd.DataFrame({'InitialNode': InitialNodes, 'FinalNode': FinalNodes})
     # pCircuits = pLines.set_index(['InitialNode', 'FinalNode'])
     # pCircuits = pCircuits[pCircuits.index.duplicated()].reset_index()
+
+    oT_Dict_Time    = time.time() - StartTime
+    print('oT_Dict files generation               ... ', round(oT_Dict_Time), 's')
