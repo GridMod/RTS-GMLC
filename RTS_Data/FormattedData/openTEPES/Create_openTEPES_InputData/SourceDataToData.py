@@ -349,7 +349,8 @@ def GettingDataTo_oTData(_path_data, _path_file, CaseName):
     pNodeLocation['Latitude' ] = df_bus['lat']
     pNodeLocation['Longitude'] = df_bus['lng']
 
-    pNodeLocation.set_index(['Bus']).rename_axis([None], axis=0).to_csv(_path_file+'/RTS-GMLC/oT_Data_NodeLocation_'+CaseName+'.csv', sep=',', index=True)
+    pNodeLocation = pNodeLocation.set_index(['Bus']).round(4)
+    pNodeLocation.rename_axis([None], axis=0).to_csv(_path_file+'/RTS-GMLC/oT_Data_NodeLocation_'+CaseName+'.csv', sep=',', index=True)
 
     pNodeLocation_File_Time = time.time() - StartTime
     StartTime               = time.time()
