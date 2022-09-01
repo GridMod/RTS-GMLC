@@ -27,6 +27,7 @@ def GettingDataTo_oTData(_path_data, _path_file, CaseName):
     df_NodeToZone    = pd.read_csv(_path_file+'/openTEPES_RTS-GMLC/oT_Dict_NodeToZone_'+CaseName+'.csv')
     df_Period        = pd.read_csv(_path_file+'/openTEPES_RTS-GMLC/oT_Dict_Period_'    +CaseName+'.csv')
     df_Scenario      = pd.read_csv(_path_file+'/openTEPES_RTS-GMLC/oT_Dict_Scenario_'  +CaseName+'.csv')
+    df_Stage         = pd.read_csv(_path_file+'/openTEPES_RTS-GMLC/oT_Dict_Stage_'     +CaseName+'.csv')
     df_ZoneToArea    = pd.read_csv(_path_file+'/openTEPES_RTS-GMLC/oT_Dict_ZoneToArea_'+CaseName+'.csv')
 
 
@@ -106,7 +107,21 @@ def GettingDataTo_oTData(_path_data, _path_file, CaseName):
 
     pDemand_File_Time    = time.time() - StartTime
     StartTime            = time.time()
-    print('pDemand file  generation               ... ', round(pDemand_File_Time), 's')
+    print('pDemand         file  generation       ... ', round(pDemand_File_Time), 's')
+
+    ##%% Generating the Duration file
+    pDuration = pd.DataFrame(0, dtype=int, index=LoadLevels, columns=['Duration','Stage'])
+    pDuration['Duration'] = 1
+    pDuration['Stage'   ] = df_Stage.loc[0,'Stage']
+
+    pDuration = pDuration.reset_index()
+    pDuration.columns = ['LoadLevel', 'Duration', 'Stage']
+
+    pDuration.to_csv(_path_file+'/openTEPES_RTS-GMLC/oT_Data_Duration_'+CaseName+'.csv', sep=',', index=False)
+
+    pDuration_File_Time = time.time() - StartTime
+    StartTime           = time.time()
+    print('pDuration       file  generation       ... ', round(pDuration_File_Time), 's')
 
     #%% Getting the energy inflows
     df_hydro['LoadLevel'] = pd.DataFrame({'LoadLevel': LoadLevels})
@@ -408,4 +423,42 @@ def GettingDataTo_oTData(_path_data, _path_file, CaseName):
     StartTime            = time.time()
     print('pParameter      file  generation       ... ', round(pParameter_File_Time), 's')
 
-    
+    #%% Generating the Period file
+    pPeriod = pd.DataFrame(1, dtype=int, index=pd.Index([df_Period.loc[0,'Period']]), columns=['Weight'])
+
+    pPeriod.rename_axis([None], axis=0).to_csv(_path_file+'/openTEPES_RTS-GMLC/oT_Data_Period_'+CaseName+'.csv', sep=',', index=True)
+
+    pPeriod_File_Time = time.time() - StartTime
+    StartTime         = time.time()
+    print('pPeriod         file  generation       ... ', round(pPeriod_File_Time), 's')
+
+    #%% Generating the Reserve Margin file
+    pReserveMargin = pd.DataFrame(1, dtype=int, index=sorted(ar), columns=['ReserveMargin'])
+
+    pReserveMargin['ReserveMargin'] *= 1.1
+
+    pReserveMargin.rename_axis([None], axis=0).to_csv(_path_file+'/openTEPES_RTS-GMLC/oT_Data_ReserveMargin_'+CaseName+'.csv', sep=',', index=True)
+
+    pReserveMargin_File_Time = time.time() - StartTime
+    StartTime         = time.time()
+    print('pReserveMargin  file  generation       ... ', round(pReserveMargin_File_Time), 's')
+
+    #%% Generating the Scenario file
+    pScenario = pd.DataFrame(1, dtype=int, index=pd.Index([0]), columns=['Probability'])
+    pScenario['Period'] = df_Period
+    pScenario.loc[0,'Scenario'] = df_Scenario.loc  [0,'Scenario']
+
+    pScenario.set_index(['Period','Scenario']).rename_axis([None,None], axis=0).to_csv(_path_file+'/openTEPES_RTS-GMLC/oT_Data_Scenario_'+CaseName+'.csv', sep=',', index=True)
+
+    pScenario_File_Time = time.time() - StartTime
+    StartTime           = time.time()
+    print('pScenario       file  generation       ... ', round(pScenario_File_Time), 's')
+
+    #%% Generating the Stage file
+    pStage = pd.DataFrame(1, dtype=int, index=pd.Index([df_Stage.loc[0,'Stage']]), columns=['Weight'])
+
+    pStage.rename_axis([None], axis=0).to_csv(_path_file+'/openTEPES_RTS-GMLC/oT_Data_Stage_'+CaseName+'.csv', sep=',', index=True)
+
+    pStage_File_Time = time.time() - StartTime
+    StartTime        = time.time()
+    print('pStage          file  generation       ... ', round(pStage_File_Time), 's')
