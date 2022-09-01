@@ -10,7 +10,9 @@ def GettingDataTo_oTData(_path_data, _path_file, CaseName):
     StartTime = time.time()
 
     # reading data from the folder SourceData
-    df_bus = pd.read_csv(_path_data + '/SourceData/bus.csv')
+    df_bus     = pd.read_csv(_path_data + '/SourceData/bus.csv')
+    df_gen     = pd.read_csv(_path_data + '/SourceData/gen.csv')
+    df_storage = pd.read_csv(_path_data + '/SourceData/storage.csv')
 
     # reading data from the folder timeseries_data_file
     df_load    = pd.read_csv(_path_data + '/timeseries_data_files/Load/DAY_AHEAD_regional_Load.csv')
@@ -19,7 +21,7 @@ def GettingDataTo_oTData(_path_data, _path_file, CaseName):
 
     # reading data from the dictionaries
     df_Area          = pd.read_csv(_path_file+'/openTEPES_RTS-GMLC/oT_Dict_Area_'      +CaseName+'.csv')
-    df_Gen           = pd.read_csv(_path_file+'/openTEPES_RTS-GMLC/oT_Dict_Generation_'+CaseName+'.csv')
+    df_GenDict       = pd.read_csv(_path_file+'/openTEPES_RTS-GMLC/oT_Dict_Generation_'+CaseName+'.csv')
     df_Node          = pd.read_csv(_path_file+'/openTEPES_RTS-GMLC/oT_Dict_Node_'      +CaseName+'.csv')
     df_NodeToZone    = pd.read_csv(_path_file+'/openTEPES_RTS-GMLC/oT_Dict_NodeToZone_'+CaseName+'.csv')
     df_Period        = pd.read_csv(_path_file+'/openTEPES_RTS-GMLC/oT_Dict_Period_'    +CaseName+'.csv')
@@ -36,8 +38,8 @@ def GettingDataTo_oTData(_path_data, _path_file, CaseName):
     znar             = []
     for i in df_Area.index:
         ar.append(df_Area['Area'][i])
-    for i in df_Gen.index:
-        gen.append(df_Gen['Generator'][i])
+    for i in df_GenDict.index:
+        gen.append(df_GenDict['Generator'][i])
     for i in df_Node.index:
         nd.append(df_Node['Node'][i])
     for i in df_NodeToZone.index:
@@ -133,7 +135,7 @@ def GettingDataTo_oTData(_path_data, _path_file, CaseName):
 
     pEnergyInflows_File_Time    = time.time() - StartTime
     StartTime                   = time.time()
-    print('pEnergyInflows file  generation        ... ', round(pEnergyInflows_File_Time), 's')
+    print('pEnergyInflows  file  generation       ... ', round(pEnergyInflows_File_Time), 's')
 
     #%% Getting the energy outflows
     pEnergyOutflows             = pd.DataFrame(0, dtype=int, index=LoadLevels, columns=sorted(gen))
@@ -147,3 +149,92 @@ def GettingDataTo_oTData(_path_data, _path_file, CaseName):
     pEnergyOutflows_File_Time   = time.time() - StartTime
     StartTime                   = time.time()
     print('pEnergyOutflows file  generation       ... ', round(pEnergyOutflows_File_Time), 's')
+
+    #%% Generating the oT_Data_Generation file
+    # Parameters all units
+    # pGeneration = df_gen.iloc[:,:2]
+    pGeneration = pd.DataFrame(0, dtype=int, index=df_gen.index,
+                               columns=['Gen', 'Node', 'Technology', 'MutuallyExclusive', 'StorageType', 'OutflowsType',
+                                        'MustRun', 'BinaryCommitment', 'NoOperatingReserve', 'InitialPeriod',
+                                        'FinalPeriod', 'MaximumPower', 'MinimumPower', 'MaximumCharge',
+                                        'MinimumCharge', 'InitialStorage', 'MaximumStorage', 'MinimumStorage',
+                                        'Efficiency', 'ShiftTime', 'EFOR', 'RampUp', 'RampDown', 'UpTime', 'DownTime',
+                                        'FuelCost', 'LinearTerm', 'ConstantTerm', 'OMVariableCost', 'OperReserveCost',
+                                        'StartUpCost', 'ShutDownCost', 'CO2EmissionRate', 'Availability',
+                                        'FixedInvestmentCost', 'FixedChargeRate', 'BinaryInvestment', 'Inertia',
+                                        'FixedRetirementCost', 'BinaryRetirement', 'MaximumReactivePower',
+                                        'MinimumReactivePower', 'InvestmentLo', 'InvestmentUp', 'RetirementLo',
+                                        'RetirementUp'])
+    for i in pGeneration.index:
+        pGeneration.loc[i,'Node'] = 'N_'+str(df_gen.loc[i,'Bus ID'])
+
+    pGeneration['Gen'        ] = df_gen['GEN UID']
+    pGeneration['Technology' ] = df_gen['Fuel'   ]
+
+    for i in pGeneration.index:
+        if pGeneration.loc[i,'Technology'] == 'Hydro':
+            pGeneration.loc[i,'StorageType' ] = 'Weekly'
+            pGeneration.loc[i,'OutflowsType'] = 'Weekly'
+        if pGeneration.loc[i,'Gen'] == '212_CSP_1' or pGeneration.loc[i,'Technology'] == 'Storage':
+            pGeneration.loc[i,'StorageType' ] = 'Daily'
+            pGeneration.loc[i,'OutflowsType'] = 'Daily'
+        if pGeneration.loc[i, 'Technology'] == 'Nuclear':
+            pGeneration.loc[i,'MustRun'] = 'yes'
+        if pGeneration.loc[i,'Technology'] == 'Oil' or pGeneration.loc[i,'Technology'] == 'Coal' or pGeneration.loc[i,'Technology'] == 'NG' or pGeneration.loc[i,'Technology'] == 'Nuclear':
+            pGeneration.loc[i,'BinaryCommitment'] = 'yes'
+        if pGeneration.loc[i, 'Technology'] == 'Solar' or pGeneration.loc[i,'Technology'] == 'Wind':
+            pGeneration.loc[i,'NoOperatingReserve'] = 'yes'
+
+    pGeneration['InitialPeriod'  ] = 2015
+    pGeneration['FinalPeriod'    ] = 2050
+    pGeneration['MaximumPower'   ] = df_gen['PMax MW'                ]
+    pGeneration['MinimumPower'   ] = df_gen['PMin MW'                ]
+    # Parameters for all thermal units
+    pGeneration['EFOR'           ] = df_gen['FOR'                    ]
+    pGeneration['RampUp'         ] = df_gen['Ramp Rate MW/Min'       ]*60
+    pGeneration['RampDown'       ] = df_gen['Ramp Rate MW/Min'       ]*60
+    pGeneration['UpTime'         ] = df_gen['Min Up Time Hr'         ]
+    pGeneration['DownTime'       ] = df_gen['Min Down Time Hr'       ]
+    pGeneration['FuelCost'       ] = df_gen['Fuel Price $/MMBTU'     ]
+    pGeneration['LinearTerm'     ] = df_gen['HR_avg_0'               ]*1000/1000000
+    pGeneration['StartUpCost'    ] = df_gen['Start Heat Cold MBTU'   ]*1000*df_gen['Fuel Price $/MMBTU']/1000000
+    pGeneration['CO2EmissionRate'] = df_gen['Emissions CO2 Lbs/MMBTU']*pGeneration['LinearTerm']*0.0004535924
+
+    # Availability
+    for i in pGeneration.index:
+        if pGeneration.loc[i,'Technology'] == 'Oil' or pGeneration.loc[i,'Technology'] == 'Coal' or pGeneration.loc[i,'Technology'] == 'NG':
+            pGeneration.loc[i,'Availability'] = 0.966
+        if pGeneration.loc[i,'Technology'] == 'Nuclear':
+            pGeneration.loc[i, 'Availability'] = 0.22275641
+        if pGeneration.loc[i,'Technology'] == 'Hydro':
+            pGeneration.loc[i, 'Availability'] = 0.339
+        if pGeneration.loc[i,'Technology'] == 'Solar':
+            pGeneration.loc[i, 'Availability'] = 0.32
+        if pGeneration.loc[i,'Technology'] == 'Hydro':
+            pGeneration.loc[i, 'Availability'] = 0.01
+        if pGeneration.loc[i,'Technology'] == 'Storage':
+            pGeneration.loc[i, 'Availability'] = 0.31
+
+    # Parameters for all storage units
+    df_storage  = df_storage.set_index(['GEN UID'])
+    df_gen      = df_gen.set_index(['GEN UID'])
+    pGeneration = pGeneration.set_index(['Gen'])
+    for i in df_storage.index:
+        # if pGeneration.loc[i,'Technology'] != 'Hydro':
+        #     pGeneration.loc[i,'MaximumCharge'] = pGeneration.loc[i,'MaximumPower']
+        pGeneration.loc[i,'MaximumCharge'] = df_gen.loc[i,'Pump Load MW']
+        pGeneration.loc[i,'Efficiency'   ] = df_gen.loc[i,'Storage Roundtrip Efficiency']/100
+        if pGeneration.loc[i, 'Technology'] != 'Storage':
+            pGeneration.loc[i,'MaximumStorage'] = df_storage.loc[i,'Max Volume GWh']
+            pGeneration.loc[i,'InitialStorage'] = df_storage.loc[i,'Initial Volume GWh']
+        else:
+            pGeneration.loc[i,'MaximumStorage'] = 0.15
+            pGeneration.loc[i,'InitialStorage'] = 0.075
+        pGeneration.loc[i, 'MinimumStorage'] = 0
+
+    pGeneration.to_csv(_path_file+'/openTEPES_RTS-GMLC/oT_Data_Generation_'+CaseName+'.csv', sep=',', index=True)
+
+    pGeneration_File_Time   = time.time() - StartTime
+    StartTime                   = time.time()
+    print('pGeneration     file  generation       ... ', round(pGeneration_File_Time), 's')
+
