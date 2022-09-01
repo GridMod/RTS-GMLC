@@ -293,8 +293,8 @@ def GettingDataTo_oTData(_path_data, _path_file, CaseName):
                                         'AngMin', 'AngMax', 'InvestmentLo', 'InvestmentUp'])
 
     for i in df_branch.index:
-        pNetwork.loc[i,'InitialNode'] = 'N_'+str(df_branch.loc[i,'From Bus'])
-        pNetwork.loc[i,'FinalNode'  ] = 'N_'+str(df_branch.loc[i,'To Bus'  ])
+        pNetwork.loc[i,'InitialNode'] = 'Node_'+str(df_branch.loc[i,'From Bus'])
+        pNetwork.loc[i,'FinalNode'  ] = 'Node_'+str(df_branch.loc[i,'To Bus'  ])
         if df_branch.loc[i,'Tr Ratio'] == 0:
             pNetwork.loc[i, 'Tap'] = 1
         else:
@@ -345,11 +345,15 @@ def GettingDataTo_oTData(_path_data, _path_file, CaseName):
 
     #%% Generating the NodeLocation file
     pNodeLocation      = pd.DataFrame(dtype=int, index=df_bus.index, columns=['Bus','Latitude','Longitude'])
+    # for i in df_bus.index:
+    #     pNodeLocation.loc[i,'Bus'      ] = 'Node_'+str(int(df_bus.loc[i,'Bus ID']))
+    #     pNodeLocation.loc[i,'Latitude' ] = df_bus.loc[i,'lat']
+    #     pNodeLocation.loc[i,'Longitude'] = df_bus.loc[i,'lng']
     pNodeLocation['Bus'      ] = sorted(nd)
     pNodeLocation['Latitude' ] = df_bus['lat']
     pNodeLocation['Longitude'] = df_bus['lng']
 
-    pNodeLocation = pNodeLocation.set_index(['Bus']).round(4)
+    pNodeLocation = pNodeLocation.set_index(['Bus'])
     pNodeLocation.rename_axis([None], axis=0).to_csv(_path_file+'/RTS-GMLC/oT_Data_NodeLocation_'+CaseName+'.csv', sep=',', index=True)
 
     pNodeLocation_File_Time = time.time() - StartTime
