@@ -10,6 +10,7 @@ def GettingDataTo_oTData(_path_data, _path_file, CaseName):
     StartTime = time.time()
 
     # reading data from the folder SourceData
+    df_branch  = pd.read_csv(_path_data + '/SourceData/branch.csv')
     df_bus     = pd.read_csv(_path_data + '/SourceData/bus.csv')
     df_gen     = pd.read_csv(_path_data + '/SourceData/gen.csv')
     df_storage = pd.read_csv(_path_data + '/SourceData/storage.csv')
@@ -101,7 +102,7 @@ def GettingDataTo_oTData(_path_data, _path_file, CaseName):
     pDemand['Scenario'] = df_Scenario.loc[0, 'Scenario']
 
     pDemand = pDemand.set_index(['Period', 'Scenario', 'index'])
-    pDemand.to_csv(_path_file+'/openTEPES_RTS-GMLC/oT_Data_Demand_'+CaseName+'.csv', sep=',', index=True)
+    pDemand.rename_axis([None,None,None], axis=0).to_csv(_path_file+'/openTEPES_RTS-GMLC/oT_Data_Demand_'+CaseName+'.csv', sep=',', index=True)
 
     pDemand_File_Time    = time.time() - StartTime
     StartTime            = time.time()
@@ -131,7 +132,7 @@ def GettingDataTo_oTData(_path_data, _path_file, CaseName):
     pEnergyInflows['Scenario'] = df_Scenario.loc[0, 'Scenario']
 
     pEnergyInflows = pEnergyInflows.set_index(['Period', 'Scenario', 'index'])
-    pEnergyInflows.to_csv(_path_file+'/openTEPES_RTS-GMLC/oT_Data_EnergyInflows_'+CaseName+'.csv', sep=',', index=True)
+    pEnergyInflows.rename_axis([None,None,None], axis=0).to_csv(_path_file+'/openTEPES_RTS-GMLC/oT_Data_EnergyInflows_'+CaseName+'.csv', sep=',', index=True)
 
     pEnergyInflows_File_Time    = time.time() - StartTime
     StartTime                   = time.time()
@@ -144,7 +145,7 @@ def GettingDataTo_oTData(_path_data, _path_file, CaseName):
     pEnergyOutflows['Scenario'] = df_Scenario.loc[0, 'Scenario']
 
     pEnergyOutflows = pEnergyOutflows.set_index(['Period', 'Scenario', 'index'])
-    pEnergyOutflows.to_csv(_path_file+'/openTEPES_RTS-GMLC/oT_Data_EnergyOutflows_'+CaseName+'.csv', sep=',', index=True)
+    pEnergyOutflows.rename_axis([None,None,None], axis=0).to_csv(_path_file+'/openTEPES_RTS-GMLC/oT_Data_EnergyOutflows_'+CaseName+'.csv', sep=',', index=True)
 
     pEnergyOutflows_File_Time   = time.time() - StartTime
     StartTime                   = time.time()
@@ -152,7 +153,6 @@ def GettingDataTo_oTData(_path_data, _path_file, CaseName):
 
     #%% Generating the oT_Data_Generation file
     # Parameters all units
-    # pGeneration = df_gen.iloc[:,:2]
     pGeneration = pd.DataFrame(0, dtype=int, index=df_gen.index,
                                columns=['Gen', 'Node', 'Technology', 'MutuallyExclusive', 'StorageType', 'OutflowsType',
                                         'MustRun', 'BinaryCommitment', 'NoOperatingReserve', 'InitialPeriod',
@@ -165,6 +165,20 @@ def GettingDataTo_oTData(_path_data, _path_file, CaseName):
                                         'FixedRetirementCost', 'BinaryRetirement', 'MaximumReactivePower',
                                         'MinimumReactivePower', 'InvestmentLo', 'InvestmentUp', 'RetirementLo',
                                         'RetirementUp'])
+
+    pGeneration['MutuallyExclusive'  ] = ""
+    pGeneration['StorageType'        ] = ""
+    pGeneration['OutflowsType'       ] = ""
+    pGeneration['MustRun'            ] = ""
+    pGeneration['BinaryCommitment'   ] = ""
+    pGeneration['NoOperatingReserve' ] = ""
+    pGeneration['FixedInvestmentCost'] = ""
+    pGeneration['FixedChargeRate'    ] = ""
+    pGeneration['BinaryInvestment'   ] = ""
+    pGeneration['FixedRetirementCost'] = ""
+    pGeneration['BinaryRetirement'   ] = ""
+
+
     for i in pGeneration.index:
         pGeneration.loc[i,'Node'] = 'N_'+str(df_gen.loc[i,'Bus ID'])
 
@@ -185,20 +199,20 @@ def GettingDataTo_oTData(_path_data, _path_file, CaseName):
         if pGeneration.loc[i, 'Technology'] == 'Solar' or pGeneration.loc[i,'Technology'] == 'Wind':
             pGeneration.loc[i,'NoOperatingReserve'] = 'yes'
 
-    pGeneration['InitialPeriod'  ] = 2015
-    pGeneration['FinalPeriod'    ] = 2050
-    pGeneration['MaximumPower'   ] = df_gen['PMax MW'                ]
-    pGeneration['MinimumPower'   ] = df_gen['PMin MW'                ]
+    pGeneration['InitialPeriod'    ] = 2015
+    pGeneration['FinalPeriod'      ] = 2050
+    pGeneration['MaximumPower'     ] = df_gen['PMax MW'                ]
+    pGeneration['MinimumPower'     ] = df_gen['PMin MW'                ]
     # Parameters for all thermal units
-    pGeneration['EFOR'           ] = df_gen['FOR'                    ]
-    pGeneration['RampUp'         ] = df_gen['Ramp Rate MW/Min'       ]*60
-    pGeneration['RampDown'       ] = df_gen['Ramp Rate MW/Min'       ]*60
-    pGeneration['UpTime'         ] = df_gen['Min Up Time Hr'         ]
-    pGeneration['DownTime'       ] = df_gen['Min Down Time Hr'       ]
-    pGeneration['FuelCost'       ] = df_gen['Fuel Price $/MMBTU'     ]
-    pGeneration['LinearTerm'     ] = df_gen['HR_avg_0'               ]*1000/1000000
-    pGeneration['StartUpCost'    ] = df_gen['Start Heat Cold MBTU'   ]*1000*df_gen['Fuel Price $/MMBTU']/1000000
-    pGeneration['CO2EmissionRate'] = df_gen['Emissions CO2 Lbs/MMBTU']*pGeneration['LinearTerm']*0.0004535924
+    pGeneration['EFOR'             ] = df_gen['FOR'                    ]
+    pGeneration['RampUp'           ] = df_gen['Ramp Rate MW/Min'       ]*60
+    pGeneration['RampDown'         ] = df_gen['Ramp Rate MW/Min'       ]*60
+    pGeneration['UpTime'           ] = df_gen['Min Up Time Hr'         ]
+    pGeneration['DownTime'         ] = df_gen['Min Down Time Hr'       ]
+    pGeneration['FuelCost'         ] = df_gen['Fuel Price $/MMBTU'     ]
+    pGeneration['LinearTerm'       ] = df_gen['HR_avg_0'               ]*1000/1000000
+    pGeneration['StartUpCost'      ] = df_gen['Start Heat Cold MBTU'   ]*1000*df_gen['Fuel Price $/MMBTU']/1000000
+    pGeneration['CO2EmissionRate'  ] = df_gen['Emissions CO2 Lbs/MMBTU']*pGeneration['LinearTerm']*0.0004535924
 
     # Availability
     for i in pGeneration.index:
@@ -232,9 +246,93 @@ def GettingDataTo_oTData(_path_data, _path_file, CaseName):
             pGeneration.loc[i,'InitialStorage'] = 0.075
         pGeneration.loc[i, 'MinimumStorage'] = 0
 
-    pGeneration.to_csv(_path_file+'/openTEPES_RTS-GMLC/oT_Data_Generation_'+CaseName+'.csv', sep=',', index=True)
+    pGeneration.rename_axis([None], axis=0).to_csv(_path_file+'/openTEPES_RTS-GMLC/oT_Data_Generation_'+CaseName+'.csv', sep=',', index=True)
 
-    pGeneration_File_Time   = time.time() - StartTime
-    StartTime                   = time.time()
+    pGeneration_File_Time = time.time() - StartTime
+    StartTime             = time.time()
     print('pGeneration     file  generation       ... ', round(pGeneration_File_Time), 's')
 
+    #%% Generating the Inertia file
+    pInertia             = pd.DataFrame(0, dtype=int, index=LoadLevels, columns=sorted(ar))
+    pInertia             = pInertia.reset_index()
+    pInertia['Period']   = df_Period.loc  [0, 'Period'  ]
+    pInertia['Scenario'] = df_Scenario.loc[0, 'Scenario']
+
+    pInertia = pInertia.set_index(['Period', 'Scenario', 'index'])
+    pInertia.rename_axis([None,None,None], axis=0).to_csv(_path_file+'/openTEPES_RTS-GMLC/oT_Data_Inertia_'+CaseName+'.csv', sep=',', index=True)
+
+    pInertia_File_Time = time.time() - StartTime
+    StartTime          = time.time()
+    print('pInertia        file  generation       ... ', round(pInertia_File_Time), 's')
+
+    #%% Generating the oT_Data_Network file
+    pNetwork = pd.DataFrame(dtype=int, index=df_branch.index,
+                               columns=['InitialNode', 'FinalNode', 'Circuit', 'Length', 'LineType', 'InitialPeriod',
+                                        'FinalPeriod', 'Voltage', 'LossFactor', 'Resistance', 'Reactance',
+                                        'Susceptance', 'Tap', 'TTC', 'TTCBck', 'SecurityFactor', 'FixedInvestmentCost',
+                                        'FixedChargeRate', 'BinaryInvestment', 'Switching', 'SwOnTime', 'SwOffTime',
+                                        'AngMin', 'AngMax', 'InvestmentLo', 'InvestmentUp'])
+
+    for i in df_branch.index:
+        pNetwork.loc[i,'InitialNode'] = 'N_'+str(df_branch.loc[i,'From Bus'])
+        pNetwork.loc[i,'FinalNode'  ] = 'N_'+str(df_branch.loc[i,'To Bus'  ])
+        if df_branch.loc[i,'Tr Ratio'] == 0:
+            pNetwork.loc[i, 'Tap'] = 1
+        else:
+            pNetwork.loc[i, 'Tap'] = df_branch.loc[i,'Tr Ratio']
+
+    aux_1 = []
+    for i in pNetwork.index:
+        if (pNetwork.loc[i,'InitialNode'],pNetwork.loc[i,'FinalNode']) not in aux_1:
+            pNetwork.loc[i, 'Circuit'] = 'eac'+ str(1)
+        else:
+            pNetwork.loc[i, 'Circuit'] = 'eac' + str(aux_1.count((pNetwork.loc[i,'InitialNode'],pNetwork.loc[i,'FinalNode']))+1)
+        aux_1.append((pNetwork.loc[i,'InitialNode'],pNetwork.loc[i,'FinalNode']))
+
+    pNetwork['Length'             ] = ""
+    pNetwork['InitialPeriod'      ] =  2015
+    pNetwork['FinalPeriod'        ] =  2050
+    pNetwork['LossFactor'         ] =  0.01
+    pNetwork['Resistance'         ] = df_branch['R'          ]
+    pNetwork['Reactance'          ] = df_branch['X'          ]
+    pNetwork['Susceptance'        ] = df_branch['B'          ]
+    pNetwork['TTC'                ] = df_branch['Cont Rating']
+    pNetwork['TTCBck'             ] = ""
+    pNetwork['SecurityFactor'     ] = 1
+    pNetwork['FixedInvestmentCost'] = ""
+    pNetwork['FixedChargeRate'    ] = ""
+    pNetwork['BinaryInvestment'   ] = ""
+    pNetwork['Switching'          ] = ""
+    pNetwork['SwOnTime'           ] = ""
+    pNetwork['SwOffTime'          ] = ""
+    pNetwork['AngMin'             ] = -1.047197551
+    pNetwork['AngMax'             ] =  1.047197551
+
+    pBus = df_bus.set_index(['Bus ID'])
+    for i in pNetwork.index:
+        if pNetwork.loc[i,'Susceptance'] == 0:
+            pNetwork.loc[i, 'LineType'] = 'DC'
+        else:
+            pNetwork.loc[i, 'LineType'] = 'AC'
+        a = pBus.loc[df_branch.loc[i,'From Bus'], 'BaseKV']
+        b = pBus.loc[df_branch.loc[i,'To Bus'  ], 'BaseKV']
+        pNetwork.loc[i, 'Voltage'] = max(a,b)
+
+    pNetwork.set_index(['InitialNode','FinalNode','Circuit']).rename_axis([None,None,None], axis=0).to_csv(_path_file+'/openTEPES_RTS-GMLC/oT_Data_Network_'+CaseName+'.csv', sep=',', index=True)
+
+    pNetwork_File_Time = time.time() - StartTime
+    StartTime          = time.time()
+    print('pNetwork        file  generation       ... ', round(pNetwork_File_Time), 's')
+
+    #%% Generating the NodeLocation file
+    pNodeLocation      = pd.DataFrame(dtype=int, index=df_bus.index, columns=['Bus','Latitude','Longitude'])
+    pNodeLocation['Bus'      ] = sorted(nd)
+    pNodeLocation['Latitude' ] = df_bus['lat']
+    pNodeLocation['Longitude'] = df_bus['lng']
+
+    pNodeLocation.set_index(['Bus']).rename_axis([None], axis=0).to_csv(_path_file+'/openTEPES_RTS-GMLC/oT_Data_NodeLocation_'+CaseName+'.csv', sep=',', index=True)
+
+    pNodeLocation_File_Time = time.time() - StartTime
+    StartTime               = time.time()
+    print('pNodeLocation   file  generation       ... ', round(pNodeLocation_File_Time), 's')
+    
