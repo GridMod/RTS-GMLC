@@ -199,7 +199,7 @@ def GettingDataTo_oTData(_path_data, _path_file, CaseName):
 
 
     for i in pGeneration.index:
-        pGeneration.loc[i,'Node'] = 'N_'+str(df_gen.loc[i,'Bus ID'])
+        pGeneration.loc[i,'Node'] = 'Node_'+str(df_gen.loc[i,'Bus ID'])
 
     pGeneration['Gen'        ] = df_gen['GEN UID']
     pGeneration['Technology' ] = df_gen['Fuel'   ]
@@ -422,7 +422,7 @@ def GettingDataTo_oTData(_path_data, _path_file, CaseName):
 
     for i in df_bus.index:
         if df_bus.loc[i,'Bus Type'] == 'Ref':
-            a = 'N_'+str(df_bus.loc[i,'Bus ID'])
+            a = 'Node_'+str(df_bus.loc[i,'Bus ID'])
 
     pParameter['ReferenceNode'] = a
 
