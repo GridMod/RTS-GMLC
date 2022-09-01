@@ -335,4 +335,77 @@ def GettingDataTo_oTData(_path_data, _path_file, CaseName):
     pNodeLocation_File_Time = time.time() - StartTime
     StartTime               = time.time()
     print('pNodeLocation   file  generation       ... ', round(pNodeLocation_File_Time), 's')
+
+    #%% Generating the Operating Reserves file
+    pOperatingReservesDown              = pd.DataFrame(0, dtype=int, index=LoadLevels, columns=sorted(ar))
+    pOperatingReservesDown             = pOperatingReservesDown.reset_index()
+    pOperatingReservesDown['Period']   = df_Period.loc  [0, 'Period'  ]
+    pOperatingReservesDown['Scenario'] = df_Scenario.loc[0, 'Scenario']
+
+    pOperatingReservesDown = pOperatingReservesDown.set_index(['Period', 'Scenario', 'index'])
+    pOperatingReservesDown.rename_axis([None,None,None], axis=0).to_csv(_path_file+'/openTEPES_RTS-GMLC/oT_Data_OperatingReservesDown_'+CaseName+'.csv', sep=',', index=True)
+
+    pOperatingReservesDown_File_Time = time.time() - StartTime
+    StartTime          = time.time()
+    print('pOperReservDown file  generation       ... ', round(pOperatingReservesDown_File_Time), 's')
+
+    pOperatingReservesUp             = pd.DataFrame(0, dtype=int, index=LoadLevels, columns=sorted(ar))
+    pOperatingReservesUp             = pOperatingReservesUp.reset_index()
+    pOperatingReservesUp['Period']   = df_Period.loc  [0, 'Period'  ]
+    pOperatingReservesUp['Scenario'] = df_Scenario.loc[0, 'Scenario']
+
+    pOperatingReservesUp = pOperatingReservesUp.set_index(['Period', 'Scenario', 'index'])
+    pOperatingReservesUp.rename_axis([None,None,None], axis=0).to_csv(_path_file+'/openTEPES_RTS-GMLC/oT_Data_OperatingReservesUp_'+CaseName+'.csv', sep=',', index=True)
+
+    pOperatingReservesUp_File_Time = time.time() - StartTime
+    StartTime          = time.time()
+    print('pOperReservUp   file  generation       ... ', round(pOperatingReservesUp_File_Time), 's')
+
+    #%% Generating the Option file
+    pOption = pd.DataFrame(0, dtype=int, index=pd.Index(['Options']), columns=['IndBinGenInvest', 'IndBinGenRetirement',
+                                                                   'IndBinNetInvest', 'IndBinGenOperat',
+                                                                   'IndBinNetLosses', 'IndBinLineCommit',
+                                                                   'IndBinSingleNode', 'IndBinGenRamps',
+                                                                   'IndBinGenMinTime'])
+
+    pOption['IndBinGenOperat' ] = 0
+    pOption['IndBinSingleNode'] = 0
+    pOption['IndBinGenRamps'  ] = 1
+    pOption['IndBinGenMinTime'] = 1
+
+    pOption.rename_axis([None], axis=0).to_csv(_path_file+'/openTEPES_RTS-GMLC/oT_Data_Option_'+CaseName+'.csv', sep=',', index=True)
+
+    pOption_File_Time  = time.time() - StartTime
+    StartTime          = time.time()
+    print('pOption         file  generation       ... ', round(pOption_File_Time), 's')
+
+    #%% Generating the Parameter file
+    pParameter = pd.DataFrame(0, dtype=int, index=pd.Index(['Parameters']),
+                              columns=['ENSCost', 'CO2Cost','AnnualDiscountRate', 'UpReserveActivation',
+                                       'DwReserveActivation', 'MinRatioDwUp','MaxRatioDwUp', 'EconomicBaseYear',
+                                       'SBase','ReferenceNode','TimeStep'])
+
+    pParameter['ENSCost' ] = 10000
+    pParameter['CO2Cost'] = 70
+    pParameter['AnnualDiscountRate'  ] = 0.04
+    pParameter['UpReserveActivation'] = 0.25
+    pParameter['DwReserveActivation'] = 0.3
+    pParameter['MinRatioDwUp'] = 0
+    pParameter['MaxRatioDwUp'] = 1
+    pParameter['EconomicBaseYear'] = 2020
+    pParameter['SBase'] = 100
+    pParameter['TimeStep'] = 1
+
+    for i in df_bus.index:
+        if df_bus.loc[i,'Bus Type'] == 'Ref':
+            a = 'N_'+str(df_bus.loc[i,'Bus ID'])
+
+    pParameter['ReferenceNode'] = a
+
+    pParameter.rename_axis([None], axis=0).to_csv(_path_file+'/openTEPES_RTS-GMLC/oT_Data_Parameter_'+CaseName+'.csv', sep=',', index=True)
+
+    pParameter_File_Time = time.time() - StartTime
+    StartTime            = time.time()
+    print('pParameter      file  generation       ... ', round(pParameter_File_Time), 's')
+
     
