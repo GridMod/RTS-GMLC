@@ -387,7 +387,7 @@ def GettingDataTo_oTData(_path_data, _path_file, CaseName):
                                                                    'IndBinSingleNode', 'IndBinGenRamps',
                                                                    'IndBinGenMinTime'])
 
-    pOption['IndBinGenOperat' ] = 0
+    pOption['IndBinGenOperat' ] = 1
     pOption['IndBinSingleNode'] = 0
     pOption['IndBinGenRamps'  ] = 1
     pOption['IndBinGenMinTime'] = 1
