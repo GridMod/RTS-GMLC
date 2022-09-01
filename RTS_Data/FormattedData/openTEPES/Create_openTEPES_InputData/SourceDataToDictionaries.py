@@ -96,11 +96,5 @@ def GettingDataTo_oTDict(_path_data, _path_file, CaseName):
     pTechnology  = pd.Series([i for i in IdxTechno])
     pTechnology.to_frame(name='Technology').to_csv(_path_file+'/openTEPES_RTS-GMLC/oT_Dict_Technology_'+CaseName+'.csv', sep=',', index=False)
 
-    # InitialNodes = ['Node_' + str(int(df_branch['From Bus'][i])) for i in df_branch.index]
-    # FinalNodes   = ['Node_' + str(int(df_branch['To Bus'  ][i])) for i in df_branch.index]
-    # pLines = pd.DataFrame({'InitialNode': InitialNodes, 'FinalNode': FinalNodes})
-    # pCircuits = pLines.set_index(['InitialNode', 'FinalNode'])
-    # pCircuits = pCircuits[pCircuits.index.duplicated()].reset_index()
-
     oT_Dict_Time    = time.time() - StartTime
     print('oT_Dict files generation               ... ', round(oT_Dict_Time), 's')
