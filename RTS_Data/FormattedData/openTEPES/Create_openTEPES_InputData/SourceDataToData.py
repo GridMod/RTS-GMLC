@@ -7,28 +7,32 @@ import pandas as pd
 def GettingDataTo_oTData(_path_data, _path_file, CaseName):
     print('Transforming data to get the oT_Data files ****')
 
-    StartTime = time.time()
+    StartTimeFunction = time.time()
+    StartTime         = time.time()
 
     # reading data from the folder SourceData
-    df_branch  = pd.read_csv(_path_data + '/SourceData/branch.csv')
-    df_bus     = pd.read_csv(_path_data + '/SourceData/bus.csv')
-    df_gen     = pd.read_csv(_path_data + '/SourceData/gen.csv')
-    df_storage = pd.read_csv(_path_data + '/SourceData/storage.csv')
+    df_branch        = pd.read_csv(_path_data + '/SourceData/branch.csv' )
+    df_bus           = pd.read_csv(_path_data + '/SourceData/bus.csv'    )
+    df_gen           = pd.read_csv(_path_data + '/SourceData/gen.csv'    )
+    df_storage       = pd.read_csv(_path_data + '/SourceData/storage.csv')
 
     # reading data from the folder timeseries_data_file
-    df_load    = pd.read_csv(_path_data + '/timeseries_data_files/Load/DAY_AHEAD_regional_Load.csv')
-    df_hydro   = pd.read_csv(_path_data + '/timeseries_data_files/Hydro/DAY_AHEAD_hydro.csv')
-    df_csp     = pd.read_csv(_path_data + '/timeseries_data_files/CSP/DAY_AHEAD_Natural_Inflow.csv')
+    df_load          = pd.read_csv(_path_data + '/timeseries_data_files/Load/DAY_AHEAD_regional_Load.csv')
+    df_hydro         = pd.read_csv(_path_data + '/timeseries_data_files/Hydro/DAY_AHEAD_hydro.csv'       )
+    df_csp           = pd.read_csv(_path_data + '/timeseries_data_files/CSP/DAY_AHEAD_Natural_Inflow.csv')
+    df_pv            = pd.read_csv(_path_data + '/timeseries_data_files/PV/DAY_AHEAD_pv.csv'             )
+    df_rtpv          = pd.read_csv(_path_data + '/timeseries_data_files/RTPV/DAY_AHEAD_rtpv.csv'         )
+    df_wind          = pd.read_csv(_path_data + '/timeseries_data_files/WIND/DAY_AHEAD_wind.csv'         )
 
     # reading data from the dictionaries
-    df_Area          = pd.read_csv(_path_file+'/openTEPES_RTS-GMLC/oT_Dict_Area_'      +CaseName+'.csv')
-    df_GenDict       = pd.read_csv(_path_file+'/openTEPES_RTS-GMLC/oT_Dict_Generation_'+CaseName+'.csv')
-    df_Node          = pd.read_csv(_path_file+'/openTEPES_RTS-GMLC/oT_Dict_Node_'      +CaseName+'.csv')
-    df_NodeToZone    = pd.read_csv(_path_file+'/openTEPES_RTS-GMLC/oT_Dict_NodeToZone_'+CaseName+'.csv')
-    df_Period        = pd.read_csv(_path_file+'/openTEPES_RTS-GMLC/oT_Dict_Period_'    +CaseName+'.csv')
-    df_Scenario      = pd.read_csv(_path_file+'/openTEPES_RTS-GMLC/oT_Dict_Scenario_'  +CaseName+'.csv')
-    df_Stage         = pd.read_csv(_path_file+'/openTEPES_RTS-GMLC/oT_Dict_Stage_'     +CaseName+'.csv')
-    df_ZoneToArea    = pd.read_csv(_path_file+'/openTEPES_RTS-GMLC/oT_Dict_ZoneToArea_'+CaseName+'.csv')
+    df_Area          = pd.read_csv(_path_file+'/RTS-GMLC/oT_Dict_Area_'      +CaseName+'.csv')
+    df_GenDict       = pd.read_csv(_path_file+'/RTS-GMLC/oT_Dict_Generation_'+CaseName+'.csv')
+    df_Node          = pd.read_csv(_path_file+'/RTS-GMLC/oT_Dict_Node_'      +CaseName+'.csv')
+    df_NodeToZone    = pd.read_csv(_path_file+'/RTS-GMLC/oT_Dict_NodeToZone_'+CaseName+'.csv')
+    df_Period        = pd.read_csv(_path_file+'/RTS-GMLC/oT_Dict_Period_'    +CaseName+'.csv')
+    df_Scenario      = pd.read_csv(_path_file+'/RTS-GMLC/oT_Dict_Scenario_'  +CaseName+'.csv')
+    df_Stage         = pd.read_csv(_path_file+'/RTS-GMLC/oT_Dict_Stage_'     +CaseName+'.csv')
+    df_ZoneToArea    = pd.read_csv(_path_file+'/RTS-GMLC/oT_Dict_ZoneToArea_'+CaseName+'.csv')
 
 
 
@@ -103,7 +107,7 @@ def GettingDataTo_oTData(_path_data, _path_file, CaseName):
     pDemand['Scenario'] = df_Scenario.loc[0, 'Scenario']
 
     pDemand = pDemand.set_index(['Period', 'Scenario', 'index'])
-    pDemand.rename_axis([None,None,None], axis=0).to_csv(_path_file+'/openTEPES_RTS-GMLC/oT_Data_Demand_'+CaseName+'.csv', sep=',', index=True)
+    pDemand.rename_axis([None,None,None], axis=0).to_csv(_path_file+'/RTS-GMLC/oT_Data_Demand_'+CaseName+'.csv', sep=',', index=True)
 
     pDemand_File_Time    = time.time() - StartTime
     StartTime            = time.time()
@@ -117,7 +121,7 @@ def GettingDataTo_oTData(_path_data, _path_file, CaseName):
     pDuration = pDuration.reset_index()
     pDuration.columns = ['LoadLevel', 'Duration', 'Stage']
 
-    pDuration.to_csv(_path_file+'/openTEPES_RTS-GMLC/oT_Data_Duration_'+CaseName+'.csv', sep=',', index=False)
+    pDuration.to_csv(_path_file+'/RTS-GMLC/oT_Data_Duration_'+CaseName+'.csv', sep=',', index=False)
 
     pDuration_File_Time = time.time() - StartTime
     StartTime           = time.time()
@@ -147,7 +151,7 @@ def GettingDataTo_oTData(_path_data, _path_file, CaseName):
     pEnergyInflows['Scenario'] = df_Scenario.loc[0, 'Scenario']
 
     pEnergyInflows = pEnergyInflows.set_index(['Period', 'Scenario', 'index'])
-    pEnergyInflows.rename_axis([None,None,None], axis=0).to_csv(_path_file+'/openTEPES_RTS-GMLC/oT_Data_EnergyInflows_'+CaseName+'.csv', sep=',', index=True)
+    pEnergyInflows.rename_axis([None,None,None], axis=0).to_csv(_path_file+'/RTS-GMLC/oT_Data_EnergyInflows_'+CaseName+'.csv', sep=',', index=True)
 
     pEnergyInflows_File_Time    = time.time() - StartTime
     StartTime                   = time.time()
@@ -160,7 +164,7 @@ def GettingDataTo_oTData(_path_data, _path_file, CaseName):
     pEnergyOutflows['Scenario'] = df_Scenario.loc[0, 'Scenario']
 
     pEnergyOutflows = pEnergyOutflows.set_index(['Period', 'Scenario', 'index'])
-    pEnergyOutflows.rename_axis([None,None,None], axis=0).to_csv(_path_file+'/openTEPES_RTS-GMLC/oT_Data_EnergyOutflows_'+CaseName+'.csv', sep=',', index=True)
+    pEnergyOutflows.rename_axis([None,None,None], axis=0).to_csv(_path_file+'/RTS-GMLC/oT_Data_EnergyOutflows_'+CaseName+'.csv', sep=',', index=True)
 
     pEnergyOutflows_File_Time   = time.time() - StartTime
     StartTime                   = time.time()
@@ -261,7 +265,7 @@ def GettingDataTo_oTData(_path_data, _path_file, CaseName):
             pGeneration.loc[i,'InitialStorage'] = 0.075
         pGeneration.loc[i, 'MinimumStorage'] = 0
 
-    pGeneration.rename_axis([None], axis=0).to_csv(_path_file+'/openTEPES_RTS-GMLC/oT_Data_Generation_'+CaseName+'.csv', sep=',', index=True)
+    pGeneration.rename_axis([None], axis=0).to_csv(_path_file+'/RTS-GMLC/oT_Data_Generation_'+CaseName+'.csv', sep=',', index=True)
 
     pGeneration_File_Time = time.time() - StartTime
     StartTime             = time.time()
@@ -274,7 +278,7 @@ def GettingDataTo_oTData(_path_data, _path_file, CaseName):
     pInertia['Scenario'] = df_Scenario.loc[0, 'Scenario']
 
     pInertia = pInertia.set_index(['Period', 'Scenario', 'index'])
-    pInertia.rename_axis([None,None,None], axis=0).to_csv(_path_file+'/openTEPES_RTS-GMLC/oT_Data_Inertia_'+CaseName+'.csv', sep=',', index=True)
+    pInertia.rename_axis([None,None,None], axis=0).to_csv(_path_file+'/RTS-GMLC/oT_Data_Inertia_'+CaseName+'.csv', sep=',', index=True)
 
     pInertia_File_Time = time.time() - StartTime
     StartTime          = time.time()
@@ -333,7 +337,7 @@ def GettingDataTo_oTData(_path_data, _path_file, CaseName):
         b = pBus.loc[df_branch.loc[i,'To Bus'  ], 'BaseKV']
         pNetwork.loc[i, 'Voltage'] = max(a,b)
 
-    pNetwork.set_index(['InitialNode','FinalNode','Circuit']).rename_axis([None,None,None], axis=0).to_csv(_path_file+'/openTEPES_RTS-GMLC/oT_Data_Network_'+CaseName+'.csv', sep=',', index=True)
+    pNetwork.set_index(['InitialNode','FinalNode','Circuit']).rename_axis([None,None,None], axis=0).to_csv(_path_file+'/RTS-GMLC/oT_Data_Network_'+CaseName+'.csv', sep=',', index=True)
 
     pNetwork_File_Time = time.time() - StartTime
     StartTime          = time.time()
@@ -345,7 +349,7 @@ def GettingDataTo_oTData(_path_data, _path_file, CaseName):
     pNodeLocation['Latitude' ] = df_bus['lat']
     pNodeLocation['Longitude'] = df_bus['lng']
 
-    pNodeLocation.set_index(['Bus']).rename_axis([None], axis=0).to_csv(_path_file+'/openTEPES_RTS-GMLC/oT_Data_NodeLocation_'+CaseName+'.csv', sep=',', index=True)
+    pNodeLocation.set_index(['Bus']).rename_axis([None], axis=0).to_csv(_path_file+'/RTS-GMLC/oT_Data_NodeLocation_'+CaseName+'.csv', sep=',', index=True)
 
     pNodeLocation_File_Time = time.time() - StartTime
     StartTime               = time.time()
@@ -358,7 +362,7 @@ def GettingDataTo_oTData(_path_data, _path_file, CaseName):
     pOperatingReservesDown['Scenario'] = df_Scenario.loc[0, 'Scenario']
 
     pOperatingReservesDown = pOperatingReservesDown.set_index(['Period', 'Scenario', 'index'])
-    pOperatingReservesDown.rename_axis([None,None,None], axis=0).to_csv(_path_file+'/openTEPES_RTS-GMLC/oT_Data_OperatingReservesDown_'+CaseName+'.csv', sep=',', index=True)
+    pOperatingReservesDown.rename_axis([None,None,None], axis=0).to_csv(_path_file+'/RTS-GMLC/oT_Data_OperatingReserveDown_'+CaseName+'.csv', sep=',', index=True)
 
     pOperatingReservesDown_File_Time = time.time() - StartTime
     StartTime          = time.time()
@@ -370,7 +374,7 @@ def GettingDataTo_oTData(_path_data, _path_file, CaseName):
     pOperatingReservesUp['Scenario'] = df_Scenario.loc[0, 'Scenario']
 
     pOperatingReservesUp = pOperatingReservesUp.set_index(['Period', 'Scenario', 'index'])
-    pOperatingReservesUp.rename_axis([None,None,None], axis=0).to_csv(_path_file+'/openTEPES_RTS-GMLC/oT_Data_OperatingReservesUp_'+CaseName+'.csv', sep=',', index=True)
+    pOperatingReservesUp.rename_axis([None,None,None], axis=0).to_csv(_path_file+'/RTS-GMLC/oT_Data_OperatingReserveUp_'+CaseName+'.csv', sep=',', index=True)
 
     pOperatingReservesUp_File_Time = time.time() - StartTime
     StartTime          = time.time()
@@ -388,7 +392,7 @@ def GettingDataTo_oTData(_path_data, _path_file, CaseName):
     pOption['IndBinGenRamps'  ] = 1
     pOption['IndBinGenMinTime'] = 1
 
-    pOption.rename_axis([None], axis=0).to_csv(_path_file+'/openTEPES_RTS-GMLC/oT_Data_Option_'+CaseName+'.csv', sep=',', index=True)
+    pOption.rename_axis([None], axis=0).to_csv(_path_file+'/RTS-GMLC/oT_Data_Option_'+CaseName+'.csv', sep=',', index=True)
 
     pOption_File_Time  = time.time() - StartTime
     StartTime          = time.time()
@@ -417,7 +421,7 @@ def GettingDataTo_oTData(_path_data, _path_file, CaseName):
 
     pParameter['ReferenceNode'] = a
 
-    pParameter.rename_axis([None], axis=0).to_csv(_path_file+'/openTEPES_RTS-GMLC/oT_Data_Parameter_'+CaseName+'.csv', sep=',', index=True)
+    pParameter.rename_axis([None], axis=0).to_csv(_path_file+'/RTS-GMLC/oT_Data_Parameter_'+CaseName+'.csv', sep=',', index=True)
 
     pParameter_File_Time = time.time() - StartTime
     StartTime            = time.time()
@@ -426,7 +430,7 @@ def GettingDataTo_oTData(_path_data, _path_file, CaseName):
     #%% Generating the Period file
     pPeriod = pd.DataFrame(1, dtype=int, index=pd.Index([df_Period.loc[0,'Period']]), columns=['Weight'])
 
-    pPeriod.rename_axis([None], axis=0).to_csv(_path_file+'/openTEPES_RTS-GMLC/oT_Data_Period_'+CaseName+'.csv', sep=',', index=True)
+    pPeriod.rename_axis([None], axis=0).to_csv(_path_file+'/RTS-GMLC/oT_Data_Period_'+CaseName+'.csv', sep=',', index=True)
 
     pPeriod_File_Time = time.time() - StartTime
     StartTime         = time.time()
@@ -437,7 +441,7 @@ def GettingDataTo_oTData(_path_data, _path_file, CaseName):
 
     pReserveMargin['ReserveMargin'] *= 1.1
 
-    pReserveMargin.rename_axis([None], axis=0).to_csv(_path_file+'/openTEPES_RTS-GMLC/oT_Data_ReserveMargin_'+CaseName+'.csv', sep=',', index=True)
+    pReserveMargin.rename_axis([None], axis=0).to_csv(_path_file+'/RTS-GMLC/oT_Data_ReserveMargin_'+CaseName+'.csv', sep=',', index=True)
 
     pReserveMargin_File_Time = time.time() - StartTime
     StartTime         = time.time()
@@ -448,7 +452,7 @@ def GettingDataTo_oTData(_path_data, _path_file, CaseName):
     pScenario['Period'] = df_Period
     pScenario.loc[0,'Scenario'] = df_Scenario.loc  [0,'Scenario']
 
-    pScenario.set_index(['Period','Scenario']).rename_axis([None,None], axis=0).to_csv(_path_file+'/openTEPES_RTS-GMLC/oT_Data_Scenario_'+CaseName+'.csv', sep=',', index=True)
+    pScenario.set_index(['Period','Scenario']).rename_axis([None,None], axis=0).to_csv(_path_file+'/RTS-GMLC/oT_Data_Scenario_'+CaseName+'.csv', sep=',', index=True)
 
     pScenario_File_Time = time.time() - StartTime
     StartTime           = time.time()
@@ -457,8 +461,118 @@ def GettingDataTo_oTData(_path_data, _path_file, CaseName):
     #%% Generating the Stage file
     pStage = pd.DataFrame(1, dtype=int, index=pd.Index([df_Stage.loc[0,'Stage']]), columns=['Weight'])
 
-    pStage.rename_axis([None], axis=0).to_csv(_path_file+'/openTEPES_RTS-GMLC/oT_Data_Stage_'+CaseName+'.csv', sep=',', index=True)
+    pStage.rename_axis([None], axis=0).to_csv(_path_file+'/RTS-GMLC/oT_Data_Stage_'+CaseName+'.csv', sep=',', index=True)
 
     pStage_File_Time = time.time() - StartTime
     StartTime        = time.time()
     print('pStage          file  generation       ... ', round(pStage_File_Time), 's')
+
+    #%% Getting the Variable Max Consumption file
+    pVarMaxComsumption = pd.DataFrame(0, dtype=int, index=LoadLevels, columns=sorted(gen))
+
+    pVarMaxComsumption             = pVarMaxComsumption.reset_index()
+    pVarMaxComsumption['Period']   = df_Period.loc  [0, 'Period'  ]
+    pVarMaxComsumption['Scenario'] = df_Scenario.loc[0, 'Scenario']
+
+    pVarMaxComsumption = pVarMaxComsumption.set_index(['Period', 'Scenario', 'index'])
+    pVarMaxComsumption.rename_axis([None,None,None], axis=0).to_csv(_path_file+'/RTS-GMLC/oT_Data_VariableMaxConsumption_'+CaseName+'.csv', sep=',', index=True)
+
+    pVarMaxComsumption_File_Time = time.time() - StartTime
+    StartTime                    = time.time()
+    print('pVarMaxConsump  file  generation       ... ', round(pVarMaxComsumption_File_Time), 's')
+
+    #%% Getting the Variable Max Generation file
+    df_pv['LoadLevel']    = pd.DataFrame({'LoadLevel': LoadLevels})
+    pPVProfile            = df_pv.iloc[: ,4 :]
+    pPVProfile            = pPVProfile.set_index(['LoadLevel'])
+    pPVProfile            = pPVProfile.replace(0, 0.0001)
+
+    df_rtpv['LoadLevel']  = pd.DataFrame({'LoadLevel': LoadLevels})
+    pRTPVProfile          = df_rtpv.iloc[: ,4 :]
+    pRTPVProfile          = pRTPVProfile.set_index(['LoadLevel'])
+    pRTPVProfile          = pRTPVProfile.replace(0,0.0001)
+
+    df_wind['LoadLevel']  = pd.DataFrame({'LoadLevel': LoadLevels})
+    pWindProfile          = df_wind.iloc[: ,4 :]
+    pWindProfile          = pWindProfile.set_index(['LoadLevel'])
+    pWindProfile          = pWindProfile.replace(0,0.0001)
+
+    pVarMaxGeneration     = pd.DataFrame(0, dtype=int, index=LoadLevels, columns=sorted(gen))
+
+    for i in pPVProfile.columns:
+        pVarMaxGeneration.loc[:,i] = pPVProfile.loc[:,i]
+
+    for i in pRTPVProfile.columns:
+        pVarMaxGeneration.loc[:, i] = pRTPVProfile.loc[:,i]
+
+    for i in pWindProfile.columns:
+        pVarMaxGeneration.loc[:, i] = pWindProfile.loc[:,i]
+
+    pVarMaxGeneration             = pVarMaxGeneration.reset_index()
+    pVarMaxGeneration['Period']   = df_Period.loc  [0, 'Period'  ]
+    pVarMaxGeneration['Scenario'] = df_Scenario.loc[0, 'Scenario']
+
+    pVarMaxGeneration = pVarMaxGeneration.set_index(['Period', 'Scenario', 'index'])
+    pVarMaxGeneration.rename_axis([None,None,None], axis=0).to_csv(_path_file+'/RTS-GMLC/oT_Data_VariableMaxGeneration_'+CaseName+'.csv', sep=',', index=True)
+
+    pVarMaxGeneration_File_Time = time.time() - StartTime
+    StartTime                   = time.time()
+    print('pVarMaxGenerat  file  generation       ... ', round(pVarMaxGeneration_File_Time), 's')
+
+    #%% Getting the Variable Max Storage file
+    pVarMaxStorage = pd.DataFrame(0, dtype=int, index=LoadLevels, columns=sorted(gen))
+
+    pVarMaxStorage             = pVarMaxStorage.reset_index()
+    pVarMaxStorage['Period']   = df_Period.loc  [0, 'Period'  ]
+    pVarMaxStorage['Scenario'] = df_Scenario.loc[0, 'Scenario']
+
+    pVarMaxStorage = pVarMaxStorage.set_index(['Period', 'Scenario', 'index'])
+    pVarMaxStorage.rename_axis([None,None,None], axis=0).to_csv(_path_file+'/RTS-GMLC/oT_Data_VariableMaxStorage_'+CaseName+'.csv', sep=',', index=True)
+
+    pVarMaxStorage_File_Time = time.time() - StartTime
+    StartTime                    = time.time()
+    print('pVarMaxStorage  file  generation       ... ', round(pVarMaxStorage_File_Time), 's')
+    
+    #%% Getting the Variable Min Consumption file
+    pVarMinConsumption = pd.DataFrame(0, dtype=int, index=LoadLevels, columns=sorted(gen))
+
+    pVarMinConsumption             = pVarMinConsumption.reset_index()
+    pVarMinConsumption['Period']   = df_Period.loc  [0, 'Period'  ]
+    pVarMinConsumption['Scenario'] = df_Scenario.loc[0, 'Scenario']
+
+    pVarMinConsumption = pVarMinConsumption.set_index(['Period', 'Scenario', 'index'])
+    pVarMinConsumption.rename_axis([None,None,None], axis=0).to_csv(_path_file+'/RTS-GMLC/oT_Data_VariableMinConsumption_'+CaseName+'.csv', sep=',', index=True)
+
+    pVarMinConsumption_File_Time = time.time() - StartTime
+    StartTime                    = time.time()
+    print('pVarMinConsump  file  generation       ... ', round(pVarMinConsumption_File_Time), 's')
+
+    #%% Getting the Variable Min Generation file
+    pVarMinGeneration = pd.DataFrame(0, dtype=int, index=LoadLevels, columns=sorted(gen))
+
+    pVarMinGeneration             = pVarMinGeneration.reset_index()
+    pVarMinGeneration['Period']   = df_Period.loc  [0, 'Period'  ]
+    pVarMinGeneration['Scenario'] = df_Scenario.loc[0, 'Scenario']
+
+    pVarMinGeneration = pVarMinGeneration.set_index(['Period', 'Scenario', 'index'])
+    pVarMinGeneration.rename_axis([None,None,None], axis=0).to_csv(_path_file+'/RTS-GMLC/oT_Data_VariableMinGeneration_'+CaseName+'.csv', sep=',', index=True)
+
+    pVarMinGeneration_File_Time = time.time() - StartTime
+    StartTime                    = time.time()
+    print('pVarMinGenerat  file  generation       ... ', round(pVarMinGeneration_File_Time), 's')
+    
+    #%% Getting the Variable Min Storage file
+    pVarMinStorage = pd.DataFrame(0, dtype=int, index=LoadLevels, columns=sorted(gen))
+
+    pVarMinStorage             = pVarMinStorage.reset_index()
+    pVarMinStorage['Period']   = df_Period.loc  [0, 'Period'  ]
+    pVarMinStorage['Scenario'] = df_Scenario.loc[0, 'Scenario']
+
+    pVarMinStorage = pVarMinStorage.set_index(['Period', 'Scenario', 'index'])
+    pVarMinStorage.rename_axis([None,None,None], axis=0).to_csv(_path_file+'/RTS-GMLC/oT_Data_VariableMinStorage_'+CaseName+'.csv', sep=',', index=True)
+
+    pVarMinStorage_File_Time = time.time() - StartTime
+    print('pVarMinStorage  file  generation       ... ', round(pVarMinStorage_File_Time), 's')
+
+    oT_Data_Time    = time.time() - StartTimeFunction
+    print('oT_Data files generation               ... ', round(oT_Data_Time), 's')
