@@ -253,13 +253,16 @@ def GettingDataTo_oTData(_path_data, _path_file, CaseName):
     df_gen      = df_gen.set_index(['GEN UID'])
     pGeneration = pGeneration.set_index(['Gen'])
     for i in df_storage.index:
-        # if pGeneration.loc[i,'Technology'] != 'Hydro':
-        #     pGeneration.loc[i,'MaximumCharge'] = pGeneration.loc[i,'MaximumPower']
-        pGeneration.loc[i,'MaximumCharge'] = df_gen.loc[i,'Pump Load MW']
+        if pGeneration.loc[i,'Technology'] != 'Hydro':
+            pGeneration.loc[i,'MaximumCharge'] = pGeneration.loc[i,'MaximumPower']
+        # pGeneration.loc[i,'MaximumCharge'] = df_gen.loc[i,'Pump Load MW']
         pGeneration.loc[i,'Efficiency'   ] = df_gen.loc[i,'Storage Roundtrip Efficiency']/100
+        if i == '212_CSP_1':
+            pGeneration.loc[i, 'Efficiency'] = 0.8
         if pGeneration.loc[i, 'Technology'] != 'Storage':
             pGeneration.loc[i,'MaximumStorage'] = df_storage.loc[i,'Max Volume GWh']
             pGeneration.loc[i,'InitialStorage'] = df_storage.loc[i,'Initial Volume GWh']
+            # pGeneration.loc[i,'InitialStorage'] = df_storage.loc[i,'Max Volume GWh']*0.5
         else:
             pGeneration.loc[i,'MaximumStorage'] = 0.15
             pGeneration.loc[i,'InitialStorage'] = 0.075
@@ -444,7 +447,7 @@ def GettingDataTo_oTData(_path_data, _path_file, CaseName):
     #%% Generating the Reserve Margin file
     pReserveMargin = pd.DataFrame(1, dtype=int, index=sorted(ar), columns=['ReserveMargin'])
 
-    pReserveMargin['ReserveMargin'] *= 1.1
+    pReserveMargin['ReserveMargin'] *= 0
 
     pReserveMargin.rename_axis([None], axis=0).to_csv(_path_file+'/RTS-GMLC/oT_Data_ReserveMargin_'+CaseName+'.csv', sep=',', index=True)
 
