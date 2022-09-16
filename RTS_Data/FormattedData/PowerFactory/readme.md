@@ -4,7 +4,7 @@
 
 ## Description
 
-We have created a PowerFactory implementation of the RTS-GMLC model that was
+We have created a PowerFactory implementation of the RTS-GMLC model which was
 originally developed by DOE/NREL/ALLIANCE (the Grid Modernization Lab
 Consortium). The original model is hosted on GitHub
 (https://github.com/GridMod/RTS-GMLC). The RTS-GMLC model itself is based on
@@ -38,7 +38,7 @@ situated in Southern California.
 ## Conversion of source data to PowerFactory format
 
 We built the model in PowerFactory from scratch, using the original RTS-GMLC
-source data as input. No scripted conversion was performed. Set of units of
+source data as input. No scripted conversion was performed. Units of
 various parameters were adjusted to fit the format of the PowerFactory
 software (converting line lengths from miles to kilometers etc.).
 
