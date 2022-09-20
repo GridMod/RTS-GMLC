@@ -79,6 +79,7 @@ def GettingDataTo_oTData(_path_data, _path_file, CaseName):
     pNomDemand_org = pNomDemand_org.set_index(['Bus ID'])
 
     # Defining load levels
+    df_load.Period       = df_load.Period - 1
     df_load['Month'    ] = df_load.Month.map("{:02}".format)
     df_load['Day'      ] = df_load.Day.map("{:02}".format)
     df_load['Period'   ] = df_load.Period.map("{:02}".format)

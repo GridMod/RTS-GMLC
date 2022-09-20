@@ -67,6 +67,7 @@ def GettingDataTo_oTDict(_path_data, _path_file, CaseName):
     pLineType.to_frame(name='LineType').to_csv(_path_file + '/RTS-GMLC/oT_Dict_Line_' + CaseName + '.csv', sep=',', index=False)
 
     # Defining load levels
+    df_TS_CSP.Period    = df_TS_CSP.Period-1
     df_TS_CSP['Month' ] = df_TS_CSP.Month.map("{:02}".format)
     df_TS_CSP['Day'   ] = df_TS_CSP.Day.map("{:02}".format)
     df_TS_CSP['Period'] = df_TS_CSP.Period.map("{:02}".format)
