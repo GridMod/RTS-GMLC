@@ -37,7 +37,7 @@ This folder contains six CSV files wit all RTS-GMLC (non-timeseries) data and pr
 | Cont Rating  | Continuous MW flow limit              |
 | LTE Rating   | Long term MW flow limit               |
 | STE Rating   | Short term MW flow limit              |
-| Perm OutRate | Outage rate                           |
+| Perm OutRate | Outage rate (occ/year)                          |
 | Duration     | Mean outage duration (hrs)            |
 | Tr Ratio     | Transformer winding ratio             |
 | Tran OutRate | Transformer outage rate               |
