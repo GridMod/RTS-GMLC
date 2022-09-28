@@ -18,6 +18,7 @@ This repository, and the associated data has been developed to facilitate Produc
  - [pandapower](http://www.pandapower.org)
  - [ANDES](https://github.com/cuihantao/andes)
  - [SIIP](https://github.com/nrel-siip)/[PowerSystems.jl](https://github.com/nrel-siip/PowerSystems.jl)
+ - [openTEPES](https://opentepes.readthedocs.io/en/latest/index.html)
 
 ## TODO and Identified Areas of Improvement:
  - Conventional Plant Data:
