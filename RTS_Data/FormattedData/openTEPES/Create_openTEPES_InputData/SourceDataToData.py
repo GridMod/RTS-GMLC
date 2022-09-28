@@ -79,10 +79,11 @@ def GettingDataTo_oTData(_path_data, _path_file, CaseName):
     pNomDemand_org = pNomDemand_org.set_index(['Bus ID'])
 
     # Defining load levels
+    df_load.Period       = df_load.Period - 1
     df_load['Month'    ] = df_load.Month.map("{:02}".format)
     df_load['Day'      ] = df_load.Day.map("{:02}".format)
     df_load['Period'   ] = df_load.Period.map("{:02}".format)
-    LoadLevels           = [str(df_load['Month'][i])+str(df_load['Day'][i])+str(df_load['Period'][i]) for i in df_load.index]
+    LoadLevels           = [str(df_load['Month'][i])+'-'+str(df_load['Day'][i])+' '+str(df_load['Period'][i]+":00:00+01:00") for i in df_load.index]
     df_load['LoadLevel'] = pd.DataFrame({'LoadLevel': LoadLevels})
 
     # Getting load factors per area
