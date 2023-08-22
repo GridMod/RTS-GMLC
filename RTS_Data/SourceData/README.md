@@ -28,7 +28,7 @@ This folder contains six CSV files wit all RTS-GMLC (non-timeseries) data and pr
 
 | Column       | Description                           |
 |--------------|---------------------------------------|
-| ID           | Unique branch ID                      |
+| UD           | Unique branch ID                      |
 | From Bus     | From Bus ID                           |
 | To Bus       | To Bus ID                             |
 | R            | Branch resistance p.u.                |
