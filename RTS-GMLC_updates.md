@@ -41,12 +41,12 @@ The Reliability Test System of the Grid Modernization Laboratory Consortium (RTS
   | Remove |       |       |      |            | Add    |       |       |     |       |
   |--------|-------|-------|------|------------|--------|-------|-------|-----|-------|
   | Region | BusID | Group | MW   | Type       | Region | BusID | Group | MW  | Type  |
-  |   R1     | 107   | U100  | 80   | Oil/Steam  | R1     | 107   | U350  | 350 | GasCC |
+  |   R1     | 107   | U100  | 80   | Oil/Steam  | R1     | 107   | U355  | 355 | GasCC |
   | R1     | 107   | U100  | 80   | Oil/Steam  | R1     | 113   | U55   | 55  | GasCT |
   | R1     | 107   | U100  | 80   | Oil/Steam  | R1     | 113   | U55   | 55  | GasCT |
   | R1     | 113   | U197  | 95.1 | Oil/Steam  | R1     | 113   | U55   | 55  | GasCT |
   | R1     | 113   | U197  | 95.1 | Oil/Steam  | R1     | 113   | U55   | 55  | GasCT |
-  | R1     | 113   | U197  | 95.1 | Oil/Steam  | R1     | 118   | U350  | 350 | GasCC |
+  | R1     | 113   | U197  | 95.1 | Oil/Steam  | R1     | 118   | U355  | 355 | GasCC |
   | R1     | 115   | U12   | 12   | Oil/Steam  | R1     | 123   | U55   | 55  | GasCT |
   | R1     | 115   | U12   | 12   | Oil/Steam  | R1     | 123   | U55   | 55  | GasCT |
   | R1     | 115   | U12   | 12   | Oil/Steam  | R1     | 123   | U55   | 55  | GasCT |
