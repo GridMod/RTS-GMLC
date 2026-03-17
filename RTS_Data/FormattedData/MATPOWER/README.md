@@ -1,6 +1,6 @@
 # RTS_GMLC.m
 
-By default RTS_GMLC.m file represents a peak load flow case with all renewable gneration diabled. 
+By default RTS_GMLC.m file represents a peak load flow case with all renewable generation disabled. 
 The MATPOWER-out.txt file contains the standard MATPOWER output for the following commands:
 ```matlab
 mpc = loadcase('RTS_GMLC.m')
