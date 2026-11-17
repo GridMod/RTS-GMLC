@@ -20,6 +20,8 @@ bus:
 - {custom_name: MVAR Shunt B, name: shunt_b, unit_system: natural_units}
 - {custom_name: MW Load, name: max_active_power, unit_system: natural_units}
 - {custom_name: MVAR Load, name: max_reactive_power, unit_system: natural_units}
+# Each load is its own base, so a zone series shared out by load is one array in CU.
+- {custom_name: MW Load, name: base_power}
 - {custom_name: MW Load, name: active_power, unit_system: natural_units}
 - {custom_name: MVAR Load, name: reactive_power, unit_system: natural_units}
 
